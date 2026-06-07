@@ -1,0 +1,4086 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <script src="scripts/css-vars-ponyfill.min.js"></script>
+    <script src="../../examples/js/utils.js"></script>
+    <script src="../../examples/js/theme/themeConfig.js"></script>
+    <script src="../../examples/js/theme/theme.js"></script>
+<script type="text/javascript">
+
+</script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+        <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/adminlte/app.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="styles/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/adminlte/AdminLTE.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/adminlte/skin-blue.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jaguar.css">
+    
+
+</head>
+<body class='sidebar-mini'>
+
+<div id="wrap" class="clearfix">
+
+    <div class="navigationDiv">
+    </div>
+    <div class="main content-wrapper">
+        <h1 class="page-title" data-filename="GeoFeature.html">Class: GeoFeature</h1>
+        
+
+
+
+<section>
+    
+<header>
+    <h2></span>GeoFeature
+    
+    </h2>
+    
+        <div class="class-description"><p>地理几何专题要素型专题图层基类。此类型专题图的专题要素形状就是由 feature.geometry 决定。不建议直接实例化调用此类。</p></div>
+    
+</header>  
+
+<article>
+    <div class="container-overview">
+    
+    
+    
+        
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="GeoFeature">
+          
+          
+          new GeoFeature<span class="signature">(name, opt_options)</span>
+        </h4>
+        
+        <h5>Usage</h5>
+        
+
+<pre class="prettyprint">
+<code>// 浏览器
+&lt;script type="text/javascript" src="https://iclient.supermap.io/dist/openlayers/iclient-ol.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+  new ol.source.GeoFeature(name, opt_options);
+  
+&lt;/script&gt;
+
+<span class="nopretty">// ES6 Import</span>
+import { GeoFeature } from '@supermapgis/iclient-ol';
+
+new GeoFeature(name, opt_options);
+</code>
+</pre>
+
+
+        
+
+        
+        <div class="tag-source">
+            openlayers/overlay/theme/GeoFeature.js, line 10
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>name</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>图层名称。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>opt_options</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>参数。</p>
+                
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Default</th>
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>map</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="https://openlayers.org/en/v6.14.1/apidoc/module-ol_Map-Map">ol.Map</a></span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                    
+                        
+                    
+                
+                <p>当前 OpenLayers Map 对象。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>专题图层 ID。默认使用 CommonUtil.createUniqueID(&quot;themeLayer_&quot;) 创建专题图层 ID。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>opacity</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    1
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>图层不透明度。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>logo</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>Logo（OpenLayers 5.0.0 及更高版本不再支持此参数）。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>projection</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="https://openlayers.org/en/v6.14.1/apidoc/module-ol_proj_Projection-Projection.html">ol.proj.Projection</a></span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>投影信息。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>ratio</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    1.5
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>视图比，1 表示画布是地图视口的大小，2 表示地图视口的宽度和高度的两倍，依此类推。必须是 1 或更高。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>resolutions</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>分辨率数组。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>state</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="https://openlayers.org/en/v6.14.1/apidoc/module-ol_source_State.html">ol.source.State</a></span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>资源状态。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>style</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>专题图样式。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>styleGroups</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>各专题类型样式组。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>isHoverAble</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    false
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>是否开启 hover 事件。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>highlightStyle</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>开启 hover 事件后，触发的样式风格。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>attributions</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+|
+
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    'Map Data &lt;span>© &lt;a href='http://support.supermap.com.cn/product/iServer.aspx' target='_blank'>SuperMap iServer&lt;/a>&lt;/span> with &lt;span>© &lt;a href='https://iclient.supermap.io' target='_blank'>SuperMap iClient&lt;/a>&lt;/span>'
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>版权描述信息。</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+            </td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</dd>
+
+    
+    </div>
+    
+    
+        <h3 class="subsection-title">Extends</h3>
+        <ul>
+            
+            
+            
+            
+            <li><a href="Theme.html">Theme</a></li>
+            
+            
+        </ul>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+        
+        <dl>
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="addFeatures">
+          
+          
+          addFeatures<span class="signature">(features)</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            openlayers/overlay/theme/GeoFeature.js, line 69
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>添加要素。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>features</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;<a href="ThemeFeature.html">ThemeFeature</a>></span>
+|
+
+<span class="param-type">Array.&lt;<a href="https://geojson.org">GeoJSONObject</a>></span>
+|
+
+<span class="param-type">Array.&lt;<a href="https://openlayers.org/en/v6.14.1/apidoc/module-ol_Feature-Feature.html">ol.Feature</a>></span>
+|
+
+<span class="param-type"><a href="ThemeFeature.html">ThemeFeature</a></span>
+|
+
+<span class="param-type"><a href="https://geojson.org">GeoJSONObject</a></span>
+|
+
+<span class="param-type"><a href="https://openlayers.org/en/v6.14.1/apidoc/module-ol_Feature-Feature.html">ol.Feature</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>要素对象。</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="clear">
+          
+          
+          clear<span class="signature">()</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            openlayers/overlay/theme/GeoFeature.js, line 222
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>清除的内容包括数据（features）、专题要素、缓存。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="clearCache">
+          
+          
+          clearCache<span class="signature">()</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            openlayers/overlay/theme/GeoFeature.js, line 213
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>清除缓存。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="createThematicFeature">
+          
+          
+          createThematicFeature<span class="signature">(feature)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{Array.&lt;<a href="FeatureVector.html">FeatureVector</a>>}</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            openlayers/overlay/theme/GeoFeature.js, line 182
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>创建专题要素。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>feature</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>要素对象。</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        Array.&lt;<a href="FeatureVector.html">FeatureVector</a>>
+                        
+                    
+            </td>
+            <td class="description last">返回矢量要素。</td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+
+    
+
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="destroy">
+          
+          
+          destroy<span class="signature">()</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            openlayers/overlay/theme/GeoFeature.js, line 51
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>释放资源，将引用资源的属性置空。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer inherited">
+        <h4 class="name" id="destroyFeatures">
+          
+              <span class="inherited"><a href="Theme.html#destroyFeatures">inherited</a></span>
+          
+          
+          destroyFeatures<span class="signature">(features)</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            openlayers/overlay/theme/Theme.js, line 152
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>销毁要素。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>features</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;<a href="FeatureVector.html">FeatureVector</a>></span>
+|
+
+<span class="param-type"><a href="FeatureVector.html">FeatureVector</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>将被销毁的要素。</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer inherited">
+        <h4 class="name" id="fire">
+          
+              <span class="inherited"><a href="Theme.html#fire">inherited</a></span>
+          
+          
+          fire<span class="signature">(type, event)</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            openlayers/overlay/theme/Theme.js, line 366
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>添加专题要素事件监听。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>type</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>事件类型。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>event</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>事件名称。</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="getCacheCount">
+          
+          
+          getCacheCount<span class="signature">()</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{number}</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            openlayers/overlay/theme/GeoFeature.js, line 233
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>获取当前缓存数量。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        number
+                        
+                    
+            </td>
+            <td class="description last">返回当前缓存数量。</td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+
+    
+
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer inherited">
+        <h4 class="name" id="getFeatureBy">
+          
+              <span class="inherited"><a href="Theme.html#getFeatureBy">inherited</a></span>
+          
+          
+          getFeatureBy<span class="signature">(property, value)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{<a href="FeatureVector.html">FeatureVector</a>}</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            openlayers/overlay/theme/Theme.js, line 287
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>在专题图的要素数组 features 里面遍历每一个 feature，当 feature[property] === value 时，
+返回此 feature（并且只返回第一个）。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>property</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>要素的某个属性名称。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>value</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>property 所对应的值。</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        <a href="FeatureVector.html">FeatureVector</a>
+                        
+                    
+            </td>
+            <td class="description last">第一个匹配属性和值的矢量要素。</td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+
+    
+
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer inherited">
+        <h4 class="name" id="getFeatureById">
+          
+              <span class="inherited"><a href="Theme.html#getFeatureById">inherited</a></span>
+          
+          
+          getFeatureById<span class="signature">(featureId)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{<a href="FeatureVector.html">FeatureVector</a>}</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            openlayers/overlay/theme/Theme.js, line 307
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>通过给定一个 ID，返回对应的矢量要素。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>featureId</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>矢量要素的属性 ID。</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        <a href="FeatureVector.html">FeatureVector</a>
+                        
+                    
+            </td>
+            <td class="description last">对应 ID 的要素，如果不存在则返回 null。</td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+
+    
+
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer inherited">
+        <h4 class="name" id="getFeatures">
+          
+              <span class="inherited"><a href="Theme.html#getFeatures">inherited</a></span>
+          
+          
+          getFeatures<span class="signature">(<span class="optional">filter</span>)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{Array.&lt;<a href="FeatureVector.html">FeatureVector</a>>}</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            openlayers/overlay/theme/Theme.js, line 270
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>查看当前图层中的有效数据。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>filter</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>根据条件过滤要素的回调函数。</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        Array.&lt;<a href="FeatureVector.html">FeatureVector</a>>
+                        
+                    
+            </td>
+            <td class="description last">用户加入图层的有效数据。</td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+
+    
+
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer inherited">
+        <h4 class="name" id="getFeaturesByAttribute">
+          
+              <span class="inherited"><a href="Theme.html#getFeaturesByAttribute">inherited</a></span>
+          
+          
+          getFeaturesByAttribute<span class="signature">(attrName, attrValue)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{Array.&lt;<a href="FeatureVector.html">FeatureVector</a>>}</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            openlayers/overlay/theme/Theme.js, line 317
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>通过给定一个属性的 key 值和 value 值，返回所有匹配的要素数组。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>attrName</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>属性的 key 值。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>attrValue</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>属性的 value 值。</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        Array.&lt;<a href="FeatureVector.html">FeatureVector</a>>
+                        
+                    
+            </td>
+            <td class="description last">一个匹配的要素数组。</td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+
+    
+
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer inherited">
+        <h4 class="name" id="getLocalXY">
+          
+              <span class="inherited"><a href="Theme.html#getLocalXY">inherited</a></span>
+          
+          
+          getLocalXY<span class="signature">(coordinate)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{Array.&lt;number>}</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            openlayers/overlay/theme/Theme.js, line 471
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>地理坐标转为像素坐标。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>coordinate</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>坐标位置。</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        Array.&lt;number>
+                        
+                    
+            </td>
+            <td class="description last">长度为 2 的像素坐标数组，第一个元素表示 x 坐标，第二个元素表示 y 坐标。</td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+
+    
+
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="getShapesByFeatureID">
+          
+          
+          getShapesByFeatureID<span class="signature">(featureID)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{Array}</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            openlayers/overlay/theme/GeoFeature.js, line 254
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>通过要素 ID 获取要素关联的所有图形。如果不传入此参数，函数将返回所有图形。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>featureID</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>要素 ID。</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        Array
+                        
+                    
+            </td>
+            <td class="description last">返回图形数组。</td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+
+    
+
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer inherited">
+        <h4 class="name" id="on">
+          
+              <span class="inherited"><a href="Theme.html#on">inherited</a></span>
+          
+          
+          on<span class="signature">(event, callback)</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            openlayers/overlay/theme/Theme.js, line 53
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>添加专题要素事件监听。支持的事件包括: click、mousedown、mousemove、mouseout、mouseover、mouseup。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>event</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>事件名称。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="global.html#RequestCallback">RequestCallback</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>事件回调函数。</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="redrawThematicFeatures">
+          
+          
+          redrawThematicFeatures<span class="signature">(extent)</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            openlayers/overlay/theme/GeoFeature.js, line 106
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>重绘所有专题要素。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>extent</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>视图范围数据。</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="removeAllFeatures">
+          
+          
+          removeAllFeatures<span class="signature">()</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            openlayers/overlay/theme/GeoFeature.js, line 97
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>清除当前图层所有的矢量要素。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="removeFeatures">
+          
+          
+          removeFeatures<span class="signature">(features)</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            openlayers/overlay/theme/GeoFeature.js, line 87
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>从专题图中删除要素。这个函数删除所有传递进来的矢量要素。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>features</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;<a href="FeatureVector.html">FeatureVector</a>></span>
+|
+
+<span class="param-type"><a href="FeatureVector.html">FeatureVector</a></span>
+|
+
+<span class="param-type">function</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>待删除的要素对象或用于过滤的回调函数。</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer inherited">
+        <h4 class="name" id="rotate">
+          
+              <span class="inherited"><a href="Theme.html#rotate">inherited</a></span>
+          
+          
+          rotate<span class="signature">(pixelP, rotation, center)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{Array.&lt;number>}</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            openlayers/overlay/theme/Theme.js, line 500
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>获取某像素坐标点 pixelP 绕中心 center 逆时针旋转 rotation 弧度后的像素点坐标。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>pixelP</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>像素坐标点位置。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>rotation</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>旋转角度。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>center</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>中心位置。</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        Array.&lt;number>
+                        
+                    
+            </td>
+            <td class="description last">旋转后的像素坐标数组。</td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+
+    
+
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer inherited">
+        <h4 class="name" id="scale">
+          
+              <span class="inherited"><a href="Theme.html#scale">inherited</a></span>
+          
+          
+          scale<span class="signature">(pixelP, center, scaleRatio)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{Array.&lt;number>}</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            openlayers/overlay/theme/Theme.js, line 514
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>获取某像素坐标点 pixelP 相对于中心 center 进行缩放 scaleRatio 倍后的像素点坐标。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>pixelP</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>像素点。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>center</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>中心点。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>scaleRatio</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>缩放倍数。</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        Array.&lt;number>
+                        
+                    
+            </td>
+            <td class="description last">返回数组型比例。</td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+
+    
+
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="setMaxCacheCount">
+          
+          
+          setMaxCacheCount<span class="signature">(cacheCount)</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            openlayers/overlay/theme/GeoFeature.js, line 242
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>设置最大缓存条数。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>cacheCount</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>缓存总数。</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer inherited">
+        <h4 class="name" id="setOpacity">
+          
+              <span class="inherited"><a href="Theme.html#setOpacity">inherited</a></span>
+          
+          
+          setOpacity<span class="signature">(opacity)</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            openlayers/overlay/theme/Theme.js, line 173
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>设置图层的不透明度，取值范围：[0-1]。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>opacity</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>不透明度。</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer inherited">
+        <h4 class="name" id="toFeature">
+          
+              <span class="inherited"><a href="Theme.html#toFeature">inherited</a></span>
+          
+          
+              <span class="attribs"><span class="type-signature">deprecated </span></span>
+          
+          toFeature<span class="signature">(features)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{Array.&lt;<a href="FeatureVector.html">FeatureVector</a>>}</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            openlayers/overlay/theme/Theme.js, line 570
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>转为 iClient 要素，该方法将被弃用，由 <a href="Theme.html#toiClientFeature">Theme#toiClientFeature</a> 代替。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>features</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;<a href="ThemeFeature.html">ThemeFeature</a>></span>
+|
+
+<span class="param-type">Array.&lt;<a href="https://geojson.org">GeoJSONObject</a>></span>
+|
+
+<span class="param-type">Array.&lt;<a href="https://openlayers.org/en/v6.14.1/apidoc/module-ol_Feature-Feature.html">ol.Feature</a>></span>
+|
+
+<span class="param-type"><a href="ThemeFeature.html">ThemeFeature</a></span>
+|
+
+<span class="param-type"><a href="https://geojson.org">GeoJSONObject</a></span>
+|
+
+<span class="param-type"><a href="https://openlayers.org/en/v6.14.1/apidoc/module-ol_Feature-Feature.html">ol.Feature</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>待转要素。</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        Array.&lt;<a href="FeatureVector.html">FeatureVector</a>>
+                        
+                    
+            </td>
+            <td class="description last">转换后的 iClient 要素。</td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+
+    
+
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer inherited">
+        <h4 class="name" id="toiClientFeature">
+          
+              <span class="inherited"><a href="Theme.html#toiClientFeature">inherited</a></span>
+          
+          
+          toiClientFeature<span class="signature">(features)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{Array.&lt;<a href="FeatureVector.html">FeatureVector</a>>}</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            openlayers/overlay/theme/Theme.js, line 528
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>转为 iClient 要素。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>features</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;<a href="ThemeFeature.html">ThemeFeature</a>></span>
+|
+
+<span class="param-type">Array.&lt;<a href="https://geojson.org">GeoJSONObject</a>></span>
+|
+
+<span class="param-type">Array.&lt;<a href="https://openlayers.org/en/v6.14.1/apidoc/module-ol_Feature-Feature.html">ol.Feature</a>></span>
+|
+
+<span class="param-type"><a href="ThemeFeature.html">ThemeFeature</a></span>
+|
+
+<span class="param-type"><a href="https://geojson.org">GeoJSONObject</a></span>
+|
+
+<span class="param-type"><a href="https://openlayers.org/en/v6.14.1/apidoc/module-ol_Feature-Feature.html">ol.Feature</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>待转要素。</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        Array.&lt;<a href="FeatureVector.html">FeatureVector</a>>
+                        
+                    
+            </td>
+            <td class="description last">转换后的 iClient 要素。</td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+
+    
+
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer inherited">
+        <h4 class="name" id="un">
+          
+              <span class="inherited"><a href="Theme.html#un">inherited</a></span>
+          
+          
+          un<span class="signature">(event, callback)</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            openlayers/overlay/theme/Theme.js, line 433
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>移除专题要素事件监听。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>event</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>事件名称。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="global.html#RequestCallback">RequestCallback</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>事件回调函数。</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</dd>
+
+        </dl>
+    
+    
+    
+
+</article>
+
+</section>  
+
+
+
+
+
+        <footer>
+            Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc</a> on Fri Sep 26 2025 09:50:50 GMT+0800 (中国标准时间)
+        </footer>
+    </div>
+</div>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>

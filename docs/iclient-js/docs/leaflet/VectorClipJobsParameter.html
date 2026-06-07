@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <script src="scripts/css-vars-ponyfill.min.js"></script>
+    <script src="../../examples/js/utils.js"></script>
+    <script src="../../examples/js/theme/themeConfig.js"></script>
+    <script src="../../examples/js/theme/theme.js"></script>
+<script type="text/javascript">
+
+</script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+        <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/adminlte/app.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="styles/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/adminlte/AdminLTE.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/adminlte/skin-blue.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jaguar.css">
+    
+
+</head>
+<body class='sidebar-mini'>
+
+<div id="wrap" class="clearfix">
+
+    <div class="navigationDiv">
+    </div>
+    <div class="main content-wrapper">
+        <h1 class="page-title" data-filename="VectorClipJobsParameter.html">Class: VectorClipJobsParameter</h1>
+        
+
+
+
+<section>
+    
+<header>
+    <h2></span>VectorClipJobsParameter
+    
+    </h2>
+    
+        <div class="class-description"><p>矢量裁剪分析任务参数类。此类用于设置矢量裁剪分析的数据集、裁剪分析模式、裁剪几何对象等参数，
+还可以对分析结果的输出参数、可视化参数进行一系列设置。</p></div>
+    
+</header>  
+
+<article>
+    <div class="container-overview">
+    
+    
+    
+        
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="VectorClipJobsParameter">
+          
+          
+          new VectorClipJobsParameter<span class="signature">(options)</span>
+        </h4>
+        
+        <h5>Usage</h5>
+        
+
+<pre class="prettyprint">
+<code>// 浏览器
+&lt;script type="text/javascript" src="https://iclient.supermap.io/dist/leaflet/iclient-leaflet.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+  new L.supermap.VectorClipJobsParameter(options);
+    // 弃用的写法
+  new SuperMap.VectorClipJobsParameter(options);
+
+&lt;/script&gt;
+
+<span class="nopretty">// ES6 Import</span>
+import { VectorClipJobsParameter } from '@supermapgis/iclient-leaflet';
+
+new VectorClipJobsParameter(options);
+</code>
+</pre>
+
+
+        
+
+        
+        <div class="tag-source">
+            common/iServer/VectorClipJobsParameter.js, line 9
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>参数。</p>
+                
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Default</th>
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>datasetName</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                    
+                        
+                    
+                
+                <p>数据集名称。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>datasetVectorClip</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                    
+                        
+                    
+                
+                <p>裁剪对象数据集。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>mode</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="global.html#ClipAnalystMode">ClipAnalystMode</a></span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    <a href="global.html#ClipAnalystMode#.CLIP">ClipAnalystMode.CLIP</a>
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>裁剪分析模式。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>geometryClip</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>裁剪几何对象。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>output</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="OutputSetting.html">OutputSetting</a></span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>输出参数设置。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>mappingParameters</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="MappingParameters.html">MappingParameters</a></span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>分析后结果可视化的参数类。</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+            </td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</dd>
+
+    
+    </div>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <h3 class="subsection-title">Members</h3>
+        
+        <dl>
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="datasetName">
+          
+          datasetName<span class="type-signature type string">string</span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>数据集名称。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="datasetVectorClip">
+          
+          datasetVectorClip<span class="type-signature type string">string</span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>裁剪对象数据集。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="geometryClip">
+          
+          geometryClip<span class="type-signature type string">string</span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>裁剪几何对象。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="mappingParameters">
+          
+          mappingParameters<span class="type-signature type mappingparameters"><a href="MappingParameters.html">MappingParameters</a></span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>分析后结果可视化的参数类。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="mode">
+          
+          mode<span class="type-signature type clipanalystmode"><a href="global.html#ClipAnalystMode">ClipAnalystMode</a></span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>裁剪分析模式。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    <dt class="tag-default">Default Value:</dt>
+    <a href="global.html#ClipAnalystMode#.CLIP">ClipAnalystMode.CLIP</a></li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="output">
+          
+          output<span class="type-signature type outputsetting"><a href="OutputSetting.html">OutputSetting</a></span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>输出参数设置类。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        </dl>
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+        
+        <dl>
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id=".toObject">
+          
+          
+              <span class="attribs"><span class="type-signature">static </span></span>
+          
+          toObject<span class="signature">(vectorClipJobsParameter, tempObj)</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            common/iServer/VectorClipJobsParameter.js, line 89
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>矢量裁剪分析任务对象。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>vectorClipJobsParameter</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>矢量裁剪分析服务参数。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>tempObj</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>目标对象。</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="destroy">
+          
+          
+          destroy<span class="signature">()</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            common/iServer/VectorClipJobsParameter.js, line 70
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>释放资源，将引用资源的属性置空。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</dd>
+
+        </dl>
+    
+    
+    
+
+</article>
+
+</section>  
+
+
+
+
+
+        <footer>
+            Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc</a> on Fri Sep 26 2025 09:50:30 GMT+0800 (中国标准时间)
+        </footer>
+    </div>
+</div>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../iserver-icon.png"/>
+    
+  <script data-relpath=".." src="../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <meta name="template" content="../assets/layouts/SuperMapiServerMain.htt"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Language" content="zh-CN"/>
+  <meta name="topic-status" content="Complete"/>
+  <meta name="topic-check-list" content="Ran Smart Index"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>集群的使用与搭建</title>
+  <link rel="StyleSheet" href="../assets/css/SuperMapHelp.css" type="text/css"/>
+  <script type="text/javascript" src="../assets/js/shCore.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushBash.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushCpp.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushCSharp.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushCss.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushDelphi.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushDiff.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushGroovy.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushJava.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushJScript.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushPhp.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushPlain.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushPython.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushRuby.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushScala.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushSql.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushVb.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushXml.js"></script>
+  <script type="text/javascript" src="../assets/js/ConfigiServer6R.js"></script>
+  <meta name="rh-index-keywords" content="集群的使用与搭建,使用集群"/>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../assets/css/homeButtom.css"/>
+  <script src="../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <p class="myNormal">集群是指将 SuperMap iServer 服务注册到集群服务器中，并提供单一客户视图的服务。当有服务请求到达集群服务器时，集群服务器采用集群技术统一对 SuperMap iServer 服务进行调配，用户并不需要知道具体提供服务的 GIS 服务器。使用集群可以使 SuperMap iServer 提供的 GIS 服务在高并发、高性能等方面有很大提升。</p>
+  <p class="myNormal">SuperMap iServer 的分布式切图模块作为集群技术的典型应用，实现了地图的分布式切图、分布式存储管理等功能。</p>
+  <p class="myNormal">集群的相关配置，除了如本页介绍的在服务管理器中配置外，还可以通过配置文件进行配置，详细可参考<a class="contentpagehyperlink" href="../Subject_introduce/Cluster/ClusterManagement/ManagerClusterwithXML.htm">利用配置文件管理集群</a>。</p>
+  <h2>集群体系简介</h2>
+  <p class="myNormal">集群体系中包含以下角色，不同的角色通过各自不同的操作来构建整个集群体系：</p>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1"><span style="font-weight: bold;">集群父节点</span>：如图3-1标识1，即集群服务器，是集群服务的提供者，负责监听和协调子节点的服务器，可以通过<a class="contentpagehyperlink" href="#使用集群" style="font-weight: bold;">使用集群</a>中的<span style="font-weight: bold;"><a class="contentpagehyperlink" href="#使用本地集群服务">使用本地集群服务</a></span>实现对外提供 GIS 服务，通过<a class="contentpagehyperlink" href="clusterUsage.htm#配置集群" style="font-weight: bold;">配置集群</a>查看和控制子节点的加入；</li>
+    <li class="SymbolList1"><span style="font-weight: bold;">集群子节点</span>：如图3-1标识2，执行父节点分配的任务，可以通过<a class="contentpagehyperlink" href="#加入集群" style="font-weight: bold;">加入集群</a>向集群父节点报告，成为集群体系的一员；</li>
+    <li class="SymbolList1">GIS 应用服务器<span style="font-weight: normal;">：客户端直接访问的 GIS 服务器，如果是由集群父节点兼任，则使用方式同集群父节点，如果是独立的服务器（如图3-2 GIS 应用*），则可以通过</span><a class="contentpagehyperlink" href="#使用集群" style="font-weight: bold;">使用集群</a><span style="font-weight: normal;">中的</span><a class="contentpagehyperlink" href="#使用其他集群服务">使用其他集群服务</a><span style="font-weight: normal;">实现对外提供 GIS 服务.</span></li>
+  </ul>
+  <p class="ImageP"><img alt="" border="0" height="262" src="../assets/images/Server_Service_Management/clusterOverview.png" style="border: none;" width="508"/></p>
+  <p class="ImageP">图1 集群概览</p>
+  <p class="myNormal">上述角色可以概括一下，具体到某台机器。比如对于本机来说，我可以是:</p>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1">GIS 应用服务器，可以<a class="contentpagehyperlink" href="#使用其他集群服务">使用其他集群服务</a>；</li>
+    <li class="SymbolList1">集群父节点，可以<a class="contentpagehyperlink" href="clusterUsage.htm#配置集群" style="font-weight: normal;">配置集群</a>和查看我的集群子节点；</li>
+    <li class="SymbolList1">集群子节点，可以<a class="contentpagehyperlink" href="#加入集群" style="font-weight: normal;">加入集群</a>，向父节点报告。</li>
+  </ul>
+  <p class="myNormal">集群子节点加入集群后，会每隔2秒向父节点报告一次，集群父节点收到报告后，认为该子节点是可用的子节点，且该子节点会出现在集群服务器的“集群成员列表”中。当客户端或 GIS 应用服务器向集群服务器（父节点）发送请求时，集群服务器会基于负载均衡原则将任务分配给各个集群成员（子节点），如下图所示。集群成员响应请求并将响应的结果返回给集群服务器，集群服务器再将收到的响应结果返回给发送请求的客户端或 GIS 应用服务器。例如客户端浏览地图时，收到的地图切片可能来自不同的集群成员，而不是仅来自客户端请求的集群服务器。在以下情况集群服务器会判定集群成员超时，不会给该成员分配任务或将已分配的请求任务转发给其他节点处理：</p>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1">如果集群成员超过2秒未向集群服务器报告，即连接超时，则集群服务器会认为该成员无效；</li>
+    <li class="SymbolList1">如果集群成员响应请求的时间超过2分钟，即响应超时，则集群服务器会认为该成员响应超时，会将请求转发给其他节点处理。</li>
+  </ul>
+  <p class="myNormal">其中，连接超时和响应超时的时间设置都可以通过配置文件来设置，详见<a class="contentpagehyperlink" href="../Subject_introduce/Cluster/ClusterManagement/ManagerClusterwithXML.htm">利用配置文件管理集群</a>。</p>
+  <p class="myNormal">关于集群体系内部通信机制的详细介绍，请参考<a class="contentpagehyperlink" href="../Subject_introduce/Cluster/clusterCommunicate.htm">集群体系通信机制</a>。</p>
+  <p class="ImageP"><img alt="" border="0" height="396" src="../assets/images/Server_Service_Management/clusterdiagram.png" style="border: none;" width="415"/></p>
+  <p class="ImageP">图2 集群通信机制</p>
+  <h2><a id="使用集群"></a>使用集群</h2>
+  <p class="myNormal">GIS 应用服务器是为客户端直接提供 GIS 服务的服务端，通过使用集群可以提升 GIS 服务的性能和负载量，集群系统将以本机 GIS 应用服务器为出口向客户端提供高性能的服务。</p>
+  <p class="myNormal"><span style="font-weight: bold;">GIS 应用服务器</span>使用集群的方式有以下两种：</p>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1"><a id="使用本地集群服务"></a>使用本地集群服务，如图3-1所示，即集群的父节点作为 GIS 应用服务器对外提供服务，客户端可以直接访问集群父节点；</li>
+    <li class="SymbolList1"><a id="使用其他集群服务"></a>使用其他集群服务，如图3-2所示，即 GIS 应用服务器本身不属于集群服务的一部分，它的作用是接收客户端请求，并转发给集群服务器父节点处理，本身只起到转发请求的作用。</li>
+  </ul>
+  <p class="myNormal"> </p>
+  <table align="center" cellspacing="0" class="cmTable" width="80%">
+    <colgroup>
+      <col style="width: 50%;"/>
+      <col style="width: 50%;"/>
+    </colgroup>
+    <tbody>
+      <tr>
+        <td>
+          <p style="text-align: center;"><img alt="" border="0" height="321" src="../assets/images/Server_Service_Management/cluster2.png" style="border: none;" width="373"/></p>
+        </td>
+        <td>
+          <p style="text-align: center;"><img alt="" border="0" height="379" src="../assets/images/Server_Service_Management/cluster1.png" style="border: none;" width="373"/></p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p style="text-align: center;">图3-1 使用本地集群服务</p>
+        </td>
+        <td>
+          <p class="ImageP">图3-2 使用其他集群服务</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><a id="配置集群"></a>配置集群</h2>
+  <p class="myNormal">多个 GIS 服务器可以通过搭建集群，提高性能。默认情况下，SuperMap iServer 的 GIS 服务器均开启集群功能，随时可以接受子节点加入。如图 3-1 所示，标识 2 直接加入标识 1 的集群服务，就形成了一个简单的集群。值得说明的是，标识 1 支持多个 GIS 服务器的加入，同时标识 1 还可以加入别的集群（此时，就构成了多层集群）。</p>
+  <h3>集群类型</h3>
+  <ol style="list-style: decimal;">
+    <li>服务集群：用以提升 GIS服务的并发和性能，典型应用：分布式切图服务。</li>
+    <li>分布式计算集群：用以执行分布式分析服务。<span style="font-weight: bold;">注：执行分布式分析计算的节点只能有一个，切换执行节点需手动操作。</span></li>
+  </ol>
+  <h3><a id="cluster_security"></a>安全控制</h3>
+  <p class="myNormal">集群父节点（如标识 1 所示）即集群服务器，其主要职责是监听和协调子节点执行相关任务，可以对整个集群系统进行安全控制，可以查看集群成员（子节点）并决定是否允许其加入集群。集群父节点可以“开启”安全控制，来控制子节点的加入。</p>
+  <p class="myNormal">如果父节点开启了安全控制，需设置对应的安全密钥，此时：</p>
+  <ol class="List" style="list-style: decimal;">
+    <li class="List">子节点在加入集群时，必须经过父节点“允许”才能加入；</li>
+    <li class="List">子节点加入集群时就必须输入正确的 Token。</li>
+  </ol>
+  <p class="myNormal">开启安全控制后，在节点列表中，点击子节点对应的“允许加入集群”按钮，可以允许子节点加入集群，点击“禁止加入集群”按钮可以禁止子节点加入集群。</p>
+  <p class="myNormal" style="font-weight: bold;"><span style="font-weight: bold;">注：</span></p>
+  <ul>
+    <li style="font-weight: bold;">配置集群时，本机节点会自动加入集群服务器中。</li>
+    <li style="font-weight: bold;">同一服务地址只能加入集群一次。</li>
+  </ul>
+  <h3>节点列表</h3>
+  <p class="myNormal">在配置集群页面可以查看集群的节点列表，包括“普通节点”。点击“查看服务详情”可以看到在当前集群体系中当前子节点所提供的服务实例。</p>
+  <p class="myNormal" style="font-weight: bold;">注：如果已经开启安全控制，则需要执行“允许加入集群”操作让子节点完成加入集群。</p>
+  <h3>集群转发配置</h3>
+  <p class="myNormal">为提升集群系统请求转发的效率，iServer默认采用异步转发的方式来处理请求。您无须修改任何配置，即可在集群系统中实现请求的异步转发。</p>
+  <p class="myNormal">如果您需要通过自定义配置进一步提升集群系统请求转发的效率，您可以手动修改集群主节点系统配置文件（iserver-system.xml）的配置项，具体为：&lt;clustering&gt;中的&lt;clusterRequestClientSetting&gt;子项。</p>
+  <p class="myNormal">详细配置说明请参考：<a class="contentpagehyperlink" href="../Subject_introduce/Cluster/ClusterManagement/ManagerClusterwithXML.htm">利用配置文件管理集群</a> 之 <a class="contentpagehyperlink" href="../Subject_introduce/Cluster/ClusterManagement/ManagerClusterwithXML.htm#requestMode">集群转发参数设置</a>。</p>
+  <h2><a id="加入集群"></a>加入集群</h2>
+  <p class="myNormal">如标识 2 所示的服务器即为集群子节点，加入集群的方式为：</p>
+  <p class="myNormal">访问子节点的服务管理器，点击“集群-加入集群”，进入加入集群页面，点击“加入集群”按钮，然后在弹出窗口中依次填入集群别名、集群服务地址、安全 密钥（集群服务器“开启安全”时必须填写），并选择该节点是否“参与分布式切图”、“执行分布式计算”，点击“确定”按钮完成 GIS 服务器向父节点的注册。<span style="color: Transparent;">（单机多进程集群的情况下，子节点向父节点的注册不受任何安全限制。）</span></p>
+  <h2><a id="搭建集群时的注意事项"></a>搭建集群时的注意事项</h2>
+  <ol class="ListInParagraph" style="list-style: decimal;">
+    <li class="ListInParagraph">如果集群包含的 GIS 服务器未使用 SuperMap iServer 产品包中带的 SuperMap iObjects Java，而是独立的 SuperMap Object Java，当使用地图服务进行出图时，可能会出现图片错位的情况。解决这一问题，需要进行如下设置：打开【SuperMap iObjects Java 安装目录】\Bin\SuperMap.xml 文件，把 CustomMapRatioEnable 参数设为 true，即：&lt;CustomMapRatioEnable&gt;true&lt;/CustomMapRatioEnable&gt;。</li>
+    <li class="ListInParagraph">SuperMap iServer 是以 Servlet 的形式部署在 Servlet 容器中的，如果作为集群子节点的 SuperMap iServer 被迁移到另外一个端口不同的 Servlet 容器下时，需要手工更改 iserver-system.xml 配置文件（参见：<a class="contentpagehyperlink" href="../Appendix/iServer_configInfo.htm">iServer 配置文件说明</a>）中&lt;host&gt;节点的 port 属性为新端口号（否则，就需要访问一次该集群子节点的服务，才能使该集群子节点被识别）</li>
+    <li class="ListInParagraph">配置单机集群时，需要保证父节点、各个子节点分布使用不同的端口。以 SuperMap iServer 在 windows 平台的 ZIP 产品包为例，两个产品包之间配置集群时，需要保证不同产品包中的 Tomcat 使用不同的端口。修改 zip 包中 Tomcat 的端口号方法为修改%SuperMap iServer_HOME%/conf/server.xml 中的相关端口，如：&lt;Server port=&quot;8016&quot; ……&gt;、&lt;Connector port=&quot;8091&quot; …… redirectPort=&quot;8454&quot; ……&gt;。</li>
+    <li class="ListInParagraph">为了更安全地在 iServer 中使用 standalone 类型的 Spark 集群，iServer 提供了安全配置，详见：<a class="contentpagehyperlink" href="Spark_cluster/other_spark_env.htm">Spark 集群安全配置</a></li>
+  </ol>
+  <h2 class="myNormal"><a id="配置单机集群"></a>配置单机集群</h2>
+  <p class="myNormal">单机集群的配置方法分为以下两种：</p>
+  <h3>使用多个 iServer 产品包配置单机集群</h3>
+  <p class="myNormal">以 SuperMap iServer 在 windows 平台的 ZIP 产品包为例，两个产品包之间配置集群时，需要保证不同产品包中的 Tomcat 使用不同的端口。修改 zip 包中 Tomcat 的端口号方法为修改%SuperMap iServer_HOME%/conf/server.xml 中的相关端口，如：&lt;Server port=&quot;8016&quot; ……&gt;、&lt;Connector port=&quot;8091&quot; …… redirectPort=&quot;8454&quot; ……&gt;。</p>
+  <p class="myNormal">只要保证多个产品包的端口不同，就能分别启动服务，然后通过查看<a class="contentpagehyperlink" href="clusterUsage.htm#配置集群">配置集群</a>页面来搭建一个集群体系。</p>
+  <p class="myNormal">此方法可以用于其他中间件下的单机集群配置。</p>
+  <h3>使用单个 iServer 产品包配置单机集群</h3>
+  <p class="myNormal">SuperMap iServer 在 Tomcat 下支持指定配置目录启动，因此只需要设置不同的配置文件就可以使用单个 iServer 产品包配置单机集群。</p>
+  <p class="myNormal">具体使用方法为：</p>
+  <ol class="ListInParagraph" style="list-style: decimal;">
+    <li class="ListInParagraph">准备配置文件</li>
+  </ol>
+  <ul class="SymbolList2" style="list-style: disc;">
+    <li class="SymbolList2">SuperMap iServer 的配置目录，包含了 SuperMap iServer 中的所有配置信息。非 war 包中，默认的配置目录位于 %SuperMap iServer_HOME%/webapps/iserver/WEB-INF（不含 lib），war 包中，默认的配置目录位于 %iserver 服务目录%/WEB-INF（不含 lib）。示例：直接拷贝产品包中的 WEB-INF（不含 lib）配置目录，重命名并存储为&quot;D:\WEB-INF1&quot;。</li>
+    <li class="SymbolList2">Tomcat 的 server.xml，%SuperMap iServer_HOME%/conf/server.xml 包含了启动 iServer 服务时的端口设置，不同的配置文件需要修改为不同的端口。示例：直接拷贝产品包中的 server.xml，修改端口并另存为 server1.xml。</li>
+  </ul>
+  <ol class="ListInParagraph" start="2" style="list-style: decimal;">
+    <li class="ListInParagraph">启动、停止服务</li>
+  </ol>
+  <p class="myNormal">windows 环境下，可在 【SuperMap iServer 安装目录】\bin 路径下执行如下命令来同时定制 Tomcat 的 server.xml 和 SuperMap iServer 的配置文件：</p>
+  <ul class="SymbolList1">
+    <li class="SymbolList1">
+      <p class="myNormal">如您已配置 %JAVA_OPTS% 环境变量，请执行以下命令以启动服务：</p>
+    </li>
+  </ul>
+  <p class="myCodeP">set JAVA_OPTS=%JAVA_OPTS% -Diserver.config=&quot;D:/WEB-INF1&quot;</p>
+  <p class="myCodeP">startup.bat -config=&quot;D:/server1.xml&quot;</p>
+  <ul class="SymbolList1">
+    <li class="SymbolList1">
+      <p class="myNormal">如您未配置 %JAVA_OPTS% 环境变量，请执行以下命令以启动服务：</p>
+    </li>
+  </ul>
+  <p class="myCodeP">set JAVA_OPTS=-Diserver.config=&quot;D:/WEB-INF1&quot;</p>
+  <p class="myCodeP">startup.bat -config=&quot;D:/server1.xml&quot;</p>
+  <ol class="ListInParagraph" start="3" style="list-style: decimal;">
+    <li class="ListInParagraph">停止服务：</li>
+  </ol>
+  <p class="myCodeP">shutdown.bat -config=&quot;D:/server1.xml&quot;</p>
+  <p class="myNormal"> </p>
+  <p class="myNormal"> </p>
+
+</div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = ".."
+    gCommonRootRelPath = ".."
+    gTopicId = "5.3"
+  
+//]]></script>
+
+  <script src="../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../whxdata/layoutconfig.js"></script>
+  <script src="../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

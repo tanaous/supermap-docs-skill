@@ -1,0 +1,1674 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <script src="scripts/css-vars-ponyfill.min.js"></script>
+    <script src="../../examples/js/utils.js"></script>
+    <script src="../../examples/js/theme/themeConfig.js"></script>
+    <script src="../../examples/js/theme/theme.js"></script>
+<script type="text/javascript">
+
+</script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+        <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/adminlte/app.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="styles/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/adminlte/AdminLTE.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/adminlte/skin-blue.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jaguar.css">
+    
+
+</head>
+<body class='sidebar-mini'>
+
+<div id="wrap" class="clearfix">
+
+    <div class="navigationDiv">
+    </div>
+    <div class="main content-wrapper">
+        <h1 class="page-title" data-filename="NetworkAnalyst3DService.html">Class: NetworkAnalyst3DService</h1>
+        
+
+
+
+<section>
+    
+<header>
+    <h2></span>NetworkAnalyst3DService
+    
+    </h2>
+    
+        <div class="class-description"><p>3D 网络分析服务类。提供方法：汇查找、源查找、下游追踪资源、上游追踪资源、上游关键设施查找等。</p></div>
+    
+</header>  
+
+<article>
+    <div class="container-overview">
+    
+    
+    
+        
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="NetworkAnalyst3DService">
+          
+          
+          new NetworkAnalyst3DService<span class="signature">(url, options)</span>
+        </h4>
+        
+        <h5>Usage</h5>
+        
+
+<pre class="prettyprint">
+<code>// 浏览器
+&lt;script type="text/javascript" src="https://iclient.supermap.io/dist/leaflet/iclient-leaflet.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+  new L.supermap.NetworkAnalyst3DService(url, options);
+    // 弃用的写法
+  L.supermap.networkAnalyst3DService(url, options);
+  
+&lt;/script&gt;
+
+<span class="nopretty">// ES6 Import</span>
+import { NetworkAnalyst3DService } from '@supermapgis/iclient-leaflet';
+
+new NetworkAnalyst3DService(url, options);
+</code>
+</pre>
+
+
+        
+
+        
+        <div class="tag-source">
+            leaflet/services/NetworkAnalyst3DService.js, line 7
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>url</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>服务地址。请求网络分析服务，URL 应为:
+&quot;http://localhost:8090/iserver/services/components-rest/rest/networkanalyst/RoadNet@Changchun&quot;。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>参数。</p>
+                
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Default</th>
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>proxy</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>服务代理地址。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>withCredentials</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    false
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>请求是否携带 cookie。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>crossOrigin</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>是否允许跨域请求。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>headers</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>请求头。</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+            </td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h5>Example</h5>
+        
+
+    
+    <pre class="prettyprint"><code>new NetworkAnalyst3DService(url)
+ .sinksFacilityAnalyst(params,function(result){
+    //doSomething
+})</code></pre>
+    
+
+    
+
+</dd>
+
+    
+    </div>
+    
+    
+        <h3 class="subsection-title">Extends</h3>
+        <ul>
+            
+            
+            
+            
+            <li><a href="ServiceBase.html">ServiceBase</a></li>
+            
+            
+        </ul>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+        <h3 class="subsection-title">Events</h3>
+
+        <dl>
+            
+<dt>
+    <div class="nameContainer inherited">
+        <h4 class="name" id="event:destroy">
+          
+              <span class="inherited"><a href="ServiceBase.html#event:destroy">inherited</a></span>
+          
+          
+          destroy
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            leaflet/services/ServiceBase.js, line 52
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>资源释放成功后触发。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+<dl class="details">
+    
+        
+        <h5 class="subsection-title">Properties:</h5>
+        
+        <dl>
+
+<table class="props">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name" 
+                ><code>this</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="ServiceBase.html">ServiceBase</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            <td class="description last"> <p>this 对象。</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table></dl>
+        
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer inherited">
+        <h4 class="name" id="event:initialized">
+          
+              <span class="inherited"><a href="ServiceBase.html#event:initialized">inherited</a></span>
+          
+          
+          initialized
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            leaflet/services/ServiceBase.js, line 39
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>构造函数构造成功后触发。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+<dl class="details">
+    
+        
+        <h5 class="subsection-title">Properties:</h5>
+        
+        <dl>
+
+<table class="props">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name" 
+                ><code>this</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="ServiceBase.html">ServiceBase</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            <td class="description last"> <p>this 对象。</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table></dl>
+        
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</dd>
+
+        </dl>
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+        
+        <dl>
+            
+<dt>
+    <div class="nameContainer inherited">
+        <h4 class="name" id="destroy">
+          
+              <span class="inherited"><a href="ServiceBase.html#destroy">inherited</a></span>
+          
+          
+          destroy<span class="signature">()</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            leaflet/services/ServiceBase.js, line 47
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>释放资源，将引用的资源属性置空。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="sinksFacilityAnalyst">
+          
+          
+          sinksFacilityAnalyst<span class="signature">(params, <span class="optional">callback</span>)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{Promise}</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            leaflet/services/NetworkAnalyst3DService.js, line 35
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>汇查找服务。<br>
+汇查找是指即从给定弧段或节点出发，根据流向查找流出该弧段或节点的下游汇点，并返回给定弧段或节点到达该汇的最小耗费路径所包含的弧段、结点及耗费。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>params</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="FacilityAnalystSinks3DParameters.html">FacilityAnalystSinks3DParameters</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                    
+                    
+                        
+                    
+                
+                <p>汇查找资源参数类。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="global.html#RequestCallback">RequestCallback</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>回调函数，该参数未传时可通过返回的 promise 获取结果。</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>
+                        
+                    
+            </td>
+            <td class="description last">Promise 对象。</td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+
+    
+
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="sourcesFacilityAnalyst">
+          
+          
+          sourcesFacilityAnalyst<span class="signature">(params, <span class="optional">callback</span>)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{Promise}</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            leaflet/services/NetworkAnalyst3DService.js, line 47
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>源查找服务。<br>
+源查找是根据流向查找流向指定弧段或节点的网络源头，并返回该源到达指定弧段或结点的最小耗费路径所包含的弧段、结点及耗费。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>params</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="FacilityAnalystSources3DParameters.html">FacilityAnalystSources3DParameters</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                    
+                    
+                        
+                    
+                
+                <p>源查找资源参数类。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="global.html#RequestCallback">RequestCallback</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>回调函数，该参数未传时可通过返回的 promise 获取结果。</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>
+                        
+                    
+            </td>
+            <td class="description last">Promise 对象。</td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+
+    
+
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="traceDownFacilityAnalyst">
+          
+          
+          traceDownFacilityAnalyst<span class="signature">(params, <span class="optional">callback</span>)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{Promise}</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            leaflet/services/NetworkAnalyst3DService.js, line 71
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>下游追踪资源服务。<br>
+下游追踪分析是指根据给定的弧段 ID 或结点 ID 进行下游追踪，即查找给定弧段的下游，返回下游包含的弧段、结点及总耗费。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>params</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="FacilityAnalystTracedown3DParameters.html">FacilityAnalystTracedown3DParameters</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                    
+                    
+                        
+                    
+                
+                <p>下游追踪资源参数类。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="global.html#RequestCallback">RequestCallback</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>回调函数，该参数未传时可通过返回的 promise 获取结果。</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>
+                        
+                    
+            </td>
+            <td class="description last">Promise 对象。</td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+
+    
+
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="traceUpFacilityAnalyst">
+          
+          
+          traceUpFacilityAnalyst<span class="signature">(params, <span class="optional">callback</span>)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{Promise}</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            leaflet/services/NetworkAnalyst3DService.js, line 59
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>上游追踪资源服务。<br>
+上游追踪分析是指根据给定的弧段 ID 或结点 ID 进行上游追踪，即查找给定弧段的上游，返回上游包含的弧段、结点及总耗费。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>params</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="FacilityAnalystTraceup3DParameters.html">FacilityAnalystTraceup3DParameters</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                    
+                    
+                        
+                    
+                
+                <p>上游追踪资源参数类。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="global.html#RequestCallback">RequestCallback</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>回调函数，该参数未传时可通过返回的 promise 获取结果。</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>
+                        
+                    
+            </td>
+            <td class="description last">Promise 对象。</td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+
+    
+
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="upstreamFacilityAnalyst">
+          
+          
+          upstreamFacilityAnalyst<span class="signature">(params, <span class="optional">callback</span>)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{Promise}</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            leaflet/services/NetworkAnalyst3DService.js, line 83
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>上游关键设施查找服务。<br>
+上游关键设施查找即查找给定弧段或节点的上游中的关键设施结点，返回关键设施结点 ID 数组及其下游弧段 ID 数组。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>params</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="FacilityAnalystUpstream3DParameters.html">FacilityAnalystUpstream3DParameters</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                    
+                    
+                        
+                    
+                
+                <p>上游关键设施查找资源参数类。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="global.html#RequestCallback">RequestCallback</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>回调函数，该参数未传时可通过返回的 promise 获取结果。</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>
+                        
+                    
+            </td>
+            <td class="description last">Promise 对象。</td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+
+    
+
+</dd>
+
+        </dl>
+    
+    
+    
+
+</article>
+
+</section>  
+
+
+
+
+
+        <footer>
+            Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc</a> on Fri Sep 26 2025 09:50:29 GMT+0800 (中国标准时间)
+        </footer>
+    </div>
+</div>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>

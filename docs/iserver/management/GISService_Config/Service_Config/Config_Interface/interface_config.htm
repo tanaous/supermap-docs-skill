@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../../../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../../../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../../../../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../../../iserver-icon.png"/>
+    
+  <script data-relpath="../../../.." src="../../../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Language" content="zh-CN"/>
+  <meta name="topic-check-list" content="Ran Smart Index"/>
+  <meta name="topic-status" content="Complete"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>通过 XML 文件配置服务接口</title>
+  <link rel="StyleSheet" href="../../../../assets/css/SuperMapHelp.css" type="text/css"/>
+  <script type="text/javascript" src="../../../../assets/js/shCore.js"></script>
+  <script type="text/javascript" src="../../../../assets/js/shBrushJava.js"></script>
+  <script type="text/javascript" src="../../../../assets/js/shBrushJScript.js"></script>
+  <script type="text/javascript" src="../../../../assets/js/shBrushXml.js"></script>
+  <script type="text/javascript" src="../../../../assets/js/ConfigiServer6R.js"></script>
+  <meta name="rh-index-keywords" content="服务接口,通过 XML 文件配置服务接口,WFS"/>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../../../../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../assets/css/homeButtom.css"/>
+  <script src="../../../../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../../../../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../../../../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../../../../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../../../../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../../../../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../../../../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../../../../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../../../../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <p class="myNormal">服务接口配置了在服务接口层支持的按不同服务规范发布成的网络服务，比如 REST 服务、WMS 服务、WFS 服务、WMTS 服务、WCS 服务、WPS 服务、OGC API 服务以及用户自定义类型的服务等。可以通过修改服务配置文件中的服务接口配置文件 iserver-services-interfaces.xml（参见<a class="contentpagehyperlink" href="../../../../Appendix/iServer_configInfo.htm">iServer 配置文件说明</a>）来修改服务中使用的接口。服务接口的配置是在&lt;interface&gt;节点中进行的，不同类型的服务接口有不同的配置项。关于不同类型接口配置的详细参数介绍，请参考<a class="contentpagehyperlink" href="interface_setting.htm">通过服务管理器配置服务接口</a>。</p>
+  <h2>接口配置文件结构</h2>
+  <p class="myNormal">&lt;interface&gt;的 name 属性标识了该服务接口，它是必选参数，通过它可以访问具体类型的服务，请参见<a class="contentpagehyperlink" href="../../../../Service_introduce/URI_Config.htm">服务的 URI 设置</a>。</p>
+  <p class="myNormal">&lt;interface&gt;节点在配置文件中的结构如下所示：</p>
+  <pre class="brush:xml">&lt;application&gt;
+                ...
+                &lt;interfaces&gt;
+                        ...
+                        &lt;interface&gt;
+                             ...
+                        &lt;interface/&gt;
+                &lt;/interfaces&gt;
+&lt;/application&gt;</pre>
+  <p class="myNormal">不同服务接口的类型通过定义类来区别，配置信息通过配置类来定义，详见<a class="contentpagehyperlink" href="#表1_服务接口的实现与配置">表1_服务接口的实现与配置</a>。</p>
+  <p style="text-align: center;"><a id="表1_服务接口的实现与配置"></a>表1 服务接口的实现与配置</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="80%">
+    <colgroup>
+      <col style="width: 20%;"/>
+      <col style="width: 20%;"/>
+      <col style="width: 30%;"/>
+      <col style="width: 30%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>基本类型</td>
+        <td>版本</td>
+        <td>服务接口实现类</td>
+        <td>服务接口配置类</td>
+      </tr>
+      <tr class="t2Row">
+        <td>REST REST/JSR ArcGIS REST<span style="vertical-align: Super;">1</span> Baidu REST<span style="vertical-align: Super;">1</span> Google REST<span style="vertical-align: Super;">1</span> OSMRestServlet<span style="vertical-align: Super;">1</span> TMSRestServlet<span style="vertical-align: Super;">1</span></td>
+        <td>--</td>
+        <td>com.supermap.services.rest.RestServlet com.supermap.services.rest.JaxrsServletForJersey com.supermap.services.rest.AGSRestServlet com.supermap.services.rest.BaiduRestServlet com.supermap.services.rest.GoogleRestServlet com.supermap.services.rest.OSMRestServlet com.supermap.services.rest.TMSRestServlet    </td>
+        <td>com.supermap.services.rest.RestConfig com.supermap.services.rest.JaxrsConfigForJersey com.supermap.services.rest.AGSRestConfig</td>
+      </tr>
+      <tr class="t1Row">
+        <td>WMS</td>
+        <td>1.1.1 1.3.0</td>
+        <td>com.supermap.services.wms.WMSServlet</td>
+        <td>com.supermap.services.wms.WMSConfig</td>
+      </tr>
+      <tr class="t2Row">
+        <td>WFS</td>
+        <td>1.0.0 2.0.0</td>
+        <td>com.supermap.services.wfs.WFSServlet</td>
+        <td>com.supermap.services.wfs.WFSConfig</td>
+      </tr>
+      <tr class="t1Row">
+        <td>WCS</td>
+        <td>1.1.1 1.1.2</td>
+        <td>com.supermap.services.wcs.WCSServlet</td>
+        <td>com.supermap.services.wcs.WCSConfig</td>
+      </tr>
+      <tr class="t2Row">
+        <td>WMTS</td>
+        <td>1.0.0</td>
+        <td>com.supermap.services.wmts.WMTSServlet</td>
+        <td>com.supermap.services.wmts.WMTSConfig</td>
+      </tr>
+      <tr class="t1Row">
+        <td>WPS</td>
+        <td>1.0.0</td>
+        <td>com.supermap.services.wps.WPSServlet</td>
+        <td>com.supermap.services.wps.WPSConfig</td>
+      </tr>
+      <tr class="t2Row">
+        <td>OGC API</td>
+        <td>1.0</td>
+        <td>com.supermap.services.ogcapi.OGCAPIServlet</td>
+        <td>com.supermap.services.ogcapi.OGCAPIConfig</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="myNormal" style="font-weight: bold;">注1：iServer高级版，iEdge提供该接口。</p>
+  <h2>配置 REST 接口</h2>
+  <p class="myNormal">SuperMap iServer 提供了基于 Restlet 和 Jersey 的两种 REST 接口，分别对应两个接口实现类 RestServlet 和 JaxrsServletForJersey。</p>
+  <p class="myNormal">配置一个基于 Restlet 的 REST 接口如下所示：</p>
+  <pre class="brush:xml">&lt;interface class=&quot;com.supermap.services.rest.RestServlet&quot; name=&quot;rest&quot;&gt; 
+        &lt;config class=&quot;com.supermap.services.rest.RestConfig&quot;&gt; 
+                &lt;accessControlAllowOrigin&gt;&lt;/accessControlAllowOrigin&gt; 
+        &lt;/config&gt; 
+&lt;/interface&gt; </pre>
+  <p class="myNormal">其中，&lt;interface&gt;节点的 class 属性标识接口类型，对应实现类 RestServlet ，&lt;config&gt;节点是该 REST 服务接口对应的配置项，即接口配置类<a class="contentpagehyperlink" href="../../../../mergedProjects/iServerJavadoc/com/supermap/services/rest/RestConfig.html">RestConfig</a>。主要参数说明：</p>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1">&lt;accessControlAllowOrigin&gt;：配置 REST 服务可以被哪些服务跨域访问，支持填入一个域名。值为“*”时，表示所有的服务都可以跨域访问当前 REST 服务。</li>
+  </ul>
+  <p class="myNormal">配置一个基于 Jersey 的 REST 接口如下所示：</p>
+  <pre class="brush:xml">&lt;interface class=&quot;com.supermap.services.rest.JaxrsServletForJersey&quot; name=&quot;restjsr&quot;&gt; 
+        &lt;config class=&quot;com.supermap.services.rest.JaxrsConfigForJersey&quot;&gt; 
+                &lt;accessControlAllowOrigin&gt;&lt;/accessControlAllowOrigin&gt; 
+        &lt;/config&gt; 
+&lt;/interface&gt; </pre>
+  <p class="myNormal">其中，&lt;interface&gt;节点的 class 属性标识接口类型，对应实现类 JaxrsServletForJersey，&lt;config&gt;节点是该 REST 服务接口对应的配置项，即接口配置类<a class="contentpagehyperlink" href="../../../../mergedProjects/iServerJavadoc/com/supermap/services/rest/JaxrsConfigForJersey.html">JaxrsConfigForJersey</a>。</p>
+  <p class="myNormal">配置一个 ArcGIS REST 接口如下所示：</p>
+  <pre class="brush:xml">&lt;interface class=&quot;com.supermap.services.rest.AGSRestServlet&quot; name=&quot;arcgisrest&quot;&gt; 
+      &lt;config class=&quot;com.supermap.services.rest.AGSRestConfig&quot;&gt; 
+        &lt;accessControlAllowOrigin&gt;&lt;/accessControlAllowOrigin&quot;&gt;
+        &lt;notUseTransparentTile&gt;false&lt;/notUseTransparentTile&quot;&gt;
+      &lt;/config&gt; 
+    &lt;/interface&gt; </pre>
+  <p class="myNormal">其中，&lt;interface&gt;节点的 class 属性标识接口类型，对应实现类 AGSRestServlet，&lt;config&gt;节点是 ArcGIS  REST 服务接口对应的配置项，即接口配置类 AGSRestConfig。主要配置参数如下：</p>
+  <p class="myNormal">notUseTransparentTile：设置tile资源返回图片的背景是否透明。默认：false，即透明。</p>
+  <p class="myNormal">配置一个Baidu REST接口如下所示：</p>
+  <pre class="brush:xml">    &lt;interface class=&quot;com.supermap.services.rest.BaiduRestServlet&quot; name=&quot;baidurest&quot;&gt;
+      &lt;config class=&quot;com.supermap.services.rest.RestConfig&quot;&gt;   
+        &lt;accessControlAllowOrigin&gt;&lt;/accessControlAllowOrigin&gt;
+      &lt;/config&gt; 
+    &lt;/interface&gt; </pre>
+  <p class="myNormal">其中，&lt;interface&gt;节点的 class 属性标识接口类型，对应实现类BaiduRestServlet，&lt;config&gt;节点是 Baidu  REST 服务接口对应的配置项，即接口配置类 <a class="contentpagehyperlink" href="../../../../mergedProjects/iServerJavadoc/com/supermap/services/rest/RestConfig.html">RestConfig</a>。</p>
+  <p class="myNormal">配置一个Google REST接口如下所示：</p>
+  <pre class="brush:xml">&lt;interface class=&quot;com.supermap.services.rest.GoogleRestServlet&quot; name=&quot;googlerest&quot;&gt; 
+      &lt;config class=&quot;com.supermap.services.rest.RestConfig&quot;&gt;   
+        &lt;accessControlAllowOrigin&gt;&lt;/accessControlAllowOrigin&gt;
+      &lt;/config&gt; 
+    &lt;/interface&gt;</pre>
+  <p class="myNormal">其中，&lt;interface&gt;节点的 class 属性标识接口类型，对应实现类GoogleRestServlet，&lt;config&gt;节点是 Google  REST 服务接口对应的配置项，即接口配置类 <a class="contentpagehyperlink" href="../../../../mergedProjects/iServerJavadoc/com/supermap/services/rest/RestConfig.html">RestConfig</a>。</p>
+  <p class="myNormal">配置一个OSM REST接口如下所示：</p>
+  <pre class="brush:xml">&lt;interface class=&quot;com.supermap.services.rest.OSMRestServlet&quot; name=&quot;osmrest&quot;&gt; 
+      &lt;config class=&quot;com.supermap.services.rest.RestConfig&quot;&gt;   
+        &lt;accessControlAllowOrigin&gt;&lt;/accessControlAllowOrigin&gt;
+      &lt;/config&gt; 
+    &lt;/interface&gt;</pre>
+  <p class="myNormal">其中，&lt;interface&gt;节点的 class 属性标识接口类型，对应实现类OSMRestServlet，&lt;config&gt;节点是 OSM  REST 服务接口对应的配置项，即接口配置类 <a class="contentpagehyperlink" href="../../../../mergedProjects/iServerJavadoc/com/supermap/services/rest/RestConfig.html">RestConfig</a>。</p>
+  <p class="myNormal">配置一个TMS REST接口如下所示：</p>
+  <pre class="brush:xml">&lt;interface class=&quot;com.supermap.services.rest.TMSRestServlet&quot; name=&quot;tmsrest&quot;&gt; 
+      &lt;config class=&quot;com.supermap.services.rest.RestConfig&quot;&gt;   
+        &lt;accessControlAllowOrigin&gt;&lt;/accessControlAllowOrigin&gt;
+      &lt;/config&gt; 
+    &lt;/interface&gt;</pre>
+  <p class="myNormal">其中，&lt;interface&gt;节点的 class 属性标识接口类型，对应实现类TMSRestServlet，&lt;config&gt;节点是 TMS  REST 服务接口对应的配置项，即接口配置类 <a class="contentpagehyperlink" href="../../../../mergedProjects/iServerJavadoc/com/supermap/services/rest/RestConfig.html">RestConfig</a>。</p>
+  <p class="myNormal" style="font-weight: bold;">注：在 iServer 中使用 ArcGIS、Baidu、Google、OSM、TMS REST 服务接口，需要 iServer 高级版，iEdge 可直接使用。</p>
+  <h2><a id="WMS"></a>配置 WMS 服务接口</h2>
+  <p class="myNormal">SuperMap iServer 提供支持 WMS 1.1.1、1.3.0 标准的服务。配置一个 WMS 1.1.1 接口如下所示：</p>
+  <p class="myCodeP">&lt;interface class=&quot;com.supermap.services.wms.WMSServlet&quot; name=&quot;wms111&quot;&gt;</p>
+  <p class="myCodeP">      &lt;config class=&quot;com.supermap.services.wms.WMSConfig&quot;&gt;</p>
+  <p class="myCodeP">        &lt;serviceDescription&gt;</p>
+  <p class="myCodeP">          &lt;keywords/&gt;  </p>
+  <p class="myCodeP">          &lt;contactInformation&gt;</p>
+  <p class="myCodeP">            &lt;person&gt;联系人&lt;/person&gt;  </p>
+  <p class="myCodeP">            &lt;organization&gt;联系单位&lt;/organization&gt;  </p>
+  <p class="myCodeP">            &lt;position&gt;位置&lt;/position&gt;  </p>
+  <p class="myCodeP">            &lt;addressType&gt;地址类型&lt;/addressType&gt;  </p>
+  <p class="myCodeP">            &lt;address&gt;地址&lt;/address&gt;  </p>
+  <p class="myCodeP">            &lt;city&gt;城市&lt;/city&gt;  </p>
+  <p class="myCodeP">            &lt;stateOrProvince&gt;省或地区&lt;/stateOrProvince&gt;  </p>
+  <p class="myCodeP">            &lt;postCode&gt;省或地区&lt;/postCode&gt;  </p>
+  <p class="myCodeP">            &lt;country&gt;国家&lt;/country&gt;  </p>
+  <p class="myCodeP">            &lt;voiceTelephone&gt;联系电话&lt;/voiceTelephone&gt;  </p>
+  <p class="myCodeP">            &lt;facsimileTelephone&gt;传真&lt;/facsimileTelephone&gt;  </p>
+  <p class="myCodeP">            &lt;electronicMailAddress&gt;电子邮件地址&lt;/electronicMailAddress&gt;</p>
+  <p class="myCodeP">          &lt;/contactInformation&gt;</p>
+  <p class="myCodeP">        &lt;/serviceDescription&gt;  </p>
+  <p class="myCodeP">        &lt;version&gt;1.1.1&lt;/version&gt;  </p>
+  <p class="myCodeP">        &lt;cacheEnabled&gt;false&lt;/cacheEnabled&gt;  </p>
+  <p class="myCodeP">        &lt;sld&gt;</p>
+  <p class="myCodeP">          &lt;pointStyles/&gt;  </p>
+  <p class="myCodeP">          &lt;lineStyles/&gt;  </p>
+  <p class="myCodeP">          &lt;polygonStyles&gt;</p>
+  <p class="myCodeP">            &lt;string&gt;./WEB-INF/config/region.sld&lt;/string&gt;</p>
+  <p class="myCodeP">          &lt;/polygonStyles&gt;  </p>
+  <p class="myCodeP">          &lt;textStyles/&gt;</p>
+  <p class="myCodeP">        &lt;/sld&gt;  </p>
+  <p class="myCodeP">        &lt;useStandardBGColor&gt;false&lt;/useStandardBGColor&gt;</p>
+  <p class="myCodeP">      &lt;/config&gt;</p>
+  <p class="myCodeP">    &lt;/interface&gt;  </p>
+  <p class="myNormal">其中，&lt;interface&gt;节点的 class 属性标识接口类型，对应实现类 WMSServlet，&lt;config&gt;节点是该 WMS 服务接口对应的配置项，即接口配置类<a class="contentpagehyperlink" href="../../../../mergedProjects/iServerJavadoc/com/supermap/services/wms/WMSConfig.html">WMSConfig</a>。主要配置参数如下：</p>
+  <ul style="list-style: disc;">
+    <li class="SymbolList1">&lt;contactInformation&gt; ：联系信息</li>
+    <li class="SymbolList2">&lt;person&gt;：联系人  </li>
+    <li class="SymbolList2">&lt;organization&gt;：联系单位</li>
+    <li class="SymbolList2">&lt;position&gt;：位置  </li>
+    <li class="SymbolList2">&lt;addressType&gt;：地址类型  </li>
+    <li class="SymbolList2">&lt;address&gt;：地址  </li>
+    <li class="SymbolList2">&lt;city&gt;：城市  </li>
+    <li class="SymbolList2">&lt;stateOrProvince&gt;：省或地区  </li>
+    <li class="SymbolList2">&lt;postCode&gt;：省或地区  </li>
+    <li class="SymbolList2">&lt;country&gt;：国家</li>
+    <li class="SymbolList2">&lt;voiceTelephone&gt;：联系电话  </li>
+    <li class="SymbolList2">&lt;facsimileTelephone&gt;：传真  </li>
+    <li class="SymbolList2">&lt;electronicMailAddress&gt;：电子邮件地址</li>
+    <li class="SymbolList1">&lt;version&gt;：WMS 服务的版本号，目前支持的版本有1.1.1、1.3.0。</li>
+    <li class="SymbolList1">&lt;crs&gt;：WMS 接口的指定坐标系，当&lt;version&gt;为1.3.0时生效。可选参数。</li>
+    <li class="SymbolList1">&lt;srs&gt;：WMS 接口的指定坐标系，当&lt;version&gt;为1.1.1时生效。可选参数。</li>
+    <li class="SymbolList1">&lt;cacheEnabled&gt;：是否使用缓存。可选参数。</li>
+    <li class="SymbolList1">&lt;sld&gt;：WMS 服务中包含的 SLD 信息，目前支持 WMS 1.1.1 中的点、线、面、文本图层。</li>
+    <li class="SymbolList1">&lt;serviceDescription&gt;：WMS 服务描述信息，可选参数。</li>
+    <li class="SymbolList1">&lt;reverseLayerOrder&gt;：反转图层顺序开关。默认为 true，即在能力文档中显示图层时按图层 id 编号从小到大排列。当设置为 false 时，则按照从大到小排列。</li>
+  </ul>
+  <h2><a id="WFS_服务接口"></a>配置 WFS 服务接口</h2>
+  <p class="myNormal">SuperMap iServer 提供支持 WFS 1.0.0、2.0.0 标准的服务。</p>
+  <p class="myNormal">配置一个 WFS 1.0.0 接口如下所示：</p>
+  <pre class="brush:xml">&lt;interface name=&quot;wfs100&quot; class=&quot;com.supermap.services.wfs.WFSServlet&quot;&gt;
+      &lt;config class=&quot;com.supermap.services.wfs.WFSConfig&quot;&gt;
+          &lt;version&gt;1.0.0&lt;/version&gt;
+          &lt;serviceDescription&gt;
+              &lt;name&gt;SuperMap Web Feature Service&lt;/name&gt;
+              &lt;title&gt;示例 WFS 服务&lt;/title&gt;
+              &lt;serviceAbstract&gt;SuperMap iServer 基于示范数据发布的 WFS 服务&lt;/serviceAbstract&gt;
+              &lt;keywords&gt;
+                  &lt;string&gt;iServer&lt;/string&gt;
+                  &lt;string&gt;Sample Data&lt;/string&gt;
+              &lt;/keywords&gt;
+              &lt;fees&gt;none&lt;/fees&gt;
+              &lt;accessConstraints&gt;none&lt;/accessConstraints&gt;
+         &lt;/serviceDescription&gt;
+      &lt;/config&gt;
+&lt;/interface&gt; </pre>
+  <p style="text-indent: 24px;">配置一个 WFS 2.0.0 接口如下所示：</p>
+  <pre class="brush:xml">&lt;interface name=&quot;wfs200&quot; class=&quot;com.supermap.services.wfs.WFSServlet&quot;&gt;
+      &lt;config class=&quot;com.supermap.services.wfs.WFSConfig&quot;&gt;
+          &lt;version&gt;2.0.0&lt;/version&gt;
+          &lt;identification&gt;
+              &lt;title&gt;示例 WFS 服务&lt;/title&gt;
+              &lt;description&gt;SuperMap iServer 基于示范数据发布的 WFS 服务&lt;/description&gt;
+              &lt;keywords&gt;
+                  &lt;string&gt;iServer&lt;/string&gt;
+                  &lt;string&gt;Sample Data&lt;/string&gt;
+              &lt;/keywords&gt;
+              &lt;fees&gt;none&lt;/fees&gt;
+              &lt;accessConstraints&gt;none&lt;/accessConstraints&gt;
+             &lt;serviceType&gt;OGC WFS&lt;/serviceType&gt;
+             &lt;serviceTypeVersion&gt;2.0.0&lt;/serviceTypeVersion&gt;
+         &lt;/identification&gt;
+         &lt;provider&gt;
+             &lt;providerName&gt;北京超图软件股份有限公司&lt;/providerName&gt;
+             &lt;providerSite&gt;http://www.supermap.com.cn&lt;/providerSite&gt;
+             &lt;serviceContact&gt;
+                 &lt;individualName&gt;联系人姓名&lt;/individualName&gt;
+                 &lt;positionName&gt;联系人职位&lt;/positionName&gt;
+                 &lt;phoneNumber&gt;+86-10-59896655&lt;/phoneNumber&gt;
+                 &lt;faxNumber&gt;+86-10-59896666&lt;/faxNumber&gt;
+                 &lt;deliveryPoint&gt;北京市朝阳区酒仙桥北路甲10号院电子城IT产业园107号楼6层北京超图软件股份有限公司&lt;/deliveryPoint&gt;
+                 &lt;addressCity&gt;北京&lt;/addressCity&gt;
+                 &lt;addressAdministrativeArea&gt;北京&lt;/addressAdministrativeArea&gt;
+                 &lt;addressPostalCode&gt;100015&lt;/addressPostalCode&gt;
+                 &lt;addressCountry&gt;中国&lt;/addressCountry&gt;
+                 &lt;addressElectronicMailAddress&gt;support@supermap.com&lt;/addressElectronicMailAddress&gt;
+             &lt;/serviceContact&gt;
+        &lt;/provider&gt;
+      &lt;/config&gt;
+&lt;/interface&gt; </pre>
+  <p>其中，&lt;interface&gt;节点的 class 属性标识接口类型，对应实现类 WFSServlet，&lt;config&gt;节点是该 WFS 服务接口对应的配置项，即接口配置类<a class="contentpagehyperlink" href="../../../../mergedProjects/iServerJavadoc/com/supermap/services/wfs/WFSConfig.html">WFSConfig</a>。除了通用联系信息外，主要配置参数如下：</p>
+  <ul style="list-style: disc;">
+    <li class="SymbolList1">&lt;maxFeatures&gt; ：用于设置服务器默认返回查询结果条目的最大数量，默认为2000。如果设置为0或-1，则表示默认返回所有记录。</li>
+  </ul>
+  <h2>配置 WMTS 服务接口</h2>
+  <p class="myNormal">SuperMap iServer 提供支持 WMTS 1.0.0 标准的服务，同时提供了一个兼容《地理信息公共服务平台 电子地图数据规范》中地图分级标准的“wmts-china”接口实例，可用于对接天地图等国内地图服务，还提供了兼容 ArcGIS 产品发布的 WMTS 服务的“wmts-arcgis”接口实例，用于提供屏蔽个性化差异后能够兼容 ArcGIS 产品发布的 WMTS 服务的瓦片地图服务。</p>
+  <p class="myNormal">配置一个 WMTS 1.0.0 接口如下所示：</p>
+  <pre class="brush:xml">&lt;interface class=&quot;com.supermap.services.wmts.WMTSServlet&quot; name=&quot;wmts100&quot;&gt; 
+        &lt;config class=&quot;com.supermap.services.wmts.WMTSConfig&quot;&gt; 
+                &lt;customEntireBounds&gt;37401549.97829401,4106688.3416817067,37512864.43126909,4189138.542744882&lt;/customEntireBounds&gt; 
+                                &lt;disableTileMatrixSetLimits&gt;GoogleMapsCompatible,GlobalCRS84Scale&lt;/disableTileMatrixSetLimits&gt; 
+                &lt;epsgsBoundingBoxReversed&gt;4490,4525&lt;/epsgsBoundingBoxReversed&gt; 
+                &lt;identification&gt; 
+                        &lt;title&gt;示例 WMTS 服务&lt;/title&gt;  
+                        &lt;description&gt;SuperMap iServer 6R 基于示范数据发布的 WMTS 服务&lt;/description&gt;  
+                        &lt;keywords&gt; 
+                                &lt;string&gt;iServer 6R&lt;/string&gt;  
+                                &lt;string&gt;Sample Data&lt;/string&gt; 
+                        &lt;/keywords&gt;  
+                        &lt;fees&gt;none&lt;/fees&gt;  
+                        &lt;accessConstraints&gt;none&lt;/accessConstraints&gt;  
+                        &lt;serviceType&gt;OGC WMTS&lt;/serviceType&gt;  
+                        &lt;serviceTypeVersion&gt;1.0.0&lt;/serviceTypeVersion&gt; 
+                &lt;/identification&gt;  
+                &lt;provider&gt; 
+                        &lt;providerName&gt;北京超图软件股份有限公司&lt;/providerName&gt;  
+                        &lt;providerSite&gt;http://www.supermap.com.cn&lt;/providerSite&gt;  
+                        &lt;serviceContact&gt; 
+                                &lt;individualName&gt;联系人姓名&lt;/individualName&gt;  
+                                &lt;positionName&gt;联系人职位&lt;/positionName&gt;  
+                                &lt;phoneNumber&gt;+86-10-59896655&lt;/phoneNumber&gt;  
+                                &lt;faxNumber&gt;+86-10-59896666&lt;/faxNumber&gt;  
+                                &lt;deliveryPoint&gt;北京市朝阳区酒仙桥北路甲10号院电子城 IT 产业园107号楼6层北京超图软件股份有限公司&lt;/deliveryPoint&gt;  
+                                &lt;addressCity&gt;北京&lt;/addressCity&gt;  
+                                &lt;addressAdministrativeArea&gt;北京&lt;/addressAdministrativeArea&gt;  
+                                &lt;addressPostalCode&gt;100015&lt;/addressPostalCode&gt;  
+                                &lt;addressCountry&gt;中国&lt;/addressCountry&gt;  
+                                &lt;addressElectronicMailAddress&gt;support@supermap.com&lt;/addressElectronicMailAddress&gt; 
+                        &lt;/serviceContact&gt; 
+                &lt;/provider&gt;  
+                &lt;tileMatrixSets&gt; 
+                        &lt;com.supermap.services.wmts.TileMatrixSet&gt; 
+                                &lt;wellKnownScaleSet&gt;Custom&lt;/wellKnownScaleSet&gt;  
+                                &lt;scales/&gt;  
+                                &lt;dpi&gt;90.7142857142857&lt;/dpi&gt;  
+                                &lt;tileWidth&gt;256&lt;/tileWidth&gt;  
+                                &lt;tileHeight&gt;256&lt;/tileHeight&gt; 
+                        &lt;/com.supermap.services.wmts.TileMatrixSet&gt;  
+                        &lt;com.supermap.services.wmts.TileMatrixSet&gt; 
+                                &lt;wellKnownScaleSet&gt;GlobalCRS84Scale&lt;/wellKnownScaleSet&gt; 
+                        &lt;/com.supermap.services.wmts.TileMatrixSet&gt;  
+                        &lt;com.supermap.services.wmts.TileMatrixSet&gt; 
+                                &lt;wellKnownScaleSet&gt;GoogleMapsCompatible&lt;/wellKnownScaleSet&gt; 
+                        &lt;/com.supermap.services.wmts.TileMatrixSet&gt; 
+                &lt;/tileMatrixSets&gt; 
+        &lt;/config&gt; 
+&lt;/interface&gt; </pre>
+  <p class="myNormal">其中，&lt;interface&gt;节点的 class 属性标识接口类型，对应实现类 WMTSServlet，&lt;config&gt;节点是该 WMTS 服务接口对应的配置项，即接口配置类<a class="contentpagehyperlink" href="../../../../mergedProjects/iServerJavadoc/com/supermap/services/wmts/WMTSConfig.html">WMTSConfig</a>。主要配置参数如下：</p>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1">&lt;customEntireBounds&gt;：指定 WMTS 服务中地图的全幅范围。填入 WMTS 服务中地图的左下角和右上角的经纬度或 X、Y 坐标，各值之间以英文逗号(&quot;,&quot;)分隔。当在某些第三方客户端，如 OpenLayers 2.10， 叠加 WMTS 服务时，要求 WMTS 服务的范围与底图的范围一致。可选参数。</li>
+    <li class="SymbolList1">&lt;epsgsBoundingBoxReversed&gt;：指定需要反转 BoudingBox 中 LowerCorner、UpperCorner 的 X、Y 坐标顺序的坐标系的 EPSG 编码，各坐标系间以英文逗号分隔，填入&quot;all&quot;则表示对所有坐标系的坐标顺序进行反转。</li>
+    <li class="SymbolList1">&lt;identification&gt;： 服务说明信息。可选参数。</li>
+    <li class="SymbolList1">&lt;maps&gt;： 允许发布的地图名称，多个地图名之间之间使用逗号隔开。可选参数。</li>
+    <li class="SymbolList1">&lt;provider&gt;：服务提供商的信息。可选参数。</li>
+    <li class="SymbolList1">&lt;tileMatrixSets&gt;： WMTS 服务支持的所有比例尺集的集合。若比例尺集为空或其中的比例尺为空，第0级把整幅地图用一个256x256像素的图块表示，第1级把整幅地图表示成2x2个256x256像素的图块，以此类推，逐级乘2。可选参数。</li>
+    <li class="SymbolList1">&lt;verifyMode&gt;：用于设置 WMTS 服务验证模式，默认为 DEFAULT ，表示 iServer 兼容规范模式，该模式兼容了部分参数，如：service，style 等。若设为 STANDARD ，则表示是 OGC 规范模式，该模式规定服务必须严格遵从 OGC 规范。可选参数。</li>
+    <li class="SymbolList1">&lt;hideFeatureInfo&gt;：GetCapabilities 返回结果中是否显示 FeatureInfo 资源。设置为 true 时不显示 FeatureInfo 资源，默认值为 false 表示显示 FeatureInfo 资源。</li>
+  </ul>
+  <p class="myNormal"> </p>
+  <p class="myNormal">“wmts-china”接口配置信息如下所示：</p>
+  <pre class="brush:xml">&lt;interface class=&quot;com.supermap.services.wmts.WMTSServlet&quot; name=&quot;wmts-china&quot;&gt; 
+        &lt;config class=&quot;com.supermap.services.wmts.WMTSConfig&quot;&gt; 
+                &lt;identification/&gt;   
+                &lt;provider/&gt;    
+                &lt;tileMatrixSets&gt; 
+                        &lt;com.supermap.services.wmts.TileMatrixSet&gt; 
+                                &lt;wellKnownScaleSet&gt;ChinaPublicServices&lt;/wellKnownScaleSet&gt; 
+                        &lt;/com.supermap.services.wmts.TileMatrixSet&gt; 
+                &lt;/tileMatrixSets&gt; 
+        &lt;/config&gt; 
+&lt;/interface&gt;</pre>
+  <p class="myNormal">其中，&lt;wellKnownScaleSet&gt;参数指定了使用符合《地理信息公共服务平台 电子地图数据规范》中地图分级标准的“ChinaPublicServices”比例尺集。</p>
+  <p class="myNormal"> </p>
+  <p class="myNormal">“wmts-arcgis”接口配置信息与“wmts-100”一致，只是对于 epsgsBoundingBoxReversed、disableTileMatrixSetLimits 两个参数提供了默认值，分别为 28410,20010,2435,4525,2390,4491 和 GoogleMapsCompatible,GlobalCRS84Scale。用户仍可按需对其修改。</p>
+  <h2>配置 WCS 服务接口</h2>
+  <p class="myNormal">SuperMap iServer 提供支持 WCS 1.1.1、1.1.2 标准的服务。配置一个 WCS 1.1.1接口如下所示：</p>
+  <pre class="brush:xml">&lt;interface class=&quot;com.supermap.services.wcs.WCSServlet&quot; name=&quot;wcs111&quot;&gt; 
+        &lt;config class=&quot;com.supermap.services.wcs.WCSConfig&quot;&gt; 
+                &lt;version&gt;1.1.1&lt;/version&gt;  
+                &lt;identification&gt; 
+                        &lt;title&gt;示例 WCS 服务&lt;/title&gt;  
+                        &lt;description&gt;SuperMap iServer 6R 基于示范数据发布的 WCS 服务&lt;/description&gt;  
+                        &lt;keywords&gt; 
+                                &lt;string&gt;iServer 6R&lt;/string&gt;  
+                                &lt;string&gt;Sample Data&lt;/string&gt; 
+                        &lt;/keywords&gt;  
+                        &lt;fees&gt;none&lt;/fees&gt;  
+                        &lt;accessConstraints&gt;none&lt;/accessConstraints&gt;  
+                        &lt;serviceType&gt;OGC WCS&lt;/serviceType&gt;  
+                        &lt;serviceTypeVersion&gt;1.1.1&lt;/serviceTypeVersion&gt; 
+                &lt;/identification&gt;  
+                &lt;provider&gt; 
+                        &lt;providerName&gt;北京超图软件股份有限公司&lt;/providerName&gt;  
+                        &lt;providerSite&gt;http://www.supermap.com.cn&lt;/providerSite&gt;  
+                        &lt;serviceContact&gt; 
+                                &lt;individualName&gt;联系人姓名&lt;/individualName&gt;  
+                                &lt;positionName&gt;联系人职位&lt;/positionName&gt;  
+                                &lt;phoneNumber&gt;+86-10-59896655&lt;/phoneNumber&gt;  
+                                &lt;faxNumber&gt;+86-10-59896666&lt;/faxNumber&gt;  
+                                &lt;deliveryPoint&gt;北京市朝阳区酒仙桥北路甲10号院电子城 IT 产业园107号楼6层北京超图软件股份有限公司&lt;/deliveryPoint&gt;  
+                                &lt;addressCity&gt;北京&lt;/addressCity&gt;  
+                                &lt;addressAdministrativeArea&gt;北京&lt;/addressAdministrativeArea&gt;  
+                                &lt;addressPostalCode&gt;100015&lt;/addressPostalCode&gt;  
+                                &lt;addressCountry&gt;中国&lt;/addressCountry&gt;  
+                                &lt;addressElectronicMailAddress&gt;support@supermap.com&lt;/addressElectronicMailAddress&gt; 
+                        &lt;/serviceContact&gt; 
+                &lt;/provider&gt; 
+        &lt;/config&gt; 
+&lt;/interface&gt;</pre>
+  <p class="myNormal">其中，&lt;interface&gt;节点的 class 属性标识接口类型，对应实现类 WMTSServlet，&lt;config&gt;节点是该 WCS 服务接口对应的配置项，即接口配置类<a class="contentpagehyperlink" href="../../../../mergedProjects/iServerJavadoc/com/supermap/services/wcs/WCSConfig.html">WCSConfig</a>。主要配置参数如下：</p>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1">&lt;version&gt;：WCS 服务的版本号，目前 SuperMap iServer 支持的 WCS 服务版本为1.1.1、1.1.2。</li>
+  </ul>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1">&lt;identification&gt;： 服务说明信息。可选参数。</li>
+    <li class="SymbolList1">&lt;provider&gt;：服务提供商的信息。可选参数。</li>
+  </ul>
+  <h2>配置 OGC API 服务接口</h2>
+  <p style="margin-left: 80px; text-indent: -56px;">SuperMap iServer 提供支持 OGC API-Features、OGC API-Tiles  标准的服务。配置一个 OGC API 接口如下所示：</p>
+  <pre class="brush:xml">&lt;interface name=&quot;ogcapi&quot; class=&quot;com.supermap.services.ogcapi.OGCAPIServlet&quot;&gt;
+        &lt;config class=&quot;com.supermap.services.ogcapi.OGCAPIConfig&quot;&gt;
+                &lt;apiVerison&gt;
+                        &lt;features&gt;1.0&lt;/features&gt;
+                &lt;/apiVersion&gt;         
+        &lt;/config&gt;
+&lt;/interface&gt;</pre>
+  <h2>自定义接口</h2>
+  <p class="myNormal">自定义接口类型可以在系统配置文件（iserver-system.xml）文件中进行，添加一个自定义接口类型的示例如下：</p>
+  <pre class="brush:xml">&lt;interface-type configClass=&quot;com.supermap.services.sm.SMConfig&quot;&gt;
+   com.supermap.services.sm.SMServlet
+&lt;/interface-type&gt; </pre>
+  <p class="myNormal">其中 com.supermap.services.sm.SMServlet 是自定义的接口类型的实现类，com.supermap.services.sm.SMConfig  是自定义的接口类型的配置类。</p>
+  <p class="myNormal">&lt;interface-type&gt;节点在配置文件中的结构如下所示：</p>
+  <pre class="brush:xml">&lt;server&gt;
+     &lt;management&gt;
+              …
+         &lt;interface-types&gt;
+                  …
+               &lt;interface-type &gt;
+                      …
+               &lt;/interface-type&gt; 
+         &lt;/interface-types&gt;
+      &lt;/management&gt;
+&lt;/server&gt;</pre>
+  <h2> </h2>
+
+</div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../../../../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../../../../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../../../../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../../../../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../../../../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../../../../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../../../../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../../../.."
+    gCommonRootRelPath = "../../../.."
+    gTopicId = "5.2.1.3.1_1"
+  
+//]]></script>
+
+  <script src="../../../../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../../../../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../../../../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../../../../whxdata/layoutconfig.js"></script>
+  <script src="../../../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

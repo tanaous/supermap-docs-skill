@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../../../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../../../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../../../../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../../../iserver-icon.png"/>
+    
+  <script data-relpath="../../../.." src="../../../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+<meta name="template" content="../../../../assets/layouts/SuperMapiServerMain.htt"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="Content-Language" content="zh-CN"/>
+<meta name="topic-status" content="Complete"/>
+<meta name="topic-check-list" content="Ran Smart Index"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>基于 JAX-RS 机制定义 REST 资源</title>
+<link rel="StyleSheet" href="../../../../assets/css/SuperMapHelp.css" type="text/css"/>
+<script type="text/javascript" src="../../../../assets/js/shCore.js"></script>
+<script type="text/javascript" src="../../../../assets/js/shBrushBash.js"></script>
+<script type="text/javascript" src="../../../../assets/js/shBrushCpp.js"></script>
+<script type="text/javascript" src="../../../../assets/js/shBrushCSharp.js"></script>
+<script type="text/javascript" src="../../../../assets/js/shBrushCss.js"></script>
+<script type="text/javascript" src="../../../../assets/js/shBrushDelphi.js"></script>
+<script type="text/javascript" src="../../../../assets/js/shBrushDiff.js"></script>
+<script type="text/javascript" src="../../../../assets/js/shBrushGroovy.js"></script>
+<script type="text/javascript" src="../../../../assets/js/shBrushJava.js"></script>
+<script type="text/javascript" src="../../../../assets/js/shBrushJScript.js"></script>
+<script type="text/javascript" src="../../../../assets/js/shBrushPhp.js"></script>
+<script type="text/javascript" src="../../../../assets/js/shBrushPlain.js"></script>
+<script type="text/javascript" src="../../../../assets/js/shBrushPython.js"></script>
+<script type="text/javascript" src="../../../../assets/js/shBrushRuby.js"></script>
+<script type="text/javascript" src="../../../../assets/js/shBrushScala.js"></script>
+<script type="text/javascript" src="../../../../assets/js/shBrushSql.js"></script>
+<script type="text/javascript" src="../../../../assets/js/shBrushVb.js"></script>
+<script type="text/javascript" src="../../../../assets/js/shBrushXml.js"></script>
+<script type="text/javascript" src="../../../../assets/js/ConfigiServer6R.js"></script>
+<meta name="rh-index-keywords" content="基于 JAX,RS 机制定义 REST 资源,资源配置"/><meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../../../../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../assets/css/homeButtom.css"/>
+  <script src="../../../../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../../../../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../../../../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../../../../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../../../../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../../../../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../../../../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../../../../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../../../../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+<p class="myNormal">作为示例，这里以一个伪地址匹配（从一个 txt 里读取关键字对应的匹配结果）作为领域功能。基于伪地址匹配功能组件创建一个新资源，实现匹配字段，并在地图上显示匹配的结果。资源预期如下：</p>
+<p class="myNormal">资源名称：addressMatchRoot，addressMatch</p>
+<p class="myNormal">资源 URI：../services/address-sample/restjsr/adressmatch</p>
+<p class="myNormal">资源支持的表述格式：XML、JSON、RJSON</p>
+<p class="myNormal">资源 URI 参数：</p>
+<table class="iServerTable" style="left: 0px; top: 24px;" cellspacing="0" width="517" align="center">
+	<colgroup><col style="width: 23.022%;"/>
+	<col style="width: 38.489%;"/>
+	<col style="width: 38.489%;"/>
+	</colgroup><tbody><tr class="t1st">
+		<td>名称</td>
+		<td>类型</td>
+		<td>描述</td>
+	</tr>
+	<tr class="t2Row">
+		<td>keyWord</td>
+		<td><p>String</p></td>
+		<td><p>用户输入的中文地址</p></td>
+	</tr>
+</tbody></table>
+<p class="myNormal">领域资源创建与使用的总体流程为：</p>
+<ol style="list-style: decimal;">
+	<li><p class="myNormal"><a class="contentpagehyperlink" href="#资源实现">资源实现</a></p></li>
+</ol>
+<p class="myNormal">实现地址匹配业务组件实现类 AddressMatchImpl、地址匹配资源 AddressMatchResource。</p>
+<ol start="2" style="list-style: decimal;">
+	<li><p class="myNormal"><a class="contentpagehyperlink" href="#资源配置">资源配置</a></p></li>
+</ol>
+<p class="myNormal">分别添加模块配置文件 addressmatchRest、JAX-RS 资源配置文件 addressMatchResources.xml、SuperMap 
+ iServer 服务配置文件 iserver-services.xml、以及数据文件 addressMatchDatas。</p>
+<ol start="3" style="list-style: decimal;">
+	<li><p class="myNormal"><a class="contentpagehyperlink" href="#资源访问">资源访问</a></p></li>
+</ol>
+<p class="myNormal">重启 SuperMap iServer 服务，访问创建的领域服务资源：http://localhost:8090/iserver/services/address-sample/restjsr/addressmatch。</p>
+<p class="myNormal"> </p>
+<p class="myNormal">示例工程请参见：%SuperMap iServer_HOME%\samples\code\DSSE_JSR，将示例工程编译为 
+ Jar（参见：<a class="contentpagehyperlink" href="../../../../assets/misc/dsse_jsr.jar">dsse_jsr.jar</a>），放到 
+ %SuperMap iServer_HOME%/webapps/iserver/WEB-INF/lib 下，重启 SuperMap iServer 
+ 服务，即可进行<a class="contentpagehyperlink" href="#资源访问">资源访问</a>。</p>
+<h2><a id="资源实现"></a>资源实现</h2>
+<p class="myNormal">设计实现 AddressMatchImpl 做为服务组件提供“伪地址匹配功能”，AddressMatchImpl 
+ 通过使用 SuperMap iServer 的地图服务组件实现标签显示，整体功能通过 JAX-RS 服务接口暴露为 REST 资源，REST 
+ 资源实现类为 AddressMatchResource，如下图所示。</p>
+<p style="text-align: center;"><img src="../../../../assets/images/DevelopGuide/Extend_iServer/Extend_JAX-RS/DSSE_Extend/NewResource.png" alt="" style="border: none;" width="180" height="200" border="0"/></p>
+<h3>实现业务组件</h3>
+<p class="myNormal">地址匹配业务组件实现类 AddressMatchImpl，具体实现过程如下：</p>
+<ul style="list-style: disc;" class="SymbolList1">
+	<li class="SymbolList1">加载地址匹配数据信息，信息从文件 addressmatchDatas 中读取。</li>
+	<li class="SymbolList1">根据指定的中文地址模糊匹配，获得地址匹配的结果。</li>
+	<li class="SymbolList1">根据匹配得到的地址进行出图</li>
+	<li class="SymbolList1">设置组件上下文，通过组件上下文可以得到该业务组件所用的服务提供者。</li>
+</ul>
+<p class="myCodeP">package com.supermap.sample.components.impl;</p>
+<p class="myCodeP">import java.io.BufferedReader;</p>
+<p class="myCodeP">import java.io.FileInputStream;</p>
+<p class="myCodeP">import java.io.IOException;</p>
+<p class="myCodeP">import java.io.InputStreamReader;</p>
+<p class="myCodeP">import java.io.UnsupportedEncodingException;</p>
+<p class="myCodeP">import java.util.ArrayList;</p>
+<p class="myCodeP">import java.util.HashMap;</p>
+<p class="myCodeP">import java.util.List;</p>
+<p class="myCodeP">import com.supermap.sample.components.AddressMatchConfig;</p>
+<p class="myCodeP">import com.supermap.sample.components.AddressMatchResult;</p>
+<p class="myCodeP">import com.supermap.sample.components.AddressMatch;</p>
+<p class="myCodeP">import com.supermap.services.components.Component;</p>
+<p class="myCodeP">import com.supermap.services.components.ComponentContext;</p>
+<p class="myCodeP">import com.supermap.services.components.ComponentContextAware;</p>
+<p class="myCodeP">import com.supermap.services.components.commontypes.Color;</p>
+<p class="myCodeP">import com.supermap.services.components.commontypes.DatasetType;</p>
+<p class="myCodeP">import com.supermap.services.components.commontypes.DatasetVectorInfo;</p>
+<p class="myCodeP">import com.supermap.services.components.commontypes.FillGradientMode;</p>
+<p class="myCodeP">import com.supermap.services.components.commontypes.ImageOutputOption;</p>
+<p class="myCodeP">import com.supermap.services.components.commontypes.LabelBackShape;</p>
+<p class="myCodeP">import com.supermap.services.components.commontypes.MapImage;</p>
+<p class="myCodeP">import com.supermap.services.components.commontypes.MapParameter;</p>
+<p class="myCodeP">import com.supermap.services.components.commontypes.OutputFormat;</p>
+<p class="myCodeP">import com.supermap.services.components.commontypes.Point2D;</p>
+<p class="myCodeP">import com.supermap.services.components.commontypes.Rectangle;</p>
+<p class="myCodeP">import com.supermap.services.components.commontypes.RectifyType;</p>
+<p class="myCodeP">import com.supermap.services.components.commontypes.Style;</p>
+<p class="myCodeP">import com.supermap.services.components.commontypes.TextAlignment;</p>
+<p class="myCodeP">import com.supermap.services.components.commontypes.TextStyle;</p>
+<p class="myCodeP">import com.supermap.services.components.commontypes.ThemeLabel;</p>
+<p class="myCodeP">import com.supermap.services.components.commontypes.UGCThemeLayer;</p>
+<p class="myCodeP">import com.supermap.services.components.spi.MapProvider;</p>
+<p class="myCodeP">/**</p>
+<p class="myCodeP"> * 地址匹配业务组件实现类。</p>
+<p class="myCodeP"> * 该类实现地址匹配的功能。</p>
+<p class="myCodeP"> * &lt;p&gt;</p>
+<p class="myCodeP"> * The address matching business component implementation 
+ class.</p>
+<p class="myCodeP"> * The address matching function implemented by 
+ this class</p>
+<p class="myCodeP"> * &lt;/p&gt;</p>
+<p class="myCodeP"> * @author Administrator</p>
+<p class="myCodeP"> *</p>
+<p class="myCodeP"> */</p>
+<p class="myCodeP">@Component(providerTypes={MapProvider.class}, optional=false,type=&quot;&quot;)</p>
+<p class="myCodeP">public class AddressMatchImpl implements AddressMatch, 
+ ComponentContextAware {</p>
+<p class="myCodeP">    private String mapName;</p>
+<p class="myCodeP">    private MapProvider mapProvider;</p>
+<p class="myCodeP">    // 地址匹配的数据信息</p>
+<p class="myCodeP">    // The address matching data 
+ information</p>
+<p class="myCodeP">    private List&lt;String&gt; datas 
+ = new ArrayList();</p>
+<p class="myCodeP">    public AddressMatchImpl() {</p>
+<p class="myCodeP">    }</p>
+<p class="myCodeP">    /**</p>
+<p class="myCodeP">     * 根据指定的中文地址模糊匹配，获得地址匹配的结果。</p>
+<p class="myCodeP">     * &lt;p&gt;</p>
+<p class="myCodeP">     * Get the address matching 
+ result according to the fuzzy matching of the specified Chinese address.</p>
+<p class="myCodeP">     * &lt;/p&gt;</p>
+<p class="myCodeP">     * @param keyWord</p>
+<p class="myCodeP">     * @return</p>
+<p class="myCodeP">     */</p>
+<p class="myCodeP">    public AddressMatchResult[] 
+ match(String keyWord) {</p>
+<p class="myCodeP">        if (keyWord 
+ == null) {</p>
+<p class="myCodeP">            throw 
+ new IllegalArgumentException(&quot;Argument keyWord can not be null&quot;);</p>
+<p class="myCodeP">        }</p>
+<p class="myCodeP">        List&lt;AddressMatchResult&gt; 
+ matchResults = new ArrayList();</p>
+<p class="myCodeP">        // 搜索原始数据信息，找到和关键子匹配的数据条目</p>
+<p class="myCodeP">        // 元素数据以字符串信息保存，并以 
+ &quot;;&quot; 来区分各个字段。如 北京;12958399.4681885;4852082.42975164</p>
+<p class="myCodeP">        // Search 
+ the original data to find out the data entries matching the keywords.</p>
+<p class="myCodeP">        // The 
+ entries are saved as strings separated by &quot;;&quot;. For instance, 
+ Ottawa; Canada; -75.650749206543;45.374217987060</p>
+<p class="myCodeP">        for 
+ (String dataStr : this.datas) {</p>
+<p class="myCodeP">            String[] 
+ dataArray = dataStr.split(&quot;;&quot;);</p>
+<p class="myCodeP">            String 
+ capital = dataArray[0];</p>
+<p class="myCodeP">            String 
+ matchedAddress= null;</p>
+<p class="myCodeP">            // 
+ 搜索与关键字匹配的条目。</p>
+<p class="myCodeP">            // 
+ Search the entries matching the keywords.</p>
+<p class="myCodeP">            if 
+ (capital.contains(keyWord)) {</p>
+<p class="myCodeP">                matchedAddress=capital;</p>
+<p class="myCodeP">            }</p>
+<p class="myCodeP">            if 
+ (matchedAddress!= null) {</p>
+<p class="myCodeP">                AddressMatchResult 
+ result = new AddressMatchResult();</p>
+<p class="myCodeP">                result.keyWord 
+ = keyWord;</p>
+<p class="myCodeP">                try 
+ {</p>
+<p class="myCodeP">                    double 
+ smx = Double.parseDouble(dataArray[1]);</p>
+<p class="myCodeP">                    double 
+ smy = Double.parseDouble(dataArray[2]);</p>
+<p class="myCodeP">                    result.location 
+ = new Point2D(smx, smy);</p>
+<p class="myCodeP">                    result.matchedAddress 
+ = matchedAddress;</p>
+<p class="myCodeP">                    result.imageUrl 
+ = this.getImageURI(result);</p>
+<p class="myCodeP">                    matchResults.add(result);</p>
+<p class="myCodeP">                } 
+ catch (NumberFormatException e) {</p>
+<p class="myCodeP">                    e.printStackTrace();</p>
+<p class="myCodeP">                }</p>
+<p class="myCodeP">            }</p>
+<p class="myCodeP">        }</p>
+<p class="myCodeP">        AddressMatchResult[] 
+ resultArray = new AddressMatchResult[matchResults.size()];</p>
+<p class="myCodeP">        // 将匹配结果列表转换成匹配结果数组</p>
+<p class="myCodeP">        // Convert 
+ the result list into an array</p>
+<p class="myCodeP">        matchResults.toArray(resultArray);</p>
+<p class="myCodeP">        return 
+ resultArray;</p>
+<p class="myCodeP">    }</p>
+<p class="myCodeP">    /**</p>
+<p class="myCodeP">     *  根据匹配得到的地址进行出图 
+ ，即获取图片的 URI 地址。</p>
+<p class="myCodeP">     *  &lt;p&gt;</p>
+<p class="myCodeP">     *  Outputs a map 
+ according to the result, i.e., gets the URI of the map image.</p>
+<p class="myCodeP">     *  &lt;/p&gt;</p>
+<p class="myCodeP">     * @param result</p>
+<p class="myCodeP">     * @return</p>
+<p class="myCodeP">     */</p>
+<p class="myCodeP">    private String getImageURI(AddressMatchResult 
+ result) {</p>
+<p class="myCodeP">        MapParameter 
+ defaultMapParameter = this.mapProvider.getDefaultMapParameter(this.mapName);</p>
+<p class="myCodeP">        ImageOutputOption 
+ outputOption = new ImageOutputOption();</p>
+<p class="myCodeP">        outputOption.format 
+ = OutputFormat.BMP;</p>
+<p class="myCodeP">        // 添加专题图</p>
+<p class="myCodeP">        // Add 
+ the thematic map</p>
+<p class="myCodeP">        ThemeLabel 
+ themeLabel = new ThemeLabel();</p>
+<p class="myCodeP">        themeLabel.memoryData 
+ = new HashMap&lt;String, String&gt;();</p>
+<p class="myCodeP">        String 
+ capitalName = result.matchedAddress;</p>
+<p class="myCodeP">        String 
+ value = capitalName + &quot; Location: (&quot; + String.format(&quot;%.1f&quot;, 
+ result.location.x)  + &quot; ,&quot; +String.format(&quot;%.1f&quot;, 
+ result.location.y) + &quot;)&quot;;</p>
+<p class="myCodeP">        themeLabel.memoryData.put(capitalName, 
+ value);</p>
+<p class="myCodeP">        themeLabel.labelExpression 
+ = &quot;NAME&quot;;</p>
+<p class="myCodeP">        themeLabel.labelBackShape 
+ = LabelBackShape.ROUNDRECT;</p>
+<p class="myCodeP">        Style 
+ style = new Style();</p>
+<p class="myCodeP">        style.fillBackColor 
+ = new Color(java.awt.Color.MAGENTA.getRed(), java.awt.Color.MAGENTA.getGreen(), 
+ java.awt.Color.MAGENTA.getBlue());</p>
+<p class="myCodeP">        style.fillBackOpaque 
+ = true;</p>
+<p class="myCodeP">        style.fillForeColor 
+ = new Color(java.awt.Color.YELLOW.getRed(), java.awt.Color.YELLOW.getGreen(), 
+ java.awt.Color.YELLOW.getBlue());</p>
+<p class="myCodeP">        style.fillGradientMode 
+ = FillGradientMode.RADIAL;</p>
+<p class="myCodeP">        themeLabel.backStyle 
+ = style;</p>
+<p class="myCodeP">        TextStyle 
+ textStyle = new TextStyle();</p>
+<p class="myCodeP">        textStyle.backColor 
+ = new Color(java.awt.Color.BLUE.getRed(), java.awt.Color.BLUE.getGreen(), 
+ java.awt.Color.BLUE.getBlue());</p>
+<p class="myCodeP">        textStyle.fontWidth 
+ = 50000;</p>
+<p class="myCodeP">        textStyle.fontHeight 
+ = 50000;</p>
+<p class="myCodeP">        textStyle.align 
+ = TextAlignment.MIDDLECENTER;</p>
+<p class="myCodeP">        themeLabel.uniformStyle 
+ = textStyle;</p>
+<p class="myCodeP">        DatasetVectorInfo 
+ datasetVectorInfo = new DatasetVectorInfo();</p>
+<p class="myCodeP">        datasetVectorInfo.name 
+ = &quot;China_Capital_pt&quot;;</p>
+<p class="myCodeP">        datasetVectorInfo.type 
+ = DatasetType.POINT;</p>
+<p class="myCodeP">        datasetVectorInfo.dataSourceName 
+ = &quot;China&quot;;</p>
+<p class="myCodeP">        UGCThemeLayer 
+ themelayer = new UGCThemeLayer();</p>
+<p class="myCodeP">        themelayer.theme 
+ = themeLabel;</p>
+<p class="myCodeP">        themelayer.datasetInfo 
+ = datasetVectorInfo;</p>
+<p class="myCodeP">        themelayer.visible 
+ = true;</p>
+<p class="myCodeP">        themelayer.displayFilter 
+ = &quot;NAME = &#39;&quot; + capitalName + &quot;&#39;&quot;;</p>
+<p class="myCodeP">        defaultMapParameter.layers.get(0).subLayers.add(true, 
+ themelayer);</p>
+<p class="myCodeP">        defaultMapParameter.rectifyType 
+ = RectifyType.BYCENTERANDMAPSCALE;</p>
+<p class="myCodeP">        defaultMapParameter.center 
+ = result.location;</p>
+<p class="myCodeP">        defaultMapParameter.viewer 
+ = new Rectangle(0,0,512,512);</p>
+<p class="myCodeP">        defaultMapParameter.scale 
+ =0.00000003;//0.00000003;</p>
+<p class="myCodeP">        MapImage 
+ mapImage = this.mapProvider.getMapImage(defaultMapParameter, outputOption);</p>
+<p class="myCodeP">        return 
+ mapImage.imageUrl;</p>
+<p class="myCodeP">    }</p>
+<p class="myCodeP">    /**</p>
+<p class="myCodeP">     * 设置组件上下文，通过组件上下文可以得到该业务组件所用的服务提供者。</p>
+<p class="myCodeP">     * &lt;p&gt;</p>
+<p class="myCodeP">     * Set the component context, 
+ and get the service provider of the business component through the component 
+ context.</p>
+<p class="myCodeP">     * &lt;/p&gt;</p>
+<p class="myCodeP">     */</p>
+<p class="myCodeP">    public void setComponentContext(ComponentContext 
+ context) {</p>
+<p class="myCodeP">        AddressMatchConfig 
+ config = context.getConfig(AddressMatchConfig.class);</p>
+<p class="myCodeP">        String 
+ dataConfigPath = config.addressMatchDataPath;</p>
+<p class="myCodeP">        this.initDataInfo(dataConfigPath);</p>
+<p class="myCodeP">        this.mapName 
+ = config.mapName;</p>
+<p class="myCodeP">        MapProvider 
+ tempMapProvider = context.getProvider(MapProvider.class, null);</p>
+<p class="myCodeP">        this.mapProvider 
+ = tempMapProvider;</p>
+<p class="myCodeP">    }</p>
+<p class="myCodeP">    private void initDataInfo(String 
+ dataFilePath) {</p>
+<p class="myCodeP">        // 加载地址匹配数据信息。</p>
+<p class="myCodeP">        // 地址匹配信息从文件addressmatchDatas 
+ 中读取。</p>
+<p class="myCodeP">        // Load 
+ address matching data information.</p>
+<p class="myCodeP">        // Read 
+ address matching information from the addressmatchDatas file.</p>
+<p class="myCodeP">        //InputStream 
+ stream = Thread.currentThread().getContextClassLoader().getResourceAsStream(&quot;addressMatchDatas&quot;);</p>
+<p class="myCodeP">        try 
+ {</p>
+<p class="myCodeP">        FileInputStream 
+ stream=new FileInputStream(dataFilePath);</p>
+<p class="myCodeP">            BufferedReader 
+ reader = new BufferedReader(new InputStreamReader(stream, &quot;utf-8&quot;));</p>
+<p class="myCodeP">            String 
+ dataLine = reader.readLine();</p>
+<p class="myCodeP">            boolean 
+ firstLine = true;</p>
+<p class="myCodeP">            while 
+ (dataLine != null) {</p>
+<p class="myCodeP">                if 
+ (!firstLine) {</p>
+<p class="myCodeP">                    datas.add(dataLine);</p>
+<p class="myCodeP">                } 
+ else {</p>
+<p class="myCodeP">                    firstLine 
+ = false;</p>
+<p class="myCodeP">                }</p>
+<p class="myCodeP">                dataLine 
+ = reader.readLine();</p>
+<p class="myCodeP">            }</p>
+<p class="myCodeP">        } catch 
+ (UnsupportedEncodingException e) {</p>
+<p class="myCodeP">            e.printStackTrace();</p>
+<p class="myCodeP">        } catch 
+ (IOException e) {</p>
+<p class="myCodeP">            e.printStackTrace();</p>
+<p class="myCodeP">        }</p>
+<p class="myCodeP">    }</p>
+<p class="myCodeP">}</p>
+<h3>实现资源</h3>
+<p class="myNormal">地址匹配资源 AddressMatchResource 的具体实现过程如下：</p>
+<ul style="list-style: disc;" class="SymbolList1">
+	<li class="SymbolList1">确定资源路径../addressmatch，申明该资源需要使用的业务组件为 com.supermap.sample.components.AddressMatch，综合这两方面后，资源的 
+	 URI 定为：http://supermapiserver:8090/iserver/services/address-sample/restjsr/addressmatch；</li>
+	<li class="SymbolList1">通过@Template 指定资源页面的模板为：matchaddressForm.ftl，即使用上述 
+	 URI 后，将打开这个模板，关于模板文件工具的介绍，请参考<a class="contentpagehyperlink" href="../../../../Appendix/FreeMarker.htm">iServer 
+	 提供的 FreeMarker 变量</a>；</li>
+	<li class="SymbolList1">定义查询结果资源 addressMatch 的访问路径为/{keyWord}，指定结果页面的模板为 
+	 matchaddress.ftl；</li>
+	<li class="SymbolList1">从服务接口中获取地址匹配业务组件，默认获取第一个业务组件。</li>
+</ul>
+<p class="myCodeP">package com.supermap.sample.rest.resources.impl;</p>
+<p class="myCodeP">import java.io.UnsupportedEncodingException;</p>
+<p class="myCodeP">import java.net.URLDecoder;</p>
+<p class="myCodeP">import java.util.HashMap;</p>
+<p class="myCodeP">import java.util.Map;</p>
+<p class="myCodeP">import javax.servlet.http.HttpServletRequest;</p>
+<p class="myCodeP">import javax.ws.rs.GET;</p>
+<p class="myCodeP">import javax.ws.rs.Path;</p>
+<p class="myCodeP">import javax.ws.rs.PathParam;</p>
+<p class="myCodeP">import javax.ws.rs.core.Context;</p>
+<p class="myCodeP">import com.supermap.sample.components.AddressMatchResult;</p>
+<p class="myCodeP">import com.supermap.services.InterfaceContext;</p>
+<p class="myCodeP">import com.supermap.sample.components.AddressMatch;</p>
+<p class="myCodeP">import com.supermap.services.rest.HttpException;</p>
+<p class="myCodeP">import com.supermap.services.rest.Template;</p>
+<p class="myCodeP">import com.supermap.services.rest.commontypes.Component;</p>
+<p class="myCodeP">import com.supermap.services.rest.resources.JaxrsResourceBase;</p>
+<p class="myCodeP">/**</p>
+<p class="myCodeP"> * 地址匹配资源实现类</p>
+<p class="myCodeP"> * &lt;p&gt;</p>
+<p class="myCodeP"> * The implementation class of the AddressMatch 
+ resource.</p>
+<p class="myCodeP"> * &lt;/p&gt;</p>
+<p class="myCodeP"> * @author Administrator</p>
+<p class="myCodeP"> *</p>
+<p class="myCodeP"> */</p>
+<p class="myCodeP">@Path(&quot;/addressmatch&quot;)</p>
+<p class="myCodeP">// 申明该资源需要使用的业务组件</p>
+<p class="myCodeP">//Declare the business component that needs to be used</p>
+<p class="myCodeP">@Component(interfaceClass = AddressMatch.class)</p>
+<p class="myCodeP">public class AddressMatchResource extends JaxrsResourceBase 
+ {</p>
+<p class="myCodeP">@GET</p>
+<p class="myCodeP">@Template(name = &quot;matchaddressForm.ftl&quot;)</p>
+<p class="myCodeP">public Map&lt;String, String&gt; getGetForm(@Context 
+ HttpServletRequest request) {</p>
+<p class="myCodeP">String url = request.getRequestURL().toString();</p>
+<p class="myCodeP">Map&lt;String,String&gt; variables = new HashMap&lt;String,String&gt;();</p>
+<p class="myCodeP">variables.put(&quot;url&quot;, url);</p>
+<p class="myCodeP">return variables;</p>
+<p class="myCodeP">   }</p>
+<p class="myCodeP">   @GET</p>
+<p class="myCodeP">   @Path(&quot;{keyWord}&quot;)</p>
+<p class="myCodeP">   @Template(name = &quot;matchaddress.ftl&quot;)</p>
+<p class="myCodeP">   public AddressMatchResult[] addressMatch(</p>
+<p class="myCodeP">   @PathParam(&quot;keyWord&quot;) String 
+ keyWord,</p>
+<p class="myCodeP">   @Context HttpServletRequest request) 
+ {</p>
+<p class="myCodeP">   if (keyWord == null) {</p>
+<p class="myCodeP">      throw new HttpException(400, 
+ &quot;Argument keyWord can not be null&quot;);</p>
+<p class="myCodeP">   }</p>
+<p class="myCodeP">   try {</p>
+<p class="myCodeP">      keyWord = URLDecoder.decode(keyWord, 
+ &quot;utf-8&quot;);</p>
+<p class="myCodeP">   } catch (UnsupportedEncodingException 
+ e) {</p>
+<p class="myCodeP">   e.printStackTrace();</p>
+<p class="myCodeP">   }</p>
+<p class="myCodeP">   // 获取REST 服务的接口上下文</p>
+<p class="myCodeP">   // Get the interface context of the 
+ REST service</p>
+<p class="myCodeP">   InterfaceContext interfaceContext 
+ = this.getInterfaceContext();</p>
+<p class="myCodeP">      // 从服务接口中获取地址匹配业务组件,默认获取第一个业务组件。</p>
+<p class="myCodeP">      // Get the business 
+ component from the service interface context. The first business component 
+ will be got by default.</p>
+<p class="myCodeP">      AddressMatch addressMatchComponent 
+ = interfaceContext.getComponents(</p>
+<p class="myCodeP">      AddressMatch.class).get(0);</p>
+<p class="myCodeP">      AddressMatchResult[] 
+ results =  addressMatchComponent.match(keyWord);</p>
+<p class="myCodeP">      this.replacePort(results 
+ ,request);</p>
+<p class="myCodeP">      return results;</p>
+<p class="myCodeP">      }</p>
+<p class="myCodeP">      private void replacePort(AddressMatchResult[] 
+ results,HttpServletRequest request){</p>
+<p class="myCodeP">         if(results 
+ == null || results.length == 0){</p>
+<p class="myCodeP">         return;</p>
+<p class="myCodeP">      }</p>
+<p class="myCodeP">      String port = String.valueOf(request.getServerPort());</p>
+<p class="myCodeP">      String ip=request.getServerName();</p>
+<p class="myCodeP">      for(AddressMatchResult 
+ result : results){</p>
+<p class="myCodeP">         if(result 
+ != null &amp;&amp; result.imageUrl != null ){</p>
+<p class="myCodeP">            result.imageUrl 
+ = result.imageUrl.replace(&quot;{port}&quot;, port);</p>
+<p class="myCodeP">            result.imageUrl 
+ = result.imageUrl.replace(&quot;{ip}&quot;, ip);</p>
+<p class="myCodeP">         }</p>
+<p class="myCodeP">      }</p>
+<p class="myCodeP">   }</p>
+<p class="myCodeP">}</p>
+<p> </p>
+<h2><a id="资源配置"></a>资源配置</h2>
+<ol style="list-style: decimal;">
+	<li>建一个模块配置文件 addressmatchRest。</li>
+</ol>
+<p class="myCodeP">resourceFiles=addressMatchResources.xml</p>
+<ol start="2" style="list-style: decimal;">
+	<li>新建 JAX-RS 资源配置文件 addressMatchResources.xml，并把路径写到模块配置文件的 
+	 resourceFiles 项中。</li>
+</ol>
+<p class="myCodeP">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</p>
+<p class="myCodeP">&lt;resources&gt;</p>
+<p class="myCodeP">  &lt;!-- 地址匹配资源 --&gt;</p>
+<p class="myCodeP">  &lt;resource&gt;</p>
+<p class="myCodeP">    &lt;configID&gt;addressmatch&lt;/configID&gt;</p>
+<p class="myCodeP">    &lt;implementClass&gt;com.supermap.sample.rest.resources.impl.AddressMatchResource&lt;/implementClass&gt; 
+  </p>
+<p class="myCodeP">  &lt;/resource&gt;</p>
+<p class="myCodeP">&lt;/resources&gt;</p>
+<ol start="3" style="list-style: decimal;">
+	<li>在配置文件%SuperMap iServer_HOME%\webapps\iserver\WEB-INF\iserver-services.xml 
+	 的中，添加如下组件配置信息。其中路径 addressMatchDataPath 是与 addressMatchDatas 文件的路径 
+	 相对应的。</li>
+</ol>
+<p class="myCodeP">&lt;!-- 地址匹配组件 --&gt;  </p>
+<p class="myCodeP">&lt;component class=&quot;com.supermap.sample.components.impl.AddressMatchImpl&quot; 
+ interfaceNames=&quot;restjsr&quot; name=&quot;address-sample&quot; providers=&quot;ugcMapProvider-China400&quot;&gt;</p>
+<p class="myCodeP">       &lt;config 
+ class=&quot;com.supermap.sample.components.AddressMatchConfig&quot;&gt;</p>
+<p class="myCodeP">          &lt;mapName&gt;China&lt;/mapName&gt;</p>
+<p class="myCodeP">         &lt;addressMatchDataPath&gt;../../../samples/data/addressMatchDatas&lt;/addressMatchDataPath&gt;</p>
+<p class="myCodeP">      &lt;/config&gt;</p>
+<p class="myCodeP">&lt;/component&gt;</p>
+<ol start="4" style="list-style: decimal;">
+	<li>数据文件 addressMatchDatas 作为数据源，用于实现伪地址匹配，需放在%SuperMap 
+	 iServer_HOME%\samples\data 下，即与配置文件 iserver-services.xml 中的&lt;addressMatchDataPath&gt; 
+	 相对应。</li>
+</ol>
+<p class="myCodeP">capital ; smx; smy</p>
+<p class="myCodeP">北京;12958399.4681885;4852082.42975164</p>
+<p class="myCodeP">成都;11584427.2984845;3588485.98582577</p>
+<p class="myNormal"> </p>
+<h2><a id="资源访问"></a>资源访问</h2>
+<p class="myNormal">启动 SuperMap iServer，在服务首页可看到已发布的领域服务：address-sample/restjsr，访问资源：http://localhost:8090/iserver/services/address-sample/restjsr/addressmatch，可以进行地址匹配的查询操作。</p>
+<p class="myNormal">单击地址匹配按钮后，可以打开查询结果包括匹配的地址信息和匹配的地址坐标，资源：http://localhost:8090/iserver/services/address-sample/restjsr/addressmatch/%E5%8C%97%E4%BA%AC。</p>
+<p class="myNormal">点击北京，可以看到在地图显示的结果。</p>
+<p style="text-align: center;"><img src="../../../../assets/images/DevelopGuide/Extend_iServer/Extend_JAX-RS/DSSE_Extend/addressMatch3.png" alt="" style="border: none;" width="512" height="512" border="0"/></p>
+<p style="margin-left: 0px;"> </p>
+
+
+</div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../../../../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../../../../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../../../../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../../../../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../../../../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../../../../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../../../../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../../../.."
+    gCommonRootRelPath = "../../../.."
+    gTopicId = "6.4.3.2.1.0_1"
+  
+//]]></script>
+
+  <script src="../../../../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../../../../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../../../../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../../../../whxdata/layoutconfig.js"></script>
+  <script src="../../../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

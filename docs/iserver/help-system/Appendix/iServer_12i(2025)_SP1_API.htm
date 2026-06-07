@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../iserver-icon.png"/>
+    
+  <script data-relpath=".." src="../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <meta name="template" content="../assets/layouts/SuperMapiServerMain.htt"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Language" content="zh-CN"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>iServer 2025 Update1 接口变更</title>
+  <link rel="StyleSheet" href="../assets/css/SuperMapHelp.css" type="text/css"/>
+  <script type="text/javascript" src="../assets/js/shCore.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushBash.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushCpp.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushCSharp.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushCss.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushDelphi.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushDiff.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushGroovy.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushJava.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushJScript.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushPhp.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushPlain.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushPython.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushRuby.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushScala.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushSql.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushVb.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushXml.js"></script>
+  <script type="text/javascript" src="../assets/js/ConfigiServer6R.js"></script>
+  <script type="text/javascript" src="../assets/js/SMCollapse.js"></script>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../assets/css/homeButtom.css"/>
+  <script src="../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <h2 class="myNormal">Java API 变更  </h2>
+  <table cellspacing="0" class="iServerTable">
+    <colgroup>
+      <col width="451"/>
+      <col width="313"/>
+      <col width="424"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st" style="height: 13.50pt;">
+        <td height="18">包</td>
+        <td>类/接口名</td>
+        <td>字段/方法/属性/页面</td>
+      </tr>
+      <tr class="t2Row" style="height: 13.50pt;">
+        <td colspan="1" height="18" rowspan="3">com.supermap.server.config</td>
+        <td>ServiceStorageType</td>
+        <td>新增 HIGHGO_DB 枚举，用于支持瀚高数据库存储服务配置信息</td>
+      </tr>
+      <tr class="t1Row" style="height: 13.50pt;">
+        <td>SecurityInfoStorageType</td>
+        <td>新增 HIGHGO_DB 枚举，用于支持瀚高数据库存储安全信息</td>
+      </tr>
+      <tr>
+        <td>SessionType</td>
+        <td>新增 HIGHGO_DB 枚举，用于支持瀚高数据库存储会话信息</td>
+      </tr>
+      <tr>
+        <td colspan="1" height="18">com.supermap.services.repository</td>
+        <td>RepositoryType</td>
+        <td>新增 HIGHGO_DB 枚举，用于支持瀚高数据库存储临时资源</td>
+      </tr>
+      <tr class="t2Row" style="height: 13.50pt;">
+        <td colspan="1" height="18" rowspan="2">com.supermap.server.commontypes</td>
+        <td>ServiceSettingInfo</td>
+        <td>新增 disabledInterfaceNames 字段，用于标识当前服务的禁用接口列表</td>
+      </tr>
+      <tr class="t2Row" style="height: 13.50pt;">
+        <td>InstanceAccessQueryParameter</td>
+        <td>新增 orderBy 字段，用于对访问记录集条目进行排序<br/>
+          新增 keywords 字段，用于对访问记录集中的“服务实例名称”字段进行模糊查询<br/>
+          新增 orderType 字段，表示排序方式，默认降序</td>
+      </tr>
+      <tr>
+        <td colspan="1" height="18">com.supermap.services.rest.management</td>
+        <td>DataItemInfo</td>
+        <td>新增 isDisabled 字段，用于表示当前服务实例是否禁用  </td>
+      </tr>
+      <tr>
+        <td colspan="1" height="18" rowspan="6">com.supermap.services.components.commontypes</td>
+        <td>Point2D</td>
+        <td>新增 m 字段，用于表示该点的 M 值</td>
+      </tr>
+      <tr>
+        <td>GridBasicStatisticsAnalaystParameter</td>
+        <td>新增类，用于表示栅格数据基础统计参数</td>
+      </tr>
+      <tr>
+        <td>GridBasicStatisticsAnalystResult</td>
+        <td>新增类，提供栅格数据基础统计结果能力</td>
+      </tr>
+      <tr class="t2Row" style="height: 13.50pt;">
+        <td>GetFeatureParameters</td>
+        <td>新增 Groupby 字段，表示对查询结果进行分组统计</td>
+      </tr>
+      <tr class="t1Row" style="height: 13.50pt;">
+        <td>DatasetType</td>
+        <td>新增 MULTIPOINT 枚举，用于支持多点数据集</td>
+      </tr>
+      <tr class="t2Row" style="height: 13.50pt;">
+        <td>GeometryType</td>
+        <td>新增 MULTIPOINT 枚举，用于支持多点数据集</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2 class="myNormal">REST API 变更</h2>
+  <table cellspacing="0" class="iServerTable">
+    <colgroup>
+      <col width="173"/>
+      <col span="1" width="228"/>
+      <col width="270"/>
+      <col width="583"/>
+      <col/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st" style="height: 17.25pt;">
+        <td height="23">模块</td>
+        <td>资源名称</td>
+        <td>资源/参数/请求/表述</td>
+        <td>备注</td>
+        <td width="583">URL模板</td>
+      </tr>
+      <tr class="t2Row" style="height: 17.25pt;">
+        <td colspan="1" height="23" rowspan="10">services-rest-management</td>
+        <td>ServiceStorageResource</td>
+        <td>新增 PUT 请求参数枚举</td>
+        <td>type 请求参数新增 HIGHGO_DB 枚举，用于服务配置信息存储至瀚高数据库</td>
+        <td width="583">/iserver/manager/servicestorage.json</td>
+      </tr>
+      <tr class="t1Row" style="height: 17.25pt;">
+        <td>RepositorySettingResource</td>
+        <td>新增 PUT 请求参数枚举</td>
+        <td>type 请求参数新增 HIGHGO_DB 枚举，用于临时资源存储至瀚高数据库</td>
+        <td width="583">/iserver/manager/repository/setting.json</td>
+      </tr>
+      <tr class="t2Row" style="height: 17.25pt;">
+        <td>SecurityStorageSettingResource</td>
+        <td>新增 PUT 请求参数枚举</td>
+        <td>type 请求参数新增 HIGHGO_DB 枚举，用于安全信息存储至瀚高数据库</td>
+        <td width="583">/iserver/manager/security/storage.json</td>
+      </tr>
+      <tr class="t1Row" style="height: 17.25pt;">
+        <td colspan="1">SessionStorageResource</td>
+        <td>新增 PUT 请求参数枚举</td>
+        <td>type 请求参数新增 HIGHGO_DB 枚举，用于会话信息存储至瀚高数据库</td>
+        <td colspan="1" width="583">/iserver/manager/security/session.json</td>
+      </tr>
+      <tr class="t2Row" style="height: 17.25pt;">
+        <td colspan="1">ServiceSettingsResource</td>
+        <td>新增 GET 响应参数</td>
+        <td>新增 disabledInterfaceNames 响应参数，用于标识当前服务的禁用接口列表</td>
+        <td colspan="1" width="583">/iserver/manager/services.json</td>
+      </tr>
+      <tr>
+        <td colspan="1">WorkspacesResource</td>
+        <td>新增 GET 响应参数</td>
+        <td>新增 isDisabled 响应参数，用于表示当前服务实例是否禁用</td>
+        <td colspan="1" width="583">/iserver/manager/workspaces.json</td>
+      </tr>
+      <tr class="t1Row" style="height: 17.25pt;">
+        <td>LogsIObjectsResource</td>
+        <td>新增 GET 请求</td>
+        <td>新增获取 iObjects Java 运行日志文件列表资源</td>
+        <td width="583">/iserver/manager/iobjectslogs.json</td>
+      </tr>
+      <tr>
+        <td>LogIObjectsResource</td>
+        <td>新增 GET 请求</td>
+        <td>新增获取单个 iObjects Java 运行日志资源</td>
+        <td width="583">/iserver/manager/iobjectslogs/detail?fileName=iObjects.2025.08.28.PID5420.log</td>
+      </tr>
+      <tr>
+        <td>LogsIObjectsDownloadResource</td>
+        <td>新增 GET 请求</td>
+        <td>新增下载 iObjects Java 运行日志资源</td>
+        <td width="583">/iserver/manager/iobjectslogs/downsload.zip?fileNames=all</td>
+      </tr>
+      <tr class="t1Row" style="height: 17.25pt;">
+        <td rowspan="1">OneClickProxyArcgisResource</td>
+        <td colspan="1" rowspan="1">新增 GET、POST 请求</td>
+        <td rowspan="1">新增批量转发 ArcGIS REST 服务资源</td>
+        <td rowspan="1" width="583">/iserver/manager/oneClickProxyArcgis.json</td>
+      </tr>
+      <tr>
+        <td height="23">service-security</td>
+        <td>SecurityApplicationResource</td>
+        <td>新增 GET 请求 URL 参数</td>
+        <td>URL 新增 returnPermittedService 请求参数，用于是否返回可访问、可管理的服务。不传此参数时，默认返回。</td>
+        <td width="583">/iserver/services/security/profile.json</td>
+      </tr>
+      <tr>
+        <td height="23">services-knowledge-graph</td>
+        <td>KnowledgeGraphResource</td>
+        <td>GET 响应参数变更</td>
+        <td>connectionInfo 默认返回为 null</td>
+        <td width="583">/iserver/services/knowledgeGraph-neo4j/restjsr/graph/graphmaps/point.rjson</td>
+      </tr>
+      <tr>
+        <td colspan="1" height="23" rowspan="3">services-rest</td>
+        <td> </td>
+        <td>新增 POST 请求 URL 参数</td>
+        <td>URL 新增 _method 请求参数，用于 POST 请求模拟 GET 请求，_method可取值为GET</td>
+        <td width="583">/iserver/services/{componentName}/restjsr/**<br/>
+          /iserver/services/{MapComponentName}/wms111/{MapName}?<br/>
+          /iserver/services/{MapComponentName}/wms130/{MapName}?</td>
+      </tr>
+      <tr>
+        <td>GridStatisticsAnalystResource</td>
+        <td>新增 GET 请求</td>
+        <td>新增栅格数据集统计根资源</td>
+        <td width="583">iserver/services/{spatialAnalysis-serviceName}/restjsr/spatialanalyst/datasets/{DatasetName}/gridstatistics.rjson</td>
+      </tr>
+      <tr>
+        <td>GridBasicStatisticsAnalystResource</td>
+        <td>新增 GET、POST 请求</td>
+        <td>新增栅格数据集基本统计操作资源</td>
+        <td width="583">iserver/services/{spatialAnalysis-serviceName}/restjsr/spatialanalyst/datasets/{DatasetName}/gridstatistics/gridbasicstatistics.rjson</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2 class="myNormal">配置文件变更</h2>
+  <table align="center" cellspacing="0" class="iServerTable" width="90%">
+    <colgroup>
+      <col width="392"/>
+      <col width="188"/>
+      <col style="width: 200px;" width="100"/>
+      <col style="width: 290px;" width="314"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st" style="height: 14.25pt;">
+        <td height="19" width="392">文件路径</td>
+        <td width="188">文件名称</td>
+        <td style="" width="100">配置项</td>
+        <td style="" width="314">备注</td>
+      </tr>
+      <tr class="t1Row" style="height: 14.25pt;">
+        <td colspan="1" height="19" rowspan="5">{ISERVER_HOME}\webapps\iserver\WEB-INF</td>
+        <td colspan="1" rowspan="5">iserver-system.xml</td>
+        <td style="">新增 properties&gt;&gt;disableFieldNameToUpperCase</td>
+        <td style="">是否禁用数据服务和矢量瓦片地图服务的字段名转化为大写，默认为 false</td>
+      </tr>
+      <tr>
+        <td style="">新增 properties&gt;&gt;accessRecordEnabled</td>
+        <td style="">是否写入访问统计数据，默认为 true</td>
+      </tr>
+      <tr>
+        <td style="">新增 externalUrlWhiteList 节点</td>
+        <td style="">新增支持配置访问白名单，有效防护内网穿透攻击</td>
+      </tr>
+      <tr class="t1Row" style="height: 14.25pt;">
+        <td style="">新增 properties&gt;&gt;concurrencyControl.client.session.timeout</td>
+        <td style="">当激活标准版限制三客户端20并发数许可或标准版限制10客户端70并发数许可时支持，表示单个客户端不活跃的强制下线时间</td>
+      </tr>
+      <tr class="t2Row" style="height: 14.25pt;">
+        <td style="">新增 management&gt;&gt;security&gt;&gt;accessControl&gt;&gt;SecuritySetting&gt;&gt;enableActiveLicenseByAPI</td>
+        <td style="">是否能通过任意API激活许可，用于控制许可验证接口只允许加密隧道访问</td>
+      </tr>
+    </tbody>
+  </table>
+  <p> </p>
+
+</div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = ".."
+    gCommonRootRelPath = ".."
+    gTopicId = "9.3.7.0_2"
+  
+//]]></script>
+
+  <script src="../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../whxdata/layoutconfig.js"></script>
+  <script src="../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

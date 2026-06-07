@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <script src="scripts/css-vars-ponyfill.min.js"></script>
+    <script src="../../examples/js/utils.js"></script>
+    <script src="../../examples/js/theme/themeConfig.js"></script>
+    <script src="../../examples/js/theme/theme.js"></script>
+<script type="text/javascript">
+
+</script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+        <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/adminlte/app.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="styles/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/adminlte/AdminLTE.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/adminlte/skin-blue.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jaguar.css">
+    
+
+</head>
+<body class='sidebar-mini'>
+
+<div id="wrap" class="clearfix">
+
+    <div class="navigationDiv">
+    </div>
+    <div class="main content-wrapper">
+        <h1 class="page-title" data-filename="Util.html">Namespace: Util</h1>
+        
+
+
+
+<section>
+    
+<header>
+    <h2></span>Util
+    
+    </h2>
+    
+        <div class="class-description"><p>工具类。</p></div>
+    
+</header>  
+
+<article>
+    <div class="container-overview">
+    
+    
+    
+        
+         
+            <h5>Usage</h5>
+            
+
+<pre class="prettyprint source"><code>// 浏览器
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://iclient.supermap.io/dist/openlayers/iclient-ol.js&quot;>&lt;/script>
+&lt;script>
+  const result = ol.supermap.Util.getOlVersion();
+
+&lt;/script>
+
+// ES6 Import
+import { Util } from '@supermapgis/iclient-ol';
+
+const result = Util.setMask();
+</code></pre>
+
+
+        
+        
+        
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+        
+        
+       
+    
+    </div>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+        
+        <dl>
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id=".hexToRgba">
+          
+          
+          hexToRgba<span class="signature">(hex, opacity)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{string}</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            common/commontypes/Util.js, line 1096
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>十六进制转 RGBA 格式。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>hex</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>十六进制格式。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>opacity</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>不透明度Alpha。</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        string
+                        
+                    
+            </td>
+            <td class="description last">生成的 RGBA 格式。</td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+
+    
+
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id=".setMask">
+          
+          
+          setMask<span class="signature">(layers, polygon)</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            openlayers/core/Util.js, line 390
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>为图层设置掩膜。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>layers</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="https://openlayers.org/en/v6.14.1/apidoc/module-ol_layer_Layer-Layer.html">ol.layer.Layer</a></span>
+|
+
+<span class="param-type">Array.&lt;<a href="https://openlayers.org/en/v6.14.1/apidoc/module-ol_layer_Layer-Layer.html">ol.layer.Layer</a>></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>图层</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>polygon</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="https://openlayers.org/en/v6.14.1/apidoc/module-ol_geom_Geometry-Geometry.html">ol.geom.Geometry</a></span>
+|
+
+<span class="param-type"><a href="https://openlayers.org/en/v6.14.1/apidoc/module-ol_Feature-Feature.html">ol.Feature</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>掩膜矢量要素，支持面类型的要素。</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+
+    
+<dl class="details">
+    
+        
+    
+    <dt class="tag-version">Version:</dt>
+    <dd class="tag-version"><ul class="dummy"><li>10.1.0</li></ul></dd>
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id=".unsetMask">
+          
+          
+          unsetMask<span class="signature">(layers)</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            openlayers/core/Util.js, line 439
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>取消图层掩膜。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>layers</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="https://openlayers.org/en/v6.14.1/apidoc/module-ol_layer_Layer-Layer.html">ol.layer.Layer</a></span>
+|
+
+<span class="param-type">Array.&lt;<a href="https://openlayers.org/en/v6.14.1/apidoc/module-ol_layer_Layer-Layer.html">ol.layer.Layer</a>></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>图层</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+
+    
+<dl class="details">
+    
+        
+    
+    <dt class="tag-version">Version:</dt>
+    <dd class="tag-version"><ul class="dummy"><li>10.1.0</li></ul></dd>
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</dd>
+
+        </dl>
+    
+    
+    
+
+</article>
+
+</section>  
+
+
+
+
+
+        <footer>
+            Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc</a> on Fri Sep 26 2025 09:50:51 GMT+0800 (中国标准时间)
+        </footer>
+    </div>
+</div>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>

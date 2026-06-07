@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <script src="scripts/css-vars-ponyfill.min.js"></script>
+    <script src="../../examples/js/utils.js"></script>
+    <script src="../../examples/js/theme/themeConfig.js"></script>
+    <script src="../../examples/js/theme/theme.js"></script>
+<script type="text/javascript">
+
+</script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+        <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/adminlte/app.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="styles/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/adminlte/AdminLTE.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/adminlte/skin-blue.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jaguar.css">
+    
+
+</head>
+<body class='sidebar-mini'>
+
+<div id="wrap" class="clearfix">
+
+    <div class="navigationDiv">
+    </div>
+    <div class="main content-wrapper">
+        <h1 class="page-title" data-filename="CloverStyle.html">Class: CloverStyle</h1>
+        
+
+
+
+<section>
+    
+<header>
+    <h2></span>CloverStyle
+    
+    </h2>
+    
+        <div class="class-description"><p>三叶草要素风格类。除了基本的线颜色、线宽、填充色、填充透明度、填充形状等参数，还可以设置三叶草要素扇叶的圆心角、间隔角度、数量、半径。</p></div>
+    
+</header>  
+
+<article>
+    <div class="container-overview">
+    
+    
+    
+        
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="CloverStyle">
+          
+          
+          new CloverStyle<span class="signature">(options)</span>
+        </h4>
+        
+        <h5>Usage</h5>
+        
+
+<pre class="prettyprint">
+<code>// 浏览器
+&lt;script type="text/javascript" src="https://iclient.supermap.io/dist/leaflet/iclient-leaflet.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+  new L.supermap.CloverStyle(options);
+    // 弃用的写法
+  L.supermap.cloverStyle(options);
+  
+&lt;/script&gt;
+
+<span class="nopretty">// ES6 Import</span>
+import { CloverStyle } from '@supermapgis/iclient-leaflet';
+
+new CloverStyle(options);
+</code>
+</pre>
+
+
+        
+
+        
+        <div class="tag-source">
+            leaflet/overlay/graphic/CloverStyle.js, line 7
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>参数。</p>
+                
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Default</th>
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>angle</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    60
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>三叶草每个扇叶的圆心角，单位弧度。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>spaceAngle</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    0
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>扇叶间隔角度，通过计算获取。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>count</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    3
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>扇叶数量。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>stroke</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    true
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>是否描边。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>strokeWidth</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    1
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>描边宽度。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>color</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    '#3388ff'
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>十六进制描边颜色。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>weight</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    1
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>描边宽度。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>opacity</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    1
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>描边不透明度。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>lineCap</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    'round'
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>线帽形状。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>lineJoin</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    'round'
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>线条交汇边角形状。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>fill</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    false
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>是否填充。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>fillColor</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    '#66ccff'
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>十六进制填充颜色。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>fillOpacity</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    0.2
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>填充透明度。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>fillRule</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    'evenodd'
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>填充形状。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>radius</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    10
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>扇叶的半径，单位为像素。</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+            </td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</dd>
+
+    
+    </div>
+    
+    
+        <h3 class="subsection-title">Extends</h3>
+        <ul>
+            
+            
+            
+            
+            <li><a href="https://leafletjs.com/reference.html#class">L.Class</a></li>
+            
+            
+        </ul>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+        
+        <dl>
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="drawSector">
+          
+          
+          drawSector<span class="signature">(ctx, x, y, r, sAngle, eAngle)</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            leaflet/overlay/graphic/CloverStyle.js, line 75
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>绘制扇形。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>ctx</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/CanvasRenderingContext2D">CanvasRenderingContext2D</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>context 对象。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>x</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>中心点 x 坐标。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>y</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>中心点 y 坐标。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>r</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>扇叶半径 r。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>sAngle</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>扇叶起始角度。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>eAngle</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>扇叶终止角度。</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="getStyle">
+          
+          
+          getStyle<span class="signature">()</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            leaflet/overlay/graphic/CloverStyle.js, line 67
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>获取画布。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</dd>
+
+        </dl>
+    
+    
+    
+
+</article>
+
+</section>  
+
+
+
+
+
+        <footer>
+            Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc</a> on Fri Sep 26 2025 09:50:28 GMT+0800 (中国标准时间)
+        </footer>
+    </div>
+</div>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>

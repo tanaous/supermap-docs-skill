@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <script src="scripts/css-vars-ponyfill.min.js"></script>
+    <script src="../../examples/js/utils.js"></script>
+    <script src="../../examples/js/theme/themeConfig.js"></script>
+    <script src="../../examples/js/theme/theme.js"></script>
+<script type="text/javascript">
+
+</script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+        <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/adminlte/app.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="styles/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/adminlte/AdminLTE.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/adminlte/skin-blue.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jaguar.css">
+    
+
+</head>
+<body class='sidebar-mini'>
+
+<div id="wrap" class="clearfix">
+
+    <div class="navigationDiv">
+    </div>
+    <div class="main content-wrapper">
+        <h1 class="page-title" data-filename="LabelThemeCell.html">Class: LabelThemeCell</h1>
+        
+
+
+
+<section>
+    
+<header>
+    <h2></span>LabelThemeCell
+    
+    </h2>
+    
+        <div class="class-description"><p>专题图类型的矩阵标签元素类。
+主要对矩阵标签中的专题图类型的矩阵标签元素进行设置。
+矩阵标签专题图是标签专题图（<a href="ThemeLabel.html"><code>ThemeLabel</code></a>）的一种，其中矩阵标签中的填充元素又可分为图片类型（<a href="LabelImageCell.html"><code>LabelImageCell</code></a>）、
+符号类型（<a href="LabelSymbolCell.html"><code>LabelSymbolCell</code></a>）、专题图类型（<a href="LabelThemeCell.html"><code>LabelThemeCell</code></a>）三种，该类是这三种类型的矩阵标签元素其中的一种，
+用于定义符号类型的矩阵标签，如符号 ID 字段名称（符号 ID 与 SuperMap 桌面产品中点、线、面符号的 ID 对应）、大小等。
+用户在实现矩阵标签专题图时只需将定义好的矩阵标签元素赋值予 <a href="ThemeLabel.html#matrixCells"><code>ThemeLabel#matrixCells</code></a> 属性即可。matrixCells 属性是一个二维数组，
+每一维可以是任意类型的矩阵标签元素组成的数组（也可是单个标签元素组成的数组，即数组中只有一个元素）。</p></div>
+    
+</header>  
+
+<article>
+    <div class="container-overview">
+    
+    
+    
+        
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="LabelThemeCell">
+          
+          
+          new LabelThemeCell<span class="signature">(options)</span>
+        </h4>
+        
+        <h5>Usage</h5>
+        
+
+<pre class="prettyprint">
+<code>// 浏览器
+&lt;script type="text/javascript" src="https://iclient.supermap.io/dist/mapboxgl/iclient-mapboxgl.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+  new mapboxgl.supermap.LabelThemeCell(options);
+    // 弃用的写法
+  new SuperMap.LabelThemeCell(options);
+
+&lt;/script&gt;
+
+<span class="nopretty">// ES6 Import</span>
+import { LabelThemeCell } from '@supermapgis/iclient-mapboxgl';
+
+new LabelThemeCell(options);
+</code>
+</pre>
+
+
+        
+
+        
+        <div class="tag-source">
+            common/iServer/LabelThemeCell.js, line 8
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>参数。</p>
+                
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>themeLabel</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="ThemeLabel.html">ThemeLabel</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>作为矩阵标签元素的标签专题图类。</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+            </td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</dd>
+
+    
+    </div>
+    
+    
+        <h3 class="subsection-title">Extends</h3>
+        <ul>
+            
+            
+            
+            
+            <li><a href="LabelMatrixCell.html">LabelMatrixCell</a></li>
+            
+            
+        </ul>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <h3 class="subsection-title">Members</h3>
+        
+        <dl>
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="themeLabel">
+          
+          themeLabel<span class="type-signature type themelabel"><a href="ThemeLabel.html">ThemeLabel</a></span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>使用专题图对象作为矩阵标签的一个元素。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="type">
+          
+          type<span class="type-signature type string">string</span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>设置矩阵标签元素的类型，在制作矩阵标签元素时必须指定元素类型。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        </dl>
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+        
+        <dl>
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="destroy">
+          
+          
+          destroy<span class="signature">()</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            common/iServer/LabelThemeCell.js, line 47
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>释放资源，将引用资源的属性置空。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</dd>
+
+        </dl>
+    
+    
+    
+
+</article>
+
+</section>  
+
+
+
+
+
+        <footer>
+            Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc</a> on Fri Sep 26 2025 09:51:11 GMT+0800 (中国标准时间)
+        </footer>
+    </div>
+</div>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>

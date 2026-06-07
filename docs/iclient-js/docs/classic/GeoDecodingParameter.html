@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <script src="scripts/css-vars-ponyfill.min.js"></script>
+    <script src="../../examples/js/utils.js"></script>
+    <script src="../../examples/js/theme/themeConfig.js"></script>
+    <script src="../../examples/js/theme/theme.js"></script>
+<script type="text/javascript">
+
+</script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+        <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/adminlte/app.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="styles/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/adminlte/AdminLTE.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/adminlte/skin-blue.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jaguar.css">
+    
+
+</head>
+<body class='sidebar-mini'>
+
+<div id="wrap" class="clearfix">
+
+    <div class="navigationDiv">
+    </div>
+    <div class="main content-wrapper">
+        <h1 class="page-title" data-filename="GeoDecodingParameter.html">Class: GeoDecodingParameter</h1>
+        
+
+
+
+<section>
+    
+<header>
+    <h2></span>GeoDecodingParameter
+    
+    </h2>
+    
+        <div class="class-description"><p>地理反向匹配参数类。地理反向匹配是指通过位置坐标信息查询相关地点。
+此类用于设置地理反向匹配中的查询位置坐标、过滤字段、查询半径等参数，还可以对返回结果进行一系列参数设置。</p></div>
+    
+</header>  
+
+<article>
+    <div class="container-overview">
+    
+    
+    
+        
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="GeoDecodingParameter">
+          
+          
+          new GeoDecodingParameter<span class="signature">(options)</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            common/iServer/GeoDecodingParameter.js, line 6
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>参数。</p>
+                
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>x</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                    
+                    
+                        
+                    
+                
+                <p>查询位置的横坐标。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>y</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                    
+                    
+                        
+                    
+                
+                <p>查询位置的纵坐标。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>fromIndex</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>设置返回对象的起始索引值。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>toIndex</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>设置返回对象的结束索引值。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>filters</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;string></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>过滤字段，限定查询区域。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>prjCoordSys</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>查询结果的坐标系。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>maxReturn</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>最大返回结果数。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>geoDecodingRadius</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>查询半径。</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+            </td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</dd>
+
+    
+    </div>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <h3 class="subsection-title">Members</h3>
+        
+        <dl>
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="filters">
+          
+          filters<span class="type-signature type array.<string>">Array.&lt;string></span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>过滤字段，限定查询区域。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="fromIndex">
+          
+          fromIndex<span class="type-signature type number">number</span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>设置返回对象的起始索引值。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="geoDecodingRadius">
+          
+          geoDecodingRadius<span class="type-signature type number">number</span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>查询半径。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="maxReturn">
+          
+          maxReturn<span class="type-signature type number">number</span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>最大返回结果数。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="prjCoordSys">
+          
+          prjCoordSys<span class="type-signature type string">string</span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>查询结果的坐标系。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="toIndex">
+          
+          toIndex<span class="type-signature type number">number</span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>设置返回对象的结束索引值。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="x">
+          
+          x<span class="type-signature type number">number</span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>查询位置的横坐标。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="y">
+          
+          y<span class="type-signature type number">number</span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>查询位置的纵坐标。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        </dl>
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+        
+        <dl>
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="destroy">
+          
+          
+          destroy<span class="signature">()</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            common/iServer/GeoDecodingParameter.js, line 80
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>释放资源，将引用资源的属性置空。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</dd>
+
+        </dl>
+    
+    
+    
+
+</article>
+
+</section>  
+
+
+
+
+
+        <footer>
+            Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc</a> on Fri Sep 26 2025 09:51:38 GMT+0800 (中国标准时间)
+        </footer>
+    </div>
+</div>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>

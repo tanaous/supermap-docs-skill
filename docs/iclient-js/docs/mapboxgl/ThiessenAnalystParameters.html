@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <script src="scripts/css-vars-ponyfill.min.js"></script>
+    <script src="../../examples/js/utils.js"></script>
+    <script src="../../examples/js/theme/themeConfig.js"></script>
+    <script src="../../examples/js/theme/theme.js"></script>
+<script type="text/javascript">
+
+</script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+        <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/adminlte/app.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="styles/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/adminlte/AdminLTE.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/adminlte/skin-blue.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jaguar.css">
+    
+
+</head>
+<body class='sidebar-mini'>
+
+<div id="wrap" class="clearfix">
+
+    <div class="navigationDiv">
+    </div>
+    <div class="main content-wrapper">
+        <h1 class="page-title" data-filename="ThiessenAnalystParameters.html">Class: ThiessenAnalystParameters</h1>
+        
+
+
+
+<section>
+    
+<header>
+    <h2></span>ThiessenAnalystParameters
+    
+    </h2>
+    
+        <div class="class-description"><p>泰森多边形分析参数基类。该类存储了泰森多边形分析结果数据集的名称和所在的数据源、结果数据的裁剪区域、是否返回分析得到的多边形面数组等参数。</p></div>
+    
+</header>  
+
+<article>
+    <div class="container-overview">
+    
+    
+    
+        
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="ThiessenAnalystParameters">
+          
+          
+          new ThiessenAnalystParameters<span class="signature">(options)</span>
+        </h4>
+        
+        <h5>Usage</h5>
+        
+
+<pre class="prettyprint">
+<code>// 浏览器
+&lt;script type="text/javascript" src="https://iclient.supermap.io/dist/mapboxgl/iclient-mapboxgl.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+  new mapboxgl.supermap.ThiessenAnalystParameters(options);
+    // 弃用的写法
+  new SuperMap.ThiessenAnalystParameters(options);
+
+&lt;/script&gt;
+
+<span class="nopretty">// ES6 Import</span>
+import { ThiessenAnalystParameters } from '@supermapgis/iclient-mapboxgl';
+
+new ThiessenAnalystParameters(options);
+</code>
+</pre>
+
+
+        
+
+        
+        <div class="tag-source">
+            common/iServer/ThiessenAnalystParameters.js, line 6
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>可选参数。</p>
+                
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Default</th>
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>clipRegion</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="GeometryPolygon.html">GeometryPolygon</a></span>
+|
+
+<span class="param-type"><a href="https://leafletjs.com/reference.html#polygon">L.Polygon</a></span>
+|
+
+<span class="param-type"><a href="https://openlayers.org/en/v6.14.1/apidoc/module-ol_geom_Polygon-Polygon.html">ol.geom.Polygon</a></span>
+|
+
+<span class="param-type"><a href="https://geojson.org">GeoJSONObject</a></span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>结果数据裁剪区域，可以为 null，表示不对结果进行裁剪。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>createResultDataset</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    false
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>是否返回结果数据集。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>resultDatasetName</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>指定结果数据集名称。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>resultDatasourceName</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>指定结果数据集所在数据源，默认为当前数据源。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>returnResultRegion</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    true
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>是否返回分析得到的多边形面数组。</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+            </td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</dd>
+
+    
+    </div>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <h3 class="subsection-title">Members</h3>
+        
+        <dl>
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="clipRegion">
+          
+          clipRegion<span class="type-signature type geometrypolygon"><a href="GeometryPolygon.html">GeometryPolygon</a></span> <span class="type-signature type l.polygon"><a href="https://leafletjs.com/reference.html#polygon">L.Polygon</a></span> <span class="type-signature type ol.geom.polygon"><a href="https://openlayers.org/en/v6.14.1/apidoc/module-ol_geom_Polygon-Polygon.html">ol.geom.Polygon</a></span> <span class="type-signature type geojsonobject"><a href="https://geojson.org">GeoJSONObject</a></span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>结果数据裁剪区域，可以为 null，表示不对结果进行裁剪。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="createResultDataset">
+          
+          createResultDataset<span class="type-signature type boolean">boolean</span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>是否返回结果数据集。如果为 true，则必须设置属性 resultDatasetName 和 resultDatasourceName。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="resultDatasetName">
+          
+          resultDatasetName<span class="type-signature type string">string</span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>指定结果数据集名称。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="resultDatasourceName">
+          
+          resultDatasourceName<span class="type-signature type string">string</span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>指定结果数据集所在数据源。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="returnResultRegion">
+          
+          returnResultRegion<span class="type-signature type boolean">boolean</span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>是否返回分析得到的多边形面数组。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        </dl>
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+        
+        <dl>
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="destroy">
+          
+          
+          destroy<span class="signature">()</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            common/iServer/ThiessenAnalystParameters.js, line 60
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>释放资源，将引用资源的属性置空。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</dd>
+
+        </dl>
+    
+    
+    
+
+</article>
+
+</section>  
+
+
+
+
+
+        <footer>
+            Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc</a> on Fri Sep 26 2025 09:51:11 GMT+0800 (中国标准时间)
+        </footer>
+    </div>
+</div>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>

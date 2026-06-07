@@ -1,0 +1,83 @@
+# sunlight
+
+## URI
+<[dataset_uri](../dataset.htm#URI)>/sunlight[.<format>]
+## 支持的方法
+[GET](#GET 请求)、[POST](#POST 请求)、[HEAD](#HEAD 请求)
+## 父资源
+[dataset](../dataset.htm)
+## 子资源
+[datasetSunlightResult](datasetsunlightResult.htm)
+## 介绍
+获取指定模型数据集的日照分析，数据集包括三维点、三维线、三维面、模型数据集。
+对该资源发送POST请求，则可以创建一个日照分析查询结果资源。
+支持的方法：
+- [GET](#GET 请求)：返回一个进行POST请求的表单。
+- [POST](#POST 请求)：创建一个日照分析查询结果资源。
+- [HEAD](#HEAD 请求)：检查 sunlight 资源是否存在，或权限是否可以访问 
+sunlight 资源。
+支持的表述格式：RJSON、JSON、HTML、XML。
+## 资源层次
+![](../../../../../../assets/images/root/spatialanalyst/datasets/sunlight/sp_ds_sunlight.png)
+[
+## HTTP 请求方法
+对如下 URI 执行 HTTP 请求，以 rjson 输出格式为例加以说明，其中，supermapiserver 
+是服务器名。
+http://supermapiserver:8090/iserver/services/spatialAnalysis-BIM/restjsr/spatialanalyst/datasets/结构柱%408ExportModel/sunlight.rjson
+### ](../../../root.htm)GET 请求
+返回一个进行POST请求的表单。
+### POST 请求
+创建一个日照分析查询结果资源。
+#### 请求参数
+请求体中需传递如下参数：
+| 名称 | 类型 | 含义 |
+| --- | --- | --- |
+| sourceDatasetFilter | [QueryParameter](../../../../../iServerJavadoc/com/supermap/services/components/commontypes/QueryParameter.html) | 【必填参数】过滤查询参数，包括属性过滤和ID过滤，只有满足条件的对象才进行日照分析查询。 |
+| param | sunlightParameter | 【必填参数】日照分析设置参数，包括日照分析查询的日期、时间、参与查询的数据集、是否为经纬度。 |
+| resultSetting | [DatasetSpatialQuery3DResultSetting](../../../../../iServerJavadoc/com/supermap/services/components/commontypes/DatasetSpatialQuery3DResultSetting.html) | 结果设置，包括结果数据集名称、最大返回记录、数据返回模式、是否覆盖已有数据。
+对于数据返回模式，包括只返回数据集标识（DATASET_ONLY）、只返回记录集（RECORDSET_ONLY）和返回数据集标识和记录集（DATASET_AND_RECORDSET）三种模式，默认为只返回数据集标识。
+请注意，当返回的结果数据量较大时，建议您使用只返回数据集标识模式返回数据，对返回的数据集可以进行其他空间分析操作。 |
+#### 响应结构
+正常响应情况：响应码201。响应参数如下： 
+| 字段 | 类型 | 说明 |
+| --- | --- | --- |
+| postResultType | [postResultType](../../../../../iServerJavaDoc/com/supermap/services/rest/PostResultType.html) | POST 请求的结果类型，枚举说明 POST 请求对目标资源的影响，即处理结果是什么样的。 |
+| newResourceID | String | 分析结果资源的 ID。 |
+| succeed | boolean | 分析是否成功。 |
+| newResourceLocation | String | 创建的新资源的 URI。 |
+#### 响应示例
+对sunlight资源：http://supermapiserver:8090/iserver/services/spatialAnalysis-BIM/restjsr/spatialanalyst/datasets/结构柱%408ExportModel/sunlight.rjson，操作对象选择为数据集，执行 
+POST 请求，请求参数如下：
+{
+"sourceDatasetFilter":{"attributeFilter":"", 
+"ids":[4]}, "sunlightSetting":{"startMonth":8, 
+"startDay":16, "startHour":8, "startMinute":30, 
+"startSecond":0, "endMonth":8, "endDay":16, 
+"endHour":8, "endMinute":33, "endSecond":0, 
+"keys":[0, 20, 40, 60, 80, 100], "colors":[{"red":30, 
+"green":235, "blue":241}, {"red":19, "green":228, 
+"blue":127}, {"red":16, "green":234, "blue":38}, 
+{"red":116, "green":246, "blue":7}, {"red":249, 
+"green":169, "blue":7}, {"red":255, "green":0, 
+"blue":0}], "isLonlat":true, "queryDatasets":["结构柱@8ExportModel"], 
+"segemetThreshold":1, "timeInterval":8}
+}
+则返回的 rjson 格式的资源描述如下：
+{
+"postResultType":"CreateChild",
+"newResourceID":"e371b",
+"succeed":true,
+"newResourceLocation":"http://supermapiserver:8090/iserver/services/spatialAnalysis-BIM/restjsr/spatialanalyst/datasets/%E7%BB%93%E6%9E%84%E6%9F%B1@8ExportModel/sunlight/e371b"
+}
+### HEAD 请求
+返回跟 GET 请求一样的 HTTP 响应头，但是没有响应实体。可以在不必传输整个响应内容的情况下，获取包含在响应消息头中的元数据信息。元数据信息包括媒体类型，字符编码，压缩编码，实体内容长度等。
+HEAD 请求可以用来判断 sunlight 资源是否存在，或者客户端是否有权限访问 sunlight 
+资源。通过对加.<format>的 URI 执行 HEAD 请求，还可以快速判断 sunlight 资源是否支持<format>格式的表述。
+## 请参见
+- [datasetSunlightResult](datasetsunlightResult.htm)，[dataset](../dataset.htm)
+- [客户端构建 
+REST 请求](../../../../clientBuildREST/ConstructRESTRequest.htm)
+- [状态码列表及说明](../../../../StatusCodeDescription.htm)
+- [SuperMap 
+iServer REST API 表述格式介绍](../../../../SuperMap_iServer_REST_API_OutputFormat.htm)
+- [资源层次结构](../../../../resource_hierarchy.htm)

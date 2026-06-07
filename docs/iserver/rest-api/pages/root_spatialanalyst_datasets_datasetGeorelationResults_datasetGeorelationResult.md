@@ -1,0 +1,100 @@
+# datasetGeorelationResult
+
+## URI
+[<datasetGeorelationResults_uri>](datasetGeorelationResults.htm)/{datasetGeorelationResultID}[.<format>]
+## 支持的方法
+[GET](#GET 请求)、[HEAD](#HEAD 请求)
+## 父资源
+[datasetGeorelationResults](datasetGeorelationResults.htm)
+## 介绍
+空间关系分析结果资源。
+支持的方法：
+- [GET](#GET 请求)：获取空间关系分析的结果。
+- [HEAD](#HEAD 请求)：检查 datasetGeorelationResult 资源是否存在，或权限是否可以访问 datasetGeorelationResult 资源。
+支持的表述格式：（rjson、json、xml）。
+## 资源层次
+![](../../../../../../assets/images/root/spatialanalyst/datasets/datasetGeorelationResults/img/datasetGeorelationResult.png) 
+[
+## HTTP 请求方法
+对如下 URI 执行 HTTP 请求，以 rjson 输出格式为例加以说明，其中，supermapiserver 是服务器名。
+http://supermapiserver:8090/iserver/services/spatialanalyst-changchun/restjsr/spatialanalyst/datasets/BusLine@Changchun/georelation/xqzxg79p_ce128f528e0a4a0fbd2afba79780ee04.rjson
+### ](../../../root.htm)GET 请求
+获取空间关系分析的结果。
+#### 响应结构
+响应结果是源数据集与参考数据集的空间关系结果数组，类型为 [GeoRelationResult<T>](../../../../../iServerJavadoc/com/supermap/services/components/commontypes/GeoRelationResult.html)。
+#### 响应示例
+对资源执行 GET 请求，则返回的 rjson 格式表述如下：
+[{
+"result": [59, 10],
+"count": 2,
+"source": 1
+},
+{
+"result": [59, 10],
+"count": 2,
+"source": 2
+},
+{
+"result": [60, 10, 59, 39],
+"count": 4,
+"source": 3
+},
+{
+"result": [39],
+"count": 1,
+"source": 4
+},
+{
+"result": [39],
+"count": 1,
+"source": 5
+},
+{
+"result": [61],
+"count": 1,
+"source": 6
+},
+{
+"result": [9, 61],
+"count": 2,
+"source": 12
+},
+{
+"result": [9, 61],
+"count": 2,
+"source": 18
+},
+{
+"result": [9, 61],
+"count": 2,
+"source": 19
+},
+{
+"result": [12, 9, 10, 23, 61],
+"count": 5,
+"source": 22
+},
+{
+"result": [61],
+"count": 1,
+"source": 25
+},
+{
+"result": [9, 61],
+"count": 2,
+"source": 26
+},
+{
+"result": [15, 9, 61],
+"count": 3,
+"source": 27
+}]
+### HEAD 请求
+返回跟 GET 请求一样的 HTTP 响应头，但是没有响应实体。可以在不必传输整个响应内容的情况下，获取包含在响应消息头中的元数据信息。元数据信息包括媒体类型，字符编码，压缩编码，实体内容长度等。
+HEAD 请求可以用来判断 datasetGeorelationResult 资源是否存在，或者客户端是否有权限访问 datasetGeorelationResult 资源。通过对加.<format>的 URI 执行 HEAD 请求，还可以快速判断 datasetGeorelationResult 资源是否支持<format>格式的表述。
+## 请参见
+- [datasetGeorelationResults](datasetGeorelationResults.htm)
+- [客户端构建 REST 请求](../../../../clientBuildREST/ConstructRESTRequest.htm)
+- [状态码列表及说明](../../../../StatusCodeDescription.htm)
+- [SuperMap iServer REST API 表述格式介绍](../../../../SuperMap_iServer_REST_API_OutputFormat.htm)
+- [GIS 服务资源层次结构](../../../../resource_hierarchy.htm)

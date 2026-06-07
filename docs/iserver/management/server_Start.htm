@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../iserver-icon.png"/>
+    
+  <script data-relpath=".." src="../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <meta name="template" content="../assets/layouts/SuperMapiServerMain.htt"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Language" content="zh-CN"/>
+  <meta name="topic-check-list" content="Ran Smart Index"/>
+  <meta name="topic-status" content="Complete"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>服务器的启动/停止</title>
+  <link rel="StyleSheet" href="../assets/css/SuperMapHelp.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="服务器的启动,停止服务器,启动服务器,停止"/>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../assets/css/homeButtom.css"/>
+  <script src="../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <p class="myNormal">SuperMap iServer 作为一个 Web 应用可以部署到多种 Web 服务器中，SuperMap iServer 默认部署在自带的 Tomcat 中，启动 Tomcat 就能够启动 SuperMap iServer，并同时启动 SuperMap iServer 所提供的服务。</p>
+  <p class="myNormal">在 %SuperMap iServer_HOME%/bin 目录下，提供了启动/停止 SuperMap iServer 服务器的批处理文件：</p>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1"><span style="font-weight: bold;">startup.bat</span>：在 Windows 系统下启动 SuperMap iServer 服务器</li>
+    <li class="SymbolList1"><span style="font-weight: bold;">startup.sh：</span>在 Linux 系统下启动 SuperMap iServer 服务器</li>
+    <li class="SymbolList1"><span style="font-weight: bold;">shutdown.bat</span>：在 Windows 系统下停止 SuperMap iServer 服务器</li>
+    <li class="SymbolList1"><span style="font-weight: bold;">shutdown.sh：</span>在 Linux 系统下停止 SuperMap iServer 服务器</li>
+  </ul>
+  <p class="myNormal">此外，在 %SuperMap iServer_HOME%/bin 目录下提供了 iserver.bat/iserver.sh 来启动和调试 SuperMap iServer，用法如下：</p>
+  <p class="myCodeP">用法:  iserver [选项]</p>
+  <p class="myCodeP">选项:</p>
+  <p class="myCodeP">        -start              启动 iServer</p>
+  <p class="myCodeP">        -stop               停止 iServer</p>
+  <p class="myCodeP">        -v / -version    显示 iServer 的版本信息，包含所用的 JRE/JDK、SuperMap iObjects Java 等参数信息</p>
+  <p class="myCodeP">        -help               显示帮助</p>
+  <p class="myNormal">在 Windows 平台下使用 setup 安装包安装 SuperMap iServer 后，您在开始菜单中也可以找到 SuperMap iServer 启动/停止的快捷方式（以 Windows XP 系统为例）：</p>
+  <ul class="CommonList" style="list-style: disc;">
+    <li class="CommonList"><b style="font-weight: bold;">开始</b> → <span style="font-weight: bold;"><b>程序</b></span> → <span style="font-weight: bold;"><b>SuperMap</b></span> → <span style="font-weight: bold;"><b>SuperMap iServer 2025</b></span> → <span style="font-weight: bold;"><b>启动 iServer 服务</b></span></li>
+    <li class="CommonList"><b style="font-weight: bold;">开</b><span style="font-weight: bold;"><b>始</b></span> → <span style="font-weight: bold;"><b>程序</b></span> → <span style="font-weight: bold;"><b>SuperMap</b></span> → <span style="font-weight: bold;"><b>SuperMap iServer 2025</b></span> → <span style="font-weight: bold;"><b>停止 iServer 服务</b></span></li>
+  </ul>
+  <p class="myNormal" style="font-weight: bold;">注：SuperMap iEdge 未提供setup安装包，该启动方式仅用于SuperMap iServer。</p>
+  <p class="myNormal"> </p>
+  <p class="myNormal">SuperMap iServer 服务器启动后，会自动发布默认的 GIS 服务。访问管理服务页面（本机）：<a class="contentpagehyperlink" href="http://localhost:8090/iserver/manager/">http://localhost:8090/iserver/admin-ui/home/</a>，即可进行服务管理；访问 <a class="contentpagehyperlink" href="http://localhost:8090/iserver/services/">http://localhost:8090/iserver/services</a>（本机），即可查看 SuperMap iServer 服务器默认发布的所有 GIS 服务列表。（iEdge 不提供示范GIS服务，首次启动服务列表界面时，服务列表为空。）</p>
+  <p class="myNormal">SuperMap iServer 提供了服务器非正常关闭时<a class="contentpagehyperlink" href="../FAQ/FAQ.htm#34">自动重启</a>功能，及<a class="contentpagehyperlink" href="../Appendix/iServer_configInfo.htm#系统配置文件结构">系统配置文件</a>中控制该功能是否开启的&lt;restartWhenCrash&gt;参数。</p>
+  <h2>高级配置</h2>
+  <h3 class="myNormal">以 Windows 服务的方式启动</h3>
+  <p class="myNormal">除了上述方式启动/停止 SuperMap iServer 服务外，还可以通过 Windows 服务的方式来启动/停止 SuperMap iServer，当然首先需要将 Tomcat 注册为 Windows 服务。详细步骤请参考<a class="contentpagehyperlink" href="../Appendix/WindowsService.htm">以 Windows 服务的方式启动 iServer</a>。</p>
+  <h3 class="myNormal">指定配置文件目录启动</h3>
+  <p class="myNormal">SuperMap iServer 支持指定配置目录启动。配置目录包含了 SuperMap iServer 中的所有配置信息。非 war 包中，默认的配置目录位于 %SuperMap iServer_HOME%/webapps/iserver/WEB-INF（不含 lib），war 包中，默认的配置目录位于 %iserver 服务目录%/WEB-INF（不含 lib）。</p>
+  <p class="myNormal">高级用户启动时，可设置名为 iserver.config 的 Java 虚拟机参数类指定 iServer 配置目录的位置，例如在 windows 下运行如下命令启动：</p>
+  <p class="myCodeP">set JAVA_OPTS=%JAVA_OPTS% -Diserver.config=&quot;D:/WEB-INF1&quot;</p>
+  <p class="myCodeP">startup.bat</p>
+  <p class="myNormal">即可使用“D:/WEB-INF1”目录包含的配置文件部署 SuperMap iServer。</p>
+  <p class="myNormal">在 Tomcat 中，可使用如下命令来同时定制 Tomcat 的 server.xml 和 SuperMap iServer 的配置文件：</p>
+  <p class="myNormal">启动：</p>
+  <p class="myCodeP">set JAVA_OPTS=%JAVA_OPTS% -Diserver.config=&quot;D:/WEB-INF1&quot;</p>
+  <p class="myCodeP">startup.bat -config=&quot;D:/server1.xml&quot;</p>
+  <p class="myNormal">停止：</p>
+  <p class="myCodeP">shutdown.bat -config=&quot;D:/server1.xml&quot;</p>
+  <h3>指定应用服务器名称启动</h3>
+  <p class="myNormal">SuperMap iServer 提供了默认的 URL 根地址，即 http://&lt;ip&gt;:&lt;port&gt;/iserver，若您需要将 &quot;iserver&quot; 更改为其他应用服务器名称，并在访问 iServer 时能够默认显示跳转，请遵循如下步骤：</p>
+  <p class="myNormal">1、将 %SuperMap iServer_HOME%/webapps 下 iserver 文件夹名更改为指定名称；</p>
+  <p class="myNormal">2、将 %SuperMap iServer_HOME%/webapps/ROOT/index.htm 文件中，如下代码中的 iserver 更改为上一步中的名称</p>
+  <p class="myCodeP">    window.onload=function ()</p>
+  <p class="myCodeP">    {</p>
+  <p class="myCodeP">      window.location.href=&quot;iserver&quot;;</p>
+  <p class="myCodeP">    }</p>
+  <h3>  <a id="daemonprocess"></a>设置监控进程通信端口号</h3>
+  <p class="myNormal">SuperMap iServer 支持指定守护进程与主进程间通信端口号。并提供两种方式设置：</p>
+  <p class="myNormal">1、修改 setenv.sh/setenv.bat</p>
+  <p class="myNormal">打开【iServer 根目录】\bin\setenv.sh（Linux）或 setenv.bat（Windows），添加如下内容：</p>
+  <p class="myCodeP">set com.supermap.server.mainprocessport=8091</p>
+  <p class="myCodeP">set com.supermap.server.daemonprocessport=8092</p>
+  <p class="myNormal">2、修改 iserver-system.xml</p>
+  <p class="myNormal">打开【iServer 根目录】\webapps\iserver\WEB-INF\iserver-system.xml，在&lt;properties&gt;中添加：</p>
+  <p class="myCodeP">    &lt;daemonprocessport&gt;8092&lt;/daemonprocessport&gt;  </p>
+  <p class="myCodeP">    &lt;mainprocessport&gt;8091&lt;/mainprocessport&gt;</p>
+  <p class="myNormal">配置完成后如下：</p>
+  <pre class="brush:xml"> &lt;properties&gt;     &lt;outputPath&gt;../../webapps/{contextPath}/output&lt;/outputPath&gt;      &lt;outputSite&gt;http://{ip}:{port}/{contextPath}/output/&lt;/outputSite&gt;      &lt;realspaceCacheAccessKey&gt;70 39 -37 -116 -91 105 73 111 -71 90 -24 -17 -115 80 -56 -17&lt;/realspaceCacheAccessKey&gt;      &lt;realspaceSecurityEnabled&gt;true&lt;/realspaceSecurityEnabled&gt;      &lt;envCheckEnabled&gt;true&lt;/envCheckEnabled&gt;      &lt;daemonprocessport&gt;8092&lt;/daemonprocessport&gt;      &lt;mainprocessport&gt;8091&lt;/mainprocessport&gt;   &lt;/properties&gt; </pre>
+  <p class="myNormal"> </p>
+
+</div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = ".."
+    gCommonRootRelPath = ".."
+    gTopicId = "5.0_1"
+  
+//]]></script>
+
+  <script src="../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../whxdata/layoutconfig.js"></script>
+  <script src="../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

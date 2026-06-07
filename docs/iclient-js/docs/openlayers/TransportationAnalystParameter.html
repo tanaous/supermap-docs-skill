@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <script src="scripts/css-vars-ponyfill.min.js"></script>
+    <script src="../../examples/js/utils.js"></script>
+    <script src="../../examples/js/theme/themeConfig.js"></script>
+    <script src="../../examples/js/theme/theme.js"></script>
+<script type="text/javascript">
+
+</script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+        <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/adminlte/app.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="styles/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/adminlte/AdminLTE.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/adminlte/skin-blue.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jaguar.css">
+    
+
+</head>
+<body class='sidebar-mini'>
+
+<div id="wrap" class="clearfix">
+
+    <div class="navigationDiv">
+    </div>
+    <div class="main content-wrapper">
+        <h1 class="page-title" data-filename="TransportationAnalystParameter.html">Class: TransportationAnalystParameter</h1>
+        
+
+
+
+<section>
+    
+<header>
+    <h2></span>TransportationAnalystParameter
+    
+    </h2>
+    
+        <div class="class-description"><p>交通网络分析通用参数类。此类提供了交通网络分析中所需的障碍边、障碍点、权值字段信息的名称标识、转向权值字段，以及有关分析结果的一系列参数。</p></div>
+    
+</header>  
+
+<article>
+    <div class="container-overview">
+    
+    
+    
+        
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="TransportationAnalystParameter">
+          
+          
+          new TransportationAnalystParameter<span class="signature">(options)</span>
+        </h4>
+        
+        <h5>Usage</h5>
+        
+
+<pre class="prettyprint">
+<code>// 浏览器
+&lt;script type="text/javascript" src="https://iclient.supermap.io/dist/openlayers/iclient-ol.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+  new ol.supermap.TransportationAnalystParameter(options);
+    // 弃用的写法
+  new SuperMap.TransportationAnalystParameter(options);
+
+&lt;/script&gt;
+
+<span class="nopretty">// ES6 Import</span>
+import { TransportationAnalystParameter } from '@supermapgis/iclient-ol';
+
+new TransportationAnalystParameter(options);
+</code>
+</pre>
+
+
+        
+
+        
+        <div class="tag-source">
+            common/iServer/TransportationAnalystParameter.js, line 7
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>参数。</p>
+                
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>barrierEdgeIDs</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;number></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                    
+                    
+                        
+                    
+                
+                <p>网络分析中障碍弧段的 ID 数组。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>barrierNodeIDs</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;number></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                    
+                    
+                        
+                    
+                
+                <p>网络分析中障碍点的 ID 数组。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>turnWeightField</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                    
+                    
+                        
+                    
+                
+                <p>转向权重字段的名称。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>resultSetting</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="TransportationAnalystResultSetting.html">TransportationAnalystResultSetting</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                    
+                    
+                        
+                    
+                
+                <p>分析结果返回内容设置。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>barrierPoints</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;(<a href="GeometryPoint.html">GeometryPoint</a>|<a href="https://leafletjs.com/reference.html#point">L.Point</a>|<a href="https://leafletjs.com/reference.html#latlng">L.LatLng</a>|<a href="https://openlayers.org/en/v6.14.1/apidoc/module-ol_geom_Point-Point.html">ol.geom.Point</a>|<a href="https://www.mapbox.com/mapbox-gl-js/api/#lnglat">mapboxgl.LngLat</a>|<a href="https://www.mapbox.com/mapbox-gl-js/api/#point">mapboxgl.Point</a>|Array.&lt;number>)></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>网络分析中 Point2D 类型的障碍点数组。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>weightFieldName</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>阻力字段的名称。</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+            </td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</dd>
+
+    
+    </div>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <h3 class="subsection-title">Members</h3>
+        
+        <dl>
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="barrierEdgeIDs">
+          
+          barrierEdgeIDs<span class="type-signature type array.<number>">Array.&lt;number></span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>网络分析中障碍弧段的 ID 数组。弧段设置为障碍边之后，表示双向都不通。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="barrierNodeIDs">
+          
+          barrierNodeIDs<span class="type-signature type array.<number>">Array.&lt;number></span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>网络分析中障碍点的 ID 数组。结点设置为障碍点之后，表示任何方向都不能通过此结点。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="barrierPoints">
+          
+          barrierPoints<span class="type-signature type array.<(geometrypoint|l.point|l.latlng|ol.geom.point|mapboxgl.lnglat|mapboxgl.point|array.<number>)>">Array.&lt;(<a href="GeometryPoint.html">GeometryPoint</a>|<a href="https://leafletjs.com/reference.html#point">L.Point</a>|<a href="https://leafletjs.com/reference.html#latlng">L.LatLng</a>|<a href="https://openlayers.org/en/v6.14.1/apidoc/module-ol_geom_Point-Point.html">ol.geom.Point</a>|<a href="https://www.mapbox.com/mapbox-gl-js/api/#lnglat">mapboxgl.LngLat</a>|<a href="https://www.mapbox.com/mapbox-gl-js/api/#point">mapboxgl.Point</a>|Array.&lt;number>)></span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>网络分析中 Point2D 类型的障碍点数组。障碍点表示任何方向都不能通过此点。</br>
+当各网络分析参数类中的 isAnalyzeById 属性设置为 false 时，该属性才生效。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="resultSetting">
+          
+          resultSetting<span class="type-signature type transportationanalystresultsetting"><a href="TransportationAnalystResultSetting.html">TransportationAnalystResultSetting</a></span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>分析结果返回内容设置。该设置不影响结果，但设置后将增加分析所耗时间。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="turnWeightField">
+          
+          turnWeightField<span class="type-signature type string">string</span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>转向权重字段的名称。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="weightFieldName">
+          
+          weightFieldName<span class="type-signature type string">string</span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>阻力字段的名称，标识了进行网络分析时所使用的阻力字段，例如表示时间、长度等的字段都可以用作阻力字段。
+该字段默值为服务器发布的所有耗费字段的第一个字段。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        </dl>
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+        
+        <dl>
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="destroy">
+          
+          
+          destroy<span class="signature">()</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            common/iServer/TransportationAnalystParameter.js, line 71
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>释放资源，将引用资源的属性置空。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</dd>
+
+        </dl>
+    
+    
+    
+
+</article>
+
+</section>  
+
+
+
+
+
+        <footer>
+            Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc</a> on Fri Sep 26 2025 09:50:51 GMT+0800 (中国标准时间)
+        </footer>
+    </div>
+</div>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>

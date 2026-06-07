@@ -1,0 +1,825 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../../../../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../../../../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../../../../../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../../../../iserver-icon.png"/>
+    
+  <script data-relpath="../../../../.." src="../../../../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <meta name="template" content="../../../../../assets/layouts/RESTAPI.htt"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Language" content="zh-CN"/>
+  <meta name="topic-check-list" content="Ran Smart Index"/>
+  <meta name="topic-status" content="Complete"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>map</title>
+  <link rel="StyleSheet" href="../../../../../assets/css/SuperMapHelp.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="Map"/>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../../../../../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../assets/css/homeButtom.css"/>
+  <script src="../../../../../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../../../../../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../../../../../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../../../../../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../../../../../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../../../../../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../../../../../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../../../../../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../../../../../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <h2><a name="URI" id="URI"></a>URI</h2>
+  <p class="myNormal" style="font-weight: normal;">1.<a class="contentpagehyperlink" href="../maps.htm#URI" style="font-weight: normal;">&lt;maps_uri&gt;</a>/{mapName}[.&lt;format&gt;]</p>
+  <p class="myNormal" style="font-weight: normal;">2.<a class="contentpagehyperlink" href="../maps.htm#URI" style="font-weight: normal;">&lt;maps_uri&gt;</a>/{mapIndex}[.&lt;format&gt;]</p>
+  <h2>支持的方法</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="#GET 请求">GET</a>、<a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a></p>
+  <h2>父资源</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="../maps.htm">maps</a></p>
+  <h2>子资源</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="image.htm">image</a>、<a class="contentpagehyperlink" href="entireImage.htm">entireImage</a>、<a class="contentpagehyperlink" href="overview.htm">overview</a>、<a class="contentpagehyperlink" href="trackingLayer/trackingLayer.htm">trackingLayer</a>、<a class="contentpagehyperlink" href="layers/layers.htm">layers</a>、<a class="contentpagehyperlink" href="tempLayersSet/tempLayersSet.htm">tempLayersSet</a>、<a class="contentpagehyperlink" href="distance.htm">distance</a>、<a class="contentpagehyperlink" href="area.htm">area</a>、<a class="contentpagehyperlink" href="chartFeatureInfoSpecs.htm">chartFeatureInfoSpecs</a>、<a class="contentpagehyperlink" href="queryResults/queryResults.htm">queryResults</a>、<a class="contentpagehyperlink" href="tileImage.htm">tileImage</a>、<a class="contentpagehyperlink" href="tileFeature/tileFeature.htm">tileFeature</a>、<a class="contentpagehyperlink" href="tilesets/tilesets.htm">tilesets</a>、<a class="contentpagehyperlink" href="highlightImage.htm">highlightImage</a>、<a class="contentpagehyperlink" href="clearCache.htm">clearCache</a>、<a class="contentpagehyperlink" href="symbol.htm">symbol</a>、<a class="contentpagehyperlink" href="PrjCoordSys.htm">prjCoordSys</a>、<a class="contentpagehyperlink" href="zxyTileImage/zxyTileImage.htm">zxyTileImage</a></p>
+  <h2>介绍</h2>
+  <p class="myNormal">map 资源是访问在线地图服务的入口，通过 map 资源，可以获得该地图的基本状态信息，如中心点，比例尺，地图范围，图片大小，地图单位，包含的图层，包含的图片等等，并可以创建一个临时的图层集。</p>
+  <p class="myNormal">对 map 资源执行 GET 请求时，可以获取 flash、flash3d、silverlight、javascript、supermapcloud、tianditu 表述，即针对该地图资源的 Flash 客户端应用、Flash3D 客户端、 Silverlight 客户端应用、JavaScript 客户端应用、SuperMapCloud 应用和 Tianditu 应用，这些应用实现了简单的地图功能。对 map 资源执行 GET 请求时，还可以获取 KML 表述，如 http://supermapiserver:8090/iserver/services/map-world/rest/maps/World%20Map.kml， 在 GoogleEarth 客户端可以直接打开此 kml URI 进行显示。</p>
+  <p class="myNormal">根据国家有关规定，SuperMap 云服务的数据及天地图的数据经过了脱密处理，因此 supermapcloud 表述形式下，地图浏览效果与云服务图层可能存在一定程度的偏差；tianditu 表述形式下，地图浏览效果与天地图图层可能存在一定程度的偏差。</p>
+  <p class="myNormal">关于本资源的使用方法，可参考开发指南：<a class="contentpagehyperlink" href="../../../../../DevelopGuide/Use_iServer/USE_RESTAPI/Map_Opr/mapParam.htm">获取地图参数</a>。</p>
+  <p class="myNormal" style="font-weight: bold;">支持的方法：</p>
+  <ul class="supportList" style="list-style: disc;">
+    <li class="supportList"><a class="contentpagehyperlink" href="#GET 请求">GET</a>：获取地图的基本信息，包括该地图的中心点，比例尺，地图范围，出图图片大小，地图单位，距离度量单位等。</li>
+    <li class="supportList"><a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a>：获取地图资源的元数据信息。检查该 map 资源是否存在，权限是否可以访问。</li>
+  </ul>
+  <p class="myNormal">支持的表述格式：RJSON、JSON、JSONP、FASTJSON、HTML、XML、KML、Leaflet、openlayers3 (with MVT)、MapboxGL、for Classic (with Vector Tile)、 WebGL3D。</p>
+  <h2>资源层次</h2>
+  <p><img alt="" border="0" height="164" src="../../../../../assets/images/root/maps/map/map.png" usemap="#DrawArea" width="295"/><map id="DrawArea" name="DrawArea"><area alt="resources.htm" coords="9.388,4.551,265.797,45.4645" href="../../root.htm" shape="rect"/> <area alt="maps.htm" coords="81.028,57.4645,226.798,98.2645" href="../maps.htm" shape="rect"/> <area alt="map.htm" coords="122.212,110.649,274.612,160" href="map.htm" shape="rect"/></map></p>
+  <h2>HTTP 请求方法</h2>
+  <p class="myNormal">对如下 URI 执行 HTTP 请求，以 rjson 输出格式为例加以说明，其中，supermapiserver 是服务器名，“世界地图” 是地图名（{mapName}）。</p>
+  <p class="uriStyle">http://supermapiserver:8090/iserver/services/map-world/rest/maps/世界地图.rjson</p>
+  <h3><a id="GET 请求"></a>GET 请求</h3>
+  <p class="myNormal">获取地图当前状态的基本信息，包括该地图的中心点，比例尺，地图显示范围，出图图片大小，地图单位，距离度量单位等。其中，地图进行动态投影时，地图显示范围（viewBounds）是指原地图显示范围在目标投影下所转换成的多边形的外接矩形，而其他地图状态参数也会随之变化，如中心点和比例尺。</p>
+  <h4>URI 参数</h4>
+  <p class="myNormal">map 资源对应的 URI 有两种，优先以 mapName 匹配：</p>
+  <p class="myNormal">第一种：<a class="contentpagehyperlink" href="../maps.htm#URI">&lt;maps_uri&gt;/</a>{mapName}[.&lt;format&gt;]，地图资源由具体的地图名称{mapName}来标识，地图名称可以是中文；</p>
+  <p class="myNormal">第二种：<a class="contentpagehyperlink" href="../maps.htm#URI">&lt;maps_uri&gt;</a>/{mapIndex}[.&lt;format&gt;]，地图资源由具体地图的索引号{mapIndex}来标识，从0开始编号，依次为0、1、2、3等。</p>
+  <h4>请求参数</h4>
+  <p class="myNormal">URI 中，在“?”后面支持传递的参数如下表所示：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>名称</td>
+        <td>类型</td>
+        <td>含义</td>
+      </tr>
+      <tr class="t2Row">
+        <td>_cache</td>
+        <td>boolean</td>
+        <td>【可选参数】 是否使用缓存，默认为 true。如果为 false，则关闭所有缓存。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>prjCoordSys</td>
+        <td>
+          <p><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/PrjCoordSys.html">PrjCoordSys</a></p>
+        </td>
+        <td>【可选参数】 用于指定请求地图的坐标参考系统，服务端会按照指定的坐标参考系统返回相应的地图状态信息。 如果此参数为空，则默认返回地图原坐标参考系统下的状态信息；如果指定的坐标参考系统与地图原坐标参考系统不同，服务端会对地图进行动态投影，然后返回动态投影后的地图状态信息。
+          <p>参数使用时，需按照<a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/PrjCoordSys.html">PrjCoordSys</a>中的字段结构来构建，同时也支持通过只传递 epsgCode 的方式传入坐标参考系，如：</p>
+          prjCoordSys={&quot;epsgCode&quot;:3857}。
+        </td>
+      </tr>
+      <tr class="t2Row">
+        <td>queryResultID</td>
+        <td>
+          <p>String</p>
+        </td>
+        <td>【可选参数】【JavaScript 表述中支持】 用于展示地图查询结果。 <a id="地图查询结果_queryResult_可以借助_map_资源的_JavaScript_表述叠加在地图上进行显示_如_queryResultID_eiicoeik_889fa578956b4c90bb8aa841e5abfb7d_"></a>地图查询结果（queryResult）可以叠加在地图上，借助 map 资源的 JavaScript 表述进行显示，如：queryResultID=eiicoeik_889fa578956b4c90bb8aa841e5abfb7d。</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 class="myNormal">地图定位</h4>
+  <p class="myNormal"> flash、flash3d、silverlight、javascript 表述支持在 URI 中进行地图定位。以 flash 表述为例，利用 URI：http://supermapiserver:8090/iserver/services/map-world/rest/maps/World+Map.flash 获得名为 World Map 的地图的 flash 表述后，地图的比例尺和中心点坐标会自动以“比例尺/中心点 X/中心点 Y”的形式显示在 URI 的“#”后面，如：http://supermapiserver:8090/iserver/services/map-world/rest/maps/World+Map.flash#3.691951051719594e-8/10767652.46246/4260478.7946309，通过拖动、缩放地图等操作改变地图的 viewBounds，会实时更新 URI 中的比例尺和中心点坐标，用户也可以通过当前地图的 URI，快速解析到当前地图的比例尺和中心点坐标，实现对地图的定位。</p>
+  <h4>动态投影</h4>
+  <p class="myNormal">SuperMap iServer 的 REST Map 服务支持发布各坐标参考系下的地图，且支持对 REST Map 服务中的地图进行动态投影（无投影的平面坐标系暂不支持）。</p>
+  <p class="myNormal">REST 地图服务动态投影的使用方法如下：</p>
+  <ol class="ListInParagraph" style="list-style: decimal;">
+    <li class="ListInParagraph">获取动态投影后的地图状态：通过 map 资源的 GET 操作获取当前地图的状态，包括当前地图支持的目标投影坐标系列表，然后通过在 GET 请求中传递 prjCoordSys 参数，获取动态投影后的地图信息，如 prjCoordSys={&quot;epsgCode&quot;:3857}。</li>
+    <li class="ListInParagraph">获取动态投影后的地图图片：根据需要对出图资源，如<a class="contentpagehyperlink" href="image.htm">image</a>、<a class="contentpagehyperlink" href="entireImage.htm">entireImage</a>或<a class="contentpagehyperlink" href="tileImage.htm">tileImage</a>资源执行 GET 请求并传递 prjCoordSys 参数，即可获取动态投影后的地图图片。</li>
+  </ol>
+  <p class="myNormal">需要注意的是，地图进行动态投影后，其中坐标单位、中心点，比例尺，地图范围等状态信息与投影前会有不同，获取图片时，请注意设置相关参数。对 map 资源进行动态投影时，是以地图在目标投影下的 viewBounds 为范围来计算其他地图状态参数的，如中心点和比例尺，而新 viewBounds 是原 viewBounds 投影变换后对应多边形的外接矩形。此外，map 资源的当前坐标系状态会转递给子资源，如<a class="contentpagehyperlink" href="image.htm">image</a>、<a class="contentpagehyperlink" href="entireImage.htm">entireImage</a>、<a class="contentpagehyperlink" href="tileImage.htm">tileImage</a>，即这些子资源的默认坐标系与 map 资源的当前坐标系一致。</p>
+  <p class="myNormal">关于 SuperMap iServer 目前支持的 EPSG Code，请参考：<a class="contentpagehyperlink" href="../../../../../Appendix/CoordSystem/EPSGCode.htm">iServer 支持的 EPSG Code</a>。</p>
+  <h4>响应结构</h4>
+  <p class="myNormal">对地图资源执行 GET 请求，返回的资源表述的结构如下（资源表述在响应消息的实体主体里）：  </p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st" style="height: 27px;">
+        <td>字段</td>
+        <td>类型</td>
+        <td>说明</td>
+      </tr>
+      <tr class="t2Row" style="height: 27px;">
+        <td>name</td>
+        <td>String</td>
+        <td>当前地图的名称。</td>
+      </tr>
+      <tr class="t1Row" style="height: 27px;">
+        <td>center</td>
+        <td><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/Point2D.html">Point2D</a></td>
+        <td>地图显示的中心点。</td>
+      </tr>
+      <tr class="t2Row" style="height: 27px;">
+        <td>scale</td>
+        <td>double</td>
+        <td>地图的显示比例尺，详见<a class="contentpagehyperlink" href="../../../../../Appendix/scale.htm">比例尺的定义</a>。</td>
+      </tr>
+      <tr class="t1Row" style="height: 32px;">
+        <td>maxScale</td>
+        <td>double</td>
+        <td>地图的最大显示比例尺。该值为0时，表示没有比例尺显示限制。</td>
+      </tr>
+      <tr class="t2Row" style="height: 32px;">
+        <td>minScale</td>
+        <td>double</td>
+        <td>地图的最小显示比例尺。该值为0时，表示没有比例尺显示限制。</td>
+      </tr>
+      <tr class="t1Row" style="height: 27px;">
+        <td>bounds</td>
+        <td><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/Rectangle2D.html">Rectangle2D</a></td>
+        <td><span style="font-family: 宋体;">地图的全幅地理范围。</span></td>
+      </tr>
+      <tr class="t2Row" style="height: 27px;">
+        <td>viewBounds</td>
+        <td><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/Rectangle2D.html">Rectangle2D</a></td>
+        <td>地图窗口显示区域的范围，是一个矩形框。 如果对地图设置了动态投影，则此参数表示原 viewBounds 在目标投影下所转换成的多边形的外接矩形。</td>
+      </tr>
+      <tr class="t1Row" style="height: 27px;">
+        <td>viewer</td>
+        <td><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/Rectangle.html">Rectangle</a></td>
+        <td>用户显示视窗，即产生的图片的大小。</td>
+      </tr>
+      <tr class="t2Row" style="height: 30px;">
+        <td>prjCoordSys</td>
+        <td><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/PrjCoordSys.html">PrjCoordSys</a></td>
+        <td>返回当前地图的坐标参考系统。</td>
+      </tr>
+      <tr class="t1Row" style="height: 27px;">
+        <td>dynamicPrjCoordSyses</td>
+        <td><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/PrjCoordSys.html">PrjCoordSys</a></td>
+        <td>返回当前地图所支持的目标投影坐标系列表。
+          <p>如果当前坐标参考系统支持动态投影为所有类型的坐标参考系统，则 epsgCode 为0，type 为 PCS_ALL。</p>
+        </td>
+      </tr>
+      <tr class="t2Row" style="height: 56px;">
+        <td>customParams</td>
+        <td>String</td>
+        <td>自定义参数。 可以是任何形式组织的字符串。用户可以通过该属性传入自定义的参数。</td>
+      </tr>
+      <tr class="t1Row" style="height: 27px;">
+        <td>userToken</td>
+        <td><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/UserInfo.html">UserInfo</a></td>
+        <td>用户信息。</td>
+      </tr>
+      <tr class="t2Row" style="height: 27px;">
+        <td>clipRegion</td>
+        <td><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/Geometry.html">Geometry</a></td>
+        <td>地图显示裁剪的区域。</td>
+      </tr>
+      <tr class="t1Row" style="height: 27px;">
+        <td>clipRegionEnabled</td>
+        <td>boolean</td>
+        <td>地图显示裁剪的区域是否有效。</td>
+      </tr>
+      <tr class="t2Row" style="height: 27px;">
+        <td>customEntireBounds</td>
+        <td><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/Rectangle2D.html">Rectangle2D</a></td>
+        <td>自定义的地图全幅显示范围。</td>
+      </tr>
+      <tr class="t1Row" style="height: 27px;">
+        <td>customEntireBoundsEnabled</td>
+        <td>boolean</td>
+        <td>自定义的地图全幅显示范围是否有效。</td>
+      </tr>
+      <tr class="t2Row" style="height: 27px;">
+        <td>angle</td>
+        <td>double</td>
+        <td>当前地图的旋转角度。</td>
+      </tr>
+      <tr class="t1Row" style="height: 27px;">
+        <td>antialias</td>
+        <td>boolean</td>
+        <td>是否反走样地图。</td>
+      </tr>
+      <tr class="t2Row" style="height: 27px;">
+        <td>backgroundStyle</td>
+        <td><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/Style.html">Style</a></td>
+        <td>地图的背景风格。</td>
+      </tr>
+      <tr class="t1Row" style="height: 27px;">
+        <td>colorMode</td>
+        <td><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/MapColorMode.html">MapColorMode</a></td>
+        <td>地图的颜色模式。</td>
+      </tr>
+      <tr class="t2Row" style="height: 27px;">
+        <td>coordUnit</td>
+        <td><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/Unit.html">Unit</a></td>
+        <td>地图的坐标单位。</td>
+      </tr>
+      <tr class="t1Row" style="height: 27px;">
+        <td>distanceUnit</td>
+        <td><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/Unit.html">Unit</a></td>
+        <td>地图的距离量度单位。</td>
+      </tr>
+      <tr class="t2Row" style="height: 27px;">
+        <td>description</td>
+        <td>String</td>
+        <td>当前地图的描述信息。</td>
+      </tr>
+      <tr class="t1Row" style="height: 27px;">
+        <td>dynamicProjection</td>
+        <td>boolean</td>
+        <td>是否允许地图动态投影显示。</td>
+      </tr>
+      <tr class="t2Row" style="height: 27px;">
+        <td>markerAngleFixed</td>
+        <td>boolean</td>
+        <td>指定点状符号的角度是否固定。</td>
+      </tr>
+      <tr class="t1Row" style="height: 27px;">
+        <td>maxVisibleTextSize</td>
+        <td>double</td>
+        <td>文本的最大可见尺寸，单位为像素。</td>
+      </tr>
+      <tr class="t2Row" style="height: 56px;">
+        <td>maxVisibleVertex</td>
+        <td>int</td>
+        <td>
+          <p>最大几何对象可见节点数。</p>
+          <p>如果几何对象的节点数超过指定的个数，则该几何对象不显示。</p>
+        </td>
+      </tr>
+      <tr class="t1Row" style="height: 27px;">
+        <td>minVisibleTextSize</td>
+        <td>double</td>
+        <td>文本的最小可见尺寸，单位为像素。</td>
+      </tr>
+      <tr class="t2Row" style="height: 27px;">
+        <td>overlapDisplayed</td>
+        <td>boolean</td>
+        <td>重叠时是否显示对象。</td>
+      </tr>
+      <tr class="t1Row" style="height: 27px;">
+        <td>paintBackground</td>
+        <td>boolean</td>
+        <td>是否绘制地图背景。</td>
+      </tr>
+      <tr class="t2Row" style="height: 27px;">
+        <td>textAngleFixed</td>
+        <td>boolean</td>
+        <td>文本角度是否固定。</td>
+      </tr>
+      <tr class="t1Row" style="height: 27px;">
+        <td>textOrientationFixed</td>
+        <td>boolean</td>
+        <td>文本朝向是否固定。</td>
+      </tr>
+      <tr class="t2Row" style="height: 27px;">
+        <td>overlapDisplayedOptions</td>
+        <td><a class="contentpagehyperlink" href="file://E:/supermap/doc/OnlineHelp/API/iServerJavadoc/com/supermap/services/components/commontypes/OverlapDisplayedOptions.html">OverlapDisplayedOptions</a></td>
+        <td>避免地图对象压盖显示的过滤选项，当 overlapDisplayed 为 false 时有效，用来增强对地图对象压盖时的处理。</td>
+      </tr>
+      <tr class="t1Row" style="height: 27px;">
+        <td>visibleScales</td>
+        <td>double[]</td>
+        <td>地图的可见比例尺数组。</td>
+      </tr>
+      <tr class="t2Row" style="height: 27px;">
+        <td>dpi</td>
+        <td>double</td>
+        <td>分辨率，单位为每英寸点数。</td>
+      </tr>
+      <tr class="t1Row" style="height: 27px;">
+        <td>visibleScalesEnabled</td>
+        <td>boolean</td>
+        <td>是否使用固定比例尺来显示地图。</td>
+      </tr>
+      <tr class="t2Row" style="height: 27px;">
+        <td>customEntireBoundsEnabled</td>
+        <td>boolean</td>
+        <td>自定义的地图全幅显示范围是否有效。</td>
+      </tr>
+      <tr class="t1Row" style="height: 27px;">
+        <td>cacheEnabled</td>
+        <td>boolean</td>
+        <td>是否启用缓存。</td>
+      </tr>
+      <tr class="t2Row" style="height: 27px;">
+        <td>mapCapabilities</td>
+        <td><a href="file://E:/supermap/doc/OnlineHelp/API/iServerJavadoc/com/supermap/services/components/commontypes/MapCapability.html">MapCapability</a></td>
+        <td>地图支持的能力，如支持缓存、距离量算、SQL查询等，全部支持的能力请参见：<a href="file://E:/supermap/doc/OnlineHelp/API/iServerJavadoc/com/supermap/services/components/commontypes/MapCapability.html">MapCapability</a></td>
+      </tr>
+      <tr class="t1Row" style="height: 27px;">
+        <td>autoAvoidEffectEnabled</td>
+        <td>boolean</td>
+        <td>是否启用自动避让效果。</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4>示例</h4>
+  <p class="myNormal">对 World 地图资源：http://supermapiserver:8090/iserver/services/map-world/rest/maps/世界地图.rjson 执行 GET 请求，返回 rjson 格式的资源表述如下：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">    &quot;angle&quot;: 0,</p>
+  <p class="myCodeP">    &quot;antialias&quot;: true,</p>
+  <p class="myCodeP">    &quot;backgroundStyle&quot;: {</p>
+  <p class="myCodeP">        &quot;fillBackColor&quot;: {</p>
+  <p class="myCodeP">            &quot;blue&quot;: 255,</p>
+  <p class="myCodeP">            &quot;green&quot;: 255,</p>
+  <p class="myCodeP">            &quot;red&quot;: 255</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;fillBackOpaque&quot;: true,</p>
+  <p class="myCodeP">        &quot;fillForeColor&quot;: {</p>
+  <p class="myCodeP">            &quot;blue&quot;: 255,</p>
+  <p class="myCodeP">            &quot;green&quot;: 255,</p>
+  <p class="myCodeP">            &quot;red&quot;: 255</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;fillGradientAngle&quot;: 0,</p>
+  <p class="myCodeP">        &quot;fillGradientMode&quot;: &quot;NONE&quot;,</p>
+  <p class="myCodeP">        &quot;fillGradientOffsetRatioX&quot;: 0,</p>
+  <p class="myCodeP">        &quot;fillGradientOffsetRatioY&quot;: 0,</p>
+  <p class="myCodeP">        &quot;fillOpaqueRate&quot;: 100,</p>
+  <p class="myCodeP">        &quot;fillSymbolID&quot;: 0,</p>
+  <p class="myCodeP">        &quot;lineColor&quot;: {</p>
+  <p class="myCodeP">            &quot;blue&quot;: 0,</p>
+  <p class="myCodeP">            &quot;green&quot;: 0,</p>
+  <p class="myCodeP">            &quot;red&quot;: 0</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;lineSymbolID&quot;: 0,</p>
+  <p class="myCodeP">        &quot;lineWidth&quot;: 0.1,</p>
+  <p class="myCodeP">        &quot;markerAngle&quot;: 0,</p>
+  <p class="myCodeP">        &quot;markerSize&quot;: 2.4,</p>
+  <p class="myCodeP">        &quot;markerSymbolID&quot;: 0</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    &quot;bounds&quot;: {</p>
+  <p class="myCodeP">        &quot;bottom&quot;: -90,</p>
+  <p class="myCodeP">        &quot;left&quot;: -180,</p>
+  <p class="myCodeP">        &quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: -180,</p>
+  <p class="myCodeP">            &quot;y&quot;: -90</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;right&quot;: 180,</p>
+  <p class="myCodeP">        &quot;rightTop&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: 180,</p>
+  <p class="myCodeP">            &quot;y&quot;: 90</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;top&quot;: 90</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    &quot;cacheEnabled&quot;: true,</p>
+  <p class="myCodeP">    &quot;center&quot;: {</p>
+  <p class="myCodeP">        &quot;x&quot;: 96.1736997712,</p>
+  <p class="myCodeP">        &quot;y&quot;: 27.5734580668</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    &quot;clipRegion&quot;: {</p>
+  <p class="myCodeP">        &quot;center&quot;: null,</p>
+  <p class="myCodeP">        &quot;id&quot;: 0,</p>
+  <p class="myCodeP">        &quot;parts&quot;: null,</p>
+  <p class="myCodeP">        &quot;points&quot;: null,</p>
+  <p class="myCodeP">        &quot;style&quot;: null,</p>
+  <p class="myCodeP">        &quot;type&quot;: &quot;REGION&quot;</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    &quot;clipRegionEnabled&quot;: false,</p>
+  <p class="myCodeP">    &quot;colorMode&quot;: &quot;DEFAULT&quot;,</p>
+  <p class="myCodeP">    &quot;coordUnit&quot;: &quot;DEGREE&quot;,</p>
+  <p class="myCodeP">    &quot;customEntireBounds&quot;: null,</p>
+  <p class="myCodeP">    &quot;customEntireBoundsEnabled&quot;: false,</p>
+  <p class="myCodeP">    &quot;customParams&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">    &quot;description&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">    &quot;distanceUnit&quot;: &quot;METER&quot;,</p>
+  <p class="myCodeP">    &quot;dynamicPrjCoordSyses&quot;: [{</p>
+  <p class="myCodeP">        &quot;coordSystem&quot;: null,</p>
+  <p class="myCodeP">        &quot;coordUnit&quot;: null,</p>
+  <p class="myCodeP">        &quot;distanceUnit&quot;: null,</p>
+  <p class="myCodeP">        &quot;epsgCode&quot;: 0,</p>
+  <p class="myCodeP">        &quot;name&quot;: null,</p>
+  <p class="myCodeP">        &quot;projection&quot;: null,</p>
+  <p class="myCodeP">        &quot;projectionParam&quot;: null,</p>
+  <p class="myCodeP">        &quot;type&quot;: &quot;PCS_ALL&quot;</p>
+  <p class="myCodeP">    }],</p>
+  <p class="myCodeP">    &quot;dynamicProjection&quot;: false,</p>
+  <p class="myCodeP">    &quot;markerAngleFixed&quot;: false,</p>
+  <p class="myCodeP">    &quot;maxScale&quot;: 1.000000000000032E12,</p>
+  <p class="myCodeP">    &quot;maxVisibleTextSize&quot;: 1000,</p>
+  <p class="myCodeP">    &quot;maxVisibleVertex&quot;: 3600000,</p>
+  <p class="myCodeP">    &quot;minScale&quot;: 0,</p>
+  <p class="myCodeP">    &quot;minVisibleTextSize&quot;: 0.3,</p>
+  <p class="myCodeP">    &quot;name&quot;: &quot;世界地图&quot;,</p>
+  <p class="myCodeP">    &quot;overlapDisplayed&quot;: true,</p>
+  <p class="myCodeP">    &quot;paintBackground&quot;: true,</p>
+  <p class="myCodeP">    &quot;prjCoordSys&quot;: {</p>
+  <p class="myCodeP">        &quot;coordSystem&quot;: {</p>
+  <p class="myCodeP">            &quot;datum&quot;: {</p>
+  <p class="myCodeP">                &quot;name&quot;: &quot;D_WGS_1984&quot;,</p>
+  <p class="myCodeP">                &quot;spheroid&quot;: {</p>
+  <p class="myCodeP">                    &quot;axis&quot;: 6378137,</p>
+  <p class="myCodeP">                    &quot;flatten&quot;: 0.0033528107,</p>
+  <p class="myCodeP">                    &quot;name&quot;: &quot;WGS_1984&quot;,</p>
+  <p class="myCodeP">                    &quot;type&quot;: &quot;SPHEROID_WGS_1984&quot;</p>
+  <p class="myCodeP">                },</p>
+  <p class="myCodeP">                &quot;type&quot;: &quot;DATUM_WGS_1984&quot;</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;name&quot;: &quot;GCS_WGS_1984&quot;,</p>
+  <p class="myCodeP">            &quot;primeMeridian&quot;: {</p>
+  <p class="myCodeP">                &quot;longitudeValue&quot;: 0,</p>
+  <p class="myCodeP">                &quot;name&quot;: &quot;Greenwich&quot;,</p>
+  <p class="myCodeP">                &quot;type&quot;: &quot;PRIMEMERIDIAN_GREENWICH&quot;</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;spatialRefType&quot;: &quot;SPATIALREF_EARTH_LONGITUDE_LATITUDE&quot;,</p>
+  <p class="myCodeP">            &quot;type&quot;: &quot;GCS_WGS_1984&quot;,</p>
+  <p class="myCodeP">            &quot;unit&quot;: &quot;DEGREE&quot;</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;coordUnit&quot;: &quot;DEGREE&quot;,</p>
+  <p class="myCodeP">        &quot;distanceUnit&quot;: &quot;METER&quot;,</p>
+  <p class="myCodeP">        &quot;epsgCode&quot;: 4326,</p>
+  <p class="myCodeP">        &quot;name&quot;: &quot;Longitude / Latitude Coordinate System---GCS_WGS_1984&quot;,</p>
+  <p class="myCodeP">        &quot;projection&quot;: null,</p>
+  <p class="myCodeP">        &quot;projectionParam&quot;: null,</p>
+  <p class="myCodeP">        &quot;type&quot;: &quot;PCS_EARTH_LONGITUDE_LATITUDE&quot;</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    &quot;resourceParameter&quot;: null,</p>
+  <p class="myCodeP">    &quot;scale&quot;: 2.563206512274041E-8,</p>
+  <p class="myCodeP">    &quot;textAngleFixed&quot;: false,</p>
+  <p class="myCodeP">    &quot;textOrientationFixed&quot;: false,</p>
+  <p class="myCodeP">    &quot;userToken&quot;: {&quot;userID&quot;: &quot;&quot;},</p>
+  <p class="myCodeP">    &quot;viewBounds&quot;: {</p>
+  <p class="myCodeP">        &quot;bottom&quot;: 15.704362017314319,</p>
+  <p class="myCodeP">        &quot;left&quot;: 84.30460372171433,</p>
+  <p class="myCodeP">        &quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: 84.30460372171433,</p>
+  <p class="myCodeP">            &quot;y&quot;: 15.704362017314319</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;right&quot;: 108.04279582068568,</p>
+  <p class="myCodeP">        &quot;rightTop&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: 108.04279582068568,</p>
+  <p class="myCodeP">            &quot;y&quot;: 39.442554116285685</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;top&quot;: 39.442554116285685</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    &quot;viewer&quot;: {</p>
+  <p class="myCodeP">        &quot;bottom&quot;: 256,</p>
+  <p class="myCodeP">        &quot;height&quot;: 256,</p>
+  <p class="myCodeP">        &quot;left&quot;: 0,</p>
+  <p class="myCodeP">        &quot;leftTop&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: 0,</p>
+  <p class="myCodeP">            &quot;y&quot;: 0</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;right&quot;: 256,</p>
+  <p class="myCodeP">        &quot;rightBottom&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: 256,</p>
+  <p class="myCodeP">            &quot;y&quot;: 256</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;top&quot;: 0,</p>
+  <p class="myCodeP">        &quot;width&quot;: 256</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    &quot;visibleScales&quot;: [],</p>
+  <p class="myCodeP">    &quot;visibleScalesEnabled&quot;: false</p>
+  <p class="myCodeP">}</p>
+  <p class="myNormal">如果希望获取动态投影到 WebMercator 的地图，则需要设置 prjCoordSys={&quot;epsgCode&quot;:3857}，即对 World 地图资源：http://supermapiserver:8090/iserver/services/map-world/rest/maps/世界地图.rjson?prjCoordSys={&quot;epsgCode&quot;:3857} 执行 GET 请求，返回 rjson 格式的资源表述如下：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">    &quot;angle&quot;: 0,</p>
+  <p class="myCodeP">    &quot;antialias&quot;: true,</p>
+  <p class="myCodeP">    &quot;backgroundStyle&quot;: {</p>
+  <p class="myCodeP">        &quot;fillBackColor&quot;: {</p>
+  <p class="myCodeP">            &quot;blue&quot;: 255,</p>
+  <p class="myCodeP">            &quot;green&quot;: 255,</p>
+  <p class="myCodeP">            &quot;red&quot;: 255</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;fillBackOpaque&quot;: true,</p>
+  <p class="myCodeP">        &quot;fillForeColor&quot;: {</p>
+  <p class="myCodeP">            &quot;blue&quot;: 255,</p>
+  <p class="myCodeP">            &quot;green&quot;: 255,</p>
+  <p class="myCodeP">            &quot;red&quot;: 255</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;fillGradientAngle&quot;: 0,</p>
+  <p class="myCodeP">        &quot;fillGradientMode&quot;: &quot;NONE&quot;,</p>
+  <p class="myCodeP">        &quot;fillGradientOffsetRatioX&quot;: 0,</p>
+  <p class="myCodeP">        &quot;fillGradientOffsetRatioY&quot;: 0,</p>
+  <p class="myCodeP">        &quot;fillOpaqueRate&quot;: 100,</p>
+  <p class="myCodeP">        &quot;fillSymbolID&quot;: 0,</p>
+  <p class="myCodeP">        &quot;lineColor&quot;: {</p>
+  <p class="myCodeP">            &quot;blue&quot;: 0,</p>
+  <p class="myCodeP">            &quot;green&quot;: 0,</p>
+  <p class="myCodeP">            &quot;red&quot;: 0</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;lineSymbolID&quot;: 0,</p>
+  <p class="myCodeP">        &quot;lineWidth&quot;: 0.1,</p>
+  <p class="myCodeP">        &quot;markerAngle&quot;: 0,</p>
+  <p class="myCodeP">        &quot;markerSize&quot;: 2.4,</p>
+  <p class="myCodeP">        &quot;markerSymbolID&quot;: 0</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    &quot;bounds&quot;: {</p>
+  <p class="myCodeP">        &quot;bottom&quot;: -2.5776731363158423E7,</p>
+  <p class="myCodeP">        &quot;left&quot;: -2.0037508342789244E7,</p>
+  <p class="myCodeP">        &quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: -2.0037508342789244E7,</p>
+  <p class="myCodeP">            &quot;y&quot;: -2.5776731363158423E7</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;right&quot;: 2.0037508342789244E7,</p>
+  <p class="myCodeP">        &quot;rightTop&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: 2.0037508342789244E7,</p>
+  <p class="myCodeP">            &quot;y&quot;: 2.57767313631584E7</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;top&quot;: 2.57767313631584E7</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    &quot;cacheEnabled&quot;: false,</p>
+  <p class="myCodeP">    &quot;center&quot;: {</p>
+  <p class="myCodeP">        &quot;x&quot;: 1.0706007286235156E7,</p>
+  <p class="myCodeP">        &quot;y&quot;: 3258532.6200602674</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    &quot;clipRegion&quot;: {</p>
+  <p class="myCodeP">        &quot;center&quot;: null,</p>
+  <p class="myCodeP">        &quot;id&quot;: 0,</p>
+  <p class="myCodeP">        &quot;parts&quot;: null,</p>
+  <p class="myCodeP">        &quot;points&quot;: null,</p>
+  <p class="myCodeP">        &quot;style&quot;: null,</p>
+  <p class="myCodeP">        &quot;type&quot;: &quot;REGION&quot;</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    &quot;clipRegionEnabled&quot;: false,</p>
+  <p class="myCodeP">    &quot;colorMode&quot;: &quot;DEFAULT&quot;,</p>
+  <p class="myCodeP">    &quot;coordUnit&quot;: &quot;DEGREE&quot;,</p>
+  <p class="myCodeP">    &quot;customEntireBounds&quot;: null,</p>
+  <p class="myCodeP">    &quot;customEntireBoundsEnabled&quot;: false,</p>
+  <p class="myCodeP">    &quot;customParams&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">    &quot;description&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">    &quot;distanceUnit&quot;: &quot;METER&quot;,</p>
+  <p class="myCodeP">    &quot;dynamicPrjCoordSyses&quot;: [{</p>
+  <p class="myCodeP">        &quot;coordSystem&quot;: null,</p>
+  <p class="myCodeP">        &quot;coordUnit&quot;: null,</p>
+  <p class="myCodeP">        &quot;distanceUnit&quot;: null,</p>
+  <p class="myCodeP">        &quot;epsgCode&quot;: 0,</p>
+  <p class="myCodeP">        &quot;name&quot;: null,</p>
+  <p class="myCodeP">        &quot;projection&quot;: null,</p>
+  <p class="myCodeP">        &quot;projectionParam&quot;: null,</p>
+  <p class="myCodeP">        &quot;type&quot;: &quot;PCS_ALL&quot;</p>
+  <p class="myCodeP">    }],</p>
+  <p class="myCodeP">    &quot;dynamicProjection&quot;: true,</p>
+  <p class="myCodeP">    &quot;markerAngleFixed&quot;: false,</p>
+  <p class="myCodeP">    &quot;maxScale&quot;: 1.000000000000032E12,</p>
+  <p class="myCodeP">    &quot;maxVisibleTextSize&quot;: 1000,</p>
+  <p class="myCodeP">    &quot;maxVisibleVertex&quot;: 3600000,</p>
+  <p class="myCodeP">    &quot;minScale&quot;: 0,</p>
+  <p class="myCodeP">    &quot;minVisibleTextSize&quot;: 0.3,</p>
+  <p class="myCodeP">    &quot;name&quot;: &quot;世界地图&quot;,</p>
+  <p class="myCodeP">    &quot;overlapDisplayed&quot;: true,</p>
+  <p class="myCodeP">    &quot;paintBackground&quot;: true,</p>
+  <p class="myCodeP">    &quot;prjCoordSys&quot;: {</p>
+  <p class="myCodeP">        &quot;coordSystem&quot;: {</p>
+  <p class="myCodeP">            &quot;datum&quot;: {</p>
+  <p class="myCodeP">                &quot;name&quot;: &quot;D_WGS_1984&quot;,</p>
+  <p class="myCodeP">                &quot;spheroid&quot;: {</p>
+  <p class="myCodeP">                    &quot;axis&quot;: 6378137,</p>
+  <p class="myCodeP">                    &quot;flatten&quot;: 0.0033528107,</p>
+  <p class="myCodeP">                    &quot;name&quot;: &quot;WGS_1984&quot;,</p>
+  <p class="myCodeP">                    &quot;type&quot;: &quot;SPHEROID_WGS_1984&quot;</p>
+  <p class="myCodeP">                },</p>
+  <p class="myCodeP">                &quot;type&quot;: &quot;DATUM_WGS_1984&quot;</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;name&quot;: &quot;GCS_WGS_1984&quot;,</p>
+  <p class="myCodeP">            &quot;primeMeridian&quot;: {</p>
+  <p class="myCodeP">                &quot;longitudeValue&quot;: 0,</p>
+  <p class="myCodeP">                &quot;name&quot;: &quot;Greenwich&quot;,</p>
+  <p class="myCodeP">                &quot;type&quot;: &quot;PRIMEMERIDIAN_GREENWICH&quot;</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;spatialRefType&quot;: &quot;SPATIALREF_EARTH_LONGITUDE_LATITUDE&quot;,</p>
+  <p class="myCodeP">            &quot;type&quot;: &quot;GCS_WGS_1984&quot;,</p>
+  <p class="myCodeP">            &quot;unit&quot;: &quot;DEGREE&quot;</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;coordUnit&quot;: &quot;METER&quot;,</p>
+  <p class="myCodeP">        &quot;distanceUnit&quot;: &quot;METER&quot;,</p>
+  <p class="myCodeP">        &quot;epsgCode&quot;: 3857,</p>
+  <p class="myCodeP">        &quot;name&quot;: &quot;User Define&quot;,</p>
+  <p class="myCodeP">        &quot;projection&quot;: {</p>
+  <p class="myCodeP">            &quot;name&quot;: &quot;Mercator&quot;,</p>
+  <p class="myCodeP">            &quot;type&quot;: &quot;PRJ_MERCATOR&quot;</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;projectionParam&quot;: {</p>
+  <p class="myCodeP">            &quot;azimuth&quot;: 0,</p>
+  <p class="myCodeP">            &quot;centralMeridian&quot;: 0,</p>
+  <p class="myCodeP">            &quot;centralParallel&quot;: 0,</p>
+  <p class="myCodeP">            &quot;falseEasting&quot;: 0,</p>
+  <p class="myCodeP">            &quot;falseNorthing&quot;: 0,</p>
+  <p class="myCodeP">            &quot;firstPointLongitude&quot;: 0,</p>
+  <p class="myCodeP">            &quot;firstStandardParallel&quot;: 0,</p>
+  <p class="myCodeP">            &quot;scaleFactor&quot;: 0,</p>
+  <p class="myCodeP">            &quot;secondPointLongitude&quot;: 0,</p>
+  <p class="myCodeP">            &quot;secondStandardParallel&quot;: 0</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;type&quot;: &quot;PCS_USER_DEFINED&quot;</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    &quot;resourceParameter&quot;: null,</p>
+  <p class="myCodeP">    &quot;scale&quot;: 2.257298309111974E-8,</p>
+  <p class="myCodeP">    &quot;textAngleFixed&quot;: false,</p>
+  <p class="myCodeP">    &quot;textOrientationFixed&quot;: false,</p>
+  <p class="myCodeP">    &quot;userToken&quot;: {&quot;userID&quot;: &quot;&quot;},</p>
+  <p class="myCodeP">    &quot;viewBounds&quot;: {</p>
+  <p class="myCodeP">        &quot;bottom&quot;: 1758952.3535372897,</p>
+  <p class="myCodeP">        &quot;left&quot;: 9206427.019712178,</p>
+  <p class="myCodeP">        &quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: 9206427.019712178,</p>
+  <p class="myCodeP">            &quot;y&quot;: 1758952.3535372897</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;right&quot;: 1.2205587552758133E7,</p>
+  <p class="myCodeP">        &quot;rightTop&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: 1.2205587552758133E7,</p>
+  <p class="myCodeP">            &quot;y&quot;: 4758112.886583245</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;top&quot;: 4758112.886583245</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    &quot;viewer&quot;: {</p>
+  <p class="myCodeP">        &quot;bottom&quot;: 256,</p>
+  <p class="myCodeP">        &quot;height&quot;: 256,</p>
+  <p class="myCodeP">        &quot;left&quot;: 0,</p>
+  <p class="myCodeP">        &quot;leftTop&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: 0,</p>
+  <p class="myCodeP">            &quot;y&quot;: 0</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;right&quot;: 256,</p>
+  <p class="myCodeP">        &quot;rightBottom&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: 256,</p>
+  <p class="myCodeP">            &quot;y&quot;: 256</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;top&quot;: 0,</p>
+  <p class="myCodeP">        &quot;width&quot;: 256</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    &quot;visibleScales&quot;: [],</p>
+  <p class="myCodeP">    &quot;visibleScalesEnabled&quot;: false</p>
+  <p class="myCodeP">}</p>
+  <h3><a id="HEAD 请求"></a>HEAD 请求</h3>
+  <p class="myNormal">返回跟 GET 请求一样的 HTTP 响应头，但是没有响应实体。可以在不必传输整个响应内容的情况下，获取包含在响应消息头中的元数据信息。元数据信息包括媒体类型，字符编码，压缩编码，实体内容长度等。</p>
+  <p class="myNormal">HEAD 请求可以用来判断地图资源是否存在，或者客户端是否有权限访问地图资源。通过对加.&lt;format&gt;的 URI 执行 HEAD 请求，还可以快速判断地图资源是否支持&lt;format&gt;格式的表述。</p>
+  <h2>请参见</h2>
+  <ul class="referenceList">
+    <li class="referenceList"><a class="contentpagehyperlink" href="../maps.htm">maps</a>、<a class="contentpagehyperlink" href="image.htm">image</a>、<a class="contentpagehyperlink" href="entireImage.htm">entireImage</a>、<a class="contentpagehyperlink" href="overview.htm">overview</a>、<a class="contentpagehyperlink" href="trackingLayer/trackingLayer.htm">trackingLayer</a>、<a class="contentpagehyperlink" href="layers/layers.htm">layers</a>、<a class="contentpagehyperlink" href="tempLayersSet/tempLayersSet.htm">tempLayersSet</a>、<a class="contentpagehyperlink" href="distance.htm">distance</a>、<a class="contentpagehyperlink" href="area.htm">area</a>、<a class="contentpagehyperlink" href="chartFeatureInfoSpecs.htm">chartFeatureInfoSpecs</a>、<a class="contentpagehyperlink" href="queryResults/queryResults.htm">queryResults</a>、<a class="contentpagehyperlink" href="tileImage.htm">tileImage</a>、<a class="contentpagehyperlink" href="highlightImage.htm">highlightImage</a>、<a class="contentpagehyperlink" href="clearCache.htm">clearCache</a>、<a class="contentpagehyperlink" href="symbol.htm">symbol</a>、<a class="contentpagehyperlink" href="PrjCoordSys.htm">prjCoordSys</a>、<a class="contentpagehyperlink" href="zxyTileImage/zxyTileImage.htm">zxyTileImage</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../clientBuildREST/ConstructRESTRequest.htm">客户端构建 REST 请求</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../StatusCodeDescription.htm">状态码列表及说明</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../SuperMap_iServer_REST_API_OutputFormat.htm">表述格式介绍</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../resource_hierarchy.htm">GIS 服务资源层次结构</a></li>
+  </ul>
+  <p> </p>
+
+</div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../../../../../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../../../../../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../../../../../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../../../../../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../../../../../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../../../../../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../../../../../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../../../../.."
+    gCommonRootRelPath = "../../../../.."
+    gTopicId = "8.2.2.6.10.1"
+  
+//]]></script>
+
+  <script src="../../../../../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../../../../../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../../../../../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../../../../../whxdata/layoutconfig.js"></script>
+  <script src="../../../../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

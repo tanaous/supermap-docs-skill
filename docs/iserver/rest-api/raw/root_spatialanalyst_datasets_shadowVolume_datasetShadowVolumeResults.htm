@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../../../../../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../../../../../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../../../../../../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../../../../../iserver-icon.png"/>
+    
+  <script data-relpath="../../../../../.." src="../../../../../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+<meta name="template" content="../../../../../../assets/layouts/RESTAPI.htt"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="Content-Language" content="zh-CN"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>shadowVolume</title>
+<link rel="StyleSheet" href="../../../../../../assets/css/SuperMapHelp.css" type="text/css"/>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../../../../../../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../../assets/css/homeButtom.css"/>
+  <script src="../../../../../../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../../../../../../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../../../../../../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../../../../../../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../../../../../../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../../../../../../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../../../../../../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../../../../../../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../../../../../../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+<h2><a id="URI"></a>URI</h2>
+<p class="myNormal">&lt;<a class="contentpagehyperlink" href="../dataset.htm#URI">dataset_uri</a>&gt;/shadowvolume[.&lt;format&gt;]</p>
+<h2>支持的方法</h2>
+<p class="myNormal"><a class="contentpagehyperlink" href="#GET 请求">GET</a>、<a class="contentpagehyperlink" href="#POST 请求">POST</a>、<a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a></p>
+<h2>父资源</h2>
+<p class="myNormal"><a class="contentpagehyperlink" href="../dataset.htm">dataset</a></p>
+<h2>子资源</h2>
+<p class="myNormal"><a class="contentpagehyperlink" href="datasetShadowVolumeResult.htm">datasetSpatialQuery3DResult</a></p>
+<h2>介绍</h2>
+<p class="myNormal"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, Arial, sans-serif; 
+							 font-size: 14px; font-variant-ligatures: normal; 
+							 font-variant-caps: normal; orphans: 2; text-indent: 0px; 
+							 widows: 2; -webkit-text-stroke-width: 0px; 
+							 background-color: #ffffff; text-decoration-style: initial; 
+							 text-decoration-color: initial; display: inline	 ! important ; 
+							 float: none;">模型数据集获取阴影体</span>，该资源只针对模型数据集，获取指定模型数据集的阴影体结果。</p>
+<p class="myNormal"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, Arial, sans-serif; 
+							 font-size: 14px; font-variant-ligatures: normal; 
+							 font-variant-caps: normal; orphans: 2; text-indent: 0px; 
+							 widows: 2; -webkit-text-stroke-width: 0px; 
+							 background-color: #ffffff; text-decoration-style: initial; 
+							 text-decoration-color: initial; display: inline	 ! important ; 
+							 float: none;">对该资源发送POST请求，则可以创建一个阴影体分析结果资源</span>。</p>
+<p class="myNormal" style="font-weight: bold;">支持的方法：</p>
+<ul style="list-style: disc;" class="supportList">
+	<li class="supportList"><a class="contentpagehyperlink" href="#GET 请求">GET</a>：返回一个进行POST请求的表单。</li>
+	<li class="supportList"><a class="contentpagehyperlink" href="#POST 请求">POST</a>：<span style="color: rgb(51, 51, 51); 
+	 font-family: 微软雅黑, Arial, sans-serif; font-size: 14px; font-variant-ligatures: normal; 
+	 font-variant-caps: normal; orphans: 2; widows: 2; -webkit-text-stroke-width: 0px; 
+	 background-color: #ffffff; display: inline	 ! important ; float: none;">创建一个阴影体分析结果资源</span>。</li>
+	<li class="supportList"><a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a>：检查shadowVolume资源是否存在，或权限是否可以访问shadowVolume资源。</li>
+</ul>
+<p class="myNormal"><span style="font-weight: bold;">支持的表述格式：</span>RJSON、JSON、HTML、XML。</p>
+<h2>资源层次</h2>
+<p class="myNormal"><img src="../../../../../../assets/images/root/spatialanalyst/datasets/shadowVolume/sp_ds_shadowVolume.png" alt="" usemap="#MAP428451350" style="border: none;" border="0"/>
+<map id="MAP428451350" name="MAP428451350">
+<area shape="rect" coords="15, 10, 259, 39" href="../../../root.htm" alt=""/>
+<area shape="rect" coords="85, 61, 224, 95" href="../../spatialanalyst.htm" alt=""/>
+<area shape="rect" coords="124, 114, 273, 147" href="../datasets.htm" alt=""/>
+<area shape="rect" coords="186, 171, 304, 219" href="../dataset.htm" alt=""/>
+<area shape="rect" coords="235, 240, 460, 277" href="datasetShadowVolumeResults.htm" alt=""/>
+</map> </p>
+<h2>HTTP 请求方法</h2>
+<p class="myNormal">对如下 URI 执行 HTTP 请求，以 rjson 输出格式为例加以说明，其中，supermapiserver 
+ 是服务器名。</p>
+<p class="uriStyle">http://supermapiserver:8090/iserver/services/spatialAnalysis-BIM/restjsr/spatialanalyst/datasets/结构柱%408ExportModel/shadowvolume.rjson</p>
+<h3><a id="GET 请求"></a>GET 请求</h3>
+<p class="myNormal">返回一个进行POST请求的表单。</p>
+<h3><a id="POST 请求"></a>POST 请求</h3>
+<p class="myNormal"><span style="color: rgb(51, 51, 51); font-family: 微软雅黑, Arial, sans-serif; 
+							 font-size: 14px; font-variant-ligatures: normal; 
+							 font-variant-caps: normal; orphans: 2; widows: 2; 
+							 -webkit-text-stroke-width: 0px; background-color: #ffffff; 
+							 display: inline	 ! important ; float: none;">创建一个阴影体分析结果资源</span>。</p>
+<h4 class="myNormal">请求参数</h4>
+<p class="myNormal">请求体中需传递如下参数：</p>
+<table class="iServerTable" cellspacing="0" width="70%" align="center">
+	<colgroup><col style="width: 15%;"/>
+	<col style="width: 15%;"/>
+	<col style="width: 70%;"/>
+	</colgroup><tbody><tr class="t1st">
+		<td>名称</td>
+		<td>类型</td>
+		<td>含义</td>
+	</tr>
+	<tr class="t2Row">
+		<td>sourceDatasetFilter</td>
+		<td><a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/services/components/commontypes/QueryParameter.html">QueryParameter</a></td>
+		<td>过滤查询参数，包括属性过滤和ID过滤，只有满足条件的对象才参与阴影体分析。</td>
+	</tr>
+	<tr class="t1Row">
+		<td>shadowSetting</td>
+		<td><a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/services/components/commontypes/ShadowVolumeParameter.html">ShadowVolumeParameter</a></td>
+		<td>阴影体设置参数，包括光源类型、日期、时间。</td>
+	</tr>
+	<tr class="t2Row">
+		<td>resultSetting</td>
+		<td><a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/services/components/commontypes/DatasetSpatialQuery3DResultSetting.html">DatasetSpatialQuery3DResultSetting</a></td>
+		<td>结果设置，包括结果数据集名称、最大返回记录、数据返回模式、是否覆盖已有数据。 
+		对于数据返回模式，包括只返回数据集标识（DATASET_ONLY）、只返回记录集（RECORDSET_ONLY）和返回数据集标识和记录集（DATASET_AND_RECORDSET）三种模式，默认为只返回数据集标识。 
+		 
+		请注意，当返回的结果数据量较大时，建议您使用只返回数据集标识模式返回数据，对返回的数据集可以进行其他空间分析操作。</td>
+	</tr>
+</tbody></table>
+<h4>响应结构</h4>
+<p class="myNormal">正常响应情况：响应码201。响应参数如下：</p>
+<table class="iServerTable" cellspacing="0" width="70%" align="center">
+	<colgroup><col style="width: 15%;"/>
+	<col style="width: 15%;"/>
+	<col style="width: 70%;"/>
+	</colgroup><tbody><tr class="t1st">
+		<td>字段</td>
+		<td>类型</td>
+		<td>说明</td>
+	</tr>
+	<tr class="t2Row">
+		<td>postResultType</td>
+		<td><a class="contentpagehyperlink" href="../../../../../iServerJavaDoc/com/supermap/services/rest/PostResultType.html" style="color: #0000ff; text-decoration: underline; ">postResultType</a></td>
+		<td>POST 请求的结果类型，枚举说明 POST 请求对目标资源的影响，即处理结果是什么样的。</td>
+	</tr>
+	<tr class="t1Row">
+		<td>newResourceID</td>
+		<td>String</td>
+		<td>分析结果资源的 ID。</td>
+	</tr>
+	<tr class="t2Row">
+		<td>succeed</td>
+		<td>boolean</td>
+		<td>分析是否成功。</td>
+	</tr>
+	<tr class="t1Row">
+		<td>newResourceLocation</td>
+		<td>String</td>
+		<td>创建的新资源的 URI。</td>
+	</tr>
+</tbody></table>
+<h4>响应示例</h4>
+<p class="myNormal">对shadowVolume资源：http://supermapiserver:8090/iserver/services/spatialAnalysis-BIM/restjsr/spatialanalyst/datasets/结构柱%408ExportModel/shadowvolume.rjson，操作对象选择为数据集，执行 
+ POST 请求，请求参数如下：</p>
+<p class="myCodeP">{</p>
+<p class="myCodeP">&quot;sourceDatasetFilter&quot;:{&quot;attributeFilter&quot;:&quot;&quot;, 
+ &quot;ids&quot;:[2]}, </p>
+<p class="myCodeP">&quot;shadowSetting&quot;:{&quot;shadowLightType&quot;:&quot;SUNLIGHT&quot;, 
+ &quot;year&quot;:2018, &quot;month&quot;:6, &quot;day&quot;:7, &quot;hour&quot;:10, 
+ &quot;minute&quot;:25, &quot;second&quot;:0}</p>
+<p class="myCodeP">}</p>
+<p class="myNormal">则返回的 rjson 格式的资源描述如下：</p>
+<p class="myCodeP">{</p>
+<p class="myCodeP">&quot;postResultType&quot;:&quot;CreateChild&quot;,</p>
+<p class="myCodeP">&quot;newResourceID&quot;:&quot;09b8&quot;,</p>
+<p class="myCodeP">&quot;succeed&quot;:true,</p>
+<p class="myCodeP">&quot;newResourceLocation&quot;:&quot;http://supermapiserver:8090/iserver/services/spatialAnalysis-BIM/restjsr/spatialanalyst/datasets/结构柱%408ExportModel/shadowvolume/09b8&quot;</p>
+<p class="myCodeP">}</p>
+<h3><a id="HEAD 请求"></a>HEAD 请求</h3>
+<p class="myNormal">返回跟 GET 请求一样的 HTTP 响应头，但是没有响应实体。可以在不必传输整个响应内容的情况下，获取包含在响应消息头中的元数据信息。元数据信息包括媒体类型，字符编码，压缩编码，实体内容长度等。</p>
+<p class="myNormal">HEAD 请求可以用来判断shadowVolume资源是否存在，或者客户端是否有权限访问shadowVolume 
+ 资源。通过对加.&lt;format&gt;的 URI 执行 HEAD 请求，还可以快速判断 shadowVolume 资源是否支持&lt;format&gt;格式的表述。</p>
+<h2>请参见</h2>
+<ul class="referenceList">
+	<li class="referenceList"><a class="contentpagehyperlink" href="datasetShadowVolumeResult.htm">datasetSpatialQuery3DResult</a>，<a class="contentpagehyperlink" href="../dataset.htm">dataset</a></li>
+	<li class="referenceList"><a class="contentpagehyperlink" href="../../../../clientBuildREST/ConstructRESTRequest.htm">客户端构建 
+	 REST 请求</a></li>
+	<li class="referenceList"><a class="contentpagehyperlink" href="../../../../StatusCodeDescription.htm">状态码列表及说明</a></li>
+	<li class="referenceList"><a class="contentpagehyperlink" href="../../../../SuperMap_iServer_REST_API_OutputFormat.htm">SuperMap 
+	 iServer REST API 表述格式介绍</a></li>
+	<li class="referenceList"><a class="contentpagehyperlink" href="../../../../resource_hierarchy.htm">资源层次结构</a></li>
+</ul>
+
+
+<p><br/></p></div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../../../../../../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../../../../../../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../../../../../../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../../../../../../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../../../../../../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../../../../../../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../../../../../../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../../../../../.."
+    gCommonRootRelPath = "../../../../../.."
+    gTopicId = "8.2.2.6.15.1.1.18"
+  
+//]]></script>
+
+  <script src="../../../../../../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../../../../../../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../../../../../../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../../../../../../whxdata/layoutconfig.js"></script>
+  <script src="../../../../../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

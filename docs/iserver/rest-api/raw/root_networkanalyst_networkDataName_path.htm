@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../../../../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../../../../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../../../../../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../../../../iserver-icon.png"/>
+    
+  <script data-relpath="../../../../.." src="../../../../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <meta name="template" content="../../../../../assets/layouts/RESTAPI.htt"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Language" content="zh-CN"/>
+  <meta name="topic-status" content="Complete"/>
+  <meta name="topic-check-list" content="Ran Smart Index"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>path</title>
+  <link rel="StyleSheet" href="../../../../../assets/css/SuperMapHelp.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="TspPath:Path"/>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../../../../../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../assets/css/homeButtom.css"/>
+  <script src="../../../../../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../../../../../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../../../../../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../../../../../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../../../../../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../../../../../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../../../../../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../../../../../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../../../../../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <h2> <a name="URI" id="URI"></a>URI</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="networkDataName.htm#URI">&lt;networkDataName_uri&gt;</a>/path[.&lt;format&gt;]</p>
+  <h2>支持的方法</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="#GET 请求">GET</a>、<a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a></p>
+  <h2>父资源</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="networkDataName.htm">networkDataName</a></p>
+  <h2>介绍</h2>
+  <p class="myNormal">path 资源表示最佳路径分析功能，设置参数后，对 path 资源执行 GET 请求，可以获取一个最佳路径分析的结果。有关最佳路径分析的详细介绍，请参见：<a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/TransportationAnalyst.html#findPath(int[], boolean, java.lang.String, com.supermap.services.components.commontypes.analyst.TransportationAnalystParameter)">最佳路径分析</a>。</p>
+  <p class="myNormal" style="font-weight: bold;">支持的方法：</p>
+  <ul class="supportList" style="list-style: disc;">
+    <li class="supportList"><a class="contentpagehyperlink" href="#GET 请求">GET</a>：获取最佳路径分析的结果。</li>
+    <li class="supportList"><a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a>：检查 path 资源是否存在，或权限是否可以访问 path 资源。</li>
+  </ul>
+  <p class="myNormal"><span style="font-weight: bold;">支持的表述格式：</span>rjson、json、html、xml。</p>
+  <h2>资源层次</h2>
+  <p class="myNormal"><img alt="" border="0" height="216" src="../../../../../assets/images/root/networkanalyst/networkDataName/path.png" style="border: none;" usemap="#MAP278784534" width="337"/><map id="MAP278784534" name="MAP278784534"><area alt="resources.htm" coords="3, 3, 259, 44" href="../../root.htm" shape="rect"/> <area alt="" coords="86, 55, 245, 96" href="../networkanalyst.htm" shape="rect"/> <area alt="" coords="217, 174, 333, 215" href="path.htm" shape="rect"/> <area alt="" coords="142, 108, 308, 156" href="networkDataName.htm" shape="rect"/></map></p>
+  <h2>HTTP 请求方法</h2>
+  <p class="myNormal">对如下 URI 执行 HTTP 请求，以 rjson 输出格式为例加以说明，其中，supermapiserver 是服务器名，RoadNet@Changchun 为可进行最佳路径分析的网络数据名称。[2,8]为要进行路径分析的网络结点数组，即求的是结点2到结点8之间的最佳路径。</p>
+  <p class="uriStyle">http://supermapiserver:8090/iserver/services/transportationanalyst-sample/rest/networkanalyst/RoadNet@Changchun/path.rjson?nodes=[2,8]</p>
+  <h3><a id="GET 请求"></a>GET 请求</h3>
+  <p class="myNormal">获取最佳路径分析的结果。</p>
+  <p class="myNormal"><strong>请求参数</strong></p>
+  <p class="myNormal">对 path 资源执行 GET 请求，需要在 URI 中包含一些参数，数如下：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>名称</td>
+        <td>类型</td>
+        <td>含义</td>
+      </tr>
+      <tr class="t2Row">
+        <td>nodes</td>
+        <td>int[]/<a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/Point2D.html">Point2D</a>[]</td>
+        <td>
+          <p>【必选参数】 进行最佳路径分析的点集合。</p>
+          <p>注意：只有当传入结点坐标时才会启用 SSC 分析模式；若传入的为结点 ID 数组，则仍然使用普通分析模式</p>
+        </td>
+      </tr>
+      <tr class="t1Row">
+        <td>hasLeastEdgeCount</td>
+        <td>boolean</td>
+        <td>
+          <p>是否按弧段数最少的模式查询。</p>
+        </td>
+      </tr>
+      <tr class="t2Row">
+        <td>parameter</td>
+        <td><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/TransportationAnalystParameter.html" style="color: #0000ff; text-decoration: underline; ">TransportationAnalystParameter</a></td>
+        <td>
+          <p>交通网络分析通用参数，有以下参数可供设置：</p>
+          <ul style="list-style: disc;">
+            <li>barrierEdgeIDs：障碍弧段 ID 列表。</li>
+            <li>barrierNodeIDs：障碍结点 ID 的集合。</li>
+            <li>barrierPoints：障碍坐标数组。您可以用坐标的形式设置障碍。</li>
+            <li>resultSetting：分析结果内应包含内容的设置，包括：</li>
+          </ul>
+          1）returnEdgeFeatures：是否在分析结果中包含弧段要素集合。 2）returnEdgeGeometry：是否在分析结果中返回的弧段要素集合中包含几何对象信息。 3）returnEdgeIDs：返回分析结果中是否包含经过弧段 ID 的集合。 4）returnNodeFeatures：是否在分析结果中包含结点要素集合。 5）returnNodeGeometry：是否在分析结果中返回的结点要素集合中包含几何对象信息。 6）returnNodeIDs：返回分析结果中是否包含经过的结点 ID 集合。 7）returnPathGuides：返回分析结果中是否包含行驶导引集合。 8）returnRoutes：返回分析结果中是否包含路径对象的集合，即 Route 集合。 <span style="font-weight:bold;">请注意：</span>1）设置以上参数后不影响结分析结果，但设置后将导致分析耗时增加。2）当启用 SSC 分析模型并以结点坐标作为输入值时，以上参数除路径对象外均不会在结果中返回。
+          <ul style="list-style: disc;">
+            <li>turnWeightField：转向权值字段的名称。</li>
+            <li>uCross：U型道路禁行限制字段。</li>
+            <li>weightFieldName：权值字段信息的名称，标识了进行网络分析时所使用的权值字段。默认为环境中设置的第一个字段。</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><strong>响应结构</strong></p>
+  <p class="myNormal">执行最佳路径分析功能，返回的操作结果表述的结构如下（表述在响应消息的实体主体里）：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>字段</td>
+        <td>类型</td>
+        <td>说明</td>
+      </tr>
+      <tr class="t2Row">
+        <td>pathList</td>
+        <td>List&lt;<a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/Path.html">Path</a>&gt;</td>
+        <td>
+          <p>最佳路径分析结果集合（目前集合中只有一个元素）。</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><strong>响应示例</strong></p>
+  <p class="myNormal">对 RoadNet@Changchun 数据集执行最佳路径分析并返回路径信息（不包含行驶导引），即对如下 URI 执行 GET 请求：</p>
+  <p class="mycodeP">http://supermapiserver:8090/iserver/services/transportationanalyst-sample/rest/networkanalyst/RoadNet@Changchun/path.rjson?nodes=[2,8]&amp;parameter={&quot;resultSetting&quot;:{&quot;returnRoutes&quot;:true,&quot;returnPathGuides&quot;:false}}</p>
+  <p class="myNormal">获取的响应内容如下：</p>
+  <p><textarea cols="30" id="txtComments" rows="10" style="overflow: scroll; width: 85%; 
+										 height: 200px;">{&quot;pathList&quot;: [{
+      &quot;pathGuideItems&quot;: null,
+      &quot;nodeIDs&quot;: [],
+      &quot;route&quot;: {
+      &quot;line&quot;: {
+      &quot;center&quot;: {
+      &quot;x&quot;: 367.8222323193189,
+      &quot;y&quot;: -87.52241984006864
+      },
+      &quot;parts&quot;: [17],
+      &quot;style&quot;: null,
+      &quot;prjCoordSys&quot;: {
+      &quot;distanceUnit&quot;: &quot;METER&quot;,
+      &quot;projectionParam&quot;: null,
+      &quot;epsgCode&quot;: -1000,
+      &quot;coordUnit&quot;: &quot;METER&quot;,
+      &quot;name&quot;: &quot;Planar Coordinate System---m&quot;,
+      &quot;projection&quot;: null,
+      &quot;type&quot;: &quot;PCS_NON_EARTH&quot;,
+      &quot;coordSystem&quot;: null
+      },
+      &quot;id&quot;: 0,
+      &quot;type&quot;: &quot;LINE&quot;,
+      &quot;partTopo&quot;: null,
+      &quot;points&quot;: [
+      {
+      &quot;x&quot;: 119.61003975513272,
+      &quot;y&quot;: -122.62783944590828
+      },
+      {
+      &quot;x&quot;: 161.09530379013117,
+      &quot;y&quot;: -112.79242730387216
+      },
+      {
+      &quot;x&quot;: 171.90355999452908,
+      &quot;y&quot;: -113.24911418574811
+      },
+      {
+      &quot;x&quot;: 183.92964788392953,
+      &quot;y&quot;: -117.96821196513312
+      },
+      {
+      &quot;x&quot;: 199.15254394646175,
+      &quot;y&quot;: -120.86056221701423
+      },
+      {
+      &quot;x&quot;: 231.88177048090608,
+      &quot;y&quot;: -119.9471884532623
+      },
+      {
+      &quot;x&quot;: 299.3192000379238,
+      &quot;y&quot;: -106.55103991823394
+      },
+      {
+      &quot;x&quot;: 363.1031345399339,
+      &quot;y&quot;: -88.43579360382057
+      },
+      {
+      &quot;x&quot;: 367.8222323193189,
+      &quot;y&quot;: -87.52241984006864
+      },
+      {
+      &quot;x&quot;: 376.9559699568382,
+      &quot;y&quot;: -86.6090460763167
+      },
+      {
+      &quot;x&quot;: 401.61706157814046,
+      &quot;y&quot;: -83.86892478506093
+      },
+      {
+      &quot;x&quot;: 413.03423362503963,
+      &quot;y&quot;: -82.3466351788077
+      },
+      {
+      &quot;x&quot;: 425.3647794356907,
+      &quot;y&quot;: -78.54091116317464
+      },
+      {
+      &quot;x&quot;: 434.3462881125848,
+      &quot;y&quot;: -76.2574767537948
+      },
+      {
+      &quot;x&quot;: 458.0940059701351,
+      &quot;y&quot;: -75.19187402941755
+      },
+      {
+      &quot;x&quot;: 510.15631050399526,
+      &quot;y&quot;: -73.51735546253899
+      },
+      {
+      &quot;x&quot;: 525.7717933539819,
+      &quot;y&quot;: -72.03388459179025
+      }
+      ]
+      },
+      &quot;center&quot;: null,
+      &quot;length&quot;: 413.7061664752896,
+      &quot;minM&quot;: 0,
+      &quot;type&quot;: &quot;LINEM&quot;,
+      &quot;points&quot;: [
+      {
+      &quot;measure&quot;: 0,
+      &quot;x&quot;: 119.61003975513272,
+      &quot;y&quot;: -122.62783944590828
+      },
+      {
+      &quot;measure&quot;: 42.562450381061815,
+      &quot;x&quot;: 161.09530379013117,
+      &quot;y&quot;: -112.79242730387216
+      },
+      {
+      &quot;measure&quot;: 53.36188522478594,
+      &quot;x&quot;: 171.90355999452908,
+      &quot;y&quot;: -113.24911418574811
+      },
+      {
+      &quot;measure&quot;: 66.25868323695329,
+      &quot;x&quot;: 183.92964788392953,
+      &quot;y&quot;: -117.96821196513312
+      },
+      {
+      &quot;measure&quot;: 81.72746727904337,
+      &quot;x&quot;: 199.15254394646175,
+      &quot;y&quot;: -120.86056221701423
+      },
+      {
+      &quot;measure&quot;: 114.41354791290019,
+      &quot;x&quot;: 231.88177048090608,
+      &quot;y&quot;: -119.9471884532623
+      },
+      {
+      &quot;measure&quot;: 183.05128738904173,
+      &quot;x&quot;: 299.3192000379238,
+      &quot;y&quot;: -106.55103991823394
+      },
+      {
+      &quot;measure&quot;: 249.2446108130785,
+      &quot;x&quot;: 363.1031345399339,
+      &quot;y&quot;: -88.43579360382057
+      },
+      {
+      &quot;measure&quot;: 254.0430823016606,
+      &quot;x&quot;: 367.8222323193189,
+      &quot;y&quot;: -87.52241984006864
+      },
+      {
+      &quot;measure&quot;: 263.20670663483605,
+      &quot;x&quot;: 376.9559699568382,
+      &quot;y&quot;: -86.6090460763167
+      },
+      {
+      &quot;measure&quot;: 287.97720650760675,
+      &quot;x&quot;: 401.61706157814046,
+      &quot;y&quot;: -83.86892478506093
+      },
+      {
+      &quot;measure&quot;: 299.4757566926139,
+      &quot;x&quot;: 413.03423362503963,
+      &quot;y&quot;: -82.3466351788077
+      },
+      {
+      &quot;measure&quot;: 312.35822094318405,
+      &quot;x&quot;: 425.3647794356907,
+      &quot;y&quot;: -78.54091116317464
+      },
+      {
+      &quot;measure&quot;: 321.6096334727417,
+      &quot;x&quot;: 434.3462881125848,
+      &quot;y&quot;: -76.2574767537948
+      },
+      {
+      &quot;measure&quot;: 345.3406706379762,
+      &quot;x&quot;: 458.0940059701351,
+      &quot;y&quot;: -75.19187402941755
+      },
+      {
+      &quot;measure&quot;: 397.34098506358634,
+      &quot;x&quot;: 510.15631050399526,
+      &quot;y&quot;: -73.51735546253899
+      },
+      {
+      &quot;measure&quot;: 413,
+      &quot;x&quot;: 525.7717933539819,
+      &quot;y&quot;: -72.03388459179025
+      }
+      ],
+      &quot;parts&quot;: [17],
+      &quot;maxM&quot;: 413,
+      &quot;style&quot;: null,
+      &quot;prjCoordSys&quot;: {
+      &quot;distanceUnit&quot;: &quot;METER&quot;,
+      &quot;projectionParam&quot;: null,
+      &quot;epsgCode&quot;: -1000,
+      &quot;coordUnit&quot;: &quot;METER&quot;,
+      &quot;name&quot;: &quot;Planar Coordinate System---m&quot;,
+      &quot;projection&quot;: null,
+      &quot;type&quot;: &quot;PCS_NON_EARTH&quot;,
+      &quot;coordSystem&quot;: null
+      },
+      &quot;id&quot;: 0,
+      &quot;region&quot;: {
+      &quot;center&quot;: {
+      &quot;x&quot;: 327.23722022835057,
+      &quot;y&quot;: -97.33086201884927
+      },
+      &quot;parts&quot;: [18],
+      &quot;style&quot;: null,
+      &quot;prjCoordSys&quot;: {
+      &quot;distanceUnit&quot;: &quot;METER&quot;,
+      &quot;projectionParam&quot;: null,
+      &quot;epsgCode&quot;: -1000,
+      &quot;coordUnit&quot;: &quot;METER&quot;,
+      &quot;name&quot;: &quot;Planar Coordinate System---m&quot;,
+      &quot;projection&quot;: null,
+      &quot;type&quot;: &quot;PCS_NON_EARTH&quot;,
+      &quot;coordSystem&quot;: null
+      },
+      &quot;id&quot;: 0,
+      &quot;type&quot;: &quot;REGION&quot;,
+      &quot;partTopo&quot;: [1],
+      &quot;points&quot;: [
+      {
+      &quot;x&quot;: 119.61003975513272,
+      &quot;y&quot;: -122.62783944590828
+      },
+      {
+      &quot;x&quot;: 161.09530379013117,
+      &quot;y&quot;: -112.79242730387216
+      },
+      {
+      &quot;x&quot;: 171.90355999452908,
+      &quot;y&quot;: -113.24911418574811
+      },
+      {
+      &quot;x&quot;: 183.92964788392953,
+      &quot;y&quot;: -117.96821196513312
+      },
+      {
+      &quot;x&quot;: 199.15254394646175,
+      &quot;y&quot;: -120.86056221701423
+      },
+      {
+      &quot;x&quot;: 231.88177048090608,
+      &quot;y&quot;: -119.9471884532623
+      },
+      {
+      &quot;x&quot;: 299.3192000379238,
+      &quot;y&quot;: -106.55103991823394
+      },
+      {
+      &quot;x&quot;: 363.1031345399339,
+      &quot;y&quot;: -88.43579360382057
+      },
+      {
+      &quot;x&quot;: 367.8222323193189,
+      &quot;y&quot;: -87.52241984006864
+      },
+      {
+      &quot;x&quot;: 376.9559699568382,
+      &quot;y&quot;: -86.6090460763167
+      },
+      {
+      &quot;x&quot;: 401.61706157814046,
+      &quot;y&quot;: -83.86892478506093
+      },
+      {
+      &quot;x&quot;: 413.03423362503963,
+      &quot;y&quot;: -82.3466351788077
+      },
+      {
+      &quot;x&quot;: 425.3647794356907,
+      &quot;y&quot;: -78.54091116317464
+      },
+      {
+      &quot;x&quot;: 434.3462881125848,
+      &quot;y&quot;: -76.2574767537948
+      },
+      {
+      &quot;x&quot;: 458.0940059701351,
+      &quot;y&quot;: -75.19187402941755
+      },
+      {
+      &quot;x&quot;: 510.15631050399526,
+      &quot;y&quot;: -73.51735546253899
+      },
+      {
+      &quot;x&quot;: 525.7717933539819,
+      &quot;y&quot;: -72.03388459179025
+      },
+      {
+      &quot;x&quot;: 119.61003975513272,
+      &quot;y&quot;: -122.62783944590828
+      }
+      ]
+      },
+      &quot;partTopo&quot;: null
+      },
+      &quot;edgeFeatures&quot;: null,
+      &quot;weight&quot;: 413,
+      &quot;nodeFeatures&quot;: null,
+      &quot;stopWeights&quot;: [413],
+      &quot;edgeIDs&quot;: []
+      }]}
+    </textarea></p>
+  <h3><a id="HEAD 请求"></a>HEAD 请求</h3>
+  <p class="myNormal">返回跟 GET 请求一样的 HTTP 响应头，但是没有响应实体。可以在不必传输整个响应内容的情况下，获取包含在响应消息头中的元数据信息。元数据信息包括媒体类型，字符编码，压缩编码，实体内容长度等。</p>
+  <p class="myNormal">HEAD 请求可以用来判断 path 资源是否存在，或者客户端是否有权限访问 path 资源。通过对加.&lt;format&gt;的 URI 执行 HEAD 请求，还可以快速判断 path 资源是否支持&lt;format&gt;格式的表述。</p>
+  <h2>请参见</h2>
+  <ul class="referenceList">
+    <li class="referenceList"><a class="contentpagehyperlink" href="networkDataName.htm">networkDataName</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../clientBuildREST/ConstructRESTRequest.htm">客户端构建 REST 请求</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../StatusCodeDescription.htm">状态码列表及说明</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../SuperMap_iServer_REST_API_OutputFormat.htm">SuperMap iServer REST API 表述格式介绍</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../resource_hierarchy.htm">GIS 服务资源层次结构</a></li>
+  </ul>
+  <p> </p>
+
+</div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../../../../../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../../../../../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../../../../../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../../../../../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../../../../../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../../../../../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../../../../../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../../../../.."
+    gCommonRootRelPath = "../../../../.."
+    gTopicId = "8.2.2.6.12.1.9"
+  
+//]]></script>
+
+  <script src="../../../../../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../../../../../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../../../../../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../../../../../whxdata/layoutconfig.js"></script>
+  <script src="../../../../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

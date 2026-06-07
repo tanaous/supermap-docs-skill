@@ -1,0 +1,1349 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <script src="scripts/css-vars-ponyfill.min.js"></script>
+    <script src="../../examples/js/utils.js"></script>
+    <script src="../../examples/js/theme/themeConfig.js"></script>
+    <script src="../../examples/js/theme/theme.js"></script>
+<script type="text/javascript">
+
+</script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+        <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/adminlte/app.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="styles/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/adminlte/AdminLTE.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/adminlte/skin-blue.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jaguar.css">
+    
+
+</head>
+<body class='sidebar-mini'>
+
+<div id="wrap" class="clearfix">
+
+    <div class="navigationDiv">
+    </div>
+    <div class="main content-wrapper">
+        <h1 class="page-title" data-filename="TransferSolutionParameters.html">Class: TransferSolutionParameters</h1>
+        
+
+
+
+<section>
+    
+<header>
+    <h2></span>TransferSolutionParameters
+    
+    </h2>
+    
+        <div class="class-description"><p>交通换乘方案查询参数类。此类用于设置交通换乘方案查询的查询方式、交通换乘策略类型、
+乘车偏好、避让路线和站点、优先路线和站点、出行时间、步行与公交的消耗权重比等参数。</p></div>
+    
+</header>  
+
+<article>
+    <div class="container-overview">
+    
+    
+    
+        
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="TransferSolutionParameters">
+          
+          
+          new TransferSolutionParameters<span class="signature">(options)</span>
+        </h4>
+        
+        <h5>Usage</h5>
+        
+
+<pre class="prettyprint">
+<code>// 浏览器
+&lt;script type="text/javascript" src="https://iclient.supermap.io/dist/maplibregl/iclient-maplibregl.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+  new maplibregl.supermap.TransferSolutionParameters(options);
+    // 弃用的写法
+  new SuperMap.TransferSolutionParameters(options);
+
+&lt;/script&gt;
+
+<span class="nopretty">// ES6 Import</span>
+import { TransferSolutionParameters } from '@supermapgis/iclient-maplibregl';
+
+new TransferSolutionParameters(options);
+</code>
+</pre>
+
+
+        
+
+        
+        <div class="tag-source">
+            common/iServer/TransferSolutionParameters.js, line 7
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>参数。</p>
+                
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Default</th>
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>points</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;(<a href="GeometryPoint.html">GeometryPoint</a>|<a href="https://leafletjs.com/reference.html#point">L.Point</a>|<a href="https://leafletjs.com/reference.html#latlng">L.LatLng</a>|<a href="https://openlayers.org/en/v6.14.1/apidoc/module-ol_geom_Point-Point.html">ol.geom.Point</a>|<a href="https://www.mapbox.com/mapbox-gl-js/api/#lnglat">mapboxgl.LngLat</a>|Array.&lt;number>|number)></span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                    
+                        
+                    
+                
+                <p>两种查询方式：按照公交站点的起止 ID 进行查询和按照起止点的坐标进行查询。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>solutionCount</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    6
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>乘车方案的数量。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>transferTactic</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="global.html#TransferTactic">TransferTactic</a></span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    <a href="global.html#TransferTactic#.LESS_TIME">TransferTactic.LESS_TIME</a>
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>交通换乘策略类型，包括时间最短、距离最短、最少换乘、最少步行四种选择。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>transferPreference</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="global.html#TransferPreference">TransferPreference</a></span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    <a href="global.html#TransferPreference#.NONE">TransferPreference.NONE</a>
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>乘车偏好枚举。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>walkingRatio</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    10
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>步行与公交的消耗权重比。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>evadeLines</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;number></span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>避让路线的 ID。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>evadeStops</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;number></span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>避让站点的 ID。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>priorLines</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;number></span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>优先路线的 ID。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>priorStops</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;number></span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>优先站点的 ID。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>travelTime</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>出行的时间。</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+            </td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</dd>
+
+    
+    </div>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <h3 class="subsection-title">Members</h3>
+        
+        <dl>
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="evadeLinesnull">
+          
+          evadeLinesnull<span class="type-signature type array.<number>">Array.&lt;number></span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>避让路线 ID 集合。<br>
+如果设置某些线路避让线路，则进行换乘分析时不会使用这些线路，例如，设置123路为避让线路，进行公交换乘分析，
+即使乘坐该线路可以到达目的地，换乘方案中也不会包含乘坐该线路的方案。<br>
+注意：如果将某线路同时设置为优先或者避让的线路，系统将以避让线路来处理。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="evadeStops">
+          
+          evadeStops<span class="type-signature type array.<number>">Array.&lt;number></span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>避让站点 ID 集合。<br>
+如果设置某些线路避让站点，则进行换乘分析方案中不会包含这些站点，例如，设置天安门西站为避让站点，
+那么公交换乘方案中就不会包含该站点，也就是不会在该站点换乘或下车。<br>
+注意：如果将某站点同时设置为优先或者避让的站点，系统将以避让站点来处理。另外，避让的站点必须是线路上的站点，
+例如，某站点在位置上位于某条线路上，但在关系表中不存在二者的对应关系，那么设置该站点为避让站点是无效的，
+换乘分析的结果中仍有可能包含该站点。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    <dt class="tag-default">Default Value:</dt>
+    <a href="TransferLine.html">TransferLine</a></li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="points">
+          
+          points<span class="type-signature type array.<(geometrypoint|l.point|l.latlng|ol.geom.point|mapboxgl.lnglat|array.<number>|number)>">Array.&lt;(<a href="GeometryPoint.html">GeometryPoint</a>|<a href="https://leafletjs.com/reference.html#point">L.Point</a>|<a href="https://leafletjs.com/reference.html#latlng">L.LatLng</a>|<a href="https://openlayers.org/en/v6.14.1/apidoc/module-ol_geom_Point-Point.html">ol.geom.Point</a>|<a href="https://www.mapbox.com/mapbox-gl-js/api/#lnglat">mapboxgl.LngLat</a>|Array.&lt;number>|number)></span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>两种查询方式：</br>
+1. 按照公交站点的起止 ID 进行查询，则 points 参数的类型为 int[]，形如：[起点 ID、终点 ID]，公交站点的 ID 对应服务提供者配置中的站点 ID 字段；<br>
+2. 按照起止点的坐标进行查询，则 points 参数的类型为 Point2D[]，形如：[{&quot;x&quot;:44,&quot;y&quot;:39},{&quot;x&quot;:45,&quot;y&quot;:40}]。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="priorLines">
+          
+          priorLines<span class="type-signature type array.<number>">Array.&lt;number></span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>优先路线 ID 集合。<br>
+如果设置某些线路为优先线路，则进行换乘分析时会优先考虑这些线路，但最优换乘方案是由多个参数共同决定的，因此并不一定会包含这些线路。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="priorStops">
+          
+          priorStops<span class="type-signature type array.<number>">Array.&lt;number></span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>优先站点 ID 集合。<br>
+如果设置某些线路为优先站点，则进行换乘分析时会优先考虑这些站点，但最优换乘方案是由多个参数共同决定的，
+因此并不一定会包含这些站点。另外，优先的站点必须是线路上的站点，例如，某站点在位置上位于某条线路上，
+但在关系表中不存在二者的对应关系，那么设置该站点为优先站点是无效的，换乘分析时可能不会包含通过该站点的线路。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="solutionCount">
+          
+          solutionCount<span class="type-signature type number">number</span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>乘车方案的数量。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    <dt class="tag-default">Default Value:</dt>
+    6</li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="transferPreference">
+          
+          transferPreference<span class="type-signature type transferpreference"><a href="global.html#TransferPreference">TransferPreference</a></span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>乘车偏好枚举。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    <dt class="tag-default">Default Value:</dt>
+    <a href="global.html#TransferPreference#.NONE">TransferPreference.NONE</a></li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="transferTactic">
+          
+          transferTactic<span class="type-signature type transfertactic"><a href="global.html#TransferTactic">TransferTactic</a></span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>交通换乘策略类型，包括时间最短、距离最短、最少换乘、最少步行四种选择。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    <dt class="tag-default">Default Value:</dt>
+    (<a href="global.html#TransferTactic">TransferTactic</a>|<a href="global.html#TransferTactic#.LESS_TIME">TransferTactic.LESS_TIME</a>)</li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="travelTime">
+          
+          travelTime<span class="type-signature type string">string</span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>出行的时间；格式是：&quot;小时:分钟&quot;，如：&quot;08:30&quot;。如果设置了该参数，在分析时，则会考虑线路的首末班车时间的限制，即在返回的结果中会提示公交的首末班发车时间。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="walkingRatio">
+          
+          walkingRatio<span class="type-signature type number">number</span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>步行与公交的消耗权重比。此值越大，则步行因素对于方案选择的影响越大。例如：</br>
+例如现在有两种换乘方案（在仅考虑消耗因素的情况下）：</br>
+方案1：坐车 10 公里，走路 1 公里；</br>
+方案2：坐车 15 公里，走路 0.5 公里；</br></p>
+<ol>
+<li>假设权重比为 15：</br>
+•方案 1 的总消耗为：10 + 1<em>15 = 25</br>
+•方案 2 的总消耗为：15 + 0.5</em>15 = 22.5</br>
+此时方案 2 消耗更低。</br></li>
+<li>假设权重比为2：</br>
+•方案 1 的总消耗为：10+1<em>2 = 12</br>
+•方案 2 的总消耗为：15+0.5</em>2 = 17</br>
+此时方案 1 消耗更低。</br></li>
+</ol>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    <dt class="tag-default">Default Value:</dt>
+    10</li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        </dl>
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+        
+        <dl>
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id=".toJsonParameters">
+          
+          
+              <span class="attribs"><span class="type-signature">static </span></span>
+          
+          toJsonParameters<span class="signature">(params)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{string}</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            common/iServer/TransferSolutionParameters.js, line 129
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>将 <a href="TransferSolutionParameters.html"><code>TransferSolutionParameters</code></a> 对象参数转换为 JSON 字符串。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>params</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="TransferSolutionParameters.html">TransferSolutionParameters</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>交通换乘参数。</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        string
+                        
+                    
+            </td>
+            <td class="description last">转化后的 JSON 字符串。</td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+
+    
+
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="destroy">
+          
+          
+          destroy<span class="signature">()</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            common/iServer/TransferSolutionParameters.js, line 120
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>释放资源，将引用资源的属性置空。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</dd>
+
+        </dl>
+    
+    
+    
+
+</article>
+
+</section>  
+
+
+
+
+
+        <footer>
+            Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc</a> on Fri Sep 26 2025 09:51:30 GMT+0800 (中国标准时间)
+        </footer>
+    </div>
+</div>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>

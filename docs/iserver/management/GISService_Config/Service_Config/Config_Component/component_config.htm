@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../../../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../../../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../../../../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../../../iserver-icon.png"/>
+    
+  <script data-relpath="../../../.." src="../../../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <meta name="template" content="../../../../assets/layouts/SuperMapiServerMain.htt"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Language" content="zh-CN"/>
+  <meta name="topic-check-list" content="Ran Smart Index"/>
+  <meta name="topic-status" content="Complete"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>通过 XML 文件配置服务组件</title>
+  <link rel="StyleSheet" href="../../../../assets/css/SuperMapHelp.css" type="text/css"/>
+  <script type="text/javascript" src="../../../../assets/js/shCore.js"></script>
+  <script type="text/javascript" src="../../../../assets/js/shBrushJava.js"></script>
+  <script type="text/javascript" src="../../../../assets/js/shBrushJScript.js"></script>
+  <script type="text/javascript" src="../../../../assets/js/shBrushXml.js"></script>
+  <script type="text/javascript" src="../../../../assets/js/ConfigiServer6R.js"></script>
+  <meta name="rh-index-keywords" content="通过 XML 文件配置服务组件,表1,服务组件与服务接口对照表"/>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../../../../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../assets/css/homeButtom.css"/>
+  <script src="../../../../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../../../../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../../../../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../../../../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../../../../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../../../../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../../../../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../../../../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../../../../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <p class="myNormal">服务组件对不同服务提供者的功能进行组合和封装，封装成粒度较粗的模块，例如地图组件、数据组件等，同时支持将一个或多个服务组件组装成服务组件集合提供服务。服务组件的配置是在&lt;component&gt;节点中进行，服务组件集合的配置在&lt;componentSet&gt;节点中进行。</p>
+  <p class="myNormal">服务组件和服务组件集都可以与服务接口相结合来提供服务实例，假设已配置了一个名为 rest 的 REST 服务接口（参见：<a class="contentpagehyperlink" href="../Config_Interface/interface.htm">服务接口层的配置</a>），在以上 map-world 组件的配置中，已经绑定了“rest”接口，则 map-world 组件与 rest 服务接口组合提供的服务实例的 URI 依次如下：</p>
+  <p class="myCodeP">http://&lt;server&gt;:&lt;port&gt;/iserver/services/map-world/rest</p>
+  <p class="myCodeP">http://&lt;server&gt;:&lt;port&gt;/iserver/services/components-rest/rest</p>
+  <p class="myNormal">分别表示 map-world 服务组件包含的 REST 服务的根目录和 components-rest 组件集包含的 REST 服务的根目录，通过后者，可以访问到 map-world、data-world、3D-sample、transportationanalyst-sample 几个服务组件包含的全部 REST 服务。</p>
+  <p class="myNormal">其中，不同服务组件绑定的服务接口类型也是不完全相同的，目前 SuperMap iServer 中服务组件与服务接口的对应情况如<a class="contentpagehyperlink" href="#表1_服务组件与服务接口对照表">表1_服务组件与服务接口对照表</a>所示。</p>
+  <p style="text-align: center;"><a id="表1_服务组件与服务接口对照表"></a>表1 服务组件与服务接口对照表</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="80%">
+    <colgroup>
+      <col style="width: 30%;"/>
+      <col style="width: 40%;"/>
+      <col style="width: 30%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>服务组件类型</td>
+        <td>服务接口类型</td>
+        <td>预定义的服务接口</td>
+      </tr>
+      <tr class="t2Row">
+        <td>地图服务组件 （MapImpl）</td>
+        <td>REST 接口（RestServlet） ArcGIS REST 接口（AGSRestServlet） Baidu REST 接口 （BaiduRestServlet） Google REST 接口 （GoogleRestServlet） WMS 接口（WMSServlet） WMTS 接口（WMTSServlet）</td>
+        <td>rest、arcgisrest<span style="vertical-align: Super;">1</span>、baidurest<span style="vertical-align: Super;">1</span>、googlerest<span style="vertical-align: Super;">1 </span> wms111、wms130 wmts100、wmts-china</td>
+      </tr>
+      <tr class="t1Row">
+        <td>数据服务组件 （DataImpl）</td>
+        <td>REST 接口（RestServlet） ArcGIS REST 接口（AGSRestServlet） WFS 接口（WFSSServlet） WCS 接口（WCSServlet）</td>
+        <td>rest 、arcgisrest<span style="vertical-align: Super;">1</span> wfs100、wfs200 wcs111、wcs112</td>
+      </tr>
+      <tr class="t2Row">
+        <td>影像服务组件 （ImageImpl）</td>
+        <td>REST/JSR 接口（JaxrsServletForJersey）<br/>
+          WMTS 接口（WMTSServlet）</td>
+        <td>restjsr,wmts100</td>
+      </tr>
+      <tr class="t1Row">
+        <td>空间分析服务组件 （SpatialAnalystImpl）</td>
+        <td>REST/JSR 接口（JaxrsServletForJersey） WPS 接口（WPSServlet）</td>
+        <td>restjsr wps100</td>
+      </tr>
+      <tr class="t2Row">
+        <td>交通网络分析服务组件 （TransportationAnalystImpl）</td>
+        <td>REST 接口（RestServlet） ArcGIS REST 接口（AGSRestServlet）</td>
+        <td>rest、arcgisrest<span style="vertical-align: Super;">1</span></td>
+      </tr>
+      <tr class="t1Row">
+        <td>交通换乘分析服务组件 （TrafficTransferAnalystImpl）</td>
+        <td>REST/JSR 接口（JaxrsServletForJersey）</td>
+        <td>restjsr</td>
+      </tr>
+      <tr class="t2Row">
+        <td>三维服务组件 （RealspaceImpl）</td>
+        <td>REST 接口（RestServlet）</td>
+        <td>rest</td>
+      </tr>
+      <tr class="t1Row">
+        <td>三维网络分析 （NetworkAnalyst3DImpl）</td>
+        <td>REST/JSR 接口（JaxrsServletForJersey）</td>
+        <td>restjsr</td>
+      </tr>
+      <tr class="t2Row">
+        <td>空间建模服务组件 （GeoprocessorComponent）</td>
+        <td>GP 接口（GeoprocessorServlet）</td>
+        <td>gpserver</td>
+      </tr>
+      <tr class="t1Row">
+        <td>动态标绘服务组件 （PlotImpl）</td>
+        <td>REST接口（RestServlet）</td>
+        <td>rest</td>
+      </tr>
+      <tr class="t2Row">
+        <td>地址匹配服务组件 （AddressMatchImpl）</td>
+        <td>REST/JSR 接口（JaxrsServletForJersey）ArcGIS REST 接口<span style="vertical-align: Super;">2</span>（AGSRestServlet）</td>
+        <td>restjsr、arcgisrest<span style="vertical-align: Super;">1</span></td>
+      </tr>
+      <tr>
+        <td>矢量瓦片服务组件 （VectorTileImpl）</td>
+        <td>ArcGIS REST 接口（AGSRestServlet）</td>
+        <td>arcgisrest<span style="vertical-align: Super;">1</span></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="pagenotice">
+    <div class="pagecontent"><img align="" class="notice_logo" src="../../../../assets/images/notice.png"/> <span class="notice_label">注意事项：</span></div>
+    <div class="notice_content">
+      <p>iServer高级版和iEdge提供该接口。</p>
+    </div>
+  </div>
+  <h2>服务组件配置基本结构</h2>
+  <p class="myNormal">&lt;component&gt; 和 &lt;componentSet&gt; 在配置文件中的结构如下所示：</p>
+  <pre class="brush:xml">&lt;application&gt;
+                ...
+                &lt;componentSets&gt;
+                        ...
+                        &lt;componentSet&gt;
+                              ...
+                        &lt;componentSet/&gt;
+                &lt;/componentSets&gt;
+                &lt;components&gt;
+                        ...
+                        &lt;component&gt;
+                             ...
+                        &lt;component/&gt;
+                &lt;/components&gt;
+&lt;/application&gt;</pre>
+  <h2><a id="mapComponent"></a>地图组件配置</h2>
+  <p class="myNormal">地图服务组件配置示例：</p>
+  <pre class="brush:xml">&lt;component name=&quot;map-china&quot; class=&quot;com.supermap.services.components.impl.MapImpl&quot;
+     interfaceNames=&quot;rest,wms111,wms130,wmts100,wmts-china&quot; providers=&quot;ugcMapProvider-China400&quot;&gt;
+        &lt;config class=&quot;com.supermap.services.components.MapConfig&quot;&gt;
+           &lt;useCache&gt;false&lt;/useCache&gt; 
+           &lt;tileCacheConfig class=&quot;com.supermap.services.tilesource.UGCV5TileSourceInfo&quot;&gt; 
+               &lt;datastoreType&gt;TILES&lt;/datastoreType&gt;
+               &lt;type&gt;UGCV5&lt;/type&gt;
+               &lt;outputPath&gt;./output/cache&lt;/outputPath&gt; 
+               &lt;storageType&gt;Original&lt;/storageType&gt;
+           &lt;/tileCacheConfig&gt;   
+           &lt;vectorTileCacheConfig class=&quot;com.supermap.services.tilesource.SVTilesTileSourceInfo&quot;&gt; 
+               &lt;datastoretype&gt;TILES&lt;/datastoretype&gt;
+               &lt;type&gt;SVTiles&lt;/type&gt;  
+           &lt;/vectorTileCacheConfig&gt;  
+               &lt;useVectorTileCache&gt;true&lt;/useVectorTileCache&gt;
+           &lt;expired&gt;0&lt;/expired&gt; 
+           &lt;cacheReadOnly&gt;false&lt;/cacheReadOnly&gt; 
+           &lt;cacheResamplingDisabled&gt;false&lt;/cacheResamplingDisabled&gt; 
+        &lt;/config&gt;
+&lt;/component&gt;</pre>
+  <p class="myNormal">其中&lt;component&gt;节点的 class 属性标识的是地图组件的实现类；providers 属性是地图组件用到的服务提供者（集合），（参见：<a class="contentpagehyperlink" href="../Config_Provider/provider.htm">服务提供者层的配置</a>）；interfaceNames 属性标识的是服务组件绑定的服务接口，多个服务接口之间用“,”分隔，参见：<a class="contentpagehyperlink" href="../Config_Interface/interface.htm">服务接口层的配置</a>。&lt;config&gt;节点是该地图组件实现对应的配置项，对应接口配置类<a class="contentpagehyperlink" href="../../../../mergedProjects/iServerJavaDoc/com/supermap/services/components/MapConfig.html">MapConfig</a>，以下参数均为可选参数：</p>
+  <ul style="list-style: disc;">
+    <li class="SymbolList1">&lt;useCache&gt;：是否使用缓存。</li>
+    <li class="SymbolList1">&lt;useVectorTileCache&gt;：是否使用矢量瓦片缓存。</li>
+    <li class="SymbolList1">&lt;cacheReadOnly&gt;：缓存文件是否只读。</li>
+    <li class="SymbolList1">&lt;expired&gt;：缓存过期时间，单位为分钟。从瓦片创建开始计算瓦片过期时间，当再次访问瓦片时，若当前系统时间与瓦片创建时间的差值大于该值，瓦片将会刷新。0代表缓存永不过期。</li>
+    <li class="SymbolList1"><a id="瓦片重采样"></a>&lt;cacheResamplingDisabled&gt;：是否关闭瓦片重采样，默认为 false。为提升地图服务访问出图效率，iServer 支持在地图出图时使用相同坐标系的瓦片缓存，但当请求的瓦片与已存在的瓦片在瓦片起始点、像素大小、比例尺、格式、透明情况等方面存在不一致时，瓦片缓存将无法使用。基于此，iServer 默认开启瓦片缓存重采样能力，通过对 iServer、iDesktopX 切图生成的 UGCV5瓦片（本地剖分）或 iServer 出图时生成的含 *.sci 配置文件的 UGCV5瓦片缓存（本地剖分）按需进行重采样、拼接裁剪、格式转换并出图来支持如下场景中瓦片缓存的使用：
+      <ul>
+        <li class="SymbolList2">请求瓦片的比例尺与瓦片缓存的比例尺相同，但单张瓦片的地理范围（中心点、起始点、像素大小等）不一致；</li>
+        <li class="SymbolList2">请求瓦片的比例尺与瓦片缓存的比例尺不同，且单张瓦片的地理范围（中心点、起始点、像素大小等）不一致；</li>
+        <li class="SymbolList2">请求瓦片与瓦片缓存的格式不一致，例如：请求瓦片格式为 png，而瓦片缓存格式为 webp；</li>
+        <li class="SymbolList2">请求瓦片不透明而瓦片缓存为透明。</li>
+      </ul>
+    </li>
+    <li class="SymbolList1">&lt;tileCacheConfig&gt;：地图瓦片缓存配置类，瓦片类型支持 SMTiles、MongoDB、GDP、UGCV5。关于瓦片格式的详细介绍，请参考：<a class="contentpagehyperlink" href="../../../../Subject_introduce/Cache/MapCache/TileFormat/CacheVersion.htm">瓦片格式</a>。<span style="font-weight:bold;">注意</span>：开启单机多进程后，地图服务将不再支持 SMTiles 类型的地图瓦片缓存。</li>
+    <li class="SymbolList2">当瓦片类型为 SMTiles 时，对应类为 com.supermap.services.tilesource.SMTilesTileSourceInfo</li>
+    <li class="SymbolList2">当瓦片类型为 MongoDB 时，对应类为 com.supermap.services.tilesource.MongoDBTileSourceInfo</li>
+    <li class="SymbolList2">当瓦片类型为 GDP 时，对应类为 com.supermap.services.tilesource.GDPTileSourceInfo</li>
+    <li class="SymbolList2">当瓦片类型为 UGCV5 时，对应类为 com.supermap.services.tilesource.UGCV5TileSourceInfo，该类中包含如下配置项：
+      <ul>
+        <li class="SymbolList2">&lt;datastoreType&gt;：瓦片缓存的存储类型。为本地瓦片，即 TILES。</li>
+        <li class="SymbolList2">&lt;type&gt;：瓦片缓存类型，为 UGCV5。</li>
+        <li class="SymbolList2">&lt;outputPath&gt;：瓦片缓存的存储位置。</li>
+        <li class="SymbolList2">&lt;storageType&gt;：瓦片缓存的存储格式。支持原始型和紧凑型，即 Original 和 Compact，默认为 Original。当在 iEdge 中使用 UGCV5 组件层缓存，则只支持原始型。
+          <ul>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li class="SymbolList1">&lt;vectorTileCacheConfig&gt;：矢量瓦片配置类，瓦片类型支持 SVTilesTileSourceInfo，对应类为 com.supermap.services.tilesource.SVTilesTileSourceInfo。</li>
+    <li class="SymbolList2">&lt;type&gt;：瓦片缓存类型，当缓存类型为 SMTiles 时，此项可以省略。</li>
+  </ul>
+  <ul style="list-style: disc;">
+    <li class="SymbolList1">&lt;tileCacheUpdateConfig&gt;：栅格瓦片缓存更新配置。</li>
+  </ul>
+  <ul style="list-style: disc;">
+    <li class="SymbolList2">&lt;cacheReadOnly&gt;：栅格瓦片缓存文件是否只读，优先级高于公共的 cacheReadOnly 参数。</li>
+    <li class="SymbolList2">&lt;expired&gt;: 栅格瓦片过期时间。从瓦片创建开始计算瓦片存活时间。时间单位为分钟，0代表缓存永不过期。优先级高于公共的 expired 参数。</li>
+  </ul>
+  <ul style="list-style: disc;">
+    <li class="SymbolList1">&lt;vectorTileCacheUpdateConfig&gt;：矢量瓦片缓存更新配置。</li>
+  </ul>
+  <ul style="list-style: disc;">
+    <li class="SymbolList2">&lt;cacheReadOnly&gt;：矢量瓦片缓存文件是否只读，优先级高于公共的 cacheReadOnly 参数。</li>
+    <li class="SymbolList2">&lt;expired&gt;: 矢量瓦片过期时间。从瓦片创建开始计算瓦片存活时间。时间单位为分钟，0代表缓存永不过期。优先级高于公共的 expired 参数。</li>
+  </ul>
+  <div class="pagenotice">
+    <div class="pagecontent"><img align="" class="notice_logo" src="../../../../assets/images/notice.png"/> <span class="notice_label">注意事项：</span></div>
+    <div class="notice_content">
+      <p>1、当您需要使用地图瓦片缓存能力时，建议优先配置地图组件缓存并设置类型为 UGCV5；</p>
+      <p>2、开启瓦片重采样功能时，若您修改了原始地图的风格或数据，在浏览出图时可能会返回原始地图图片。此时需要手动清理缓存，并重新浏览出图。</p>
+    </div>
+  </div>
+  <h2>数据服务组件配置</h2>
+  <p class="myNormal">数据服务组件配置示例：</p>
+  <pre class="brush:xml" style="height: 100px;">&lt;component name=&quot;data-world&quot; class=&quot;com.supermap.services.components.impl.DataImpl&quot;
+           interfaceNames=&quot;rest,wfs100,wfs200,wcs111,wcs112&quot; providers=&quot;ugcDataProvider-World&quot;&gt; 
+      &lt;config class=&quot;com.supermap.services.components.DataConfig&quot;&gt;
+         &lt;editable&gt;true&lt;/editable&gt;
+         &lt;cacheStrategyConfig&gt;
+            &lt;maxElementInMemory&gt;100&lt;/maxElementInMemory&gt;
+            &lt;timeToLiveSeconds&gt;3&lt;/timeToLiveSeconds&gt;
+            &lt;timeToIdleSeconds&gt;3&lt;/timeToIdleSeconds&gt;
+         &lt;/cacheStrategyConfig&gt;
+      &lt;/config&gt; 
+    &lt;/component&gt;</pre>
+  <p class="myNormal"> </p>
+  <p class="myNormal">其中，&lt;component&gt;节点的 class 属性标识组件类型，对应实现类 DataImpl，&lt;config&gt;节点是该 Data 组件对应的配置项，即接口配置类<a class="contentpagehyperlink" href="../../../../mergedProjects/iServerJavaDoc/com/supermap/services/components/DataConfig.html">DataConfig</a>。主要参数说明：</p>
+  <ul style="list-style: disc;">
+    <li>
+      <p class="myNormal">&lt;editable&gt;属性，表示是否可编辑。当 editable 为 true 时可编辑。</p>
+    </li>
+    <li>
+      <p class="myNormal">&lt;cacheStrategyConfig&gt;属性，表示数据查询缓存相关设置：</p>
+    </li>
+    <li class="SymbolList2">&lt;maxElementInMemory&gt;：内存中允许存储的最大对象个数，默认为100个。</li>
+    <li class="SymbolList2">&lt;timeToLiveSeconds&gt;：内存中存储对象的有效时长，单位为秒，默认为3秒。</li>
+    <li class="SymbolList2">&lt;timeToIdleSeconds&gt;：内存中存储对象允许闲置的时长，单位为秒，默认为3秒。</li>
+  </ul>
+  <h2>矢量瓦片服务组件配置</h2>
+  <p class="myNormal">矢量瓦片服务组件配置示例：</p>
+  <pre class="brush:xml" style="height: 100px;">    &lt;component class=&quot;com.supermap.services.components.impl.VectorTileImpl&quot; enabled=&quot;true&quot; initPriority=&quot;0&quot; instanceCount=&quot;0&quot; interfaceNames=&quot;arcgisrest&quot; name=&quot;vectorTile-China&quot; providers=&quot;vectorTile-China&quot;&gt;
+      &lt;config class=&quot;com.supermap.services.components.VectorTileConfig&quot;&gt; 
+      &lt;/config&gt;
+    &lt;/component&gt;</pre>
+  <p class="myNormal">其中，&lt;component&gt;节点的 class 属性标识组件类型，对应实现类 VectorTileImpl，&lt;config&gt;节点是该矢量瓦片服务组件对应的配置项，即接口配置类 VectorTileConfig。</p>
+  <h2>影像服务组件配置</h2>
+  <p class="myNormal">影像服务组件配置示例：</p>
+  <pre class="brush:xml" style="height: 100px;">    &lt;component class=&quot;com.supermap.services.components.impl.ImageImpl&quot; enabled=&quot;true&quot; initPriority=&quot;0&quot; instanceCount=&quot;0&quot; interfaceNames=&quot;wmts100,restjsr&quot; name=&quot;imageservice-ChinaImages&quot; providers=&quot;imageservice-ChinaImages&quot;&gt;
+      &lt;config class=&quot;com.supermap.services.components.ImageConfig&quot;&gt; 
+        &lt;editable&gt;false&lt;/editable&gt;
+        &lt;downloadable&gt;false&lt;/downloadable&gt; 
+      &lt;/config&gt;
+    &lt;/component&gt;</pre>
+  <p class="myNormal">其中，&lt;component&gt;节点的 class 属性标识组件类型，对应实现类 ImageImpl，&lt;config&gt;节点是该影像服务组件对应的配置项，即接口配置类ImageConfig。主要参数说明：</p>
+  <ul style="list-style: disc;">
+    <li>
+      <p class="myNormal">&lt;editable&gt;属性，表示是否可编辑。当 editable 为 true 时可编辑。</p>
+    </li>
+    <li>
+      <p class="myNormal">&lt;downloadable&gt;属性，表示影像数据资产是否可下载，当downloadable为true时可下载。</p>
+    </li>
+  </ul>
+  <h2>服务组件集合配置</h2>
+  <p class="myNormal">&lt;componentSet&gt;节点可以将一个或多个服务组件组装成服务组件集，一个&lt;componentSet&gt;节点的示例如下：</p>
+  <pre class="brush:xml">&lt;componentSet name=&quot;components-rest&quot;&gt;
+        &lt;component-reference  name=&quot;map-world&quot;&gt;&lt;/component-reference&gt;
+        &lt;component-reference  name=&quot;3D-sample&quot;&gt;&lt;/component-reference&gt;
+        &lt;component-reference  name=&quot;data-world&quot;&gt;&lt;/component-reference&gt;
+        &lt;component-reference  name=&quot;transportationanalyst-sample&quot;&gt;&lt;/component-reference&gt;
+&lt;/componentSet&gt;</pre>
+  <h2>自定义服务组件配置</h2>
+  <p class="myNormal">添加一个自定义组件类型，在系统配置文件（iserver-system.xml）中配置，示例如下：</p>
+  <pre class="brush:xml">&lt;component-type  alias=&quot;SuperMap 自定义服务组件&quot; configClass=&quot;com.supermap.services.components.SMConfig&quot;&gt;
+   com.supermap.services.components.impl.SMImpl
+&lt;/component-type&gt; </pre>
+  <p class="myNormal">其中 com.supermap.services.components.impl.SMImpl 是自定义的服务组件类型的实现类，com.supermap.services.components.SMConfig 是自定义的服务组件类型的配置类。</p>
+  <p class="myNormal">&lt;component-type&gt;节点在配置文件中的结构如下所示：</p>
+  <pre class="brush:xml">&lt;server&gt;
+     &lt;management&gt;
+              …
+         &lt;component-types&gt;
+                  …
+               &lt;component-type&gt;
+                      …
+               &lt;/component-type&gt; 
+ 
+         &lt;/component-types&gt;
+      &lt;/management&gt;
+&lt;/server&gt;</pre>
+  <h2><a id="开启动态化管理的服务组件配置"></a>开启动态化管理的服务组件配置</h2>
+  <p class="myNormal">以数据服务组件为例，示例如下：</p>
+  <pre class="brush:xml" style="height: 100px;">&lt;component name=&quot;data-world&quot; class=&quot;com.supermap.services.components.impl.DataImpl&quot; enabled=&quot;true&quot; initOnCreate=&quot;true&quot; initPriority=&quot;0&quot; 
+           instanceCount=&quot;0&quot; interfaceNames=&quot;rest,wfs100,wfs200,wcs111,wcs112&quot; providers=&quot;ugcDataProvider-World&quot;&gt; 
+      &lt;config class=&quot;com.supermap.services.components.DataConfig&quot;&gt;
+            &lt;editable&gt;true&lt;/editable&gt;
+      &lt;/config&gt; 
+&lt;/component&gt;</pre>
+  <p class="myNormal">其中，对于&lt;component&gt;节点：</p>
+  <ul style="list-style: disc;">
+    <li>
+      <p class="myNormal">&lt;initOnCreate&gt;属性：该服务实例是否需要立即初始化。开启服务实例动态化功能后默认为 false。true 表示服务实例将随着 iServer 启动立即初始化；false 表示不立即初始化，即 iServer 启动后服务实例延迟初始化。</p>
+    </li>
+  </ul>
+  <div class="pagenotice">
+    <div class="pagecontent"><img align="" class="notice_logo" src="../../../../assets/images/notice.png"/> <span class="notice_label">注意事项：</span></div>
+    <div class="notice_content">
+      <p>只有开启服务实例动态化功能后，该参数才有效。</p>
+    </div>
+  </div>
+  <p> </p>
+
+</div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../../../../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../../../../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../../../../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../../../../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../../../../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../../../../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../../../../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../../../.."
+    gCommonRootRelPath = "../../../.."
+    gTopicId = "5.2.1.2.0_2"
+  
+//]]></script>
+
+  <script src="../../../../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../../../../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../../../../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../../../../whxdata/layoutconfig.js"></script>
+  <script src="../../../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

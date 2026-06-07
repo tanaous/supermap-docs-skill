@@ -1,0 +1,1654 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <script src="scripts/css-vars-ponyfill.min.js"></script>
+    <script src="../../examples/js/utils.js"></script>
+    <script src="../../examples/js/theme/themeConfig.js"></script>
+    <script src="../../examples/js/theme/theme.js"></script>
+<script type="text/javascript">
+
+</script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+        <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/adminlte/app.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="styles/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/adminlte/AdminLTE.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/adminlte/skin-blue.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jaguar.css">
+    
+
+</head>
+<body class='sidebar-mini'>
+
+<div id="wrap" class="clearfix">
+
+    <div class="navigationDiv">
+    </div>
+    <div class="main content-wrapper">
+        <h1 class="page-title" data-filename="InterpolationIDWAnalystParameters.html">Class: InterpolationIDWAnalystParameters</h1>
+        
+
+
+
+<section>
+    
+<header>
+    <h2></span>InterpolationIDWAnalystParameters
+    
+    </h2>
+    
+        <div class="class-description"><p>反距离加权插值分析参数类。此类除了能够设置插值分析的一系列通用参数，还可以设置反距离加权插值分析中的查找参与运算点的方式、距离权重计算的幂次等参数。<br>
+当插值分析类型为 dataset 时，插值分析的数据集名称和插值字段名称为必设参数。当插值分析类型为 geometry 时，插值分析的离散点集合为必设参数。</p></div>
+    
+</header>  
+
+<article>
+    <div class="container-overview">
+    
+    
+    
+        
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="InterpolationIDWAnalystParameters">
+          
+          
+          new InterpolationIDWAnalystParameters<span class="signature">(options)</span>
+        </h4>
+        
+        <h5>Usage</h5>
+        
+
+<pre class="prettyprint">
+<code>// 浏览器
+&lt;script type="text/javascript" src="https://iclient.supermap.io/dist/mapboxgl/iclient-mapboxgl.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+  new mapboxgl.supermap.InterpolationIDWAnalystParameters(options);
+    // 弃用的写法
+  new SuperMap.InterpolationIDWAnalystParameters(options);
+
+&lt;/script&gt;
+
+<span class="nopretty">// ES6 Import</span>
+import { InterpolationIDWAnalystParameters } from '@supermapgis/iclient-mapboxgl';
+
+new InterpolationIDWAnalystParameters(options);
+</code>
+</pre>
+
+
+        
+
+        
+        <div class="tag-source">
+            common/iServer/InterpolationIDWAnalystParameters.js, line 7
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>参数。</p>
+                
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Default</th>
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>bounds</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="https://iclient.supermap.io/web/libs/iclient8c/apidoc/files/SuperMap/BaseTypes/Bounds-js.html">SuperMap.Bounds</a></span>
+|
+
+<span class="param-type"><a href="https://leafletjs.com/reference.html#bounds">L.Bounds</a></span>
+|
+
+<span class="param-type"><a href="https://leafletjs.com/reference.html#latlngbounds">L.LatLngBounds</a></span>
+|
+
+<span class="param-type"><a href="https://openlayers.org/en/v6.14.1/apidoc/module-ol_extent.html">ol.extent</a></span>
+|
+
+<span class="param-type"><a href="https://www.mapbox.com/mapbox-gl-js/api/#lnglatbounds">mapboxgl.LngLatBounds</a></span>
+|
+
+<span class="param-type"><a href="https://geojson.org">GeoJSONObject</a></span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                    
+                        
+                    
+                
+                <p>插值分析的范围，用于确定结果栅格数据集的范围。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>searchMode</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="global.html#SearchMode">SearchMode</a></span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                    
+                        
+                    
+                
+                <p>插值运算时，查找参与运算点的方式，支持固定点数查找、定长查找。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>outputDatasetName</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                    
+                        
+                    
+                
+                <p>插值分析结果数据集的名称。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>outputDatasourceName</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                    
+                        
+                    
+                
+                <p>插值分析结果数据源的名称。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>zValueFieldName</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>进行插值分析的字段名称，插值分析不支持文本类型的字段。当插值分析类型(SuperMap.InterpolationAnalystType)为 dataset 时，此为必设参数。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>expectedCount</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    12
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>【固定点数查找】方式下，设置待查找的点数，即参与插值运算的点数。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>searchRadius</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    0
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>【定长查找】方式下，设置查找半径，即参与运算点的查找范围，与点数据集单位相同。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>power</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    2
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>距离权重计算的幂次。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>zValueScale</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    1
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>用于进行插值分析值的缩放比率。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>resolution</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>插值结果栅格数据集的分辨率，即一个像元所代表的实地距离，与点数据集单位相同。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>filterQueryParameter</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="FilterParameter.html">FilterParameter</a></span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>属性过滤条件。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>pixelFormat</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="global.html#PixelFormat">PixelFormat</a></span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>指定结果栅格数据集存储的像素格式。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>dataset</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>用于做插值分析的数据源中数据集的名称。该名称用形如”数据集名称@数据源别名”形式来表示。当插值分析类型(SuperMap.InterpolationAnalystType)为 dataset 时，此为必设参数。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>inputPoints</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;(<a href="GeometryPoint.html">GeometryPoint</a>|<a href="https://leafletjs.com/reference.html#latlng">L.LatLng</a>|<a href="https://leafletjs.com/reference.html#point">L.Point</a>|<a href="https://openlayers.org/en/v6.14.1/apidoc/module-ol_geom_Point-Point.html">ol.geom.Point</a>|<a href="https://www.mapbox.com/mapbox-gl-js/api/#lnglat">mapboxgl.LngLat</a>|Array.&lt;number>)></span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>用于做插值分析的离散点集合。当插值分析类型（SuperMap.InterpolationAnalystType）为 geometry 时，此为必设参数。</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+            </td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h5>Example</h5>
+        
+
+    
+    <pre class="prettyprint"><code>例如：
+var myInterpolationIDWAnalystParameters = new InterpolationIDWAnalystParameters({
+     dataset:"SamplesP@Interpolation",
+     power: 2,
+     searchMode: "KDTREE_FIXED_COUNT",
+     expectedCount: 12,
+     pixelFormat: "BIT16",
+     zValueFieldName: "AVG_TMP",
+     resolution: 3000,
+     filterQueryParameter: {
+         attributeFilter: ""
+     },
+     outputDatasetName: "myIDW"
+});</code></pre>
+    
+
+    
+
+</dd>
+
+    
+    </div>
+    
+    
+        <h3 class="subsection-title">Extends</h3>
+        <ul>
+            
+            
+            
+            
+            <li><a href="InterpolationAnalystParameters.html">InterpolationAnalystParameters</a></li>
+            
+            
+        </ul>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <h3 class="subsection-title">Members</h3>
+        
+        <dl>
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="bounds">
+          
+          bounds<span class="type-signature type supermap.bounds"><a href="https://iclient.supermap.io/web/libs/iclient8c/apidoc/files/SuperMap/BaseTypes/Bounds-js.html">SuperMap.Bounds</a></span> <span class="type-signature type l.bounds"><a href="https://leafletjs.com/reference.html#bounds">L.Bounds</a></span> <span class="type-signature type l.latlngbounds"><a href="https://leafletjs.com/reference.html#latlngbounds">L.LatLngBounds</a></span> <span class="type-signature type ol.extent"><a href="https://openlayers.org/en/v6.14.1/apidoc/module-ol_extent.html">ol.extent</a></span> <span class="type-signature type mapboxgl.lnglatbounds"><a href="https://www.mapbox.com/mapbox-gl-js/api/#lnglatbounds">mapboxgl.LngLatBounds</a></span> <span class="type-signature type geojsonobject"><a href="https://geojson.org">GeoJSONObject</a></span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>插值分析的范围，用于确定结果栅格数据集的范围。
+如果缺省，则默认为原数据集的范围。鉴于此插值方法为内插方法，原数据集的范围内的插值结果才相对有参考价值，
+因此建议此参数不大于原数据集范围。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="clipParam">
+          
+          clipParam<span class="type-signature type clipparameter"><a href="ClipParameter.html">ClipParameter</a></span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>对插值分析结果进行裁剪的参数。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="dataset">
+          
+          dataset<span class="type-signature type string">string</span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>用来做插值分析的数据源中数据集的名称，该名称用形如 &quot;数据集名称@数据源别名&quot; 形式来表示。
+当插值分析类型（InterpolationAnalystType）为 dataset 时，此为必设参数。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="expectedCount">
+          
+          expectedCount<span class="type-signature type number">number</span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>【固定点数查找】方式下，设置待查找的点数，即参与插值运算的点数。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    <dt class="tag-default">Default Value:</dt>
+    12</li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="filterQueryParameter">
+          
+          filterQueryParameter<span class="type-signature type filterparameter"><a href="FilterParameter.html">FilterParameter</a></span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>过滤条件，对分析数据集中的点进行过滤，设置为 null 表示对数据集中的所有点进行分析。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="inputPoints">
+          
+          inputPoints<span class="type-signature type array.<(geometrypoint|l.latlng|l.point|ol.geom.point|mapboxgl.lnglat|array.<number>)>">Array.&lt;(<a href="GeometryPoint.html">GeometryPoint</a>|<a href="https://leafletjs.com/reference.html#latlng">L.LatLng</a>|<a href="https://leafletjs.com/reference.html#point">L.Point</a>|<a href="https://openlayers.org/en/v6.14.1/apidoc/module-ol_geom_Point-Point.html">ol.geom.Point</a>|<a href="https://www.mapbox.com/mapbox-gl-js/api/#lnglat">mapboxgl.LngLat</a>|Array.&lt;number>)></span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>用于做插值分析的离散点（离散点包括 Z 值）集合。
+当插值分析类型（InterpolationAnalystType）为 geometry 时，此为必设参数。
+通过离散点直接进行插值分析不需要指定输入数据集 inputDatasourceName，inputDatasetName 以及 zValueFieldName。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="InterpolationAnalystType">
+          
+          InterpolationAnalystType<span class="type-signature type string">string</span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>插值分析类型。插值分析包括数据集插值分析和几何插值分析两类，
+&quot;dataset&quot; 表示对数据集进行插值分析，&quot;geometry&quot; 表示对离散点数组进行插值分析。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    <dt class="tag-default">Default Value:</dt>
+    "dataset"</li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="outputDatasetName">
+          
+          outputDatasetName<span class="type-signature type string">string</span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>插值分析结果数据集的名称。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="outputDatasourceName">
+          
+          outputDatasourceName<span class="type-signature type string">string</span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>插值分析结果数据源的名称。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="pixelFormat">
+          
+          pixelFormat<span class="type-signature type pixelformat"><a href="global.html#PixelFormat">PixelFormat</a></span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>指定结果栅格数据集存储的像素格式。支持存储的像素格式有 BIT16、BIT32、DOUBLE、SINGLE、UBIT1、UBIT4、UBIT8、UBIT24、UBIT32。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="power">
+          
+          power<span class="type-signature type number">number</span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>距离权重计算的幂次。
+该值决定了权值下降的速度，幂次越大，随距离的增大权值下降越快，距离预测点越远的点的权值也越小。
+理论上，参数值必须大于 0，但是 0.5 到 3 之间时运算结果更合理，因此推荐值为 0.5 ~ 3。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    <dt class="tag-default">Default Value:</dt>
+    2</li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="resolution">
+          
+          resolution<span class="type-signature type number">number</span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>插值结果栅格数据集的分辨率，即一个像元所代表的实地距离，与点数据集单位相同。
+该值不能超过待分析数据集的范围边长。
+且该值设置时，应该考虑点数据集范围大小来取值，一般为结果栅格行列值（即结果栅格数据集范围除以分辨率），在 500 以内可以较好地体现密度走势。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="searchMode">
+          
+          searchMode<span class="type-signature type searchmode"><a href="global.html#SearchMode">SearchMode</a></span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>插值运算时，查找参与运算点的方式，支持固定点数查找、定长查找。
+具体如下：
+{KDTREE_FIXED_COUNT} 使用 KDTREE 的固定点数方式查找参与内插分析的点。
+{KDTREE_FIXED_RADIUS} 使用 KDTREE 的定长方式查找参与内插分析的点。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="searchRadius">
+          
+          searchRadius<span class="type-signature type number">number</span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>查找半径，即参与运算点的查找范围，与点数据集单位相同。
+计算某个位置的 Z 值时，会以该位置为圆心，以查找范围的值为半径，落在这个范围内的采样点都将参与运算。
+该值需要根据待插值点数据的分布状况和点数据集范围进行设置。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="zValueFieldName">
+          
+          zValueFieldName<span class="type-signature type string">string</span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>数据集插值分析中，用于指定进行插值分析的目标字段名，插值分析不支持文本类型的字段。
+含义为每个插值点在插值过程中的权重，可以将所有点此字段值设置为 1，即所有点在整体插值中权重相同。
+当插值分析类型（InterpolationAnalystType）为 dataset 时，此为必设参数。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="zValueScale">
+          
+          zValueScale<span class="type-signature type number">number</span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>用于进行插值分析值的缩放比率。
+参加插值分析的值将乘以该参数值后再进行插值，也就是对进行插值分析的值进行统一的扩大或缩小。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    <dt class="tag-default">Default Value:</dt>
+    1</li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        </dl>
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+        
+        <dl>
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="destroy">
+          
+          
+          destroy<span class="signature">()</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            common/iServer/InterpolationIDWAnalystParameters.js, line 79
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>释放资源，将引用资源的属性置空。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</dd>
+
+        </dl>
+    
+    
+    
+
+</article>
+
+</section>  
+
+
+
+
+
+        <footer>
+            Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc</a> on Fri Sep 26 2025 09:51:10 GMT+0800 (中国标准时间)
+        </footer>
+    </div>
+</div>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>

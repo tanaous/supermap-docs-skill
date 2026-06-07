@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <script src="scripts/css-vars-ponyfill.min.js"></script>
+    <script src="../../examples/js/utils.js"></script>
+    <script src="../../examples/js/theme/themeConfig.js"></script>
+    <script src="../../examples/js/theme/theme.js"></script>
+<script type="text/javascript">
+
+</script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+        <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/adminlte/app.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="styles/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/adminlte/AdminLTE.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/adminlte/skin-blue.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jaguar.css">
+    
+
+</head>
+<body class='sidebar-mini'>
+
+<div id="wrap" class="clearfix">
+
+    <div class="navigationDiv">
+    </div>
+    <div class="main content-wrapper">
+        <h1 class="page-title" data-filename="GeometryBufferAnalystParameters.html">Class: GeometryBufferAnalystParameters</h1>
+        
+
+
+
+<section>
+    
+<header>
+    <h2></span>GeometryBufferAnalystParameters
+    
+    </h2>
+    
+        <div class="class-description"><p>几何对象缓冲区分析参数类。
+通过该类可以指定要做缓冲区分析的几何对象、缓冲区通用设置、几何对象投影坐标等参数。</p></div>
+    
+</header>  
+
+<article>
+    <div class="container-overview">
+    
+    
+    
+        
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="GeometryBufferAnalystParameters">
+          
+          
+          new GeometryBufferAnalystParameters<span class="signature">(options)</span>
+        </h4>
+        
+        <h5>Usage</h5>
+        
+
+<pre class="prettyprint">
+<code>// 浏览器
+&lt;script type="text/javascript" src="https://iclient.supermap.io/dist/openlayers/iclient-ol.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+  new ol.supermap.GeometryBufferAnalystParameters(options);
+    // 弃用的写法
+  new SuperMap.GeometryBufferAnalystParameters(options);
+
+&lt;/script&gt;
+
+<span class="nopretty">// ES6 Import</span>
+import { GeometryBufferAnalystParameters } from '@supermapgis/iclient-ol';
+
+new GeometryBufferAnalystParameters(options);
+</code>
+</pre>
+
+
+        
+
+        
+        <div class="tag-source">
+            common/iServer/GeometryBufferAnalystParameters.js, line 8
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>参数。</p>
+                
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>sourceGeometry</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="https://geojson.org">GeoJSONObject</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                    
+                    
+                        
+                    
+                
+                <p>用于做缓冲区分析的几何对象。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>sourceGeometrySRID</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                    
+                    
+                        
+                    
+                
+                <p>缓冲区几何对象投影坐标参数，如 4326，3857。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>bufferSetting</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="BufferSetting.html">BufferSetting</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>设置缓冲区通用参数。</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+            </td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</dd>
+
+    
+    </div>
+    
+    
+        <h3 class="subsection-title">Extends</h3>
+        <ul>
+            
+            
+            
+            
+            <li><a href="BufferAnalystParameters.html">BufferAnalystParameters</a></li>
+            
+            
+        </ul>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <h3 class="subsection-title">Members</h3>
+        
+        <dl>
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="bufferSetting">
+          
+          bufferSetting<span class="type-signature type buffersetting"><a href="BufferSetting.html">BufferSetting</a></span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>设置缓冲区通用参数。为缓冲区分析提供必要的参数信息，包括左缓冲距离、右缓冲距离、端点类型、圆头缓冲圆弧处线段的个数信息。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="sourceGeometry">
+          
+          sourceGeometry<span class="type-signature type geojsonobject"><a href="https://geojson.org">GeoJSONObject</a></span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>用于做缓冲区分析的几何对象。<br>
+点类型可以是：<a href="GeometryPoint.html">GeometryPoint</a>|<a href="https://leafletjs.com/reference.html#marker">L.Marker</a>|<a href="https://leafletjs.com/reference.html#circlemarker">L.CircleMarker</a>|<a href="https://leafletjs.com/reference.html#circle">L.Circle</a>|<a href="https://leafletjs.com/reference.html#geojson">L.GeoJSON</a>|<a href="https://openlayers.org/en/v6.14.1/apidoc/module-ol_geom_Point-Point.html">ol.geom.Point</a>|<a href="https://openlayers.org/en/v6.14.1/apidoc/module-ol_format_GeoJSON-GeoJSON.html">ol.format.GeoJSON</a>。</br>
+线类型可以是：<a href="GeometryLineString.html">GeometryLineString</a>|<a href="GeometryLinearRing.html">GeometryLinearRing</a>|<a href="https://leafletjs.com/reference.html#polyline">L.Polyline</a>|<a href="https://leafletjs.com/reference.html#geojson">L.GeoJSON</a>|<a href="https://openlayers.org/en/v6.14.1/apidoc/module-ol_geom_LineString-LineString.html">ol.geom.LineString</a>|<a href="https://openlayers.org/en/v6.14.1/apidoc/module-ol_format_GeoJSON-GeoJSON.html">ol.format.GeoJSON</a>。</br>
+面类型可以是：<a href="GeometryPolygon.html">GeometryPolygon</a>|<a href="https://leafletjs.com/reference.html#polygon">L.Polygon</a>|<a href="https://leafletjs.com/reference.html#geojson">L.GeoJSON</a>|<a href="https://openlayers.org/en/v6.14.1/apidoc/module-ol_geom_Polygon-Polygon.html">ol.geom.Polygon</a>|<a href="https://openlayers.org/en/v6.14.1/apidoc/module-ol_format_GeoJSON-GeoJSON.html">ol.format.GeoJSON</a>。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="sourceGeometrySRID">
+          
+          sourceGeometrySRID<span class="type-signature type number">number</span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>缓冲区几何对象投影坐标参数，如 4326，3857。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        </dl>
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+        
+        <dl>
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id=".toObject">
+          
+          
+              <span class="attribs"><span class="type-signature">static </span></span>
+          
+          toObject<span class="signature">(geometryBufferAnalystParameters, tempObj)</span><span class="glyphicon glyphicon-circle-arrow-right"></span><span class="type-signature returnType">{Object}</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            common/iServer/GeometryBufferAnalystParameters.js, line 60
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>将几何对象缓冲区分析参数对象转换为 JSON 对象。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>geometryBufferAnalystParameters</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="GeometryBufferAnalystParameters.html">GeometryBufferAnalystParameters</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>几何对象缓冲区分析参数类。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>tempObj</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="GeometryBufferAnalystParameters.html">GeometryBufferAnalystParameters</a></span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>几何对象缓冲区分析参数对象。</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        Object
+                        
+                    
+            </td>
+            <td class="description last">JSON 对象。</td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+
+    
+
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer inherited">
+        <h4 class="name" id="destroy">
+          
+              <span class="inherited"><a href="GeometryBufferAnalystParameters.html#destroy">inherited</a></span>
+          
+          
+          destroy<span class="signature">()</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            common/iServer/GeometryBufferAnalystParameters.js, line 47
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>释放资源，将引用资源的属性置空。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</dd>
+
+        </dl>
+    
+    
+    
+
+</article>
+
+</section>  
+
+
+
+
+
+        <footer>
+            Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc</a> on Fri Sep 26 2025 09:50:50 GMT+0800 (中国标准时间)
+        </footer>
+    </div>
+</div>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>

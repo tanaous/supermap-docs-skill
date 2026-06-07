@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../../../../../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../../../../../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../../../../../../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../../../../../iserver-icon.png"/>
+    
+  <script data-relpath="../../../../../.." src="../../../../../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <meta name="template" content="../../../../../../assets/layouts/RESTAPI.htt"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Language" content="zh-CN"/>
+  <meta name="topic-check-list" content="Ran Smart Index"/>
+  <meta name="topic-status" content="Complete"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>datasource</title>
+  <link rel="StyleSheet" href="../../../../../../assets/css/SuperMapHelp.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="Datasource"/>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../../../../../../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../../assets/css/homeButtom.css"/>
+  <script src="../../../../../../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../../../../../../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../../../../../../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../../../../../../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../../../../../../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../../../../../../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../../../../../../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../../../../../../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../../../../../../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <h2><a name="URI" id="URI"></a>URI</h2>
+  <ol class="ListInParagraph" style="list-style: decimal;">
+    <li class="ListInParagraph"><a class="contentpagehyperlink" href="../datasources.htm#URI">&lt;datasources_uri&gt;</a>/name/{datasourceName}[.&lt;format&gt;]</li>
+    <li class="ListInParagraph"><a class="contentpagehyperlink" href="../datasources.htm#URI">&lt;datasources_uri&gt;</a>/index/{datasourceIndex}[.&lt;format&gt;]</li>
+    <li class="ListInParagraph"><a class="contentpagehyperlink" href="../datasources.htm#URI">&lt;datasources_uri&gt;</a>/{datasourceName}[.&lt;format&gt;]</li>
+    <li class="ListInParagraph"><a class="contentpagehyperlink" href="../datasources.htm#URI">&lt;datasources_uri&gt;</a>/{datasourceIndex}[.&lt;format&gt;]</li>
+  </ol>
+  <h2>支持的方法</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="#GET 请求">GET</a>、<a class="contentpagehyperlink" href="#PUT 请求">PUT</a>、<a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a></p>
+  <h2>父资源</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="../datasources.htm">datasources</a></p>
+  <h2>子资源</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="datasets/datasets.htm">datasets</a></p>
+  <h2>介绍</h2>
+  <p class="myNormal"> </p>
+  <p class="myNormal">datasource 资源表示一个数据源，可以提供数据源的信息，并提供访问该数据源所包含的数据集（即它的子资源）的入口。通过对 datasource 资源执行 PUT 请求，可以修改数据源信息。通过 datasource 资源可以获取的数据源信息包括数据源名称、数据源描述、引擎类型、距离单位、坐标单位、投影信息等，可以修改的数据源信息包括：数据源描述、坐标单位、距离单位等。</p>
+  <p class="myNormal">datasource  资源对应的 URI 有四种。如上 URI 所示：URI1 是通过/name/{datasourceName}，即用&quot;/name&quot;标签加上数据源名称来标识数据源，数据源名称可以是中文；URI2 是通过 /index/{datasourceIndex}，即用“/index”标签加上数据源索引号来标识数据源；URI3 是通过/{datasourceName}，即直接用数据源名称来标识数据源，数据源名称可以是中文；URI4 是通过 /{datasourceIndex}，即直接用数据源索引号来标识数据源。datasource 优先使用 datasourceName 匹配资源。</p>
+  <p class="myNormal"> </p>
+  <p class="myNormal" style="font-weight: bold;">支持的方法：</p>
+  <ul class="supportList" style="list-style: disc;">
+    <li class="supportList"><a class="contentpagehyperlink" href="#GET 请求">GET</a>：获取数据源信息，以及数据源中数据集的信息列表。</li>
+    <li class="supportList"><a class="contentpagehyperlink" href="#PUT 请求">PUT</a>：修改数据源信息。</li>
+    <li class="supportList"><a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a>：检查 datasource 资源是否存在，或权限是否可以访问 datasource 资源。</li>
+  </ul>
+  <p class="myNormal"><span style="font-weight: bold;">支持的表述格式：</span>RJSON、JSON、HTML、XML。</p>
+  <h2>资源层次</h2>
+  <p><img alt="" border="0" height="260" src="../../../../../../assets/images/root/data/datasources/datasource/D_datasource.png" usemap="#DrawArea" width="360"/><map id="DrawArea" name="DrawArea"><area alt="根资源" coords="0.591003,4,257,44.9135" href="../../../root.htm" shape="rect"/> <area alt="data" coords="55.911,52.6,201.681,93.4" href="../../data.htm" shape="rect"/> <area alt="datasources.htm" coords="88.4999,102.9,227.5,143.7" href="../datasources.htm" shape="rect"/> <area alt="datasource.htm" coords="148,158.6,349.885,251" href="datasource.htm" shape="rect"/></map></p>
+  <h2>HTTP 请求方法</h2>
+  <p class="myNormal">对如下 URI 执行 HTTP 请求，以 rjson 输出格式为例加以说明，其中，supermapiserver 是服务器名，World 服务器上的一个数据源的名称。</p>
+  <p class="uriStyle">http://supermapiserver:8090/iserver/services/data-world/rest/data/datasources/name/World.rjson</p>
+  <h3><a id="GET 请求"></a>GET 请求</h3>
+  <p class="myNormal">获取数据源信息，以及数据源中数据集的信息列表。</p>
+  <h4>请求参数</h4>
+  <p class="myNormal">无。</p>
+  <h4>响应结构</h4>
+  <p class="myNormal">对  datasource 资源执行 GET 请求，返回的资源表述的结构如下（资源表述在响应消息的实体主体里）：  </p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td style="text-align: center">字段</td>
+        <td style="text-align: center">类型</td>
+        <td style="text-align: center">说明</td>
+      </tr>
+      <tr class="t2Row">
+        <td>datasourceInfo</td>
+        <td>DatasourceInfo</td>
+        <td>包含的数据源的数据源名称，数据源描述，引擎类型，投影信息，坐标单位，距离坐标等信息 。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>childUriList</td>
+        <td>List&lt;String&gt;</td>
+        <td>子资源，即 datasets 资源的访问 URI 列表。</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="myNormal">其中 datasourceInfo 字段表示的就是数据源的信息，datasourceInfo 的结构可参见 Javadoc 文档中 DatasourceInfo 类型的描述，这里为了清晰起见，把 datasourceInfo 字段（即数据源信息）的结构列表如下：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td style="text-align: center">字段</td>
+        <td style="text-align: center">类型</td>
+        <td style="text-align: center">说明</td>
+      </tr>
+      <tr class="t2Row">
+        <td>coordUnit</td>
+        <td>Unit</td>
+        <td>坐标单位。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>description</td>
+        <td>String</td>
+        <td>数据源描述。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>distanceUnit</td>
+        <td>Unit</td>
+        <td>距离单位。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>engineType</td>
+        <td>EngineType</td>
+        <td>数据源引擎类型，该字段只读。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>name</td>
+        <td>String</td>
+        <td>数据源的别名。别名用于在工作空间中唯一标识数据源，该字段只读。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>prjCoordSys</td>
+        <td>PrjCoordSys</td>
+        <td>投影信息。</td>
+      </tr>
+      <tr>
+        <td>containDatasetGroup</td>
+        <td>boolean</td>
+        <td>是否包含数据集组。</td>
+      </tr>
+      <tr>
+        <td>supportTransaction</td>
+        <td>boolean</td>
+        <td>当前数据源是否支持<span><a class="contentpagehyperlink" href="../../../../../../Appendix/Glossary.htm#rollbackOnFailure">回退事务</a></span>的数据库事务能力。仅工作空间中的 PostGIS 数据源支持，参数值为 true，其余数据源返回 false。</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4>示例</h4>
+  <p class="myNormal">对示例 datasource 资源：http://supermapiserver:8090/iserver/services/data-world/rest/data/datasources/name/World.rjson 执行 GET 请求，返回 rjson 格式的表述如下：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">    &quot;childUriList&quot;: [&quot;http://supermapiserver:8090/iserver/services/data-world/rest/data/datasources/name/World/datasets&quot;],</p>
+  <p class="myCodeP">    &quot;datasourceInfo&quot;: {</p>
+  <p class="myCodeP">        &quot;coordUnit&quot;: &quot;DEGREE&quot;,</p>
+  <p class="myCodeP">        &quot;description&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">        &quot;distanceUnit&quot;: &quot;METER&quot;,</p>
+  <p class="myCodeP">        &quot;engineType&quot;: &quot;UDB&quot;,</p>
+  <p class="myCodeP">        &quot;name&quot;: &quot;World&quot;,</p>
+  <p class="myCodeP">        &quot;prjCoordSys&quot;: {</p>
+  <p class="myCodeP">            &quot;coordSystem&quot;: {</p>
+  <p class="myCodeP">                &quot;datum&quot;: {</p>
+  <p class="myCodeP">                    &quot;name&quot;: &quot;D_WGS_1984&quot;,</p>
+  <p class="myCodeP">                    &quot;spheroid&quot;: {</p>
+  <p class="myCodeP">                        &quot;axis&quot;: 6378137,</p>
+  <p class="myCodeP">                        &quot;flatten&quot;: 0.0033528107,</p>
+  <p class="myCodeP">                        &quot;name&quot;: &quot;WGS_1984&quot;,</p>
+  <p class="myCodeP">                        &quot;type&quot;: &quot;SPHEROID_WGS_1984&quot;</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    &quot;type&quot;: &quot;DATUM_WGS_1984&quot;</p>
+  <p class="myCodeP">                },</p>
+  <p class="myCodeP">                &quot;name&quot;: &quot;GCS_WGS_1984&quot;,</p>
+  <p class="myCodeP">                &quot;primeMeridian&quot;: {</p>
+  <p class="myCodeP">                    &quot;longitudeValue&quot;: 0,</p>
+  <p class="myCodeP">                    &quot;name&quot;: &quot;Greenwich&quot;,</p>
+  <p class="myCodeP">                    &quot;type&quot;: &quot;PRIMEMERIDIAN_GREENWICH&quot;</p>
+  <p class="myCodeP">                },</p>
+  <p class="myCodeP">                &quot;spatialRefType&quot;: &quot;SPATIALREF_EARTH_LONGITUDE_LATITUDE&quot;,</p>
+  <p class="myCodeP">                &quot;type&quot;: &quot;GCS_WGS_1984&quot;,</p>
+  <p class="myCodeP">                &quot;unit&quot;: &quot;DEGREE&quot;</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;coordUnit&quot;: &quot;DEGREE&quot;,</p>
+  <p class="myCodeP">            &quot;distanceUnit&quot;: &quot;METER&quot;,</p>
+  <p class="myCodeP">            &quot;epsgCode&quot;: 1,</p>
+  <p class="myCodeP">            &quot;name&quot;: &quot;Longitude / Latitude Coordinate System---GCS_WGS_1984&quot;,</p>
+  <p class="myCodeP">            &quot;projection&quot;: null,</p>
+  <p class="myCodeP">            &quot;projectionParam&quot;: null,</p>
+  <p class="myCodeP">            &quot;type&quot;: &quot;PCS_EARTH_LONGITUDE_LATITUDE&quot;</p>
+  <p class="myCodeP">        }</p>
+  <p class="myCodeP">    }</p>
+  <p class="myCodeP">}</p>
+  <h3><a id="PUT 请求"></a>PUT 请求</h3>
+  <p class="myNormal">修改数据源信息。</p>
+  <h4>请求参数</h4>
+  <p class="myNormal">对 datasource 资源执行 PUT 请求，对数据源信息进行修改，需要在请求体中包含以下参数：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td style="text-align: center">名称</td>
+        <td style="text-align: center">类型</td>
+        <td style="text-align: center">含义</td>
+      </tr>
+      <tr class="t2Row">
+        <td>description</td>
+        <td>String</td>
+        <td>数据源描述信息。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>coordUnit</td>
+        <td>Unit</td>
+        <td>坐标单位。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>distanceUnit</td>
+        <td>Unit</td>
+        <td>距离单位。</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4>响应结构</h4>
+  <p class="myNormal">对 datasource 资源执行 PUT 请求，返回的操作结果表述的结构如下（表述在响应消息的实体主体里）：  </p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td style="text-align: center">字段</td>
+        <td style="text-align: center">类型</td>
+        <td style="text-align: center">说明</td>
+      </tr>
+      <tr class="t2Row">
+        <td>succeed</td>
+        <td>boolean</td>
+        <td>数据源信息的修改是否成功。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>error</td>
+        <td>HttpError</td>
+        <td>出错信息，如果操作成功，则没有本字段。</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4>示例</h4>
+  <p class="myNormal">对示例 datasource 资源：http://supermapiserver:8090/iserver/services/data-world/rest/data/datasources/name/World.rjson 执行参数如下的 PUT 请求：</p>
+  <p class="myCodeP">{&quot;coordUnit&quot;:&quot;MILE&quot;,&quot;description&quot;:&quot;This is a new description&quot;,&quot;distanceUnit&quot;:&quot;MILE&quot;}</p>
+  <p class="myNormal">修改 World 数据源成功的情况下，返回 rjson 格式的表述如下：</p>
+  <p class="myCodeP">{&quot;succeed&quot;: true}</p>
+  <h3><a id="HEAD 请求"></a>HEAD 请求</h3>
+  <p class="myNormal">返回跟 GET 请求一样的 HTTP 响应头，但是没有响应实体。可以在不必传输整个响应内容的情况下，获取包含在响应消息头中的元数据信息。元数据信息包括媒体类型，字符编码，压缩编码，实体内容长度等。</p>
+  <p class="myNormal">HEAD 请求可以用来判断 datasource 资源是否存在，或者客户端是否有权限访问 datasource 资源。通过对加.&lt;format&gt;的 URI 执行 HEAD 请求，还可以快速判断 datasource 资源是否支持&lt;format&gt;格式的表述。</p>
+  <h2>请参见</h2>
+  <ul class="referenceList">
+    <li class="referenceList"><a class="contentpagehyperlink" href="datasets/dataset/dataset.htm">dataset</a>，<a class="contentpagehyperlink" href="../datasources.htm">datasources</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../../clientBuildREST/ConstructRESTRequest.htm">客户端构建 REST 请求</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../../StatusCodeDescription.htm">状态码列表及说明</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../../SuperMap_iServer_REST_API_OutputFormat.htm">SuperMap iServer REST API 表述格式介绍</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../../resource_hierarchy.htm">GIS 服务资源层次结构</a></li>
+  </ul>
+  <p> </p>
+
+</div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../../../../../../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../../../../../../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../../../../../../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../../../../../../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../../../../../../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../../../../../../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../../../../../../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../../../../../.."
+    gCommonRootRelPath = "../../../../../.."
+    gTopicId = "8.2.2.6.4.2.1"
+  
+//]]></script>
+
+  <script src="../../../../../../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../../../../../../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../../../../../../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../../../../../../whxdata/layoutconfig.js"></script>
+  <script src="../../../../../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

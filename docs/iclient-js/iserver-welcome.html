@@ -1,0 +1,450 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="Expires" content="-1" />
+    <title>Welcome to SuperMap iServer 2025</title>
+
+<script language="JavaScript" type="text/javascript" src="http://support.supermap.com.cn:8090/iserver/manager/static/startupstatic/js/jquery-3.7.1.min.js"></script>
+
+  <script language="JavaScript" type="text/javascript" src="http://support.supermap.com.cn:8090/iserver/manager/static/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://support.supermap.com.cn:8090/iserver/manager/static/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="http://support.supermap.com.cn:8090/iserver/manager/static/css/iserver/iServer6R_overview.css" />
+  <script language="JavaScript" type="text/javascript" src="http://support.supermap.com.cn:8090/iserver/manager/static/js/iServerMainPageUI.js"></script><!--模块交互jQuery修改css样式-->
+  <link rel="stylesheet" media="screen" type="text/css"  href="http://support.supermap.com.cn:8090/iserver/manager/static/css/iserver/index.css" />
+    <link rel="stylesheet" media="screen" type="text/css"  href="http://support.supermap.com.cn:8090/iserver/manager/static/css/iserver/iServerMainPageBanner.css" />
+</head>
+
+<body id="body" class="light" onload="pareWidth()">
+
+<div class="headclass">
+            <svg class="headlogo_white iServerLogo" width="110px" height="48px">
+        </svg>
+    <div class="headMenus">
+        <ul class="nav-main">
+            <li class="subHeadMenu home"><a href="http://support.supermap.com.cn:8090/iserver/">Home</a></li>
+            <li class="subHeadMenu services"><a href="services">Services</a></li>
+            <li class="subHeadMenu manager" id="servicesManageTop"><a href="admin-ui/home">Manager</a></li>
+            <li class="subHeadMenu sample dropdown">
+                <div class="btn-group samplecode" id="samplecode">
+                    <a  class="btn btnSample"
+                        data-toggle="dropdown">Sample Code
+                        <svg class="closesvg openclose" width="10px" height="10px"  xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 1024 1024">
+                            <path d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"/>
+                        </svg>
+                        <svg class="opensvg openclose" hidden width="10px" height="10px" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 1024 1024">
+                            <path d="M890.5 755.3L537.9 269.2c-12.8-17.6-39-17.6-51.7 0L133.5 755.3A8 8 0 0 0 140 768h75c5.1 0 9.9-2.5 12.9-6.6L512 369.8l284.1 391.6c3 4.1 7.8 6.6 12.9 6.6h75c6.5 0 10.3-7.4 6.5-12.7z"/>
+                        </svg>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" style="margin-left: 0px;margin-top: 0px;">
+                        <li class="subboxlist01"><a class="subboxlist01A" href="./help/html/zh/GettingStarted/iServer_iClient_Start/Android/Android_getingstart.htm">for Android</a></li>
+                        <li class="subboxlist01"><a class="subboxlist01A" href="iClient/forJavaScript/examples/leaflet/examples.html">for Leaflet</a></li>
+                        <li class="subboxlist01"><a class="subboxlist01A" href="iClient/forJavaScript/examples/openlayers/examples.html">for OpenLayers</a></li>
+                        <li class="subboxlist01"><a class="subboxlist01A" href="iClient/forJavaScript/examples/mapboxgl/examples.html">for MapboxGL</a></li>
+                        <li class="subboxlist04"><a class="subboxlist04A" href="iClient/for3D/webgl/zh/examples/webgl/examples.html">3D for WebGL</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="subHeadMenu help"><a href="help">Help</a></li>
+            <li class="subHeadMenu new"><a href="help/index.htm#iS/what_s_new.htm">What's New</a></li>
+            <li class="subHeadMenu more">
+                <div class="btn-group">
+                    <a  class="btn btnSample"
+                        data-toggle="dropdown">More
+                    </a>
+                    <ul class="dropdown-menu" role="menu" style="margin-left: 0px;margin-top: 0px;">
+                        <li class="subboxhelp"><a href="help">Help</a></li>
+                        <li class="subboxnew"><a href="help/index.htm#iS/what_s_new.htm">What's New</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="head_right">
+        <div class="btn-group language" id="language">
+            <a  class="btn btnSample"
+                data-toggle="dropdown">English
+                <svg class="closesvg openclose" width="10px" height="10px"  xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 1024 1024">
+                    <path d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"/>
+                </svg>
+                <svg class="opensvg openclose" hidden width="10px" height="10px" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 1024 1024">
+                    <path d="M890.5 755.3L537.9 269.2c-12.8-17.6-39-17.6-51.7 0L133.5 755.3A8 8 0 0 0 140 768h75c5.1 0 9.9-2.5 12.9-6.6L512 369.8l284.1 391.6c3 4.1 7.8 6.6 12.9 6.6h75c6.5 0 10.3-7.4 6.5-12.7z"/>
+                </svg>
+            </a>
+            <ul class="dropdown-menu" role="menu" style="margin-left: 0px;margin-top: 0px;">
+                <li id="dropdown-menuli" onclick="selectLanguage('en-US')"><a>English</a></li>
+                <li id="dropdown-menuli" onclick="selectLanguage('zh-CN')"><a>中文</a></li>
+            </ul>
+        </div>
+        <div class="btn-group theme" id="theme">
+            <a  class="btn btnSample" data-toggle="dropdown">
+                <svg class="themesvg" width="20px" height="20px" viewBox="0 0 24 24" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path d="M7.60656642,2 C8.34176798,2.00287778 9.01323229,2.42702384 9.34446922,3.09778674 C9.89738584,3.94158501 10.8908358,4.46394755 11.9489004,4.46394755 C13.0581951,4.46394755 14.0384914,3.94252833 14.5717928,3.06995885 C14.9814034,2.39006214 15.631242,2 16.3551566,2 L17.1607626,2 C17.7411842,2.00351775 18.2931835,2.25726885 18.6808218,2.69876307 L21.872323,6.24210266 C22.2665349,6.66008142 22.4848225,7.21925501 22.480459,7.7997571 C22.4813269,8.38279459 22.2670739,8.9447476 21.8803999,9.37344795 L20.0095755,11.4487483 C19.62558,11.8744207 19.1160475,12.1090712 18.5744384,12.1090712 L18.5176699,12.1090712 L18.5176699,20.2923579 C18.5176699,21.2340255 17.797909,22 16.9133809,22 L7.04834216,22 C6.16381402,22 5.44405319,21.2340255 5.44405319,20.2923579 L5.44405319,12.1090712 L5.38728462,12.1090712 C4.86136768,12.1090712 4.32483548,11.8626293 3.95214752,11.4487483 L2.08870772,9.38146615 C1.69475517,8.96379375 1.47648603,8.4050906 1.48057973,7.82499086 C1.47964578,7.241872 1.69390269,6.67982433 2.08063089,6.25106418 L5.30028563,2.71244119 C5.68566575,2.23983869 6.22635175,2 6.90872841,2 Z M17.1612242,3.69726556 L16.3306463,3.69778051 C16.2632647,3.7013852 16.124217,3.73022274 15.9856994,3.96092304 C15.565586,4.64302793 14.9823545,5.19685973 14.29095,5.57234662 C13.5873428,5.95816383 12.7773522,6.1619206 11.9489004,6.1619206 C11.1301324,6.16278127 10.3240698,5.95504089 9.60362004,5.55748936 C8.92318295,5.18350752 8.34528503,4.64125332 7.92271657,3.98026106 C7.89958134,3.9431516 7.88100008,3.90840422 7.86479417,3.87248694 C7.8178532,3.76876575 7.71720961,3.70141799 7.60541258,3.69891636 L6.90826687,3.69891636 C6.67011581,3.69891636 6.60827037,3.76093955 6.57780919,3.79867228 L6.55473254,3.83050927 L6.52750208,3.85880882 L3.30230895,7.40332756 C3.09669596,7.63278975 3.08861913,7.99856144 3.28500146,8.20278986 L3.30323201,8.22259955 L5.17474864,10.2978999 C5.24444013,10.3750162 5.34228514,10.4108623 5.38774615,10.4108623 C5.43320716,10.4108623 5.52920604,10.3761954 5.60005137,10.2990791 C5.76128366,10.1239746 5.98599879,10.0245071 6.22127489,10.0241018 C6.71092372,10.0260515 7.10667359,10.4325938 7.1060338,10.932989 L7.1060338,20.3003761 L16.8570739,20.3003761 L16.8570739,10.932989 C16.8564341,10.4325938 17.2521839,10.0260515 17.7418328,10.0241018 C17.9770225,10.0243708 18.2016888,10.1237684 18.3628255,10.2988433 C18.4339016,10.3761954 18.5292082,10.4108623 18.5753615,10.4108623 C18.603515,10.4108623 18.6863602,10.4108623 18.7881283,10.2981358 L20.6573372,8.22165623 C20.8650271,7.99242987 20.8733347,7.62571486 20.6757985,7.42054312 L20.6573372,7.4004976 L17.4496823,3.8394708 C17.3777035,3.75229147 17.2727942,3.7005729 17.1612242,3.69726556 Z M12.1189753,10.3719504 C12.2420508,10.3719504 12.3035885,10.4348383 12.3035885,10.5606141 L12.3035885,14.1923898 C12.3035885,14.3181656 12.2420508,14.3810535 12.1189753,14.3810535 L9.34977685,14.3810535 C9.22670136,14.3810535 9.16516362,14.3181656 9.16516362,14.1923898 L9.16516362,10.5606141 C9.16516362,10.4348383 9.22670136,10.3719504 9.34977685,10.3719504 L12.1189753,10.3719504 Z" id="形状结合"></path>
+                </svg>
+                <svg class="closesvg openclose" width="10px" height="10px"  xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 1024 1024">
+                    <path d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"/>
+                </svg>
+                <svg class="opensvg openclose" hidden width="10px" height="10px" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 1024 1024">
+                    <path d="M890.5 755.3L537.9 269.2c-12.8-17.6-39-17.6-51.7 0L133.5 755.3A8 8 0 0 0 140 768h75c5.1 0 9.9-2.5 12.9-6.6L512 369.8l284.1 391.6c3 4.1 7.8 6.6 12.9 6.6h75c6.5 0 10.3-7.4 6.5-12.7z"/>
+                </svg>
+            </a>
+            <ul class="dropdown-menu" role="menu" style="margin-left: 0px;margin-top: 0px;">
+                <li id="dropdown-menuli" onclick="selectTheme('dark')"><a>Dark Theme</a></li>
+                <li id="dropdown-menuli" onclick="selectTheme('light')"><a>Light Theme</a></li>
+            </ul>
+        </div>
+            <div class="divider" style="margin-bottom: 4px"></div>
+            <a href="http://support.supermap.com.cn:8090/iserver/services/security/login"><button class="btn-login" >Login</button></a>
+        <div style="float:right;height: 72px;width:24px;display:inline-block"></div>
+        <div class="sidemenuIcon" style="float: right">
+            <div class="divider"></div>
+            <div class="nav-btn" style="display:inline-block">
+                <a href="#" class="mobile-nav-taggle" id="mobile-nav-taggle">
+                    <svg class="menu-svg" width="24px" height="24px" viewBox="0 0 18 18" fill="currentColor"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <path d="M0.18375,7.56178977 C0.0816639937,7.56390152 0,7.65009449 0,7.75568182 L0,9.30681818 C0,9.41240551 0.0816639937,9.49859848 0.18375,9.50071023 L18.19125,9.50071023 C18.293336,9.49859848 18.375,9.41240551 18.375,9.30681818 L18.375,7.75568182 C18.375,7.65009449 18.293336,7.56390152 18.19125,7.56178977 L0.18375,7.56178977 Z M0.18375,15.1235795 C0.0816639937,15.1256913 0,15.2118843 0,15.3174716 L0,16.868608 C0,16.9741953 0.0816639937,17.0603883 0.18375,17.0625 L18.19125,17.0625 C18.293336,17.0603883 18.375,16.9741953 18.375,16.868608 L18.375,15.3174716 C18.375,15.2118843 18.293336,15.1256913 18.19125,15.1235795 L0.18375,15.1235795 Z M0.18375,0 C0.0816639937,0.0021117445 0,0.088304717 0,0.193892045 L0,1.74502841 C0,1.85061574 0.0816639937,1.93680871 0.18375,1.93892045 L18.19125,1.93892045 C18.293336,1.93680871 18.375,1.85061574 18.375,1.74502841 L18.375,0.193892045 C18.375,0.088304717 18.293336,0.0021117445 18.19125,0 L0.18375,0 Z"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="bodyclass">
+    <!--Head Begin-->
+        <div class="headWelcome">
+        <!--首页welcome-->
+            <div class="headWelcomeTitle">
+                <h3>SuperMap iServer</h3>
+                <h3>2025</h3>
+                    <h2>Cross Platform, Distributed, Extensible Server GIS Software Development Platform</h2>
+                <h4><a href="services"><button class="headWelcomeTitlebutton" >All Services</button></a></h4>
+            </div>
+        </div>
+    <!--Head end-->
+    <!--内容列表Begin-->
+        <div class="conShow">
+            <div class="conList">
+                <div class="ServerListText ServerListTextFirst">
+                    <div class="ServerListTextBackground ServerListBackground"></div>
+                    <h2 class="ServerListTitle">Services</h2>
+                    <p class="ServerListCon">Access GIS services.</p>
+                    <a  class="btEnter" href="services">
+                        <span>All Services</span>
+                        <svg class="enter-svg" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 1024 1024">
+                            <path d="M869 487.8L491.2 159.9c-2.9-2.5-6.6-3.9-10.5-3.9h-88.5c-7.4 0-10.8 9.2-5.2 14l350.2 304H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h585.1L386.9 854c-5.6 4.9-2.2 14 5.2 14h91.5c1.9 0 3.8-.7 5.2-2L869 536.2a32.07 32.07 0 0 0 0-48.4z"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="ServerListText ServerListTextSecond" id="servicesManageSecond">
+                    <div class="ServerListTextBackground ServerManagerBackground"></div>
+                    <h2 class="ServerListTitle">Manager</h2>
+                    <p class="ServerListCon">Publish GIS Services quickly. Manage all your GIS Servcies. Operate and manage the whole GIS server.</p>
+                    <a class="btEnter" href="admin-ui/home">
+                        <span>Manage GIS Server</span>
+                        <svg class="enter-svg" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 1024 1024">
+                            <path d="M869 487.8L491.2 159.9c-2.9-2.5-6.6-3.9-10.5-3.9h-88.5c-7.4 0-10.8 9.2-5.2 14l350.2 304H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h585.1L386.9 854c-5.6 4.9-2.2 14 5.2 14h91.5c1.9 0 3.8-.7 5.2-2L869 536.2a32.07 32.07 0 0 0 0-48.4z"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="ServerListText ServerListTextLast">
+                    <div class="ServerListTextBackground DemoBackground"></div>
+                    <h2 class="ServerListTitle">Sample Code</h2>
+                    <ul>
+                        <li><a href="iClient/forJavaScript/examples/leaflet/examples.html">for Leaflet</a></li>
+                        <li><a href="iClient/forJavaScript/examples/openlayers/examples.html">for OpenLayers</a></li>
+                        <li><a href="iClient/forJavaScript/examples/mapboxgl/examples.html">for MapboxGL</a></li>
+                        <li><a href="iClient/for3D/webgl/en/examples/webgl/examples.html">iClient3D for WebGL</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    <!--内容列表End-->
+
+    <!--新增功能联机帮助Begin-->
+        <div class="NewAndHelp">
+            <div class="conNewAndHelp">
+             <!--联机帮助Begin-->
+                <div class="conHelp">
+                    <div class="newAndHelpTitle" style='height:21px'>
+                        <span>Help</span>
+                        <div class="newAndHelpEnter">
+                            <a href="help"><span>Learn More</span>
+                                <svg class="enter-svg" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 1024 1024">
+                                    <path d="M869 487.8L491.2 159.9c-2.9-2.5-6.6-3.9-10.5-3.9h-88.5c-7.4 0-10.8 9.2-5.2 14l350.2 304H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h585.1L386.9 854c-5.6 4.9-2.2 14 5.2 14h91.5c1.9 0 3.8-.7 5.2-2L869 536.2a32.07 32.07 0 0 0 0-48.4z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="LinkFuncDescrip">
+                        <span>You can learn about SuperMap iServer from the Product Introduction, Getting Started, Javadoc, REST API, iClient SDKs, etc..</span>
+                    </p>
+                    <hr class="horizontal-line"/>
+                    <ul class="newAndHelpList HelpList">
+                        <li>
+                            <svg class="HelpListItem GettingStarted" style="margin-left: 24px">
+                            </svg>
+                            <a href="help/index.htm#GettingStarted/iServer_User_Start/iServer_User_Start.htm">Getting Started</a>
+                        </li>
+                        <li>
+                            <svg class="HelpListItem ProductIntroduce">
+                            </svg>
+                            <a href="help/index.htm#Product_introduce/iServerJava_introduce.htm">Product Introduction</a>
+                        </li>
+                        <li>
+                            <svg class="HelpListItem JavadocAPI" style="margin-left: 24px">
+                            </svg>
+                            <a href="help/index.htm#mergedProjects/iServerJavadoc/overview-summary.html">Javadoc API</a>
+                        </li>
+                        <li>
+                            <svg class="HelpListItem RESTAPI">
+                            </svg>
+                            <a href="help/index.htm#mergedProjects/SuperMapiServerRESTAPI/Overview.htm">REST API</a>
+                        </li>
+                        <li>
+                            <svg class="HelpListItem iClient" style="margin-left: 24px">
+                            </svg>
+                            <a href="help/index.htm#iClient/iClient.htm">iClient Overview</a>
+                        </li>
+                    </ul>
+                </div>
+            <!--联机帮助End-->
+            <!--新增功能Begin-->
+                <div class="conNew">
+                    <div class="newAndHelpTitle" style='height:21px'>
+                        <span>What's New</span>
+                        <div class="newAndHelpEnter">
+                            <a href="help/index.htm#iS/what_s_new.htm">
+                                <span>Learn More</span>
+                                <svg class="enter-svg" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 1024 1024">
+                                    <path d="M869 487.8L491.2 159.9c-2.9-2.5-6.6-3.9-10.5-3.9h-88.5c-7.4 0-10.8 9.2-5.2 14l350.2 304H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h585.1L386.9 854c-5.6 4.9-2.2 14 5.2 14h91.5c1.9 0 3.8-.7 5.2-2L869 536.2a32.07 32.07 0 0 0 0-48.4z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="LinkFuncDescrip">
+                        <span>What's New in SuperMap iServer 2025 Update1: </span>
+                    </p>
+                    <hr class="horizontal-line-conNew"/>
+                        <ul class="newList">
+                            <div><backcicle class="backcicle"></backcicle><p title="Newly support for batch forwarding of map services, feature services, geocoding services, and vector tile services in ArcGIS Server.">Newly support for batch forwarding of map services, feature services, geocoding services, and vector tile services in ArcGIS Server.</p></div>
+                            <div><backcicle class="backcicle"></backcicle><p title="Security information, session information and temporary resources newly support storing in the HighGo DB.">Security information, session information and temporary resources newly support storing in the HighGo DB.</p></div>
+                            <div><backcicle class="backcicle"></backcicle><p title="Newly support for more than 5,000 coordinate systems such as Anguilla_1957_British_West_Indies_Grid for multiple regions around the world.">Newly support for more than 5,000 coordinate systems such as Anguilla_1957_British_West_Indies_Grid for multiple regions around the world.</p></div>
+                            <div><backcicle class="backcicle"></backcicle><p title="Newly support for viewing and downloading iObjects Java logs in Service Manager.">Newly support for viewing and downloading iObjects Java logs in Service Manager.</p></div>
+                        </ul>
+                </div>
+            <!--新增功能End-->
+            </div>
+        </div>
+        <!--新增功能联机帮助End-->
+        
+        <!--页脚Begin-->
+<div class="foot">
+	<div id="footer" style="background:#ffffff;float:left;position:relative;text-align:center;height:44px;width:100%;border:none;margin-top:80px">
+		<p style="margin-top:15px;color:rgba(0,0,0,0.45);font-size:12px;line-height:16px">Powered by SuperMap iServer 2025 (12.0.1.0-linux64) </a> © 2000-2025 <a style="color:rgba(0,0,0,0.45);text-decoration:none;" href="http://www.supermap.com.cn">SuperMap Software Co., Ltd</a></p>
+	</div>
+</div>
+        <!--页脚End-->
+    </div>
+    <iframe id='KcLogoutFrame' name='KcLogoutFrame' style='display:none' frameborder='0'></iframe>
+    <iframe id='KcLoginStatusIframe' name='KcLoginStatusIframe' style='display:none' frameborder='0'></iframe>
+
+    <!--侧边栏Begin-->
+    <nav class="navbar-inverse" role="navigation" hidden style="display: none">
+        <div>
+            <div class="navbar-header">
+                <div class="btn-group" id="btn-remove" style="float:right;margin-right:16px">
+                    <svg style='width:24px;height:72px;vertical-align:middle' width="24px" height="24px" viewBox="0 0 24 24" fill="currentColor"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <path d="M18.3984322,4.05742988 C18.4814143,3.97781133 18.615094,3.98141817 18.6991828,4.06550691 L19.9344931,5.30081721 C20.0185818,5.38490596 20.0221887,5.51858566 19.9425701,5.60156776 L13.544,12 L19.9425701,18.3984322 C20.006265,18.4648179 20.0166956,18.5636501 19.9752666,18.6435809 L19.9344931,18.6991828 L18.6991828,19.9344931 C18.615094,20.0185818 18.4814143,20.0221887 18.3984322,19.9425701 L12,13.544 L5.60156777,19.9425701 C5.53518209,20.006265 5.43634994,20.0166956 5.35641907,19.9752666 L5.30081721,19.9344931 L4.06550691,18.6991828 C3.98141817,18.615094 3.97781134,18.4814143 4.05742989,18.3984322 L10.456,12 L4.05742988,5.60156776 C3.99373504,5.53518208 3.98330445,5.43634994 4.02473344,5.35641907 L4.06550691,5.30081721 L5.30081721,4.06550691 C5.38490596,3.98141817 5.51858566,3.97781133 5.60156776,4.05742988 L12,10.456 Z" id="形状" fill-opacity="0.85" fill-rule="nonzero"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#" style="color:#ff483e">Home</a></li>
+                <li><a href="services">Services</a></li></li>
+                <li><a href="admin-ui/home" id="servicesManageThird">Manager</a></li>
+                <li class="sidemenu dropdown">
+                    <a class="dropdown-toggle" href="#" data-toggle="dropdown">Sample Code
+                        <svg class="closesvg" style='width:10px;height:24px;float:right' width="10px" height="10px" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 1024 1024">
+                            <path d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"/>
+                        </svg>
+                        <svg class="opensvg" style='width:10px;height:24px;float:right' hidden width="10px" height="10px" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 1024 1024">
+                            <path d="M890.5 755.3L537.9 269.2c-12.8-17.6-39-17.6-51.7 0L133.5 755.3A8 8 0 0 0 140 768h75c5.1 0 9.9-2.5 12.9-6.6L512 369.8l284.1 391.6c3 4.1 7.8 6.6 12.9 6.6h75c6.5 0 10.3-7.4 6.5-12.7z"/>
+                        </svg>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li class="subboxlist01"><a class="subboxlist01A" href="iClient/forJavaScript/examples/leaflet/examples.html">for Leaflet</a></li>
+                        <li class="subboxlist01"><a class="subboxlist01A" href="iClient/forJavaScript/examples/openlayers/examples.html">for OpenLayers</a></li>
+                        <li class="subboxlist01"><a class="subboxlist01A" href="iClient/forJavaScript/examples/mapboxgl/examples.html">for MapboxGL</a></li>
+                        <li class="subboxlist04"><a class="subboxlist04A" href="iClient/for3D/webgl/en/examples/webgl/examples.html">3D for WebGL</a></li>
+                    </ul>
+                </li>
+                <li><a href="help">Help</a></li>
+                <li><a href="help/index.htm#iS/what_s_new.htm">What's New</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--侧边栏End-->
+
+</body>
+<script type="text/javascript">
+    var kcConfigUrl = "http://support.supermap.com.cn:8090/iserver/manager/security/briefkeycloakconfig.json";
+    var logoutUrl = "http://support.supermap.com.cn:8090/iserver/services/security/logout";
+    var kcConfig = null;
+    var currentUserName = "GUEST";
+    var RoleUrl = "http://support.supermap.com.cn:8090/iserver/services/security/profile.json?returnPermittedService=false";
+    function getKcConfig() {
+        $.ajax({
+            url: kcConfigUrl,
+            success: function (res) {
+                kcConfig = res;
+                if (kcConfig.enable && currentUserName !== "GUEST") {
+                    kcSingleSignOutCheck();
+                }
+            }
+        })
+    }
+    function userLogout() {
+        if (kcConfig && kcConfig.enable) {
+            var kcLogoutUrl = kcConfig.baseUri + "/realms/" + kcConfig.realm + "/protocol/openid-connect/logout";
+            $("#KcLogoutFrame").attr("src", kcLogoutUrl);
+        }
+        window.open(logoutUrl, "_self")
+    }
+    function kcSingleSignOutCheck() {
+        var kcLoginStatusUrl = kcConfig.baseUri + "/realms/" + kcConfig.realm + "/protocol/openid-connect/login-status-iframe.html";
+        $("#KcLoginStatusIframe").attr("src", kcLoginStatusUrl);
+        window.addEventListener("message", this.onMessage, false);
+        setTimeout(kcStatePost, 500);
+    }
+    function getRoles() {
+        $.ajax({
+            url: RoleUrl,
+            success: function (res) {
+                if(!(res.roles) || !((res.roles.includes('ADMIN') || res.roles.includes('PUBLISHER') || res.managePermitted.includes('Service Publishing')))
+                    || res.roles.length === 0){
+                    var elementTop = document.getElementById("servicesManageTop");
+                    var elementSecond = document.getElementById("servicesManageSecond");
+                    var elementThird = document.getElementById("servicesManageThird");
+                    document.documentElement.style.setProperty("--server-width","calc((100% - 24px) / 2)");
+                    document.documentElement.style.setProperty("--ul-width","400px");
+                    document.documentElement.style.setProperty("--con-width","300px");
+                    elementTop.style.display = "none";
+                    elementSecond.style.display = "none";
+                    elementThird.style.display = "none";
+                }
+            }
+        })
+    }
+    function kcStatePost(){
+        var client_id = getCookie("kc_client_id");
+        var session_state = getCookie("kc_session_state");
+        var KcLoginStatusIframe = document.getElementById("KcLoginStatusIframe");
+        if(KcLoginStatusIframe && client_id && session_state){
+            var info = client_id+" "+session_state;
+            var orgin = kcConfig.baseUri.replace("/auth", "");
+            KcLoginStatusIframe.contentWindow.postMessage(info, orgin);
+        }
+    }
+    function onMessage(e){
+        if(typeof(e.data) === "string" && e.data === "changed" && currentUserName !== "GUEST"){
+            window.open(logoutUrl, "_self");
+        }
+    }
+    function getCookie(name) {
+        var arr;
+        var reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+        if (arr = document.cookie.match(reg)) {
+            return unescape(arr[2]);
+        } else {
+            return null;
+        }
+    }
+    //设置语言...开始
+    function setCookie(c_name,value,expiredays){
+        var exdate=new Date()
+        exdate.setDate(exdate.getDate()+expiredays)
+        var protocol = window.location.protocol;
+        var secure ="";
+        if(protocol === "https:"){
+            secure = ";secure=true";
+        }
+        cookieVal=c_name+ "=" +escape(value)+((expiredays==null) ? "" : ";expires="+exdate.toGMTString()) + ";path=/"+secure;
+        document.cookie=cookieVal;
+    };
+    function delCookie(name){
+        var date = new Date();
+        date.setTime(date.getTime() - 10000);
+        document.cookie = name + "=a;expires=" + date.toGMTString()+";path=/";
+    }
+    function selectLanguage(language){
+        delCookie("language");
+        setCookie("language",language,3600*24*31);
+        window.location.reload();
+    };
+    function selectTheme(theme){
+        var currentTheme = JSON.parse(localStorage.getItem("pro__DEFAULT_THEME"));
+        if (currentTheme && currentTheme.value === theme) {
+            return;
+        }
+        var themeItem = {
+            "value": theme ,
+            "expire": null,
+        }
+        localStorage.setItem("pro__DEFAULT_THEME", JSON.stringify(themeItem));
+        window.location.reload();
+    };
+    document.getElementById("language").value="zh-CN";
+    //设置语言...结束
+    getKcConfig();
+    getRoles();
+    var theme = JSON.parse(localStorage.getItem("pro__DEFAULT_THEME"));
+    var body = document.getElementById("body");
+    body.classList.remove("light", "dark");
+    body.classList.add(theme ? theme.value : "light");
+</script>
+<script>
+    $("#mobile-nav-taggle").on("click",function(){
+        $(".navbar-inverse").show();
+    })
+    $("#btn-remove").on("click",function(){
+        $(".navbar-inverse").hide();
+    })
+</script>
+</html>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        var ieEd = false;
+                isEd = false;
+        if (isEd){
+            var title = document.title;
+            document.title=title+"「SuperMap Education」";
+        }
+        // LicenseInfoTitle();
+    })
+    function LicenseInfoTitle() {
+        var url = "http://support.supermap.com.cn:8090/iserver/";
+        let keyPath = "/iserver";
+        let index = url.indexOf(keyPath);
+        if(index !== -1){
+            url = url.substring(0,index + keyPath.length);
+        }
+        url = url + "/manager/licenseInfo.json";
+        $.ajax({
+            type: "GET",
+            url: url,
+            async: false,
+            dataType: "json",
+            success: function (liceseInfo) {
+                var title = document.title;
+                if(!(!liceseInfo.shortCompanyName)){
+                    document.title = title+" "+liceseInfo.shortCompanyName;
+                }
+            }
+        });
+    }
+</script>

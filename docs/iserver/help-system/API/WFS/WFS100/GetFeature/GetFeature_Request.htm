@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../../../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../../../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../../../../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../../../iserver-icon.png"/>
+    
+  <script data-relpath="../../../.." src="../../../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <meta name="template" content="../../../../assets/layouts/SuperMapiServerMain.htt"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Language" content="zh-CN"/>
+  <meta name="topic-check-list" content="Ran Smart Index"/>
+  <meta name="topic-status" content="Complete"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>GetFeature 请求</title>
+  <link rel="StyleSheet" href="../../../../assets/css/SuperMapHelp.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="GetFeature 请求,请求参数"/>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../../../../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../assets/css/homeButtom.css"/>
+  <script src="../../../../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../../../../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../../../../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../../../../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../../../../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../../../../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../../../../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../../../../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../../../../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1"><a class="contentpagehyperlink" href="#请求参数">请求参数</a></li>
+    <li class="SymbolList1"><a class="contentpagehyperlink" href="#请求示例">请求示例</a></li>
+  </ul>
+  <h2><a id="请求参数"></a>请求参数</h2>
+  <p class="myNormal">GetFeature 操作的主要请求参数如下表所示：</p>
+  <p style="text-align: center;">表1 GetFeature&amp; GetFeatureWithLock 操作请求主要参数</p>
+  <table align="center" cellspacing="0" class="iServerTable" style="width: 903px;" width="70%">
+    <colgroup>
+      <col style="width: 213px;"/>
+      <col style="width: 175px;"/>
+      <col style="width: 60%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st" style="height: 29px;">
+        <td style="text-align: center;">
+          <p>请求参数</p>
+        </td>
+        <td style="text-align: center;">
+          <p>是否必需</p>
+        </td>
+        <td style="text-align: center;">
+          <p>描述</p>
+        </td>
+      </tr>
+      <tr class="t2Row" style="height: 32px;">
+        <td style="">
+          <p>VERSION=version</p>
+        </td>
+        <td style="">
+          <p style="text-align: center;">是</p>
+        </td>
+        <td style="">
+          <p>请求版本号。</p>
+          <p>默认为“1.0.0”。</p>
+        </td>
+      </tr>
+      <tr class="t1Row" style="height: 28px;">
+        <td style="">
+          <p>SERVICE=WFS</p>
+        </td>
+        <td style="">
+          <p style="text-align: center;">是</p>
+        </td>
+        <td style="">
+          <p>服务类型。</p>
+          <p>默认为“WFS”。</p>
+        </td>
+      </tr>
+      <tr class="t2Row" style="height: 55px;">
+        <td style="">
+          <p>REQUEST=GetFeature|GetFeatureWithLock</p>
+        </td>
+        <td style="">
+          <p style="text-align: center;">是</p>
+        </td>
+        <td style="">
+          <p>请求名称。</p>
+          <p>请求 GetFeature 操作，请求名称需要设为“GetFeature”或者“GetFeatureWithLock”。</p>
+          <p>GetFeatureWithLock 跟 GetFeature 相似，只是如果使用 GetFeatureWithLock，则会对被选择的要素上锁，比如在修改要素时。</p>
+        </td>
+      </tr>
+      <tr class="t1Row" style="height: 55px;">
+        <td style="">
+          <p>PROPERTYNAME=property_list</p>
+        </td>
+        <td style="">
+          <p style="text-align: center;">否</p>
+        </td>
+        <td style="">
+          <p>特性列表。</p>
+          <p>用来列举查询中被选择的要素特性。</p>
+          <p>参数列表规则参考 <a class="contentpagehyperlink" href="../Request_parameter_rules.htm">请求参数规则</a>。“*”字符能够表示所有被检索的特性。在每一个 FEATUREID 或 TYPENAME 列表和 PROPERTYNAME 列表形成1:1的映射。缺省值表示所有特性都可以获得。</p>
+          <p>当 WFS 服务遇到没有选择要素的全部必要特性的查询时，WFS 将会在内部扩大特性列表以保证其包含所有必要特性名，所以，一个 WFS 客户端获取的特性值可能比请求的要多。</p>
+          <p>如果没有指定特性名称，要素的所有特性将返回。</p>
+        </td>
+      </tr>
+      <tr class="t2Row" style="height: 55px;">
+        <td style="">
+          <p>FEATUREVERSION=ALL|N</p>
+        </td>
+        <td style="">
+          <p style="text-align: center;">否</p>
+        </td>
+        <td style="">
+          <p>要素版本。</p>
+          <p>如果支持要素版本，“All”表示获取一个要素的所有版本。整数值“N”表示获取一个要素的第 N 个版本。没有值，表示提取最近的要素版本信息。</p>
+          <p>版本号从1开始，1是最老的版本，如果版本值大于指定的最大版本号，那么将返回最新的版本。查询默认的操作时返回最新的版本。</p>
+          <p>不支持分版本的系统可以忽略此参数，并返回它所拥有的唯一版本。</p>
+          <p>目前 SuperMap iServer 不支持该参数。</p>
+        </td>
+      </tr>
+      <tr class="t1Row" style="height: 55px;">
+        <td style="">
+          <p>MAXFEATURES=N</p>
+        </td>
+        <td style="">
+          <p style="text-align: center;">否</p>
+        </td>
+        <td style="">
+          <p>最大要素个数。</p>
+          <p>MAXFEATURES 参数值设置为一个正整数，用来表示 WFS 对请求响应的最大要素个数。如果没有设置该参数的值，将默认最多返回2000个要素，此默认值可以在 WFS 接口中设置，详见<a class="contentpagehyperlink" href="../../../../Server_Service_Management/GISService_Config/Service_Config/Config_Interface/interface_config.htm#WFS_服务接口">WFS_服务接口</a>。</p>
+        </td>
+      </tr>
+      <tr class="t2Row" style="height: 55px;">
+        <td style="">
+          <p>TYPENAME=type_list</p>
+        </td>
+        <td style="">
+          <p style="text-align: center;">是</p>
+        </td>
+        <td style="">
+          <p>要素类型列表。</p>
+          <p>参数列表规则参考 <a class="contentpagehyperlink" href="../Request_parameter_rules.htm">请求参数规则</a>。</p>
+          <p>如果已经指定了 FEATUREID 参数，则 TYPENAME 可选。</p>
+        </td>
+      </tr>
+      <tr class="t1Row" style="height: 55px;">
+        <td style="">
+          <p>FEATUREID=feature_id</p>
+        </td>
+        <td style="">
+          <p style="text-align: center;">否</p>
+        </td>
+        <td style="">
+          <p>要素标识符。</p>
+          <p>通过要素标识符来获取要素枚举列表。</p>
+          <p>该参数与 FILTER 和 BBOX 参数相斥。</p>
+        </td>
+      </tr>
+      <tr class="t2Row" style="height: 55px;">
+        <td style="">
+          <p>FILTER=filter</p>
+        </td>
+        <td style="">
+          <p style="text-align: center;">否</p>
+        </td>
+        <td style="">
+          <p>过滤器。</p>
+          <p>Filter 参数用来设置查询限制条件。空间的或非空间的限制条件都可以进行设置。</p>
+          <p>该参数的设置遵照过滤器编码规范。</p>
+          <p>如果使用过滤器参数，对于每一个在 TYPENAME 参数列表中的要素类型必须规定过滤器。单个以过滤器参数编码的过滤器以英文圆括号表示，“(”和“)”。</p>
+          <p>使用该参数必须要 TYPENAME 参数。</p>
+          <p>该参数与 FEATUREID 和 BBOX 参数相斥。</p>
+          <p>目前支持的操作有 DWithin、Beyond、Contains、Crosses、Disjoint、Intersects、Distance 等，请参见 <a class="contentpagehyperlink" href="../../../../mergedProjects/iServerJavadoc/com/supermap/services/ogc/filter/FilterType.html">FilterType</a>。目前不支持 FeatureId、Function、Geometry。</p>
+          <p><strong>注意事项</strong>:DWithin中支持设置Distance单位，使用unit字段指定，单位可以为yard、mile、second、minute、radian、meter、degree、kilometer、inch、foot。</p>
+          <p>请参见<a class="contentpagehyperlink" href="FILTER.htm">FILTER 示例</a>。</p>
+        </td>
+      </tr>
+      <tr class="t1Row" style="height: 55px;">
+        <td style="">
+          <p>BBOX=minx,miny,maxx,maxy</p>
+        </td>
+        <td style="">
+          <p style="text-align: center;">否</p>
+        </td>
+        <td style="">
+          <p>边界框。</p>
+          <p>在 FEATUREID 或者 FILTER 环境下，客户端可以指定边界框。</p>
+          <p>使用该参数必须要 TYPENAME 参数。</p>
+          <p>该参数与 FEATUREID 和 FILTER 参数相斥。</p>
+          <p>请参见 <a class="contentpagehyperlink" href="../Common_request_parameters.htm#BBOX">边界框</a>。</p>
+        </td>
+      </tr>
+      <tr class="t2Row" style="height: 55px;">
+        <td style="">
+          <p>OUTPUTFORMAT=outputformat</p>
+        </td>
+        <td style="">
+          <p style="text-align: center;">否</p>
+        </td>
+        <td style="">
+          <p>结果集输出格式。</p>
+          <p>默认为“GML2”。</p>
+          <p>其他格式（包括非 XML 和二进制的格式）也可以支持，只要在 Capabilities 文档中进行声明即可。</p>
+          <p>目前 SuperMap iServer 发布的 WFS 服务支持默认的 GML2 格式和 json 格式。</p>
+          <p><span style="font-weight:bold;">请注意：</span>当结果集输出格式为 json 时，若操作是对多个数据集进行的请求，则返回的 CRS 坐标系信息为第一个数据集的坐标系</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><a id="请求示例"></a>请求示例</h2>
+  <p class="myNormal">GetFeature 操作的请求方式如下：</p>
+  <p class="myCodeP">&lt;ServiceRoot&gt;?SERVICE=WFS&amp;VERSION=version&amp;REQUEST=GetFeature&amp;TYPENAME=type_list</p>
+  <p class="myNormal">ServiceRoot 为服务的 URI 根目录，请参见 <a class="contentpagehyperlink" href="../../../../Service_introduce/URI_Config.htm">服务的 URI 设置</a>。</p>
+  <p class="myNormal">例如，本机 SuperMap iServer WFS 1.0.0 服务启动成功之后，访问 GetFeature 操作的 URI 是：http://localhost:8090/iserver/services/data-world/wfs100?SERVICE=WFS&amp;VERSION=1.0.0&amp;REQUEST=GetFeature&amp;TYPENAME=World:Capitals&amp;MAXFEATURES=5，这里设置 MAXFEATURES=5，只返回 World:Capitals 中的前5个要素。</p>
+  <p class="myNormal">该请求示例的响应结果请参见 <a class="contentpagehyperlink" href="GetFeature_Response.htm#响应示例">响应示例</a>。</p>
+  <p class="myNormal"> </p>
+
+</div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../../../../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../../../../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../../../../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../../../../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../../../../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../../../../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../../../../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../../../.."
+    gCommonRootRelPath = "../../../.."
+    gTopicId = "8.3.4.1.5.0_1"
+  
+//]]></script>
+
+  <script src="../../../../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../../../../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../../../../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../../../../whxdata/layoutconfig.js"></script>
+  <script src="../../../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

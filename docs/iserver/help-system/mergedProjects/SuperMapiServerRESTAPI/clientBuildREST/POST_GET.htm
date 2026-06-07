@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../../../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../../iserver-icon.png"/>
+    
+  <script data-relpath="../../.." src="../../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <meta name="template" content="../../../assets/layouts/RESTCommon.htt"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Language" content="zh-CN"/>
+  <meta name="topic-check-list" content="Ran Smart Index"/>
+  <meta name="topic-status" content="Complete"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>POST 请求模拟 GET 请求</title>
+  <link rel="StyleSheet" href="../../../assets/css/SuperMapHelp.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="用 POST 模拟 GET"/>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../../../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../assets/css/homeButtom.css"/>
+  <script src="../../../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../../../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../../../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../../../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../../../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../../../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../../../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../../../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../../../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <p class="myNormal">GET 请求通常用于获取资源的表述或操作结果，在发送 GET 请求时需给出操作所需的请求参数，并在请求 URI 中表现出来。然而，不同资源不同操作需要传递的参数有很大差别，有可能出现参数过多而导致 URI 长度过大的问题。比如在访问 distance 资源时，如果量算的点非常多，则参数中会有海量的组数据坐标对，有可能使请求 URI 长度过大而导致响应失败。并且，在 URI 中拼装请求参数无法直观看到参数结构，当请求参数结构复杂时，极易出错。</p>
+  <p class="myNormal">SuperMap iServer 提供了一种解决方法，即使用 POST 请求模拟 GET 请求的机制。具体方法为：在向操作资源进行请求时，将 GET 请求方法变更为 POST 请求方法，在请求 URI 后添加参数“_method= GET”来标识该 POST 请求模拟的是 GET 请求，并将原 URI 中的 GET 请求参数填写到 POST 请求体中。</p>
+  <p class="myNormal">当前，iServer 中以 rest、restjsr（包括 REST-矢量瓦片服务、REST-空间分析服务、REST-几何服务、REST-地址匹配服务、REST-交通换乘服务等）以及 wms111、wms130 为接口的服务支持此机制，您可通过指定资源的 URI 进行判断。如下分别以 REST 地址匹配服务中 geocoding 资源和 WMS 1.1.1 地图服务 GetFeatureInfo 为例，进行使用说明。</p>
+  <h4>示例1 对 geocoding 资源进行请求</h4>
+  <p class="myNormal">对 geocoding 资源执行 GET 请求，查询某一个公司的地址，则请求 URI 为：http://localhost:8090/iserver/services/addressmatch-BeijingAddress/restjsr/v1/address/geocoding.rjson?address=京东方科技集团股份有限公司&amp;fromIndex=0&amp;toIndex=1&amp;maxReturn=-1</p>
+  <p class="myNormal">若对 geocoding 资源使用 POST 请求模拟 GET 请求，则请求 URI 为：http://localhost:8090/iserver/services/addressmatch-BeijingAddress/restjsr/v1/address/geocoding.rjson?_method= GET。请求体如下：</p>
+  <p class="myCodeP">{<br/>
+        &quot;address&quot;:&quot;京东方科技集团股份有限公司&quot;,<br/>
+        &quot;fromIndex&quot;:0,<br/>
+        &quot;toIndex&quot;:1,<br/>
+        &quot;maxReturn&quot;:-1<br/>
+    }</p>
+  <h4>例2 对 GetFeatureInfo 操作进行请求</h4>
+  <p class="myNormal">对 GetFeatureInfo 操作执行 GET 请求，在指定范围进行属性过滤，则请求 URI 为：http://localhost:8090/iserver/services/map-baseline/wms111/guangxi<br/>
+    ?REQUEST=GetFeatureInfo&amp;SERVICE=WMS&amp;VERSION=1.1.1&amp;INFO_FORMAT= text/xml &amp;QUERY_LAYERS=0.1<br/>
+    &amp;LAYERS=0.1&amp;WIDTH=256&amp;HEIGHT=256&amp;SRS=EPSG:4326&amp;BBOX=110.12596366179878,22.805670611177316,110.13216922057563,22.810863367830148<br/>
+    &amp;X=15&amp;Y=214&amp;layerDefs={&quot;0.1&quot;:&quot;dlmc like &#39;水田&#39;&quot;}&amp;FEATURE_COUNT=2</p>
+  <p class="myNormal">若对 GetFeatureInfo 操作使用 POST 请求模拟 GET 请求，则请求 URI 为：http://localhost:8090/iserver/services/map-baseline/wms111/guangxi?_method=GET。请求体如下：</p>
+  <p class="myCodeP">{<br/>
+        &quot;SERVICE&quot;:&quot;WMS&quot;,<br/>
+        &quot;VERSION&quot;: &quot;1.1.1&quot;,<br/>
+        &quot;REQUEST&quot;: &quot;GetFeatureInfo&quot;,<br/>
+        &quot;LAYERS&quot;: &quot;0.1&quot;,<br/>
+        &quot;QUERY_LAYERS&quot;: &quot;0.1&quot;,<br/>
+        &quot;SRS&quot;: &quot;EPSG:4326&quot;,<br/>
+        &quot;BBOX&quot;: &quot;110.12596366179878,22.805670611177316,110.13216922057563,22.810863367830148&quot;,<br/>
+        &quot;WIDTH&quot;: 256,<br/>
+        &quot;HEIGHT&quot;: 256,<br/>
+        &quot;FEATURE_COUNT&quot;: 2,<br/>
+        &quot;X&quot;:15,<br/>
+        &quot;Y&quot;:214,<br/>
+        &quot;layerDefs&quot;:{<br/>
+            &quot;0.1&quot;:&quot;dlmc like &#39;水田&#39;&quot;<br/>
+        }<br/>
+    }</p>
+  <p> </p>
+
+</div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../../../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../../../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../../../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../../../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../../../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../../../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../../../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../../.."
+    gCommonRootRelPath = "../../.."
+    gTopicId = "8.3_1"
+  
+//]]></script>
+
+  <script src="../../../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../../../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../../../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../../../whxdata/layoutconfig.js"></script>
+  <script src="../../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

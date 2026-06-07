@@ -1,0 +1,1115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../../../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../../iserver-icon.png"/>
+    
+  <script data-relpath="../../.." src="../../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <meta name="template" content="../../../assets/layouts/SuperMapiServerMain.htt"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Language" content="zh-CN"/>
+  <meta name="topic-check-list" content="Ran Smart Index"/>
+  <meta name="topic-status" content="Complete"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>使用 SLD</title>
+  <link rel="StyleSheet" href="../../../assets/css/SuperMapHelp.css" type="text/css"/>
+  <script type="text/javascript" src="../../../assets/js/shCore.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushBash.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushCpp.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushCSharp.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushCss.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushDelphi.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushDiff.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushGroovy.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushJava.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushJScript.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushPhp.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushPlain.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushPython.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushRuby.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushScala.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushSql.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushVb.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushXml.js"></script>
+  <script type="text/javascript" src="../../../assets/js/ConfigiServer6R.js"></script>
+  <meta name="rh-index-keywords" content="使用 SLD,Rules"/>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../../../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../assets/css/homeButtom.css"/>
+  <script src="../../../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../../../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../../../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../../../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../../../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../../../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../../../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../../../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../../../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <p class="myNormal">SLD（Styled-Layer Descriptor，图层样式表）中定义了可以符号化 WMS 服务的各种样式方案，包括 WMS 服务预定义的样式方案和客户端自定义的样式方案。预定义的样式（STYLES）即内置在 WMS 服务中的 SLD，表现为 Capabilities XML 文档中的 &lt;Style&gt; 节点。除了 WMS 服务预定义的样式，客户端可以对 WMS 服务应用自定义的 SLD，从而对图层进行渲染。用户可通过 <a class="contentpagehyperlink" href="GetMap/GetMap_Operation.htm">GetMap 操作</a>添加相应参数来使用 SLD，SuperMap iServer 目前在 WMS 1.1.1 中支持 SLD 功能，可以为点、线、面及文本图层配置 SLD 信息。两种样式使用方法介绍如下：</p>
+  <ul class="referenceList">
+    <li class="referenceList"><a class="contentpagehyperlink" href="#使用预定义的 STYLES">使用预定义的 STYLES</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="#使用自定义的 STYLES">使用自定义的 STYLES</a></li>
+  </ul>
+  <p class="myNormal">SLD 文件是 XML 格式的，它遵循 <a class="contentpagehyperlink" href="http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd" target="_blank">OGC SLD 标准</a>，从而能够被服务器与客户端所理解。一个 SLD 文件中可以定义多个 SLD 样式。<span style="font-weight:bold;">一个 SLD 样式定义了所指定的一个 WMS 图层的符号化规则（Rule）。</span><span style="font-weight:bold;">一个样式可以有多个规则，每个规则仅可包含一个过滤器（Filter）来描述要渲染哪些要素</span>，并包含多个符号化器（Symbolizer）以描述如何渲染这些要素。</p>
+  <h3><a id="preSTYLES"></a>使用预定义的 STYLES</h3>
+  <p class="myNormal">预定义的 STYLES 内置在 WMS 服务中，表现为 Capabilities XML 文档中的&lt;Style&gt; 节点。有关发布 SLD 为 SuperMap iServer 服务预定义的 STYLES，请参阅<a class="contentpagehyperlink" href="../../../Server_Service_Management/GISService_Config/Service_Config/Config_Interface/interface_setting.htm#添加_WMS_服务">添加 WMS 服务接口</a>。预定义的 STYLES 通过 <a class="contentpagehyperlink" href="GetMap/Getmap_Request.htm#STYLES_style_list">STYLES=style_list 参数对</a>请求，请求方式如下：</p>
+  <p class="myCodeP">&lt;ServiceRoot&gt;?VERSION=version&amp;REQUEST=GetMap&amp;LAYERS=&amp;STYLES=&amp;SRS=&amp;BBOX=&amp;WIDTH</p>
+  <p class="myCodeP">=&amp;HEIGHT=&amp;FORMAT=</p>
+  <p class="myNormal">ServiceRoot 为服务的 URI 根目录，请参见<a class="contentpagehyperlink" href="../../../Service_introduce/URI_Config.htm">服务的 URI 设置</a>。</p>
+  <p class="myNormal">SuperMap iServer 默认包含了一个用于渲染面图层的 SLD 文件：%SuperMap iServer_HOME%\webapps\iserver\WEB-INF\config\region.sld，定义了名称为 World 的 Style，启动 iServer 服务即将其发布为预定义的 STYLE。本机 SuperMap iServer WMS 1.1.1服务启动成功之后，使用该样式的 GetMap 请求的 URI 为：http://localhost:8090/iserver/services/maps/wms111/世界地图_Day?VERSION=1.1.1&amp;REQUEST=GetMap&amp;layers=0.11&amp;STYLES=World&amp;SRS=EPSG:4326&amp;BBOX=-180.0,-90.0,180.0,90.0&amp;WIDTH=800&amp;HEIGHT=400&amp;FORMAT=image/png，该请求的响应结果如下：</p>
+  <p class="ImageP"><img alt="" border="0" height="332" src="../../../assets/images/API/WMS/WMS111/getMap_SLD.png" style="border: none;" width="649"/></p>
+  <h3><a id="customSTYLES"></a>使用自定义的 STYLES</h3>
+  <p class="myNormal">客户端可以对 WMS 服务应用自定义的 SLD，从而对图层进行渲染。使用自定义的 SLD 来渲染图层，有如下两种方式:</p>
+  <p class="myNormal">通过引入 SLD 文档的 URI 来渲染所请求的地图， 即在 GetMap 请求中添加 SLD=sld_xml_uri 参数对。其中 sld_xml_uri 必须能够被 WMS 服务器所访问。请求方式如下：</p>
+  <p class="myCodeP">&lt;ServiceRoot&gt;?VERSION=version&amp;REQUEST=GetMap&amp;LAYERS=&amp;STYLES=&amp;SRS=&amp;BBOX=&amp;WIDTH</p>
+  <p class="myCodeP">=&amp;HEIGHT=&amp;FORMAT=&amp;SLD=</p>
+  <p class="myNormal">ServiceRoot 为服务的 URI 根目录，请参见<a class="contentpagehyperlink" href="../../../Service_introduce/URI_Config.htm">服务的 URI 设置</a>。</p>
+  <p class="myNormal">通过引入 SLD 文档的实际内容来渲染所请求的地图，即在 GetMap 请求中添加 SLD_BODY=sld_xml_body 参数对，其中 sld_body_xml 必须是经过 URI 编码的。请求方式如下：</p>
+  <p class="myCodeP">&lt;ServiceRoot&gt;?VERSION=version&amp;REQUEST=GetMap&amp;LAYERS=&amp;STYLES=&amp;SRS=&amp;BBOX=&amp;WIDTH</p>
+  <p class="myCodeP">=&amp;HEIGHT=&amp;FORMAT=&amp;SLD_BODY=</p>
+  <p class="myNormal">ServiceRoot 为服务的 URI 根目录，请参见<a class="contentpagehyperlink" href="../../../Service_introduce/URI_Config.htm">服务的 URI 设置</a>。</p>
+  <p class="myNormal">如下是一个 SLD 文档的内容：</p>
+  <p class="myCodeP"> &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</p>
+  <p class="myCodeP">&lt;sld:StyledLayerDescriptor xmlns=&quot;http://www.opengis.net/sld&quot;</p>
+  <p class="myCodeP">        xmlns:sld=&quot;http://www.opengis.net/sld&quot; xmlns:ogc=&quot;http://www.opengis.net/ogc&quot;</p>
+  <p class="myCodeP">        xmlns:gml=&quot;http://www.opengis.net/gml&quot; version=&quot;1.0.0&quot;&gt;</p>
+  <p class="myCodeP">        &lt;sld:UserLayer&gt;</p>
+  <p class="myCodeP">                &lt;sld:UserStyle&gt;</p>
+  <p class="myCodeP">                        &lt;sld:Name&gt;lineStyle&lt;/sld:Name&gt;</p>
+  <p class="myCodeP">                        &lt;sld:FeatureTypeStyle&gt;</p>
+  <p class="myCodeP">                                &lt;sld:FeatureTypeName&gt;Feature&lt;/sld:FeatureTypeName&gt;</p>
+  <p class="myCodeP">                                &lt;sld:Rule&gt;</p>
+  <p class="myCodeP">                                        &lt;sld:LineSymbolizer&gt;</p>
+  <p class="myCodeP">                                                &lt;sld:Stroke&gt;</p>
+  <p class="myCodeP">                                                        &lt;sld:CssParameter name=&quot;stroke&quot;&gt;#0000FF</p>
+  <p class="myCodeP">                                                        &lt;/sld:CssParameter&gt;</p>
+  <p class="myCodeP">                                                        &lt;sld:CssParameter name=&quot;stroke-width&quot;&gt;0.1&lt;/sld:CssParameter&gt;</p>
+  <p class="myCodeP">                                                &lt;/sld:Stroke&gt;</p>
+  <p class="myCodeP">                                        &lt;/sld:LineSymbolizer&gt;</p>
+  <p class="myCodeP">                                &lt;/sld:Rule&gt;</p>
+  <p class="myCodeP">                        &lt;/sld:FeatureTypeStyle&gt;</p>
+  <p class="myCodeP">                &lt;/sld:UserStyle&gt;</p>
+  <p class="myCodeP">        &lt;/sld:UserLayer&gt;</p>
+  <p class="myCodeP">&lt;/sld:StyledLayerDescriptor&gt;</p>
+  <p class="myNormal">使用上述 SLD_BODY 的 GetMap 请求示例为：</p>
+  <p class="myNormal"><textarea cols="20" name="textarea" rows="2" style="width: 923px; 
+								 height: 150px;">http://localhost:8090/iserver/services/maps/wms111/World?VERSION=1.1.1&amp;REQUEST=GetMap&amp;LAYERS=0.10&amp;STYLES=lineStyle&amp;SRS=EPSG%3A4326&amp;BBOX=-180.0,-90.0,180.0,90.0&amp;WIDTH=800&amp;HEIGHT=400&amp;FORMAT=image/png&amp;SLD_BODY=%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csld%3AStyledLayerDescriptor%20xmlns%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%22%20xmlns%3Asld%3D%22http%3A%2F%2Fwww.opengis.net%2Fsld%22%20xmlns%3Aogc%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22%20xmlns%3Agml%3D%22http%3A%2F%2Fwww.opengis.net%2Fgml%22%20version%3D%221.0.0%22%3E%3Csld%3AUserLayer%3E%3Csld%3AUserStyle%3E%3Csld%3AName%3ElineStyle%3C%2Fsld%3AName%3E%3Csld%3AFeatureTypeStyle%3E%3Csld%3AFeatureTypeName%3EFeature%3C%2Fsld%3AFeatureTypeName%3E%3Csld%3ARule%3E%3Csld%3ALineSymbolizer%3E%3Csld%3AStroke%3E%3Csld%3ACssParameter%20name%3D%22stroke%22%3E%230000FF%3C%2Fsld%3ACssParameter%3E%3Csld%3ACssParameter%20name%3D%22stroke-width%22%3E0.1%3C%2Fsld%3ACssParameter%3E%3C%2Fsld%3AStroke%3E%3C%2Fsld%3ALineSymbolizer%3E%3C%2Fsld%3ARule%3E%3C%2Fsld%3AFeatureTypeStyle%3E%3C%2Fsld%3AUserStyle%3E%3C%2Fsld%3AUserLayer%3E%3C%2Fsld%3AStyledLayerDescriptor%3E
+    </textarea></p>
+  <p class="myNormal">该请求的响应结果如下，可以看到线图层 OceanBoundary@World 被渲染为了蓝色：</p>
+  <p class="ImageP"><img alt="" border="0" height="336" src="../../../assets/images/API/WMS/WMS111/getMap_SLDBODY.png" style="border: none;" width="649"/></p>
+  <h3><a id="rules"></a>STYLES 与 SLD/SLD_BODY 的匹配规则</h3>
+  <p class="myNormal">在 GetMap 请求中，用户可以指定 STYLES 参数，也可以指定 SLD(SLD_BODY) 参数，二参数的匹配规则如下表。</p>
+  <p class="myNormal" style="text-align: center;">表1 GetMap 请求中 STYLES 与 SLD/SLD_BODY 的匹配关系</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="80%">
+    <colgroup>
+      <col style="width: 20%;"/>
+      <col style="width: 128px;"/>
+      <col style="width: 374px;"/>
+      <col style="width: 40%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td style="text-align: center">
+          <p>请求中是否包含 STYLES=style_list 参数对</p>
+        </td>
+        <td style="text-align: center;">
+          <p>请求中是否包含 SLD=sld_xml_uri(SLD_BODY=sld_xml_body)参数对</p>
+        </td>
+        <td style="text-align: center;">
+          <p>STYLES 中 style name 与 SLD(SLD_BODY)中的 style name 是否匹配</p>
+        </td>
+        <td style="text-align: center">
+          <p>采用何种样式渲染 WMS 地图</p>
+        </td>
+      </tr>
+      <tr class="t2Row">
+        <td>
+          <p style="text-align: center;">是</p>
+        </td>
+        <td style="">
+          <p style="text-align: center;">否</p>
+        </td>
+        <td style="">
+          <p> </p>
+        </td>
+        <td>
+          <p>使用 STYLES 中的 style 渲染 LAYERS=layer_list 中相应的 layer。</p>
+        </td>
+      </tr>
+      <tr class="t1Row">
+        <td>
+          <p style="text-align: center;">是</p>
+        </td>
+        <td style="">
+          <p style="text-align: center;">是</p>
+        </td>
+        <td style="">
+          <p style="text-align: center;">是</p>
+        </td>
+        <td>
+          <p>使用 SLD(SLD_BODY)中的 style 渲染  LAYERS=layer_list 中相应的 layer。</p>
+        </td>
+      </tr>
+      <tr class="t2Row">
+        <td>
+          <p style="text-align: center;">是</p>
+        </td>
+        <td style="">
+          <p style="text-align: center;">是</p>
+        </td>
+        <td style="">
+          <p style="text-align: center;">否</p>
+        </td>
+        <td>
+          <p>使用 STYLES=style_list 中的 style 渲染 LAYERS=layer_list 中相应的 layer。</p>
+        </td>
+      </tr>
+      <tr class="t1Row">
+        <td>
+          <p style="text-align: center;">否</p>
+        </td>
+        <td style="">
+          <p style="text-align: center;">是</p>
+        </td>
+        <td style="">
+          <p> </p>
+        </td>
+        <td>
+          <p>SLD(SLD_BODY)中必须包含 named layer ，使用 SLD(SLD_BODY)中的 style 渲染 SLD(SLD_BODY)中的 named layer 标识的图层。</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h3><a id="filter"></a>SLD 规则中支持的过滤器(Filter)</h3>
+  <p>    iServer 发布的 WMS 1.0.0 服务的服务图层样式描述(SLD) 规则中支持比较运算符、空间运算附和逻辑运算符等三类过滤器(Filter)，用于设置点、线、面图层中指定要素使用的样式，从而将服务中的图层渲染为单值专题图、分段专题图或根据空间查询条件过滤出图。当前支持的 filter 类型具体如下：</p>
+  <ul class="Disc">
+    <li>比较运算符：&lt;PropertyIsEqualTo&gt;、&lt;PropertyIsLessThan&gt;、&lt;PropertyIsLessThanOrEqualTo&gt;、&lt;PropertyIsGreaterThan&gt;、&lt;PropertyIsGreaterThanOrEqualTo&gt;</li>
+    <li>空间运算符：&lt;Intrersects&gt;、&lt;Equals&gt;、&lt;Disjoint&gt;、&lt;Touches&gt;、&lt;Within&gt;、&lt;Overlaps&gt;、&lt;Crosses&gt;、&lt;Contains&gt;、&lt;Dwithin&gt;</li>
+    <li>逻辑运算符：&lt;And&gt;</li>
+  </ul>
+  <div class="pagenotice">
+    <div class="pagecontent"><img align="" class="notice_logo" src="../../../assets/images/notice.png"/> <span class="notice_label">注意事项：</span></div>
+    <div class="notice_content">
+      <p>1、空间运算符只支持在由包含 udbx 和 PostGIS 数据源的工作空间发布的服务中使用，其中 &lt;DWithin&gt; 运算符仅支持 PostGIS 数据源。</p>
+      <p>2、逻辑运算符目前仅支持和比较运算符搭配使用，用于表达属性分段区间，从而进行分段专题图渲染。</p>
+    </div>
+  </div>
+  <p>以单值专题图、分段专题图、多规则单空间查询为例，进行运算符的使用说明：</p>
+  <p>1. 单值专题图</p>
+  <p>对水系面图层中安徽、江苏、湖北等指定省份面要素进行指定样式渲染，SLD 文件如下：</p>
+  <p><textarea cols="20" name="textarea" rows="2" style="width: 923px; 
+								 height: 150px;">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+      &lt;sld:StyledLayerDescriptor version=&quot;1.0.0&quot;
+      xsi:schemaLocation=&quot;http://www.opengis.net/sld StyledLayerDescriptor.xsd&quot;
+      xmlns:sld=&quot;http://www.opengis.net/sld&quot;
+      xmlns:ogc=&quot;http://www.opengis.net/ogc&quot;
+      xmlns:gml=&quot;http://www.opengis.net/gml&quot;
+      xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;
+      xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
+      &lt;sld:NamedLayer&gt;
+      &lt;sld:Name&gt;test&lt;/sld:Name&gt;
+      &lt;sld:UserStyle&gt;
+      &lt;sld:Name&gt;test&lt;/sld:Name&gt;
+      &lt;sld:Title&gt;Star symbol&lt;/sld:Title&gt;
+      &lt;sld:FeatureTypeStyle&gt;
+      &lt;Rule&gt;
+      &lt;Title&gt;Cropland&lt;/Title&gt;
+      &lt;ogc:Filter&gt;
+      &lt;ogc:PropertyIsEqualTo&gt;
+      &lt;ogc:PropertyName&gt;province&lt;/ogc:PropertyName&gt;
+      &lt;ogc:Literal&gt;SHANGHAI&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsEqualTo&gt;
+      &lt;/ogc:Filter&gt;
+      &lt;PolygonSymbolizer&gt;
+      &lt;Fill&gt;
+      &lt;!-- CssParameters allowed are fill (the color) and fill-opacity --&gt;
+      &lt;CssParameter name=&quot;fill&quot;&gt;#ffff00&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;fill-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;/Fill&gt;
+      &lt;Stroke&gt;
+      &lt;CssParameter name=&quot;stroke&quot;&gt;#CC2428&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-width&quot;&gt;0.2&lt;/CssParameter&gt;
+      &lt;/Stroke&gt;
+      &lt;/PolygonSymbolizer&gt;
+      &lt;/Rule&gt; &lt;Rule&gt;
+      &lt;Title&gt;Cropland&lt;/Title&gt;
+      &lt;ogc:Filter&gt;
+      &lt;ogc:PropertyIsEqualTo&gt;
+      &lt;ogc:PropertyName&gt;province&lt;/ogc:PropertyName&gt;
+      &lt;ogc:Literal&gt;JIANGSU&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsEqualTo&gt;
+      &lt;/ogc:Filter&gt;
+      &lt;PolygonSymbolizer&gt;
+      &lt;Fill&gt;
+      &lt;!-- CssParameters allowed are fill (the color) and fill-opacity --&gt;
+      &lt;CssParameter name=&quot;fill&quot;&gt;#730000&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;fill-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;/Fill&gt;
+      &lt;Stroke&gt;
+      &lt;CssParameter name=&quot;stroke&quot;&gt;#c1c0c1&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-width&quot;&gt;0.2&lt;/CssParameter&gt;
+      &lt;/Stroke&gt;
+      &lt;/PolygonSymbolizer&gt;
+      &lt;/Rule&gt; &lt;Rule&gt;
+      &lt;Title&gt;Cropland&lt;/Title&gt;
+      &lt;ogc:Filter&gt;
+      &lt;ogc:PropertyIsEqualTo&gt;
+      &lt;ogc:PropertyName&gt;province&lt;/ogc:PropertyName&gt;
+      &lt;ogc:Literal&gt;ANHUI&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsEqualTo&gt;
+      &lt;/ogc:Filter&gt;
+      &lt;PolygonSymbolizer&gt;
+      &lt;Fill&gt;
+      &lt;!-- CssParameters allowed are fill (the color) and fill-opacity --&gt;
+      &lt;CssParameter name=&quot;fill&quot;&gt;#fa0000&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;fill-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;/Fill&gt;
+      &lt;Stroke&gt;
+      &lt;CssParameter name=&quot;stroke&quot;&gt;#AAc0c0&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-width&quot;&gt;0.2&lt;/CssParameter&gt;
+      &lt;/Stroke&gt;
+      &lt;/PolygonSymbolizer&gt;
+      &lt;/Rule&gt; &lt;Rule&gt;
+      &lt;Title&gt;Cropland&lt;/Title&gt;
+      &lt;ogc:Filter&gt;
+      &lt;ogc:PropertyIsEqualTo&gt;
+      &lt;ogc:PropertyName&gt;province&lt;/ogc:PropertyName&gt;
+      &lt;ogc:Literal&gt;HEILONGJIANG&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsEqualTo&gt;
+      &lt;/ogc:Filter&gt;
+      &lt;PolygonSymbolizer&gt;
+      &lt;Fill&gt;
+      &lt;!-- CssParameters allowed are fill (the color) and fill-opacity --&gt;
+      &lt;CssParameter name=&quot;fill&quot;&gt;#fcfe90&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;fill-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;/Fill&gt;
+      &lt;Stroke&gt;
+      &lt;CssParameter name=&quot;stroke&quot;&gt;#fcfe90&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-width&quot;&gt;0.2&lt;/CssParameter&gt;
+      &lt;/Stroke&gt;
+      &lt;/PolygonSymbolizer&gt;
+      &lt;/Rule&gt;&lt;Rule&gt;
+      &lt;Title&gt;Cropland&lt;/Title&gt;
+      &lt;ogc:Filter&gt;
+      &lt;ogc:PropertyIsEqualTo&gt;
+      &lt;ogc:PropertyName&gt;province&lt;/ogc:PropertyName&gt;
+      &lt;ogc:Literal&gt;SHAN2XI&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsEqualTo&gt;
+      &lt;/ogc:Filter&gt;
+      &lt;PolygonSymbolizer&gt;
+      &lt;Fill&gt;
+      &lt;!-- CssParameters allowed are fill (the color) and fill-opacity --&gt;
+      &lt;CssParameter name=&quot;fill&quot;&gt;#baff75&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;fill-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;/Fill&gt;
+      &lt;Stroke&gt;
+      &lt;CssParameter name=&quot;stroke&quot;&gt;#baff75&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-width&quot;&gt;0.2&lt;/CssParameter&gt;
+      &lt;/Stroke&gt;
+      &lt;/PolygonSymbolizer&gt;
+      &lt;/Rule&gt; &lt;Rule&gt;
+      &lt;Title&gt;Cropland&lt;/Title&gt;
+      &lt;ogc:Filter&gt;
+      &lt;ogc:PropertyIsEqualTo&gt;
+      &lt;ogc:PropertyName&gt;province&lt;/ogc:PropertyName&gt;
+      &lt;ogc:Literal&gt;HUBEI&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsEqualTo&gt;
+      &lt;/ogc:Filter&gt;
+      &lt;PolygonSymbolizer&gt;
+      &lt;Fill&gt;
+      &lt;!-- CssParameters allowed are fill (the color) and fill-opacity --&gt;
+      &lt;CssParameter name=&quot;fill&quot;&gt;#ffff00&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;fill-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;/Fill&gt;
+      &lt;Stroke&gt;
+      &lt;CssParameter name=&quot;stroke&quot;&gt;#ffff00&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-width&quot;&gt;0.2&lt;/CssParameter&gt;
+      &lt;/Stroke&gt;
+      &lt;/PolygonSymbolizer&gt;
+      &lt;/Rule&gt; &lt;Rule&gt;
+      &lt;Title&gt;Cropland&lt;/Title&gt;
+      &lt;ogc:Filter&gt;
+      &lt;ogc:PropertyIsEqualTo&gt;
+      &lt;ogc:PropertyName&gt;province&lt;/ogc:PropertyName&gt;
+      &lt;ogc:Literal&gt;YUNNAN&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsEqualTo&gt;
+      &lt;/ogc:Filter&gt;
+      &lt;PolygonSymbolizer&gt;
+      &lt;Fill&gt;
+      &lt;!-- CssParameters allowed are fill (the color) and fill-opacity --&gt;
+      &lt;CssParameter name=&quot;fill&quot;&gt;#ff7b00&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;fill-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;/Fill&gt;
+      &lt;Stroke&gt;
+      &lt;CssParameter name=&quot;stroke&quot;&gt;#ff7b00&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-width&quot;&gt;0.2&lt;/CssParameter&gt;
+      &lt;/Stroke&gt;
+      &lt;/PolygonSymbolizer&gt;
+      &lt;/Rule&gt; &lt;Rule&gt;
+      &lt;Title&gt;Cropland&lt;/Title&gt;
+      &lt;ogc:Filter&gt;
+      &lt;ogc:PropertyIsEqualTo&gt;
+      &lt;ogc:PropertyName&gt;province&lt;/ogc:PropertyName&gt;
+      &lt;ogc:Literal&gt;LIAONING&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsEqualTo&gt;
+      &lt;/ogc:Filter&gt;
+      &lt;PolygonSymbolizer&gt;
+      &lt;Fill&gt;
+      &lt;!-- CssParameters allowed are fill (the color) and fill-opacity --&gt;
+      &lt;CssParameter name=&quot;fill&quot;&gt;#ffff00&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;fill-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;/Fill&gt;
+      &lt;Stroke&gt;
+      &lt;CssParameter name=&quot;stroke&quot;&gt;#ffff00&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-width&quot;&gt;0.2&lt;/CssParameter&gt;
+      &lt;/Stroke&gt;
+      &lt;/PolygonSymbolizer&gt;
+      &lt;/Rule&gt; &lt;Rule&gt;
+      &lt;Title&gt;Cropland&lt;/Title&gt;
+      &lt;ogc:Filter&gt;
+      &lt;ogc:PropertyIsEqualTo&gt;
+      &lt;ogc:PropertyName&gt;province&lt;/ogc:PropertyName&gt;
+      &lt;ogc:Literal&gt;ZHEJIANG&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsEqualTo&gt;
+      &lt;/ogc:Filter&gt;
+      &lt;PolygonSymbolizer&gt;
+      &lt;Fill&gt;
+      &lt;!-- CssParameters allowed are fill (the color) and fill-opacity --&gt;
+      &lt;CssParameter name=&quot;fill&quot;&gt;#fa0000&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;fill-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;/Fill&gt;
+      &lt;Stroke&gt;
+      &lt;CssParameter name=&quot;stroke&quot;&gt;#fa0000&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-width&quot;&gt;0.2&lt;/CssParameter&gt;
+      &lt;/Stroke&gt;
+      &lt;/PolygonSymbolizer&gt;
+      &lt;/Rule&gt; &lt;Rule&gt;
+      &lt;Title&gt;Cropland&lt;/Title&gt;
+      &lt;ogc:Filter&gt;
+      &lt;ogc:PropertyIsEqualTo&gt;
+      &lt;ogc:PropertyName&gt;province&lt;/ogc:PropertyName&gt;
+      &lt;ogc:Literal&gt;CHONGQIN&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsEqualTo&gt;
+      &lt;/ogc:Filter&gt;
+      &lt;PolygonSymbolizer&gt;
+      &lt;Fill&gt;
+      &lt;!-- CssParameters allowed are fill (the color) and fill-opacity --&gt;
+      &lt;CssParameter name=&quot;fill&quot;&gt;#ff7b00&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;fill-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;/Fill&gt;
+      &lt;Stroke&gt;
+      &lt;CssParameter name=&quot;stroke&quot;&gt;#ff7b00&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-width&quot;&gt;0.2&lt;/CssParameter&gt;
+      &lt;/Stroke&gt;
+      &lt;/PolygonSymbolizer&gt;
+      &lt;/Rule&gt; &lt;Rule&gt;
+      &lt;Title&gt;Cropland&lt;/Title&gt;
+      &lt;ogc:Filter&gt;
+      &lt;ogc:PropertyIsEqualTo&gt;
+      &lt;ogc:PropertyName&gt;province&lt;/ogc:PropertyName&gt;
+      &lt;ogc:Literal&gt;XINJIANG&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsEqualTo&gt;
+      &lt;/ogc:Filter&gt;
+      &lt;PolygonSymbolizer&gt;
+      &lt;Fill&gt;
+      &lt;!-- CssParameters allowed are fill (the color) and fill-opacity --&gt;
+      &lt;CssParameter name=&quot;fill&quot;&gt;#baff75&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;fill-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;/Fill&gt;
+      &lt;Stroke&gt;
+      &lt;CssParameter name=&quot;stroke&quot;&gt;#baff75&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-width&quot;&gt;0.2&lt;/CssParameter&gt;
+      &lt;/Stroke&gt;
+      &lt;/PolygonSymbolizer&gt;
+      &lt;/Rule&gt; &lt;Rule&gt;
+      &lt;Title&gt;Cropland&lt;/Title&gt;
+      &lt;ogc:Filter&gt;
+      &lt;ogc:PropertyIsEqualTo&gt;
+      &lt;ogc:PropertyName&gt;province&lt;/ogc:PropertyName&gt;
+      &lt;ogc:Literal&gt;HEBEI&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsEqualTo&gt;
+      &lt;/ogc:Filter&gt;
+      &lt;PolygonSymbolizer&gt;
+      &lt;Fill&gt;
+      &lt;!-- CssParameters allowed are fill (the color) and fill-opacity --&gt;
+      &lt;CssParameter name=&quot;fill&quot;&gt;#baff75&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;fill-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;/Fill&gt;
+      &lt;Stroke&gt;
+      &lt;CssParameter name=&quot;stroke&quot;&gt;#baff75&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-width&quot;&gt;0.2&lt;/CssParameter&gt;
+      &lt;/Stroke&gt;
+      &lt;/PolygonSymbolizer&gt;
+      &lt;/Rule&gt; &lt;Rule&gt;
+      &lt;Title&gt;Cropland&lt;/Title&gt;
+      &lt;ogc:Filter&gt;
+      &lt;ogc:PropertyIsEqualTo&gt;
+      &lt;ogc:PropertyName&gt;province&lt;/ogc:PropertyName&gt;
+      &lt;ogc:Literal&gt;SHANXI&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsEqualTo&gt;
+      &lt;/ogc:Filter&gt;
+      &lt;PolygonSymbolizer&gt;
+      &lt;Fill&gt;
+      &lt;!-- CssParameters allowed are fill (the color) and fill-opacity --&gt;
+      &lt;CssParameter name=&quot;fill&quot;&gt;#fcfe90&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;fill-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;/Fill&gt;
+      &lt;Stroke&gt;
+      &lt;CssParameter name=&quot;stroke&quot;&gt;#fcfe90&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-width&quot;&gt;0.2&lt;/CssParameter&gt;
+      &lt;/Stroke&gt;
+      &lt;/PolygonSymbolizer&gt;
+      &lt;/Rule&gt; &lt;Rule&gt;
+      &lt;Title&gt;Cropland&lt;/Title&gt;
+      &lt;ogc:Filter&gt;
+      &lt;ogc:PropertyIsEqualTo&gt;
+      &lt;ogc:PropertyName&gt;province&lt;/ogc:PropertyName&gt;
+      &lt;ogc:Literal&gt;TIANJIN&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsEqualTo&gt;
+      &lt;/ogc:Filter&gt;
+      &lt;PolygonSymbolizer&gt;
+      &lt;Fill&gt;
+      &lt;!-- CssParameters allowed are fill (the color) and fill-opacity --&gt;
+      &lt;CssParameter name=&quot;fill&quot;&gt;#007a02&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;fill-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;/Fill&gt;
+      &lt;Stroke&gt;
+      &lt;CssParameter name=&quot;stroke&quot;&gt;#007a02&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-width&quot;&gt;0.2&lt;/CssParameter&gt;
+      &lt;/Stroke&gt;
+      &lt;/PolygonSymbolizer&gt;
+      &lt;/Rule&gt;
+      &lt;/sld:FeatureTypeStyle&gt;
+      &lt;/sld:UserStyle&gt;
+      &lt;/sld:NamedLayer&gt;
+      &lt;/sld:StyledLayerDescriptor&gt;</textarea></p>
+  <p>其中，通过 &lt;ogc:PropertyIsEqualTo&gt; 操作符号来指定符合名称的省份面要素。</p>
+  <p>2. 分段专题图</p>
+  <p>对水系面图层中不同面积大小的省份面要素进行指定样式渲染，SLD 文件如下：</p>
+  <p><textarea cols="20" name="textarea" rows="2" style="width: 923px; 
+								 height: 150px;">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+      &lt;sld:StyledLayerDescriptor version=&quot;1.0.0&quot;
+      xsi:schemaLocation=&quot;http://www.opengis.net/sld StyledLayerDescriptor.xsd&quot;
+      xmlns:sld=&quot;http://www.opengis.net/sld&quot;
+      xmlns:ogc=&quot;http://www.opengis.net/ogc&quot;
+      xmlns:gml=&quot;http://www.opengis.net/gml&quot;
+      xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;
+      xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
+      &lt;sld:NamedLayer&gt;
+      &lt;sld:Name&gt;test&lt;/sld:Name&gt;
+      &lt;sld:UserStyle&gt;
+      &lt;sld:Name&gt;test&lt;/sld:Name&gt;
+      &lt;sld:Title&gt;Star symbol&lt;/sld:Title&gt;
+      &lt;sld:FeatureTypeStyle&gt;
+      &lt;Rule&gt;
+      &lt;Title&gt;Cropland&lt;/Title&gt;
+      &lt;ogc:Filter&gt;
+      &lt;ogc:PropertyIsLessThan&gt;
+      &lt;ogc:PropertyName&gt;smarea&lt;/ogc:PropertyName&gt;
+      &lt;ogc:Literal&gt;2000&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsLessThan&gt;
+      &lt;/ogc:Filter&gt;
+      &lt;PolygonSymbolizer&gt;
+      &lt;Fill&gt;
+      &lt;!-- CssParameters allowed are fill (the color) and fill-opacity --&gt;
+      &lt;CssParameter name=&quot;fill&quot;&gt;#ffff00&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;fill-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;/Fill&gt;
+      &lt;Stroke&gt;
+      &lt;CssParameter name=&quot;stroke&quot;&gt;#CC2428&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-width&quot;&gt;0.2&lt;/CssParameter&gt;
+      &lt;/Stroke&gt;
+      &lt;/PolygonSymbolizer&gt;
+      &lt;/Rule&gt; &lt;Rule&gt;
+      &lt;Title&gt;Cropland&lt;/Title&gt;
+      &lt;ogc:Filter&gt;
+      &lt;ogc:And&gt;
+      &lt;ogc:PropertyIsGreaterThan&gt;
+      &lt;ogc:PropertyName&gt;smarea&lt;/ogc:PropertyName&gt;
+      &lt;ogc:Literal&gt;2000&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsGreaterThan&gt;
+      &lt;ogc:PropertyIsLessThan&gt;
+      &lt;ogc:PropertyName&gt;smarea&lt;/ogc:PropertyName&gt;
+      &lt;ogc:Literal&gt;20000&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsLessThan&gt;
+      &lt;/ogc:And&gt;
+      &lt;/ogc:Filter&gt;
+      &lt;PolygonSymbolizer&gt;
+      &lt;Fill&gt;
+      &lt;!-- CssParameters allowed are fill (the color) and fill-opacity --&gt;
+      &lt;CssParameter name=&quot;fill&quot;&gt;#730000&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;fill-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;/Fill&gt;
+      &lt;Stroke&gt;
+      &lt;CssParameter name=&quot;stroke&quot;&gt;#c1c0c1&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-width&quot;&gt;0.2&lt;/CssParameter&gt;
+      &lt;/Stroke&gt;
+      &lt;/PolygonSymbolizer&gt;
+      &lt;/Rule&gt; &lt;Rule&gt;
+      &lt;Title&gt;Cropland&lt;/Title&gt;
+      &lt;ogc:Filter&gt;
+      &lt;ogc:And&gt;
+      &lt;ogc:PropertyIsGreaterThan&gt;
+      &lt;ogc:PropertyName&gt;smarea&lt;/ogc:PropertyName&gt;
+      &lt;ogc:Literal&gt;20000&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsGreaterThan&gt;
+      &lt;ogc:PropertyIsLessThan&gt;
+      &lt;ogc:PropertyName&gt;smarea&lt;/ogc:PropertyName&gt;
+      &lt;ogc:Literal&gt;60000&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsLessThan&gt;
+      &lt;/ogc:And&gt;
+      &lt;/ogc:Filter&gt;
+      &lt;PolygonSymbolizer&gt;
+      &lt;Fill&gt;
+      &lt;!-- CssParameters allowed are fill (the color) and fill-opacity --&gt;
+      &lt;CssParameter name=&quot;fill&quot;&gt;#fa0000&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;fill-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;/Fill&gt;
+      &lt;Stroke&gt;
+      &lt;CssParameter name=&quot;stroke&quot;&gt;#AAc0c0&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-width&quot;&gt;0.2&lt;/CssParameter&gt;
+      &lt;/Stroke&gt;
+      &lt;/PolygonSymbolizer&gt;
+      &lt;/Rule&gt; &lt;Rule&gt;
+      &lt;Title&gt;Cropland&lt;/Title&gt;
+      &lt;ogc:Filter&gt;
+      &lt;ogc:And&gt;
+      &lt;ogc:PropertyIsGreaterThan&gt;
+      &lt;ogc:PropertyName&gt;smarea&lt;/ogc:PropertyName&gt;
+      &lt;ogc:Literal&gt;60000&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsGreaterThan&gt;
+      &lt;ogc:PropertyIsLessThan&gt;
+      &lt;ogc:PropertyName&gt;smarea&lt;/ogc:PropertyName&gt;
+      &lt;ogc:Literal&gt;100000&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsLessThan&gt;
+      &lt;/ogc:And&gt;
+      &lt;/ogc:Filter&gt;
+      &lt;PolygonSymbolizer&gt;
+      &lt;Fill&gt;
+      &lt;!-- CssParameters allowed are fill (the color) and fill-opacity --&gt;
+      &lt;CssParameter name=&quot;fill&quot;&gt;#fcfe90&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;fill-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;/Fill&gt;
+      &lt;Stroke&gt;
+      &lt;CssParameter name=&quot;stroke&quot;&gt;#fcfe90&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-width&quot;&gt;0.2&lt;/CssParameter&gt;
+      &lt;/Stroke&gt;
+      &lt;/PolygonSymbolizer&gt;
+      &lt;/Rule&gt;&lt;Rule&gt;
+      &lt;Title&gt;Cropland&lt;/Title&gt;
+      &lt;ogc:Filter&gt;
+      &lt;ogc:And&gt;
+      &lt;ogc:PropertyIsGreaterThan&gt;
+      &lt;ogc:PropertyName&gt;smarea&lt;/ogc:PropertyName&gt;
+      &lt;ogc:Literal&gt;100000&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsGreaterThan&gt;
+      &lt;ogc:PropertyIsLessThan&gt;
+      &lt;ogc:PropertyName&gt;smarea&lt;/ogc:PropertyName&gt;
+      &lt;ogc:Literal&gt;200000&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsLessThan&gt;
+      &lt;/ogc:And&gt;
+      &lt;/ogc:Filter&gt;
+      &lt;PolygonSymbolizer&gt;
+      &lt;Fill&gt;
+      &lt;!-- CssParameters allowed are fill (the color) and fill-opacity --&gt;
+      &lt;CssParameter name=&quot;fill&quot;&gt;#baff75&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;fill-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;/Fill&gt;
+      &lt;Stroke&gt;
+      &lt;CssParameter name=&quot;stroke&quot;&gt;#baff75&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-width&quot;&gt;0.2&lt;/CssParameter&gt;
+      &lt;/Stroke&gt;
+      &lt;/PolygonSymbolizer&gt;
+      &lt;/Rule&gt; &lt;Rule&gt;
+      &lt;Title&gt;Cropland&lt;/Title&gt;
+      &lt;ogc:Filter&gt;
+      &lt;ogc:And&gt;
+      &lt;ogc:PropertyIsGreaterThan&gt;
+      &lt;ogc:PropertyName&gt;smarea&lt;/ogc:PropertyName&gt;
+      &lt;ogc:Literal&gt;200000&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsGreaterThan&gt;
+      &lt;ogc:PropertyIsLessThan&gt;
+      &lt;ogc:PropertyName&gt;smarea&lt;/ogc:PropertyName&gt;
+      &lt;ogc:Literal&gt;600000&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsLessThan&gt;
+      &lt;/ogc:And&gt;
+      &lt;/ogc:Filter&gt;
+      &lt;PolygonSymbolizer&gt;
+      &lt;Fill&gt;
+      &lt;!-- CssParameters allowed are fill (the color) and fill-opacity --&gt;
+      &lt;CssParameter name=&quot;fill&quot;&gt;#ffff00&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;fill-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;/Fill&gt;
+      &lt;Stroke&gt;
+      &lt;CssParameter name=&quot;stroke&quot;&gt;#ffff00&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-width&quot;&gt;0.2&lt;/CssParameter&gt;
+      &lt;/Stroke&gt;
+      &lt;/PolygonSymbolizer&gt;
+      &lt;/Rule&gt; &lt;Rule&gt;
+      &lt;Title&gt;Cropland&lt;/Title&gt;
+      &lt;ogc:Filter&gt;
+      &lt;ogc:And&gt;
+      &lt;ogc:PropertyIsGreaterThan&gt;
+      &lt;ogc:PropertyName&gt;smarea&lt;/ogc:PropertyName&gt;
+      &lt;ogc:Literal&gt;600000&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsGreaterThan&gt;
+      &lt;ogc:PropertyIsLessThan&gt;
+      &lt;ogc:PropertyName&gt;smarea&lt;/ogc:PropertyName&gt;
+      &lt;ogc:Literal&gt;800000&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsLessThan&gt;
+      &lt;/ogc:And&gt;
+      &lt;/ogc:Filter&gt;
+      &lt;PolygonSymbolizer&gt;
+      &lt;Fill&gt;
+      &lt;!-- CssParameters allowed are fill (the color) and fill-opacity --&gt;
+      &lt;CssParameter name=&quot;fill&quot;&gt;#ff7b00&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;fill-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;/Fill&gt;
+      &lt;Stroke&gt;
+      &lt;CssParameter name=&quot;stroke&quot;&gt;#ff7b00&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-width&quot;&gt;0.2&lt;/CssParameter&gt;
+      &lt;/Stroke&gt;
+      &lt;/PolygonSymbolizer&gt;
+      &lt;/Rule&gt; &lt;Rule&gt;
+      &lt;Title&gt;Cropland&lt;/Title&gt;
+      &lt;ogc:Filter&gt;
+      &lt;ogc:And&gt;
+      &lt;ogc:PropertyIsGreaterThan&gt;
+      &lt;ogc:PropertyName&gt;smarea&lt;/ogc:PropertyName&gt;
+      &lt;ogc:Literal&gt;800000&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsGreaterThan&gt;
+      &lt;ogc:PropertyIsLessThan&gt;
+      &lt;ogc:PropertyName&gt;smarea&lt;/ogc:PropertyName&gt;
+      &lt;ogc:Literal&gt;1000000&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsLessThan&gt;
+      &lt;/ogc:And&gt;
+      &lt;/ogc:Filter&gt;
+      &lt;PolygonSymbolizer&gt;
+      &lt;Fill&gt;
+      &lt;!-- CssParameters allowed are fill (the color) and fill-opacity --&gt;
+      &lt;CssParameter name=&quot;fill&quot;&gt;#ffff00&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;fill-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;/Fill&gt;
+      &lt;Stroke&gt;
+      &lt;CssParameter name=&quot;stroke&quot;&gt;#ffff00&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-width&quot;&gt;0.2&lt;/CssParameter&gt;
+      &lt;/Stroke&gt;
+      &lt;/PolygonSymbolizer&gt;
+      &lt;/Rule&gt; &lt;Rule&gt;
+      &lt;Title&gt;Cropland&lt;/Title&gt;
+      &lt;ogc:Filter&gt;
+      &lt;ogc:And&gt;
+      &lt;ogc:PropertyIsGreaterThan&gt;
+      &lt;ogc:PropertyName&gt;smarea&lt;/ogc:PropertyName&gt;
+      &lt;ogc:Literal&gt;1000000&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsGreaterThan&gt;
+      &lt;ogc:PropertyIsLessThan&gt;
+      &lt;ogc:PropertyName&gt;smarea&lt;/ogc:PropertyName&gt;
+      &lt;ogc:Literal&gt;2000000&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsLessThan&gt;
+      &lt;/ogc:And&gt;
+      &lt;/ogc:Filter&gt;
+      &lt;PolygonSymbolizer&gt;
+      &lt;Fill&gt;
+      &lt;!-- CssParameters allowed are fill (the color) and fill-opacity --&gt;
+      &lt;CssParameter name=&quot;fill&quot;&gt;#fa0000&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;fill-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;/Fill&gt;
+      &lt;Stroke&gt;
+      &lt;CssParameter name=&quot;stroke&quot;&gt;#fa0000&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-width&quot;&gt;0.2&lt;/CssParameter&gt;
+      &lt;/Stroke&gt;
+      &lt;/PolygonSymbolizer&gt;
+      &lt;/Rule&gt; &lt;Rule&gt;
+      &lt;Title&gt;Cropland&lt;/Title&gt;
+      &lt;ogc:Filter&gt;
+      &lt;ogc:And&gt;
+      &lt;ogc:PropertyIsGreaterThan&gt;
+      &lt;ogc:PropertyName&gt;smarea&lt;/ogc:PropertyName&gt;
+      &lt;ogc:Literal&gt;2000000&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsGreaterThan&gt;
+      &lt;ogc:PropertyIsLessThan&gt;
+      &lt;ogc:PropertyName&gt;smarea&lt;/ogc:PropertyName&gt;
+      &lt;ogc:Literal&gt;4000000&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsLessThan&gt;
+      &lt;/ogc:And&gt;
+      &lt;/ogc:Filter&gt;
+      &lt;PolygonSymbolizer&gt;
+      &lt;Fill&gt;
+      &lt;!-- CssParameters allowed are fill (the color) and fill-opacity --&gt;
+      &lt;CssParameter name=&quot;fill&quot;&gt;#ff7b00&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;fill-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;/Fill&gt;
+      &lt;Stroke&gt;
+      &lt;CssParameter name=&quot;stroke&quot;&gt;#ff7b00&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-width&quot;&gt;0.2&lt;/CssParameter&gt;
+      &lt;/Stroke&gt;
+      &lt;/PolygonSymbolizer&gt;
+      &lt;/Rule&gt; &lt;Rule&gt;
+      &lt;Title&gt;Cropland&lt;/Title&gt;
+      &lt;ogc:Filter&gt;
+      &lt;ogc:And&gt;
+      &lt;ogc:PropertyIsGreaterThan&gt;
+      &lt;ogc:PropertyName&gt;smarea&lt;/ogc:PropertyName&gt;
+      &lt;ogc:Literal&gt;4000000&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsGreaterThan&gt;
+      &lt;ogc:PropertyIsLessThan&gt;
+      &lt;ogc:PropertyName&gt;smarea&lt;/ogc:PropertyName&gt;
+      &lt;ogc:Literal&gt;8000000&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsLessThan&gt;
+      &lt;/ogc:And&gt;
+      &lt;/ogc:Filter&gt;
+      &lt;PolygonSymbolizer&gt;
+      &lt;Fill&gt;
+      &lt;!-- CssParameters allowed are fill (the color) and fill-opacity --&gt;
+      &lt;CssParameter name=&quot;fill&quot;&gt;#baff75&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;fill-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;/Fill&gt;
+      &lt;Stroke&gt;
+      &lt;CssParameter name=&quot;stroke&quot;&gt;#baff75&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-width&quot;&gt;0.2&lt;/CssParameter&gt;
+      &lt;/Stroke&gt;
+      &lt;/PolygonSymbolizer&gt;
+      &lt;/Rule&gt; &lt;Rule&gt;
+      &lt;Title&gt;Cropland&lt;/Title&gt;
+      &lt;ogc:Filter&gt;
+      &lt;ogc:And&gt;
+      &lt;ogc:PropertyIsGreaterThan&gt;
+      &lt;ogc:PropertyName&gt;smarea&lt;/ogc:PropertyName&gt;
+      &lt;ogc:Literal&gt;8000000&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsGreaterThan&gt;
+      &lt;ogc:PropertyIsLessThan&gt;
+      &lt;ogc:PropertyName&gt;smarea&lt;/ogc:PropertyName&gt;
+      &lt;ogc:Literal&gt;9000000&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsLessThan&gt;
+      &lt;/ogc:And&gt;
+      &lt;/ogc:Filter&gt;
+      &lt;PolygonSymbolizer&gt;
+      &lt;Fill&gt;
+      &lt;!-- CssParameters allowed are fill (the color) and fill-opacity --&gt;
+      &lt;CssParameter name=&quot;fill&quot;&gt;#baff75&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;fill-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;/Fill&gt;
+      &lt;Stroke&gt;
+      &lt;CssParameter name=&quot;stroke&quot;&gt;#baff75&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-width&quot;&gt;0.2&lt;/CssParameter&gt;
+      &lt;/Stroke&gt;
+      &lt;/PolygonSymbolizer&gt;
+      &lt;/Rule&gt; &lt;Rule&gt;
+      &lt;Title&gt;Cropland&lt;/Title&gt;
+      &lt;ogc:Filter&gt;
+      &lt;ogc:And&gt;
+      &lt;ogc:PropertyIsGreaterThan&gt;
+      &lt;ogc:PropertyName&gt;smarea&lt;/ogc:PropertyName&gt;
+      &lt;ogc:Literal&gt;9000000&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsGreaterThan&gt;
+      &lt;ogc:PropertyIsLessThan&gt;
+      &lt;ogc:PropertyName&gt;smarea&lt;/ogc:PropertyName&gt;
+      &lt;ogc:Literal&gt;10000000&lt;/ogc:Literal&gt;
+      &lt;/ogc:PropertyIsLessThan&gt;
+      &lt;/ogc:And&gt;
+      &lt;/ogc:Filter&gt;
+      &lt;PolygonSymbolizer&gt;
+      &lt;Fill&gt;
+      &lt;!-- CssParameters allowed are fill (the color) and fill-opacity --&gt;
+      &lt;CssParameter name=&quot;fill&quot;&gt;#fcfe90&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;fill-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;/Fill&gt;
+      &lt;Stroke&gt;
+      &lt;CssParameter name=&quot;stroke&quot;&gt;#fcfe90&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-opacity&quot;&gt;1&lt;/CssParameter&gt;
+      &lt;CssParameter name=&quot;stroke-width&quot;&gt;0.2&lt;/CssParameter&gt;
+      &lt;/Stroke&gt;
+      &lt;/PolygonSymbolizer&gt;
+      &lt;/Rule&gt;
+      &lt;/sld:FeatureTypeStyle&gt;
+      &lt;/sld:UserStyle&gt;
+      &lt;/sld:NamedLayer&gt;
+      &lt;/sld:StyledLayerDescriptor&gt;</textarea></p>
+  <p>其中，通过 &lt;ogc:And&gt;、&lt;ogc:PropertyIsGreaterThan&gt; 和 &lt;ogc:PropertyIsLessThan&gt; 来指定符合面积值区间的省份面要素。</p>
+  <div class="pagenotice">
+    <div class="pagecontent"><img align="" class="notice_logo" src="../../../assets/images/notice.png"/> <span class="notice_label">注意事项：</span></div>
+    <div class="notice_content">
+      <p>在为分段专题图定义属性区间时，必须通过2个及以上的规则进行定义，并且需要定义区间的下限值，每个相邻区间的上限值和下限值需一致</p>
+    </div>
+  </div>
+  <p>3. 多规则单空间查询</p>
+  <p>对水系面图层中查询与指定的多个线面图斑分别具有相交、重叠和相邻的省份面要素进行指定样式渲染，SLD 文件如下：</p>
+  <p><textarea cols="20" name="textarea" rows="2" style="width: 923px; 
+								 height: 150px;">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+      &lt;sld:StyledLayerDescriptor version=&quot;1.0.0&quot;
+      xsi:schemaLocation=&quot;http://www.opengis.net/sld StyledLayerDescriptor.xsd&quot;
+      xmlns:sld=&quot;http://www.opengis.net/sld&quot;
+      xmlns:ogc=&quot;http://www.opengis.net/ogc&quot;
+      xmlns:gml=&quot;http://www.opengis.net/gml&quot;
+      xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;
+      xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
+      &lt;sld:NamedLayer&gt;
+      &lt;sld:Name&gt;test&lt;/sld:Name&gt;
+      &lt;sld:UserStyle&gt;
+      &lt;sld:Name&gt;test&lt;/sld:Name&gt;
+      &lt;sld:Title&gt;Star symbol&lt;/sld:Title&gt;
+      &lt;sld:FeatureTypeStyle&gt;
+      &lt;sld:Rule&gt;
+      &lt;Title&gt;Cropland&lt;/Title&gt;
+      &lt;ogc:Filter&gt;
+      &lt;Intersects&gt;
+      &lt;gml:Polygon srsName=&quot;EPSG:4326&quot;&gt;
+      &lt;gml:outerBoundaryIs&gt;
+      &lt;gml:LinearRing&gt;
+      &lt;gml:coordinates&gt;97.4799677482261,32.70248323483345 99.97311394369613,36.11415697600297 116.24417332465839,36.37659341763138 114.60394556448074,26.141572194122872 97.4799677482261,32.70248323483345&lt;/gml:coordinates&gt;
+      &lt;/gml:LinearRing&gt;
+      &lt;/gml:outerBoundaryIs&gt;
+      &lt;/gml:Polygon&gt;
+      &lt;/Intersects&gt;
+      &lt;/ogc:Filter&gt;
+      &lt;sld:PolygonSymbolizer&gt;
+      &lt;sld:Name&gt;test&lt;/sld:Name&gt;
+      &lt;sld:Stroke&gt;
+      &lt;sld:CssParameter name=&quot;stroke&quot;&gt;#00FF00&lt;/sld:CssParameter&gt;
+      &lt;sld:CssParameter name=&quot;stroke-width&quot;&gt;1&lt;/sld:CssParameter&gt;
+      &lt;sld:CssParameter name=&quot;stroke-opacity&quot;&gt;1&lt;/sld:CssParameter&gt;
+      &lt;/sld:Stroke&gt;
+      &lt;sld:Fill&gt;
+      &lt;sld:CssParameter name=&quot;fill&quot;&gt;#00FF00&lt;/sld:CssParameter&gt;
+      &lt;sld:CssParameter name=&quot;fill-opacity&quot;&gt;1&lt;/sld:CssParameter&gt;
+      &lt;/sld:Fill&gt;
+      &lt;/sld:PolygonSymbolizer&gt;
+      &lt;/sld:Rule&gt;
+      &lt;sld:Rule&gt;
+      &lt;Title&gt;Cropland&lt;/Title&gt;
+      &lt;ogc:Filter&gt;
+      &lt;Touches&gt;
+      &lt;gml:Point srsName=&quot;EPSG:4326&quot;&gt;
+      &lt;gml:coordinates&gt;100.00146741361112,37.16695551124773&lt;/gml:coordinates&gt;
+      &lt;/gml:Point&gt;
+      &lt;/Touches&gt;
+      &lt;/ogc:Filter&gt;
+      &lt;sld:PolygonSymbolizer&gt;
+      &lt;sld:Name&gt;test&lt;/sld:Name&gt;
+      &lt;sld:Stroke&gt;
+      &lt;sld:CssParameter name=&quot;stroke&quot;&gt;#F00F45&lt;/sld:CssParameter&gt;
+      &lt;sld:CssParameter name=&quot;stroke-width&quot;&gt;1&lt;/sld:CssParameter&gt;
+      &lt;sld:CssParameter name=&quot;stroke-opacity&quot;&gt;1&lt;/sld:CssParameter&gt;
+      &lt;/sld:Stroke&gt;
+      &lt;sld:Fill&gt;
+      &lt;sld:CssParameter name=&quot;fill&quot;&gt;#F00F45&lt;/sld:CssParameter&gt;
+      &lt;sld:CssParameter name=&quot;fill-opacity&quot;&gt;1&lt;/sld:CssParameter&gt;
+      &lt;/sld:Fill&gt;
+      &lt;/sld:PolygonSymbolizer&gt;
+      &lt;/sld:Rule&gt;
+      &lt;sld:Rule&gt;
+      &lt;Title&gt;Cropland&lt;/Title&gt;
+      &lt;ogc:Filter&gt;
+      &lt;Overlaps&gt;
+      &lt;ogc:PropertyName&gt;smgeometry&lt;/ogc:PropertyName&gt;
+      &lt;gml:Polygon srsName=&quot;EPSG:4326&quot;&gt;
+      &lt;gml:outerBoundaryIs&gt;
+      &lt;gml:LinearRing&gt;
+      &lt;gml:coordinates&gt;97.6063571385142,38.366008609582124 90.921576097355,40.2807448877031 89.44353405810372,37.559803860899606 97.6063571385142,38.366008609582124&lt;/gml:coordinates&gt;
+      &lt;/gml:LinearRing&gt;
+      &lt;/gml:outerBoundaryIs&gt;
+      &lt;/gml:Polygon&gt;
+      &lt;/Overlaps&gt;
+      &lt;/ogc:Filter&gt;
+      &lt;sld:PolygonSymbolizer&gt;
+      &lt;sld:Name&gt;test&lt;/sld:Name&gt;
+      &lt;sld:Stroke&gt;
+      &lt;sld:CssParameter name=&quot;stroke&quot;&gt;#F0FF45&lt;/sld:CssParameter&gt;
+      &lt;sld:CssParameter name=&quot;stroke-width&quot;&gt;1&lt;/sld:CssParameter&gt;
+      &lt;sld:CssParameter name=&quot;stroke-opacity&quot;&gt;1&lt;/sld:CssParameter&gt;
+      &lt;/sld:Stroke&gt;
+      &lt;sld:Fill&gt;
+      &lt;sld:CssParameter name=&quot;fill&quot;&gt;#F0FF45&lt;/sld:CssParameter&gt;
+      &lt;sld:CssParameter name=&quot;fill-opacity&quot;&gt;1&lt;/sld:CssParameter&gt;
+      &lt;/sld:Fill&gt;
+      &lt;/sld:PolygonSymbolizer&gt;
+      &lt;/sld:Rule&gt;
+      &lt;/sld:FeatureTypeStyle&gt;
+      &lt;/sld:UserStyle&gt;
+      &lt;/sld:NamedLayer&gt;
+      &lt;/sld:StyledLayerDescriptor&gt;</textarea></p>
+  <p class="myNormal">其中，通过 &lt;Intersects&gt;、&lt;Touches&gt; 和 &lt;Overlaps&gt; 来指定符合空间关系的省份面要素。</p>
+
+</div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../../../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../../../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../../../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../../../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../../../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../../../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../../../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../../.."
+    gCommonRootRelPath = "../../.."
+    gTopicId = "8.3.1.1.5"
+  
+//]]></script>
+
+  <script src="../../../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../../../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../../../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../../../whxdata/layoutconfig.js"></script>
+  <script src="../../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

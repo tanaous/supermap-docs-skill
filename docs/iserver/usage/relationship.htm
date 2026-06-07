@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../iserver-icon.png"/>
+    
+  <script data-relpath=".." src="../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+<meta name="template" content="../assets/layouts/SuperMapiServerMain.htt"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="Content-Language" content="zh-CN"/>
+<meta name="topic-check-list" content="Ran Smart Index"/>
+<meta name="topic-status" content="Complete"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>各层次的交互关系</title>
+<link rel="StyleSheet" href="../assets/css/SuperMapHelp.css" type="text/css"/>
+<meta name="rh-index-keywords" content="各层次的交互关系"/><meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../assets/css/homeButtom.css"/>
+  <script src="../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+<p class="myNormal">SuperMap iServer 通过依赖注入和配置文件对服务器三层结构的模块进行组织与管理，支持在 SuperMap iServer 服务器任意层次进行服务扩展，发布基于网络的、遵循各种协议、能够实现各种 GIS 功能的 GIS 服务。</p>
+<h3>各层次间通过接口实现通讯契约</h3>
+<p class="myNormal">SuperMap iServer 三层次间通过接口实现通讯契约，由于接口不会轻易改变，如果一个层的代码发生变化，不会影响其它层的功能；只要实现接口的组件功能正确，那么 GIS 服务就能正常提供 GIS 功能。这种做法使得各层之间的影响降低到最低程度，也为用户做自定义组件扩展提供了良好的框架。</p>
+<h3>各层次模块通过配置文件动态对下层模块实施依赖注入</h3>
+<p class="myNormal">服务提供者与服务组件、服务接口之间具有松耦合关系，组件与服务提供者之间并不存在绑定关系，接口与组件之间也不具有绑定关系。三者之间关系主要由配置文件对三者关系的描述来决定，SuperMap iServer 服务器在运行的时候根据依赖注入的方式对三者进行组织，形成一整套 GIS 服务。</p>
+<p class="myNormal">在理解 SuperMap iServer 体系结构中各层次交互关系之前，先来清晰几个概念：</p>
+<table class="iServerTable" cellspacing="0" align="center" width="70%">
+<colgroup><col style="width: 30%;"/>
+<col style="width: 70%;"/>
+</colgroup><tbody><tr class="t1st">
+<td>名称</td>
+<td>解释</td>
+</tr>
+<tr class="t2Row">
+<td>GIS 应用</td>
+<td>
+<p class="myNormal">GIS 应用是针对特定的业务数据提供一系列专有的 GIS 服务的集合。GIS 应用中包括服务提供者，GIS 服务组件和服务接口三个组成部分，三部分相互组合形成一系列专有的 GIS 服务。服务提供者提供 GIS 功能的实现或者提供与第三方 GIS 服务的联系，业务数据在这个模块中被处理。GIS 服务组件对服务提供者进行二次封装，形成适当粒度的 GIS 服务组件，服务接口提供入口点，服务使用者可以使用该入口访问服务所提供的功能。</p>
+</td>
+</tr>
+<tr class="t1Row">
+<td>GIS 服务</td>
+<td>
+<p class="myNormal">GIS 服务是一种形态，经过 GIS 应用中 GIS 服务组件、服务提供者和服务接口的相互作用，最终以 GIS 服务的形态提供给 GIS 应用的客户端。</p>
+<p class="myNormal">SuperMap iServer 的 GIS 服务按照 GIS 功能可以划分为基础地图服务、空间分析服务、三维服务以及数据管理服务。这些服务都是分别由各自类型的 GIS 服务组件、服务提供者组合而成。</p>
+<p class="myNormal">SuperMap iServer 的 GIS 服务按照发布协议可以划分为 REST 服务，SOAP 服务，WMS 服务，RMI 服务等。这些都是基于不同的服务接口实现的。</p>
+<p class="myNormal">一个 GIS 应用发布出的 GIS 服务是按照 GIS 功能和发布协议划分其 GIS 服务性质的，如 REST 风格的基础地图服务，REST 风格的空间分析服务等。</p>
+</td>
+</tr>
+<tr class="t2Row">
+<td>服务提供者集合</td>
+<td>
+<p class="myNormal">服务提供者集合是将若干服务提供者作为一个整体，为 GIS 服务组件提供 GIS 功能的处理。服务提供者集合具有如下特点：</p>
+<ol style="list-style: decimal;">
+<li>
+<p class="myNormal">服务提供者集合中的服务提供者是可控的，即可以控制该集合中哪些服务提供者可以提供他们的 GIS 服务能力。</p>
+</li>
+<li>
+<p class="myNormal">服务提供者集合作为一个整体允许被 GIS 服务组件使用，GIS 服务组件调用该服务提供者集合，意味着可以使用该集合中所有可用的服务提供者。</p>
+</li>
+</ol>
+</td>
+</tr>
+<tr class="t1Row">
+<td>GIS 服务组件集合</td>
+<td>
+<p class="myNormal">GIS 服务组件集合是将多个 GIS 服务组件汇集在一个集合中，通过服务接口进行 GIS 服务的发布。客户端只需要访问 GIS 服务组件集合可以获得该集合中所有的 GIS 服务。GIS 服务组件集合中的 GIS 服务组件可以是任意类型的。</p>
+<p class="myNormal">GIS 服务组件集合目的是为了使多个 GIS 服务组件能够集中发布，客户端通过一个访问地址即可获取多种 GIS 服务。</p>
+</td>
+</tr>
+</tbody></table>
+<p class="myNormal"> </p>
+<p class="myNormal">上文已经介绍，SuperMap iServer 的 GIS 服务是由服务接口、服务提供者以及 GIS 服务组件三个层次上的对应模块共同作用的结果。如下图，图中表达了某一个 GIS 应用的组成内容。</p>
+<ul style="list-style: disc;" class="SymbolList1">
+<li class="SymbolList1">
+<p>GIS 应用可以发布某一个单独的 GIS 服务</p>
+</li>
+</ul>
+<p class="myNormal">例如下图中，将 GIS 服务组件-CP1所提供的长春市的数据管理服务通过服务接口-REST Servlet 发布为 REST 风格的数据管理服务。将 GIS 服务组件-CP2所提供的长春市的基础地图服务通过服务接口-REST Servlet 和 WMS Servlet 分别发布为 REST 风格和 WMS 类型的长春地图服务。</p>
+<ul style="list-style: disc;" class="SymbolList1">
+<li class="SymbolList1">
+<p>GIS 应用可以发布一组 GIS 服务</p>
+</li>
+</ul>
+<p class="myNormal">如下图中，将 GIS 服务组件集合-CPS1所提供的 CP1和 CP2的所有服务通过服务接口-REST Servlet 和 WMS Servlet 分别发布为 REST 风格的长春地图服务、长春数据管理服务，WMS 类型的长春地图服务。</p>
+<ul style="list-style: disc;" class="SymbolList1">
+<li class="SymbolList1">
+<p>服务接口与 GIS 服务组件之间具有选择性</p>
+</li>
+</ul>
+<p class="myNormal">服务接口会选择有效的服务组件或者服务组件集合中的服务进行发布，如下图中，REST Servlet 服务接口能够将所有类型的 GIS 服务组件通过 REST 服务接口发布成 REST 风格的服务，而 WMS Servlet 是遵循 WMS 规范的一种服务接口，它通常仅能将地图服务类型的 GIS 服务组件发布为 WMS 服务，因此下图中 WMS Serlvet 将 Map 类型的 CP2和 CPS1中的 CP2发布为 WMS 服务。</p>
+<ul style="list-style: disc;" class="SymbolList1">
+<li class="SymbolList1">
+<p>GIS 服务组件与服务提供者需保持接口对应</p>
+</li>
+</ul>
+<p class="myNormal">即 GIS 服务组件只能调用与其具有相同服务类型的服务提供者为其实现 GIS 功能，如 CP1是数据管理类型的 GIS 服务组件，提供数据管理服务能力，那么 CP1应该调用提供数据管理功能的服务提供者 P1来实现 CP1要求的 GIS 功能。</p>
+<ul style="list-style: disc;" class="SymbolList1">
+<li class="SymbolList1">
+<p>一个 GIS 服务组件可以调用一个服务提供者为其实现 GIS 功能</p>
+</li>
+</ul>
+<p class="myNormal">如下图所示，GIS 服务组件 CP1所提供的长春数据管理服务的功能实现是由服务提供者 P1来实现的。</p>
+<ul style="list-style: disc;" class="SymbolList1">
+<li class="SymbolList1">
+<p>一个 GIS 服务组件可以调用一个服务提供者集合为其实现 GIS 功能</p>
+</li>
+</ul>
+<p class="myNormal">如下图所示，GIS 服务组件 CP2所提供的长春地图服务的功能实现是由服务提供者集合 PS1承担的，这意味着 PS1集合中的服务提供者 P2和 P3共同实现 CP2的地图服务功能。</p>
+<p class="myNormal" style="text-align: center;"><img src="../assets/images/Product_introduce/ralationship.png" alt="" style="border: none;" width="531" height="372" border="0"/></p>
+<p class="myNormal">在配置文件中对 GIS 服务组件、GIS 服务组件集合、GIS 服务接口、服务提供者以及服务提供者集合进行信息配置，SuperMap iServer 将通过依赖注入以及配置文件描述的模块之间的关系对该 GIS 应用的 GIS 服务进行构建和发布。如下表为一个 GIS 应用在配置文件中的内容，通过该配置信息，GIS 应用分别提供：</p>
+<ol style="list-style: decimal;" class="NO1">
+<li class="NO1">
+<p>map 的 REST 风格的世界地图的地图服务和北京地图服务；（GIS 服务组件 map 关联了服务提供者集合 providerset1，该集合中包含两个服务提供者，这两个服务提供者分别能够处理世界地图和北京市的基础地图操作。）</p>
+</li>
+<li class="NO1">
+<p>map 的 WMS1.3的世界地图的地图服务和北京地图的地图服务；</p>
+</li>
+<li class="NO1">
+<p>data-world 的 REST 风格的世界地图的数据管理服务；（GIS 服务组件 data-world 关联了服务提供者 ugcDataProvider1，服务提供者能够处理世界地图的数据管理操作。）</p>
+</li>
+<li class="NO1">
+<p>CPS1集合的 REST 风格的世界地图和北京地图的地图服务以及世界地图的数据管理服务；</p>
+</li>
+<li class="NO1">
+<p>CPS1集合的 WMS1.3的世界地图的地图服务和北京地图的地图服务；</p>
+</li>
+</ol>
+<p class="myCodeP">&lt;application&gt;</p>
+<p class="myCodeP">    &lt;componentSets&gt;</p>
+<p class="myCodeP">        &lt;componentSet name=&quot;CPS1&quot; interfaceNames=&quot;rest&quot;&gt;</p>
+<p class="myCodeP">            &lt;component-reference name=&quot;map-world&quot;&gt;&lt;/component-reference&gt;</p>
+<p class="myCodeP">            &lt;component-reference name=&quot;data-world&quot;&gt;&lt;/component-reference&gt;</p>
+<p class="myCodeP">        &lt;/componentSet&gt;</p>
+<p class="myCodeP">    &lt;/componentSets&gt;</p>
+<p class="myCodeP">    &lt;components&gt;</p>
+<p class="myCodeP">        &lt;component name=&quot;map-world&quot;</p>
+<p class="myCodeP">            class=&quot;com.supermap.services.components.impl.MapImpl&quot; providers=&quot;providerset1&quot; interfaceNames=&quot;rest,wms130&quot;&gt;</p>
+<p class="myCodeP">            &lt;config class=&quot;com.supermap.services.components.MapConfig&quot;&gt;</p>
+<p class="myCodeP">                &lt;outputPath&gt;../webapps/output&lt;/outputPath&gt;</p>
+<p class="myCodeP">                &lt;outputSite&gt;http://{ip}:8090/output/&lt;/outputSite&gt;</p>
+<p class="myCodeP">            &lt;/config&gt;</p>
+<p class="myCodeP">        &lt;/component&gt;</p>
+<p class="myCodeP">          </p>
+<p class="myCodeP">        &lt;component name=&quot;data-world&quot;</p>
+<p class="myCodeP">            class=&quot;com.supermap.services.components.impl.DataImpl&quot; providers=&quot;ugcDataProvider1&quot; interfaceNames=&quot;rest&quot;&gt;</p>
+<p class="myCodeP">            &lt;config class=&quot;com.supermap.services.components.DataConfig&quot;&gt;</p>
+<p class="myCodeP">            &lt;/config&gt;</p>
+<p class="myCodeP">        &lt;/component&gt;</p>
+<p class="myCodeP">    &lt;/components&gt;</p>
+<p class="myCodeP">    &lt;providerSets&gt;</p>
+<p class="myCodeP">        &lt;providerSet name=&quot;providerset1&quot;&gt;</p>
+<p class="myCodeP">            &lt;provider-reference name=&quot;ugcMapProvider1&quot;</p>
+<p class="myCodeP">                enabled=&quot;true&quot;&gt;&lt;/provider-reference&gt;</p>
+<p class="myCodeP">            &lt;provider-reference name=&quot;ugcMapProvider2&quot;</p>
+<p class="myCodeP">                enabled=&quot;true&quot;&gt;&lt;/provider-reference&gt;</p>
+<p class="myCodeP">        &lt;/providerSet&gt;</p>
+<p class="myCodeP">    &lt;/providerSets&gt;</p>
+<p class="myCodeP">    &lt;providers&gt;</p>
+<p class="myCodeP">        &lt;provider name=&quot;ugcMapProvider1&quot;</p>
+<p class="myCodeP">            class=&quot;com.supermap.services.providers.UGCMapProvider&quot;&gt;</p>
+<p class="myCodeP">            &lt;config class=&quot;com.supermap.services.providers.UGCMapProviderSetting&quot;&gt;</p>
+<p class="myCodeP">                &lt;outputPath&gt;../webapps/output&lt;/outputPath&gt;</p>
+<p class="myCodeP">                &lt;outputSite&gt;http://{ip}:8090/output/&lt;/outputSite&gt;</p>
+<p class="myCodeP">                &lt;name&gt;default&lt;/name&gt;</p>
+<p class="myCodeP">                &lt;workspacePath&gt;../samples/data/World/World.sxwu&lt;/workspacePath&gt;</p>
+<p class="myCodeP">            &lt;/config&gt;</p>
+<p class="myCodeP">        &lt;/provider&gt;</p>
+<p class="myCodeP">        &lt;provider name=&quot;ugcMapProvider2&quot;</p>
+<p class="myCodeP">            class=&quot;com.supermap.services.providers.UGCMapProvider&quot;&gt;</p>
+<p class="myCodeP">            &lt;config class=&quot;com.supermap.services.providers.UGCMapProviderSetting&quot;&gt;</p>
+<p class="myCodeP">                &lt;outputPath&gt;../webapps/output&lt;/outputPath&gt;</p>
+<p class="myCodeP">                &lt;outputSite&gt;http://{ip}:8090/output/&lt;/outputSite&gt;</p>
+<p class="myCodeP">                &lt;name&gt;default&lt;/name&gt;</p>
+<p class="myCodeP">                &lt;workspacePath&gt;../samples/data/City/beijing.sxwu&lt;/workspacePath&gt;</p>
+<p class="myCodeP">            &lt;/config&gt;</p>
+<p class="myCodeP">        &lt;/provider&gt;</p>
+<p class="myCodeP">        &lt;provider name=&quot;ugcDataProvider1&quot;</p>
+<p class="myCodeP">            class=&quot;com.supermap.services.providers.UGCDataProvider&quot;&gt;</p>
+<p class="myCodeP">            &lt;config class=&quot;com.supermap.services.providers.UGCDataProviderSetting&quot;&gt;</p>
+<p class="myCodeP">                &lt;workspacePath&gt;../samples/data/World/World.sxwu&lt;/workspacePath&gt;</p>
+<p class="myCodeP">            &lt;/config&gt;</p>
+<p class="myCodeP">        &lt;/provider&gt;</p>
+<p class="myCodeP">    &lt;/providers&gt;</p>
+<p class="myCodeP">    &lt;interfaces&gt;</p>
+<p class="myCodeP">        &lt;interface name=&quot;wms130&quot; class=&quot;com.supermap.services.wms.WMSServlet&quot;&gt;</p>
+<p class="myCodeP">            &lt;config class=&quot;com.supermap.services.wms.WMSConfig&quot;&gt;</p>
+<p class="myCodeP">                &lt;version&gt;1.3.0&lt;/version&gt;</p>
+<p class="myCodeP">                &lt;mapName&gt;世界地图&lt;/mapName&gt;</p>
+<p class="myCodeP">            &lt;/config&gt;</p>
+<p class="myCodeP">        &lt;/interface&gt;</p>
+<p class="myCodeP">        &lt;interface name=&quot;rest&quot; class=&quot;com.supermap.services.rest.RestServlet&quot;&gt;</p>
+<p class="myCodeP">        &lt;/interface&gt;</p>
+<p class="myCodeP">    &lt;/interfaces&gt;</p>
+<p class="myCodeP">&lt;/application&gt;</p>
+<p class="myNormal">综上所述，SuperMap iServer 的服务具有开放、灵活的体系架构，GIS 服务组件与服务提供者之间不是直接绑定关系，而是通过依赖注入的技术动态创建关系。这种开放的体系结构还有利于用户方便地进行各层次模块的扩展，而且这种自定义创建的模块可以无缝地融入 SuperMap iServer 服务体系中，只需要通过配置文件描述其与其他模块的关系，就可以创建自定义服务。关于自定义服务的详细内容，可以参见领域服务扩展相关的详细文档。</p>
+<p class="myNormal"> </p>
+
+
+</div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = ".."
+    gCommonRootRelPath = ".."
+    gTopicId = "4.1.0_2"
+  
+//]]></script>
+
+  <script src="../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../whxdata/layoutconfig.js"></script>
+  <script src="../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

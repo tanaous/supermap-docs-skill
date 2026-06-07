@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../iserver-icon.png"/>
+    
+  <script data-relpath=".." src="../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <meta name="template" content="../assets/layouts/SuperMapiServerMain.htt"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Language" content="zh-CN"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>iServer 2025 接口变更</title>
+  <link rel="StyleSheet" href="../assets/css/SuperMapHelp.css" type="text/css"/>
+  <script type="text/javascript" src="../assets/js/shCore.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushBash.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushCpp.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushCSharp.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushCss.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushDelphi.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushDiff.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushGroovy.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushJava.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushJScript.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushPhp.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushPlain.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushPython.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushRuby.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushScala.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushSql.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushVb.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushXml.js"></script>
+  <script type="text/javascript" src="../assets/js/ConfigiServer6R.js"></script>
+  <script type="text/javascript" src="../assets/js/SMCollapse.js"></script>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../assets/css/homeButtom.css"/>
+  <script src="../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <h2 class="myNormal">Java API 变更  </h2>
+  <table cellspacing="0" class="iServerTable">
+    <colgroup>
+      <col width="451"/>
+      <col width="313"/>
+      <col width="424"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st" style="height: 13.50pt;">
+        <td height="18">包</td>
+        <td>类/接口名</td>
+        <td>字段/方法/属性/页面</td>
+      </tr>
+      <tr class="t2Row" style="height: 13.50pt;">
+        <td height="18">com.supermap.services.components.commontypes</td>
+        <td>EngineType</td>
+        <td>新增 YUKON、VASTBASE 枚举，用于支持禹贡、海量数据库</td>
+      </tr>
+      <tr class="t1Row" style="height: 13.50pt;">
+        <td colspan="1" height="18" rowspan="3">com.supermap.services.components</td>
+        <td>VectorTileCapabilities</td>
+        <td>新增类，用于提供矢量瓦片能力</td>
+      </tr>
+      <tr>
+        <td>VectorTile</td>
+        <td>新增类，用于提供矢量瓦片服务接口</td>
+      </tr>
+      <tr>
+        <td>VectorTileConfig</td>
+        <td>新增类，用于提供矢量瓦片服务配置</td>
+      </tr>
+      <tr class="t2Row" style="height: 13.50pt;">
+        <td height="18" rowspan="1">com.supermap.services.components.impl</td>
+        <td>VectorTileImpl</td>
+        <td>新增类，用于实现 VectorTile 矢量瓦片接口</td>
+      </tr>
+      <tr class="t2Row" style="height: 13.50pt;">
+        <td colspan="1" height="18" rowspan="5">com.supermap.services.providers</td>
+        <td>UGCMVTProvider</td>
+        <td>新增类，用于实现矢量瓦片服务提供者</td>
+      </tr>
+      <tr>
+        <td>UGCMVTProviderSetting</td>
+        <td>新增类，用于实现矢量瓦片服务提供者配置    </td>
+      </tr>
+      <tr>
+        <td>UGCMapProviderSetting</td>
+        <td>新增 throwExceptionWhenOutputMapError 属性，用于当出图失败时返回异常信息不再出白图</td>
+      </tr>
+      <tr>
+        <td>TPKXMapProvider</td>
+        <td>新增类，用于实现TPKX地图服务提供者</td>
+      </tr>
+      <tr>
+        <td>TPKXMapProviderSetting</td>
+        <td>新增类，用于实现TPKX地图服务提供者配置</td>
+      </tr>
+      <tr class="t2Row" style="height: 13.50pt;">
+        <td height="18" rowspan="2">com.supermap.server.config</td>
+        <td>ServiceStorageType</td>
+        <td>新增 GBASE8C 枚举，用于支持南大通用数据库存储服务配置信息</td>
+      </tr>
+      <tr class="t1Row" style="height: 13.50pt;">
+        <td>SecurityInfoStorageType</td>
+        <td>新增 GBASE8C 枚举，用于支持南大通用数据库存储安全信息</td>
+      </tr>
+      <tr class="t2Row" style="height: 13.50pt;">
+        <td height="18">com.supermap.services.repository</td>
+        <td>RepositoryType</td>
+        <td>新增 GBASE8C 枚举，用于支持南大通用数据库存储临时资源</td>
+      </tr>
+      <tr class="t1Row" style="height: 13.50pt;">
+        <td height="18">com.supermap.services.rest.management</td>
+        <td>PublishServiceParameter</td>
+        <td>新增 name 和 alias 字段，用于发布服务时设置服务名称和服务别名</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2 class="myNormal">REST  API 变更</h2>
+  <table cellspacing="0" class="iServerTable">
+    <colgroup>
+      <col width="173"/>
+      <col span="1" width="228"/>
+      <col width="270"/>
+      <col width="583"/>
+      <col/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st" style="height: 17.25pt;">
+        <td height="23">模块</td>
+        <td>资源名称</td>
+        <td>资源/参数/请求/表述</td>
+        <td>备注</td>
+        <td width="583">URL模板</td>
+      </tr>
+      <tr class="t2Row" style="height: 17.25pt;">
+        <td colspan="1" height="23" rowspan="9">services-rest-management</td>
+        <td>DataStoreDataResource</td>
+        <td>新增 POST 请求参数</td>
+        <td>新增 serviceName 和 serviceAlias 参数用于发布单个服务时可以指定服务名和服务别名</td>
+        <td width="583">/iserver/manager/datastoredata.json</td>
+      </tr>
+      <tr class="t1Row" style="height: 17.25pt;">
+        <td>WorkspacesResource</td>
+        <td>新增 POST 请求参数</td>
+        <td>新增 serviceName 和 serviceAlias 参数用于发布单个服务时可以指定服务名和服务别名</td>
+        <td width="583">/iserver/manager/workspaces.json</td>
+      </tr>
+      <tr class="t2Row" style="height: 17.25pt;">
+        <td>DatastoresResource</td>
+        <td>新增 POST 请求参数枚举</td>
+        <td>engineType 请求参数新增 YUKON、VASTBASE 枚举，<br/>
+          type 请求参数新增 YUKON、VASTBASE 枚举，<br/>
+          用于注册禹贡、海量数据库为空间数据库</td>
+        <td width="583">/iserver/manager/datastores.json</td>
+      </tr>
+      <tr class="t1Row" style="height: 17.25pt;">
+        <td colspan="1" rowspan="2">ServiceSettingsResource</td>
+        <td>新增 GET 请求参数</td>
+        <td>新增 orderBy 参数，用于将服务按指定方法排序；<br/>
+          新增 labels 参数，用于返回含指定标签的服务</td>
+        <td colspan="1" rowspan="2" width="583">/iserver/manager/services.json</td>
+      </tr>
+      <tr class="t2Row" style="height: 17.25pt;">
+        <td>新增 GET 响应参数</td>
+        <td>新增 createTime 参数，用于展示服务实例创建时间；<br/>
+          新增modifyTime 参数，用于展示服务实例更新时间；<br/>
+          新增 labels 参数，用于展示服务实例所在标签</td>
+      </tr>
+      <tr class="t1Row" style="height: 17.25pt;">
+        <td>ServicesLabelResource</td>
+        <td>新增 GET、PUT 请求</td>
+        <td>新增服务标签资源</td>
+        <td width="583">/iserver/manager/servicesLabel.json</td>
+      </tr>
+      <tr>
+        <td>ServiceStorageResource</td>
+        <td>新增 PUT 请求参数枚举</td>
+        <td>type 请求参数新增 GBASE8C 枚举，用于服务配置信息存储至南大通用数据库</td>
+        <td width="583">/iserver/manager/servicestorage.json</td>
+      </tr>
+      <tr>
+        <td>RepositorySettingResource</td>
+        <td>新增 PUT 请求参数枚举</td>
+        <td>type 请求参数新增 GBASE8C 枚举，用于临时资源存储至南大通用数据库</td>
+        <td width="583">/iserver/manager/repository/setting.json</td>
+      </tr>
+      <tr class="t1Row" style="height: 17.25pt;">
+        <td rowspan="1">SecurityStorageSettingResource</td>
+        <td colspan="1" rowspan="1">新增 PUT 请求参数枚举</td>
+        <td rowspan="1">type 请求参数新增 GBASE8C 枚举，用于安全信息存储至南大通用数据库</td>
+        <td rowspan="1" width="583">/iserver/manager/security/storage.json</td>
+      </tr>
+      <tr>
+        <td colspan="1" height="23" rowspan="17">services-rest</td>
+        <td>domainResuorce</td>
+        <td colspan="1">新增 GET 响应参数</td>
+        <td>codeInfos 响应参数新增 description 字段，用于描述枚举值域的实际信息</td>
+        <td width="583">/iserver/services/{dataComponent}/rest/data/datasources/{datasourceName}/datasets/{datasetName}/domain.json</td>
+      </tr>
+      <tr>
+        <td>ArcGISIdentifyResource</td>
+        <td colspan="1">GET、POST 响应参数变更</td>
+        <td>attributes 响应参数中，字段名称默认为别名（原：字段名称）<br/>
+          新增响应参数returnFieldName，用于标识 attributes 响应参数中字段名称是否为别名</td>
+        <td width="583">/iserver/services/{component}/arcgisrest/{mapName}/MapServer/identify.json</td>
+      </tr>
+      <tr class="t2Row" style="height: 17.25pt;">
+        <td>DatasourceResource</td>
+        <td>新增 GET 响应参数</td>
+        <td>新增 supportTransaction 参数，用于描述数据源是否支持数据库事务</td>
+        <td width="583">/iserver/services/&lt;DataComponent&gt;/rest/data/datasources/{DatasourceName}.json</td>
+      </tr>
+      <tr class="t1Row" style="height: 17.25pt;">
+        <td>DatasetResource</td>
+        <td>新增 GET 响应参数</td>
+        <td>新增 supportTransaction 参数，用于描述数据集是否支持数据库事务</td>
+        <td width="583">/iserver/services/&lt;DataComponent&gt;/rest/data/datasources/{DatasourceName}/datasets/{DatasetName}.json</td>
+      </tr>
+      <tr class="t2Row" style="height: 17.25pt;">
+        <td>FeaturesResource</td>
+        <td>新增 POST、PUT、DELETE 请求参数</td>
+        <td>新增 rollbackOnFailure 参数，表示此次操作是否使用数据库事务能力，遇到失败是否回滚</td>
+        <td width="583">/iserver/services/&lt;DataComponent&gt;/rest/data/datasources/{DatasourceName}/datasets/{DatasetName}/features.json</td>
+      </tr>
+      <tr class="t1Row" style="height: 17.25pt;">
+        <td colspan="1" rowspan="2">FeatureResource</td>
+        <td>新增 PUT、DELETE 请求参数</td>
+        <td>新增 rollbackOnFailure 参数，表示此次操作是否使用数据库事务能力，遇到失败是否回滚</td>
+        <td colspan="1" rowspan="2" width="583">/iserver/services/&lt;DataComponent&gt;/rest/data/datasources/{DatasourceName}/datasets/{DatasetName}/features/{featureId}.json</td>
+      </tr>
+      <tr>
+        <td>新增 GET 响应参数</td>
+        <td>VideoParameter 中新增 Geometry 字段，用于描述视频拍摄的地面范围</td>
+      </tr>
+      <tr class="t2Row" style="height: 17.25pt;">
+        <td>FeatureResultsResource</td>
+        <td>新增 POST 响应参数</td>
+        <td>VideoParameter 中新增 Geometry 字段，用于描述视频拍摄的地面范围</td>
+        <td width="583">/iserver/services/{dataComponent}/rest/data/featureResults.rjson?returnContent=true</td>
+      </tr>
+      <tr class="t1Row" style="height: 17.25pt;">
+        <td>TileImageResource</td>
+        <td>新增 GET 请求参数</td>
+        <td>新增 displayFilters 参数，用于按属性条件过滤出图</td>
+        <td width="583">/iserver/services/&lt;mapComponent&gt;/rest/maps/{mapName}/tileImage.json</td>
+      </tr>
+      <tr class="t2Row" style="height: 17.25pt;">
+        <td>TileImagesResource</td>
+        <td>新增 GET 请求参数</td>
+        <td>新增 displayFilters 参数，用于按属性条件过滤出图</td>
+        <td width="583">/iserver/services/&lt;mapComponent&gt;/rest/maps/{mapName}/tileImages.json</td>
+      </tr>
+      <tr>
+        <td>ZXYTileImageResource</td>
+        <td>新增 GET 请求参数</td>
+        <td>新增 displayFilters 参数，用于按属性条件过滤出图</td>
+        <td width="583">/iserver/services/&lt;mapComponent&gt;/rest/maps/{mapName}/zxyTileImage.json</td>
+      </tr>
+      <tr>
+        <td>ImageResource</td>
+        <td>新增 GET 请求参数</td>
+        <td>新增 displayFilters 参数，用于按属性条件过滤出图</td>
+        <td width="583">/iserver/services/&lt;mapComponent&gt;/rest/maps/{mapName}/image.json</td>
+      </tr>
+      <tr>
+        <td>ArcgisVectorTileServerResource</td>
+        <td>新增 GET 请求</td>
+        <td>新增 ArcGIS REST 矢量瓦片服务根资源</td>
+        <td width="583">/iserver/services/&lt;mapComponent&gt;/arcgisrest/{mapName}/VectorTileServer.json</td>
+      </tr>
+      <tr>
+        <td>ArcgisVectorTileResource</td>
+        <td>新增 GET 请求</td>
+        <td>新增 ArcGIS REST 矢量瓦片服务 vectorTile 资源</td>
+        <td width="583">/iserver/services/&lt;mapComponent&gt;/arcgisrest/{mapName}/VectorTileServer/vectorTile.json</td>
+      </tr>
+      <tr>
+        <td>ArcgisVectorTileStyleResource</td>
+        <td>新增 GET 请求</td>
+        <td>新增 ArcGIS REST 矢量瓦片服务 vectorTileStyle 资源</td>
+        <td width="583">/iserver/services/&lt;mapComponent&gt;/arcgisrest/{mapName}/VectorTileServer/vectorTileStyle.json</td>
+      </tr>
+      <tr>
+        <td>ArcgisVectorTileSpriteResource</td>
+        <td>新增 GET 请求</td>
+        <td>新增 ArcGIS REST 矢量瓦片服务 vectorTileSprite 资源</td>
+        <td width="583">/iserver/services/&lt;mapComponent&gt;/arcgisrest/{mapName}/VectorTileServer/vectorTileSprite.json</td>
+      </tr>
+      <tr>
+        <td>ArcgisVectorTileFontsResource</td>
+        <td>新增 GET 请求</td>
+        <td>新增 ArcGIS REST 矢量瓦片服务 vectorTileFonts 资源</td>
+        <td width="583">/iserver/services/&lt;mapComponent&gt;/arcgisrest/{mapName}/VectorTileServer/vectorTileFonts.json</td>
+      </tr>
+      <tr>
+        <td height="23">manager</td>
+        <td>SessionStorageResource</td>
+        <td>新增 PUT 请求参数枚举</td>
+        <td>type 请求参数新增 GBASE8C 枚举，用于会话信息存储至南大通用数据库</td>
+        <td width="583">/iserver/manager/security/session.json</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="myNormal"> </p>
+  <h2 class="myNormal">配置文件变更</h2>
+  <table align="center" cellspacing="0" class="iServerTable" width="90%">
+    <colgroup>
+      <col width="392"/>
+      <col width="188"/>
+      <col width="372"/>
+      <col width="314"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st" style="height: 14.25pt;">
+        <td height="19" width="392">文件路径</td>
+        <td width="188">文件名称</td>
+        <td width="372">配置项</td>
+        <td width="314">备注</td>
+      </tr>
+      <tr class="t1Row" style="height: 14.25pt;">
+        <td colspan="1" height="19" rowspan="5">{ISERVER_HOME}\webapps\iserver\WEB-INF</td>
+        <td colspan="1" rowspan="2">iserver-services.xml</td>
+        <td>新增 MapImpl&gt;&gt;MapConfig&gt;&gt;cacheResamplingDisabled</td>
+        <td>地图服务组件层缓存支持瓦片重采样</td>
+      </tr>
+      <tr>
+        <td>新增 ArcGISRESTDataProviderSetting&gt;&gt;closePostMockGet</td>
+        <td>支持关闭通过 POST 模拟 GET 请求向原始 ArcGIS 要素服务发送请求</td>
+      </tr>
+      <tr>
+        <td colspan="1">iserver-system.xml</td>
+        <td>新增 properties&gt;&gt;returnSmgeometryField</td>
+        <td>新增系统属性，为 true时部分资源fieldNames支持返回smgeometry字段</td>
+      </tr>
+      <tr class="t1Row" style="height: 14.25pt;">
+        <td colspan="1">iserver-dataflow.xml</td>
+        <td>新增 dataFlowSetting&gt;&gt;serverSetting&gt;&gt;address</td>
+        <td>数据流服务配置新增支持绑定固定IP</td>
+      </tr>
+      <tr class="t2Row" style="height: 14.25pt;">
+        <td colspan="1">iserver-services-interfaces.xml</td>
+        <td>wms111和wms130接口配置新增 reverseLayerOrder    </td>
+        <td>用于WMS服务中图层顺序反转</td>
+      </tr>
+    </tbody>
+  </table>
+  <p> </p>
+
+</div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = ".."
+    gCommonRootRelPath = ".."
+    gTopicId = "9.3.7.0_1"
+  
+//]]></script>
+
+  <script src="../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../whxdata/layoutconfig.js"></script>
+  <script src="../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

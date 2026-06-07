@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../../../../../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../../../../../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../../../../../../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../../../../../iserver-icon.png"/>
+    
+  <script data-relpath="../../../../../.." src="../../../../../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <meta name="template" content="../../../../../../assets/layouts/RESTAPI.htt"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Language" content="zh-CN"/>
+  <meta name="topic-check-list" content="Ran Smart Index"/>
+  <meta name="topic-status" content="Complete"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>queryResult</title>
+  <link rel="StyleSheet" href="../../../../../../assets/css/SuperMapHelp.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="QueryResult"/>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../../../../../../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../../assets/css/homeButtom.css"/>
+  <script src="../../../../../../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../../../../../../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../../../../../../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../../../../../../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../../../../../../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../../../../../../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../../../../../../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../../../../../../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../../../../../../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <h2><a name="URI" id="URI"></a>URI</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="queryResults.htm#URI">&lt;queryResults_uri&gt;</a>/{resultID}[.&lt;format&gt;]</p>
+  <h2>支持的方法</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="#GET 请求">GET</a>、<a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a></p>
+  <h2>父资源</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="queryResults.htm">queryResults</a></p>
+  <h2>介绍</h2>
+  <p class="myNormal">queryResult 资源表示对地图查询的一个结果，在对 <a class="contentpagehyperlink" href="queryResults.htm">queryResults</a> 执行 <a class="contentpagehyperlink" href="queryResults.htm#POST 请求">POST 请求</a>的时候被创建。对 queryResult 资源（{resultID}）执行 GET 请求，可以获取该查询结果的表述。</p>
+  <p class="myNormal">查询结果可以<a class="contentpagehyperlink" href="../map.htm#地图查询结果_queryResult_可以借助_map_资源的_JavaScript_表述叠加在地图上进行显示_如_queryResultID_eiicoeik_889fa578956b4c90bb8aa841e5abfb7d_">叠加在 map 资源上显示</a>（目前地图的 JavaScript 表述中支持该功能），便于可视化的查看查询结果的具体信息。</p>
+  <p class="myNormal" style="font-weight: bold;">支持的方法：</p>
+  <ul class="supportList" style="list-style: disc;">
+    <li class="supportList"><a class="contentpagehyperlink" href="#GET 请求">GET</a>：获取查询结果资源的表述。查询分属性查询、空间查询、距离查询、范围查询等。</li>
+    <li class="supportList"><a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a>：获取查询结果资源的元数据信息。检查 queryResult 资源是否存在，权限是否可以访问。</li>
+  </ul>
+  <p class="myNormal"><span style="font-weight: bold;">支持的表述格式：</span>RJSON、JSON、HTML、XML、PNG、JSONP、FASTJSON、GeoJSON、FlatGeobuf。</p>
+  <p class="myNormal" style="font-weight: bold;">注：查询的图层为点、线、面数据集类型时，GeoJSON表述可用。</p>
+  <h2>资源层次</h2>
+  <p><img alt="" border="0" height="272" src="../../../../../../assets/images/root/maps/map/queryResults/queryresult.png" usemap="#DrawArea" width="416"/><map id="DrawArea" name="DrawArea"><area alt="根资源" coords="13.295,3.3435,269.704,44.257" href="../../../root.htm" shape="rect"/> <area alt="maps 资源" coords="84.935,56.257,230.705,97.057" href="../../maps.htm" shape="rect"/> <area alt="map 资源" coords="126.119,109.442,278.519,160" href="../map.htm" shape="rect"/> <area alt="queryResults 资源" coords="179.804,169.287,346,210.087" href="queryResults.htm" shape="rect"/> <area alt="queryResult 资源" coords="234.276,222.2,400,263" href="queryResult.htm" shape="rect"/></map></p>
+  <h2>HTTP 请求方法</h2>
+  <p class="myNormal">对如下 URI 执行 HTTP 请求，以 rjson 输出格式为例加以说明，其中，supermapiserver 是服务器名，&quot;世界地图&quot;是地图名（{mapName}），ID 为1是对父资源 queryResults 进行距离查询后的结果资源，URI 表示&quot;世界地图&quot;的一个 ID 为 1的查询结果。</p>
+  <p class="uriStyle">&quot;http://supermapiserver:8090/iserver/services/map-world/rest/maps/世界地图/queryResults/1.json</p>
+  <h3><a id="GET 请求"></a>GET 请求</h3>
+  <p class="myNormal">获取查询结果资源的表述。可能是 SQL 查询、距离查询、空间查询、最近地物查询、范围查询等查询的结果。</p>
+  <h4>请求参数</h4>
+  <p class="myNormal">通过对 queryResult 资源执行 GET 请求，可以获取查询的结果，可以在 URI 中包含参数，如下所示：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>名称</td>
+        <td>类型</td>
+        <td>含义</td>
+      </tr>
+      <tr class="t2Row">
+        <td>realtime</td>
+        <td>boolean</td>
+        <td>【可选参数】 表示是否要求查询结果是实时的。如果为 true，则重新查询一次，返回结果。如果为 false，则直接从缓存中取出结果。默认为 false。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>withIndex</td>
+        <td>boolean</td>
+        <td>当使用 FlatGeobuf 表述时该参数可选。表示返回的表述为 FlatGeobuf 的结果是否包含空间索引，默认为true。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>_cache</td>
+        <td>boolean</td>
+        <td>【可选参数】 是否使用缓存，默认为 true。如果为 false，则关闭所有缓存。</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="myNormal">当对 queryResult 资源执行 GET 请求，获取图片格式的查询结果时，URI 中还可包含如下参数：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>名称</td>
+        <td>类型</td>
+        <td>含义</td>
+      </tr>
+      <tr class="t2Row">
+        <td>useGeoCoordSys</td>
+        <td>boolean</td>
+        <td>出图时投影坐标系统是否转为能够加载在三维场景中的地理经纬坐标。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>rectifyViewer</td>
+        <td>boolean</td>
+        <td>出图时是否自动校正图片大小，使之与查询结果的出图范围一致。如果为 true，则自动校正图片大小，false 则不自动校正，返回图片原始大小。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>style</td>
+        <td><a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/services/components/commontypes/Style.html">Style</a></td>
+        <td>查询结果中高亮目标的风格。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>center</td>
+        <td><a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/services/components/commontypes/Point2D.html">Point2D</a></td>
+        <td>指定地图显示的中心点。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>scale</td>
+        <td>double</td>
+        <td>指定地图显示的比例尺。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>viewer</td>
+        <td><a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/services/components/commontypes/Rectangle.html">Rectangle</a></td>
+        <td>指定用户显示视窗，即产生的图片的大小。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>transparent</td>
+        <td>boolean</td>
+        <td>地图图片是否透明。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>
+          <p>viewBounds</p>
+        </td>
+        <td><a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/services/components/commontypes/Rectangle2D.html">Rectangle2D</a></td>
+        <td>指定地图的出图范围。如果不设置此参数，则出图范围为查询结果对象的 Bounds。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>foreColor</td>
+        <td>Color</td>
+        <td>指定地图的前景颜色。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>backColor</td>
+        <td>Color</td>
+        <td>指定地图的背景颜色。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>layersID</td>
+        <td>String</td>
+        <td>地图中要出图的临时图层集合的 ID。临时图层集通过 tempLayersSet 资源创建。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>prjCoordSys</td>
+        <td><a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/services/components/commontypes/PrjCoordSys.html">PrjCoordSys</a></td>
+        <td>当前地图的坐标参考系统。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>cacheEnabled</td>
+        <td>boolean</td>
+        <td>是否使用缓存。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>customParams</td>
+        <td>String</td>
+        <td>自定义定义参数。 可以是任何形式组织的字符串。用户可以通过该属性传入自定义的参数。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>rectifyType</td>
+        <td><a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/services/components/commontypes/RectifyType.html">RectifyType</a></td>
+        <td>校验方式。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>clipRegion</td>
+        <td><a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/services/components/commontypes/Geometry.html">Geometry</a></td>
+        <td>地图显示裁剪的区域。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>clipRegionEnabled</td>
+        <td>boolean</td>
+        <td>地图显示裁剪的区域是否有效。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>customEntireBounds</td>
+        <td><a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/services/components/commontypes/Rectangle2D.html">Rectangle2D</a></td>
+        <td>地图自定义边界，customEntireBoundsEnabled 为 true 时有效。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>customEntireBoundsEnabled</td>
+        <td>boolean</td>
+        <td>自定义地图边界是否有效。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>angle</td>
+        <td>double</td>
+        <td>当前地图的旋转角度。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>antialias</td>
+        <td>boolean</td>
+        <td>是否反走样地图。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>backgroundStyle</td>
+        <td><a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/services/components/commontypes/Style.html">Style</a></td>
+        <td>地图的背景风格。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>colorMode</td>
+        <td><a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/services/components/commontypes/MapColorMode.html">MapColorMode</a></td>
+        <td>地图的颜色模式。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>markerAngleFixed</td>
+        <td>boolean</td>
+        <td>指定点状符号的角度是否固定。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>dynamicProjection</td>
+        <td>boolean</td>
+        <td>是否允许地图动态投影显示。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>maxVisibleTextSize</td>
+        <td>double</td>
+        <td>文本的最大可见尺寸，单位为像素。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>maxVisibleVertex</td>
+        <td>int</td>
+        <td>最大几何对象可见节点数。 如果几何对象的节点数超过指定的个数，则超过的那部分节点不显示。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>minVisibleTextSize</td>
+        <td>double</td>
+        <td>文本的最小可见尺寸，单位为像素。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>overlapDisplayed</td>
+        <td>boolean</td>
+        <td>重叠时是否显示对象。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>paintBackground</td>
+        <td>boolean</td>
+        <td>是否绘制地图背景。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>textAngleFixed</td>
+        <td>boolean</td>
+        <td>文本角度是否固定。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>textOrientationFixed</td>
+        <td>boolean</td>
+        <td>文本朝向是否固定。</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="myNormal"> </p>
+  <h4>响应结构</h4>
+  <p class="myNormal"><a id="queryResult_表述"></a>对 queryResult 资源执行 GET 请求，返回操作结果的表述如下：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>字段</td>
+        <td>类型</td>
+        <td>说明</td>
+      </tr>
+      <tr class="t2Row">
+        <td>currentCount</td>
+        <td>int</td>
+        <td>当次查询返回的记录数。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>customResponse</td>
+        <td>String</td>
+        <td>自定义操作处理的结果。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>recordsets</td>
+        <td>Recodset[]</td>
+        <td>查询记录集。 注意，查询记录集中的字段信息由 Recordset 中的 fields 字段记录。每个 Feature 中的 fieldNames 字段均为 null。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>totalCount</td>
+        <td>int</td>
+        <td>根据查询条件查询到的记录的总数。</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="myNormal">如果指定图片表述格式，还可返回图片。</p>
+  <h4>示例</h4>
+  <p class="myNormal">对 queryResult 资源（SQL 查询结果）：&quot;http://supermapiserver:8090/iserver/services/map-world/rest/maps/世界地图/queryResults/1.rjson?realTime=true 执行 GET 请求，返回 rjson 格式的资源描述如下：</p>
+  <p class="myNormal"><textarea cols="20" name="textarea" rows="2" style="width: 923px; 
+								 height: 330px;">{
+      &quot;recordsets&quot;: [{
+      &quot;datasetName&quot;: &quot;ContinentLabel@World&quot;,
+      &quot;features&quot;: [{
+      &quot;fieldNames&quot;: [&quot;SMID&quot;, &quot;SMUSERID&quot;],
+      &quot;ID&quot;: 1,
+      &quot;fieldValues&quot;: [&quot;1&quot;, &quot;0&quot;],
+      &quot;geometry&quot;: {
+      &quot;id&quot;: 1,
+      &quot;center&quot;: {
+      &quot;y&quot;: 52.35440367763858,
+      &quot;x&quot;: -119.53556537446983
+      },
+      &quot;style&quot;: null,
+      &quot;parts&quot;: [],
+      &quot;points&quot;: [{
+      &quot;y&quot;: 52.35440367763858,
+      &quot;x&quot;: -119.53556537446983
+      }],
+      &quot;type&quot;: &quot;TEXT&quot;
+      }
+      },
+      {
+      &quot;fieldNames&quot;: [&quot;SMID&quot;, &quot;SMUSERID&quot;],
+      &quot;ID&quot;: 2,
+      &quot;fieldValues&quot;: [&quot;2&quot;, &quot;0&quot;],
+      &quot;geometry&quot;: {
+      &quot;id&quot;: 2,
+      &quot;center&quot;: {
+      &quot;y&quot;: -6.225178716825866,
+      &quot;x&quot;: -76.00486090111063
+      },
+      &quot;style&quot;: null,
+      &quot;parts&quot;: [],
+      &quot;points&quot;: [{
+      &quot;y&quot;: -6.225178716825866,
+      &quot;x&quot;: -76.00486090111063
+      }],
+      &quot;type&quot;: &quot;TEXT&quot;
+      }
+      },
+      {
+      &quot;fieldNames&quot;: [&quot;SMID&quot;, &quot;SMUSERID&quot;],
+      &quot;ID&quot;: 3,
+      &quot;fieldValues&quot;: [&quot;3&quot;, &quot;0&quot;],
+      &quot;geometry&quot;: {
+      &quot;id&quot;: 3,
+      &quot;center&quot;: {
+      &quot;y&quot;: 17.681298949489047,
+      &quot;x&quot;: -4.845100172111557
+      },
+      &quot;style&quot;: null,
+      &quot;parts&quot;: [],
+      &quot;points&quot;: [{
+      &quot;y&quot;: 17.681298949489047,
+      &quot;x&quot;: -4.845100172111557
+      }],
+      &quot;type&quot;: &quot;TEXT&quot;
+      }
+      },
+      {
+      &quot;fieldNames&quot;: [&quot;SMID&quot;, &quot;SMUSERID&quot;],
+      &quot;ID&quot;: 4,
+      &quot;fieldValues&quot;: [&quot;4&quot;, &quot;0&quot;],
+      &quot;geometry&quot;: {
+      &quot;id&quot;: 4,
+      &quot;center&quot;: {
+      &quot;y&quot;: 55.52556242684099,
+      &quot;x&quot;: 3.6266225414812094
+      },
+      &quot;style&quot;: null,
+      &quot;parts&quot;: [],
+      &quot;points&quot;: [{
+      &quot;y&quot;: 55.52556242684099,
+      &quot;x&quot;: 3.6266225414812094
+      }],
+      &quot;type&quot;: &quot;TEXT&quot;
+      }
+      },
+      {
+      &quot;fieldNames&quot;: [&quot;SMID&quot;, &quot;SMUSERID&quot;],
+      &quot;ID&quot;: 5,
+      &quot;fieldValues&quot;: [&quot;5&quot;, &quot;0&quot;],
+      &quot;geometry&quot;: {
+      &quot;id&quot;: 5,
+      &quot;center&quot;: {
+      &quot;y&quot;: 55.98430295074347,
+      &quot;x&quot;: 75.90685445411283
+      },
+      &quot;style&quot;: null,
+      &quot;parts&quot;: [],
+      &quot;points&quot;: [{
+      &quot;y&quot;: 55.98430295074347,
+      &quot;x&quot;: 75.90685445411283
+      }],
+      &quot;type&quot;: &quot;TEXT&quot;
+      }
+      },
+      {
+      &quot;fieldNames&quot;: [&quot;SMID&quot;, &quot;SMUSERID&quot;],
+      &quot;ID&quot;: 6,
+      &quot;fieldValues&quot;: [&quot;6&quot;, &quot;0&quot;],
+      &quot;geometry&quot;: {
+      &quot;id&quot;: 6,
+      &quot;center&quot;: {
+      &quot;y&quot;: -15.215635485103824,
+      &quot;x&quot;: 119.40153557283776
+      },
+      &quot;style&quot;: null,
+      &quot;parts&quot;: [],
+      &quot;points&quot;: [{
+      &quot;y&quot;: -15.215635485103824,
+      &quot;x&quot;: 119.40153557283776
+      }],
+      &quot;type&quot;: &quot;TEXT&quot;
+      }
+      },
+      {
+      &quot;fieldNames&quot;: [&quot;SMID&quot;, &quot;SMUSERID&quot;],
+      &quot;ID&quot;: 7,
+      &quot;fieldValues&quot;: [&quot;7&quot;, &quot;0&quot;],
+      &quot;geometry&quot;: {
+      &quot;id&quot;: 7,
+      &quot;center&quot;: {
+      &quot;y&quot;: 44.107602426144325,
+      &quot;x&quot;: -115.86185628842777
+      },
+      &quot;style&quot;: null,
+      &quot;parts&quot;: [],
+      &quot;points&quot;: [{
+      &quot;y&quot;: 44.107602426144325,
+      &quot;x&quot;: -115.86185628842777
+      }],
+      &quot;type&quot;: &quot;TEXT&quot;
+      }
+      },
+      {
+      &quot;fieldNames&quot;: [&quot;SMID&quot;, &quot;SMUSERID&quot;],
+      &quot;ID&quot;: 8,
+      &quot;fieldValues&quot;: [&quot;8&quot;, &quot;0&quot;],
+      &quot;geometry&quot;: {
+      &quot;id&quot;: 8,
+      &quot;center&quot;: {
+      &quot;y&quot;: -13.579317239458987,
+      &quot;x&quot;: -77.28893905844586
+      },
+      &quot;style&quot;: null,
+      &quot;parts&quot;: [],
+      &quot;points&quot;: [{
+      &quot;y&quot;: -13.579317239458987,
+      &quot;x&quot;: -77.28893905844586
+      }],
+      &quot;type&quot;: &quot;TEXT&quot;
+      }
+      },
+      {
+      &quot;fieldNames&quot;: [&quot;SMID&quot;, &quot;SMUSERID&quot;],
+      &quot;ID&quot;: 9,
+      &quot;fieldValues&quot;: [&quot;9&quot;, &quot;0&quot;],
+      &quot;geometry&quot;: {
+      &quot;id&quot;: 9,
+      &quot;center&quot;: {
+      &quot;y&quot;: 9.870021380388806,
+      &quot;x&quot;: 4.978392169619212
+      },
+      &quot;style&quot;: null,
+      &quot;parts&quot;: [],
+      &quot;points&quot;: [{
+      &quot;y&quot;: 9.870021380388806,
+      &quot;x&quot;: 4.978392169619212
+      }],
+      &quot;type&quot;: &quot;TEXT&quot;
+      }
+      },
+      {
+      &quot;fieldNames&quot;: [&quot;SMID&quot;, &quot;SMUSERID&quot;],
+      &quot;ID&quot;: 10,
+      &quot;fieldValues&quot;: [&quot;10&quot;, &quot;0&quot;],
+      &quot;geometry&quot;: {
+      &quot;id&quot;: 10,
+      &quot;center&quot;: {
+      &quot;y&quot;: 47.802775030142584,
+      &quot;x&quot;: 85.25789262109808
+      },
+      &quot;style&quot;: null,
+      &quot;parts&quot;: [],
+      &quot;points&quot;: [{
+      &quot;y&quot;: 47.802775030142584,
+      &quot;x&quot;: 85.25789262109808
+      }],
+      &quot;type&quot;: &quot;TEXT&quot;
+      }
+      },
+      {
+      &quot;fieldNames&quot;: [&quot;SMID&quot;, &quot;SMUSERID&quot;],
+      &quot;ID&quot;: 11,
+      &quot;fieldValues&quot;: [&quot;11&quot;, &quot;0&quot;],
+      &quot;geometry&quot;: {
+      &quot;id&quot;: 11,
+      &quot;center&quot;: {
+      &quot;y&quot;: 48.49246146013812,
+      &quot;x&quot;: 8.834942131480886
+      },
+      &quot;style&quot;: null,
+      &quot;parts&quot;: [],
+      &quot;points&quot;: [{
+      &quot;y&quot;: 48.49246146013812,
+      &quot;x&quot;: 8.834942131480886
+      }],
+      &quot;type&quot;: &quot;TEXT&quot;
+      }
+      },
+      {
+      &quot;fieldNames&quot;: [&quot;SMID&quot;, &quot;SMUSERID&quot;],
+      &quot;ID&quot;: 12,
+      &quot;fieldValues&quot;: [&quot;12&quot;, &quot;0&quot;],
+      &quot;geometry&quot;: {
+      &quot;id&quot;: 12,
+      &quot;center&quot;: {
+      &quot;y&quot;: -23.92950049332333,
+      &quot;x&quot;: 140.7362260537166
+      },
+      &quot;style&quot;: null,
+      &quot;parts&quot;: [],
+      &quot;points&quot;: [{
+      &quot;y&quot;: -23.92950049332333,
+      &quot;x&quot;: 140.7362260537166
+      }],
+      &quot;type&quot;: &quot;TEXT&quot;
+      }
+      },
+      {
+      &quot;fieldNames&quot;: [&quot;SMID&quot;, &quot;SMUSERID&quot;],
+      &quot;ID&quot;: 13,
+      &quot;fieldValues&quot;: [&quot;13&quot;, &quot;0&quot;],
+      &quot;geometry&quot;: {
+      &quot;id&quot;: 13,
+      &quot;center&quot;: {
+      &quot;y&quot;: -74.6247529762955,
+      &quot;x&quot;: -18.72609062674553
+      },
+      &quot;style&quot;: null,
+      &quot;parts&quot;: [],
+      &quot;points&quot;: [{
+      &quot;y&quot;: -74.6247529762955,
+      &quot;x&quot;: -18.72609062674553
+      }],
+      &quot;type&quot;: &quot;TEXT&quot;
+      }
+      },
+      {
+      &quot;fieldNames&quot;: [&quot;SMID&quot;, &quot;SMUSERID&quot;],
+      &quot;ID&quot;: 14,
+      &quot;fieldValues&quot;: [&quot;14&quot;, &quot;0&quot;],
+      &quot;geometry&quot;: {
+      &quot;id&quot;: 14,
+      &quot;center&quot;: {
+      &quot;y&quot;: -82.49592439558907,
+      &quot;x&quot;: 20.83813963589205
+      },
+      &quot;style&quot;: null,
+      &quot;parts&quot;: [],
+      &quot;points&quot;: [{
+      &quot;y&quot;: -82.49592439558907,
+      &quot;x&quot;: 20.83813963589205
+      }],
+      &quot;type&quot;: &quot;TEXT&quot;
+      }
+      }],
+      &quot;fieldCaptions&quot;: [&quot;SmID&quot;, &quot;SmUserID&quot;],
+      &quot;fieldTypes&quot;: [&quot;INT32&quot;, &quot;INT32&quot;],
+      &quot;fields&quot;: [&quot;SMID&quot;, &quot;SMUSERID&quot;]
+      }],
+      &quot;totalCount&quot;: 14,
+      &quot;currentCount&quot;: 14,
+      &quot;customResponse&quot;: null
+      }
+    </textarea></p>
+  <h3><a id="HEAD 请求"></a>HEAD 请求</h3>
+  <p class="myNormal">返回跟 GET 请求一样的 HTTP 响应头，但是没有响应实体。可以在不必传输整个响应内容的情况下，获取包含在响应消息头中的元数据信息。元数据信息包括媒体类型，字符编码，压缩编码，实体内容长度等。</p>
+  <p class="myNormal">获取 queryResult 资源的元数据信息。检查该 queryResult 资源是否存在，权限是否可以访问。通过对加.&lt;format&gt;的 URI 执行 HEAD 请求，还可以快速判断 queryResult 资源是否支持&lt;format&gt;格式的表述。</p>
+  <h2>请参见</h2>
+  <ul class="referenceList">
+    <li class="referenceList"><a class="contentpagehyperlink" href="queryResults.htm">queryResults</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../../clientBuildREST/ConstructRESTRequest.htm">客户端构建 REST 请求</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../../StatusCodeDescription.htm">状态码列表及说明</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../../SuperMap_iServer_REST_API_OutputFormat.htm">表述格式介绍</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../../resource_hierarchy.htm">GIS 服务资源层次结构</a></li>
+  </ul>
+  <p><br/></p>
+
+</div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../../../../../../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../../../../../../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../../../../../../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../../../../../../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../../../../../../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../../../../../../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../../../../../../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../../../../../.."
+    gCommonRootRelPath = "../../../../../.."
+    gTopicId = "8.2.2.6.10.1.11.1"
+  
+//]]></script>
+
+  <script src="../../../../../../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../../../../../../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../../../../../../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../../../../../../whxdata/layoutconfig.js"></script>
+  <script src="../../../../../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../iserver-icon.png"/>
+    
+  <script data-relpath=".." src="../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <meta name="template" content="../assets/layouts/SuperMapiServerMain.htt"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Language" content="zh-CN"/>
+  <meta name="topic-status" content="Complete"/>
+  <meta name="topic-check-list" content="Ran Smart Index"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>服务器配置的备份与恢复</title>
+  <link rel="StyleSheet" href="../assets/css/SuperMapHelp.css" type="text/css"/>
+  <script type="text/javascript" src="../assets/js/shCore.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushBash.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushCpp.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushCSharp.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushCss.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushDelphi.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushDiff.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushGroovy.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushJava.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushJScript.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushPhp.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushPlain.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushPython.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushRuby.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushScala.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushSql.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushVb.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushXml.js"></script>
+  <script type="text/javascript" src="../assets/js/ConfigiServer6R.js"></script>
+  <meta name="rh-index-keywords" content="备份与恢复服务器配置"/>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../assets/css/homeButtom.css"/>
+  <script src="../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <p class="myNormal">SuperMap iServer 支持对服务器配置信息、用户及授权信息进行备份和恢复。该功能通过备份和恢复配置文件来实现，文件位于 WEB-INF（【SuperMap iServer 安装目录】\webapps\iserver\WEB-INF）文件夹下，包括：</p>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1">服务配置文件 iserver-services-interfaces.xml、iserver-services-samples.xml、iserver-services.xml、iserver-system.xml，详见<a class="contentpagehyperlink" href="../Appendix/iServer_configInfo.htm">iServer 配置文件说明</a></li>
+    <li class="SymbolList1">包含服务安全信息的 shiro.ini 文件</li>
+  </ul>
+  <p class="myNormal">其中，在进行服务恢复时，系统会保留当前的初始管理员账户（即系统初始化时创建的管理员账户）而不被备份文件中保存的初始管理员账户覆盖，因为在某些特殊情况下二者可能不同。</p>
+  <p class="myNormal">该操作可在服务管理器的“备份与恢复”页面（http://localhost:8090/iserver/admin-ui/advanced/backupAndRestore）进行。</p>
+  <h3>备份</h3>
+  <p class="myNormal">即对服务器的当前配置信息进行备份。SuperMap iServer 提供了默认的配置文件备份，打包为 config_default.zip，位于 【SuperMap iServer_HOME】\webapps\iserver\WEB-INF\lib\iserver-all-xxxx（xxxx 表示 SuperMap iServer 的版本号）.jar 文件中。</p>
+  <p class="myNormal">在“备份与恢复”页面的“备份”选项卡中，输入备份文件名，单击“备份”按钮，提示“备份服务器配置成功”，表示备份成功。配置文件备份后会打包为&quot;备份文件名.zip&quot;，放在【SuperMap iServer_HOME】\webapps\iserver\WEB-INF\backup 中。</p>
+  <h3>恢复</h3>
+  <p class="myNormal">即恢复备份过的服务器配置信息，包括“恢复”和“恢复为默认配置”。“恢复”即用户自行选择备份的配置文件进行恢复，“恢复为默认配置”即恢复服务器配置为默认配置（使用默认的配置文件备份：config_default.zip）。</p>
+  <p class="myNormal">在“备份与恢复”页面的“恢复”选项卡中，如果选择了要恢复的配置文件，并单击了”恢复“按钮，即恢复为所需要的配置信息；如果单击了”恢复为服务器出厂配置“按钮，即恢复为默认服务器配置。</p>
+  <p class="myNormal"><span style="font-weight:bold;">请注意：</span></p>
+  <p class="myNormal">1、当使用备份文件或服务器出厂配置恢复服务器配置信息后，恢复前服务器配置生成的<span style="font-weight:bold;">令牌</span>将会失效。</p>
+  <p class="myNormal">2、恢复后，需<span style="font-weight:bold;">重启</span> iServer 才可使配置生效。</p>
+  <p class="myNormal"><img alt="" border="0" height="559" src="../assets/images/Server_Service_Management/service_config/images/Backup and Restore for Adminui.png" style="border: none;" width="1212"/></p>
+  <p class="myNormal" style="font-weight: bold;">跨版本升级注意事项：</p>
+  <p class="myNormal" style="font-weight: normal;">1. 当您的服务配置信息存储在配置文件中时，如果您需要跨版本进行备份、恢复，需要删除备份文件中的 iserver-system.xml、 iserver-services-interfaces.xml 两个配置文件。此外，如您有新增安全相关配置信息，请从新版本 shiro.ini 文件中拷贝新增条目至备份的  【iServer安装目录】\webapps\iserver\WEB-INF\backup\【备份 ZIP 文件】\shiro.ini 文件中。如您没有新增安全配置信息，可直接删除备份文件中的 shiro.ini 文件。</p>
+  <p class="myNormal" style="font-weight: normal;">2. 如果您的服务存储在数据库中，在版本升级时则无需进行上述备份、恢复的操作，通过服务配置信息存储连接存有上一个版本的配置信息的数据库，即可达到恢复服务配置信息的目的</p>
+  <p class="myNormal">3. 当您需要从 SuperMap iServer 2025  以前的版本备份、恢复到该版本，您还需要在系统配置文件（【iServer 根目录】/webapps/iserver/WEB-INF/iserver-system.xml）中 &lt;security&gt; 节点的 &lt;encryption&gt; 节点中添加 &lt;sensitiveInfoKeySetting&gt; 节点及其配置项以保证升级后的 GIS 服务能够正常使用：</p>
+  <pre class="brush:xml">    &lt;security&gt; 
+      &lt;encryption class=&quot;com.supermap.server.config.EncryptionSetting&quot;&gt;           
+        &lt;sensitiveInfoKeySetting&gt;                    
+            &lt;algorithm&gt;AES&lt;/algorithm&gt;                     
+            &lt;keyLength&gt;256&lt;/keyLength&gt;                     
+        &lt;/sensitiveInfoKeySetting&gt;
+      &lt;/encryption&gt; 
+    &lt;/security&gt;</pre>
+  <p class="myNormal" style="font-weight: bold;"> </p>
+
+</div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = ".."
+    gCommonRootRelPath = ".."
+    gTopicId = "5.13_1"
+  
+//]]></script>
+
+  <script src="../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../whxdata/layoutconfig.js"></script>
+  <script src="../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

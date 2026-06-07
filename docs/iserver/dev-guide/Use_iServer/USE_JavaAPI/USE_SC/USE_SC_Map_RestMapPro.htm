@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../../../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../../../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../../../../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../../../iserver-icon.png"/>
+    
+  <script data-relpath="../../../.." src="../../../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <meta name="template" content="../../../../assets/layouts/SuperMapiServerMain.htt"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Language" content="zh-CN"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <meta name="topic-check-list" content="Ran Smart Index"/>
+  <meta name="topic-status" content="Complete"/>
+  <title>Map 组件示例 - 使用 RestMapProvider</title>
+  <link rel="StyleSheet" href="../../../../assets/css/SuperMapHelp.css" type="text/css"/>
+  <script type="text/javascript" src="../../../../assets/js/shCore.js"></script>
+  <script type="text/javascript" src="../../../../assets/js/shBrushBash.js"></script>
+  <script type="text/javascript" src="../../../../assets/js/shBrushCpp.js"></script>
+  <script type="text/javascript" src="../../../../assets/js/shBrushCSharp.js"></script>
+  <script type="text/javascript" src="../../../../assets/js/shBrushCss.js"></script>
+  <script type="text/javascript" src="../../../../assets/js/shBrushDelphi.js"></script>
+  <script type="text/javascript" src="../../../../assets/js/shBrushDiff.js"></script>
+  <script type="text/javascript" src="../../../../assets/js/shBrushGroovy.js"></script>
+  <script type="text/javascript" src="../../../../assets/js/shBrushJava.js"></script>
+  <script type="text/javascript" src="../../../../assets/js/shBrushJScript.js"></script>
+  <script type="text/javascript" src="../../../../assets/js/shBrushPhp.js"></script>
+  <script type="text/javascript" src="../../../../assets/js/shBrushPlain.js"></script>
+  <script type="text/javascript" src="../../../../assets/js/shBrushPython.js"></script>
+  <script type="text/javascript" src="../../../../assets/js/shBrushRuby.js"></script>
+  <script type="text/javascript" src="../../../../assets/js/shBrushScala.js"></script>
+  <script type="text/javascript" src="../../../../assets/js/shBrushSql.js"></script>
+  <script type="text/javascript" src="../../../../assets/js/shBrushVb.js"></script>
+  <script type="text/javascript" src="../../../../assets/js/shBrushXml.js"></script>
+  <script type="text/javascript" src="../../../../assets/js/ConfigiServer6R.js"></script>
+  <meta name="rh-index-keywords" content="查询,Map 组件示例,使用 RestMapProvider,SQL"/>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../../../../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../assets/css/homeButtom.css"/>
+  <script src="../../../../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../../../../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../../../../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../../../../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../../../../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../../../../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../../../../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../../../../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../../../../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <p class="myNormal">SuperMap iServer 的 Map 组件可以使用多种服务提供者来构建，<a class="contentpagehyperlink" href="USE_SC_Map.htm">Map 组件的使用</a>中介绍了使用工作空间的 Map 组件（即基于 UGCMapProvider）初始化方法，本节将介绍基于 RestMapProvider 的 Map 组件的构建和使用方法。包括：</p>
+  <ol style="list-style: decimal;">
+    <li>
+      <p class="myNormal"><a class="contentpagehyperlink" href="#Map 组件的初始化">Map 组件的初始化</a></p>
+    </li>
+    <li>
+      <p class="myNormal"><a class="contentpagehyperlink" href="#SQL_查询">SQL_查询</a></p>
+    </li>
+    <li>
+      <p class="myNormal"><a class="contentpagehyperlink" href="#根据范围出图">根据范围出图</a></p>
+    </li>
+  </ol>
+  <p class="myNormal">完整的示例代码参见：%SuperMap iServer_HOME%/samples/code/UseJavaAPI/MapComponentSampleUseRMP。</p>
+  <h2><a id="Map 组件的初始化"></a>Map 组件的初始化</h2>
+  <p class="myNormal">如前所述，Map 组件（地图组件）可以由地图组件上下文（MapContext）创建，一个完整的地图组件上下文需要设置地图服务组件配置信息和地图服务提供者，其中关于服务提供者的设置，MapContext 提供了设置服务提供者对象和服务提供者配置信息两种方式，本示例使用的是前者。</p>
+  <p class="ImageP"><img alt="" border="0" height="207" src="../../../../assets/images/DevelopGuide/Use_iServer/USE_JavaAPI/USE_SC/constructSC_RMP.png" style="border: none;" width="320"/></p>
+  <p class="myNormal">上图为使用 SuperMap 数据构建一个 Map 组件的过程（MapImpl），其中箭头表示初始化的流程，虚线箭头表示<a class="contentpagehyperlink" href="USE_SC_Map.htm">Map 组件的使用</a>中设置服务提供者的方式，本文示例的流程跟实线箭头表示的流程一致。即：通过 SuperMap REST 地图服务提供者配置（UGCMapProviderSetting）设置服务提供者对象，然后与地图配置（MapConfig）共同构建地图组件上下文（MapContext），最后由地图组件上下文初始化地图组件（MapImpl 对象）。示例代码如下（REST 服务地址要根据实际情况修改）：</p>
+  <pre class="brush:java">// 初始化一个 REST 地图服务提供者。
+RestMapProviderSetting providerSetting = new RestMapProviderSetting();
+//指定 REST 地图服务提供者所使用的 REST 服务地址。
+providerSetting.restServiceRootURL = &quot;http://localhost:8090/iserver/services/map-china/rest&quot;;
+// 构建 RestMapProvider 对象
+RestMapProvider restMapProvider = new RestMapProvider(providerSetting);
+List&lt;MapProvider&gt;  providers = new ArrayList&lt;MapProvider&gt;();
+providers.add(restMapProvider);
+// 初始化地图服务组件上下文对象。
+MapContext mapContext = new MapContext();
+mapContext.setProviders(providers);
+// 创建地图服务组件。
+MapImpl mapComponent = new MapImpl();
+//指定地图服务组件使用的服务提供者
+mapComponent.setComponentContext(mapContext);
+</pre>
+  <h2><a id="SQL_查询"></a>SQL 查询</h2>
+  <p class="myNormal">SQL 查询是通过 SQL 语句对指定地图的指定图层进行查询，对指定字段设置过滤条件从而查找满足条件的对象。</p>
+  <p class="myNormal">语法如下：</p>
+  <pre class="brush:java">public QueryResult queryBySQL(java.lang.String mapName, QueryParameterSet queryParameters)</pre>
+  <p class="myNormal">参数说明：</p>
+  <ul class="SymbolList2" style="list-style: circle;">
+    <li class="SymbolList2">mapName：查询的目标地图的名称。</li>
+    <li class="SymbolList2">queryParameters：查询参数集，可以包含多个查询参数。</li>
+  </ul>
+  <p class="myNormal">查询结果为一个 QueryResult 对象，包含多个查询记录集。</p>
+  <p class="myNormal">查询的示例代码如下：</p>
+  <pre class="brush:java">QueryParameterSet queryParameters = new QueryParameterSet();
+QueryParameter[] queryLayerParams = new QueryParameter[1];
+queryLayerParams[0] = new QueryParameter();
+queryLayerParams[0].name = &quot;Capital_pt@China&quot;;
+// 属性过滤条件
+queryLayerParams[0].attributeFilter = &quot;SmID&lt;6&quot;;
+// 返回的属性字段名称（不区分大小写）。
+queryLayerParams[0].fields = new String[] { &quot;NAME&quot;, &quot;CLASS&quot; };
+queryParameters.queryParams = queryLayerParams;
+// 设置查询结果包含属性信息及空间信息。
+queryParameters.queryOption = QueryOption.ATTRIBUTEANDGEOMETRY;
+// 查询在“China”地图的“Capital_pt@China”图层中 SmID 小于6 所有的要素
+QueryResult queryResult = mapComponent.queryBySQL(&quot;China&quot;, queryParameters);
+OutputQueryResult(queryResult);</pre>
+  <h2><a id="根据范围出图"></a>根据范围出图</h2>
+  <p class="myNormal">根据指定地理范围出图，即在指定的地图中，指定出图的地理范围，获取指定大小的地图图片。默认生成的地图图片大小是256*256像素。</p>
+  <p class="myNormal">语法如下：</p>
+  <pre class="brush:java">public MapImage viewByBounds(Rectangle2D bounds, MapParameter mapParameter, ImageOutputOption outputOption)</pre>
+  <p class="myNormal">参数说明：</p>
+  <ul class="SymbolList2" style="list-style: circle;">
+    <li class="SymbolList2">bounds：地理坐标范围。</li>
+    <li class="SymbolList2">mapParameter：地图参数。</li>
+    <li class="SymbolList2">outputOption：图片输出设置。</li>
+  </ul>
+  <p class="myNormal">获取的结果是一个 MapImage 对象，指定的图片输出格式是二进制流，格式是 PNG；如果指定的图片输出格式是图片格式，结果（MapImage）中包含指向图片地址的 URI，此时，实际图片位于缓存中，存储在作为数据源的 REST 服务的缓存目录下。</p>
+  <p class="myNormal">根据范围出图的示例代码如下：</p>
+  <pre class="brush:java">// 显示范围。
+Rectangle2D viewBounds = new Rectangle2D(9871111.11 ,2371111.11 , 12128888.89 , 4628888.89);
+// 获取“China”默认的地图参数。
+MapParameter mapParameter = mapComponent.getDefaultMapParameter(&quot;China&quot;);
+// 图片输出设置，指定了图片输出格式、返回图片地址、出图范围，以及使用默认图片大小（256*256）出图。
+ImageOutputOption outputOption = new ImageOutputOption();
+mapParameter.returnType = ReturnType.URL;
+outputOption.format = OutputFormat.PNG;
+mapParameter.viewBounds = viewBounds;
+MapImage mapImage = mapComponent.getMapImage(mapParameter, outputOption);
+System.out.println(&quot;图片路径为：&quot; + mapImage.imageUrl);</pre>
+  <p class="myNormal">完整的示例代码参见：%SuperMap iServer_HOME%/samples/code/UseJavaAPI/MapComponentSampleUseRMP。示例运行使用方法请参考<a class="contentpagehyperlink" href="../../../../GettingStarted/iServer_Developer_Start/Java_API_Start/Java_API_Start.htm">使用 Java API 入门</a>。</p>
+  <p class="myNormal"> </p>
+
+</div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../../../../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../../../../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../../../../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../../../../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../../../../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../../../../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../../../../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../../../.."
+    gCommonRootRelPath = "../../../.."
+    gTopicId = "6.3.2.1.0_2"
+  
+//]]></script>
+
+  <script src="../../../../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../../../../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../../../../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../../../../whxdata/layoutconfig.js"></script>
+  <script src="../../../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

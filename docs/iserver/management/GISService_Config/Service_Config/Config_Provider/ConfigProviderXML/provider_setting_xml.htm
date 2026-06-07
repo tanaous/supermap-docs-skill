@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../../../../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../../../../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../../../../../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../../../../iserver-icon.png"/>
+    
+  <script data-relpath="../../../../.." src="../../../../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <meta name="template" content="../../../../../assets/layouts/SuperMapiServerMain.htt"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Language" content="zh-CN"/>
+  <meta name="topic-check-list" content="Ran Smart Index"/>
+  <meta name="topic-status" content="Complete"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>通过 XML 文件配置服务提供者</title>
+  <link rel="StyleSheet" href="../../../../../assets/css/SuperMapHelp.css" type="text/css"/>
+  <script type="text/javascript" src="../../../../../assets/js/shCore.js"></script>
+  <script type="text/javascript" src="../../../../../assets/js/shBrushJava.js"></script>
+  <script type="text/javascript" src="../../../../../assets/js/shBrushJScript.js"></script>
+  <script type="text/javascript" src="../../../../../assets/js/shBrushXml.js"></script>
+  <script type="text/javascript" src="../../../../../assets/js/ConfigiServer6R.js"></script>
+  <meta name="rh-index-keywords" content="通过 XML 文件配置服务提供者,服务提供者实现与配置,表1"/>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../../../../../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../assets/css/homeButtom.css"/>
+  <script src="../../../../../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../../../../../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../../../../../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../../../../../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../../../../../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../../../../../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../../../../../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../../../../../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../../../../../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <p class="myNormal">服务提供者为服务组件提供功能，是服务组件业务逻辑处理的来源。SuperMap iServer 提供了自定义服务提供者的功能，可以通过修改服务配置文件iserver-services.xml（参见<a class="contentpagehyperlink" href="../../../../../Appendix/iServer_configInfo.htm">iServer 配置文件说明</a>）实现。服务提供者的配置包括工作空间路径、缓存路径、缓存访问路径等，服务提供者类型不同，配置项的内容也不同。</p>
+  <p class="myNormal">服务提供者的具体配置在&lt;provider/&gt;节点中进行，而其基本类型、实现类和配置类等信息如<a class="contentpagehyperlink" href="#表1_服务提供者实现与配置">表1_服务提供者实现与配置</a>所示。</p>
+  <h3><a id="workspacepath"></a>预设本地工作空间路径</h3>
+  <p class="myNormal">对于数据来源为<span style="font-weight: bold;">本地工作空间</span>的服务提供者，除了在XML配置文件中直接写入完整或相对数据路径外，iServer 还支持在环境变量、系统配置文件中预设工作空间路径。</p>
+  <p class="myNormal">如果您预设了数据路径，则通过 XML 配置服务提供者时，可以直接读取预设路径下的工作空间数据，不必再写出完整的数据路径。</p>
+  <h4>通过环境变量预设</h4>
+  <p class="myNormal">具体操作如下：</p>
+  <ol class="ListInParagraph" style="list-style: decimal;">
+    <li class="ListInParagraph">指定工作空间或工作空间文件所在的路径</li>
+  </ol>
+  <ul class="SymbolList2" style="list-style: circle;">
+    <li class="SymbolList2">在操作系统的环境变量中，创建新的环境变量并指向工作空间文件，如：data1、idata2，分别指向：data1=E:/supermap/data/China400.smwu、data2=E:/supermap/data/Jingjin.sxwu</li>
+    <li class="SymbolList2">或者，创建新的环境变量并指向工作空间所在的路径，如：datapath1、datapath2，分别指向数据路径：datapath1=E:/supermap/data1，datapath2=E:/supermap/data2</li>
+  </ul>
+  <ol class="ListInParagraph" start="2" style="list-style: decimal;">
+    <li class="ListInParagraph">配置服务提供者，在工作空间路径配置项中写入已有的环境变量</li>
+  </ol>
+  <ul class="SymbolList2" style="list-style: circle;">
+    <li class="SymbolList2">对于 ${iServerData1}，写法如：&lt;workspacePath&gt;${data1}&lt;workspacePath&gt;</li>
+    <li class="SymbolList2">对于${iServerDataPath1}，写法如：&lt;workspacePath&gt;${datapath1}/China400.smwu&lt;workspacePath&gt;</li>
+  </ul>
+  <h4>通过系统配置文件预设</h4>
+  <p class="myNormal">具体操作如下：</p>
+  <ol class="ListInParagraph" style="list-style: decimal;">
+    <li class="ListInParagraph">在系统配置文件iserver-system.xml的&lt;properties&gt;节点中添加代表工作空间文件或路径的一个或多个变量，详见：<a class="contentpagehyperlink" href="../../../../../Appendix/iServer_configInfo.htm#1.__properties__元素">iServer 配置文件说明</a></li>
+  </ol>
+  <ul class="SymbolList2" style="list-style: circle;">
+    <li class="SymbolList2">如：&lt;data1&gt;，并配置信息：&lt;data1&gt;E:/supermap/data/China.smwu&lt;/data1&gt;</li>
+    <li class="SymbolList2">如：&lt;datapath1&gt;，并配置信息：&lt;datapath1&gt;E:/supermap/data&lt;/datapath1&gt;</li>
+  </ul>
+  <ol class="ListInParagraph" start="2" style="list-style: decimal;">
+    <li class="ListInParagraph">配置服务提供者，在工作空间路径配置项中写入已有的环境变量</li>
+  </ol>
+  <ul class="SymbolList2" style="list-style: circle;">
+    <li class="SymbolList2">对于 ${data1}，写法如：&lt;workspacePath&gt;${data1}&lt;workspacePath&gt;</li>
+    <li class="SymbolList2">对于${datapath1}，写法如：&lt;workspacePath&gt;${datapath1}/China400.smwu&lt;workspacePath&gt;</li>
+  </ul>
+  <p class="myNormal"> </p>
+  <p class="myNormal">上述环境变量、系统配置文件两种方式均可实现预设本地工作空间数据。但是，<span style="font-weight: bold;">如果您同时使用上述两种方式设置了工作空间，iServer 会优先使用环境变量中设置的数据。</span></p>
+  <p class="myNormal"> </p>
+  <h3>服务提供者实现与配置类</h3>
+  <p class="myNormal" style="text-align: center;"><a id="表1_服务提供者实现与配置"></a>表1 服务提供者实现与配置</p>
+  <div style="text-align: center;">
+    <table cellspacing="0" class="iServerTable" style="left: 0px; top: 62px;" width="80%">
+      <colgroup>
+        <col style="width: 15%;"/>
+        <col style="width: 25%;"/>
+        <col style="width: 30%;"/>
+        <col style="width: 30%;"/>
+      </colgroup>
+      <tbody>
+        <tr class="t1st">
+          <td colspan="2">服务提供者类型</td>
+          <td>
+            <p>服务提供者实现类</p>
+            <p style="font-weight: normal;">（com.supermap.services.providers.*）</p>
+          </td>
+          <td>
+            <p>服务提供者配置类</p>
+            <p style="font-weight: normal;">（com.supermap.services.providers.*）</p>
+          </td>
+        </tr>
+        <tr class="t2Row">
+          <td rowspan="10">数据</td>
+          <td>
+            <p><a class="contentpagehyperlink" href="configDataProviderXML.htm#配置本地数据服务提供者">本地数据服务提供者</a></p>
+          </td>
+          <td>UGCDataProvider</td>
+          <td>UGCDataProviderSetting</td>
+        </tr>
+        <tr class="t1Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="configDataProviderXML.htm#配置_WFS_数据服务提供者">WFS 数据服务提供者</a></p>
+          </td>
+          <td>WFSDataProvider</td>
+          <td>WFSDataProviderSetting</td>
+        </tr>
+        <tr class="t2Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="configDataProviderXML.htm#配置_REST_数据服务提供者">REST 数据服务提供者</a></p>
+          </td>
+          <td>RestDataProvider</td>
+          <td>RestDataProviderSetting</td>
+        </tr>
+        <tr class="t1Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="configDataProviderXML.htm#ArcGIS_RESTdata">ArcGIS REST 数据服务提供者</a></p>
+          </td>
+          <td>ArcGISRestDataProvider</td>
+          <td>ArcGISRestDataProviderSetting</td>
+        </tr>
+        <tr class="t2Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="../../../aggregation_Config.htm#2._数据功能聚合的配置">聚合数据服务提供者</a></p>
+          </td>
+          <td>AggregationDataProvider</td>
+          <td>AggregationDataProviderSetting</td>
+        </tr>
+        <tr class="t1Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="configDataProviderXML.htm#setGeoPackageDataProvider">GeoPackage 数据服务提供者</a></p>
+          </td>
+          <td>GeoPackageDataProvider</td>
+          <td>GeoPackageDataProviderSetting</td>
+        </tr>
+        <tr class="t2Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="configDataProviderXML.htm#shape_data_provider">ShapeFile 数据服务提供者</a></p>
+          </td>
+          <td>ShapefileDataProvider</td>
+          <td>ShapefileDataProviderSetting</td>
+        </tr>
+        <tr class="t1Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="configDataProviderXML.htm#PostGIS_data_provider">PostGIS 数据服务提供者</a></p>
+          </td>
+          <td>PostgisDataProvider</td>
+          <td>PostgisDataProviderSetting</td>
+        </tr>
+        <tr class="t2Row">
+          <td>
+            <p>GeoTrellis 数据服务提供者</p>
+          </td>
+          <td>GeotrellisDataProvider</td>
+          <td>GeotrellisDataProviderSetting</td>
+        </tr>
+        <tr class="t2Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="configDataProviderXML.htm#配置_Elasticsearch_服务提供者">Elasticsearch 服务提供者</a></p>
+          </td>
+          <td>ElasticsearchDataProvider</td>
+          <td>ElasticsearchDataProviderSetting</td>
+        </tr>
+        <tr class="t1Row">
+          <td rowspan="32">地图</td>
+          <td>
+            <p><a class="contentpagehyperlink" href="configMapProviderXML.htm#配置本地地图服务提供者">本地地图服务提供者</a></p>
+          </td>
+          <td>UGCMapProvider</td>
+          <td>UGCMapProviderSetting</td>
+        </tr>
+        <tr class="t2Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="configMapProviderXML.htm#配置_REST_地图服务提供者">REST 地图服务提供者</a></p>
+          </td>
+          <td>RestMapProvider</td>
+          <td>RestMapProviderSetting</td>
+        </tr>
+        <tr class="t1Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="configMapProviderXML.htm#配置_超图云_地图服务提供者">超图云地图服务提供者</a></p>
+          </td>
+          <td>CloudMapProvider</td>
+          <td>CloudMapProviderSetting</td>
+        </tr>
+        <tr class="t1Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="configMapProviderXML.htm#GDP">GDP 地图服务提供者</a></p>
+          </td>
+          <td>GDPMapProvider</td>
+          <td>GDPMapProviderSetting</td>
+        </tr>
+        <tr class="t2Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="configMapProviderXML.htm#MongoDB">MongoDB 地图服务提供者</a></p>
+          </td>
+          <td>MongoDBTileProvider</td>
+          <td>MongoDBTileProviderSetting</td>
+        </tr>
+        <tr class="t1Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="configMapProviderXML.htm#MongoDB1">MongoDBMVT 地图服务提供者</a></p>
+          </td>
+          <td>MongoDBMVTTileProvider</td>
+          <td>MongoDBTileProviderSetting</td>
+        </tr>
+        <tr class="t2Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="configMapProviderXML.htm#配置_MBTiles_地图服务提供者">SMTiles 地图服务提供者</a></p>
+          </td>
+          <td>SMTilesMapProvider</td>
+          <td>SMTilesMapProviderSetting</td>
+        </tr>
+        <tr class="t1Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="configMapProviderXML.htm#配置_SVTiles_地图服务提供者">SVTiles 地图服务提供者</a></p>
+          </td>
+          <td>SVTilesMapProvider</td>
+          <td>SVTilesMapProviderSetting</td>
+        </tr>
+        <tr class="t2Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="configMapProviderXML.htm#UGCV5">UGCV5 地图服务提供者</a></p>
+          </td>
+          <td>UGCV5TileProvider</td>
+          <td>UGCV5TileProviderSetting</td>
+        </tr>
+        <tr class="t1Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="configMapProviderXML.htm#配置__UGCV5_MVT__地图服务提供者">UGCV5(MVT) 地图服务提供者</a></p>
+          </td>
+          <td>MVTTileProvider</td>
+          <td>MVTTileProviderSetting</td>
+        </tr>
+        <tr class="t2Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="configMapProviderXML.htm#配置_WMS_地图服务提供者">WMS 地图服务提供者</a></p>
+          </td>
+          <td>WMSMapProvider</td>
+          <td>WMSMapProviderSetting</td>
+        </tr>
+        <tr class="t1Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="configMapProviderXML.htm#配置_WMTS_地图服务提供者">WMTS 地图服务提供者</a></p>
+          </td>
+          <td>WMTSMapProvider</td>
+          <td>WMTSMapProviderSetting</td>
+        </tr>
+        <tr class="t2Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="configMapProviderXML.htm#配置_REST_地图服务提供者">REST 地图服务提供者</a></p>
+          </td>
+          <td>RestMapProvider</td>
+          <td>RestMapProviderSetting</td>
+        </tr>
+        <tr class="t1Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="configMapProviderXML.htm#配置_BingMaps_地图服务提供者">Bing Maps 地图服务提供者</a></p>
+          </td>
+          <td>BingMapsMapProvider</td>
+          <td>BingMapsMapProviderSetting</td>
+        </tr>
+        <tr class="t2Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="configMapProviderXML.htm#Google_Maps">Google Maps 地图服务提供者</a></p>
+          </td>
+          <td>GoogleMapsMapProvider</td>
+          <td>GoogleMapsMapProviderSetting</td>
+        </tr>
+        <tr class="t1Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="configMapProviderXML.htm#配置_天地图_地图服务提供者">天地图 地图服务提供者</a></p>
+          </td>
+          <td>TiandituMapProvider</td>
+          <td>TiandituMapProviderSetting</td>
+        </tr>
+        <tr class="t2Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="configMapProviderXML.htm#配置_ArcGIS_REST_地图服务提供者">ArcGIS REST 地图服务提供者</a></p>
+          </td>
+          <td>ArcGISRestMapProvider</td>
+          <td>ArcGISRestMapProviderSetting</td>
+        </tr>
+        <tr class="t1Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="configMapProviderXML.htm#配置_ArcGIS_缓存地图服务提供者">ArcGIS 缓存服务提供者</a></p>
+          </td>
+          <td>ArcGISCacheMapProvider</td>
+          <td>ArcGISCacheMapProviderSetting</td>
+        </tr>
+        <tr class="t2Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="configMapProviderXML.htm#配置_ArcGIS_紧凑型缓存__V2__地图服务提供者">ArcGIS V2缓存服务提供者</a></p>
+          </td>
+          <td>ArcGISCacheV2MapProvider</td>
+          <td>ArcGISCacheMapProviderSetting</td>
+        </tr>
+        <tr class="t1Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="configMapProviderXML.htm#TPK">TPK 地图服务提供者</a></p>
+          </td>
+          <td>TPKMapProvider</td>
+          <td>TPKMapProviderSetting</td>
+        </tr>
+        <tr>
+          <td><a class="contentpagehyperlink" href="configMapProviderXML.htm#TPKX">TPKX 地图服务提供者</a></td>
+          <td>TPKXMapProvider</td>
+          <td>TPKXMapProviderSetting</td>
+        </tr>
+        <tr class="t2Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="configMapProviderXML.htm#ArcGIS_VTPK">VTPK 地图服务提供者</a></p>
+          </td>
+          <td>VTPKMapProvider</td>
+          <td>VTPKMapProviderSetting</td>
+        </tr>
+        <tr class="t1Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="configMapProviderXML.htm#GeoTrellis_map_provider">GeoTrellis 地图服务提供者</a></p>
+          </td>
+          <td>GeoTrellisMapProvider</td>
+          <td>GeoTrellisMapProviderSetting</td>
+        </tr>
+        <tr class="t1Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="../../../aggregation_Config.htm#1._地图功能聚合的配置">聚合地图服务提供者</a></p>
+          </td>
+          <td>AggregationMapProvider</td>
+          <td>AggregationMapProviderSetting</td>
+        </tr>
+        <tr class="t2Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="configMapProviderXML.htm#配置复合瓦片地图服务提供者">复合切片地图服务提供者</a></p>
+          </td>
+          <td>MultiTilesProvider</td>
+          <td>MultiTilesProviderSetting</td>
+        </tr>
+        <tr class="t1Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="configMapProviderXML.htm#配置_百度地图_地图服务提供者">百度地图地图服务提供者</a></p>
+          </td>
+          <td>BaiduMapProvider</td>
+          <td>BaiduMapProviderSetting</td>
+        </tr>
+        <tr class="t2Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="configMapProviderXML.htm#配置_OpenStreetMap_地图服务提供者">OpenStreetMap 地图服务提供者</a></p>
+          </td>
+          <td>OpenStreetMapProvider</td>
+          <td>OpenStreetMapProviderSetting</td>
+        </tr>
+        <tr class="t1Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="configMapProviderXML.htm#setGeoPackageMapProvider">GeoPackage 地图服务提供者</a></p>
+          </td>
+          <td>GeoPackageMapProvider</td>
+          <td>GeoPackageMapProviderSetting</td>
+        </tr>
+        <tr class="t2Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="configMapProviderXML.htm#shape_map_provider">ShapeFile地图服务提供者</a></p>
+          </td>
+          <td>ShapefileMapProvider</td>
+          <td>ShapefileMapProviderSetting</td>
+        </tr>
+        <tr class="t1Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="configMapProviderXML.htm#postgis_map_provider">PostGIS 地图服务提供者</a></p>
+          </td>
+          <td>PostgisMapProvider</td>
+          <td>PostgisMapProviderSetting</td>
+        </tr>
+        <tr class="t2Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="configMapProviderXML.htm#OTS_mapserviceprovider">OTS 地图服务提供者</a></p>
+          </td>
+          <td>OTSTileProvider</td>
+          <td>OTSTileProviderSetting</td>
+        </tr>
+        <tr class="t1Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="configMapProviderXML.htm#配置_ZXYTiles_地图服务提供者">ZXY 地图服务提供者</a></p>
+          </td>
+          <td>ZXYTilesMapProvider</td>
+          <td>ZXYTilesMapProviderSetting</td>
+        </tr>
+        <tr class="t2Row">
+          <td rowspan="8">三维</td>
+          <td>
+            <p><a class="contentpagehyperlink" href="configRealspaceProXML.htm#配置本地三维服务提供者">本地三维服务提供者</a></p>
+          </td>
+          <td>UGCRealspaceProvider</td>
+          <td>UGCRealspaceProviderSetting</td>
+        </tr>
+        <tr class="t1Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="configRealspaceProXML.htm#配置_REST_三维服务提供者">REST 三维服务提供者</a></p>
+          </td>
+          <td>RestRealspaceProvider</td>
+          <td>RestRealspaceProviderSetting</td>
+        </tr>
+        <tr class="t2Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="configRealspaceProXML.htm#MongoDB_3Dprovider">MongoDB 三维服务提供者</a></p>
+          </td>
+          <td>MongoDBRealspaceProvider</td>
+          <td>MongoDBRealspaceProviderSetting</td>
+        </tr>
+        <tr class="t1Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="configRealspaceProXML.htm#配置_OSS_三维瓦片缓存服务提供者_已过时_">OSS 三维切片缓存服务提供者</a></p>
+          </td>
+          <td>OssRealspaceProvider</td>
+          <td>OssRealspaceProviderSetting</td>
+        </tr>
+        <tr class="t2Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="configRealspaceProXML.htm#配置_S3_三维瓦片缓存服务提供者">S3 三维切片缓存服务提供者</a></p>
+          </td>
+          <td>SuperMapTilesRealspaceProvider</td>
+          <td>SuperMapTilesRealspaceProviderSetting</td>
+        </tr>
+        <tr class="t1Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="configRealspaceProXML.htm#配置3DTiles缓存服务提供者">3DTiles 缓存服务提供者</a></p>
+          </td>
+          <td>ThreeDTilesRealspaceProvider</td>
+          <td>ThreeDTilesRealspaceProviderSetting</td>
+        </tr>
+        <tr class="t2Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="configRealspaceProXML.htm#配置_UGCV5_MVT__三维服务提供者">UGCV5(MVT) 三维服务提供者</a></p>
+          </td>
+          <td>MVTTileRealspaceProvider</td>
+          <td>ThreeDTilesRealspaceProviderSetting</td>
+        </tr>
+        <tr class="t1Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="configRealspaceProXML.htm#配置三维切片缓存服务提供者">三维切片缓存服务提供者</a></p>
+          </td>
+          <td>LocalRealspaceProvider</td>
+          <td>LocalRealspaceProviderSetting</td>
+        </tr>
+        <tr class="t2Row">
+          <td rowspan="2">空间分析</td>
+          <td>
+            <p><a class="contentpagehyperlink" href="configSpaProXML.htm#本地空间分析服务提供者">本地空间分析服务提供者</a></p>
+          </td>
+          <td>UGCSpatialAnalystProvider</td>
+          <td>UGCSpatialAnalystProviderSetting</td>
+        </tr>
+        <tr class="t1Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="configSpaProXML.htm#REST_空间分析服务提供者">REST 空间分析服务提供者</a></p>
+          </td>
+          <td>RestSpatialAnalystProvider</td>
+          <td>RestSpatialAnalystProviderSetting</td>
+        </tr>
+        <tr class="t2Row">
+          <td rowspan="3">交通网络分析</td>
+          <td>
+            <p><a class="contentpagehyperlink" href="configTransportationProXML.htm#配置本地交通网络乘分析服务提供者">本地交通网络分析服务提供者</a></p>
+          </td>
+          <td>UGCTransportationAnalystProvider</td>
+          <td>TransportationAnalystSetting</td>
+        </tr>
+        <tr class="t1Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="configTransportationProXML.htm#配置_REST_交通网络分析服务提供者">REST 交通网络分析服务提供者</a></p>
+          </td>
+          <td>RestTransportationAnalystProvider</td>
+          <td>RestTransportationAnalystProviderSetting</td>
+        </tr>
+        <tr class="t2Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="configTransportationProXML.htm#配置_ArcGIS_REST_网络分析服务提供者">ArcGIS REST 网络分析服务提供者</a></p>
+          </td>
+          <td>ArcGISRestNetworkAnalystProvider</td>
+          <td>ArcGISRestNetworkAnalystProviderSetting</td>
+        </tr>
+        <tr class="t1Row">
+          <td rowspan="2">交通换乘分析</td>
+          <td>
+            <p><a class="contentpagehyperlink" href="configTrafficTransferProXML.htm#配置本地交通换乘分析服务提供者">本地交通换乘分析服务提供者</a></p>
+          </td>
+          <td>UGCTrafficTransferAnalystProvider</td>
+          <td>TrafficTransferAnalystSetting</td>
+        </tr>
+        <tr class="t2Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="configTrafficTransferProXML.htm#配置_REST_交通换乘分析服务提供者">REST 交通换乘分析服务提供者</a></p>
+          </td>
+          <td>RestTrafficTransferAnalystProvider</td>
+          <td>RestTrafficTransferAnalystProviderSetting</td>
+        </tr>
+        <tr class="t1Row">
+          <td>三维网络分析</td>
+          <td>
+            <p><a class="contentpagehyperlink" href="3DFacilityAnalystSetting.htm">三维网络分析服务提供者</a></p>
+          </td>
+          <td>UGCNetworkAnalyst3DProvider</td>
+          <td>NetworkAnalyst3DSetting</td>
+        </tr>
+        <tr class="t2Row">
+          <td>几何</td>
+          <td>
+            <p>Geometry 服务提供者</p>
+          </td>
+          <td>GeoToolsGeometryProvider</td>
+          <td>DefaultProviderConfig</td>
+        </tr>
+        <tr class="t1Row">
+          <td>影像</td>
+          <td>
+            <p><a class="contentpagehyperlink" href="imageserviceProviderXML.htm">影像服务提供者</a></p>
+          </td>
+          <td>UGCImageServiceProvider</td>
+          <td>ImageProviderSetting</td>
+        </tr>
+        <tr class="t2Row">
+          <td colspan="1" rowspan="3">地址匹配</td>
+          <td>
+            <p>REST 地址匹配服务提供者</p>
+          </td>
+          <td>RestAddressMatchProvider</td>
+          <td>RestAddressMatchProviderSetting</td>
+        </tr>
+        <tr class="t1Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="addressmatch_providerconfig.htm#地址匹配服务提供者">地址匹配服务提供者</a></p>
+          </td>
+          <td>UGCAddressMatchProvider</td>
+          <td>UGCAddressMatchProviderSetting</td>
+        </tr>
+        <tr>
+          <td>
+            <p><a class="contentpagehyperlink" href="addressmatch_providerconfig.htm#ArcGIS地址匹配服务提供者">ArcGIS REST 地址匹配服务提供者</a></p>
+          </td>
+          <td>ArcGISRestGeocodeProvider</td>
+          <td>ArcGISRestGeocodeProviderSetting</td>
+        </tr>
+        <tr class="t2Row">
+          <td rowspan="2">动态标绘</td>
+          <td>
+            <p><a class="contentpagehyperlink" href="configPlotProXML.htm#配置动态标绘服务提供者">动态标绘服务提供者</a></p>
+          </td>
+          <td>UGCPlotProvider</td>
+          <td>UGCPlotProviderSetting</td>
+        </tr>
+        <tr class="t1Row">
+          <td>
+            <p><a class="contentpagehyperlink" href="configPlotProXML.htm#配置_REST_动态标绘服务提供者">REST 动态标绘服务提供者</a></p>
+          </td>
+          <td>RestPlotProvider</td>
+          <td>RestPlotProviderSetting</td>
+        </tr>
+        <tr>
+          <td>矢量瓦片</td>
+          <td>
+            <p><a class="contentpagehyperlink" href="configMVTProviderXML.htm">本地矢量瓦片服务提供者</a></p>
+          </td>
+          <td>UGCMVTProvider</td>
+          <td>UGCMVTProviderSetting</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p> </p>
+
+</div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../../../../../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../../../../../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../../../../../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../../../../../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../../../../../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../../../../../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../../../../../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../../../../.."
+    gCommonRootRelPath = "../../../../.."
+    gTopicId = "5.2.1.1.3"
+  
+//]]></script>
+
+  <script src="../../../../../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../../../../../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../../../../../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../../../../../whxdata/layoutconfig.js"></script>
+  <script src="../../../../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

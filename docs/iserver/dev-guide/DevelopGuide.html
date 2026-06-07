@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../iserver-icon.png"/>
+    
+  <script data-relpath=".." src="../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+<meta name="template" content="../assets/layouts/SuperMapiServerMain.htt"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="Content-Language" content="zh-CN"/>
+<meta name="topic-check-list" content="Ran Smart Index"/>
+<meta name="topic-status" content="Complete"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>开发指南</title>
+<link rel="StyleSheet" href="../assets/css/SuperMapHelp.css" type="text/css"/>
+<meta name="rh-index-keywords" content="开发指南"/><meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../assets/css/homeButtom.css"/>
+  <script src="../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+<p class="myNormal">SuperMap iServer 为广大用户提供了整套 SDK，应用开发人员可以使用 SuperMap 
+ iServer 提供的 Web 服务接口开发需要的应用系统。在 <b><a class="contentpagehyperlink" href="Use_iServer/iserver_API.htm">使用 
+ iServer API</a></b> 部分提供了丰富的示例介绍 SuperMap iServer API 的使用，其中 使用 REST API 
+ 部分以 JavaScript 为工具，构建 HTTP 请求与 SuperMap iServer 进行交互，说明 REST 服务的访问与使用过程；利用 
+ REST API 实现了一些操作，包括对地图的操作、对图层的操作、查询功能、对数据的操作、以及三维操作等。使用 Java API 部分对服务提供者、服务组件和服务接口进行了简要的介绍，同时通过示例实现了获取地图、获取地物要素信息等功能。</p>
+<p class="myNormal">同时， SuperMap iServer 还提供了一套扩展机制，使用户能够根据业务系统的需求，使用 SuperMap 
+ iServer SDK 对 SuperMap iServer 进行扩展，方便地将自己的应用添加至 SuperMap iServer 服务器上。<b><a class="contentpagehyperlink" href="Extend_iServer/Extend_iServer.htm">扩展 iServer</a></b> 部分介绍了 
+ 扩展 REST 和 扩展领域服务。其中扩展 REST 部分分别介绍了 SuperMap iServer 支持的几种形式的扩展：扩展资源、扩展安全机制、扩展表述生成器、扩展参数解析器、扩展 
+ HTTP 请求处理器等。 扩展领域服务部分通过一个示例来说明如何创建一个领域空间服务，并配置到 SuperMap iServer 系统中。</p>
+<p class="myNormal">SuperMap iPortal 作为可定制的 GIS 门户软件平台，为用户提供了个性化的定制开发服务，如前端页面的定制开发、新增资源的定制开发等，协助应用开发人员根据自身业务需求，量身定制一系列符合用户实际应用的门户功能，快速构建 
+ GIS 门户软件平台。</p>
+<p class="myNormal">关于  SuperMap 所提供的 SampleCode 的总体浏览和介绍，请参考<a class="contentpagehyperlink" href="SampleCode_Introduction.htm">示范程序说明</a>。</p>
+<h3><a class="contentpagehyperlink" href="../GettingStarted/iServer_iClient_Start/iServer_iClient_Start.htm">使用 
+ iClient 开发入门</a></h3>
+<h3><a class="contentpagehyperlink" href="../GettingStarted/iServer_Developer_Start/iServer_Developer_Start.htm">使用 
+ iServer 开发入门</a></h3>
+<h3>使用 iServer API</h3>
+<ul class="referenceList">
+	<li class="referenceList"><a class="contentpagehyperlink" href="Use_iServer/USE_RESTAPI/RESTAPIDev.htm">使用 
+	 REST API</a></li>
+	<li class="referenceList"><a class="contentpagehyperlink" href="Use_iServer/USE_JavaAPI/use_Java_API.htm">使用 
+	 Java API</a></li>
+</ul>
+<h3>扩展 iServer</h3>
+<ul class="referenceList">
+	<li class="referenceList"><a class="contentpagehyperlink" href="Extend_iServer/Extend_tileSource/ExtendTileset.htm">分布式切图切片格式扩展</a></li>
+	<li class="referenceList"><a class="contentpagehyperlink" href="Extend_iServer1/ExistREST/ExistRSET.htm">现有 
+	 REST 资源扩展</a></li>
+	<li class="referenceList"><a class="contentpagehyperlink" href="Extend_iServer1/DSSE/DSSE.htm">领域空间服务扩展</a></li>
+	<li class="referenceList"><a class="contentpagehyperlink" href="Extend_iServer1/Cluster/extendcluster.htm">集群机制扩展</a></li>
+	<li class="referenceList"><a class="contentpagehyperlink" href="../Subject_introduce/Security/otherSecurity/extendOAuth_2.0.htm">扩展使用 
+	 OAuth2协议的账户</a></li>
+	<li class="referenceList"><a class="contentpagehyperlink" href="../Subject_introduce/Security/otherSecurity/extendUsers.htm">扩展使用自定义的第三方账户</a></li>
+	<li class="referenceList"><a class="contentpagehyperlink" href="Extend_iServer/Extend_Security/extendSecurityStorage.htm">扩展安全信息存储方式</a></li>
+	<li class="referenceList"><a class="contentpagehyperlink" href="Extend_iServer/Extend_Security/extendaccountInfoComplianceRules.htm">扩展账户信息合规度校验规则</a></li>
+</ul>
+<p class="myNormal"> </p>
+
+
+</div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = ".."
+    gCommonRootRelPath = ".."
+    gTopicId = "6"
+  
+//]]></script>
+
+  <script src="../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../whxdata/layoutconfig.js"></script>
+  <script src="../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

@@ -1,0 +1,1431 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../../../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../../iserver-icon.png"/>
+    
+  <script data-relpath="../../.." src="../../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <meta name="template" content="../../../assets/layouts/SuperMapiServerMain.htt"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Language" content="zh-CN"/>
+  <meta name="topic-status" content="Complete"/>
+  <meta name="topic-check-list" content="Ran Smart Index"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>服务提供者层的扩展</title>
+  <link rel="StyleSheet" href="../../../assets/css/SuperMapHelp.css" type="text/css"/>
+  <script type="text/javascript" src="../../../assets/js/shCore.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushBash.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushCpp.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushCSharp.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushCss.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushDelphi.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushDiff.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushGroovy.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushJava.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushJScript.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushPhp.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushPlain.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushPython.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushRuby.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushScala.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushSql.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushVb.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushXml.js"></script>
+  <script type="text/javascript" src="../../../assets/js/ConfigiServer6R.js"></script>
+  <script src="../../../assets/js/SMCollapse.js" type="text/javascript"></script>
+  <meta name="rh-index-keywords" content="服务提供者层的扩展,TiledMapProviderBase,扩展介绍"/>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../../../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../assets/css/homeButtom.css"/>
+  <script src="../../../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../../../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../../../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../../../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../../../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../../../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../../../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../../../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../../../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <p class="myNormal">服务提供者层的实现形式如下：</p>
+  <p class="myCodeP">public class SampleProvider implements ProviderContextAware {</p>
+  <p class="myCodeP">     ...</p>
+  <p class="myCodeP">}</p>
+  <p class="myNormal">ProviderContextAware 用于获取服务提供者上下文，通过服务提供者上下文，可以获取该服务提供者对应的配置信息。</p>
+  <p class="myNormal">在 SuperMap iServer 的三层架构中，各层的配置可参考<a class="contentpagehyperlink" href="../../../Appendix/iServer_configInfo.htm">iServer 配置文件说明</a>。</p>
+  <h2 class="myNormal">服务提供者接口</h2>
+  <p class="myNormal">SuperMap iServer 已有的服务提供者类型有地图服务提供者、数据服务提供者、三维服务提供者、空间分析服务提供者、交通网络分析服务提供者。针对这些服务提供者，SuperMap iServer 已经进行了实现，从而提供了 GIS 功能的来源，支撑 SuperMap iServer 提供各种 GIS 功能（参见：<a class="contentpagehyperlink" href="../../../Service_introduce/Service_Provider.htm">服务提供者介绍</a>）。</p>
+  <p class="myNormal">扩展服务提供者，对已有的服务提供者类型重新实现，可以扩宽 SuperMap iServer 提供 GIS 功能的来源。</p>
+  <p style="text-align: center;">表1  扩展服务提供者实现的接口/继承的类</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="80%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 40%;"/>
+      <col style="width: 45%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>扩展类型</td>
+        <td>继承的类/实现的接口</td>
+        <td>备注</td>
+      </tr>
+      <tr class="t2Row">
+        <td rowspan="5">地图服务提供者</td>
+        <td>com.supermap.services.components.spi.MapProvider</td>
+        <td>所有的地图服务提供者都实现该接口。 实现该接口的服务提供者可以被地图服务组件使用。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>com.supermap.services.components.spi.AbstractRestMapProvider</td>
+        <td>封装了访问 REST 地图服务所需的基本功能，所有使用 REST 地图服务的服务提供者都可使用此类扩展。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>com.supermap.services.components.spi.RemoteTiledMapProviderBase</td>
+        <td>RemoteTileProviderBase 是用于聚合第三方地图服务的抽象类，用于构建在线服务提供者，实现了 ProviderContextAware 服务提供者上下文依赖库接口和 MapProvider 地图服务提供者接口。 (参见：<a class="contentpagehyperlink" href="#RemoteTiledMapProviderBase_扩展介绍">RemoteTiledMapProviderBase_扩展</a>）</td>
+      </tr>
+      <tr class="t1Row">
+        <td>com.supermap.services.components.spi.LocalTiledMapProviderBase</td>
+        <td>LocalTileProviderBase 是用于扩展本地地图瓦片服务的抽象类，本地的地图瓦片来源于 ArcGIS 切图所得。 (参见：<a class="contentpagehyperlink" href="#LocalTiledMapProviderBase_扩展介绍">LocalTiledMapProviderBase_扩展</a>）</td>
+      </tr>
+      <tr class="t2Row">
+        <td>其他已有实现类（参见：<a class="contentpagehyperlink" href="../../../Service_introduce/Service_Provider.htm">服务提供者介绍</a>）</td>
+        <td> </td>
+      </tr>
+      <tr class="t1Row">
+        <td rowspan="2">数据服务提供者</td>
+        <td>com.supermap.services.components.spi.DataProvider</td>
+        <td>所有的数据服务提供者都实现该接口。 实现该接口的服务提供者可以被数据服务组件使用。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>其他已有实现类（参见：<a class="contentpagehyperlink" href="../../../Service_introduce/Service_Provider.htm">服务提供者介绍</a>）</td>
+        <td> </td>
+      </tr>
+      <tr class="t1Row">
+        <td rowspan="2">空间分析服务提供者</td>
+        <td>com.supermap.services.components.spi.SpatialAnalystProvider</td>
+        <td>所有的空间分析服务提供者都实现该接口。 实现该接口的服务提供者可以被空间分析服务组件使用。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>其他已有实现类（参见：<a class="contentpagehyperlink" href="../../../Service_introduce/Service_Provider.htm">服务提供者介绍</a>）</td>
+        <td> </td>
+      </tr>
+      <tr class="t1Row">
+        <td rowspan="2">交通网络分析服务提供者</td>
+        <td>com.supermap.services.providers.spi.TransportationAnalystProvider</td>
+        <td>所有的交通网络分析服务提供者都实现该接口。 实现该接口的服务提供者可以被交通网络分析服务组件使用。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>其他已有实现类（参见：<a class="contentpagehyperlink" href="../../../Service_introduce/Service_Provider.htm">服务提供者介绍</a>）</td>
+        <td> </td>
+      </tr>
+      <tr class="t1Row">
+        <td rowspan="2">三维服务提供者</td>
+        <td>com.supermap.services.components.spi.RealspaceProvider</td>
+        <td>所有的三维服务提供者都实现该接口。 实现该接口的服务提供者可以被三维服务组件使用。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>其他已有实现类（参见：<a class="contentpagehyperlink" href="../../../Service_introduce/Service_Provider.htm">服务提供者介绍</a>）</td>
+        <td> </td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="myNormal">在定义新的服务提供者类型，实现特定行业领域的功能时，不受以上接口限制。</p>
+  <h2>服务提供者上下文</h2>
+  <p class="myNormal">在服务提供者实现类中，可以通过 ProviderContextAware 接口获取服务提供者上下文，通过服务提供者上下文，可以获取获取服务提供者配置信息。</p>
+  <p class="myNormal">用户自定义服务服务配置信息在 iserver-services.xml 中（详见<a class="contentpagehyperlink" href="../../../Appendix/iServer_configInfo.htm">iServer 配置文件说明</a>），配置服务提供者时定制，结构由服务提供者配置类确定。服务提供者配置如下：</p>
+  <p class="myCodeP">&lt;provider class=&quot;com.supermap.sample.SampleProvider&quot; name=&quot;sampleProvider&quot;&gt;</p>
+  <p class="myCodeP">        &lt;config class=&quot;com.supermap.sample.SampleProviderSetting&quot;&gt;</p>
+  <p class="myCodeP">                &lt;param1&gt;default&lt;/param1&gt;</p>
+  <p class="myCodeP">                ...</p>
+  <p class="myCodeP">        &lt;/config&gt;</p>
+  <p class="myCodeP">&lt;/provider&gt;</p>
+  <p class="myNormal">其中，SampleProviderSetting 是 SampleProvider 对应的配置类，param1对应 SampleProviderSetting 类的属性，通过使用服务提供者配置类，可以在 SuperMap iServer 中构建同种类型、不同来源的服务提供者。</p>
+  <p class="myNormal">在服务提供者实现类中，可以通过 ProviderContextAware 接口获取服务提供者上下文，并通过服务提供者上下文获取服务提供者配置信息，具体方式如下：</p>
+  <p class="myCodeP">public class SampleProvider implements ProviderContextAware{</p>
+  <p class="myCodeP">        ...</p>
+  <p class="myCodeP">        public void setProviderContext(ProviderContext context) {</p>
+  <p class="myCodeP">                SampleProviderSetting sampleProviderSetting = context.getConfig(SampleProviderSetting.class);</p>
+  <p class="myCodeP">                ...</p>
+  <p class="myCodeP">        }</p>
+  <p class="myCodeP">}</p>
+  <p class="myNormal">sampleProviderSetting 对象即对应配置文件中&lt;provider/&gt;下的&lt;config/&gt;配置项。</p>
+  <h2><a id="RemoteTiledMapProviderBase_扩展介绍"></a>RemoteTiledMapProviderBase 扩展</h2>
+  <h3>扩展介绍</h3>
+  <p class="myNormal">RemoteTileProviderBase 是用于聚合第三方地图服务的抽象类，用于构建在线服务提供者，实现了 ProviderContextAware 服务提供者上下文依赖库接口和 MapProvider 地图服务提供者接口。</p>
+  <p class="myNormal">该类的主要出图方法是 getTileImageUrl(TileImageParameter tileImageParameter)。</p>
+  <ol class="ListInParagraph" style="list-style: decimal;">
+    <li class="ListInParagraph">如何扩展开发</li>
+  </ol>
+  <p class="myNormal">用户可以继承 RemoteTileProviderBase 抽象类，来聚合第三方地图服务。</p>
+  <p class="myNormal">需要实现以下方法：</p>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1">initDefaultMapParameter()方法，初始化地图的默认状态参数对象；</li>
+    <li class="SymbolList1">cacheEnabled()方法。是否设置缓存。</li>
+    <li class="SymbolList1">getOrigin(String paramString)方法，返回地图切片原点地理坐标；</li>
+    <li class="SymbolList1">initSupportedMapNames()方法，初始化支持的地图列表。</li>
+    <li class="SymbolList1">getSupportImageFormat(String paramString)方法，返回图片输出的格式。</li>
+    <li class="SymbolList1">getSupportResolutions(String paramString), 返回当前服务支持的分辨率集合。如果支持所有分辨率，则返回 null；</li>
+    <li class="SymbolList1">getTileImageUrl(TileImageParameter tileImageParameter)方法， 通过设置当前的地图分辨率 Resolution 和当前分辨率下瓦片的行列号等参数来构造出图请求的 url，调用该方法得到 url 后向第三方服务发送请求，获取图片，用户在扩展开发时要确保该 url 组成的正确性，可以通过浏览器访问测试 url 能否正确发送请求，得到图片。</li>
+  </ul>
+  <p>  <span style="font-weight: bold;">注意：</span></p>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1">该类提供的扩展的 protected 方法，需要将扩展的子类与该类定义为同一包下才可以访问到。</li>
+    <li class="SymbolList1">请求的地理范围超出地图定义的地理范围时会返回白图；</li>
+    <li class="SymbolList1">当请求不在第三方地图支持的固定比例尺范围中时，该类会按比例进行缩放；</li>
+    <li class="SymbolList1">如果用户对访问的第三方地图服务需要一些配置时可以继承 MapProviderSetting 类，进行扩展开发，关于修改配置文件和部署在见下面的说明。</li>
+  </ul>
+  <ol class="ListInParagraph" start="2" style="list-style: decimal;">
+    <li class="ListInParagraph">配置和部署</li>
+  </ol>
+  <p class="myNormal">将编译好的扩展类的 class 文件放到%SuperMap iServer_HOME%\webap\iserver\WEB-INF\classes 目录下(默认情况下没有 classes 目录，需要新建)或是编译好的 jar 包放到%SuperMap iServer_HOME%\webapp\ iserver\WEB-INF\lib\目录下，iServer 就可以使用扩展的服务提供者类，关于如何配置服务提供者，详见 <a class="contentpagehyperlink" href="../../../Server_Service_Management/GISService_Config/Service_Config/Config_Provider/ConfigProviderXML/provider_setting_xml.htm">通过 XML 文件配置服务提供者</a>。</p>
+  <ol class="ListInParagraph" start="3" style="list-style: decimal;">
+    <li class="ListInParagraph">关于缓存</li>
+  </ol>
+  <p class="myNormal">该类 cacheEnabled()，可以返回 true 或者 false 来设置是否使用缓存。</p>
+  <p class="myNormal">为 true 时，使用图片缓存，目前的图片缓存目录即地图服务提供者配置对象 MapProviderSetting.getOutputPath()目录，缓存路径为“\cache\地图名_图片宽度 x 图片高度\比例尺倒数\图片 x 索引\图片 y 索引.图片格式后缀”，同时，该类对访问的第三方地图服务也进行了缓存，缓存路径为“\cache\http\地图名_图片宽度 x 图片高度\比例尺倒数\图片 x 索引\图片 y 索引.图片格式后缀”。</p>
+  <h3>扩展示例</h3>
+  <p class="myNormal">这里扩展一个地图服务提供者。GoogleMapsMapProvider 继承 RemoteTileProviderBase 实现。你可以在%SuperMap iServer_HOME%/samples/code/DSSE/GoogleMapsProviderSample 位置找到该示例的源代码。</p>
+  <p class="myNormal">GoogleMapsMapProvider 实现类代码如下：</p>
+  <p class="myNormal"><a class="DropDown" onclick="Outline2()" onkeypress="Outline2()">GoogleMapsMapProvider.java</a></p>
+  <div class="collapsed" id="div1">
+    <pre class="brush:java">package com.supermap.sample.serviceprovider;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import org.apache.commons.io.IOUtils;
+import com.supermap.services.components.commontypes.Layer;
+import com.supermap.services.components.commontypes.MapParameter;
+import com.supermap.services.components.commontypes.OutputFormat;
+import com.supermap.services.components.commontypes.Point2D;
+import com.supermap.services.components.commontypes.PrjCoordSys;
+import com.supermap.services.components.commontypes.Rectangle;
+import com.supermap.services.components.commontypes.Rectangle2D;
+import com.supermap.services.components.commontypes.RectifyType;
+import com.supermap.services.components.commontypes.Unit;
+import com.supermap.services.providers.RemoteTileProviderBase;
+import com.supermap.services.util.TileTool;
+import com.supermap.services.util.Tool;
+/**
+ * 
+ * 谷歌地图  地图服务提供者
+ * 
+ * 
+ * GoogleMapsMapProvider 提供了聚合第三方的 Google 地图服务的能力，并封装了与 SuperMap iServer 地图相关的 GIS
+ * 功能。
+ * 
+ *
+ */
+public class GoogleMapsMapProvider extends RemoteTileProviderBase {
+    private static final String GOOGLEMAPSADRESSTEMPLATE = &quot;http://mt1.google.cn/vt/hl=zh-CN&amp;x=%d&amp;y=%d&amp;z=%d&quot;;
+    private static final String MAPNAME = &quot;googlemaps&quot;;
+    private static final long EARTH_RADIUS = 6378137;
+    private static final int LEVEL_COUNT = 18;
+    private static final double GOOGLE_DPI = 96.0;
+    private static final double RESOLUTION_PRECISION = 1E-6;
+    private double[] resolutions;
+    /**
+     * 
+     * 获取谷歌地图瓦片 URL
+     * 
+     * @param tileParam 图片参数
+     */
+    @Override
+    protected String getTileImageUrl(TileImageParameter tileImageParameter) {
+        int z = getLevelByResolution(tileImageParameter.resolution);
+        String googleImageUrl = String.format(GOOGLEMAPSADRESSTEMPLATE, tileImageParameter.x, tileImageParameter.y, z);
+        return googleImageUrl;
+    }
+    @Override
+    protected boolean cacheEnabled() {
+        return false;
+    }
+    @Override
+    protected Point2D getOrigin(String arg0) {
+        return new Point2D(-20037508.3427892, 20037508.3427892);
+    }
+    /**
+    *
+    * 
+    * 返回指定地图支持的图片格式数组
+    * 
+    * @param mapName
+    * @return
+    * @since 7.1.0
+    */
+    @Override
+    public OutputFormat[] getSupportImageFormat(String arg0) {
+        return new OutputFormat[0];
+    }
+    @Override
+    public double[] getSupportResolutions(String arg0) {
+        if (resolutions == null) {
+            /**
+             * 第0级分辨率 = 地球赤道周长/256个像素
+             */
+            double resolution = 2 * Math.PI * EARTH_RADIUS / 256.0;
+            resolutions = new double[LEVEL_COUNT];
+            for (int i = 0; i &lt; LEVEL_COUNT; i++) {
+                resolutions[i] = resolution;
+                resolution /= 2.0;
+            }
+        }
+        return resolutions.clone();
+    }
+    /**
+     * 
+     * 初始化默认地图状态，返回值为一个映射，键为地图名，值为地图参数对象。
+     * 
+     *
+     * @return 地图状态映射，键为地图名，值为地图参数对象。
+     */
+    @Override
+    protected Map&lt;String, MapParameter&gt; initDefaultMapParameter() {
+        String mapName = MAPNAME;
+        MapParameter defaultMapParameter = new MapParameter();
+        defaultMapParameter.name = mapName;
+        defaultMapParameter.coordUnit = Unit.METER;
+        defaultMapParameter.distanceUnit = Unit.METER;
+        defaultMapParameter.viewer = new Rectangle(0, 0, 256, 256);
+        defaultMapParameter.bounds = new Rectangle2D(-20037508.3427892, -20037508.3427892, 20037508.3427892, 20037508.3427892);
+        defaultMapParameter.viewBounds = new Rectangle2D(defaultMapParameter.bounds);
+        defaultMapParameter.center = defaultMapParameter.viewBounds.center();
+        defaultMapParameter.customEntireBoundsEnabled = false;
+        defaultMapParameter.description = &quot;&quot;;
+        defaultMapParameter.prjCoordSys = new PrjCoordSys();
+        defaultMapParameter.prjCoordSys.coordUnit = Unit.METER;
+        defaultMapParameter.prjCoordSys.distanceUnit = Unit.METER;
+        defaultMapParameter.prjCoordSys.epsgCode = 3857;
+        defaultMapParameter.rectifyType = RectifyType.BYCENTERANDMAPSCALE;
+        defaultMapParameter.visibleScalesEnabled = true;
+        defaultMapParameter.visibleScales = getSupportScales();
+        defaultMapParameter.scale = defaultMapParameter.visibleScales[0];
+        defaultMapParameter.layers = new ArrayList&lt;Layer&gt;();
+        GoogleMapLayer layer = new GoogleMapLayer();
+        layer.name = defaultMapParameter.name;
+        layer.caption = defaultMapParameter.name;
+        layer.bounds = new Rectangle2D(defaultMapParameter.bounds);
+        layer.description = &quot;Google Maps Layer&quot;;
+        layer.visible = true;
+        defaultMapParameter.layers.add(layer);
+        Map&lt;String, MapParameter&gt; result = new HashMap&lt;String, MapParameter&gt;();
+        result.put(mapName, defaultMapParameter);
+        return result;
+    }
+    /**
+     * 初始化支持的地图列表
+     *
+     * @return 地图名列表
+     */
+    @Override
+    protected List&lt;String&gt; initSupportedMapNames() {
+        List&lt;String&gt; names = new ArrayList&lt;String&gt;();
+        names.add(MAPNAME);
+        return names;
+    }
+    private int getLevelByResolution(double resolution) {
+        resolutions = getSupportResolutions(MAPNAME);
+        for (int i = 0; i &lt; resolutions.length; i++) {
+            if (Tool.equal(resolution, resolutions[i], RESOLUTION_PRECISION)) {
+                return i;
+            }
+        }
+        return -1;
+    }
+    private double[] getSupportScales() {
+        double[] resolutions = getSupportResolutions(MAPNAME);
+        double[] scales = new double[LEVEL_COUNT];
+        for (int i = 0; i &lt; LEVEL_COUNT; i++) {
+            scales[i] = TileTool.resolutionToScale(resolutions[i], GOOGLE_DPI, Unit.METER);
+        }
+        return scales;
+    }
+    /**
+     * 
+     * 根据参数向远端发送出图请求
+     * 
+     */
+    @Override
+    protected Map&lt;String, Object&gt; sendRequestByHttpURLConnection(String paramString1, String paramString2, InputStream paramInputStream,
+            Map&lt;String, String&gt; paramMap, int paramInt) {
+        InputStream localInputStream = null;
+        HttpURLConnection localHttpURLConnection = null;
+        OutputStream localOutputStream = null;
+        int i = paramInt;
+        HashMap&lt;String, Object&gt; localHashMap = new HashMap&lt;String, Object&gt;();
+        try {
+            URL localURL = new URL(paramString1);
+            localHttpURLConnection = (HttpURLConnection) localURL.openConnection();
+            localHttpURLConnection.setRequestMethod(paramString2);
+            if ((paramString2.equals(&quot;POST&quot;)) || (paramString2.equals(&quot;PUT&quot;))) {
+                localHttpURLConnection.setDoOutput(true);
+            }
+            localHttpURLConnection.setRequestProperty(&quot;Content-Type&quot;, &quot;application/x-www-form-urlencoded; charset=UTF-8&quot;);
+            localHttpURLConnection.setRequestProperty(&quot;User-Agent&quot;,
+                    &quot;Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.116 Safari/537.36&quot;);
+            localHttpURLConnection.setRequestProperty(&quot;Accept&quot;, &quot;text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&quot;);
+            localHttpURLConnection.setRequestProperty(&quot;Accept-Encoding&quot;, &quot;gzip,deflate,sdch&quot;);
+            localHttpURLConnection.setRequestProperty(&quot;Accept-Language&quot;, &quot;zh-CN,zh;q=0.8&quot;);
+            if (paramMap != null) {
+                Iterator&lt;?&gt; localIterator = paramMap.entrySet().iterator();
+                while (localIterator.hasNext()) {
+                    @SuppressWarnings(&quot;rawtypes&quot;)
+                    Map.Entry localEntry = (Map.Entry) localIterator.next();
+                    localHttpURLConnection.setRequestProperty((String) localEntry.getKey(), (String) localEntry.getValue());
+                }
+            }
+            localHttpURLConnection.setConnectTimeout(40000);
+            localHttpURLConnection.setReadTimeout(20000);
+            if ((paramInputStream != null) &amp;&amp; (localHttpURLConnection.getDoOutput())) {
+                localOutputStream = localHttpURLConnection.getOutputStream();
+                IOUtils.copy(paramInputStream, localOutputStream);
+                localOutputStream.flush();
+                localOutputStream.close();
+                paramInputStream.close();
+            }
+            int responseCode = localHttpURLConnection.getResponseCode();
+            localHashMap.put(&quot;status&quot;, Integer.valueOf(responseCode));
+            if (responseCode &lt; 400) {
+                localInputStream = localHttpURLConnection.getInputStream();
+            } else {
+                logger.info(message.getMessage(&quot;TiledMapProvider.sendRequestByHttpURLConnection.RequestError&quot;, new String[] { paramString1, String.valueOf(responseCode) }));
+            }
+            if (localInputStream != null)
+                localHashMap.put(&quot;ENTITY&quot;, localInputStream);
+        } catch (IOException localIOException) {
+            if (i &lt; 5) {
+                logger.debug(message.getMessage(&quot;URL_REQUEST_EXCEPTION&quot;, new String[] { paramString1, localIOException.getMessage(), String.valueOf(i) }));
+                return sendRequestByHttpURLConnection(paramString1, paramString2, paramInputStream, ++i);
+            }
+            logger.debug(message.getMessage(&quot;URL_REQUEST_FAILED&quot;, new String[] { paramString1, String.valueOf(i) }));
+        }
+        return localHashMap;
+    }
+}
+	</pre>
+  </div>
+  <p class="myNormal">GoogleMapsMapProvider 类中 GoogleMapLayer 表示当前地图使用 Google 图层（扩展其它 provider 时，可以参考 GoogleMapLayer 定义相应的 Layer）。GoogleMapLayer 实现类代码如下：</p>
+  <p class="myNormal"><a class="DropDown" onclick="Outline2()" onkeypress="Outline2()">GoogleMapLayer.java</a></p>
+  <div class="collapsed" id="div1">
+    <pre class="brush:java">package com.supermap.sample.serviceprovider;
+import com.supermap.services.components.commontypes.Layer;
+import com.supermap.services.components.commontypes.LayerType;
+import com.supermap.services.components.commontypes.Rectangle2D;
+public class GoogleMapLayer extends Layer {
+    private static final long serialVersionUID = 1L;
+    public GoogleMapLayer() {
+        this.type = LayerType.CUSTOM;
+    }
+    @Override
+    public Layer copy() {
+        GoogleMapLayer googleLayer = new GoogleMapLayer();
+        googleLayer.name = this.name;
+        googleLayer.type = this.type;
+        googleLayer.bounds = new Rectangle2D(this.bounds);
+        googleLayer.caption = this.caption;
+        googleLayer.visible = this.visible;
+        return googleLayer;
+    }
+}
+	</pre>
+  </div>
+  <p class="myNormal">配置类直接使用 MapProviderSetting，配置如下：</p>
+  <p class="myCodeP">&lt;provider class=&quot;com.supermap.sample.serviceprovider.GoogleMapsMapProvider&quot; name=&quot;mapProvider-GoogleMaps&quot;&gt;</p>
+  <p class="myCodeP">    &lt;config class=&quot;com.supermap.services.components.spi.MapProviderSetting&quot;&gt;</p>
+  <p class="myCodeP">    &lt;/config&gt;</p>
+  <p class="myCodeP">&lt;/provider&gt;</p>
+  <p class="myNormal">编译后的 Jar 放到 %SuperMap iServer_HOME%/webapps/iserver/WEB-INF/lib 目录。</p>
+  <p class="myNormal">新建一个使用 mapProvider-GoogleMaps 的“地图服务组件”map-google，发布为 rest、WMS 1.1.1 服务：</p>
+  <p class="myCodeP">&lt;component class=&quot;com.supermap.services.components.impl.MapImpl&quot; interfaceNames=&quot;rest,wms111&quot; name=&quot;map-google&quot; providers=&quot;mapProvider-GoogleMaps&quot;&gt;</p>
+  <p class="myCodeP">    &lt;config class=&quot;com.supermap.services.components.MapConfig&quot;&gt;</p>
+  <p class="myCodeP">    &lt;/config&gt;</p>
+  <p class="myCodeP">&lt;/component&gt;</p>
+  <p class="myNormal">即可通过根 URI：http://&lt;host&gt;:&lt;port&gt;/iserver/services/map-google/rest 访问地图 REST 功能。通过 http://&lt;host&gt;:&lt;port&gt;/iserver/services/map-google/rest/maps/googlemaps.ijs 访问地图（googlemaps 为地图名，在 GoogleMapsMapProvider 实现类中声明），结果如下：</p>
+  <p class="ImageP"><img alt="" border="0" src="../../../assets/images/DevelopGuide/Extend_iServer1/DSSE/googlemapsp_remote.png" style="border: none;"/></p>
+  <h2><a id="LocalTileProviderBase 扩展介绍"></a>LocalTileProviderBase 扩展</h2>
+  <h3>扩展介绍</h3>
+  <p class="myNormal">LocalTileProviderBase 是用于扩展本地地图瓦片服务的抽象类，实现了 ProviderContextAware 服务提供者上下文依赖库接口和 MapProvider 地图服务提供者接口。</p>
+  <p class="myNormal">该类的主要出图方法是 getTileImage(TiledMapProviderBase.TileImageParameterparamTileImageParameter）。</p>
+  <ol class="ListInParagraph" style="list-style: decimal;">
+    <li class="ListInParagraph">如何扩展开发</li>
+  </ol>
+  <p class="myNormal">用户可以继承 LocalTileProviderBase 抽象类，来扩展本地地图服务。</p>
+  <p class="myNormal">需要实现以下方法：</p>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1">initDefaultMapParameter()方法，初始化地图的默认状态参数对象；</li>
+    <li class="SymbolList1">cacheEnabled()方法。是否设置缓存。</li>
+    <li class="SymbolList1">getOrigin(String paramString)方法，返回地图原点地理坐标；</li>
+    <li class="SymbolList1">initSupportedMapNames()方法，初始化支持的地图列表。</li>
+    <li class="SymbolList1">getSupportImageFormat(String paramString)方法，返回图片输出的格式。</li>
+    <li class="SymbolList1">getSupportResolutions(String paramString),返回当前服务支持的分辨率集合。如果支持所有分辨率，则返回 null；</li>
+    <li class="SymbolList1">getTileImage(TiledMapProviderBase.TileImageParameter paramTileImageParameter)方法，返回地图切片，需要设置当前地图的分辨率 Resolution 和当前分辨率下的地图切片行列号等参数来构造切片路径，读取切片并赋给 BufferedImage 对象，返回 byte 数组。</li>
+  </ul>
+  <p class="myNormal"><span style="font-weight: bold;">注意</span>：</p>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1">该类提供的扩展的 protected 方法，需要将扩展的子类与该类定义为同一包下才可以访问到。</li>
+    <li class="SymbolList1">如果用户对访问的第三方地图服务需要一些配置时可以继承 MapProviderSetting 类，进行扩展开发，关于修改配置文件和部署在见下面的说明。</li>
+  </ul>
+  <ol start="2" style="list-style: decimal;">
+    <li>
+      <p class="myNormal">配置和部署</p>
+    </li>
+  </ol>
+  <p class="myNormal">将编译好的扩展类的 class 文件放到%SuperMap iServer_HOME%\webap\iserver\WEB-INF\classes 目录下(默认情况下没有 classes 目录，需要新建)或是编译好的 jar 包放到%SuperMap iServer_HOME%\webapp\ iserver\WEB-INF\lib\目录下，iServer 就可以使用扩展的服务提供者类，关于如何配置服务提供者，详见<a class="contentpagehyperlink" href="../../../Server_Service_Management/GISService_Config/Service_Config/Config_Provider/ConfigProviderXML/provider_setting_xml.htm">通过 XML 文件配置服务提供者</a>。</p>
+  <ol start="3" style="list-style: decimal;">
+    <li>
+      <p class="myNormal">关于缓存</p>
+    </li>
+  </ol>
+  <p class="myNormal">该类 cacheEnabled()，可以返回 true 或者 false 来设置是否使用缓存。</p>
+  <p class="myNormal">为 true 时，使用图片缓存，目前的图片缓存目录即地图服务提供者配置对象 MapProviderSetting.getOutputPath()目录，缓存路径为“\cache\地图名_图片宽度 x 图片高度\比例尺倒数\图片 x 索引\图片 y 索引.图片格式后缀”，同时，该类对访问的第三方地图服务也进行了缓存，缓存路径为“\cache\http\地图名_图片宽度 x 图片高度\比例尺倒数\图片 x 索引\图片 y 索引.图片格式后缀”。</p>
+  <h3>扩展示例</h3>
+  <p class="myNormal">本示例介绍通过继承自 LocalTileProviderBase 的 ArcGISExplodedCacheMapProvider 类来实现将本地的 ArcGIS Server 地图切片发布为 Supermap 地图服务的流程，你可以在%SuperMap iServer_HOME%/samples/code/DSSE/ArcGISExplodedCacheMapProviderSample 位置找到该示例的源代码。</p>
+  <p class="myNormal"><span style="font-weight: bold;">注意</span>：在通过 ArcGIS Server 进行切图的时候，选择的存储格式为”松散”的格式，分块格式选择 PNG8、PNG24、PNG32。</p>
+  <p class="myNormal">ArcGISExplodedCacheMapProvider 实现类代码如下：</p>
+  <p class="myNormal"><a class="DropDown" onclick="Outline2()" onkeypress="Outline2()">ArcGISExplodedCacheMapProvider.java</a></p>
+  <div class="collapsed">
+    <pre class="brush:java">package com.supermap.sample.serviceprovider;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import javax.imageio.ImageIO;
+import org.apache.commons.lang3.StringUtils;
+import com.supermap.services.components.commontypes.Layer;
+import com.supermap.services.components.commontypes.MapParameter;
+import com.supermap.services.components.commontypes.OutputFormat;
+import com.supermap.services.components.commontypes.Point2D;
+import com.supermap.services.components.commontypes.Rectangle;
+import com.supermap.services.components.commontypes.Rectangle2D;
+import com.supermap.services.components.commontypes.RectifyType;
+import com.supermap.services.components.commontypes.Unit;
+import com.supermap.services.providers.LocalTileProviderBase;
+import com.supermap.services.util.PrjCoordSysConversionTool;
+import com.supermap.services.util.TileTool;
+/**
+ * 
+ * ArcGIS 离散缓存  地图服务提供者。
+ * 
+ * 
+ * ArcGISExplodedCacheMapProvider 提供了将本地 ArcGIS 离散缓存发布为地图服务的能力，并封装了与 SuperMap iServer 地图相关的 GIS
+ * 功能。
+ * 
+ *
+ */
+public class ArcGISExplodedCacheMapProvider extends LocalTileProviderBase {
+    private static final String MAPNAME = &quot;arcgismaps&quot;;
+    private double[] scales;
+    private double[] resolutions = null;
+    private Point2D origin;
+    /**
+     * 
+     * 获取图片
+     * 
+     * @param tileParam 图片参数
+     * @param x
+     * @param y
+     * @param resolution 分辨率
+     * @return
+     */
+    @Override
+    protected byte[] getTileImage(TileImageParameter paramTileImageParameter) {
+        ArcGISExplodedCacheMapProviderSetting setting = (ArcGISExplodedCacheMapProviderSetting) this.getMapProviderSetting();
+        String arcgisMapsAdressTemplate = setting.getCachePath();
+        arcgisMapsAdressTemplate += &quot;/_alllayers/L%02d/R%08x/C%08x.png&quot;;
+        int z = getLevelByResolution(paramTileImageParameter.resolution);
+        if (z &lt; 0) {
+            return TileTool.getBlankImageByte(&quot;&quot;,this.tilePixWidth, this.tilePixHeight, paramTileImageParameter.outputOption.transparent);
+        }
+        String arcgisImagePath = String.format(arcgisMapsAdressTemplate, z, paramTileImageParameter.y, paramTileImageParameter.x);
+        if (!new File(arcgisImagePath).exists()) {
+            return TileTool.getBlankImageByte(&quot;&quot;,this.tilePixWidth, this.tilePixHeight, paramTileImageParameter.outputOption.transparent);
+        }
+        BufferedImage image = null;
+        FileInputStream fs = null;
+        byte[] imagebyte = null;
+        try {
+            fs = new FileInputStream(arcgisImagePath);
+            image = ImageIO.read(fs);
+            imagebyte = TileTool.getBytesFromBufferedImage(image, &quot;PNG&quot;);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                fs.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        return imagebyte;
+    }
+    /**
+     * 
+     * 初始化支持的地图列表。
+     * 
+     *
+     * Initialize the supported map list.
+     * @return
+     *
+     * 地图名列表
+     * 
+     * Map name list
+     * 
+     */
+    @Override
+    protected List&lt;String&gt; initSupportedMapNames() {
+        List&lt;String&gt; names = new ArrayList&lt;String&gt;();
+        names.add(getMapName());
+        return names;
+    }
+    /**
+     * 
+     * 初始化默认地图状态，返回值为一个映射，键为地图名，值为地图参数对象。
+     * 
+     * 
+     * Initialize the default map status. Return value is a mapping. The key is the map name and the value is the map parameter object.
+     * 
+     * @return 地图状态映射，键为地图名，值为地图参数对象。
+     * Map status mapping. The key is the map name, and the value is the parameter object.
+     */
+    @Override
+    protected Map&lt;String, MapParameter&gt; initDefaultMapParameter() {
+        String mapName = getMapName();
+        ArcGISExplodedCacheMapProviderSetting setting = (ArcGISExplodedCacheMapProviderSetting) this.getMapProviderSetting();
+        if (StringUtils.isBlank(setting.getCachePath())) {
+            throw new IllegalArgumentException(&quot;cahcePath is null&quot;);
+        }
+        ArcGISXMLParseTool arcgisXmlParseTool = new ArcGISXMLParseTool(getConfXMLPath());
+        tilePixHeight = arcgisXmlParseTool.getTileRows();
+        tilePixWidth = arcgisXmlParseTool.getTileCols();
+        MapParameter defaultMapParameter = new MapParameter();
+        defaultMapParameter.name = mapName;
+        defaultMapParameter.prjCoordSys = PrjCoordSysConversionTool.getPrjCoordSys(arcgisXmlParseTool.getWkid());
+        defaultMapParameter.coordUnit = defaultMapParameter.prjCoordSys.coordUnit;
+        defaultMapParameter.distanceUnit = Unit.METER;
+        defaultMapParameter.viewer = new Rectangle(0, 0, arcgisXmlParseTool.getTileCols(), arcgisXmlParseTool.getTileRows());
+        defaultMapParameter.bounds = arcgisXmlParseTool.getBounds(getConfCDIPath());
+        defaultMapParameter.center = defaultMapParameter.bounds.center();
+        double[] resolutionArray = getSupportResolutions(mapName);
+        defaultMapParameter.viewBounds = new Rectangle2D(defaultMapParameter.center.x - arcgisXmlParseTool.getTileCols() * resolutionArray[0] * 0.5,
+                defaultMapParameter.center.y - arcgisXmlParseTool.getTileRows() * resolutionArray[0] * 0.5, defaultMapParameter.center.x
+                        + arcgisXmlParseTool.getTileCols() * resolutionArray[0] * 0.5, defaultMapParameter.center.y + arcgisXmlParseTool.getTileRows()
+                        * resolutionArray[0] * 0.5);
+        defaultMapParameter.customEntireBoundsEnabled = false;
+        defaultMapParameter.rectifyType = RectifyType.BYCENTERANDMAPSCALE;
+        defaultMapParameter.visibleScalesEnabled = true;
+        defaultMapParameter.visibleScales = getSupportScales();
+        defaultMapParameter.scale = defaultMapParameter.visibleScales[0];
+        defaultMapParameter.layers = new ArrayList&lt;Layer&gt;();
+        ArcGISExplodedCacheMapLayer layer = new ArcGISExplodedCacheMapLayer();
+        layer.name = defaultMapParameter.name;
+        layer.bounds = new Rectangle2D(defaultMapParameter.bounds);
+        layer.visible = true;
+        defaultMapParameter.layers.add(layer);
+        Map&lt;String, MapParameter&gt; result = new HashMap&lt;String, MapParameter&gt;();
+        result.put(mapName, defaultMapParameter);
+        return result;
+    }
+    /**
+    *
+    * 
+    * 返回指定地图支持的图片格式数组
+    * 
+    * 
+    * Return image format array supported by specified map
+    * 
+    * @param mapName
+    * @return
+    * @since 7.1.0
+    */
+    @Override
+    public OutputFormat[] getSupportImageFormat(String paramString) {
+        return new OutputFormat[0];
+    }
+    /**
+     * 
+     * 获取地图的左上角地理坐标。
+     * 
+     * 
+     * Get the geographical coordinates of map top left corner.
+     * 
+     * @param 地图名
+     * 
+     * Map name
+     * 
+     * @return 地图的左上角地理坐标。
+     * 
+     * The geographical coordinates of map top left corner.
+     * 
+     */
+    @Override
+    protected Point2D getOrigin(String paramString) {
+        ArcGISXMLParseTool arcgisXmlParseTool = new ArcGISXMLParseTool(getConfXMLPath());
+        if (origin == null) {
+            origin = arcgisXmlParseTool.getTileOrigin();
+            return origin;
+        }
+        return origin;
+    }
+    @Override
+    protected boolean cacheEnabled() {
+        return false;
+    }
+    /**
+     * 
+     * 返回当前服务支持的分辨率 。如果支持所有分辨率，则返回空。
+     * 
+     * 
+     * Return the resolutions supported by current services. If all resolutions are supported, return null.
+     * 
+     * @param mapName
+     *
+     * @return 分辨率数组
+     * 
+     * Resolution array
+     * 
+     */
+    @Override
+    public double[] getSupportResolutions(String paramString) {
+        ArcGISXMLParseTool arcgisXmlParseTool = new ArcGISXMLParseTool(getConfXMLPath());
+        if (resolutions == null) {
+            resolutions = arcgisXmlParseTool.getResolutions();
+        }
+        return resolutions;
+    }
+    private int getLevelByResolution(double resolution) {
+        ArcGISXMLParseTool arcgisXmlParseTool = new ArcGISXMLParseTool(getConfXMLPath());
+        for (int i = 0; i &lt; arcgisXmlParseTool.getResolutions().length; i++) {
+            if (resolution == arcgisXmlParseTool.getResolutions()[i]) {
+                return i;
+            }
+        }
+        return -1;
+    }
+    private double[] getSupportScales() {
+        ArcGISXMLParseTool arcgisXmlParseTool = new ArcGISXMLParseTool(getConfXMLPath());
+        if (scales == null) {
+            scales = arcgisXmlParseTool.getScales();
+        }
+        return scales;
+    }
+    private String getConfXMLPath() {
+        ArcGISExplodedCacheMapProviderSetting setting = (ArcGISExplodedCacheMapProviderSetting) this.getMapProviderSetting();
+        String path = setting.getCachePath() + &quot;/conf.xml&quot;;
+        return path;
+    }
+    private String getConfCDIPath() {
+        ArcGISExplodedCacheMapProviderSetting setting = (ArcGISExplodedCacheMapProviderSetting) this.getMapProviderSetting();
+        String path = setting.getCachePath() + &quot;/conf.cdi&quot;;
+        return path;
+    }
+    private String getMapName() {
+        ArcGISExplodedCacheMapProviderSetting setting = (ArcGISExplodedCacheMapProviderSetting) this.getMapProviderSetting();
+        if (StringUtils.isNotBlank(setting.getMapName())) {
+            return setting.getMapName();
+        }
+        return MAPNAME;
+    }
+}
+	</pre>
+  </div>
+  <p class="myNormal">ArcGISExplodedCacheMapProvider 类中 ArcGISExplodedCacheMapLayer 表示当前地图使用 ArcGIS 图层（扩展其它 provider 时，可以参考 <a class="contentpagehyperlink" href="#ArcGISExplodedCacheMapLayer.java">ArcGISExplodedCacheMapLayer</a>定义相应的 Layer）。</p>
+  <p class="myNormal">ArcGISExplodedCacheMapLayer 实现类代码如下：</p>
+  <p class="myNormal"><a id="ArcGISExplodedCacheMapLayer.java"></a><a class="DropDown" onclick="Outline2()" onkeypress="Outline2()">ArcGISExplodedCacheMapLayer.java</a></p>
+  <div class="collapsed" id="div1">
+    <pre class="brush:java">package com.supermap.sample.serviceprovider;
+import com.supermap.services.components.commontypes.Layer;
+import com.supermap.services.components.commontypes.LayerType;
+import com.supermap.services.components.commontypes.Rectangle2D;
+public class ArcGISExplodedCacheMapLayer extends Layer {
+    private static final long serialVersionUID = 1L;
+    
+public ArcGISExplodedCacheMapLayer() {
+        this.type = LayerType.CUSTOM;
+    }
+    @Override
+    public Layer copy() {
+        ArcGISExplodedCacheMapLayer arcgisLayer = new ArcGISExplodedCacheMapLayer();
+        arcgisLayer.name = this.name;
+        arcgisLayer.type = this.type;
+        arcgisLayer.bounds = new Rectangle2D(this.bounds);
+        arcgisLayer.caption = this.caption;
+        arcgisLayer.visible = this.visible;
+        return arcgisLayer;
+    }
+}
+	</pre>
+  </div>
+  <p> </p>
+  <p class="myNormal">ArcGISXMLParseTool 类用于提取 ArcGIS Server 切片目录的 conf.xml 文件和 conf.cdi 文件中的一些节点值。</p>
+  <p class="myNormal">conf.xml 文件结构如下图：</p>
+  <p class="myNormal"><img alt="" border="0" height="671" src="../../../assets/images/DevelopGuide/Extend_iServer1/DSSE/confxml_LocalTileMapBase.png" style="border: none;" width="1313"/></p>
+  <p class="myNormal">conf.cdi 文件结构如下图：</p>
+  <p class="myNormal"><img alt="" border="0" src="../../../assets/images/DevelopGuide/Extend_iServer1/DSSE/confcdi_LocalTileMapBase.png" style="border: none;"/></p>
+  <p class="myNormal">ArcGISXMLParseTool 实现类代码如下：</p>
+  <p class="myNormal"><a class="DropDown" onclick="Outline2()" onkeypress="Outline2()">ArcGISXMLParseTool.java</a></p>
+  <div class="collapsed" id="div1">
+    <pre class="brush:java">package com.supermap.sample.serviceprovider;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import org.w3c.dom.Document;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import com.supermap.services.components.commontypes.Point2D;
+import com.supermap.services.components.commontypes.Rectangle2D;
+/**
+ * 
+ * ArcGIS Server 缓存 conf 文件读取类  提取 conf.xml 和 conf.cdi 相关信息。
+ * 
+ * 
+ * ArcGISXMLParseTool 提供了读取缓存目录下的 conf.xml 文件和 conf.cdi 文件相关信息的功能。
+ * 
+ *
+ */
+public class ArcGISXMLParseTool {
+    private static DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+    private double[] resolutions;
+    private double[] scales;
+    private int wkid, tileCols, tileRows;
+    private String cachePath;
+    /**
+     * 
+     * 带参构造函数
+     * 
+     *
+     * @param cache 地图瓦片目录
+     */
+    public ArcGISXMLParseTool(String cachePath) {
+        this.cachePath = cachePath;
+    }
+    /**
+     * 
+     * 获取地图比例尺集合
+     * 
+     * @return 地图比例尺集合
+     */
+    public double[] getScales() {
+        try {
+            DocumentBuilder db = dbf.newDocumentBuilder();
+            Document doc = db.parse(cachePath);
+            NodeList scaleDenominatorList = doc.getElementsByTagName(&quot;Scale&quot;);
+            scales = new double[scaleDenominatorList.getLength()];
+            for (int i = 0; i &lt; scaleDenominatorList.getLength(); i++) {
+                Node scaleDenominatorNode = scaleDenominatorList.item(i);
+                scales[i] = 1 / Double.parseDouble(scaleDenominatorNode.getTextContent());
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        if (scales == null) {
+            return new double[0];
+        }
+        return scales;
+    }
+    /**
+     * 
+     * 获取地图分辨率集合
+     * 
+     * @return 地图分辨率集合
+     */
+    public double[] getResolutions() {
+        try {
+            DocumentBuilder db = dbf.newDocumentBuilder();
+            Document doc = db.parse(cachePath);
+            NodeList resolutionList = doc.getElementsByTagName(&quot;Resolution&quot;);
+            resolutions = new double[resolutionList.getLength()];
+            for (int i = 0; i &lt; resolutionList.getLength(); i++) {
+                Node resolutionNode = resolutionList.item(i);
+                resolutions[i] = Double.parseDouble(resolutionNode.getTextContent());
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        if (resolutions == null) {
+            return new double[0];
+        }
+        return resolutions;
+    }
+    /**
+     * 
+     * 获取地图 WKID
+     * 
+     * @return 地图 WKID
+     */
+    public int getWkid() {
+        try {
+            DocumentBuilder db = dbf.newDocumentBuilder();
+            Document doc = db.parse(cachePath);
+            NodeList wkidList = doc.getElementsByTagName(&quot;WKID&quot;);
+            Node wkidNode = wkidList.item(0);
+            wkid = Integer.parseInt(wkidNode.getTextContent());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return wkid;
+    }
+    /**
+     * 
+     * 获取地图瓦片宽
+     * 
+     * @return 地图瓦片宽
+     */
+    public int getTileCols() {
+        try {
+            DocumentBuilder db = dbf.newDocumentBuilder();
+            Document doc = db.parse(cachePath);
+            NodeList tileColsList = doc.getElementsByTagName(&quot;TileCols&quot;);
+            Node tileColsNode = tileColsList.item(0);
+            tileCols = Integer.parseInt(tileColsNode.getTextContent());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return tileCols;
+    }
+    /**
+     * 
+     * 获取地图瓦片高
+     * 
+     * @return 地图瓦片高
+     */
+    public int getTileRows() {
+        try {
+            DocumentBuilder db = dbf.newDocumentBuilder();
+            Document doc = db.parse(cachePath);
+            NodeList tileRowsList = doc.getElementsByTagName(&quot;TileRows&quot;);
+            Node tileRowsNode = tileRowsList.item(0);
+            tileRows = Integer.parseInt(tileRowsNode.getTextContent());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return tileRows;
+    }
+    /**
+     * 
+     * 获取地图切片原点
+     * 
+     * @return 地图切片原点
+     */
+    public Point2D getTileOrigin() {
+        double originX = 0;
+        double originY = 0;
+        try {
+            DocumentBuilder db = dbf.newDocumentBuilder();
+            Document doc = db.parse(cachePath);
+            NodeList originXList = doc.getElementsByTagName(&quot;X&quot;);
+            NodeList originYList = doc.getElementsByTagName(&quot;Y&quot;);
+            originX = Double.parseDouble(originXList.item(0).getTextContent());
+            originY = Double.parseDouble(originYList.item(0).getTextContent());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return new Point2D(originX, originY);
+    }
+    /**
+     * 
+     * 获取地图全图范围
+     * 
+     * @return 地图全图范围
+     */
+    public Rectangle2D getBounds(String cdiPath) {
+        double leftBottomX = 0;
+        double leftBottomY = 0;
+        double rightTopX = 0;
+        double rightTopY = 0;
+        try {
+            DocumentBuilder db = dbf.newDocumentBuilder();
+            Document doc = db.parse(cdiPath);
+            NodeList leftBottomXList = doc.getElementsByTagName(&quot;XMin&quot;);
+            NodeList leftBottomYList = doc.getElementsByTagName(&quot;YMin&quot;);
+            NodeList rightTopXList = doc.getElementsByTagName(&quot;XMax&quot;);
+            NodeList rightTopYList = doc.getElementsByTagName(&quot;YMax&quot;);
+            leftBottomX = Double.parseDouble(leftBottomXList.item(0).getTextContent());
+            leftBottomY = Double.parseDouble(leftBottomYList.item(0).getTextContent());
+            rightTopX = Double.parseDouble(rightTopXList.item(0).getTextContent());
+            rightTopY = Double.parseDouble(rightTopYList.item(0).getTextContent());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return new Rectangle2D(leftBottomX, leftBottomY, rightTopX, rightTopY);
+    }
+}
+	</pre>
+  </div>
+  <p class="myNormal" style="font-weight: normal;">ArcGISExplodedCacheMapProviderSetting 类，继承自 MapProviderSetting 类，用于扩展地图服务提供者配置，完成一些特定地图参数的设置。其中的 cachePath 表示地图切片路径、mapName 表示地图名。</p>
+  <p class="myNormal">ArcGISExplodedCacheMapProviderSetting 实现类代码如下：</p>
+  <p class="myNormal"><a class="DropDown" onclick="Outline2()" onkeypress="Outline2()">ArcGISExplodedCacheMapProviderSetting.java</a></p>
+  <div class="collapsed" id="div1">
+    <pre class="brush:java">package com.supermap.sample.serviceprovider;
+import com.supermap.services.components.spi.MapProviderSetting;
+public class ArcGISExplodedCacheMapProviderSetting extends MapProviderSetting {
+    private static final long serialVersionUID = 1L;
+    private String cachePath;
+    private String mapName;
+    public String getMapName() {
+        return mapName;
+    }
+    public void setMapName(String mapName) {
+        this.mapName = mapName;
+    }
+    public String getCachePath() {
+        return cachePath;
+    }
+    public void setCachePath(String cachePath) {
+        this.cachePath = cachePath;
+    }
+}
+	</pre>
+  </div>
+  <p class="myNormal">配置类使用扩展自 MapProviderSetting 的 ArcGISExplodedCacheMapProviderSetting 类，其中必须要配置&lt;cachePath&gt;切片路径、并且用户可以选择性配置&lt;mapName&gt;地图名，当用户未配置或配置的地图名为空时，地图名将采用默认值，配置如下：</p>
+  <p class="myCodeP">&lt;provider class=&quot;com.supermap.sample.serviceprovider.ArcGISExplodedCacheMapProvider&quot; name=&quot;mapProvider-ArcGISExplodedCacheMap&quot;&gt;</p>
+  <p class="myCodeP">  &lt;config class=&quot;com.supermap.sample.serviceprovider.ArcGISExplodedCacheMapProviderSetting&quot;&gt;</p>
+  <p class="myCodeP">    &lt;cachePath&gt;C:/arcgisserver/arcgiscache/China400/China400&lt;/cachePath&gt;</p>
+  <p class="myCodeP">      &lt;mapName&gt;&lt;/mapName&gt;</p>
+  <p class="myCodeP">  &lt;/config&gt;</p>
+  <p class="myCodeP">&lt;/provider&gt;</p>
+  <p class="myNormal">编译后的 Jar 放到 %SuperMap iServer_HOME%/webapps/iserver/WEB-INF/lib 目录。</p>
+  <p class="myNormal">新建一个使用 mapProvider-ArcGISMaps 的“地图服务组件”map-arcgis，发布为 rest、WMS 1.1.1 服务：</p>
+  <p class="myCodeP">&lt;component class=&quot;com.supermap.services.components.impl.MapImpl&quot; enabled=&quot;true&quot; interfaceNames=&quot;wms111,rest&quot; name=&quot;map-arcgis&quot; providers=&quot;mapProvider-ArcGISExplodedCacheMap&quot;&gt;  </p>
+  <p class="myCodeP">&lt;/component&gt;</p>
+  <p class="myNormal">即可通过根 URI：http://&lt;host&gt;:&lt;port&gt;/iserver/services/map-arcgis/rest 访问地图 REST 功能。通过 http://&lt;host&gt;:&lt;port&gt;/iserver/services/map-arcgis/rest/maps/arcgismaps.ijs 访问地图（arcgismaps 为地图名，在 ArcGISExplodedCacheMapProvider 实现类中声明），结果如下：</p>
+  <p class="ImageP"><img alt="" border="0" src="../../../assets/images/DevelopGuide/Extend_iServer1/DSSE/googlemapsp_local.png" style="border: none;"/></p>
+  <h2>扩展一个 TMSTilesMapProvider</h2>
+  <p class="myNormal">本示例介绍通过继承自 ZXYTilesMapProvider 的 TMSTilesMapProvider 类来实现将本地的 TMS 地图切片发布为 Supermap 地图服务的流程，你可以在%SuperMap iServer_HOME%/samples/code/DSSE/TMSTilesMapProviderSample 位置找到该示例的源代码。</p>
+  <p class="myNormal">TMSTilesMapProvider 实现类代码如下：</p>
+  <p class="myCodeP">package com.supermap.sample.serviceprovider;</p>
+  <p class="myCodeP">import com.supermap.services.components.commontypes.Point2D;</p>
+  <p class="myCodeP">import com.supermap.services.components.commontypes.Rectangle2D;</p>
+  <p class="myCodeP">public class TMSTilesMapProvider extends ZXYTilesMapProvider {</p>
+  <p class="myCodeP">    @Override</p>
+  <p class="myCodeP">    protected int getTop(double y, Rectangle2D viewBounds, double tileResolution, int tileImageHeight) {</p>
+  <p class="myCodeP">    return this.getTop(viewBounds.getBottom(), y , tileResolution, tileImageHeight);</p>
+  <p class="myCodeP">}    </p>
+  <p class="myCodeP">    @Override</p>
+  <p class="myCodeP">    protected int getBottom(double y, Rectangle2D viewBounds, double tileResolution, int tileImageHeight) {</p>
+  <p class="myCodeP">    return this.getBottom(viewBounds.getTop(), y, tileResolution, tileImageHeight);</p>
+  <p class="myCodeP">}    </p>
+  <p class="myCodeP">    @Override</p>
+  <p class="myCodeP">    protected int getTopOrBottomTileIndex(double y, double topOrBottom, double tileHeight, boolean b, int tileImageHeight) {</p>
+  <p class="myCodeP">        return this.getTileIndex(topOrBottom, y, tileHeight, b, tileImageHeight);</p>
+  <p class="myCodeP">    }  </p>
+  <p class="myCodeP">    @Override</p>
+  <p class="myCodeP">    protected Point2D setTileOrigin(Rectangle2D bounds) {</p>
+  <p class="myCodeP">    return new Point2D(bounds.getLeft(), bounds.getBottom());</p>
+  <p class="myCodeP">    }</p>
+  <p class="myCodeP">}</p>
+  <div class="collapsed">
+    <pre class="brush:java"> </pre>
+    <p class="myNormal"> </p>
+    package com.supermap.sample.serviceprovider; import java.awt.image.BufferedImage; import java.io.File; import java.io.FileInputStream; import java.io.FileNotFoundException; import java.io.IOException; import java.util.ArrayList; import java.util.HashMap; import java.util.List; import java.util.Map; import javax.imageio.ImageIO; import org.apache.commons.lang3.StringUtils; import com.supermap.services.components.commontypes.Layer; import com.supermap.services.components.commontypes.MapParameter; import com.supermap.services.components.commontypes.OutputFormat; import com.supermap.services.components.commontypes.Point2D; import com.supermap.services.components.commontypes.Rectangle; import com.supermap.services.components.commontypes.Rectangle2D; import com.supermap.services.components.commontypes.RectifyType; import com.supermap.services.components.commontypes.Unit; import com.supermap.services.providers.LocalTileProviderBase; import com.supermap.services.util.PrjCoordSysConversionTool; import com.supermap.services.util.TileTool; /**  *  * ArcGIS 离散缓存  地图服务提供者。  *  *  * ArcGISExplodedCacheMapProvider 提供了将本地 ArcGIS 离散缓存发布为地图服务的能力，并封装了与 SuperMap iServer 地图相关的 GIS  * 功能。  *  *  */ public class ArcGISExplodedCacheMapProvider extends LocalTileProviderBase {     private static final String MAPNAME = &quot;arcgismaps&quot;;     private double[] scales;     private double[] resolutions = null;     private Point2D origin;     /**      *      * 获取图片      *      * @param tileParam 图片参数      * @param x      * @param y      * @param resolution 分辨率      * @return      */     @Override     protected byte[] getTileImage(TileImageParameter paramTileImageParameter) {         ArcGISExplodedCacheMapProviderSetting setting = (ArcGISExplodedCacheMapProviderSetting) this.getMapProviderSetting();         String arcgisMapsAdressTemplate = setting.getCachePath();         arcgisMapsAdressTemplate += &quot;/_alllayers/L%02d/R%08x/C%08x.png&quot;;         int z = getLevelByResolution(paramTileImageParameter.resolution);         if (z &lt; 0) {             return TileTool.getBlankImageByte(&quot;&quot;,this.tilePixWidth, this.tilePixHeight, paramTileImageParameter.outputOption.transparent);         }         String arcgisImagePath = String.format(arcgisMapsAdressTemplate, z, paramTileImageParameter.y, paramTileImageParameter.x);         if (!new File(arcgisImagePath).exists()) {             return TileTool.getBlankImageByte(&quot;&quot;,this.tilePixWidth, this.tilePixHeight, paramTileImageParameter.outputOption.transparent);         }         BufferedImage image = null;         FileInputStream fs = null;         byte[] imagebyte = null;         try {             fs = new FileInputStream(arcgisImagePath);             image = ImageIO.read(fs);             imagebyte = TileTool.getBytesFromBufferedImage(image, &quot;PNG&quot;);         } catch (FileNotFoundException e) {             e.printStackTrace();         } catch (IOException e) {             e.printStackTrace();         } finally {             try {                 fs.close();             } catch (IOException e) {                 e.printStackTrace();             }         }         return imagebyte;     }     /**      *      * 初始化支持的地图列表。      *      *      * Initialize the supported map list.      * @return      *      * 地图名列表      *      * Map name list      *      */     @Override     protected List&lt;String&gt; initSupportedMapNames() {         List&lt;String&gt; names = new ArrayList&lt;String&gt;();         names.add(getMapName());         return names;     }     /**      *      * 初始化默认地图状态，返回值为一个映射，键为地图名，值为地图参数对象。      *      *      * Initialize the default map status. Return value is a mapping. The key is the map name and the value is the map parameter object.      *      * @return 地图状态映射，键为地图名，值为地图参数对象。      * Map status mapping. The key is the map name, and the value is the parameter object.      */     @Override     protected Map&lt;String, MapParameter&gt; initDefaultMapParameter() {         String mapName = getMapName();         ArcGISExplodedCacheMapProviderSetting setting = (ArcGISExplodedCacheMapProviderSetting) this.getMapProviderSetting();         if (StringUtils.isBlank(setting.getCachePath())) {             throw new IllegalArgumentException(&quot;cahcePath is null&quot;);         }         ArcGISXMLParseTool arcgisXmlParseTool = new ArcGISXMLParseTool(getConfXMLPath());         tilePixHeight = arcgisXmlParseTool.getTileRows();         tilePixWidth = arcgisXmlParseTool.getTileCols();         MapParameter defaultMapParameter = new MapParameter();         defaultMapParameter.name = mapName;         defaultMapParameter.prjCoordSys = PrjCoordSysConversionTool.getPrjCoordSys(arcgisXmlParseTool.getWkid());         defaultMapParameter.coordUnit = defaultMapParameter.prjCoordSys.coordUnit;         defaultMapParameter.distanceUnit = Unit.METER;         defaultMapParameter.viewer = new Rectangle(0, 0, arcgisXmlParseTool.getTileCols(), arcgisXmlParseTool.getTileRows());         defaultMapParameter.bounds = arcgisXmlParseTool.getBounds(getConfCDIPath());         defaultMapParameter.center = defaultMapParameter.bounds.center();         double[] resolutionArray = getSupportResolutions(mapName);         defaultMapParameter.viewBounds = new Rectangle2D(defaultMapParameter.center.x - arcgisXmlParseTool.getTileCols() * resolutionArray[0] * 0.5,                 defaultMapParameter.center.y - arcgisXmlParseTool.getTileRows() * resolutionArray[0] * 0.5, defaultMapParameter.center.x                         + arcgisXmlParseTool.getTileCols() * resolutionArray[0] * 0.5, defaultMapParameter.center.y + arcgisXmlParseTool.getTileRows()                         * resolutionArray[0] * 0.5);         defaultMapParameter.customEntireBoundsEnabled = false;         defaultMapParameter.rectifyType = RectifyType.BYCENTERANDMAPSCALE;         defaultMapParameter.visibleScalesEnabled = true;         defaultMapParameter.visibleScales = getSupportScales();         defaultMapParameter.scale = defaultMapParameter.visibleScales[0];         defaultMapParameter.layers = new ArrayList&lt;Layer&gt;();         ArcGISExplodedCacheMapLayer layer = new ArcGISExplodedCacheMapLayer();         layer.name = defaultMapParameter.name;         layer.bounds = new Rectangle2D(defaultMapParameter.bounds);         layer.visible = true;         defaultMapParameter.layers.add(layer);         Map&lt;String, MapParameter&gt; result = new HashMap&lt;String, MapParameter&gt;();         result.put(mapName, defaultMapParameter);         return result;     }     /**     *     *     * 返回指定地图支持的图片格式数组     *     *     * Return image format array supported by specified map     *     * @param mapName     * @return     * @since 7.1.0     */     @Override     public OutputFormat[] getSupportImageFormat(String paramString) {         return new OutputFormat[0];     }     /**      *      * 获取地图的左上角地理坐标。      *      *      * Get the geographical coordinates of map top left corner.      *      * @param 地图名      *      * Map name      *      * @return 地图的左上角地理坐标。      *      * The geographical coordinates of map top left corner.      *      */     @Override     protected Point2D getOrigin(String paramString) {         ArcGISXMLParseTool arcgisXmlParseTool = new ArcGISXMLParseTool(getConfXMLPath());         if (origin == null) {             origin = arcgisXmlParseTool.getTileOrigin();             return origin;         }         return origin;     }     @Override     protected boolean cacheEnabled() {         return false;     }     /**      *      * 返回当前服务支持的分辨率 。如果支持所有分辨率，则返回空。      *      *      * Return the resolutions supported by current services. If all resolutions are supported, return null.      *      * @param mapName      *      * @return 分辨率数组      *      * Resolution array      *      */     @Override     public double[] getSupportResolutions(String paramString) {         ArcGISXMLParseTool arcgisXmlParseTool = new ArcGISXMLParseTool(getConfXMLPath());         if (resolutions == null) {             resolutions = arcgisXmlParseTool.getResolutions();         }         return resolutions;     }     private int getLevelByResolution(double resolution) {         ArcGISXMLParseTool arcgisXmlParseTool = new ArcGISXMLParseTool(getConfXMLPath());         for (int i = 0; i &lt; arcgisXmlParseTool.getResolutions().length; i++) {             if (resolution == arcgisXmlParseTool.getResolutions()[i]) {                 return i;             }         }         return -1;     }     private double[] getSupportScales() {         ArcGISXMLParseTool arcgisXmlParseTool = new ArcGISXMLParseTool(getConfXMLPath());         if (scales == null) {             scales = arcgisXmlParseTool.getScales();         }         return scales;     }     private String getConfXMLPath() {         ArcGISExplodedCacheMapProviderSetting setting = (ArcGISExplodedCacheMapProviderSetting) this.getMapProviderSetting();         String path = setting.getCachePath() + &quot;/conf.xml&quot;;         return path;     }     private String getConfCDIPath() {         ArcGISExplodedCacheMapProviderSetting setting = (ArcGISExplodedCacheMapProviderSetting) this.getMapProviderSetting();         String path = setting.getCachePath() + &quot;/conf.cdi&quot;;         return path;     }     private String getMapName() {         ArcGISExplodedCacheMapProviderSetting setting = (ArcGISExplodedCacheMapProviderSetting) this.getMapProviderSetting();         if (StringUtils.isNotBlank(setting.getMapName())) {             return setting.getMapName();         }         return MAPNAME;     } }
+  </div>
+  <div class="collapsed" id="div11">
+    <pre class="brush:java">	package com.supermap.sample.serviceprovider;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import org.w3c.dom.Document;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import com.supermap.services.components.commontypes.Point2D;
+import com.supermap.services.components.commontypes.Rectangle2D;
+/**
+ * 
+ * ArcGIS Server 缓存 conf 文件读取类  提取 conf.xml 和 conf.cdi 相关信息。
+ * 
+	
+	
+ * 
+ * ArcGISXMLParseTool 提供了读取缓存目录下的 conf.xml 文件和 conf.cdi 文件相关信息的功能。
+ * 
+	
+	
+ *
+ */
+public class ArcGISXMLParseTool {
+    private static DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+    private double[] resolutions;
+    private double[] scales;
+    private int wkid, tileCols, tileRows;
+    private String cachePath;
+    /**
+     * 
+     * 带参构造函数
+     * 
+	
+	
+     *
+     * @param cache 地图瓦片目录
+     */
+    public ArcGISXMLParseTool(String cachePath) {
+        this.cachePath = cachePath;
+    }
+    /**
+     * 
+     * 获取地图比例尺集合
+     * 
+	
+	
+     * @return 地图比例尺集合
+     */
+    public double[] getScales() {
+        try {
+            DocumentBuilder db = dbf.newDocumentBuilder();
+            Document doc = db.parse(cachePath);
+            NodeList scaleDenominatorList = doc.getElementsByTagName(&quot;Scale&quot;);
+            scales = new double[scaleDenominatorList.getLength()];
+            for (int i = 0; i &lt; scaleDenominatorList.getLength(); i++) {
+                Node scaleDenominatorNode = scaleDenominatorList.item(i);
+                scales[i] = 1 / Double.parseDouble(scaleDenominatorNode.getTextContent());
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        if (scales == null) {
+            return new double[0];
+        }
+        return scales;
+    }
+    /**
+     * 
+     * 获取地图分辨率集合
+     * 
+	
+	
+     * @return 地图分辨率集合
+     */
+    public double[] getResolutions() {
+        try {
+            DocumentBuilder db = dbf.newDocumentBuilder();
+            Document doc = db.parse(cachePath);
+            NodeList resolutionList = doc.getElementsByTagName(&quot;Resolution&quot;);
+            resolutions = new double[resolutionList.getLength()];
+            for (int i = 0; i &lt; resolutionList.getLength(); i++) {
+                Node resolutionNode = resolutionList.item(i);
+                resolutions[i] = Double.parseDouble(resolutionNode.getTextContent());
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        if (resolutions == null) {
+            return new double[0];
+        }
+        return resolutions;
+    }
+    /**
+     * 
+     * 获取地图 WKID
+     * 
+	
+	
+     * @return 地图 WKID
+     */
+    public int getWkid() {
+        try {
+            DocumentBuilder db = dbf.newDocumentBuilder();
+            Document doc = db.parse(cachePath);
+            NodeList wkidList = doc.getElementsByTagName(&quot;WKID&quot;);
+            Node wkidNode = wkidList.item(0);
+            wkid = Integer.parseInt(wkidNode.getTextContent());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return wkid;
+    }
+    /**
+     * 
+     * 获取地图瓦片宽
+     * 
+	
+	
+     * @return 地图瓦片宽
+     */
+    public int getTileCols() {
+        try {
+            DocumentBuilder db = dbf.newDocumentBuilder();
+            Document doc = db.parse(cachePath);
+            NodeList tileColsList = doc.getElementsByTagName(&quot;TileCols&quot;);
+            Node tileColsNode = tileColsList.item(0);
+            tileCols = Integer.parseInt(tileColsNode.getTextContent());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return tileCols;
+    }
+    /**
+     * 
+     * 获取地图瓦片高
+     * 
+	
+	
+     * @return 地图瓦片高
+     */
+    public int getTileRows() {
+        try {
+            DocumentBuilder db = dbf.newDocumentBuilder();
+            Document doc = db.parse(cachePath);
+            NodeList tileRowsList = doc.getElementsByTagName(&quot;TileRows&quot;);
+            Node tileRowsNode = tileRowsList.item(0);
+            tileRows = Integer.parseInt(tileRowsNode.getTextContent());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return tileRows;
+    }
+    /**
+     * 
+     * 获取地图切片原点
+     * 
+     * @return 地图切片原点
+     */
+    public Point2D getTileOrigin() {
+        double originX = 0;
+        double originY = 0;
+        try {
+            DocumentBuilder db = dbf.newDocumentBuilder();
+            Document doc = db.parse(cachePath);
+            NodeList originXList = doc.getElementsByTagName(&quot;X&quot;);
+            NodeList originYList = doc.getElementsByTagName(&quot;Y&quot;);
+            originX = Double.parseDouble(originXList.item(0).getTextContent());
+            originY = Double.parseDouble(originYList.item(0).getTextContent());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return new Point2D(originX, originY);
+    }
+    /**
+     * 
+     * 获取地图全图范围
+     * 
+     * @return 地图全图范围
+     */
+    public Rectangle2D getBounds(String cdiPath) {
+        double leftBottomX = 0;
+        double leftBottomY = 0;
+        double rightTopX = 0;
+        double rightTopY = 0;
+        try {
+            DocumentBuilder db = dbf.newDocumentBuilder();
+            Document doc = db.parse(cdiPath);
+            NodeList leftBottomXList = doc.getElementsByTagName(&quot;XMin&quot;);
+            NodeList leftBottomYList = doc.getElementsByTagName(&quot;YMin&quot;);
+            NodeList rightTopXList = doc.getElementsByTagName(&quot;XMax&quot;);
+            NodeList rightTopYList = doc.getElementsByTagName(&quot;YMax&quot;);
+            leftBottomX = Double.parseDouble(leftBottomXList.item(0).getTextContent());
+            leftBottomY = Double.parseDouble(leftBottomYList.item(0).getTextContent());
+            rightTopX = Double.parseDouble(rightTopXList.item(0).getTextContent());
+            rightTopY = Double.parseDouble(rightTopYList.item(0).getTextContent());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return new Rectangle2D(leftBottomX, leftBottomY, rightTopX, rightTopY);
+    }
+}
+	
+	</pre>
+  </div>
+  <p class="myNormal" style="font-weight: normal;">TMSTilesMapProviderSetting 类，继承自 ZXYTilesMapProviderSetting 类，用于扩展地图服务提供者配置，完成一些特定地图参数的设置。TMSTilesMapProviderSetting 实现类代码如下：</p>
+  <p class="myCodeP">package com.supermap.sample.serviceprovider;</p>
+  <p class="myCodeP">public class TMSTilesMapProviderSetting extends ZXYTilesMapProviderSetting{</p>
+  <p class="myCodeP">private static final long serialVersionUID = 1L;</p>
+  <p class="myCodeP">}</p>
+  <div class="collapsed" id="div11">
+    <pre class="brush:java">	package com.supermap.sample.serviceprovider;
+import com.supermap.services.components.spi.MapProviderSetting;
+public class ArcGISExplodedCacheMapProviderSetting extends MapProviderSetting {
+    private static final long serialVersionUID = 1L;
+    private String cachePath;
+    private String mapName;
+    public String getMapName() {
+        return mapName;
+    }
+    public void setMapName(String mapName) {
+        this.mapName = mapName;
+    }
+    public String getCachePath() {
+        return cachePath;
+    }
+    public void setCachePath(String cachePath) {
+        this.cachePath = cachePath;
+    }
+}
+	
+	</pre>
+  </div>
+  <p class="myNormal">将编译好的扩展类的 class 文件放到 %SuperMap iServer_Home%\webap\iserver\WEB-INF\classes 目录下（默认情况下没有classes目录，需要新建），或将编译后的 Jar 放到 %SuperMap iServer_HOME%/webapps/iserver/WEB-INF/lib 目录下。</p>
+  <p class="myNormal">在 iserver-services.xml（位于%SuperMap iServer Java_HOME%/webapps/iserver/WEB-INF）配置服务提供者，配置如下：</p>
+  <p class="myCodeP">&lt;provider class=&quot;com.supermap.sample.serviceprovider.TMSTilesMapProvider&quot; enabled=&quot;true&quot; name=&quot;TMSTiles-test&quot;&gt;</p>
+  <p class="myCodeP">      &lt;config class=&quot;com.supermap.sample.serviceprovider.TMSTilesMapProviderSetting&quot;&gt;</p>
+  <p class="myCodeP">        &lt;filePath&gt;D:/sample/TMSTile_file&lt;/filePath&gt;</p>
+  <p class="myCodeP">      &lt;/config&gt;</p>
+  <p class="myCodeP">&lt;/provider&gt;</p>
+  <p class="myNormal">其中&lt;filePath&gt;为必须参数，表示 TMS 存储路径，路径需要写到 TMS 瓦片地图名的上一级。如，示例中TMS 瓦片存储路径为 D:/sample/TMSTile_file/&lt;MapName&gt;/&lt;Z&gt;/&lt;X&gt;/&lt;Y&gt; ，则 filePath 应为 D:/sample/TMSTile_file。</p>
+  <p class="myNormal">在 iserver-services.xml 中配置地图服务组件 TMSTiles-test，发布为rest服务：</p>
+  <p class="myCodeP">&lt;component class=&quot;com.supermap.services.components.impl.MapImpl&quot; enabled=&quot;true&quot; interfaceNames=&quot;rest&quot; name=&quot;map-TMSTiles-test&quot; providers=&quot;TMSTiles-test&quot;&gt;  </p>
+  <p class="myCodeP">&lt;/component&gt;</p>
+  <p class="myNormal">即可通过根 URI：http://&lt;host&gt;:&lt;port&gt;/iserver/services/map-TMSTiles-test/rest 访问地图 REST 功能。通过 http://&lt;host&gt;:&lt;port&gt;/iserver/services/map-TMSTiles-test/rest/maps/test.leaflet 访问地图。</p>
+
+</div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../../../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../../../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../../../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../../../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../../../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../../../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../../../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../../.."
+    gCommonRootRelPath = "../../.."
+    gTopicId = "6.4.3.1_1"
+  
+//]]></script>
+
+  <script src="../../../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../../../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../../../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../../../whxdata/layoutconfig.js"></script>
+  <script src="../../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

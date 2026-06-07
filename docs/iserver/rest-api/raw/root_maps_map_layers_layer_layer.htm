@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../../../../../../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../../../../../../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../../../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../../../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../../../../../../../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../../../../../../iserver-icon.png"/>
+    
+  <script data-relpath="../../../../../../.." src="../../../../../../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <meta name="template" content="../../../../../../../assets/layouts/RESTAPI.htt"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Language" content="zh-CN"/>
+  <meta name="topic-check-list" content="Ran Smart Index"/>
+  <meta name="topic-status" content="Complete"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>layer</title>
+  <link rel="StyleSheet" href="../../../../../../../assets/css/SuperMapHelp.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="Layer"/>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../../../../../../../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../../../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../../../assets/css/homeButtom.css"/>
+  <script src="../../../../../../../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../../../../../../../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../../../../../../../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../../../../../../../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../../../../../../../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../../../../../../../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../../../../../../../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../../../../../../../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../../../../../../../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <h2><a name="URI" id="URI"></a>URI</h2>
+  <p class="myNormal">1. <a class="contentpagehyperlink" href="../layers.htm#URI">&lt;layers_uri&gt;</a>/{layerName}[.&lt;format&gt;]</p>
+  <p class="myNormal">2. <a class="contentpagehyperlink" href="../layers.htm#URI">&lt;layers_uri&gt;</a>/{layerIndex}[.&lt;format&gt;]</p>
+  <p class="myNormal">3. <a class="contentpagehyperlink" href="../layers.htm#URI">&lt;layers_uri&gt;</a>/{layerIndex}/sublayers/{sublayerIndex}[.&lt;format&gt;]</p>
+  <h2>支持的方法</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="#GET 请求">GET</a>、<a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a></p>
+  <h2>父资源</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="../layers.htm">layers</a></p>
+  <h2 class="myNormal">子资源</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="legend.htm">legend</a>，<a class="contentpagehyperlink" href="visible.htm">visible</a>，<a class="contentpagehyperlink" href="queryable.htm">queryable</a>，<a class="contentpagehyperlink" href="style.htm">style</a></p>
+  <h2>介绍</h2>
+  <p class="myNormal">layer 资源表示一个图层，在 URI 里通过图层名或图层索引号来标识，可以通过上面3种 URI 来访问 layer 资源。</p>
+  <p class="myNormal">layer 资源可能是不同的图层，例如高一级的图层：UGCMapLayer、WFSLayer、WMSLayer 等；低一级的有 UGCMapLayer 的子图层，如 UGCVectorLayer、UGCGridLayer、UGCImageLayer、 UGCThemeLayer 等。高一级的图层类型由 type 字段标识，低一级的图层类型由 ugcLayerType 字段标识。</p>
+  <p class="myNormal">当 layer 是高一级的图层时，可以通过 URI1或 URI2的形式来访问资源；当 layer 是低一级的图层时，可以通过 URI1或 URI3的形式来访问。</p>
+  <p class="myNormal">{layerName}可用来标识高一级图层名和低一级图层名。{layerIndex}是高一级图层的索引号，从0开始。{sublayerIndex}是指低一级图层的索引号，从0开始，按图层列表中的顺序依次增加。例如第一个图层的索引号为0，第二个图层的索引号则为1，依此类推。</p>
+  <p class="myNormal">关于本资源的使用方法，可参考开发指南：<a class="contentpagehyperlink" href="../../../../../../../DevelopGuide/Use_iServer/USE_RESTAPI/Layer_Opr/getSubLayers.htm">获取子图层列表</a>。</p>
+  <p class="myNormal" style="font-weight: bold;">支持的方法：</p>
+  <ul class="supportList" style="list-style: disc;">
+    <li class="supportList"><a class="contentpagehyperlink" href="#GET 请求">GET</a>：获取图层的表述。</li>
+    <li class="supportList"><a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a>：获取图层的元数据信息。检查 layer 资源是否存在，权限是否可以访问。</li>
+  </ul>
+  <p class="myNormal"><span style="font-weight: bold;">支持的表述格式：</span>RJSON、JSON、HTML、XML、Classic、JSONP、FASTJSON。</p>
+  <h2>资源层次</h2>
+  <p><img alt="" border="0" height="280" src="../../../../../../../assets/images/root/maps/map/layers/layer.png" usemap="#DrawArea" width="500"/><map id="DrawArea" name="DrawArea"><area alt="resources.htm" coords="8.987,4.3934,265.396,45.3069" href="../../../../root.htm" shape="rect"/> <area alt="maps.htm" coords="80.627,57.3069,226.397,98.1069" href="../../../maps.htm" shape="rect"/> <area alt="map.htm" coords="121.811,107.491,274.211,157" href="../../map.htm" shape="rect"/> <area alt="layer.htm" coords="224.065,215.2,492,268" href="layer.htm" shape="rect"/> <area alt="layers.htm" coords="167.665,165.4,334.013,206.2" href="../layers.htm" shape="rect"/></map></p>
+  <h2>HTTP 请求方法</h2>
+  <p class="myNormal">对如下 URI 执行 HTTP 请求，以 rjson 输出格式为例加以说明，其中，supermapiserver 是服务器名，“世界地图”是地图名（{mapName}），Capitals@World 是 地图“世界地图”中的一个图层（{layerName}），Capitals@World@@世界地图 表示 它是“世界地图”图层的一个子图层，URI 表示 Capitals@World 图层，即 layer 资源。</p>
+  <p class="uriStyle">http://supermapiserver:8090/iserver/services/map-world/rest/maps/世界地图/layers/Capitals@World@@世界地图.rjson</p>
+  <h3><a id="GET 请求"></a>GET 请求</h3>
+  <p class="myNormal">对示例 URI 执行 GET 请求可以获得“世界地图”中的 Capitals@World 图层的表述。</p>
+  <h4 class="myNormal">请求参数</h4>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>名称</td>
+        <td>类型</td>
+        <td>含义</td>
+      </tr>
+      <tr class="t2Row">
+        <td>_cache</td>
+        <td>boolean</td>
+        <td>【可选参数】 是否使用缓存，默认为 true。如果为 false，则关闭所有缓存。</td>
+      </tr>
+      <tr>
+        <td>returnFields</td>
+        <td>boolean</td>
+        <td>【可选参数】是否返回图层中各个字段及其信息，默认为 false。<br/>
+          <strong>注：</strong>仅文件型工作空间、PostgreSQL 工作空间、Oracle 工作空间、SQL Server 工作空间、DM 工作空间、REST 地图服务、PostGIS 服务、ShapeFile、ArcGIS REST 地图服务为数据源发布地图服务时，支持设置该参数。
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h4>响应结构</h4>
+  <p class="myNormal">对 layer 资源执行 GET 请求，返回资源的表述。表述为描述图层的各种信息，不同类型图层的描述有所差别，图层可能是高一级的图层：UGCMapLayer、WFSLayer、WMSLayer 等，或低一级的图层：WFSLayer、WMSLayer、 UGCMapLayer 的子图层（<a class="contentpagehyperlink" href="../../../../../../iServerJavadoc/com/supermap/services/components/commontypes/UGCVectorLayer.html">UGCVectorLayer</a>、<a class="contentpagehyperlink" href="../../../../../../iServerJavadoc/com/supermap/services/components/commontypes/UGCGridLayer.html">UGCGridLayer</a>、<a class="contentpagehyperlink" href="../../../../../../iServerJavadoc/com/supermap/services/components/commontypes/UGCImageLayer.html">UGCImageLayer</a>、 <a class="contentpagehyperlink" href="../../../../../../iServerJavadoc/com/supermap/services/components/commontypes/UGCThemeLayer.html">UGCThemeLayer</a>）等。layer 资源表述的结构即为这些图层描述的结构。</p>
+  <p class="myNormal">示例图层 Capitals@World 为 UGCVectorLayer 图层，所以返回的表述为 UGCVectorLayer 的结构，如下：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="100%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>名称</td>
+        <td>类型</td>
+        <td>含义</td>
+      </tr>
+      <tr class="t2Row">
+        <td>name</td>
+        <td>String</td>
+        <td>图层的名称。图层的名称在图层所在的地图中唯一标识此图层。该标识不区分大小写。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>bounds</td>
+        <td>double</td>
+        <td>图层范围。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>caption</td>
+        <td>String</td>
+        <td>图层的标题。默认情况下与 name 一致。在图例、图层控制列表中显示的图层的名称就是 caption 的值。注意与 name 相区别。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>description</td>
+        <td>String</td>
+        <td>图层的描述信息。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>queryable</td>
+        <td>boolean</td>
+        <td>图层中的对象是否可以被查询。true 表示可以被查询，false 表示不能被查询。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>visible</td>
+        <td>boolean</td>
+        <td>图层是否可见，当图层不可见时，其他所有的属性的设置将无效。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>type</td>
+        <td>LayerType</td>
+        <td>图层的类型。 目前支持的图层类型有：UGC（SuperMap 图层），WFS（WFS 图层），WMS（WMS 图层）、CUSTOM（自定义图层）。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>subLayers</td>
+        <td>Layer[]</td>
+        <td>子图层集。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>completeLineSymbolDisplayed</td>
+        <td>boolean</td>
+        <td>是否显示完整线型。true 表示显示，false 表示不显示。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>maxScale</td>
+        <td>double</td>
+        <td>图层的最大可见比例尺。最大可见比例尺不可为负，当地图的当前显示比例尺大于图层最大可见比例尺时，此图层将不显示。 默认为0。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>minScale</td>
+        <td>double</td>
+        <td>图层的最小可见比例尺。最小可见比例尺不可为负。当地图的当前显示比例尺小于图层最小可见比例尺时，此图层将不显示。 默认为0。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>minVisibleGeometrySize</td>
+        <td>double</td>
+        <td>几何对象的最小可见大小，单位：像素。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>opaqueRate</td>
+        <td>int</td>
+        <td>图层的不透明度，0-100。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>symbolScalable</td>
+        <td>boolean</td>
+        <td>是否允许图层的符号大小随图缩放。 true 表示当图层被放大或缩小时，符号也随之放大或缩小；false 表示图层的符号大小不可随图缩放。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>symbolScale</td>
+        <td>double</td>
+        <td>图层的符号缩放基准比例尺。 符号缩放基准比例尺在允许符号随图缩放时有效，指定了在随图缩放时，所设置的符号大小所对应的地图显示比例尺。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>datasetInfo</td>
+        <td><a class="contentpagehyperlink" href="../../../../../../iServerJavadoc/com/supermap/services/components/commontypes/DatasetInfo.html">DatasetInfo</a></td>
+        <td>图层对应的数据集对象。图层是对数据集的引用，因而，一个图层与一个数据集相对应。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>displayFilter</td>
+        <td>String</td>
+        <td>图层的显示过滤条件。 过滤条件是在数据库的属性数据上进行过滤，例如图层的属性数据库存在 smid 字段，过滤条件为 smid &gt; 20，则几何属性 smid 的值大于20的几何对象将显示在地图窗口中，其余对象不显示。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>joinItems</td>
+        <td><a class="contentpagehyperlink" href="../../../../../../iServerJavadoc/com/supermap/services/components/commontypes/JoinItem.html">JoinItem</a>[]</td>
+        <td>连接信息。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>representationField</td>
+        <td>String</td>
+        <td>存储制图表达信息的字段。 制图表达是矢量数据集中几何对象所关联的信息，它可以使相应的几何对象在地图窗口中显示时，采用其他的表现方式，而原来的几何对象不再显示，注意原几何对象的数据并没有改变，只是显示方式有所变化。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>ugcLayerType</td>
+        <td><a class="contentpagehyperlink" href="../../../../../../iServerJavadoc/com/supermap/services/components/commontypes/UGCLayerType.html">UGCLayerType</a></td>
+        <td>SuperMap 图层的类型。 SuperMap 图层的类型分：GRID（栅格图层）、IMAGE（影像图层）、THEME（专题图层）、VECTOR（矢量图层）、WFS（WFS 图层）、WMS（WMS 图层）。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>style</td>
+        <td><a class="contentpagehyperlink" href="../../../../../../iServerJavadoc/com/supermap/services/components/commontypes/Style.html">Style</a></td>
+        <td>矢量图层的风格。</td>
+      </tr>
+      <tr>
+        <td>gamma</td>
+        <td>double</td>
+        <td>用于影像或栅格的非线性亮度和对比度调整，取值为 0-10（包含0和10）。当图层类型为 SuperMap 栅格图层或影像图层时，响应体中包含此参数。</td>
+      </tr>
+      <tr>
+        <td>fields</td>
+        <td><a class="contentpagehyperlink" href="../../../../../field.htm">filed</a>[]</td>
+        <td>图层包含的字段信息数组。</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4>示例</h4>
+  <p class="myNormal">对 layer 资源：http://localhost:8090/iserver/services/map-China100/rest/maps/China/layers/Main_Railway_L@China@@China.rjson?returnFields=true，执行 GET 请求，返回 Main_Railway_L@China 图层中包含的信息（Main_Railway_L@China 是一个 UGCVectorLayer 图层），rjson 格式的表述如下：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">   &quot;ugcLayerType&quot;: &quot;VECTOR&quot;,</p>
+  <p class="myCodeP">   &quot;displayFilter&quot;: null,</p>
+  <p class="myCodeP">   &quot;fieldValuesDisplayFilter&quot;: {</p>
+  <p class="myCodeP">       &quot;fieldName&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">       &quot;values&quot;: [],</p>
+  <p class="myCodeP">       &quot;fieldValuesDisplayMode&quot;: &quot;DISABLE&quot;</p>
+  <p class="myCodeP">   },</p>
+  <p class="myCodeP">   &quot;caption&quot;: &quot;Main_Railway_L@China_L10-L13&quot;,</p>
+  <p class="myCodeP">   &quot;description&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">   &quot;type&quot;: &quot;UGC&quot;,</p>
+  <p class="myCodeP">   &quot;datasetInfo&quot;: {</p>
+  <p class="myCodeP">       &quot;schema&quot;: null,</p>
+  <p class="myCodeP">       &quot;charset&quot;: null,</p>
+  <p class="myCodeP">       &quot;recordCount&quot;: 0,</p>
+  <p class="myCodeP">       &quot;isFileCache&quot;: false,</p>
+  <p class="myCodeP">       &quot;description&quot;: null,</p>
+  <p class="myCodeP">       &quot;type&quot;: &quot;LINE&quot;,</p>
+  <p class="myCodeP">       &quot;dataSourceName&quot;: &quot;China&quot;,</p>
+  <p class="myCodeP">       &quot;tableName&quot;: null,</p>
+  <p class="myCodeP">       &quot;isReadOnly&quot;: false,</p>
+  <p class="myCodeP">       &quot;encodeType&quot;: null,</p>
+  <p class="myCodeP">       &quot;bounds&quot;: {</p>
+  <p class="myCodeP">           &quot;top&quot;: 6983716.901688325,</p>
+  <p class="myCodeP">           &quot;left&quot;: 8456781.73220221,</p>
+  <p class="myCodeP">           &quot;bottom&quot;: 2072536.377213049,</p>
+  <p class="myCodeP">           &quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">               &quot;x&quot;: 8456781.73220221,</p>
+  <p class="myCodeP">               &quot;y&quot;: 2072536.377213049</p>
+  <p class="myCodeP">           },</p>
+  <p class="myCodeP">           &quot;right&quot;: 1.4973544066083536E7,</p>
+  <p class="myCodeP">           &quot;rightTop&quot;: {</p>
+  <p class="myCodeP">               &quot;x&quot;: 1.4973544066083536E7,</p>
+  <p class="myCodeP">               &quot;y&quot;: 6983716.901688325</p>
+  <p class="myCodeP">           }</p>
+  <p class="myCodeP">       },</p>
+  <p class="myCodeP">       &quot;name&quot;: &quot;Main_Railway_L&quot;,</p>
+  <p class="myCodeP">       &quot;prjCoordSys&quot;: null,</p>
+  <p class="myCodeP">       &quot;datasourceConnectionInfo&quot;: null</p>
+  <p class="myCodeP">   },</p>
+  <p class="myCodeP">   &quot;clipRegionEnabled&quot;: true,</p>
+  <p class="myCodeP">   &quot;minVisibleGeometrySize&quot;: 0.1,</p>
+  <p class="myCodeP">   &quot;minScale&quot;: 8.653637486605571E-7,</p>
+  <p class="myCodeP">   &quot;joinItems&quot;: null,</p>
+  <p class="myCodeP">   &quot;completeLineSymbolDisplayed&quot;: false,</p>
+  <p class="myCodeP">   &quot;clipRegion&quot;: null,</p>
+  <p class="myCodeP">   &quot;visible&quot;: true,</p>
+  <p class="myCodeP">   &quot;maxScale&quot;: 0,</p>
+  <p class="myCodeP">   &quot;symbolScalable&quot;: false,</p>
+  <p class="myCodeP">   &quot;subLayers&quot;: {},</p>
+  <p class="myCodeP">   &quot;queryable&quot;: false,</p>
+  <p class="myCodeP">   &quot;opaqueRate&quot;: 100,</p>
+  <p class="myCodeP">   &quot;name&quot;: &quot;Main_Railway_L@China&quot;,</p>
+  <p class="myCodeP">   &quot;bounds&quot;: {</p>
+  <p class="myCodeP">       &quot;top&quot;: 6983716.901688325,</p>
+  <p class="myCodeP">       &quot;left&quot;: 8456781.73220221,</p>
+  <p class="myCodeP">       &quot;bottom&quot;: 2072536.377213049,</p>
+  <p class="myCodeP">       &quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">           &quot;x&quot;: 8456781.73220221,</p>
+  <p class="myCodeP">           &quot;y&quot;: 2072536.377213049</p>
+  <p class="myCodeP">       },</p>
+  <p class="myCodeP">       &quot;right&quot;: 1.4973544066083536E7,</p>
+  <p class="myCodeP">       &quot;rightTop&quot;: {</p>
+  <p class="myCodeP">           &quot;x&quot;: 1.4973544066083536E7,</p>
+  <p class="myCodeP">           &quot;y&quot;: 6983716.901688325</p>
+  <p class="myCodeP">       }</p>
+  <p class="myCodeP">   },</p>
+  <p class="myCodeP">   &quot;style&quot;: {</p>
+  <p class="myCodeP">       &quot;fillGradientOffsetRatioX&quot;: 0,</p>
+  <p class="myCodeP">       &quot;markerSize&quot;: 2.4,</p>
+  <p class="myCodeP">       &quot;fillForeColor&quot;: {</p>
+  <p class="myCodeP">           &quot;red&quot;: 208,</p>
+  <p class="myCodeP">           &quot;green&quot;: 255,</p>
+  <p class="myCodeP">           &quot;blue&quot;: 240,</p>
+  <p class="myCodeP">           &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">       },</p>
+  <p class="myCodeP">       &quot;fillGradientOffsetRatioY&quot;: 0,</p>
+  <p class="myCodeP">       &quot;markerWidth&quot;: 0,</p>
+  <p class="myCodeP">       &quot;markerAngle&quot;: 0,</p>
+  <p class="myCodeP">       &quot;fillSymbolID&quot;: 0,</p>
+  <p class="myCodeP">       &quot;lineColor&quot;: {</p>
+  <p class="myCodeP">           &quot;red&quot;: 201,</p>
+  <p class="myCodeP">           &quot;green&quot;: 201,</p>
+  <p class="myCodeP">           &quot;blue&quot;: 201,</p>
+  <p class="myCodeP">           &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">       },</p>
+  <p class="myCodeP">       &quot;markerSymbolID&quot;: 0,</p>
+  <p class="myCodeP">       &quot;lineWidth&quot;: 0.1,</p>
+  <p class="myCodeP">       &quot;markerHeight&quot;: 0,</p>
+  <p class="myCodeP">       &quot;fillOpaqueRate&quot;: 100,</p>
+  <p class="myCodeP">       &quot;fillBackOpaque&quot;: true,</p>
+  <p class="myCodeP">       &quot;fillBackColor&quot;: {</p>
+  <p class="myCodeP">           &quot;red&quot;: 255,</p>
+  <p class="myCodeP">           &quot;green&quot;: 255,</p>
+  <p class="myCodeP">           &quot;blue&quot;: 255,</p>
+  <p class="myCodeP">           &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">       },</p>
+  <p class="myCodeP">       &quot;fillGradientMode&quot;: &quot;NONE&quot;,</p>
+  <p class="myCodeP">       &quot;lineSymbolID&quot;: 964814,</p>
+  <p class="myCodeP">       &quot;fillGradientAngle&quot;: 0</p>
+  <p class="myCodeP">   },</p>
+  <p class="myCodeP">   &quot;displayOrderBy&quot;: null,</p>
+  <p class="myCodeP">   &quot;symbolScale&quot;: 0,</p>
+  <p class="myCodeP">   &quot;fields&quot;: [</p>
+  <p class="myCodeP">       {</p>
+  <p class="myCodeP">           &quot;isRequired&quot;: true,</p>
+  <p class="myCodeP">           &quot;defaultValue&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">           &quot;name&quot;: &quot;SmID&quot;,</p>
+  <p class="myCodeP">           &quot;caption&quot;: &quot;SmID&quot;,</p>
+  <p class="myCodeP">           &quot;type&quot;: &quot;INT32&quot;,</p>
+  <p class="myCodeP">           &quot;maxLength&quot;: 4,</p>
+  <p class="myCodeP">           &quot;isZeroLengthAllowed&quot;: true,</p>
+  <p class="myCodeP">           &quot;isSystemField&quot;: true</p>
+  <p class="myCodeP">       },</p>
+  <p class="myCodeP">       {</p>
+  <p class="myCodeP">           &quot;isRequired&quot;: true,</p>
+  <p class="myCodeP">           &quot;defaultValue&quot;: &quot;0&quot;,</p>
+  <p class="myCodeP">           &quot;name&quot;: &quot;SmUserID&quot;,</p>
+  <p class="myCodeP">           &quot;caption&quot;: &quot;SmUserID&quot;,</p>
+  <p class="myCodeP">           &quot;type&quot;: &quot;INT32&quot;,</p>
+  <p class="myCodeP">           &quot;maxLength&quot;: 4,</p>
+  <p class="myCodeP">           &quot;isZeroLengthAllowed&quot;: true,</p>
+  <p class="myCodeP">           &quot;isSystemField&quot;: false</p>
+  <p class="myCodeP">       },</p>
+  <p class="myCodeP">       {</p>
+  <p class="myCodeP">           &quot;isRequired&quot;: true,</p>
+  <p class="myCodeP">           &quot;defaultValue&quot;: &quot;0&quot;,</p>
+  <p class="myCodeP">           &quot;name&quot;: &quot;SmLength&quot;,</p>
+  <p class="myCodeP">           &quot;caption&quot;: &quot;SmLength&quot;,</p>
+  <p class="myCodeP">           &quot;type&quot;: &quot;DOUBLE&quot;,</p>
+  <p class="myCodeP">           &quot;maxLength&quot;: 8,</p>
+  <p class="myCodeP">           &quot;isZeroLengthAllowed&quot;: true,</p>
+  <p class="myCodeP">           &quot;isSystemField&quot;: true</p>
+  <p class="myCodeP">       },</p>
+  <p class="myCodeP">       {</p>
+  <p class="myCodeP">           &quot;isRequired&quot;: true,</p>
+  <p class="myCodeP">           &quot;defaultValue&quot;: &quot;0&quot;,</p>
+  <p class="myCodeP">           &quot;name&quot;: &quot;SmTopoError&quot;,</p>
+  <p class="myCodeP">           &quot;caption&quot;: &quot;SmTopoError&quot;,</p>
+  <p class="myCodeP">           &quot;type&quot;: &quot;INT32&quot;,</p>
+  <p class="myCodeP">           &quot;maxLength&quot;: 4,</p>
+  <p class="myCodeP">           &quot;isZeroLengthAllowed&quot;: true,</p>
+  <p class="myCodeP">           &quot;isSystemField&quot;: true</p>
+  <p class="myCodeP">       },</p>
+  <p class="myCodeP">       {</p>
+  <p class="myCodeP">           &quot;isRequired&quot;: true,</p>
+  <p class="myCodeP">           &quot;defaultValue&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">           &quot;name&quot;: &quot;SmGeometry&quot;,</p>
+  <p class="myCodeP">           &quot;caption&quot;: &quot;SmGeometry&quot;,</p>
+  <p class="myCodeP">           &quot;type&quot;: &quot;LONGBINARY&quot;,</p>
+  <p class="myCodeP">           &quot;maxLength&quot;: 0,</p>
+  <p class="myCodeP">           &quot;isZeroLengthAllowed&quot;: true,</p>
+  <p class="myCodeP">           &quot;isSystemField&quot;: true</p>
+  <p class="myCodeP">       },</p>
+  <p class="myCodeP">       {</p>
+  <p class="myCodeP">           &quot;isRequired&quot;: false,</p>
+  <p class="myCodeP">           &quot;defaultValue&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">           &quot;name&quot;: &quot;GB&quot;,</p>
+  <p class="myCodeP">           &quot;caption&quot;: &quot;GB&quot;,</p>
+  <p class="myCodeP">           &quot;type&quot;: &quot;DOUBLE&quot;,</p>
+  <p class="myCodeP">           &quot;maxLength&quot;: 8,</p>
+  <p class="myCodeP">           &quot;isZeroLengthAllowed&quot;: true,</p>
+  <p class="myCodeP">           &quot;isSystemField&quot;: false</p>
+  <p class="myCodeP">       },</p>
+  <p class="myCodeP">       {</p>
+  <p class="myCodeP">           &quot;isRequired&quot;: false,</p>
+  <p class="myCodeP">           &quot;defaultValue&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">           &quot;name&quot;: &quot;RN&quot;,</p>
+  <p class="myCodeP">           &quot;caption&quot;: &quot;RN&quot;,</p>
+  <p class="myCodeP">           &quot;type&quot;: &quot;WTEXT&quot;,</p>
+  <p class="myCodeP">           &quot;maxLength&quot;: 7,</p>
+  <p class="myCodeP">           &quot;isZeroLengthAllowed&quot;: true,</p>
+  <p class="myCodeP">           &quot;isSystemField&quot;: false</p>
+  <p class="myCodeP">       },</p>
+  <p class="myCodeP">       {</p>
+  <p class="myCodeP">           &quot;isRequired&quot;: false,</p>
+  <p class="myCodeP">           &quot;defaultValue&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">           &quot;name&quot;: &quot;NAME&quot;,</p>
+  <p class="myCodeP">           &quot;caption&quot;: &quot;NAME&quot;,</p>
+  <p class="myCodeP">           &quot;type&quot;: &quot;WTEXT&quot;,</p>
+  <p class="myCodeP">           &quot;maxLength&quot;: 60,</p>
+  <p class="myCodeP">           &quot;isZeroLengthAllowed&quot;: true,</p>
+  <p class="myCodeP">           &quot;isSystemField&quot;: false</p>
+  <p class="myCodeP">       },</p>
+  <p class="myCodeP">       {</p>
+  <p class="myCodeP">           &quot;isRequired&quot;: false,</p>
+  <p class="myCodeP">           &quot;defaultValue&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">           &quot;name&quot;: &quot;TYPE&quot;,</p>
+  <p class="myCodeP">           &quot;caption&quot;: &quot;TYPE&quot;,</p>
+  <p class="myCodeP">           &quot;type&quot;: &quot;WTEXT&quot;,</p>
+  <p class="myCodeP">           &quot;maxLength&quot;: 20,</p>
+  <p class="myCodeP">           &quot;isZeroLengthAllowed&quot;: true,</p>
+  <p class="myCodeP">           &quot;isSystemField&quot;: false</p>
+  <p class="myCodeP">       },</p>
+  <p class="myCodeP">       {</p>
+  <p class="myCodeP">           &quot;isRequired&quot;: false,</p>
+  <p class="myCodeP">           &quot;defaultValue&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">           &quot;name&quot;: &quot;SHAPE_Leng&quot;,</p>
+  <p class="myCodeP">           &quot;caption&quot;: &quot;SHAPE_Leng&quot;,</p>
+  <p class="myCodeP">           &quot;type&quot;: &quot;DOUBLE&quot;,</p>
+  <p class="myCodeP">           &quot;maxLength&quot;: 8,</p>
+  <p class="myCodeP">           &quot;isZeroLengthAllowed&quot;: true,</p>
+  <p class="myCodeP">           &quot;isSystemField&quot;: false</p>
+  <p class="myCodeP">       }</p>
+  <p class="myCodeP">   ],</p>
+  <p class="myCodeP">   &quot;representationField&quot;: &quot;&quot;</p>
+  <p class="myCodeP">}</p>
+  <h3><a id="HEAD 请求"></a>HEAD 请求</h3>
+  <p class="myNormal">返回跟 GET 请求一样的 HTTP 响应头，但是没有响应实体。可以在不必传输整个响应内容的情况下，获取包含在响应消息头中的元数据信息。元数据信息包括媒体类型，字符编码，压缩编码，实体内容长度等。</p>
+  <p class="myNormal">HEAD 请求可以用来判断图层资源是否存在，或者客户端是否有权限访问图层资源。通过对加.&lt;format&gt;的 URI 执行 HEAD 请求，还可以快速判断图层资源是否支持&lt;format&gt;格式的表述。</p>
+  <h2>请参见</h2>
+  <ul class="referenceList">
+    <li class="referenceList"><a class="contentpagehyperlink" href="../layers.htm">layers</a>，<a class="contentpagehyperlink" href="legend.htm">legend</a>，<a class="contentpagehyperlink" href="visible.htm">visible</a>，<a class="contentpagehyperlink" href="queryable.htm">queryable</a>，<a class="contentpagehyperlink" href="style.htm">style</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../../../clientBuildREST/ConstructRESTRequest.htm">客户端构建 REST 请求</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../../../StatusCodeDescription.htm">状态码列表及说明</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../../../SuperMap_iServer_REST_API_OutputFormat.htm">表述格式介绍</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../../../resource_hierarchy.htm">GIS 服务资源层次结构</a></li>
+  </ul>
+  <p> </p>
+
+</div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../../../../../../../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../../../../../../../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../../../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../../../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../../../../../../../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../../../../../../../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../../../../../../../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../../../../../../../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../../../../../../../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../../../../../../.."
+    gCommonRootRelPath = "../../../../../../.."
+    gTopicId = "8.2.2.6.10.1.8.1"
+  
+//]]></script>
+
+  <script src="../../../../../../../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../../../../../../../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../../../../../../../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../../../../../../../whxdata/layoutconfig.js"></script>
+  <script src="../../../../../../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

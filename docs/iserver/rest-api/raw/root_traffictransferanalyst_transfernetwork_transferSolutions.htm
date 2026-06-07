@@ -1,0 +1,950 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../../../../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../../../../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../../../../../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../../../../iserver-icon.png"/>
+    
+  <script data-relpath="../../../../.." src="../../../../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+<meta name="template" content="../../../../../assets/layouts/RESTAPI.htt"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="Content-Language" content="zh-CN"/>
+<meta name="topic-status" content="Complete"/>
+<meta name="topic-check-list" content="Ran Smart Index"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>transferSolutions</title>
+<link rel="StyleSheet" href="../../../../../assets/css/SuperMapHelp.css" type="text/css"/>
+<meta name="rh-index-keywords" content="TransferSolutions"/><meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../../../../../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../assets/css/homeButtom.css"/>
+  <script src="../../../../../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../../../../../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../../../../../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../../../../../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../../../../../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../../../../../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../../../../../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../../../../../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../../../../../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+<h2><a name="URI" id="URI"></a>URI</h2>
+<p class="myNormal">&lt;<a class="contentpagehyperlink" href="transferNetwork.htm#URI">transferNetwork_uri</a>&gt;/solutions[.&lt;format&gt;]</p>
+<h2>支持的方法</h2>
+<p class="myNormal"><a class="contentpagehyperlink" href="#GET 请求">GET</a>、<a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a></p>
+<h2>父资源</h2>
+<p class="myNormal"><a class="contentpagehyperlink" href="transferNetwork.htm">transferNetwork</a></p>
+<h2>介绍</h2>
+<p class="myNormal">用于进行交通换乘分析，返回所有的乘车方案，根据方案中的介绍信息可以获取具体的乘车路线。</p>
+<p class="myNormal" style="font-weight: bold;">支持的方法：</p>
+<ul style="list-style: disc;" class="supportList">
+	<li class="supportList"><a class="contentpagehyperlink" href="#GET 请求">GET</a>：获取所有的乘车方案。</li>
+	<li class="supportList"><a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a>：检查 transferSolutions 
+	 资源是否存在，或权限是否可以访问 transferSolutions 资源。</li>
+</ul>
+<p class="myNormal"><span style="font-weight: bold;">支持的表述格式：</span>rjson、json、html、xml。</p>
+<h2>资源层次</h2>
+<p class="myNormal"><img src="../../../../../assets/images/root/traffictransferanalyst/img/transferSolutions.png" usemap="#MAP168927977" alt="" style="border: none;" width="381" height="240" border="0"/>
+<map id="MAP168927977" name="MAP168927977">
+<area shape="rect" coords="3, 1, 193, 46" href="../../root.htm" alt=""/>
+<area shape="rect" coords="70, 62, 271, 106" href="../trafficTransferAnalyst.htm" alt=""/>
+<area shape="rect" coords="134, 130, 332, 171" href="transferNetwork.htm" alt=""/>
+<area shape="rect" coords="179, 195, 378, 237" href="transferSolutions.htm" alt=""/>
+</map> </p>
+<h2>HTTP 请求方法</h2>
+<p class="myNormal">对如下 URI 执行 HTTP 请求，以 rjson 输出格式为例加以说明，其中，supermapiserver 
+ 是服务器名。</p>
+<p class="uriStyle">http://supermapiserver:8090/iserver/services/traffictransferanalyst-sample/restjsr/traffictransferanalyst/Traffic-Changchun/solutions.rjson?solutionCount=5&amp;transferTactic=LESS_TIME&amp;transferPreference=NONE&amp;walkingRatio=10&amp;points=[175,164]</p>
+<h3><a id="GET 请求"></a>GET 请求</h3>
+<p class="myNormal">获取所有的乘车方案，相当于进行了一次交通换乘分析。</p>
+<h4>请求参数</h4>
+<p class="myNormal">在 URI 中的“？”之后，传入如下参数：</p>
+<table class="iServerTable" cellspacing="0" width="80%" align="center">
+	<colgroup><col style="width: 15%;"/>
+	<col style="width: 15%;"/>
+	<col style="width: 70%;"/>
+	</colgroup><tbody><tr class="t1st">
+		<td>名称</td>
+		<td>类型</td>
+		<td>含义</td>
+	</tr>
+	<tr class="t2Row">
+		<td>points</td>
+		<td>int[] 
+		<a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/Point2D.html">Point2D</a>[]</td>
+		<td>【必选参数】 
+		两种查询方式： 
+		1. 按照公交站点的起止 ID 进行查询，则 points 参数的类型为 int[]，形如：[起点 
+		 ID、终点 ID]，公交站点的 ID 对应服务提供者配置中的 stopIDField； 
+		2. 按照起止点的坐标进行查询，则 points 参数的类型为 Point2D[]，形如：[{&quot;x&quot;:44,&quot;y&quot;:39},{&quot;x&quot;:45,&quot;y&quot;:40}]。</td>
+	</tr>
+	<tr class="t1Row">
+		<td>transferTactic</td>
+		<td><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/TransferTactic.html">TransferTactic</a></td>
+		<td>公交换乘策略类型，包括时间最短、距离最短、最少换乘、少步行四种选择，默认为时间最短。</td>
+	</tr>
+	<tr class="t2Row">
+		<td>transferPreference</td>
+		<td><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/TransferPreference.html">TransferPreference</a></td>
+		<td>乘车偏好，默认无偏好。</td>
+	</tr>
+	<tr class="t1Row">
+		<td>solutionCount</td>
+		<td>int</td>
+		<td>乘车方案的数量，默认值为5。</td>
+	</tr>
+	<tr class="t2Row">
+		<td>walkingRatio</td>
+		<td>double</td>
+		<td>步行与公交的消耗权重比，默认值为 10。此值越大，则步行因素对于方案选择的影响越大。 
+		例如现在有两种换乘方案（在仅考虑消耗因素的情况下）： 
+		方案1：坐车10公里，走路1公里； 
+		方案2：坐车15公里，走路0.5公里； 
+		1. 假设权重比为15： 
+		<ul style="list-style: disc;">
+			<li>方案1的总消耗为：10 + 1*15 = 25</li>
+			<li>方案2的总消耗为：15 + 0.5*15 = 22.5</li>
+		</ul>
+		此时方案2消耗更低。 
+		2. 假设权重比为2： 
+		<ul style="list-style: disc;">
+			<li>方案1的总消耗为：10+1*2 = 12</li>
+			<li>方案2的总消耗为：15+0.5*2 = 17</li>
+		</ul>
+		此时方案1消耗更低。</td>
+	</tr>
+	<tr class="t1Row">
+		<td>priorStops</td>
+		<td>long[] </td>
+		<td>优先站点的 ID 集合。 
+		如果设置某些线路为优先站点，则进行换乘分析时会优先考虑这些站点，但最优换乘方案是由多个参数共同决定的，因此并不一定会包含这些站点。另外，优先的站点必须是线路上的站点，例如，某站点在位置上位于某条线路上，但在关系表中不存在二者的对应关系，那么设置该站点为优先站点是无效的，换乘分析时可能不会包含通过该站点的线路。</td>
+	</tr>
+	<tr class="t2Row">
+		<td>priorLines</td>
+		<td>long[] </td>
+		<td>优先线路的 ID 集合。 
+		如果设置某些线路为优先线路，则进行换乘分析时会优先考虑这些线路，但最优换乘方案是由多个参数共同决定的，因此并不一定会包含这些线路。</td>
+	</tr>
+	<tr class="t1Row">
+		<td>evadeLines</td>
+		<td>long[] </td>
+		<td>避让线路的 ID 集合。 
+		<p>如果设置某些线路避让线路，则进行换乘分析时不会使用这些线路，例如，设置123路为避让线路，进行公交换乘分析，即使乘坐该线路可以到达目的地，换乘方案中也不会包含乘坐该线路的方案。</p>
+		<p style="font-weight: bold;">注意：如果将某线路同时设置为优先或者避让的线路，系统将以避让线路来处理。</p></td>
+	</tr>
+	<tr class="t2Row">
+		<td>evadeStops</td>
+		<td>long[] </td>
+		<td>避让站点的 ID 集合。 
+		<p>如果设置某些线路避让站点，则进行换乘分析方案中不会包含这些站点，例如，设置天安门西站为避让站点，那么公交换乘方案中就不会包含该站点，也就是不会在该站点换乘或下车。</p>
+		<p style="font-weight: bold;">注意：如果将某站点同时设置为优先或者避让的站点，系统将以避让站点来处理。另外，避让的站点必须是线路上的站点，例如，某站点在位置上位于某条线路上，但在关系表中不存在二者的对应关系，那么设置该站点为避让站点是无效的，换乘分析的结果中仍有可能包含该站点。</p></td>
+	</tr>
+	<tr class="t1Row">
+		<td>returnGuides</td>
+		<td>boolean</td>
+		<td>是否返回所有换乘路线。默认为 false，此时只返回默认的换乘路线，即 defaultGuide。当设置为 true 
+		 时，将额外返回交通换乘车方案集合对应的换乘路线集合，即 transferGuides，</td>
+	</tr>
+	<tr class="t1Row">
+		<td>travelTime</td>
+		<td>Date</td>
+		<td>出行的时间。 
+		如果设置了该参数，在分析时，则会考虑线路的首末班车时间的限制，即在返回的结果中会提示公交的首末班发车时间。</td>
+	</tr>
+</tbody></table>
+<h4>响应结构</h4>
+<table class="iServerTable" cellspacing="0" width="70%" align="center">
+	<colgroup><col style="width: 15%;"/>
+	<col style="width: 15%;"/>
+	<col style="width: 70%;"/>
+	</colgroup><tbody><tr class="t1st">
+		<td>字段</td>
+		<td>类型</td>
+		<td>说明</td>
+	</tr>
+	<tr class="t2Row">
+		<td>solutionItems</td>
+		<td><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/TransferSolution.html">TransferSolution</a>[]</td>
+		<td>返回的乘车方案集合</td>
+	</tr>
+	<tr class="t1Row">
+		<td>defaultGuide</td>
+		<td><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/TransferGuide.html">TransferGuide</a></td>
+		<td>默认的乘车方案及相关信息</td>
+	</tr>
+	<tr class="t2Row">
+		<td>transferGuides</td>
+		<td><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/TransferGuide.html">TransferGuide</a>[]</td>
+		<td>交通换乘方案集合对应的换乘路线集合</td>
+	</tr>
+	<tr class="t2Row">
+		<td>suggestWalking</td>
+		<td>boolean</td>
+		<td>是否建议步行</td>
+	</tr>
+</tbody></table>
+<h4>响应示例</h4>
+<p class="myNormal">对 transferSolutions 资源执行如下 GET 请求：</p>
+<p class="myCodeP">http://localhost:8090/iserver/services/traffictransferanalyst-sample/restjsr/traffictransferanalyst/Traffic-Changchun/solutions.rjson?solutionCount=5&amp;transferTactic=LESS_TIME&amp;transferPreference=NONE&amp;walkingRatio=10&amp;evadeLines=&amp;evadeStops=&amp;priorLines=&amp;priorStops=&amp;points=[175,179]&amp;travelTime=15:30</p>
+<p class="myNormal">则返回的 rjson 表述如下：</p>
+<p class="myNormal"><textarea name="textarea" rows="2" cols="20" style="width: 979px; 
+								 height: 447px;">{
+  &quot;solutionItems&quot;: [
+    {
+      &quot;transferCount&quot;: 1,
+      &quot;totalDistance&quot;: 8345.531682286684,
+      &quot;linesItems&quot;: [
+        {&quot;lineItems&quot;: [{
+          &quot;endStopAliasName&quot;: &quot;&quot;,
+          &quot;startStopName&quot;: &quot;西安桥&quot;,
+          &quot;lineName&quot;: &quot;长春轻轨(长春站-长影世纪城)&quot;,
+          &quot;lineAliasName&quot;: &quot;&quot;,
+          &quot;lineID&quot;: 29,
+          &quot;endStopName&quot;: &quot;伊通河&quot;,
+          &quot;startStopAliasName&quot;: &quot;&quot;,
+          &quot;endStopIndex&quot;: 19,
+          &quot;startStopIndex&quot;: 3
+        }]},
+        {&quot;lineItems&quot;: [{
+          &quot;endStopAliasName&quot;: &quot;&quot;,
+          &quot;startStopName&quot;: &quot;伊通河&quot;,
+          &quot;lineName&quot;: &quot;长春轻轨(长影世纪城-长春站)&quot;,
+          &quot;lineAliasName&quot;: &quot;&quot;,
+          &quot;lineID&quot;: 30,
+          &quot;endStopName&quot;: &quot;亚泰大街&quot;,
+          &quot;startStopAliasName&quot;: &quot;&quot;,
+          &quot;endStopIndex&quot;: 6,
+          &quot;startStopIndex&quot;: 5
+        }]}
+      ]
+    },
+    {
+      &quot;transferCount&quot;: 1,
+      &quot;totalDistance&quot;: 8267.55008152271,
+      &quot;linesItems&quot;: [
+        {&quot;lineItems&quot;: [{
+          &quot;endStopAliasName&quot;: &quot;&quot;,
+          &quot;startStopName&quot;: &quot;西安桥&quot;,
+          &quot;lineName&quot;: &quot;长春轻轨(长影世纪城-长春站)&quot;,
+          &quot;lineAliasName&quot;: &quot;&quot;,
+          &quot;lineID&quot;: 30,
+          &quot;endStopName&quot;: &quot;芙蓉桥&quot;,
+          &quot;startStopAliasName&quot;: &quot;&quot;,
+          &quot;endStopIndex&quot;: 22,
+          &quot;startStopIndex&quot;: 21
+        }]},
+        {&quot;lineItems&quot;: [{
+          &quot;endStopAliasName&quot;: &quot;&quot;,
+          &quot;startStopName&quot;: &quot;芙蓉桥&quot;,
+          &quot;lineName&quot;: &quot;长春轻轨(长春站-长影世纪城)&quot;,
+          &quot;lineAliasName&quot;: &quot;&quot;,
+          &quot;lineID&quot;: 29,
+          &quot;endStopName&quot;: &quot;亚泰大街&quot;,
+          &quot;startStopAliasName&quot;: &quot;&quot;,
+          &quot;endStopIndex&quot;: 18,
+          &quot;startStopIndex&quot;: 2
+        }]}
+      ]
+    },
+    {
+      &quot;transferCount&quot;: 1,
+      &quot;totalDistance&quot;: 7977.531831756825,
+      &quot;linesItems&quot;: [
+        {&quot;lineItems&quot;: [{
+          &quot;endStopAliasName&quot;: &quot;&quot;,
+          &quot;startStopName&quot;: &quot;西安桥&quot;,
+          &quot;lineName&quot;: &quot;长春轻轨(长春站-长影世纪城)&quot;,
+          &quot;lineAliasName&quot;: &quot;&quot;,
+          &quot;lineID&quot;: 29,
+          &quot;endStopName&quot;: &quot;卫星广场&quot;,
+          &quot;startStopAliasName&quot;: &quot;&quot;,
+          &quot;endStopIndex&quot;: 17,
+          &quot;startStopIndex&quot;: 3
+        }]},
+        {&quot;lineItems&quot;: [{
+          &quot;endStopAliasName&quot;: &quot;&quot;,
+          &quot;startStopName&quot;: &quot;卫星路&quot;,
+          &quot;lineName&quot;: &quot;30路&quot;,
+          &quot;lineAliasName&quot;: &quot;&quot;,
+          &quot;lineID&quot;: 6,
+          &quot;endStopName&quot;: &quot;公交保养厂&quot;,
+          &quot;startStopAliasName&quot;: &quot;&quot;,
+          &quot;endStopIndex&quot;: 4,
+          &quot;startStopIndex&quot;: 2
+        }]}
+      ]
+    },
+    {
+      &quot;transferCount&quot;: 1,
+      &quot;totalDistance&quot;: 7949.781049785786,
+      &quot;linesItems&quot;: [
+        {&quot;lineItems&quot;: [{
+          &quot;endStopAliasName&quot;: &quot;&quot;,
+          &quot;startStopName&quot;: &quot;西安桥&quot;,
+          &quot;lineName&quot;: &quot;长春轻轨(长春站-长影世纪城)&quot;,
+          &quot;lineAliasName&quot;: &quot;&quot;,
+          &quot;lineID&quot;: 29,
+          &quot;endStopName&quot;: &quot;卫明街&quot;,
+          &quot;startStopAliasName&quot;: &quot;&quot;,
+          &quot;endStopIndex&quot;: 15,
+          &quot;startStopIndex&quot;: 3
+        }]},
+        {&quot;lineItems&quot;: [
+          {
+            &quot;endStopAliasName&quot;: &quot;&quot;,
+            &quot;startStopName&quot;: &quot;林校&quot;,
+            &quot;lineName&quot;: &quot;13路&quot;,
+            &quot;lineAliasName&quot;: &quot;&quot;,
+            &quot;lineID&quot;: 24,
+            &quot;endStopName&quot;: &quot;公交保养厂&quot;,
+            &quot;startStopAliasName&quot;: &quot;&quot;,
+            &quot;endStopIndex&quot;: 5,
+            &quot;startStopIndex&quot;: 1
+          },
+          {
+            &quot;endStopAliasName&quot;: &quot;&quot;,
+            &quot;startStopName&quot;: &quot;林校&quot;,
+            &quot;lineName&quot;: &quot;15路&quot;,
+            &quot;lineAliasName&quot;: &quot;&quot;,
+            &quot;lineID&quot;: 16,
+            &quot;endStopName&quot;: &quot;公交保养厂&quot;,
+            &quot;startStopAliasName&quot;: &quot;&quot;,
+            &quot;endStopIndex&quot;: 5,
+            &quot;startStopIndex&quot;: 1
+          }
+        ]}
+      ]
+    },
+    {
+      &quot;transferCount&quot;: 1,
+      &quot;totalDistance&quot;: 7904.417802142189,
+      &quot;linesItems&quot;: [
+        {&quot;lineItems&quot;: [{
+          &quot;endStopAliasName&quot;: &quot;&quot;,
+          &quot;startStopName&quot;: &quot;百菊大厦&quot;,
+          &quot;lineName&quot;: &quot;25路&quot;,
+          &quot;lineAliasName&quot;: &quot;&quot;,
+          &quot;lineID&quot;: 28,
+          &quot;endStopName&quot;: &quot;建设街&quot;,
+          &quot;startStopAliasName&quot;: &quot;&quot;,
+          &quot;endStopIndex&quot;: 4,
+          &quot;startStopIndex&quot;: 3
+        }]},
+        {&quot;lineItems&quot;: [{
+          &quot;endStopAliasName&quot;: &quot;&quot;,
+          &quot;startStopName&quot;: &quot;西安桥&quot;,
+          &quot;lineName&quot;: &quot;长春轻轨(长春站-长影世纪城)&quot;,
+          &quot;lineAliasName&quot;: &quot;&quot;,
+          &quot;lineID&quot;: 29,
+          &quot;endStopName&quot;: &quot;亚泰大街&quot;,
+          &quot;startStopAliasName&quot;: &quot;&quot;,
+          &quot;endStopIndex&quot;: 18,
+          &quot;startStopIndex&quot;: 3
+        }]}
+      ]
+    }
+  ],
+  &quot;defaultGuide&quot;: {
+    &quot;count&quot;: 5,
+    &quot;totalDistance&quot;: 8345.531682286684,
+    &quot;transferCount&quot;: 1,
+    &quot;items&quot;: [
+      {
+        &quot;lastTime&quot;: null,
+        &quot;fare&quot;: 0,
+        &quot;distance&quot;: 665.245572530393,
+        &quot;lineName&quot;: &quot;&quot;,
+        &quot;lineAliasName&quot;: &quot;&quot;,
+        &quot;startStopName&quot;: &quot;儿童医院&quot;,
+        &quot;startPosition&quot;: {
+          &quot;x&quot;: 4941.429516095579,
+          &quot;y&quot;: -3566.823103168608
+        },
+        &quot;isWalking&quot;: true,
+        &quot;firstTime&quot;: null,
+        &quot;startIndex&quot;: -1,
+        &quot;route&quot;: {
+          &quot;center&quot;: {
+            &quot;x&quot;: 4634.639927736186,
+            &quot;y&quot;: -3597.233315084902
+          },
+          &quot;parts&quot;: [18],
+          &quot;style&quot;: null,
+          &quot;prjCoordSys&quot;: null,
+          &quot;id&quot;: 0,
+          &quot;type&quot;: &quot;LINE&quot;,
+          &quot;partTopo&quot;: null,
+          &quot;points&quot;: [
+            {
+              &quot;x&quot;: 4949.509600210931,
+              &quot;y&quot;: -3551.5203072073978
+            },
+            {
+              &quot;x&quot;: 4949.407127903948,
+              &quot;y&quot;: -3551.466200437497
+            },
+            {
+              &quot;x&quot;: 4924.247599450441,
+              &quot;y&quot;: -3538.4711534470225
+            },
+            {
+              &quot;x&quot;: 4879.17335530819,
+              &quot;y&quot;: -3558.5799928023343
+            },
+            {
+              &quot;x&quot;: 4874.480066291473,
+              &quot;y&quot;: -3567.7280617670363
+            },
+            {
+              &quot;x&quot;: 4780.851947997095,
+              &quot;y&quot;: -3519.7101901170986
+            },
+            {
+              &quot;x&quot;: 4762.259875126752,
+              &quot;y&quot;: -3554.6570194919614
+            },
+            {
+              &quot;x&quot;: 4734.397963238625,
+              &quot;y&quot;: -3607.028021241049
+            },
+            {
+              &quot;x&quot;: 4717.642405202904,
+              &quot;y&quot;: -3638.522821839054
+            },
+            {
+              &quot;x&quot;: 4634.639927736186,
+              &quot;y&quot;: -3597.233315084902
+            },
+            {
+              &quot;x&quot;: 4571.632384228743,
+              &quot;y&quot;: -3565.811623344229
+            },
+            {
+              &quot;x&quot;: 4559.81106799358,
+              &quot;y&quot;: -3559.916364871465
+            },
+            {
+              &quot;x&quot;: 4526.238298423384,
+              &quot;y&quot;: -3542.8445686741716
+            },
+            {
+              &quot;x&quot;: 4505.614206737966,
+              &quot;y&quot;: -3532.357191716141
+            },
+            {
+              &quot;x&quot;: 4484.104545778214,
+              &quot;y&quot;: -3522.1612736864004
+            },
+            {
+              &quot;x&quot;: 4471.53788269508,
+              &quot;y&quot;: -3516.2044774847886
+            },
+            {
+              &quot;x&quot;: 4424.076591556139,
+              &quot;y&quot;: -3493.7070780630224
+            },
+            {
+              &quot;x&quot;: 4415.048753602755,
+              &quot;y&quot;: -3489.3779576409333
+            }
+          ]
+        },
+        &quot;endPosition&quot;: {
+          &quot;x&quot;: 4418.211016555285,
+          &quot;y&quot;: -3482.7834546662034
+        },
+        &quot;endIndex&quot;: -1,
+        &quot;endStopAliasName&quot;: &quot;&quot;,
+        &quot;lineType&quot;: -1,
+        &quot;passStopCount&quot;: 0,
+        &quot;endStopName&quot;: &quot;西安桥&quot;,
+        &quot;startStopAliasName&quot;: &quot;&quot;,
+        &quot;time&quot;: 665.245572530393
+      },
+      {
+        &quot;lastTime&quot;: null,
+        &quot;fare&quot;: 0,
+        &quot;distance&quot;: 6629.214127087673,
+        &quot;lineName&quot;: &quot;长春轻轨(长春站-长影世纪城)&quot;,
+        &quot;lineAliasName&quot;: &quot;&quot;,
+        &quot;startStopName&quot;: &quot;西安桥&quot;,
+        &quot;startPosition&quot;: {
+          &quot;x&quot;: 4418.211016555285,
+          &quot;y&quot;: -3482.7834546662034
+        },
+        &quot;isWalking&quot;: false,
+        &quot;firstTime&quot;: null,
+        &quot;startIndex&quot;: 3,
+        &quot;route&quot;: {
+          &quot;center&quot;: {
+            &quot;x&quot;: 2899.0347936021903,
+            &quot;y&quot;: -5697.124076510769
+          },
+          &quot;parts&quot;: [23],
+          &quot;style&quot;: null,
+          &quot;prjCoordSys&quot;: null,
+          &quot;id&quot;: 0,
+          &quot;type&quot;: &quot;LINE&quot;,
+          &quot;partTopo&quot;: null,
+          &quot;points&quot;: [
+            {
+              &quot;x&quot;: 4418.211016555285,
+              &quot;y&quot;: -3482.7834546662034
+            },
+            {
+              &quot;x&quot;: 4342.783383832161,
+              &quot;y&quot;: -3606.63292666546
+            },
+            {
+              &quot;x&quot;: 4287.147747788968,
+              &quot;y&quot;: -3717.904198751845
+            },
+            {
+              &quot;x&quot;: 4280.3858098153905,
+              &quot;y&quot;: -3747.7422439351376
+            },
+            {
+              &quot;x&quot;: 4142.9138398983805,
+              &quot;y&quot;: -4005.3320704093085
+            },
+            {
+              &quot;x&quot;: 3941.3218017881604,
+              &quot;y&quot;: -4382.389670274902
+            },
+            {
+              &quot;x&quot;: 3710.3959376990533,
+              &quot;y&quot;: -4797.6119499336355
+            },
+            {
+              &quot;x&quot;: 3482.60493037014,
+              &quot;y&quot;: -5055.953208356819
+            },
+            {
+              &quot;x&quot;: 3417.0576779101875,
+              &quot;y&quot;: -5135.41251521294
+            },
+            {
+              &quot;x&quot;: 3191.33284679606,
+              &quot;y&quot;: -5359.056933137076
+            },
+            {
+              &quot;x&quot;: 2914.7943838547853,
+              &quot;y&quot;: -5637.680680031864
+            },
+            {
+              &quot;x&quot;: 2899.0347936021903,
+              &quot;y&quot;: -5697.124076510769
+            },
+            {
+              &quot;x&quot;: 2878.6103784395914,
+              &quot;y&quot;: -5785.200086724578
+            },
+            {
+              &quot;x&quot;: 3070.663945643314,
+              &quot;y&quot;: -6027.354584503185
+            },
+            {
+              &quot;x&quot;: 3446.420924954946,
+              &quot;y&quot;: -6609.08205617823
+            },
+            {
+              &quot;x&quot;: 3512.550810427892,
+              &quot;y&quot;: -6646.919381625014
+            },
+            {
+              &quot;x&quot;: 3975.2640810231683,
+              &quot;y&quot;: -6687.979180957802
+            },
+            {
+              &quot;x&quot;: 4167.880965275359,
+              &quot;y&quot;: -6705.170950944788
+            },
+            {
+              &quot;x&quot;: 4401.927449149453,
+              &quot;y&quot;: -6698.9297113748125
+            },
+            {
+              &quot;x&quot;: 4955.015612265349,
+              &quot;y&quot;: -6687.979180957802
+            },
+            {
+              &quot;x&quot;: 5258.404580746592,
+              &quot;y&quot;: -6687.979180957802
+            },
+            {
+              &quot;x&quot;: 5855.096062358836,
+              &quot;y&quot;: -6687.979180957802
+            },
+            {
+              &quot;x&quot;: 6256.6158080272835,
+              &quot;y&quot;: -6673.664061145143
+            }
+          ]
+        },
+        &quot;endPosition&quot;: {
+          &quot;x&quot;: 6256.6158080272835,
+          &quot;y&quot;: -6673.664061145143
+        },
+        &quot;endIndex&quot;: 19,
+        &quot;endStopAliasName&quot;: &quot;&quot;,
+        &quot;lineType&quot;: 1,
+        &quot;passStopCount&quot;: 17,
+        &quot;endStopName&quot;: &quot;伊通河&quot;,
+        &quot;startStopAliasName&quot;: &quot;&quot;,
+        &quot;time&quot;: 842.9214127087673
+      },
+      {
+        &quot;lastTime&quot;: null,
+        &quot;fare&quot;: 14.176443581771853,
+        &quot;distance&quot;: 14.176443581771853,
+        &quot;lineName&quot;: &quot;&quot;,
+        &quot;lineAliasName&quot;: &quot;&quot;,
+        &quot;startStopName&quot;: &quot;伊通河&quot;,
+        &quot;startPosition&quot;: {
+          &quot;x&quot;: 6256.6158080272835,
+          &quot;y&quot;: -6673.664061145143
+        },
+        &quot;isWalking&quot;: true,
+        &quot;firstTime&quot;: null,
+        &quot;startIndex&quot;: -1,
+        &quot;route&quot;: {
+          &quot;center&quot;: {
+            &quot;x&quot;: 6256.607836006582,
+            &quot;y&quot;: -6666.575843837267
+          },
+          &quot;parts&quot;: [2],
+          &quot;style&quot;: null,
+          &quot;prjCoordSys&quot;: null,
+          &quot;id&quot;: 0,
+          &quot;type&quot;: &quot;LINE&quot;,
+          &quot;partTopo&quot;: null,
+          &quot;points&quot;: [
+            {
+              &quot;x&quot;: 6256.6158080272835,
+              &quot;y&quot;: -6673.664061145143
+            },
+            {
+              &quot;x&quot;: 6256.59986398588,
+              &quot;y&quot;: -6659.487626529391
+            }
+          ]
+        },
+        &quot;endPosition&quot;: {
+          &quot;x&quot;: 6256.59986398588,
+          &quot;y&quot;: -6659.487626529391
+        },
+        &quot;endIndex&quot;: -1,
+        &quot;endStopAliasName&quot;: &quot;&quot;,
+        &quot;lineType&quot;: -1,
+        &quot;passStopCount&quot;: 0,
+        &quot;endStopName&quot;: &quot;伊通河&quot;,
+        &quot;startStopAliasName&quot;: &quot;&quot;,
+        &quot;time&quot;: 0.021236493392505145
+      },
+      {
+        &quot;lastTime&quot;: null,
+        &quot;fare&quot;: 0.021236493392505145,
+        &quot;distance&quot;: 404.7651902448352,
+        &quot;lineName&quot;: &quot;长春轻轨(长影世纪城-长春站)&quot;,
+        &quot;lineAliasName&quot;: &quot;&quot;,
+        &quot;startStopName&quot;: &quot;伊通河&quot;,
+        &quot;startPosition&quot;: {
+          &quot;x&quot;: 6256.59986398588,
+          &quot;y&quot;: -6659.487626529391
+        },
+        &quot;isWalking&quot;: false,
+        &quot;firstTime&quot;: null,
+        &quot;startIndex&quot;: 5,
+        &quot;route&quot;: {
+          &quot;center&quot;: {
+            &quot;x&quot;: 6054.217268863462,
+            &quot;y&quot;: -6659.487626529391
+          },
+          &quot;parts&quot;: [2],
+          &quot;style&quot;: null,
+          &quot;prjCoordSys&quot;: null,
+          &quot;id&quot;: 0,
+          &quot;type&quot;: &quot;LINE&quot;,
+          &quot;partTopo&quot;: null,
+          &quot;points&quot;: [
+            {
+              &quot;x&quot;: 6256.59986398588,
+              &quot;y&quot;: -6659.487626529391
+            },
+            {
+              &quot;x&quot;: 5851.834673741045,
+              &quot;y&quot;: -6659.487626529391
+            }
+          ]
+        },
+        &quot;endPosition&quot;: {
+          &quot;x&quot;: 5851.834673741045,
+          &quot;y&quot;: -6659.487626529391
+        },
+        &quot;endIndex&quot;: 6,
+        &quot;endStopAliasName&quot;: &quot;&quot;,
+        &quot;lineType&quot;: 1,
+        &quot;passStopCount&quot;: 2,
+        &quot;endStopName&quot;: &quot;亚泰大街&quot;,
+        &quot;startStopAliasName&quot;: &quot;&quot;,
+        &quot;time&quot;: 220.47651902448354
+      },
+      {
+        &quot;lastTime&quot;: null,
+        &quot;fare&quot;: 632.1303488420109,
+        &quot;distance&quot;: 632.1303488420109,
+        &quot;lineName&quot;: &quot;&quot;,
+        &quot;lineAliasName&quot;: &quot;&quot;,
+        &quot;startStopName&quot;: &quot;亚泰大街&quot;,
+        &quot;startPosition&quot;: {
+          &quot;x&quot;: 5851.834673741045,
+          &quot;y&quot;: -6659.487626529391
+        },
+        &quot;isWalking&quot;: true,
+        &quot;firstTime&quot;: null,
+        &quot;startIndex&quot;: 5,
+        &quot;route&quot;: {
+          &quot;center&quot;: {
+            &quot;x&quot;: 5772.229769069949,
+            &quot;y&quot;: -6202.683141014275
+          },
+          &quot;parts&quot;: [11],
+          &quot;style&quot;: null,
+          &quot;prjCoordSys&quot;: null,
+          &quot;id&quot;: 0,
+          &quot;type&quot;: &quot;LINE&quot;,
+          &quot;partTopo&quot;: null,
+          &quot;points&quot;: [
+            {
+              &quot;x&quot;: 5858.353037470891,
+              &quot;y&quot;: -6658.192431320648
+            },
+            {
+              &quot;x&quot;: 5832.722632688556,
+              &quot;y&quot;: -6529.201604465568
+            },
+            {
+              &quot;x&quot;: 5780.97451773789,
+              &quot;y&quot;: -6252.208058256915
+            },
+            {
+              &quot;x&quot;: 5780.268590850036,
+              &quot;y&quot;: -6248.42942415175
+            },
+            {
+              &quot;x&quot;: 5779.908071087006,
+              &quot;y&quot;: -6246.377825098129
+            },
+            {
+              &quot;x&quot;: 5772.229769069949,
+              &quot;y&quot;: -6202.683141014275
+            },
+            {
+              &quot;x&quot;: 5764.418824293608,
+              &quot;y&quot;: -6158.233630739677
+            },
+            {
+              &quot;x&quot;: 5753.104652254233,
+              &quot;y&quot;: -6093.848409653991
+            },
+            {
+              &quot;x&quot;: 5750.270754425143,
+              &quot;y&quot;: -6077.721631872536
+            },
+            {
+              &quot;x&quot;: 5746.455151549389,
+              &quot;y&quot;: -6061.388173948254
+            },
+            {
+              &quot;x&quot;: 5771.346297787511,
+              &quot;y&quot;: -6061.326933614708
+            }
+          ]
+        },
+        &quot;endPosition&quot;: {
+          &quot;x&quot;: 5771.370572784777,
+          &quot;y&quot;: -6071.19351127508
+        },
+        &quot;endIndex&quot;: 6,
+        &quot;endStopAliasName&quot;: &quot;&quot;,
+        &quot;lineType&quot;: -1,
+        &quot;passStopCount&quot;: 2,
+        &quot;endStopName&quot;: &quot;净水厂&quot;,
+        &quot;startStopAliasName&quot;: &quot;&quot;,
+        &quot;time&quot;: 220.47651902448354
+      }
+    ]
+  },
+  &quot;suggestWalking&quot;: false
+}</textarea></p>
+<h3><a id="HEAD 请求"></a>HEAD 请求</h3>
+<p class="myNormal">返回跟 GET 请求一样的 HTTP 响应头，但是没有响应实体。可以在不必传输整个响应内容的情况下，获取包含在响应消息头中的元数据信息。元数据信息包括媒体类型，字符编码，压缩编码，实体内容长度等。</p>
+<p class="myNormal">HEAD 请求可以用来判断 transferSolutions 资源是否存在，或者客户端是否有权限访问 
+ transferSolutions 资源。通过对加.&lt;format&gt;的 URI 执行 HEAD 请求，还可以快速判断 transferSolutions 
+ 资源是否支持&lt;format&gt;格式的表述。</p>
+<h2>请参见</h2>
+<ul class="referenceList">
+	<li class="referenceList"><a class="contentpagehyperlink" href="transferNetwork.htm">transferNetwork</a></li>
+	<li class="referenceList"><a class="contentpagehyperlink" href="../../../clientBuildREST/ConstructRESTRequest.htm">客户端构建 
+	 REST 请求</a></li>
+	<li class="referenceList"><a class="contentpagehyperlink" href="../../../StatusCodeDescription.htm">状态码列表及说明</a></li>
+	<li class="referenceList"><a class="contentpagehyperlink" href="../../../SuperMap_iServer_REST_API_OutputFormat.htm">SuperMap 
+	 iServer REST API 表述格式介绍</a></li>
+	<li class="referenceList"><a class="contentpagehyperlink" href="../../../resource_hierarchy.htm">GIS 
+	 服务资源层次结构</a></li>
+</ul>
+
+
+<p><br/></p></div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../../../../../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../../../../../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../../../../../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../../../../../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../../../../../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../../../../../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../../../../../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../../../../.."
+    gCommonRootRelPath = "../../../../.."
+    gTopicId = "8.2.2.6.16.1.1"
+  
+//]]></script>
+
+  <script src="../../../../../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../../../../../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../../../../../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../../../../../whxdata/layoutconfig.js"></script>
+  <script src="../../../../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

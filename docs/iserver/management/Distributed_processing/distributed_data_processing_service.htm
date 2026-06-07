@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../iserver-icon.png"/>
+    
+  <script data-relpath="../.." src="../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <meta name="template" content="../../assets/layouts/SuperMapiServerMain.htt"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Language" content="zh-CN"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>分布式分析服务配置与管理</title>
+  <link rel="StyleSheet" href="../../assets/css/SuperMapHelp.css" type="text/css"/>
+  <script type="text/javascript" src="../../assets/js/shCore.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushBash.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushCpp.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushCSharp.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushCss.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushDelphi.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushDiff.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushGroovy.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushJava.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushJScript.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushPhp.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushPlain.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushPython.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushRuby.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushScala.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushSql.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushVb.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushXml.js"></script>
+  <script type="text/javascript" src="../../assets/js/ConfigiServer6R.js"></script>
+  <script type="text/javascript" src="../../assets/js/SMCollapse.js"></script>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../assets/css/homeButtom.css"/>
+  <script src="../../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <p class="myNormal"><span style="orphans: auto; text-indent: 24px; widows: 1; 
+							 -webkit-text-stroke-width: 0px; display: inline	 ! important ; 
+							 float: none; background-color: #ffffff;"><a class="contentpagehyperlink" href="use_processing.htm">分布式分析服务</a>采用分布式计算技术，可对超大体量空间数据集进行分布式空间分析和数据处理。</span> <span style="orphans: auto; text-indent: 24px; widows: 1; -webkit-text-stroke-width: 0px; 
+		 display: inline	 ! important ; float: none; background-color: #ffffff;">iServer 支持可视化配置分布式分析服务。</span> 那么该如何配置分布式分析服务，<span style="orphans: auto; text-indent: 24px; 
+											 widows: 1; -webkit-text-stroke-width: 0px; 
+											 display: inline	 ! important ; 
+											 float: none; background-color: #ffffff;">本节将详细为您介绍：</span></p>
+  <ol style="list-style: decimal;">
+    <li>在主节点机器中启动 iServer</li>
+    <li>在 iServer 服务管理器中，依次点击“集群-分布式分析”，进入分布式分析页面</li>
+    <li>“开启分布式分析服务”，进入启用配置流程</li>
+    <li><span><a id="config_cluster"></a>选择分布式计算集群</span></li>
+  </ol>
+  <p class="myNormal">分布式分析服务需要有分布式计算集群的支撑，通过调用分布式计算集群的能力，从而提供分布式分析相关功能，所以在配置分布式分析服务时，需要配置支撑该服务的计算集群。iServer 目前支持三种计算集群<span style="orphans: auto; text-indent: 24px; widows: 1; -webkit-text-stroke-width: 0px; 
+				 display: inline	 ! important ; float: none; background-color: #ffffff;">：</span> iServer 内置的 Spark集群、 iServer 外部的 Spark 集群、 iServer 外部的 Hadoop Yarn集群。</p>
+  <p class="myNormal">在“选择集群”中，选择需要使用的集群类型，并进行相应配置后，点击“下一步”</p>
+  <ol style="list-style: lower-alpha;">
+    <li>选择“本机的分布式计算集群“，使用 iServer 内置的 Spark集群
+      <ol style="list-style: lower-roman;">
+        <li>准备环境。具体可参见<a class="contentpagehyperlink" href="../Spark_cluster/iserver_spark_env.htm">使用iServer内置Spark前的环境准备</a>。</li>
+        <li>创建本机 Spark 集群，具体请参见<a class="contentpagehyperlink" href="../Spark_cluster/using_iserver_spark.htm">启动 iServer 内置的 Spark 集群服务</a>。</li>
+      </ol>
+    </li>
+    <li>依次选择“外部的分布式计算机群”、“Spark 集群”，填写对应 Spark 集群地址，例如：{ip}:7077，使用 iServer 外部的 Spark 集群。
+      <ol style="list-style: lower-roman;">
+        <li>如果您没有一个可用的Spark集群，您可在其他计算机上 <a class="contentpagehyperlink" href="../Spark_cluster/other_spark_env.htm">自行搭建 Spark 分布式集群</a>。</li>
+        <li>如果您已有一个可用的Spark集群，还需在 iServer 中进行配置才可使用，详细请参见<a class="contentpagehyperlink" href="../Spark_cluster/using_iserver_spark.htm#iServer以外的spark集群">使用 iServer外部的 Spark 集群</a>。</li>
+      </ol>
+    </li>
+    <li>依次选择“外部的分布式计算机群”、“Hadoop Yarn 集群”，填写对应 Hadoop Yarn 集群配置目录，使用 iServer 外部的 Hadoop Yarn 集群
+      <ol style="list-style: lower-alpha;">
+        <li style="list-style: lower-roman;">在使用Hadoop Yarn集群之前，iServer 所在机器需要做若干配置，具体参见 <a class="contentpagehyperlink" href="../Spark_cluster/yarn_hadoop_using.htm">iServer使用Hadoop Yarn集群前的环境配置</a>。</li>
+        <li style="list-style: lower-roman;">使用未开启 Kerberos 认证的 Hadoop Yarn 集群，详细配置请参见<a class="contentpagehyperlink" href="../Spark_cluster/using_iserver_spark.htm#yarn_集群">使用Hadoop Yarn集群</a>。如果您需搭建一个未开启 Kerberos 的 Hadoop Yarn 集群，请参见<a class="contentpagehyperlink" href="../Spark_cluster/yarn_using.htm">搭建未开启 Kerberos 认证的 Hadoop Yarn集群</a>。</li>
+        <li style="list-style: lower-roman;">使用开启 Kerberos 认证的 Hadoop Yarn 集群，详细配置请参见<a class="contentpagehyperlink" href="../Spark_cluster/using_iserver_spark.htm#yarn_集群">使用开启 Kerberos 认证的Hadoop Yarn集群</a>。如果您需搭建一个开启 Kerberos 认证的 Hadoop Yarn 集群，请参见<a class="contentpagehyperlink" href="../Spark_cluster/yarn_kerberose_using.htm">自行搭建开启 Kerberos 认证的 Hadoop Yarn 集群</a>。</li>
+      </ol>
+    </li>
+  </ol>
+  <p style="margin-left: 40px;">注：iServer 还为您提供了一些<a class="contentpagehyperlink" href="../Spark_cluster/optimizingConfig.htm">Spark 集群优化配置</a>，<span style="line-height: normal; orphans: auto; widows: 1; 
+					 -webkit-text-stroke-width: 0px; display: inline	 ! important ; 
+					 float: none; background-color: #ffffff;">提升服务性能。</span></p>
+  <ol start="5" style="list-style: decimal;">
+    <li><span><a id="config_distributedanalyst"></a>分布式分析服务设置</span></li>
+  </ol>
+  <ul>
+    <li>关联服务地址：分布式分析服务关联的 iServer 地址。 默认为当前 iServer，http://localhost:8090/iserver。</li>
+    <li>关联服务Token：关联服务地址中具有发布权限的用户 token 信息。可以点击“生成 Token”按钮来生成 Token。</li>
+    <li>JVM 最大堆大小：JVM 最大堆内存。默认值为 1024m，若分析结果数据比较大时，建议修改该参数为 4g 或更大。</li>
+    <li>进程端口：分布式分析服务进程的端口。 默认端口为 6765。</li>
+    <li>默认分析结果结果输出设置：支持输出到本地磁盘、iServer DataStore、注册的数据库（PostGIS 和 PGSQL）。默认值为本地磁盘。</li>
+    <li>分析结果是否发布为服务：用于设置是否将分析结果发布为服务。默认勾选，即分析结果发布为服务。勾选时，支持将分析结果发布为 REST-地图服务、REST-数据服务，并需配置关联服务地址和关联服务Token。不勾选时，则分析结果将不会发布为 iServer 服务。</li>
+  </ul>
+  <ol start="6" style="list-style: decimal;">
+    <li style="font-weight: normal;">点击“保存配置”，配置完成。</li>
+  </ol>
+  <p class="myNormal">您可以点击对应超链接或从服务管理页面来使用分布式分析服务。</p>
+  <p class="myNormal">分布式分析服务开启后，您可以通过<a class="contentpagehyperlink" href="theme_templet_setting.htm">设置专题图模板</a>，为发布的服务增加丰富的可视化渲染效果。</p>
+  <h3><a id="config_security"></a><span style="font-weight: bold;">配置分布式分析服务安全设置</span></h3>
+
+      <ul>
+        <li style="list-style: disc; font-weight: normal;">iServer 默认：ADMIN角色的用户才可创建分布式分析作业。</li>
+        <li style="list-style: disc; font-weight: normal;">如果其他角色的用户想要访问并使用该服务，您需对其进行授权，配置步骤如下：
+          <ol style="list-style: lower-roman;">
+            <li style="font-weight: normal;">在主节点机器中启动 iServer 后，并以系统管理员身份进行登录。</li>
+            <li style="font-weight: normal;">访问分布式分析管理页面( http://supermapiserver:8090/iserver/manager/services/distributedanalyst)</li>
+            <li style="font-weight: normal;">针对各服务实例进行用户访问授权设置。勾选&quot;distributedanalyst/rest&quot;，点击“授权服务”，根据您的需求进行授权配置即可。</li>
+          </ol>
+        </li>
+      </ul>
+
+  <p class="myNormal"> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+
+</div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../.."
+    gCommonRootRelPath = "../.."
+    gTopicId = "5.5"
+  
+//]]></script>
+
+  <script src="../../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../../whxdata/layoutconfig.js"></script>
+  <script src="../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

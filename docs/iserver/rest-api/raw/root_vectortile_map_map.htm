@@ -1,0 +1,3155 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../../../../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../../../../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../../../../../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../../../../iserver-icon.png"/>
+    
+  <script data-relpath="../../../../.." src="../../../../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <meta name="template" content="../../../../../assets/layouts/RESTAPI.htt"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Language" content="zh-CN"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>map</title>
+  <link rel="StyleSheet" href="../../../../../assets/css/SuperMapHelp.css" type="text/css"/>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../../../../../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../assets/css/homeButtom.css"/>
+  <script src="../../../../../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../../../../../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../../../../../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../../../../../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../../../../../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../../../../../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../../../../../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../../../../../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../../../../../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <h2><a name="URI" id="URI"></a>URI</h2>
+  <p class="myNormal" style="font-weight: normal;"><a class="contentpagehyperlink" href="../vectortile.htm" style="font-weight: normal;">&lt;vectortile_uri&gt;</a>/{mapName}[.&lt;format&gt;]</p>
+  <h2>支持的方法</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="#GET 请求">GET</a>、<a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a></p>
+  <h2>父资源</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="../vectortile.htm">vectorTile</a></p>
+  <h2>子资源</h2>
+  <p>  <a class="contentpagehyperlink" href="tiles.htm">tiles</a>、<a class="contentpagehyperlink" href="style.htm">style</a>、<a class="contentpagehyperlink" href="sprites.htm">sprites</a>、<a class="contentpagehyperlink" href="fonts.htm">fonts</a></p>
+  <h2>介绍</h2>
+  <p class="myNormal">map 资源是访问在线地图服务的入口，通过 map 资源，可以获得该地图的基本状态信息，如中心点，比例尺，地图范围，图片大小，地图单位，包含的图层，包含的图片，地图风格信息等等。</p>
+  <p class="myNormal">对 map 资源执行 GET 请求时，可以获取iClient for openlayers3 (with MVT), for MapboxGL （仅3857、4326、4490、4214、4610投影地图可使用）表述，即针对该地图资源的 JavaScript 客户端应用，这些应用实现了简单的地图功能。</p>
+  <p class="myNormal" style="font-weight: bold;">支持的方法：</p>
+  <ul class="supportList" style="list-style: disc;">
+    <li class="supportList"><a class="contentpagehyperlink" href="#GET 请求">GET</a>：获取地图的基本信息，包括该地图的中心点，比例尺，地图范围，出图图片大小，地图单位，距离度量单位，地图风格信息等。</li>
+    <li class="supportList"><a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a>：获取地图资源的元数据信息。检查该 map 资源是否存在，权限是否可以访问。</li>
+  </ul>
+  <p class="myNormal">支持的表述格式：RJSON、JSON、JSONP、HTML、XML、KML、Leaflet、openlayers3 (with MVT)、MapboxGL。</p>
+  <h2>资源层次</h2>
+  <p> <img alt="" border="0" src="../../../../../assets/images/root/vectortile/map/map.png" style="border: none;" usemap="#MAP410082168"/><map id="MAP410082168" name="MAP410082168"><area alt="" coords="3, 1, 258, 45" href="../../root.htm" shape="rect"/> <area alt="" coords="77, 54, 220, 95" href="../vectortile.htm" shape="rect"/> <area alt="" coords="118, 109, 271, 160" href="map.htm" shape="rect"/></map></p>
+  <h2>HTTP 请求方法</h2>
+  <p class="myNormal">对如下 URI 执行 HTTP 请求，以 rjson 输出格式为例加以说明，其中，supermapiserver 是服务器名，“World” 是地图名。</p>
+  <p class="uriStyle">http://supermapiserver:8090/iserver/services/map-world/restjsr/v1/vectortile/maps/World.rjson</p>
+  <h3><a id="GET 请求"></a>GET 请求</h3>
+  <p class="myNormal">获取地图当前状态的基本信息，包括该地图的中心点，比例尺，地图显示范围，出图图片大小，地图单位，距离度量单位等。其中，地图进行动态投影时，地图显示范围（viewBounds）是指原地图显示范围在目标投影下所转换成的多边形的外接矩形，而其他地图状态参数也会随之变化，如中心点和比例尺。</p>
+  <p class="myNormal"> </p>
+  <h4>请求参数</h4>
+  <p class="myNormal">URI 中，在“?”后面支持传递的参数如下表所示：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>名称</td>
+        <td>类型</td>
+        <td>含义</td>
+      </tr>
+      <tr class="t2Row">
+        <td>_cache</td>
+        <td>boolean</td>
+        <td>【可选参数】 是否使用缓存，默认为 true。如果为 false，则关闭所有缓存。</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4>响应结构</h4>
+  <p class="myNormal">对地图资源执行 GET 请求，返回的资源表述的结构如下（资源表述在响应消息的实体主体里）：  </p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st" style="height: 27px;">
+        <td>字段</td>
+        <td>类型</td>
+        <td>说明</td>
+      </tr>
+      <tr class="t2Row" style="height: 27px;">
+        <td>name</td>
+        <td>String</td>
+        <td>当前地图的名称。</td>
+      </tr>
+      <tr class="t1Row" style="height: 27px;">
+        <td>center</td>
+        <td><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/Point2D.html">Point2D</a></td>
+        <td>地图显示的中心点。</td>
+      </tr>
+      <tr class="t2Row" style="height: 27px;">
+        <td>scale</td>
+        <td>double</td>
+        <td>地图的显示比例尺，详见<a class="contentpagehyperlink" href="../../../../../Appendix/scale.htm">比例尺的定义</a>。</td>
+      </tr>
+      <tr class="t1Row" style="height: 32px;">
+        <td>maxScale</td>
+        <td>double</td>
+        <td>地图的最大显示比例尺。该值为0时，表示没有比例尺显示限制。</td>
+      </tr>
+      <tr class="t2Row" style="height: 32px;">
+        <td>minScale</td>
+        <td>double</td>
+        <td>地图的最小显示比例尺。该值为0时，表示没有比例尺显示限制。</td>
+      </tr>
+      <tr class="t1Row" style="height: 27px;">
+        <td>bounds</td>
+        <td><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/Rectangle2D.html">Rectangle2D</a></td>
+        <td>地图的全幅地理范围。</td>
+      </tr>
+      <tr class="t2Row" style="height: 27px;">
+        <td>viewBounds</td>
+        <td><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/Rectangle2D.html">Rectangle2D</a></td>
+        <td>地图窗口显示区域的范围，是一个矩形框。 如果对地图设置了动态投影，则此参数表示原 viewBounds 在目标投影下所转换成的多边形的外接矩形。</td>
+      </tr>
+      <tr class="t1Row" style="height: 27px;">
+        <td>viewer</td>
+        <td><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/Rectangle.html">Rectangle</a></td>
+        <td>用户显示视窗，即产生的图片的大小。</td>
+      </tr>
+      <tr class="t2Row" style="height: 30px;">
+        <td>prjCoordSys</td>
+        <td><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/PrjCoordSys.html">PrjCoordSys</a></td>
+        <td>返回当前地图的坐标参考系统。</td>
+      </tr>
+      <tr class="t1Row" style="height: 27px;">
+        <td>dynamicPrjCoordSyses</td>
+        <td><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/PrjCoordSys.html">PrjCoordSys</a></td>
+        <td>返回当前地图所支持的目标投影坐标系列表。
+          <p>如果当前坐标参考系统支持动态投影为所有类型的坐标参考系统，则 epsgCode 为0，type 为 PCS_ALL。</p>
+        </td>
+      </tr>
+      <tr class="t2Row" style="height: 56px;">
+        <td>customParams</td>
+        <td>String</td>
+        <td>自定义参数。 可以是任何形式组织的字符串。用户可以通过该属性传入自定义的参数。</td>
+      </tr>
+      <tr class="t1Row" style="height: 27px;">
+        <td>userToken</td>
+        <td><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/UserInfo.html">UserInfo</a></td>
+        <td>用户信息。</td>
+      </tr>
+      <tr class="t2Row" style="height: 27px;">
+        <td>clipRegion</td>
+        <td><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/Geometry.html">Geometry</a></td>
+        <td>地图显示裁剪的区域。</td>
+      </tr>
+      <tr class="t1Row" style="height: 27px;">
+        <td>clipRegionEnabled</td>
+        <td>boolean</td>
+        <td>地图显示裁剪的区域是否有效。</td>
+      </tr>
+      <tr class="t2Row" style="height: 27px;">
+        <td>customEntireBounds</td>
+        <td><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/Rectangle2D.html">Rectangle2D</a></td>
+        <td>自定义的地图全幅显示范围。</td>
+      </tr>
+      <tr class="t1Row" style="height: 27px;">
+        <td>customEntireBoundsEnabled</td>
+        <td>boolean</td>
+        <td>自定义的地图全幅显示范围是否有效。</td>
+      </tr>
+      <tr class="t2Row" style="height: 27px;">
+        <td>angle</td>
+        <td>double</td>
+        <td>当前地图的旋转角度。</td>
+      </tr>
+      <tr class="t1Row" style="height: 27px;">
+        <td>antialias</td>
+        <td>boolean</td>
+        <td>是否反走样地图。</td>
+      </tr>
+      <tr class="t2Row" style="height: 27px;">
+        <td>backgroundStyle</td>
+        <td><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/Style.html">Style</a></td>
+        <td>地图的背景风格。</td>
+      </tr>
+      <tr class="t1Row" style="height: 27px;">
+        <td>colorMode</td>
+        <td><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/MapColorMode.html">MapColorMode</a></td>
+        <td>地图的颜色模式。</td>
+      </tr>
+      <tr class="t2Row" style="height: 27px;">
+        <td>coordUnit</td>
+        <td><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/Unit.html">Unit</a></td>
+        <td>地图的坐标单位。</td>
+      </tr>
+      <tr class="t1Row" style="height: 27px;">
+        <td>distanceUnit</td>
+        <td><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/Unit.html">Unit</a></td>
+        <td>地图的距离量度单位。</td>
+      </tr>
+      <tr class="t2Row" style="height: 27px;">
+        <td>description</td>
+        <td>String</td>
+        <td>当前地图的描述信息。</td>
+      </tr>
+      <tr class="t1Row" style="height: 27px;">
+        <td>dynamicProjection</td>
+        <td>boolean</td>
+        <td>是否允许地图动态投影显示。</td>
+      </tr>
+      <tr class="t2Row" style="height: 27px;">
+        <td>markerAngleFixed</td>
+        <td>boolean</td>
+        <td>指定点状符号的角度是否固定。</td>
+      </tr>
+      <tr class="t1Row" style="height: 27px;">
+        <td>maxVisibleTextSize</td>
+        <td>double</td>
+        <td>文本的最大可见尺寸，单位为像素。</td>
+      </tr>
+      <tr class="t2Row" style="height: 56px;">
+        <td>maxVisibleVertex</td>
+        <td>int</td>
+        <td>
+          <p>最大几何对象可见节点数。</p>
+          <p>如果几何对象的节点数超过指定的个数，则该几何对象不显示。</p>
+        </td>
+      </tr>
+      <tr class="t1Row" style="height: 27px;">
+        <td>minVisibleTextSize</td>
+        <td>double</td>
+        <td>文本的最小可见尺寸，单位为像素。</td>
+      </tr>
+      <tr class="t2Row" style="height: 27px;">
+        <td>overlapDisplayedOption</td>
+        <td>boolean</td>
+        <td>重叠时是否显示对象。</td>
+      </tr>
+      <tr class="t1Row" style="height: 27px;">
+        <td>paintBackground</td>
+        <td>boolean</td>
+        <td>是否绘制地图背景。</td>
+      </tr>
+      <tr class="t2Row" style="height: 27px;">
+        <td>textAngleFixed</td>
+        <td>boolean</td>
+        <td>文本角度是否固定。</td>
+      </tr>
+      <tr class="t1Row" style="height: 27px;">
+        <td>textOrientationFixed</td>
+        <td>boolean</td>
+        <td>文本朝向是否固定。</td>
+      </tr>
+      <tr class="t2Row" style="height: 27px;">
+        <td>tileversion</td>
+        <td><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/tilesource/TileVersion.html">TileVersion</a></td>
+        <td>
+          <p>切片版本名称，_cache 为 true 时有效。</p>
+          <p>可以通过tileset 资源的 GET 请求获取，即响应结果中 tileVersions 的 name 字段，如 tileversion=51de5c76-c994-4207-94a7-d31f948f56e3；如果没有设置 tileversion 参数，而且当前地图的切片集中存在多个版本，则默认使用最后一个更新版本。</p>
+        </td>
+      </tr>
+      <tr class="t1Row" style="height: 27px;">
+        <td>trackingLayer</td>
+        <td><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/TrackingLayer.html">TrackingLayer</a></td>
+        <td>
+          <p>在 SuperMap 中，每个地图窗口都有一个跟踪图层，即每个地图显示时都有一个跟踪图层。跟踪图层是一个空白的透明图层，总是在地图各图层的最上层，主要用于在一个处理或分析过程中，临时存放一些图形对象，以及一些文本等。只要地图显示，跟踪图层就会存在，不可删除跟踪图层，也不可改变其位置。</p>
+        </td>
+      </tr>
+      <tr class="t2Row" style="height: 27px;">
+        <td>layers</td>
+        <td>List&lt;Layer&gt;</td>
+        <td>
+          <p>图层列表。</p>
+        </td>
+      </tr>
+      <tr class="t1Row" style="height: 27px;">
+        <td>visibleScales</td>
+        <td>double[]</td>
+        <td>
+          <p>地图的可见比例尺数组。</p>
+        </td>
+      </tr>
+      <tr class="t2Row" style="height: 27px;">
+        <td>visibleScalesEnabled</td>
+        <td>boolean</td>
+        <td>
+          <p>是否使用固定比例尺来显示地图。</p>
+        </td>
+      </tr>
+      <tr class="t1Row" style="height: 27px;">
+        <td>customPrjCoordSysType</td>
+        <td><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/PrjCoordSysType.html">PrjCoordSysType</a></td>
+        <td>
+          <p>存储用户设置的坐标投影类型。</p>
+        </td>
+      </tr>
+      <tr class="t2Row" style="height: 27px;">
+        <td>recifyType</td>
+        <td><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/RectifyType.html">RectifyType</a></td>
+        <td>
+          <p>校验方式。</p>
+        </td>
+      </tr>
+      <tr class="t1Row" style="height: 27px;">
+        <td>cacheEnabled</td>
+        <td>boolean</td>
+        <td>
+          <p>是否启用缓存。</p>
+        </td>
+      </tr>
+      <tr class="t2Row" style="height: 27px;">
+        <td>autoAvoidEffectEnabled</td>
+        <td>boolean</td>
+        <td>
+          <p>是否启用自动避让效果。</p>
+        </td>
+      </tr>
+      <tr class="t1Row" style="height: 27px;">
+        <td>backgroundStyle</td>
+        <td><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/Style.html">Style</a></td>
+        <td>
+          <p>地图背景信息。</p>
+        </td>
+      </tr>
+      <tr class="t2Row" style="height: 27px;">
+        <td>returnImage</td>
+        <td>boolean</td>
+        <td>
+          <p>是否返回图片</p>
+        </td>
+      </tr>
+      <tr class="t1Row" style="height: 27px;">
+        <td>returnType</td>
+        <td>ReturnType</td>
+        <td>
+          <p>返回的类型</p>
+        </td>
+      </tr>
+      <tr class="t2Row" style="height: 27px;">
+        <td>dpi</td>
+        <td>double</td>
+        <td>
+          <p>分辨率，单位为每英寸点数。</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h4>示例</h4>
+  <p class="myNormal">对 World 地图资源：http://supermapiserver:8090/iserver/services/map-world/restjsr/v1/vectortile/maps/World.rjson 执行 GET 请求，返回 rjson 格式的资源表述如下：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">  &quot;viewBounds&quot;: {</p>
+  <p class="myCodeP">    &quot;top&quot;: 51.458251340507125,</p>
+  <p class="myCodeP">    &quot;left&quot;: -51.458251340507125,</p>
+  <p class="myCodeP">    &quot;bottom&quot;: -51.458251340507125,</p>
+  <p class="myCodeP">    &quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">      &quot;x&quot;: -51.458251340507125,</p>
+  <p class="myCodeP">      &quot;y&quot;: -51.458251340507125</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    &quot;right&quot;: 51.458251340507125,</p>
+  <p class="myCodeP">    &quot;rightTop&quot;: {</p>
+  <p class="myCodeP">      &quot;x&quot;: 51.458251340507125,</p>
+  <p class="myCodeP">      &quot;y&quot;: 51.458251340507125</p>
+  <p class="myCodeP">    }</p>
+  <p class="myCodeP">  },</p>
+  <p class="myCodeP">  &quot;viewer&quot;: {</p>
+  <p class="myCodeP">    &quot;leftTop&quot;: {</p>
+  <p class="myCodeP">      &quot;x&quot;: 0,</p>
+  <p class="myCodeP">      &quot;y&quot;: 0</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    &quot;top&quot;: 0,</p>
+  <p class="myCodeP">    &quot;left&quot;: 0,</p>
+  <p class="myCodeP">    &quot;bottom&quot;: 256,</p>
+  <p class="myCodeP">    &quot;rightBottom&quot;: {</p>
+  <p class="myCodeP">      &quot;x&quot;: 256,</p>
+  <p class="myCodeP">      &quot;y&quot;: 256</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    &quot;width&quot;: 256,</p>
+  <p class="myCodeP">    &quot;right&quot;: 256,</p>
+  <p class="myCodeP">    &quot;height&quot;: 256</p>
+  <p class="myCodeP">  },</p>
+  <p class="myCodeP">  &quot;distanceUnit&quot;: &quot;METER&quot;,</p>
+  <p class="myCodeP">  &quot;tileversion&quot;: null,</p>
+  <p class="myCodeP">  &quot;minVisibleTextSize&quot;: 0.1,</p>
+  <p class="myCodeP">  &quot;coordUnit&quot;: &quot;DEGREE&quot;,</p>
+  <p class="myCodeP">  &quot;scale&quot;: 5.912160537196359E-9,</p>
+  <p class="myCodeP">  &quot;description&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">  &quot;paintBackground&quot;: true,</p>
+  <p class="myCodeP">  &quot;maxVisibleTextSize&quot;: 1000,</p>
+  <p class="myCodeP">  &quot;maxVisibleVertex&quot;: 3600000,</p>
+  <p class="myCodeP">  &quot;clipRegionEnabled&quot;: false,</p>
+  <p class="myCodeP">  &quot;trackingLayer&quot;: {&quot;highlightTargets&quot;: []},</p>
+  <p class="myCodeP">  &quot;antialias&quot;: true,</p>
+  <p class="myCodeP">  &quot;textOrientationFixed&quot;: false,</p>
+  <p class="myCodeP">  &quot;layers&quot;: [{</p>
+  <p class="myCodeP">    &quot;completeLineSymbolDisplayed&quot;: false,</p>
+  <p class="myCodeP">    &quot;visible&quot;: true,</p>
+  <p class="myCodeP">    &quot;maxScale&quot;: 0,</p>
+  <p class="myCodeP">    &quot;caption&quot;: null,</p>
+  <p class="myCodeP">    &quot;description&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">    &quot;symbolScalable&quot;: false,</p>
+  <p class="myCodeP">    &quot;subLayers&quot;: {&quot;layers&quot;: [</p>
+  <p class="myCodeP">      {</p>
+  <p class="myCodeP">        &quot;joinItems&quot;: null,</p>
+  <p class="myCodeP">        &quot;completeLineSymbolDisplayed&quot;: false,</p>
+  <p class="myCodeP">        &quot;ugcLayerType&quot;: &quot;VECTOR&quot;,</p>
+  <p class="myCodeP">        &quot;displayFilter&quot;: null,</p>
+  <p class="myCodeP">        &quot;visible&quot;: true,</p>
+  <p class="myCodeP">        &quot;maxScale&quot;: 1.350238165824801E-8,</p>
+  <p class="myCodeP">        &quot;fieldValuesDisplayFilter&quot;: {</p>
+  <p class="myCodeP">          &quot;fieldName&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">          &quot;values&quot;: [],</p>
+  <p class="myCodeP">          &quot;fieldValuesDisplayMode&quot;: &quot;DISABLE&quot;</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;caption&quot;: &quot;continent_T@World&quot;,</p>
+  <p class="myCodeP">        &quot;description&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">        &quot;symbolScalable&quot;: false,</p>
+  <p class="myCodeP">        &quot;subLayers&quot;: {},</p>
+  <p class="myCodeP">        &quot;type&quot;: &quot;UGC&quot;,</p>
+  <p class="myCodeP">        &quot;datasetInfo&quot;: {</p>
+  <p class="myCodeP">          &quot;charset&quot;: null,</p>
+  <p class="myCodeP">          &quot;recordCount&quot;: 0,</p>
+  <p class="myCodeP">          &quot;isFileCache&quot;: false,</p>
+  <p class="myCodeP">          &quot;description&quot;: null,</p>
+  <p class="myCodeP">          &quot;type&quot;: &quot;TEXT&quot;,</p>
+  <p class="myCodeP">          &quot;dataSourceName&quot;: &quot;World&quot;,</p>
+  <p class="myCodeP">          &quot;tableName&quot;: null,</p>
+  <p class="myCodeP">          &quot;isReadOnly&quot;: false,</p>
+  <p class="myCodeP">          &quot;encodeType&quot;: null,</p>
+  <p class="myCodeP">          &quot;bounds&quot;: {</p>
+  <p class="myCodeP">            &quot;top&quot;: 65.22103117946571,</p>
+  <p class="myCodeP">            &quot;left&quot;: -150.51082428252954,</p>
+  <p class="myCodeP">            &quot;bottom&quot;: -84.34257921576281,</p>
+  <p class="myCodeP">            &quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">              &quot;x&quot;: -150.51082428252954,</p>
+  <p class="myCodeP">              &quot;y&quot;: -84.34257921576281</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;right&quot;: 154.27853258850513,</p>
+  <p class="myCodeP">            &quot;rightTop&quot;: {</p>
+  <p class="myCodeP">              &quot;x&quot;: 154.27853258850513,</p>
+  <p class="myCodeP">              &quot;y&quot;: 65.22103117946571</p>
+  <p class="myCodeP">            }</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;name&quot;: &quot;continent_T&quot;,</p>
+  <p class="myCodeP">          &quot;prjCoordSys&quot;: null,</p>
+  <p class="myCodeP">          &quot;datasourceConnectionInfo&quot;: null</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;queryable&quot;: false,</p>
+  <p class="myCodeP">        &quot;opaqueRate&quot;: 100,</p>
+  <p class="myCodeP">        &quot;minVisibleGeometrySize&quot;: 0.4,</p>
+  <p class="myCodeP">        &quot;name&quot;: &quot;continent_T@World&quot;,</p>
+  <p class="myCodeP">        &quot;bounds&quot;: {</p>
+  <p class="myCodeP">          &quot;top&quot;: 65.22103117946571,</p>
+  <p class="myCodeP">          &quot;left&quot;: -150.51082428252954,</p>
+  <p class="myCodeP">          &quot;bottom&quot;: -84.34257921576281,</p>
+  <p class="myCodeP">          &quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: -150.51082428252954,</p>
+  <p class="myCodeP">            &quot;y&quot;: -84.34257921576281</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;right&quot;: 154.27853258850513,</p>
+  <p class="myCodeP">          &quot;rightTop&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: 154.27853258850513,</p>
+  <p class="myCodeP">            &quot;y&quot;: 65.22103117946571</p>
+  <p class="myCodeP">          }</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;style&quot;: {</p>
+  <p class="myCodeP">          &quot;fillGradientOffsetRatioX&quot;: 0,</p>
+  <p class="myCodeP">          &quot;markerSize&quot;: 2.4,</p>
+  <p class="myCodeP">          &quot;fillForeColor&quot;: {</p>
+  <p class="myCodeP">            &quot;red&quot;: 208,</p>
+  <p class="myCodeP">            &quot;green&quot;: 255,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 240,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;fillGradientOffsetRatioY&quot;: 0,</p>
+  <p class="myCodeP">          &quot;markerWidth&quot;: 0,</p>
+  <p class="myCodeP">          &quot;markerAngle&quot;: 0,</p>
+  <p class="myCodeP">          &quot;fillSymbolID&quot;: 0,</p>
+  <p class="myCodeP">          &quot;lineColor&quot;: {</p>
+  <p class="myCodeP">            &quot;red&quot;: 0,</p>
+  <p class="myCodeP">            &quot;green&quot;: 128,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 0,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;markerSymbolID&quot;: 0,</p>
+  <p class="myCodeP">          &quot;lineWidth&quot;: 0.1,</p>
+  <p class="myCodeP">          &quot;markerHeight&quot;: 0,</p>
+  <p class="myCodeP">          &quot;fillOpaqueRate&quot;: 100,</p>
+  <p class="myCodeP">          &quot;fillBackOpaque&quot;: true,</p>
+  <p class="myCodeP">          &quot;fillBackColor&quot;: {</p>
+  <p class="myCodeP">            &quot;red&quot;: 255,</p>
+  <p class="myCodeP">            &quot;green&quot;: 255,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 255,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;fillGradientMode&quot;: &quot;NONE&quot;,</p>
+  <p class="myCodeP">          &quot;lineSymbolID&quot;: 0,</p>
+  <p class="myCodeP">          &quot;fillGradientAngle&quot;: 0</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;displayOrderBy&quot;: null,</p>
+  <p class="myCodeP">        &quot;symbolScale&quot;: 0,</p>
+  <p class="myCodeP">        &quot;minScale&quot;: 0,</p>
+  <p class="myCodeP">        &quot;representationField&quot;: &quot;&quot;</p>
+  <p class="myCodeP">      },</p>
+  <p class="myCodeP">      {</p>
+  <p class="myCodeP">        &quot;joinItems&quot;: null,</p>
+  <p class="myCodeP">        &quot;completeLineSymbolDisplayed&quot;: false,</p>
+  <p class="myCodeP">        &quot;ugcLayerType&quot;: &quot;VECTOR&quot;,</p>
+  <p class="myCodeP">        &quot;displayFilter&quot;: null,</p>
+  <p class="myCodeP">        &quot;visible&quot;: true,</p>
+  <p class="myCodeP">        &quot;maxScale&quot;: 0,</p>
+  <p class="myCodeP">        &quot;fieldValuesDisplayFilter&quot;: {</p>
+  <p class="myCodeP">          &quot;fieldName&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">          &quot;values&quot;: [],</p>
+  <p class="myCodeP">          &quot;fieldValuesDisplayMode&quot;: &quot;DISABLE&quot;</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;caption&quot;: &quot;Ocean_Label_1@World&quot;,</p>
+  <p class="myCodeP">        &quot;description&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">        &quot;symbolScalable&quot;: false,</p>
+  <p class="myCodeP">        &quot;subLayers&quot;: {},</p>
+  <p class="myCodeP">        &quot;type&quot;: &quot;UGC&quot;,</p>
+  <p class="myCodeP">        &quot;datasetInfo&quot;: {</p>
+  <p class="myCodeP">          &quot;charset&quot;: null,</p>
+  <p class="myCodeP">          &quot;recordCount&quot;: 0,</p>
+  <p class="myCodeP">          &quot;isFileCache&quot;: false,</p>
+  <p class="myCodeP">          &quot;description&quot;: null,</p>
+  <p class="myCodeP">          &quot;type&quot;: &quot;TEXT&quot;,</p>
+  <p class="myCodeP">          &quot;dataSourceName&quot;: &quot;World&quot;,</p>
+  <p class="myCodeP">          &quot;tableName&quot;: null,</p>
+  <p class="myCodeP">          &quot;isReadOnly&quot;: false,</p>
+  <p class="myCodeP">          &quot;encodeType&quot;: null,</p>
+  <p class="myCodeP">          &quot;bounds&quot;: {</p>
+  <p class="myCodeP">            &quot;top&quot;: 83.43048504744075,</p>
+  <p class="myCodeP">            &quot;left&quot;: -44.41899273133173,</p>
+  <p class="myCodeP">            &quot;bottom&quot;: -27.123921114982828,</p>
+  <p class="myCodeP">            &quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">              &quot;x&quot;: -44.41899273133173,</p>
+  <p class="myCodeP">              &quot;y&quot;: -27.123921114982828</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;right&quot;: 162.36857106201822,</p>
+  <p class="myCodeP">            &quot;rightTop&quot;: {</p>
+  <p class="myCodeP">              &quot;x&quot;: 162.36857106201822,</p>
+  <p class="myCodeP">              &quot;y&quot;: 83.43048504744075</p>
+  <p class="myCodeP">            }</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;name&quot;: &quot;Ocean_Label_1&quot;,</p>
+  <p class="myCodeP">          &quot;prjCoordSys&quot;: null,</p>
+  <p class="myCodeP">          &quot;datasourceConnectionInfo&quot;: null</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;queryable&quot;: true,</p>
+  <p class="myCodeP">        &quot;opaqueRate&quot;: 100,</p>
+  <p class="myCodeP">        &quot;minVisibleGeometrySize&quot;: 0.4,</p>
+  <p class="myCodeP">        &quot;name&quot;: &quot;Ocean_Label_1@World&quot;,</p>
+  <p class="myCodeP">        &quot;bounds&quot;: {</p>
+  <p class="myCodeP">          &quot;top&quot;: 83.43048504744075,</p>
+  <p class="myCodeP">          &quot;left&quot;: -44.41899273133173,</p>
+  <p class="myCodeP">          &quot;bottom&quot;: -27.123921114982828,</p>
+  <p class="myCodeP">          &quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: -44.41899273133173,</p>
+  <p class="myCodeP">            &quot;y&quot;: -27.123921114982828</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;right&quot;: 162.36857106201822,</p>
+  <p class="myCodeP">          &quot;rightTop&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: 162.36857106201822,</p>
+  <p class="myCodeP">            &quot;y&quot;: 83.43048504744075</p>
+  <p class="myCodeP">          }</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;style&quot;: {</p>
+  <p class="myCodeP">          &quot;fillGradientOffsetRatioX&quot;: 0,</p>
+  <p class="myCodeP">          &quot;markerSize&quot;: 2.4,</p>
+  <p class="myCodeP">          &quot;fillForeColor&quot;: {</p>
+  <p class="myCodeP">            &quot;red&quot;: 208,</p>
+  <p class="myCodeP">            &quot;green&quot;: 255,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 240,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;fillGradientOffsetRatioY&quot;: 0,</p>
+  <p class="myCodeP">          &quot;markerWidth&quot;: 0,</p>
+  <p class="myCodeP">          &quot;markerAngle&quot;: 0,</p>
+  <p class="myCodeP">          &quot;fillSymbolID&quot;: 0,</p>
+  <p class="myCodeP">          &quot;lineColor&quot;: {</p>
+  <p class="myCodeP">            &quot;red&quot;: 0,</p>
+  <p class="myCodeP">            &quot;green&quot;: 128,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 0,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;markerSymbolID&quot;: 0,</p>
+  <p class="myCodeP">          &quot;lineWidth&quot;: 0.1,</p>
+  <p class="myCodeP">          &quot;markerHeight&quot;: 0,</p>
+  <p class="myCodeP">          &quot;fillOpaqueRate&quot;: 100,</p>
+  <p class="myCodeP">          &quot;fillBackOpaque&quot;: true,</p>
+  <p class="myCodeP">          &quot;fillBackColor&quot;: {</p>
+  <p class="myCodeP">            &quot;red&quot;: 255,</p>
+  <p class="myCodeP">            &quot;green&quot;: 255,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 255,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;fillGradientMode&quot;: &quot;NONE&quot;,</p>
+  <p class="myCodeP">          &quot;lineSymbolID&quot;: 0,</p>
+  <p class="myCodeP">          &quot;fillGradientAngle&quot;: 0</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;displayOrderBy&quot;: null,</p>
+  <p class="myCodeP">        &quot;symbolScale&quot;: 0,</p>
+  <p class="myCodeP">        &quot;minScale&quot;: 0,</p>
+  <p class="myCodeP">        &quot;representationField&quot;: &quot;&quot;</p>
+  <p class="myCodeP">      },</p>
+  <p class="myCodeP">      {</p>
+  <p class="myCodeP">        &quot;joinItems&quot;: null,</p>
+  <p class="myCodeP">        &quot;completeLineSymbolDisplayed&quot;: false,</p>
+  <p class="myCodeP">        &quot;themeElementPosition&quot;: null,</p>
+  <p class="myCodeP">        &quot;ugcLayerType&quot;: &quot;THEME&quot;,</p>
+  <p class="myCodeP">        &quot;displayFilter&quot;: null,</p>
+  <p class="myCodeP">        &quot;visible&quot;: true,</p>
+  <p class="myCodeP">        &quot;maxScale&quot;: 0,</p>
+  <p class="myCodeP">        &quot;fieldValuesDisplayFilter&quot;: {</p>
+  <p class="myCodeP">          &quot;fieldName&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">          &quot;values&quot;: [],</p>
+  <p class="myCodeP">          &quot;fieldValuesDisplayMode&quot;: &quot;DISABLE&quot;</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;caption&quot;: &quot;Captial_CH&quot;,</p>
+  <p class="myCodeP">        &quot;description&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">        &quot;symbolScalable&quot;: false,</p>
+  <p class="myCodeP">        &quot;subLayers&quot;: {},</p>
+  <p class="myCodeP">        &quot;type&quot;: &quot;UGC&quot;,</p>
+  <p class="myCodeP">        &quot;datasetInfo&quot;: {</p>
+  <p class="myCodeP">          &quot;charset&quot;: null,</p>
+  <p class="myCodeP">          &quot;recordCount&quot;: 0,</p>
+  <p class="myCodeP">          &quot;isFileCache&quot;: false,</p>
+  <p class="myCodeP">          &quot;description&quot;: null,</p>
+  <p class="myCodeP">          &quot;type&quot;: &quot;POINT&quot;,</p>
+  <p class="myCodeP">          &quot;dataSourceName&quot;: &quot;World&quot;,</p>
+  <p class="myCodeP">          &quot;tableName&quot;: null,</p>
+  <p class="myCodeP">          &quot;isReadOnly&quot;: false,</p>
+  <p class="myCodeP">          &quot;encodeType&quot;: null,</p>
+  <p class="myCodeP">          &quot;bounds&quot;: {</p>
+  <p class="myCodeP">            &quot;top&quot;: 64.13499891788544,</p>
+  <p class="myCodeP">            &quot;left&quot;: -175.24565064968198,</p>
+  <p class="myCodeP">            &quot;bottom&quot;: -41.33484005165742,</p>
+  <p class="myCodeP">            &quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">              &quot;x&quot;: -175.24565064968198,</p>
+  <p class="myCodeP">              &quot;y&quot;: -41.33484005165742</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;right&quot;: 179.22188736363634,</p>
+  <p class="myCodeP">            &quot;rightTop&quot;: {</p>
+  <p class="myCodeP">              &quot;x&quot;: 179.22188736363634,</p>
+  <p class="myCodeP">              &quot;y&quot;: 64.13499891788544</p>
+  <p class="myCodeP">            }</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;name&quot;: &quot;Capitals&quot;,</p>
+  <p class="myCodeP">          &quot;prjCoordSys&quot;: null,</p>
+  <p class="myCodeP">          &quot;datasourceConnectionInfo&quot;: null</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;queryable&quot;: false,</p>
+  <p class="myCodeP">        &quot;opaqueRate&quot;: 100,</p>
+  <p class="myCodeP">        &quot;minVisibleGeometrySize&quot;: 0.4,</p>
+  <p class="myCodeP">        &quot;name&quot;: &quot;Capitals@World#3&quot;,</p>
+  <p class="myCodeP">        &quot;bounds&quot;: {</p>
+  <p class="myCodeP">          &quot;top&quot;: 64.13499891788544,</p>
+  <p class="myCodeP">          &quot;left&quot;: -175.24565064968198,</p>
+  <p class="myCodeP">          &quot;bottom&quot;: -41.33484005165742,</p>
+  <p class="myCodeP">          &quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: -175.24565064968198,</p>
+  <p class="myCodeP">            &quot;y&quot;: -41.33484005165742</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;right&quot;: 179.22188736363634,</p>
+  <p class="myCodeP">          &quot;rightTop&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: 179.22188736363634,</p>
+  <p class="myCodeP">            &quot;y&quot;: 64.13499891788544</p>
+  <p class="myCodeP">          }</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;theme&quot;: {</p>
+  <p class="myCodeP">          &quot;memoryData&quot;: null,</p>
+  <p class="myCodeP">          &quot;overlapAvoided&quot;: true,</p>
+  <p class="myCodeP">          &quot;minTextWidth&quot;: 0,</p>
+  <p class="myCodeP">          &quot;maxLabelLength&quot;: -1,</p>
+  <p class="myCodeP">          &quot;repeatIntervalFixed&quot;: false,</p>
+  <p class="myCodeP">          &quot;flowEnabled&quot;: false,</p>
+  <p class="myCodeP">          &quot;alongLineDirection&quot;: &quot;LEFT_TOP_TO_RIGHT_BOTTOM&quot;,</p>
+  <p class="myCodeP">          &quot;maxTextWidth&quot;: 0,</p>
+  <p class="myCodeP">          &quot;offsetFixed&quot;: false,</p>
+  <p class="myCodeP">          &quot;type&quot;: &quot;LABEL&quot;,</p>
+  <p class="myCodeP">          &quot;labelExpression&quot;: &quot;CAPITAL_CH&quot;,</p>
+  <p class="myCodeP">          &quot;offsetX&quot;: &quot;0&quot;,</p>
+  <p class="myCodeP">          &quot;leaderLineStyle&quot;: {</p>
+  <p class="myCodeP">            &quot;fillGradientOffsetRatioX&quot;: 0,</p>
+  <p class="myCodeP">            &quot;markerSize&quot;: 2.4,</p>
+  <p class="myCodeP">            &quot;fillForeColor&quot;: {</p>
+  <p class="myCodeP">              &quot;red&quot;: 189,</p>
+  <p class="myCodeP">              &quot;green&quot;: 235,</p>
+  <p class="myCodeP">              &quot;blue&quot;: 255,</p>
+  <p class="myCodeP">              &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;fillGradientOffsetRatioY&quot;: 0,</p>
+  <p class="myCodeP">            &quot;markerWidth&quot;: 0,</p>
+  <p class="myCodeP">            &quot;markerAngle&quot;: 0,</p>
+  <p class="myCodeP">            &quot;fillSymbolID&quot;: 0,</p>
+  <p class="myCodeP">            &quot;lineColor&quot;: {</p>
+  <p class="myCodeP">              &quot;red&quot;: 0,</p>
+  <p class="myCodeP">              &quot;green&quot;: 0,</p>
+  <p class="myCodeP">              &quot;blue&quot;: 0,</p>
+  <p class="myCodeP">              &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;markerSymbolID&quot;: 0,</p>
+  <p class="myCodeP">            &quot;lineWidth&quot;: 0.1,</p>
+  <p class="myCodeP">            &quot;markerHeight&quot;: 0,</p>
+  <p class="myCodeP">            &quot;fillOpaqueRate&quot;: 100,</p>
+  <p class="myCodeP">            &quot;fillBackOpaque&quot;: true,</p>
+  <p class="myCodeP">            &quot;fillBackColor&quot;: {</p>
+  <p class="myCodeP">              &quot;red&quot;: 255,</p>
+  <p class="myCodeP">              &quot;green&quot;: 255,</p>
+  <p class="myCodeP">              &quot;blue&quot;: 255,</p>
+  <p class="myCodeP">              &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;fillGradientMode&quot;: &quot;NONE&quot;,</p>
+  <p class="myCodeP">            &quot;lineSymbolID&quot;: 39,</p>
+  <p class="myCodeP">            &quot;fillGradientAngle&quot;: 0</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;offsetY&quot;: &quot;0&quot;,</p>
+  <p class="myCodeP">          &quot;leaderLineDisplayed&quot;: false,</p>
+  <p class="myCodeP">          &quot;uniformStyle&quot;: {</p>
+  <p class="myCodeP">            &quot;italicAngle&quot;: 0,</p>
+  <p class="myCodeP">            &quot;shadow&quot;: false,</p>
+  <p class="myCodeP">            &quot;sizeFixed&quot;: true,</p>
+  <p class="myCodeP">            &quot;underline&quot;: false,</p>
+  <p class="myCodeP">            &quot;rotation&quot;: 0,</p>
+  <p class="myCodeP">            &quot;backOpaque&quot;: false,</p>
+  <p class="myCodeP">            &quot;bold&quot;: false,</p>
+  <p class="myCodeP">            &quot;align&quot;: &quot;BOTTOMLEFT&quot;,</p>
+  <p class="myCodeP">            &quot;foreColor&quot;: {</p>
+  <p class="myCodeP">              &quot;red&quot;: 38,</p>
+  <p class="myCodeP">              &quot;green&quot;: 38,</p>
+  <p class="myCodeP">              &quot;blue&quot;: 38,</p>
+  <p class="myCodeP">              &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;italic&quot;: false,</p>
+  <p class="myCodeP">            &quot;strikeout&quot;: false,</p>
+  <p class="myCodeP">            &quot;fontName&quot;: &quot;微软雅黑&quot;,</p>
+  <p class="myCodeP">            &quot;outline&quot;: true,</p>
+  <p class="myCodeP">            &quot;borderSpacingWidth&quot;: 4,</p>
+  <p class="myCodeP">            &quot;backColor&quot;: {</p>
+  <p class="myCodeP">              &quot;red&quot;: 242,</p>
+  <p class="myCodeP">              &quot;green&quot;: 242,</p>
+  <p class="myCodeP">              &quot;blue&quot;: 242,</p>
+  <p class="myCodeP">              &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;outlineWidth&quot;: 1,</p>
+  <p class="myCodeP">            &quot;fontHeight&quot;: 3.5335689045936394,</p>
+  <p class="myCodeP">            &quot;fontWidth&quot;: 0,</p>
+  <p class="myCodeP">            &quot;opaqueRate&quot;: 0,</p>
+  <p class="myCodeP">            &quot;stringAlignment&quot;: &quot;LEFT&quot;,</p>
+  <p class="myCodeP">            &quot;fontScale&quot;: 1,</p>
+  <p class="myCodeP">            &quot;fontWeight&quot;: 400</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;maxTextHeight&quot;: 0,</p>
+  <p class="myCodeP">          &quot;smallGeometryLabeled&quot;: true,</p>
+  <p class="myCodeP">          &quot;matrixCells&quot;: null,</p>
+  <p class="myCodeP">          &quot;labelBackShape&quot;: &quot;NONE&quot;,</p>
+  <p class="myCodeP">          &quot;labelOverLengthMode&quot;: &quot;NONE&quot;,</p>
+  <p class="myCodeP">          &quot;numericPrecision&quot;: -1,</p>
+  <p class="myCodeP">          &quot;textSpace&quot;: 1.1,</p>
+  <p class="myCodeP">          &quot;backStyle&quot;: {</p>
+  <p class="myCodeP">            &quot;fillGradientOffsetRatioX&quot;: 0,</p>
+  <p class="myCodeP">            &quot;markerSize&quot;: 2.4,</p>
+  <p class="myCodeP">            &quot;fillForeColor&quot;: {</p>
+  <p class="myCodeP">              &quot;red&quot;: 255,</p>
+  <p class="myCodeP">              &quot;green&quot;: 255,</p>
+  <p class="myCodeP">              &quot;blue&quot;: 204,</p>
+  <p class="myCodeP">              &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;fillGradientOffsetRatioY&quot;: 0,</p>
+  <p class="myCodeP">            &quot;markerWidth&quot;: 0,</p>
+  <p class="myCodeP">            &quot;markerAngle&quot;: 0,</p>
+  <p class="myCodeP">            &quot;fillSymbolID&quot;: 0,</p>
+  <p class="myCodeP">            &quot;lineColor&quot;: {</p>
+  <p class="myCodeP">              &quot;red&quot;: 0,</p>
+  <p class="myCodeP">              &quot;green&quot;: 0,</p>
+  <p class="myCodeP">              &quot;blue&quot;: 0,</p>
+  <p class="myCodeP">              &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;markerSymbolID&quot;: 0,</p>
+  <p class="myCodeP">            &quot;lineWidth&quot;: 0.1,</p>
+  <p class="myCodeP">            &quot;markerHeight&quot;: 0,</p>
+  <p class="myCodeP">            &quot;fillOpaqueRate&quot;: 100,</p>
+  <p class="myCodeP">            &quot;fillBackOpaque&quot;: true,</p>
+  <p class="myCodeP">            &quot;fillBackColor&quot;: {</p>
+  <p class="myCodeP">              &quot;red&quot;: 255,</p>
+  <p class="myCodeP">              &quot;green&quot;: 255,</p>
+  <p class="myCodeP">              &quot;blue&quot;: 255,</p>
+  <p class="myCodeP">              &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;fillGradientMode&quot;: &quot;NONE&quot;,</p>
+  <p class="myCodeP">            &quot;lineSymbolID&quot;: 0,</p>
+  <p class="myCodeP">            &quot;fillGradientAngle&quot;: 0</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;minTextHeight&quot;: 0,</p>
+  <p class="myCodeP">          &quot;uniqueExpression&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">          &quot;alongLine&quot;: true,</p>
+  <p class="myCodeP">          &quot;uniqueItems&quot;: null,</p>
+  <p class="myCodeP">          &quot;rangeExpression&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">          &quot;angleFixed&quot;: false,</p>
+  <p class="myCodeP">          &quot;uniformMixedStyle&quot;: null,</p>
+  <p class="myCodeP">          &quot;repeatedLabelAvoided&quot;: false,</p>
+  <p class="myCodeP">          &quot;items&quot;: null,</p>
+  <p class="myCodeP">          &quot;labelRepeatInterval&quot;: 0</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;displayOrderBy&quot;: null,</p>
+  <p class="myCodeP">        &quot;symbolScale&quot;: 0,</p>
+  <p class="myCodeP">        &quot;minScale&quot;: 2.700476331649602E-8,</p>
+  <p class="myCodeP">        &quot;representationField&quot;: &quot;&quot;</p>
+  <p class="myCodeP">      },</p>
+  <p class="myCodeP">      {</p>
+  <p class="myCodeP">        &quot;joinItems&quot;: null,</p>
+  <p class="myCodeP">        &quot;completeLineSymbolDisplayed&quot;: false,</p>
+  <p class="myCodeP">        &quot;themeElementPosition&quot;: null,</p>
+  <p class="myCodeP">        &quot;ugcLayerType&quot;: &quot;THEME&quot;,</p>
+  <p class="myCodeP">        &quot;displayFilter&quot;: null,</p>
+  <p class="myCodeP">        &quot;visible&quot;: true,</p>
+  <p class="myCodeP">        &quot;maxScale&quot;: 0,</p>
+  <p class="myCodeP">        &quot;fieldValuesDisplayFilter&quot;: {</p>
+  <p class="myCodeP">          &quot;fieldName&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">          &quot;values&quot;: [],</p>
+  <p class="myCodeP">          &quot;fieldValuesDisplayMode&quot;: &quot;DISABLE&quot;</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;caption&quot;: &quot;Capital_Local&quot;,</p>
+  <p class="myCodeP">        &quot;description&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">        &quot;symbolScalable&quot;: false,</p>
+  <p class="myCodeP">        &quot;subLayers&quot;: {},</p>
+  <p class="myCodeP">        &quot;type&quot;: &quot;UGC&quot;,</p>
+  <p class="myCodeP">        &quot;datasetInfo&quot;: {</p>
+  <p class="myCodeP">          &quot;charset&quot;: null,</p>
+  <p class="myCodeP">          &quot;recordCount&quot;: 0,</p>
+  <p class="myCodeP">          &quot;isFileCache&quot;: false,</p>
+  <p class="myCodeP">          &quot;description&quot;: null,</p>
+  <p class="myCodeP">          &quot;type&quot;: &quot;POINT&quot;,</p>
+  <p class="myCodeP">          &quot;dataSourceName&quot;: &quot;World&quot;,</p>
+  <p class="myCodeP">          &quot;tableName&quot;: null,</p>
+  <p class="myCodeP">          &quot;isReadOnly&quot;: false,</p>
+  <p class="myCodeP">          &quot;encodeType&quot;: null,</p>
+  <p class="myCodeP">          &quot;bounds&quot;: {</p>
+  <p class="myCodeP">            &quot;top&quot;: 64.13499891788544,</p>
+  <p class="myCodeP">            &quot;left&quot;: -175.24565064968198,</p>
+  <p class="myCodeP">            &quot;bottom&quot;: -41.33484005165742,</p>
+  <p class="myCodeP">            &quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">              &quot;x&quot;: -175.24565064968198,</p>
+  <p class="myCodeP">              &quot;y&quot;: -41.33484005165742</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;right&quot;: 179.22188736363634,</p>
+  <p class="myCodeP">            &quot;rightTop&quot;: {</p>
+  <p class="myCodeP">              &quot;x&quot;: 179.22188736363634,</p>
+  <p class="myCodeP">              &quot;y&quot;: 64.13499891788544</p>
+  <p class="myCodeP">            }</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;name&quot;: &quot;Capitals&quot;,</p>
+  <p class="myCodeP">          &quot;prjCoordSys&quot;: null,</p>
+  <p class="myCodeP">          &quot;datasourceConnectionInfo&quot;: null</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;queryable&quot;: false,</p>
+  <p class="myCodeP">        &quot;opaqueRate&quot;: 100,</p>
+  <p class="myCodeP">        &quot;minVisibleGeometrySize&quot;: 0.4,</p>
+  <p class="myCodeP">        &quot;name&quot;: &quot;Capitals@World#2&quot;,</p>
+  <p class="myCodeP">        &quot;bounds&quot;: {</p>
+  <p class="myCodeP">          &quot;top&quot;: 64.13499891788544,</p>
+  <p class="myCodeP">          &quot;left&quot;: -175.24565064968198,</p>
+  <p class="myCodeP">          &quot;bottom&quot;: -41.33484005165742,</p>
+  <p class="myCodeP">          &quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: -175.24565064968198,</p>
+  <p class="myCodeP">            &quot;y&quot;: -41.33484005165742</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;right&quot;: 179.22188736363634,</p>
+  <p class="myCodeP">          &quot;rightTop&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: 179.22188736363634,</p>
+  <p class="myCodeP">            &quot;y&quot;: 64.13499891788544</p>
+  <p class="myCodeP">          }</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;theme&quot;: {</p>
+  <p class="myCodeP">          &quot;memoryData&quot;: null,</p>
+  <p class="myCodeP">          &quot;overlapAvoided&quot;: true,</p>
+  <p class="myCodeP">          &quot;minTextWidth&quot;: 0,</p>
+  <p class="myCodeP">          &quot;maxLabelLength&quot;: -1,</p>
+  <p class="myCodeP">          &quot;repeatIntervalFixed&quot;: false,</p>
+  <p class="myCodeP">          &quot;flowEnabled&quot;: false,</p>
+  <p class="myCodeP">          &quot;alongLineDirection&quot;: &quot;LEFT_TOP_TO_RIGHT_BOTTOM&quot;,</p>
+  <p class="myCodeP">          &quot;maxTextWidth&quot;: 0,</p>
+  <p class="myCodeP">          &quot;offsetFixed&quot;: false,</p>
+  <p class="myCodeP">          &quot;type&quot;: &quot;LABEL&quot;,</p>
+  <p class="myCodeP">          &quot;labelExpression&quot;: &quot;CAPITAL_LO&quot;,</p>
+  <p class="myCodeP">          &quot;offsetX&quot;: &quot;0&quot;,</p>
+  <p class="myCodeP">          &quot;leaderLineStyle&quot;: {</p>
+  <p class="myCodeP">            &quot;fillGradientOffsetRatioX&quot;: 0,</p>
+  <p class="myCodeP">            &quot;markerSize&quot;: 2.4,</p>
+  <p class="myCodeP">            &quot;fillForeColor&quot;: {</p>
+  <p class="myCodeP">              &quot;red&quot;: 189,</p>
+  <p class="myCodeP">              &quot;green&quot;: 235,</p>
+  <p class="myCodeP">              &quot;blue&quot;: 255,</p>
+  <p class="myCodeP">              &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;fillGradientOffsetRatioY&quot;: 0,</p>
+  <p class="myCodeP">            &quot;markerWidth&quot;: 0,</p>
+  <p class="myCodeP">            &quot;markerAngle&quot;: 0,</p>
+  <p class="myCodeP">            &quot;fillSymbolID&quot;: 0,</p>
+  <p class="myCodeP">            &quot;lineColor&quot;: {</p>
+  <p class="myCodeP">              &quot;red&quot;: 0,</p>
+  <p class="myCodeP">              &quot;green&quot;: 0,</p>
+  <p class="myCodeP">              &quot;blue&quot;: 0,</p>
+  <p class="myCodeP">              &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;markerSymbolID&quot;: 0,</p>
+  <p class="myCodeP">            &quot;lineWidth&quot;: 0.1,</p>
+  <p class="myCodeP">            &quot;markerHeight&quot;: 0,</p>
+  <p class="myCodeP">            &quot;fillOpaqueRate&quot;: 100,</p>
+  <p class="myCodeP">            &quot;fillBackOpaque&quot;: true,</p>
+  <p class="myCodeP">            &quot;fillBackColor&quot;: {</p>
+  <p class="myCodeP">              &quot;red&quot;: 255,</p>
+  <p class="myCodeP">              &quot;green&quot;: 255,</p>
+  <p class="myCodeP">              &quot;blue&quot;: 255,</p>
+  <p class="myCodeP">              &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;fillGradientMode&quot;: &quot;NONE&quot;,</p>
+  <p class="myCodeP">            &quot;lineSymbolID&quot;: 39,</p>
+  <p class="myCodeP">            &quot;fillGradientAngle&quot;: 0</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;offsetY&quot;: &quot;0&quot;,</p>
+  <p class="myCodeP">          &quot;leaderLineDisplayed&quot;: false,</p>
+  <p class="myCodeP">          &quot;uniformStyle&quot;: {</p>
+  <p class="myCodeP">            &quot;italicAngle&quot;: 0,</p>
+  <p class="myCodeP">            &quot;shadow&quot;: false,</p>
+  <p class="myCodeP">            &quot;sizeFixed&quot;: true,</p>
+  <p class="myCodeP">            &quot;underline&quot;: false,</p>
+  <p class="myCodeP">            &quot;rotation&quot;: 0,</p>
+  <p class="myCodeP">            &quot;backOpaque&quot;: false,</p>
+  <p class="myCodeP">            &quot;bold&quot;: false,</p>
+  <p class="myCodeP">            &quot;align&quot;: &quot;TOPLEFT&quot;,</p>
+  <p class="myCodeP">            &quot;foreColor&quot;: {</p>
+  <p class="myCodeP">              &quot;red&quot;: 63,</p>
+  <p class="myCodeP">              &quot;green&quot;: 63,</p>
+  <p class="myCodeP">              &quot;blue&quot;: 63,</p>
+  <p class="myCodeP">              &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;italic&quot;: false,</p>
+  <p class="myCodeP">            &quot;strikeout&quot;: false,</p>
+  <p class="myCodeP">            &quot;fontName&quot;: &quot;微软雅黑&quot;,</p>
+  <p class="myCodeP">            &quot;outline&quot;: true,</p>
+  <p class="myCodeP">            &quot;borderSpacingWidth&quot;: 4,</p>
+  <p class="myCodeP">            &quot;backColor&quot;: {</p>
+  <p class="myCodeP">              &quot;red&quot;: 242,</p>
+  <p class="myCodeP">              &quot;green&quot;: 242,</p>
+  <p class="myCodeP">              &quot;blue&quot;: 242,</p>
+  <p class="myCodeP">              &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;outlineWidth&quot;: 1,</p>
+  <p class="myCodeP">            &quot;fontHeight&quot;: 3.5335689045936394,</p>
+  <p class="myCodeP">            &quot;fontWidth&quot;: 0,</p>
+  <p class="myCodeP">            &quot;opaqueRate&quot;: 0,</p>
+  <p class="myCodeP">            &quot;stringAlignment&quot;: &quot;LEFT&quot;,</p>
+  <p class="myCodeP">            &quot;fontScale&quot;: 1,</p>
+  <p class="myCodeP">            &quot;fontWeight&quot;: 400</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;maxTextHeight&quot;: 0,</p>
+  <p class="myCodeP">          &quot;smallGeometryLabeled&quot;: true,</p>
+  <p class="myCodeP">          &quot;matrixCells&quot;: null,</p>
+  <p class="myCodeP">          &quot;labelBackShape&quot;: &quot;NONE&quot;,</p>
+  <p class="myCodeP">          &quot;labelOverLengthMode&quot;: &quot;NONE&quot;,</p>
+  <p class="myCodeP">          &quot;numericPrecision&quot;: -1,</p>
+  <p class="myCodeP">          &quot;textSpace&quot;: 1.1,</p>
+  <p class="myCodeP">          &quot;backStyle&quot;: {</p>
+  <p class="myCodeP">            &quot;fillGradientOffsetRatioX&quot;: 0,</p>
+  <p class="myCodeP">            &quot;markerSize&quot;: 2.4,</p>
+  <p class="myCodeP">            &quot;fillForeColor&quot;: {</p>
+  <p class="myCodeP">              &quot;red&quot;: 255,</p>
+  <p class="myCodeP">              &quot;green&quot;: 255,</p>
+  <p class="myCodeP">              &quot;blue&quot;: 204,</p>
+  <p class="myCodeP">              &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;fillGradientOffsetRatioY&quot;: 0,</p>
+  <p class="myCodeP">            &quot;markerWidth&quot;: 0,</p>
+  <p class="myCodeP">            &quot;markerAngle&quot;: 0,</p>
+  <p class="myCodeP">            &quot;fillSymbolID&quot;: 0,</p>
+  <p class="myCodeP">            &quot;lineColor&quot;: {</p>
+  <p class="myCodeP">              &quot;red&quot;: 0,</p>
+  <p class="myCodeP">              &quot;green&quot;: 0,</p>
+  <p class="myCodeP">              &quot;blue&quot;: 0,</p>
+  <p class="myCodeP">              &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;markerSymbolID&quot;: 0,</p>
+  <p class="myCodeP">            &quot;lineWidth&quot;: 0.1,</p>
+  <p class="myCodeP">            &quot;markerHeight&quot;: 0,</p>
+  <p class="myCodeP">            &quot;fillOpaqueRate&quot;: 100,</p>
+  <p class="myCodeP">            &quot;fillBackOpaque&quot;: true,</p>
+  <p class="myCodeP">            &quot;fillBackColor&quot;: {</p>
+  <p class="myCodeP">              &quot;red&quot;: 255,</p>
+  <p class="myCodeP">              &quot;green&quot;: 255,</p>
+  <p class="myCodeP">              &quot;blue&quot;: 255,</p>
+  <p class="myCodeP">              &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;fillGradientMode&quot;: &quot;NONE&quot;,</p>
+  <p class="myCodeP">            &quot;lineSymbolID&quot;: 0,</p>
+  <p class="myCodeP">            &quot;fillGradientAngle&quot;: 0</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;minTextHeight&quot;: 0,</p>
+  <p class="myCodeP">          &quot;uniqueExpression&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">          &quot;alongLine&quot;: true,</p>
+  <p class="myCodeP">          &quot;uniqueItems&quot;: null,</p>
+  <p class="myCodeP">          &quot;rangeExpression&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">          &quot;angleFixed&quot;: false,</p>
+  <p class="myCodeP">          &quot;uniformMixedStyle&quot;: null,</p>
+  <p class="myCodeP">          &quot;repeatedLabelAvoided&quot;: false,</p>
+  <p class="myCodeP">          &quot;items&quot;: null,</p>
+  <p class="myCodeP">          &quot;labelRepeatInterval&quot;: 0</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;displayOrderBy&quot;: null,</p>
+  <p class="myCodeP">        &quot;symbolScale&quot;: 0,</p>
+  <p class="myCodeP">        &quot;minScale&quot;: 2.700476331649602E-8,</p>
+  <p class="myCodeP">        &quot;representationField&quot;: &quot;&quot;</p>
+  <p class="myCodeP">      },</p>
+  <p class="myCodeP">      {</p>
+  <p class="myCodeP">        &quot;joinItems&quot;: null,</p>
+  <p class="myCodeP">        &quot;completeLineSymbolDisplayed&quot;: false,</p>
+  <p class="myCodeP">        &quot;ugcLayerType&quot;: &quot;VECTOR&quot;,</p>
+  <p class="myCodeP">        &quot;displayFilter&quot;: null,</p>
+  <p class="myCodeP">        &quot;visible&quot;: true,</p>
+  <p class="myCodeP">        &quot;maxScale&quot;: 0,</p>
+  <p class="myCodeP">        &quot;fieldValuesDisplayFilter&quot;: {</p>
+  <p class="myCodeP">          &quot;fieldName&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">          &quot;values&quot;: [],</p>
+  <p class="myCodeP">          &quot;fieldValuesDisplayMode&quot;: &quot;DISABLE&quot;</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;caption&quot;: &quot;Capitals@World#1&quot;,</p>
+  <p class="myCodeP">        &quot;description&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">        &quot;symbolScalable&quot;: false,</p>
+  <p class="myCodeP">        &quot;subLayers&quot;: {},</p>
+  <p class="myCodeP">        &quot;type&quot;: &quot;UGC&quot;,</p>
+  <p class="myCodeP">        &quot;datasetInfo&quot;: {</p>
+  <p class="myCodeP">          &quot;charset&quot;: null,</p>
+  <p class="myCodeP">          &quot;recordCount&quot;: 0,</p>
+  <p class="myCodeP">          &quot;isFileCache&quot;: false,</p>
+  <p class="myCodeP">          &quot;description&quot;: null,</p>
+  <p class="myCodeP">          &quot;type&quot;: &quot;POINT&quot;,</p>
+  <p class="myCodeP">          &quot;dataSourceName&quot;: &quot;World&quot;,</p>
+  <p class="myCodeP">          &quot;tableName&quot;: null,</p>
+  <p class="myCodeP">          &quot;isReadOnly&quot;: false,</p>
+  <p class="myCodeP">          &quot;encodeType&quot;: null,</p>
+  <p class="myCodeP">          &quot;bounds&quot;: {</p>
+  <p class="myCodeP">            &quot;top&quot;: 64.13499891788544,</p>
+  <p class="myCodeP">            &quot;left&quot;: -175.24565064968198,</p>
+  <p class="myCodeP">            &quot;bottom&quot;: -41.33484005165742,</p>
+  <p class="myCodeP">            &quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">              &quot;x&quot;: -175.24565064968198,</p>
+  <p class="myCodeP">              &quot;y&quot;: -41.33484005165742</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;right&quot;: 179.22188736363634,</p>
+  <p class="myCodeP">            &quot;rightTop&quot;: {</p>
+  <p class="myCodeP">              &quot;x&quot;: 179.22188736363634,</p>
+  <p class="myCodeP">              &quot;y&quot;: 64.13499891788544</p>
+  <p class="myCodeP">            }</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;name&quot;: &quot;Capitals&quot;,</p>
+  <p class="myCodeP">          &quot;prjCoordSys&quot;: null,</p>
+  <p class="myCodeP">          &quot;datasourceConnectionInfo&quot;: null</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;queryable&quot;: false,</p>
+  <p class="myCodeP">        &quot;opaqueRate&quot;: 100,</p>
+  <p class="myCodeP">        &quot;minVisibleGeometrySize&quot;: 0.4,</p>
+  <p class="myCodeP">        &quot;name&quot;: &quot;Capitals@World#1&quot;,</p>
+  <p class="myCodeP">        &quot;bounds&quot;: {</p>
+  <p class="myCodeP">          &quot;top&quot;: 64.13499891788544,</p>
+  <p class="myCodeP">          &quot;left&quot;: -175.24565064968198,</p>
+  <p class="myCodeP">          &quot;bottom&quot;: -41.33484005165742,</p>
+  <p class="myCodeP">          &quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: -175.24565064968198,</p>
+  <p class="myCodeP">            &quot;y&quot;: -41.33484005165742</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;right&quot;: 179.22188736363634,</p>
+  <p class="myCodeP">          &quot;rightTop&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: 179.22188736363634,</p>
+  <p class="myCodeP">            &quot;y&quot;: 64.13499891788544</p>
+  <p class="myCodeP">          }</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;style&quot;: {</p>
+  <p class="myCodeP">          &quot;fillGradientOffsetRatioX&quot;: 0,</p>
+  <p class="myCodeP">          &quot;markerSize&quot;: 7.7,</p>
+  <p class="myCodeP">          &quot;fillForeColor&quot;: {</p>
+  <p class="myCodeP">            &quot;red&quot;: 13,</p>
+  <p class="myCodeP">            &quot;green&quot;: 80,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 143,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;fillGradientOffsetRatioY&quot;: 0,</p>
+  <p class="myCodeP">          &quot;markerWidth&quot;: 0,</p>
+  <p class="myCodeP">          &quot;markerAngle&quot;: 0,</p>
+  <p class="myCodeP">          &quot;fillSymbolID&quot;: 0,</p>
+  <p class="myCodeP">          &quot;lineColor&quot;: {</p>
+  <p class="myCodeP">            &quot;red&quot;: 127,</p>
+  <p class="myCodeP">            &quot;green&quot;: 127,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 127,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;markerSymbolID&quot;: 908020,</p>
+  <p class="myCodeP">          &quot;lineWidth&quot;: 0.1,</p>
+  <p class="myCodeP">          &quot;markerHeight&quot;: 0,</p>
+  <p class="myCodeP">          &quot;fillOpaqueRate&quot;: 100,</p>
+  <p class="myCodeP">          &quot;fillBackOpaque&quot;: true,</p>
+  <p class="myCodeP">          &quot;fillBackColor&quot;: {</p>
+  <p class="myCodeP">            &quot;red&quot;: 255,</p>
+  <p class="myCodeP">            &quot;green&quot;: 255,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 255,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;fillGradientMode&quot;: &quot;NONE&quot;,</p>
+  <p class="myCodeP">          &quot;lineSymbolID&quot;: 0,</p>
+  <p class="myCodeP">          &quot;fillGradientAngle&quot;: 0</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;displayOrderBy&quot;: null,</p>
+  <p class="myCodeP">        &quot;symbolScale&quot;: 0,</p>
+  <p class="myCodeP">        &quot;minScale&quot;: 2.700476331649602E-8,</p>
+  <p class="myCodeP">        &quot;representationField&quot;: &quot;&quot;</p>
+  <p class="myCodeP">      },</p>
+  <p class="myCodeP">      {</p>
+  <p class="myCodeP">        &quot;joinItems&quot;: null,</p>
+  <p class="myCodeP">        &quot;completeLineSymbolDisplayed&quot;: false,</p>
+  <p class="myCodeP">        &quot;themeElementPosition&quot;: null,</p>
+  <p class="myCodeP">        &quot;ugcLayerType&quot;: &quot;THEME&quot;,</p>
+  <p class="myCodeP">        &quot;displayFilter&quot;: &quot;Countries.SmID not in (34,56,16,41,40,57,60,209)&quot;,</p>
+  <p class="myCodeP">        &quot;visible&quot;: true,</p>
+  <p class="myCodeP">        &quot;maxScale&quot;: 0,</p>
+  <p class="myCodeP">        &quot;fieldValuesDisplayFilter&quot;: {</p>
+  <p class="myCodeP">          &quot;fieldName&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">          &quot;values&quot;: [],</p>
+  <p class="myCodeP">          &quot;fieldValuesDisplayMode&quot;: &quot;DISABLE&quot;</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;caption&quot;: &quot;Countries@World#1&quot;,</p>
+  <p class="myCodeP">        &quot;description&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">        &quot;symbolScalable&quot;: false,</p>
+  <p class="myCodeP">        &quot;subLayers&quot;: {},</p>
+  <p class="myCodeP">        &quot;type&quot;: &quot;UGC&quot;,</p>
+  <p class="myCodeP">        &quot;datasetInfo&quot;: {</p>
+  <p class="myCodeP">          &quot;charset&quot;: null,</p>
+  <p class="myCodeP">          &quot;recordCount&quot;: 0,</p>
+  <p class="myCodeP">          &quot;isFileCache&quot;: false,</p>
+  <p class="myCodeP">          &quot;description&quot;: null,</p>
+  <p class="myCodeP">          &quot;type&quot;: &quot;REGION&quot;,</p>
+  <p class="myCodeP">          &quot;dataSourceName&quot;: &quot;World&quot;,</p>
+  <p class="myCodeP">          &quot;tableName&quot;: null,</p>
+  <p class="myCodeP">          &quot;isReadOnly&quot;: false,</p>
+  <p class="myCodeP">          &quot;encodeType&quot;: null,</p>
+  <p class="myCodeP">          &quot;bounds&quot;: {</p>
+  <p class="myCodeP">            &quot;top&quot;: 83.62359619140626,</p>
+  <p class="myCodeP">            &quot;left&quot;: -180,</p>
+  <p class="myCodeP">            &quot;bottom&quot;: -90,</p>
+  <p class="myCodeP">            &quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">              &quot;x&quot;: -180,</p>
+  <p class="myCodeP">              &quot;y&quot;: -90</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;right&quot;: 180,</p>
+  <p class="myCodeP">            &quot;rightTop&quot;: {</p>
+  <p class="myCodeP">              &quot;x&quot;: 180,</p>
+  <p class="myCodeP">              &quot;y&quot;: 83.62359619140626</p>
+  <p class="myCodeP">            }</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;name&quot;: &quot;Countries&quot;,</p>
+  <p class="myCodeP">          &quot;prjCoordSys&quot;: null,</p>
+  <p class="myCodeP">          &quot;datasourceConnectionInfo&quot;: null</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;queryable&quot;: false,</p>
+  <p class="myCodeP">        &quot;opaqueRate&quot;: 100,</p>
+  <p class="myCodeP">        &quot;minVisibleGeometrySize&quot;: 0.1,</p>
+  <p class="myCodeP">        &quot;name&quot;: &quot;Countries@World#1&quot;,</p>
+  <p class="myCodeP">        &quot;bounds&quot;: {</p>
+  <p class="myCodeP">          &quot;top&quot;: 83.62359619140626,</p>
+  <p class="myCodeP">          &quot;left&quot;: -180,</p>
+  <p class="myCodeP">          &quot;bottom&quot;: -90,</p>
+  <p class="myCodeP">          &quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: -180,</p>
+  <p class="myCodeP">            &quot;y&quot;: -90</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;right&quot;: 180,</p>
+  <p class="myCodeP">          &quot;rightTop&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: 180,</p>
+  <p class="myCodeP">            &quot;y&quot;: 83.62359619140626</p>
+  <p class="myCodeP">          }</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;theme&quot;: {</p>
+  <p class="myCodeP">          &quot;memoryData&quot;: null,</p>
+  <p class="myCodeP">          &quot;overlapAvoided&quot;: false,</p>
+  <p class="myCodeP">          &quot;minTextWidth&quot;: 0,</p>
+  <p class="myCodeP">          &quot;maxLabelLength&quot;: -1,</p>
+  <p class="myCodeP">          &quot;repeatIntervalFixed&quot;: false,</p>
+  <p class="myCodeP">          &quot;flowEnabled&quot;: false,</p>
+  <p class="myCodeP">          &quot;alongLineDirection&quot;: &quot;ALONG_LINE_NORMAL&quot;,</p>
+  <p class="myCodeP">          &quot;maxTextWidth&quot;: 0,</p>
+  <p class="myCodeP">          &quot;offsetFixed&quot;: false,</p>
+  <p class="myCodeP">          &quot;type&quot;: &quot;LABEL&quot;,</p>
+  <p class="myCodeP">          &quot;labelExpression&quot;: &quot;COUNTRY&quot;,</p>
+  <p class="myCodeP">          &quot;offsetX&quot;: &quot;0&quot;,</p>
+  <p class="myCodeP">          &quot;leaderLineStyle&quot;: {</p>
+  <p class="myCodeP">            &quot;fillGradientOffsetRatioX&quot;: 0,</p>
+  <p class="myCodeP">            &quot;markerSize&quot;: 2.4,</p>
+  <p class="myCodeP">            &quot;fillForeColor&quot;: {</p>
+  <p class="myCodeP">              &quot;red&quot;: 189,</p>
+  <p class="myCodeP">              &quot;green&quot;: 235,</p>
+  <p class="myCodeP">              &quot;blue&quot;: 255,</p>
+  <p class="myCodeP">              &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;fillGradientOffsetRatioY&quot;: 0,</p>
+  <p class="myCodeP">            &quot;markerWidth&quot;: 0,</p>
+  <p class="myCodeP">            &quot;markerAngle&quot;: 0,</p>
+  <p class="myCodeP">            &quot;fillSymbolID&quot;: 0,</p>
+  <p class="myCodeP">            &quot;lineColor&quot;: {</p>
+  <p class="myCodeP">              &quot;red&quot;: 0,</p>
+  <p class="myCodeP">              &quot;green&quot;: 0,</p>
+  <p class="myCodeP">              &quot;blue&quot;: 0,</p>
+  <p class="myCodeP">              &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;markerSymbolID&quot;: 0,</p>
+  <p class="myCodeP">            &quot;lineWidth&quot;: 0.1,</p>
+  <p class="myCodeP">            &quot;markerHeight&quot;: 0,</p>
+  <p class="myCodeP">            &quot;fillOpaqueRate&quot;: 100,</p>
+  <p class="myCodeP">            &quot;fillBackOpaque&quot;: true,</p>
+  <p class="myCodeP">            &quot;fillBackColor&quot;: {</p>
+  <p class="myCodeP">              &quot;red&quot;: 255,</p>
+  <p class="myCodeP">              &quot;green&quot;: 255,</p>
+  <p class="myCodeP">              &quot;blue&quot;: 255,</p>
+  <p class="myCodeP">              &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;fillGradientMode&quot;: &quot;NONE&quot;,</p>
+  <p class="myCodeP">            &quot;lineSymbolID&quot;: 39,</p>
+  <p class="myCodeP">            &quot;fillGradientAngle&quot;: 0</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;offsetY&quot;: &quot;0&quot;,</p>
+  <p class="myCodeP">          &quot;leaderLineDisplayed&quot;: false,</p>
+  <p class="myCodeP">          &quot;uniformStyle&quot;: {</p>
+  <p class="myCodeP">            &quot;italicAngle&quot;: 0,</p>
+  <p class="myCodeP">            &quot;shadow&quot;: false,</p>
+  <p class="myCodeP">            &quot;sizeFixed&quot;: true,</p>
+  <p class="myCodeP">            &quot;underline&quot;: false,</p>
+  <p class="myCodeP">            &quot;rotation&quot;: 0,</p>
+  <p class="myCodeP">            &quot;backOpaque&quot;: false,</p>
+  <p class="myCodeP">            &quot;bold&quot;: false,</p>
+  <p class="myCodeP">            &quot;align&quot;: &quot;MIDDLECENTER&quot;,</p>
+  <p class="myCodeP">            &quot;foreColor&quot;: {</p>
+  <p class="myCodeP">              &quot;red&quot;: 63,</p>
+  <p class="myCodeP">              &quot;green&quot;: 63,</p>
+  <p class="myCodeP">              &quot;blue&quot;: 63,</p>
+  <p class="myCodeP">              &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;italic&quot;: false,</p>
+  <p class="myCodeP">            &quot;strikeout&quot;: false,</p>
+  <p class="myCodeP">            &quot;fontName&quot;: &quot;微软雅黑&quot;,</p>
+  <p class="myCodeP">            &quot;outline&quot;: true,</p>
+  <p class="myCodeP">            &quot;borderSpacingWidth&quot;: 4,</p>
+  <p class="myCodeP">            &quot;backColor&quot;: {</p>
+  <p class="myCodeP">              &quot;red&quot;: 255,</p>
+  <p class="myCodeP">              &quot;green&quot;: 255,</p>
+  <p class="myCodeP">              &quot;blue&quot;: 255,</p>
+  <p class="myCodeP">              &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;outlineWidth&quot;: 1,</p>
+  <p class="myCodeP">            &quot;fontHeight&quot;: 4.593639575971731,</p>
+  <p class="myCodeP">            &quot;fontWidth&quot;: 0,</p>
+  <p class="myCodeP">            &quot;opaqueRate&quot;: 0,</p>
+  <p class="myCodeP">            &quot;stringAlignment&quot;: &quot;LEFT&quot;,</p>
+  <p class="myCodeP">            &quot;fontScale&quot;: 1,</p>
+  <p class="myCodeP">            &quot;fontWeight&quot;: 400</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;maxTextHeight&quot;: 0,</p>
+  <p class="myCodeP">          &quot;smallGeometryLabeled&quot;: true,</p>
+  <p class="myCodeP">          &quot;matrixCells&quot;: null,</p>
+  <p class="myCodeP">          &quot;labelBackShape&quot;: &quot;NONE&quot;,</p>
+  <p class="myCodeP">          &quot;labelOverLengthMode&quot;: &quot;NONE&quot;,</p>
+  <p class="myCodeP">          &quot;numericPrecision&quot;: 1,</p>
+  <p class="myCodeP">          &quot;textSpace&quot;: 1.1,</p>
+  <p class="myCodeP">          &quot;backStyle&quot;: {</p>
+  <p class="myCodeP">            &quot;fillGradientOffsetRatioX&quot;: 0,</p>
+  <p class="myCodeP">            &quot;markerSize&quot;: 2.4,</p>
+  <p class="myCodeP">            &quot;fillForeColor&quot;: {</p>
+  <p class="myCodeP">              &quot;red&quot;: 255,</p>
+  <p class="myCodeP">              &quot;green&quot;: 255,</p>
+  <p class="myCodeP">              &quot;blue&quot;: 204,</p>
+  <p class="myCodeP">              &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;fillGradientOffsetRatioY&quot;: 0,</p>
+  <p class="myCodeP">            &quot;markerWidth&quot;: 0,</p>
+  <p class="myCodeP">            &quot;markerAngle&quot;: 0,</p>
+  <p class="myCodeP">            &quot;fillSymbolID&quot;: 0,</p>
+  <p class="myCodeP">            &quot;lineColor&quot;: {</p>
+  <p class="myCodeP">              &quot;red&quot;: 0,</p>
+  <p class="myCodeP">              &quot;green&quot;: 0,</p>
+  <p class="myCodeP">              &quot;blue&quot;: 0,</p>
+  <p class="myCodeP">              &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;markerSymbolID&quot;: 0,</p>
+  <p class="myCodeP">            &quot;lineWidth&quot;: 0.1,</p>
+  <p class="myCodeP">            &quot;markerHeight&quot;: 0,</p>
+  <p class="myCodeP">            &quot;fillOpaqueRate&quot;: 100,</p>
+  <p class="myCodeP">            &quot;fillBackOpaque&quot;: true,</p>
+  <p class="myCodeP">            &quot;fillBackColor&quot;: {</p>
+  <p class="myCodeP">              &quot;red&quot;: 255,</p>
+  <p class="myCodeP">              &quot;green&quot;: 255,</p>
+  <p class="myCodeP">              &quot;blue&quot;: 255,</p>
+  <p class="myCodeP">              &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;fillGradientMode&quot;: &quot;NONE&quot;,</p>
+  <p class="myCodeP">            &quot;lineSymbolID&quot;: 0,</p>
+  <p class="myCodeP">            &quot;fillGradientAngle&quot;: 0</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;minTextHeight&quot;: 0,</p>
+  <p class="myCodeP">          &quot;uniqueExpression&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">          &quot;alongLine&quot;: false,</p>
+  <p class="myCodeP">          &quot;uniqueItems&quot;: null,</p>
+  <p class="myCodeP">          &quot;rangeExpression&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">          &quot;angleFixed&quot;: false,</p>
+  <p class="myCodeP">          &quot;uniformMixedStyle&quot;: null,</p>
+  <p class="myCodeP">          &quot;repeatedLabelAvoided&quot;: false,</p>
+  <p class="myCodeP">          &quot;items&quot;: null,</p>
+  <p class="myCodeP">          &quot;labelRepeatInterval&quot;: 0</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;displayOrderBy&quot;: null,</p>
+  <p class="myCodeP">        &quot;symbolScale&quot;: 0,</p>
+  <p class="myCodeP">        &quot;minScale&quot;: 1.3502381658248012E-8,</p>
+  <p class="myCodeP">        &quot;representationField&quot;: &quot;&quot;</p>
+  <p class="myCodeP">      },</p>
+  <p class="myCodeP">      {</p>
+  <p class="myCodeP">        &quot;joinItems&quot;: null,</p>
+  <p class="myCodeP">        &quot;completeLineSymbolDisplayed&quot;: false,</p>
+  <p class="myCodeP">        &quot;ugcLayerType&quot;: &quot;VECTOR&quot;,</p>
+  <p class="myCodeP">        &quot;displayFilter&quot;: null,</p>
+  <p class="myCodeP">        &quot;visible&quot;: true,</p>
+  <p class="myCodeP">        &quot;maxScale&quot;: 0,</p>
+  <p class="myCodeP">        &quot;fieldValuesDisplayFilter&quot;: {</p>
+  <p class="myCodeP">          &quot;fieldName&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">          &quot;values&quot;: [],</p>
+  <p class="myCodeP">          &quot;fieldValuesDisplayMode&quot;: &quot;DISABLE&quot;</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;caption&quot;: &quot;China_Boundary_nanhai@World&quot;,</p>
+  <p class="myCodeP">        &quot;description&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">        &quot;symbolScalable&quot;: false,</p>
+  <p class="myCodeP">        &quot;subLayers&quot;: {},</p>
+  <p class="myCodeP">        &quot;type&quot;: &quot;UGC&quot;,</p>
+  <p class="myCodeP">        &quot;datasetInfo&quot;: {</p>
+  <p class="myCodeP">          &quot;charset&quot;: null,</p>
+  <p class="myCodeP">          &quot;recordCount&quot;: 0,</p>
+  <p class="myCodeP">          &quot;isFileCache&quot;: false,</p>
+  <p class="myCodeP">          &quot;description&quot;: null,</p>
+  <p class="myCodeP">          &quot;type&quot;: &quot;LINE&quot;,</p>
+  <p class="myCodeP">          &quot;dataSourceName&quot;: &quot;World&quot;,</p>
+  <p class="myCodeP">          &quot;tableName&quot;: null,</p>
+  <p class="myCodeP">          &quot;isReadOnly&quot;: false,</p>
+  <p class="myCodeP">          &quot;encodeType&quot;: null,</p>
+  <p class="myCodeP">          &quot;bounds&quot;: {</p>
+  <p class="myCodeP">            &quot;top&quot;: 24.571609999999986,</p>
+  <p class="myCodeP">            &quot;left&quot;: 108.20117,</p>
+  <p class="myCodeP">            &quot;bottom&quot;: 3.408849999999999,</p>
+  <p class="myCodeP">            &quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">              &quot;x&quot;: 108.20117,</p>
+  <p class="myCodeP">              &quot;y&quot;: 3.408849999999999</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;right&quot;: 122.79297,</p>
+  <p class="myCodeP">            &quot;rightTop&quot;: {</p>
+  <p class="myCodeP">              &quot;x&quot;: 122.79297,</p>
+  <p class="myCodeP">              &quot;y&quot;: 24.571609999999986</p>
+  <p class="myCodeP">            }</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;name&quot;: &quot;China_Boundary_nanhai&quot;,</p>
+  <p class="myCodeP">          &quot;prjCoordSys&quot;: null,</p>
+  <p class="myCodeP">          &quot;datasourceConnectionInfo&quot;: null</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;queryable&quot;: true,</p>
+  <p class="myCodeP">        &quot;opaqueRate&quot;: 100,</p>
+  <p class="myCodeP">        &quot;minVisibleGeometrySize&quot;: 0.1,</p>
+  <p class="myCodeP">        &quot;name&quot;: &quot;China_Boundary_nanhai@World&quot;,</p>
+  <p class="myCodeP">        &quot;bounds&quot;: {</p>
+  <p class="myCodeP">          &quot;top&quot;: 24.571609999999986,</p>
+  <p class="myCodeP">          &quot;left&quot;: 108.20117,</p>
+  <p class="myCodeP">          &quot;bottom&quot;: 3.408849999999999,</p>
+  <p class="myCodeP">          &quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: 108.20117,</p>
+  <p class="myCodeP">            &quot;y&quot;: 3.408849999999999</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;right&quot;: 122.79297,</p>
+  <p class="myCodeP">          &quot;rightTop&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: 122.79297,</p>
+  <p class="myCodeP">            &quot;y&quot;: 24.571609999999986</p>
+  <p class="myCodeP">          }</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;style&quot;: {</p>
+  <p class="myCodeP">          &quot;fillGradientOffsetRatioX&quot;: 0,</p>
+  <p class="myCodeP">          &quot;markerSize&quot;: 2.4,</p>
+  <p class="myCodeP">          &quot;fillForeColor&quot;: {</p>
+  <p class="myCodeP">            &quot;red&quot;: 189,</p>
+  <p class="myCodeP">            &quot;green&quot;: 235,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 255,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;fillGradientOffsetRatioY&quot;: 0,</p>
+  <p class="myCodeP">          &quot;markerWidth&quot;: 0,</p>
+  <p class="myCodeP">          &quot;markerAngle&quot;: 0,</p>
+  <p class="myCodeP">          &quot;fillSymbolID&quot;: 0,</p>
+  <p class="myCodeP">          &quot;lineColor&quot;: {</p>
+  <p class="myCodeP">            &quot;red&quot;: 191,</p>
+  <p class="myCodeP">            &quot;green&quot;: 191,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 191,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;markerSymbolID&quot;: 0,</p>
+  <p class="myCodeP">          &quot;lineWidth&quot;: 0.4,</p>
+  <p class="myCodeP">          &quot;markerHeight&quot;: 0,</p>
+  <p class="myCodeP">          &quot;fillOpaqueRate&quot;: 100,</p>
+  <p class="myCodeP">          &quot;fillBackOpaque&quot;: false,</p>
+  <p class="myCodeP">          &quot;fillBackColor&quot;: {</p>
+  <p class="myCodeP">            &quot;red&quot;: 255,</p>
+  <p class="myCodeP">            &quot;green&quot;: 255,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 255,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;fillGradientMode&quot;: &quot;NONE&quot;,</p>
+  <p class="myCodeP">          &quot;lineSymbolID&quot;: 0,</p>
+  <p class="myCodeP">          &quot;fillGradientAngle&quot;: 0</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;displayOrderBy&quot;: null,</p>
+  <p class="myCodeP">        &quot;symbolScale&quot;: 0,</p>
+  <p class="myCodeP">        &quot;minScale&quot;: 0,</p>
+  <p class="myCodeP">        &quot;representationField&quot;: &quot;&quot;</p>
+  <p class="myCodeP">      },</p>
+  <p class="myCodeP">      {</p>
+  <p class="myCodeP">        &quot;joinItems&quot;: null,</p>
+  <p class="myCodeP">        &quot;completeLineSymbolDisplayed&quot;: false,</p>
+  <p class="myCodeP">        &quot;ugcLayerType&quot;: &quot;VECTOR&quot;,</p>
+  <p class="myCodeP">        &quot;displayFilter&quot;: null,</p>
+  <p class="myCodeP">        &quot;visible&quot;: true,</p>
+  <p class="myCodeP">        &quot;maxScale&quot;: 0,</p>
+  <p class="myCodeP">        &quot;fieldValuesDisplayFilter&quot;: {</p>
+  <p class="myCodeP">          &quot;fieldName&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">          &quot;values&quot;: [],</p>
+  <p class="myCodeP">          &quot;fieldValuesDisplayMode&quot;: &quot;DISABLE&quot;</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;caption&quot;: &quot;China_Boundary_1@World&quot;,</p>
+  <p class="myCodeP">        &quot;description&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">        &quot;symbolScalable&quot;: false,</p>
+  <p class="myCodeP">        &quot;subLayers&quot;: {},</p>
+  <p class="myCodeP">        &quot;type&quot;: &quot;UGC&quot;,</p>
+  <p class="myCodeP">        &quot;datasetInfo&quot;: {</p>
+  <p class="myCodeP">          &quot;charset&quot;: null,</p>
+  <p class="myCodeP">          &quot;recordCount&quot;: 0,</p>
+  <p class="myCodeP">          &quot;isFileCache&quot;: false,</p>
+  <p class="myCodeP">          &quot;description&quot;: null,</p>
+  <p class="myCodeP">          &quot;type&quot;: &quot;LINE&quot;,</p>
+  <p class="myCodeP">          &quot;dataSourceName&quot;: &quot;World&quot;,</p>
+  <p class="myCodeP">          &quot;tableName&quot;: null,</p>
+  <p class="myCodeP">          &quot;isReadOnly&quot;: false,</p>
+  <p class="myCodeP">          &quot;encodeType&quot;: null,</p>
+  <p class="myCodeP">          &quot;bounds&quot;: {</p>
+  <p class="myCodeP">            &quot;top&quot;: 38.6768074,</p>
+  <p class="myCodeP">            &quot;left&quot;: 73.80218519999998,</p>
+  <p class="myCodeP">            &quot;bottom&quot;: 37.2373277,</p>
+  <p class="myCodeP">            &quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">              &quot;x&quot;: 73.80218519999998,</p>
+  <p class="myCodeP">              &quot;y&quot;: 37.2373277</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;right&quot;: 75.1874846,</p>
+  <p class="myCodeP">            &quot;rightTop&quot;: {</p>
+  <p class="myCodeP">              &quot;x&quot;: 75.1874846,</p>
+  <p class="myCodeP">              &quot;y&quot;: 38.6768074</p>
+  <p class="myCodeP">            }</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;name&quot;: &quot;China_Boundary_1&quot;,</p>
+  <p class="myCodeP">          &quot;prjCoordSys&quot;: null,</p>
+  <p class="myCodeP">          &quot;datasourceConnectionInfo&quot;: null</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;queryable&quot;: true,</p>
+  <p class="myCodeP">        &quot;opaqueRate&quot;: 100,</p>
+  <p class="myCodeP">        &quot;minVisibleGeometrySize&quot;: 0.1,</p>
+  <p class="myCodeP">        &quot;name&quot;: &quot;China_Boundary_1@World&quot;,</p>
+  <p class="myCodeP">        &quot;bounds&quot;: {</p>
+  <p class="myCodeP">          &quot;top&quot;: 38.6768074,</p>
+  <p class="myCodeP">          &quot;left&quot;: 73.80218519999998,</p>
+  <p class="myCodeP">          &quot;bottom&quot;: 37.2373277,</p>
+  <p class="myCodeP">          &quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: 73.80218519999998,</p>
+  <p class="myCodeP">            &quot;y&quot;: 37.2373277</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;right&quot;: 75.1874846,</p>
+  <p class="myCodeP">          &quot;rightTop&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: 75.1874846,</p>
+  <p class="myCodeP">            &quot;y&quot;: 38.6768074</p>
+  <p class="myCodeP">          }</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;style&quot;: {</p>
+  <p class="myCodeP">          &quot;fillGradientOffsetRatioX&quot;: 0,</p>
+  <p class="myCodeP">          &quot;markerSize&quot;: 2.4,</p>
+  <p class="myCodeP">          &quot;fillForeColor&quot;: {</p>
+  <p class="myCodeP">            &quot;red&quot;: 189,</p>
+  <p class="myCodeP">            &quot;green&quot;: 235,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 255,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;fillGradientOffsetRatioY&quot;: 0,</p>
+  <p class="myCodeP">          &quot;markerWidth&quot;: 0,</p>
+  <p class="myCodeP">          &quot;markerAngle&quot;: 0,</p>
+  <p class="myCodeP">          &quot;fillSymbolID&quot;: 0,</p>
+  <p class="myCodeP">          &quot;lineColor&quot;: {</p>
+  <p class="myCodeP">            &quot;red&quot;: 191,</p>
+  <p class="myCodeP">            &quot;green&quot;: 191,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 191,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;markerSymbolID&quot;: 0,</p>
+  <p class="myCodeP">          &quot;lineWidth&quot;: 0.1,</p>
+  <p class="myCodeP">          &quot;markerHeight&quot;: 0,</p>
+  <p class="myCodeP">          &quot;fillOpaqueRate&quot;: 100,</p>
+  <p class="myCodeP">          &quot;fillBackOpaque&quot;: false,</p>
+  <p class="myCodeP">          &quot;fillBackColor&quot;: {</p>
+  <p class="myCodeP">            &quot;red&quot;: 255,</p>
+  <p class="myCodeP">            &quot;green&quot;: 255,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 255,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;fillGradientMode&quot;: &quot;NONE&quot;,</p>
+  <p class="myCodeP">          &quot;lineSymbolID&quot;: 1,</p>
+  <p class="myCodeP">          &quot;fillGradientAngle&quot;: 0</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;displayOrderBy&quot;: null,</p>
+  <p class="myCodeP">        &quot;symbolScale&quot;: 0,</p>
+  <p class="myCodeP">        &quot;minScale&quot;: 0,</p>
+  <p class="myCodeP">        &quot;representationField&quot;: &quot;&quot;</p>
+  <p class="myCodeP">      },</p>
+  <p class="myCodeP">      {</p>
+  <p class="myCodeP">        &quot;joinItems&quot;: null,</p>
+  <p class="myCodeP">        &quot;completeLineSymbolDisplayed&quot;: false,</p>
+  <p class="myCodeP">        &quot;ugcLayerType&quot;: &quot;VECTOR&quot;,</p>
+  <p class="myCodeP">        &quot;displayFilter&quot;: null,</p>
+  <p class="myCodeP">        &quot;visible&quot;: true,</p>
+  <p class="myCodeP">        &quot;maxScale&quot;: 0,</p>
+  <p class="myCodeP">        &quot;fieldValuesDisplayFilter&quot;: {</p>
+  <p class="myCodeP">          &quot;fieldName&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">          &quot;values&quot;: [],</p>
+  <p class="myCodeP">          &quot;fieldValuesDisplayMode&quot;: &quot;DISABLE&quot;</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;caption&quot;: &quot;Country_Label@World&quot;,</p>
+  <p class="myCodeP">        &quot;description&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">        &quot;symbolScalable&quot;: false,</p>
+  <p class="myCodeP">        &quot;subLayers&quot;: {},</p>
+  <p class="myCodeP">        &quot;type&quot;: &quot;UGC&quot;,</p>
+  <p class="myCodeP">        &quot;datasetInfo&quot;: {</p>
+  <p class="myCodeP">          &quot;charset&quot;: null,</p>
+  <p class="myCodeP">          &quot;recordCount&quot;: 0,</p>
+  <p class="myCodeP">          &quot;isFileCache&quot;: false,</p>
+  <p class="myCodeP">          &quot;description&quot;: null,</p>
+  <p class="myCodeP">          &quot;type&quot;: &quot;LINE&quot;,</p>
+  <p class="myCodeP">          &quot;dataSourceName&quot;: &quot;World&quot;,</p>
+  <p class="myCodeP">          &quot;tableName&quot;: null,</p>
+  <p class="myCodeP">          &quot;isReadOnly&quot;: false,</p>
+  <p class="myCodeP">          &quot;encodeType&quot;: null,</p>
+  <p class="myCodeP">          &quot;bounds&quot;: {</p>
+  <p class="myCodeP">            &quot;top&quot;: 70.08860780000002,</p>
+  <p class="myCodeP">            &quot;left&quot;: -141.0029906,</p>
+  <p class="myCodeP">            &quot;bottom&quot;: -54.7883376,</p>
+  <p class="myCodeP">            &quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">              &quot;x&quot;: -141.0029906,</p>
+  <p class="myCodeP">              &quot;y&quot;: -54.7883376</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;right&quot;: 141.007019,</p>
+  <p class="myCodeP">            &quot;rightTop&quot;: {</p>
+  <p class="myCodeP">              &quot;x&quot;: 141.007019,</p>
+  <p class="myCodeP">              &quot;y&quot;: 70.08860780000002</p>
+  <p class="myCodeP">            }</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;name&quot;: &quot;Country_Label&quot;,</p>
+  <p class="myCodeP">          &quot;prjCoordSys&quot;: null,</p>
+  <p class="myCodeP">          &quot;datasourceConnectionInfo&quot;: null</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;queryable&quot;: true,</p>
+  <p class="myCodeP">        &quot;opaqueRate&quot;: 100,</p>
+  <p class="myCodeP">        &quot;minVisibleGeometrySize&quot;: 0.1,</p>
+  <p class="myCodeP">        &quot;name&quot;: &quot;Country_Label@World&quot;,</p>
+  <p class="myCodeP">        &quot;bounds&quot;: {</p>
+  <p class="myCodeP">          &quot;top&quot;: 70.08860780000002,</p>
+  <p class="myCodeP">          &quot;left&quot;: -141.0029906,</p>
+  <p class="myCodeP">          &quot;bottom&quot;: -54.7883376,</p>
+  <p class="myCodeP">          &quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: -141.0029906,</p>
+  <p class="myCodeP">            &quot;y&quot;: -54.7883376</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;right&quot;: 141.007019,</p>
+  <p class="myCodeP">          &quot;rightTop&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: 141.007019,</p>
+  <p class="myCodeP">            &quot;y&quot;: 70.08860780000002</p>
+  <p class="myCodeP">          }</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;style&quot;: {</p>
+  <p class="myCodeP">          &quot;fillGradientOffsetRatioX&quot;: 0,</p>
+  <p class="myCodeP">          &quot;markerSize&quot;: 2.4,</p>
+  <p class="myCodeP">          &quot;fillForeColor&quot;: {</p>
+  <p class="myCodeP">            &quot;red&quot;: 189,</p>
+  <p class="myCodeP">            &quot;green&quot;: 235,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 255,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;fillGradientOffsetRatioY&quot;: 0,</p>
+  <p class="myCodeP">          &quot;markerWidth&quot;: 0,</p>
+  <p class="myCodeP">          &quot;markerAngle&quot;: 0,</p>
+  <p class="myCodeP">          &quot;fillSymbolID&quot;: 0,</p>
+  <p class="myCodeP">          &quot;lineColor&quot;: {</p>
+  <p class="myCodeP">            &quot;red&quot;: 191,</p>
+  <p class="myCodeP">            &quot;green&quot;: 191,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 191,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;markerSymbolID&quot;: 0,</p>
+  <p class="myCodeP">          &quot;lineWidth&quot;: 0.1,</p>
+  <p class="myCodeP">          &quot;markerHeight&quot;: 0,</p>
+  <p class="myCodeP">          &quot;fillOpaqueRate&quot;: 100,</p>
+  <p class="myCodeP">          &quot;fillBackOpaque&quot;: false,</p>
+  <p class="myCodeP">          &quot;fillBackColor&quot;: {</p>
+  <p class="myCodeP">            &quot;red&quot;: 255,</p>
+  <p class="myCodeP">            &quot;green&quot;: 255,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 255,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;fillGradientMode&quot;: &quot;NONE&quot;,</p>
+  <p class="myCodeP">          &quot;lineSymbolID&quot;: 0,</p>
+  <p class="myCodeP">          &quot;fillGradientAngle&quot;: 0</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;displayOrderBy&quot;: null,</p>
+  <p class="myCodeP">        &quot;symbolScale&quot;: 0,</p>
+  <p class="myCodeP">        &quot;minScale&quot;: 0,</p>
+  <p class="myCodeP">        &quot;representationField&quot;: &quot;&quot;</p>
+  <p class="myCodeP">      },</p>
+  <p class="myCodeP">      {</p>
+  <p class="myCodeP">        &quot;joinItems&quot;: null,</p>
+  <p class="myCodeP">        &quot;completeLineSymbolDisplayed&quot;: false,</p>
+  <p class="myCodeP">        &quot;ugcLayerType&quot;: &quot;VECTOR&quot;,</p>
+  <p class="myCodeP">        &quot;displayFilter&quot;: null,</p>
+  <p class="myCodeP">        &quot;visible&quot;: true,</p>
+  <p class="myCodeP">        &quot;maxScale&quot;: 0,</p>
+  <p class="myCodeP">        &quot;fieldValuesDisplayFilter&quot;: {</p>
+  <p class="myCodeP">          &quot;fieldName&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">          &quot;values&quot;: [],</p>
+  <p class="myCodeP">          &quot;fieldValuesDisplayMode&quot;: &quot;DISABLE&quot;</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;caption&quot;: &quot;Rivers@World&quot;,</p>
+  <p class="myCodeP">        &quot;description&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">        &quot;symbolScalable&quot;: false,</p>
+  <p class="myCodeP">        &quot;subLayers&quot;: {},</p>
+  <p class="myCodeP">        &quot;type&quot;: &quot;UGC&quot;,</p>
+  <p class="myCodeP">        &quot;datasetInfo&quot;: {</p>
+  <p class="myCodeP">          &quot;charset&quot;: null,</p>
+  <p class="myCodeP">          &quot;recordCount&quot;: 0,</p>
+  <p class="myCodeP">          &quot;isFileCache&quot;: false,</p>
+  <p class="myCodeP">          &quot;description&quot;: null,</p>
+  <p class="myCodeP">          &quot;type&quot;: &quot;LINE&quot;,</p>
+  <p class="myCodeP">          &quot;dataSourceName&quot;: &quot;World&quot;,</p>
+  <p class="myCodeP">          &quot;tableName&quot;: null,</p>
+  <p class="myCodeP">          &quot;isReadOnly&quot;: false,</p>
+  <p class="myCodeP">          &quot;encodeType&quot;: null,</p>
+  <p class="myCodeP">          &quot;bounds&quot;: {</p>
+  <p class="myCodeP">            &quot;top&quot;: 71.39248954545454,</p>
+  <p class="myCodeP">            &quot;left&quot;: -164.88743636363634,</p>
+  <p class="myCodeP">            &quot;bottom&quot;: -36.96944545454546,</p>
+  <p class="myCodeP">            &quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">              &quot;x&quot;: -164.88743636363634,</p>
+  <p class="myCodeP">              &quot;y&quot;: -36.96944545454546</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;right&quot;: 160.76359563636362,</p>
+  <p class="myCodeP">            &quot;rightTop&quot;: {</p>
+  <p class="myCodeP">              &quot;x&quot;: 160.76359563636362,</p>
+  <p class="myCodeP">              &quot;y&quot;: 71.39248954545454</p>
+  <p class="myCodeP">            }</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;name&quot;: &quot;Rivers&quot;,</p>
+  <p class="myCodeP">          &quot;prjCoordSys&quot;: null,</p>
+  <p class="myCodeP">          &quot;datasourceConnectionInfo&quot;: null</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;queryable&quot;: false,</p>
+  <p class="myCodeP">        &quot;opaqueRate&quot;: 100,</p>
+  <p class="myCodeP">        &quot;minVisibleGeometrySize&quot;: 0.4,</p>
+  <p class="myCodeP">        &quot;name&quot;: &quot;Rivers@World&quot;,</p>
+  <p class="myCodeP">        &quot;bounds&quot;: {</p>
+  <p class="myCodeP">          &quot;top&quot;: 71.39248954545454,</p>
+  <p class="myCodeP">          &quot;left&quot;: -164.88743636363634,</p>
+  <p class="myCodeP">          &quot;bottom&quot;: -36.96944545454546,</p>
+  <p class="myCodeP">          &quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: -164.88743636363634,</p>
+  <p class="myCodeP">            &quot;y&quot;: -36.96944545454546</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;right&quot;: 160.76359563636362,</p>
+  <p class="myCodeP">          &quot;rightTop&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: 160.76359563636362,</p>
+  <p class="myCodeP">            &quot;y&quot;: 71.39248954545454</p>
+  <p class="myCodeP">          }</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;style&quot;: {</p>
+  <p class="myCodeP">          &quot;fillGradientOffsetRatioX&quot;: 0,</p>
+  <p class="myCodeP">          &quot;markerSize&quot;: 2.4,</p>
+  <p class="myCodeP">          &quot;fillForeColor&quot;: {</p>
+  <p class="myCodeP">            &quot;red&quot;: 208,</p>
+  <p class="myCodeP">            &quot;green&quot;: 255,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 240,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;fillGradientOffsetRatioY&quot;: 0,</p>
+  <p class="myCodeP">          &quot;markerWidth&quot;: 0,</p>
+  <p class="myCodeP">          &quot;markerAngle&quot;: 0,</p>
+  <p class="myCodeP">          &quot;fillSymbolID&quot;: 0,</p>
+  <p class="myCodeP">          &quot;lineColor&quot;: {</p>
+  <p class="myCodeP">            &quot;red&quot;: 179,</p>
+  <p class="myCodeP">            &quot;green&quot;: 209,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 255,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;markerSymbolID&quot;: 0,</p>
+  <p class="myCodeP">          &quot;lineWidth&quot;: 0.1,</p>
+  <p class="myCodeP">          &quot;markerHeight&quot;: 0,</p>
+  <p class="myCodeP">          &quot;fillOpaqueRate&quot;: 100,</p>
+  <p class="myCodeP">          &quot;fillBackOpaque&quot;: true,</p>
+  <p class="myCodeP">          &quot;fillBackColor&quot;: {</p>
+  <p class="myCodeP">            &quot;red&quot;: 255,</p>
+  <p class="myCodeP">            &quot;green&quot;: 255,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 255,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;fillGradientMode&quot;: &quot;NONE&quot;,</p>
+  <p class="myCodeP">          &quot;lineSymbolID&quot;: 0,</p>
+  <p class="myCodeP">          &quot;fillGradientAngle&quot;: 0</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;displayOrderBy&quot;: null,</p>
+  <p class="myCodeP">        &quot;symbolScale&quot;: 0,</p>
+  <p class="myCodeP">        &quot;minScale&quot;: 1.3279488466989154E-8,</p>
+  <p class="myCodeP">        &quot;representationField&quot;: &quot;&quot;</p>
+  <p class="myCodeP">      },</p>
+  <p class="myCodeP">      {</p>
+  <p class="myCodeP">        &quot;joinItems&quot;: null,</p>
+  <p class="myCodeP">        &quot;completeLineSymbolDisplayed&quot;: false,</p>
+  <p class="myCodeP">        &quot;ugcLayerType&quot;: &quot;VECTOR&quot;,</p>
+  <p class="myCodeP">        &quot;displayFilter&quot;: null,</p>
+  <p class="myCodeP">        &quot;visible&quot;: true,</p>
+  <p class="myCodeP">        &quot;maxScale&quot;: 0,</p>
+  <p class="myCodeP">        &quot;fieldValuesDisplayFilter&quot;: {</p>
+  <p class="myCodeP">          &quot;fieldName&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">          &quot;values&quot;: [],</p>
+  <p class="myCodeP">          &quot;fieldValuesDisplayMode&quot;: &quot;DISABLE&quot;</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;caption&quot;: &quot;China_island_part@World&quot;,</p>
+  <p class="myCodeP">        &quot;description&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">        &quot;symbolScalable&quot;: false,</p>
+  <p class="myCodeP">        &quot;subLayers&quot;: {},</p>
+  <p class="myCodeP">        &quot;type&quot;: &quot;UGC&quot;,</p>
+  <p class="myCodeP">        &quot;datasetInfo&quot;: {</p>
+  <p class="myCodeP">          &quot;charset&quot;: null,</p>
+  <p class="myCodeP">          &quot;recordCount&quot;: 0,</p>
+  <p class="myCodeP">          &quot;isFileCache&quot;: false,</p>
+  <p class="myCodeP">          &quot;description&quot;: null,</p>
+  <p class="myCodeP">          &quot;type&quot;: &quot;REGION&quot;,</p>
+  <p class="myCodeP">          &quot;dataSourceName&quot;: &quot;World&quot;,</p>
+  <p class="myCodeP">          &quot;tableName&quot;: null,</p>
+  <p class="myCodeP">          &quot;isReadOnly&quot;: false,</p>
+  <p class="myCodeP">          &quot;encodeType&quot;: null,</p>
+  <p class="myCodeP">          &quot;bounds&quot;: {</p>
+  <p class="myCodeP">            &quot;top&quot;: 26.69475,</p>
+  <p class="myCodeP">            &quot;left&quot;: 109.44177,</p>
+  <p class="myCodeP">            &quot;bottom&quot;: 3.8339199999999938,</p>
+  <p class="myCodeP">            &quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">              &quot;x&quot;: 109.44177,</p>
+  <p class="myCodeP">              &quot;y&quot;: 3.8339199999999938</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;right&quot;: 124.59860999999998,</p>
+  <p class="myCodeP">            &quot;rightTop&quot;: {</p>
+  <p class="myCodeP">              &quot;x&quot;: 124.59860999999998,</p>
+  <p class="myCodeP">              &quot;y&quot;: 26.69475</p>
+  <p class="myCodeP">            }</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;name&quot;: &quot;China_island_part&quot;,</p>
+  <p class="myCodeP">          &quot;prjCoordSys&quot;: null,</p>
+  <p class="myCodeP">          &quot;datasourceConnectionInfo&quot;: null</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;queryable&quot;: true,</p>
+  <p class="myCodeP">        &quot;opaqueRate&quot;: 100,</p>
+  <p class="myCodeP">        &quot;minVisibleGeometrySize&quot;: 0.1,</p>
+  <p class="myCodeP">        &quot;name&quot;: &quot;China_island_part@World&quot;,</p>
+  <p class="myCodeP">        &quot;bounds&quot;: {</p>
+  <p class="myCodeP">          &quot;top&quot;: 26.69475,</p>
+  <p class="myCodeP">          &quot;left&quot;: 109.44177,</p>
+  <p class="myCodeP">          &quot;bottom&quot;: 3.8339199999999938,</p>
+  <p class="myCodeP">          &quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: 109.44177,</p>
+  <p class="myCodeP">            &quot;y&quot;: 3.8339199999999938</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;right&quot;: 124.59860999999998,</p>
+  <p class="myCodeP">          &quot;rightTop&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: 124.59860999999998,</p>
+  <p class="myCodeP">            &quot;y&quot;: 26.69475</p>
+  <p class="myCodeP">          }</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;style&quot;: {</p>
+  <p class="myCodeP">          &quot;fillGradientOffsetRatioX&quot;: 0,</p>
+  <p class="myCodeP">          &quot;markerSize&quot;: 2.4,</p>
+  <p class="myCodeP">          &quot;fillForeColor&quot;: {</p>
+  <p class="myCodeP">            &quot;red&quot;: 238,</p>
+  <p class="myCodeP">            &quot;green&quot;: 236,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 225,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;fillGradientOffsetRatioY&quot;: 0,</p>
+  <p class="myCodeP">          &quot;markerWidth&quot;: 0,</p>
+  <p class="myCodeP">          &quot;markerAngle&quot;: 0,</p>
+  <p class="myCodeP">          &quot;fillSymbolID&quot;: 0,</p>
+  <p class="myCodeP">          &quot;lineColor&quot;: {</p>
+  <p class="myCodeP">            &quot;red&quot;: 88,</p>
+  <p class="myCodeP">            &quot;green&quot;: 103,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 101,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;markerSymbolID&quot;: 0,</p>
+  <p class="myCodeP">          &quot;lineWidth&quot;: 0.1,</p>
+  <p class="myCodeP">          &quot;markerHeight&quot;: 0,</p>
+  <p class="myCodeP">          &quot;fillOpaqueRate&quot;: 100,</p>
+  <p class="myCodeP">          &quot;fillBackOpaque&quot;: false,</p>
+  <p class="myCodeP">          &quot;fillBackColor&quot;: {</p>
+  <p class="myCodeP">            &quot;red&quot;: 255,</p>
+  <p class="myCodeP">            &quot;green&quot;: 255,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 255,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;fillGradientMode&quot;: &quot;NONE&quot;,</p>
+  <p class="myCodeP">          &quot;lineSymbolID&quot;: 5,</p>
+  <p class="myCodeP">          &quot;fillGradientAngle&quot;: 0</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;displayOrderBy&quot;: null,</p>
+  <p class="myCodeP">        &quot;symbolScale&quot;: 0,</p>
+  <p class="myCodeP">        &quot;minScale&quot;: 0,</p>
+  <p class="myCodeP">        &quot;representationField&quot;: &quot;&quot;</p>
+  <p class="myCodeP">      },</p>
+  <p class="myCodeP">      {</p>
+  <p class="myCodeP">        &quot;joinItems&quot;: null,</p>
+  <p class="myCodeP">        &quot;completeLineSymbolDisplayed&quot;: false,</p>
+  <p class="myCodeP">        &quot;ugcLayerType&quot;: &quot;VECTOR&quot;,</p>
+  <p class="myCodeP">        &quot;displayFilter&quot;: null,</p>
+  <p class="myCodeP">        &quot;visible&quot;: true,</p>
+  <p class="myCodeP">        &quot;maxScale&quot;: 0,</p>
+  <p class="myCodeP">        &quot;fieldValuesDisplayFilter&quot;: {</p>
+  <p class="myCodeP">          &quot;fieldName&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">          &quot;values&quot;: [],</p>
+  <p class="myCodeP">          &quot;fieldValuesDisplayMode&quot;: &quot;DISABLE&quot;</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;caption&quot;: &quot;Lakes@World&quot;,</p>
+  <p class="myCodeP">        &quot;description&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">        &quot;symbolScalable&quot;: false,</p>
+  <p class="myCodeP">        &quot;subLayers&quot;: {},</p>
+  <p class="myCodeP">        &quot;type&quot;: &quot;UGC&quot;,</p>
+  <p class="myCodeP">        &quot;datasetInfo&quot;: {</p>
+  <p class="myCodeP">          &quot;charset&quot;: null,</p>
+  <p class="myCodeP">          &quot;recordCount&quot;: 0,</p>
+  <p class="myCodeP">          &quot;isFileCache&quot;: false,</p>
+  <p class="myCodeP">          &quot;description&quot;: null,</p>
+  <p class="myCodeP">          &quot;type&quot;: &quot;REGION&quot;,</p>
+  <p class="myCodeP">          &quot;dataSourceName&quot;: &quot;World&quot;,</p>
+  <p class="myCodeP">          &quot;tableName&quot;: null,</p>
+  <p class="myCodeP">          &quot;isReadOnly&quot;: false,</p>
+  <p class="myCodeP">          &quot;encodeType&quot;: null,</p>
+  <p class="myCodeP">          &quot;bounds&quot;: {</p>
+  <p class="myCodeP">            &quot;top&quot;: 67.04693636363636,</p>
+  <p class="myCodeP">            &quot;left&quot;: -125.12331818181818,</p>
+  <p class="myCodeP">            &quot;bottom&quot;: -16.606263636363636,</p>
+  <p class="myCodeP">            &quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">              &quot;x&quot;: -125.12331818181818,</p>
+  <p class="myCodeP">              &quot;y&quot;: -16.606263636363636</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;right&quot;: 109.965,</p>
+  <p class="myCodeP">            &quot;rightTop&quot;: {</p>
+  <p class="myCodeP">              &quot;x&quot;: 109.965,</p>
+  <p class="myCodeP">              &quot;y&quot;: 67.04693636363636</p>
+  <p class="myCodeP">            }</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;name&quot;: &quot;Lakes&quot;,</p>
+  <p class="myCodeP">          &quot;prjCoordSys&quot;: null,</p>
+  <p class="myCodeP">          &quot;datasourceConnectionInfo&quot;: null</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;queryable&quot;: false,</p>
+  <p class="myCodeP">        &quot;opaqueRate&quot;: 100,</p>
+  <p class="myCodeP">        &quot;minVisibleGeometrySize&quot;: 0.4,</p>
+  <p class="myCodeP">        &quot;name&quot;: &quot;Lakes@World&quot;,</p>
+  <p class="myCodeP">        &quot;bounds&quot;: {</p>
+  <p class="myCodeP">          &quot;top&quot;: 67.04693636363636,</p>
+  <p class="myCodeP">          &quot;left&quot;: -125.12331818181818,</p>
+  <p class="myCodeP">          &quot;bottom&quot;: -16.606263636363636,</p>
+  <p class="myCodeP">          &quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: -125.12331818181818,</p>
+  <p class="myCodeP">            &quot;y&quot;: -16.606263636363636</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;right&quot;: 109.965,</p>
+  <p class="myCodeP">          &quot;rightTop&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: 109.965,</p>
+  <p class="myCodeP">            &quot;y&quot;: 67.04693636363636</p>
+  <p class="myCodeP">          }</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;style&quot;: {</p>
+  <p class="myCodeP">          &quot;fillGradientOffsetRatioX&quot;: 0,</p>
+  <p class="myCodeP">          &quot;markerSize&quot;: 2.4,</p>
+  <p class="myCodeP">          &quot;fillForeColor&quot;: {</p>
+  <p class="myCodeP">            &quot;red&quot;: 179,</p>
+  <p class="myCodeP">            &quot;green&quot;: 209,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 255,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;fillGradientOffsetRatioY&quot;: 0,</p>
+  <p class="myCodeP">          &quot;markerWidth&quot;: 0,</p>
+  <p class="myCodeP">          &quot;markerAngle&quot;: 0,</p>
+  <p class="myCodeP">          &quot;fillSymbolID&quot;: 0,</p>
+  <p class="myCodeP">          &quot;lineColor&quot;: {</p>
+  <p class="myCodeP">            &quot;red&quot;: 179,</p>
+  <p class="myCodeP">            &quot;green&quot;: 209,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 255,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;markerSymbolID&quot;: 0,</p>
+  <p class="myCodeP">          &quot;lineWidth&quot;: 0.1,</p>
+  <p class="myCodeP">          &quot;markerHeight&quot;: 0,</p>
+  <p class="myCodeP">          &quot;fillOpaqueRate&quot;: 100,</p>
+  <p class="myCodeP">          &quot;fillBackOpaque&quot;: true,</p>
+  <p class="myCodeP">          &quot;fillBackColor&quot;: {</p>
+  <p class="myCodeP">            &quot;red&quot;: 255,</p>
+  <p class="myCodeP">            &quot;green&quot;: 255,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 255,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;fillGradientMode&quot;: &quot;NONE&quot;,</p>
+  <p class="myCodeP">          &quot;lineSymbolID&quot;: 0,</p>
+  <p class="myCodeP">          &quot;fillGradientAngle&quot;: 0</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;displayOrderBy&quot;: null,</p>
+  <p class="myCodeP">        &quot;symbolScale&quot;: 0,</p>
+  <p class="myCodeP">        &quot;minScale&quot;: 5.439278476078758E-9,</p>
+  <p class="myCodeP">        &quot;representationField&quot;: &quot;&quot;</p>
+  <p class="myCodeP">      },</p>
+  <p class="myCodeP">      {</p>
+  <p class="myCodeP">        &quot;joinItems&quot;: null,</p>
+  <p class="myCodeP">        &quot;completeLineSymbolDisplayed&quot;: false,</p>
+  <p class="myCodeP">        &quot;themeElementPosition&quot;: null,</p>
+  <p class="myCodeP">        &quot;ugcLayerType&quot;: &quot;THEME&quot;,</p>
+  <p class="myCodeP">        &quot;displayFilter&quot;: null,</p>
+  <p class="myCodeP">        &quot;visible&quot;: false,</p>
+  <p class="myCodeP">        &quot;maxScale&quot;: 0,</p>
+  <p class="myCodeP">        &quot;fieldValuesDisplayFilter&quot;: {</p>
+  <p class="myCodeP">          &quot;fieldName&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">          &quot;values&quot;: [],</p>
+  <p class="myCodeP">          &quot;fieldValuesDisplayMode&quot;: &quot;DISABLE&quot;</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;caption&quot;: &quot;Countries@World#2&quot;,</p>
+  <p class="myCodeP">        &quot;description&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">        &quot;symbolScalable&quot;: false,</p>
+  <p class="myCodeP">        &quot;subLayers&quot;: {},</p>
+  <p class="myCodeP">        &quot;type&quot;: &quot;UGC&quot;,</p>
+  <p class="myCodeP">        &quot;datasetInfo&quot;: {</p>
+  <p class="myCodeP">          &quot;charset&quot;: null,</p>
+  <p class="myCodeP">          &quot;recordCount&quot;: 0,</p>
+  <p class="myCodeP">          &quot;isFileCache&quot;: false,</p>
+  <p class="myCodeP">          &quot;description&quot;: null,</p>
+  <p class="myCodeP">          &quot;type&quot;: &quot;REGION&quot;,</p>
+  <p class="myCodeP">          &quot;dataSourceName&quot;: &quot;World&quot;,</p>
+  <p class="myCodeP">          &quot;tableName&quot;: null,</p>
+  <p class="myCodeP">          &quot;isReadOnly&quot;: false,</p>
+  <p class="myCodeP">          &quot;encodeType&quot;: null,</p>
+  <p class="myCodeP">          &quot;bounds&quot;: {</p>
+  <p class="myCodeP">            &quot;top&quot;: 83.62359619140626,</p>
+  <p class="myCodeP">            &quot;left&quot;: -180,</p>
+  <p class="myCodeP">            &quot;bottom&quot;: -90,</p>
+  <p class="myCodeP">            &quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">              &quot;x&quot;: -180,</p>
+  <p class="myCodeP">              &quot;y&quot;: -90</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;right&quot;: 180,</p>
+  <p class="myCodeP">            &quot;rightTop&quot;: {</p>
+  <p class="myCodeP">              &quot;x&quot;: 180,</p>
+  <p class="myCodeP">              &quot;y&quot;: 83.62359619140626</p>
+  <p class="myCodeP">            }</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;name&quot;: &quot;Countries&quot;,</p>
+  <p class="myCodeP">          &quot;prjCoordSys&quot;: null,</p>
+  <p class="myCodeP">          &quot;datasourceConnectionInfo&quot;: null</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;queryable&quot;: true,</p>
+  <p class="myCodeP">        &quot;opaqueRate&quot;: 100,</p>
+  <p class="myCodeP">        &quot;minVisibleGeometrySize&quot;: 0.4,</p>
+  <p class="myCodeP">        &quot;name&quot;: &quot;Countries@World#2&quot;,</p>
+  <p class="myCodeP">        &quot;bounds&quot;: {</p>
+  <p class="myCodeP">          &quot;top&quot;: 83.62359619140626,</p>
+  <p class="myCodeP">          &quot;left&quot;: -180,</p>
+  <p class="myCodeP">          &quot;bottom&quot;: -90,</p>
+  <p class="myCodeP">          &quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: -180,</p>
+  <p class="myCodeP">            &quot;y&quot;: -90</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;right&quot;: 180,</p>
+  <p class="myCodeP">          &quot;rightTop&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: 180,</p>
+  <p class="myCodeP">            &quot;y&quot;: 83.62359619140626</p>
+  <p class="myCodeP">          }</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;theme&quot;: {</p>
+  <p class="myCodeP">          &quot;customMarkerAngleExpression&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">          &quot;uniqueExpression&quot;: &quot;Countries.ColorID&quot;,</p>
+  <p class="myCodeP">          &quot;memoryData&quot;: null,</p>
+  <p class="myCodeP">          &quot;defaultStyle&quot;: {</p>
+  <p class="myCodeP">            &quot;fillGradientOffsetRatioX&quot;: 0,</p>
+  <p class="myCodeP">            &quot;markerSize&quot;: 2.4,</p>
+  <p class="myCodeP">            &quot;fillForeColor&quot;: {</p>
+  <p class="myCodeP">              &quot;red&quot;: 189,</p>
+  <p class="myCodeP">              &quot;green&quot;: 235,</p>
+  <p class="myCodeP">              &quot;blue&quot;: 255,</p>
+  <p class="myCodeP">              &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;fillGradientOffsetRatioY&quot;: 0,</p>
+  <p class="myCodeP">            &quot;markerWidth&quot;: 0,</p>
+  <p class="myCodeP">            &quot;markerAngle&quot;: 0,</p>
+  <p class="myCodeP">            &quot;fillSymbolID&quot;: 0,</p>
+  <p class="myCodeP">            &quot;lineColor&quot;: {</p>
+  <p class="myCodeP">              &quot;red&quot;: 0,</p>
+  <p class="myCodeP">              &quot;green&quot;: 0,</p>
+  <p class="myCodeP">              &quot;blue&quot;: 0,</p>
+  <p class="myCodeP">              &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;markerSymbolID&quot;: 0,</p>
+  <p class="myCodeP">            &quot;lineWidth&quot;: 0.1,</p>
+  <p class="myCodeP">            &quot;markerHeight&quot;: 0,</p>
+  <p class="myCodeP">            &quot;fillOpaqueRate&quot;: 100,</p>
+  <p class="myCodeP">            &quot;fillBackOpaque&quot;: true,</p>
+  <p class="myCodeP">            &quot;fillBackColor&quot;: {</p>
+  <p class="myCodeP">              &quot;red&quot;: 255,</p>
+  <p class="myCodeP">              &quot;green&quot;: 255,</p>
+  <p class="myCodeP">              &quot;blue&quot;: 255,</p>
+  <p class="myCodeP">              &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;fillGradientMode&quot;: &quot;NONE&quot;,</p>
+  <p class="myCodeP">            &quot;lineSymbolID&quot;: 0,</p>
+  <p class="myCodeP">            &quot;fillGradientAngle&quot;: 0</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;customMarkerSizeExpression&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">          &quot;type&quot;: &quot;UNIQUE&quot;,</p>
+  <p class="myCodeP">          &quot;items&quot;: [</p>
+  <p class="myCodeP">            {</p>
+  <p class="myCodeP">              &quot;visible&quot;: true,</p>
+  <p class="myCodeP">              &quot;unique&quot;: &quot;1&quot;,</p>
+  <p class="myCodeP">              &quot;caption&quot;: &quot;1&quot;,</p>
+  <p class="myCodeP">              &quot;style&quot;: {</p>
+  <p class="myCodeP">                &quot;fillGradientOffsetRatioX&quot;: 0,</p>
+  <p class="myCodeP">                &quot;markerSize&quot;: 2.4,</p>
+  <p class="myCodeP">                &quot;fillForeColor&quot;: {</p>
+  <p class="myCodeP">                  &quot;red&quot;: 199,</p>
+  <p class="myCodeP">                  &quot;green&quot;: 207,</p>
+  <p class="myCodeP">                  &quot;blue&quot;: 247,</p>
+  <p class="myCodeP">                  &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">                },</p>
+  <p class="myCodeP">                &quot;fillGradientOffsetRatioY&quot;: 0,</p>
+  <p class="myCodeP">                &quot;markerWidth&quot;: 0,</p>
+  <p class="myCodeP">                &quot;markerAngle&quot;: 0,</p>
+  <p class="myCodeP">                &quot;fillSymbolID&quot;: 0,</p>
+  <p class="myCodeP">                &quot;lineColor&quot;: {</p>
+  <p class="myCodeP">                  &quot;red&quot;: 199,</p>
+  <p class="myCodeP">                  &quot;green&quot;: 207,</p>
+  <p class="myCodeP">                  &quot;blue&quot;: 247,</p>
+  <p class="myCodeP">                  &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">                },</p>
+  <p class="myCodeP">                &quot;markerSymbolID&quot;: 0,</p>
+  <p class="myCodeP">                &quot;lineWidth&quot;: 0.1,</p>
+  <p class="myCodeP">                &quot;markerHeight&quot;: 0,</p>
+  <p class="myCodeP">                &quot;fillOpaqueRate&quot;: 100,</p>
+  <p class="myCodeP">                &quot;fillBackOpaque&quot;: true,</p>
+  <p class="myCodeP">                &quot;fillBackColor&quot;: {</p>
+  <p class="myCodeP">                  &quot;red&quot;: 255,</p>
+  <p class="myCodeP">                  &quot;green&quot;: 255,</p>
+  <p class="myCodeP">                  &quot;blue&quot;: 255,</p>
+  <p class="myCodeP">                  &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">                },</p>
+  <p class="myCodeP">                &quot;fillGradientMode&quot;: &quot;NONE&quot;,</p>
+  <p class="myCodeP">                &quot;lineSymbolID&quot;: 0,</p>
+  <p class="myCodeP">                &quot;fillGradientAngle&quot;: 0</p>
+  <p class="myCodeP">              }</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            {</p>
+  <p class="myCodeP">              &quot;visible&quot;: true,</p>
+  <p class="myCodeP">              &quot;unique&quot;: &quot;2&quot;,</p>
+  <p class="myCodeP">              &quot;caption&quot;: &quot;2&quot;,</p>
+  <p class="myCodeP">              &quot;style&quot;: {</p>
+  <p class="myCodeP">                &quot;fillGradientOffsetRatioX&quot;: 0,</p>
+  <p class="myCodeP">                &quot;markerSize&quot;: 2.4,</p>
+  <p class="myCodeP">                &quot;fillForeColor&quot;: {</p>
+  <p class="myCodeP">                  &quot;red&quot;: 193,</p>
+  <p class="myCodeP">                  &quot;green&quot;: 227,</p>
+  <p class="myCodeP">                  &quot;blue&quot;: 201,</p>
+  <p class="myCodeP">                  &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">                },</p>
+  <p class="myCodeP">                &quot;fillGradientOffsetRatioY&quot;: 0,</p>
+  <p class="myCodeP">                &quot;markerWidth&quot;: 0,</p>
+  <p class="myCodeP">                &quot;markerAngle&quot;: 0,</p>
+  <p class="myCodeP">                &quot;fillSymbolID&quot;: 0,</p>
+  <p class="myCodeP">                &quot;lineColor&quot;: {</p>
+  <p class="myCodeP">                  &quot;red&quot;: 193,</p>
+  <p class="myCodeP">                  &quot;green&quot;: 227,</p>
+  <p class="myCodeP">                  &quot;blue&quot;: 201,</p>
+  <p class="myCodeP">                  &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">                },</p>
+  <p class="myCodeP">                &quot;markerSymbolID&quot;: 0,</p>
+  <p class="myCodeP">                &quot;lineWidth&quot;: 0.1,</p>
+  <p class="myCodeP">                &quot;markerHeight&quot;: 0,</p>
+  <p class="myCodeP">                &quot;fillOpaqueRate&quot;: 100,</p>
+  <p class="myCodeP">                &quot;fillBackOpaque&quot;: true,</p>
+  <p class="myCodeP">                &quot;fillBackColor&quot;: {</p>
+  <p class="myCodeP">                  &quot;red&quot;: 255,</p>
+  <p class="myCodeP">                  &quot;green&quot;: 255,</p>
+  <p class="myCodeP">                  &quot;blue&quot;: 255,</p>
+  <p class="myCodeP">                  &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">                },</p>
+  <p class="myCodeP">                &quot;fillGradientMode&quot;: &quot;NONE&quot;,</p>
+  <p class="myCodeP">                &quot;lineSymbolID&quot;: 0,</p>
+  <p class="myCodeP">                &quot;fillGradientAngle&quot;: 0</p>
+  <p class="myCodeP">              }</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            {</p>
+  <p class="myCodeP">              &quot;visible&quot;: true,</p>
+  <p class="myCodeP">              &quot;unique&quot;: &quot;3&quot;,</p>
+  <p class="myCodeP">              &quot;caption&quot;: &quot;3&quot;,</p>
+  <p class="myCodeP">              &quot;style&quot;: {</p>
+  <p class="myCodeP">                &quot;fillGradientOffsetRatioX&quot;: 0,</p>
+  <p class="myCodeP">                &quot;markerSize&quot;: 2.4,</p>
+  <p class="myCodeP">                &quot;fillForeColor&quot;: {</p>
+  <p class="myCodeP">                  &quot;red&quot;: 247,</p>
+  <p class="myCodeP">                  &quot;green&quot;: 209,</p>
+  <p class="myCodeP">                  &quot;blue&quot;: 197,</p>
+  <p class="myCodeP">                  &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">                },</p>
+  <p class="myCodeP">                &quot;fillGradientOffsetRatioY&quot;: 0,</p>
+  <p class="myCodeP">                &quot;markerWidth&quot;: 0,</p>
+  <p class="myCodeP">                &quot;markerAngle&quot;: 0,</p>
+  <p class="myCodeP">                &quot;fillSymbolID&quot;: 0,</p>
+  <p class="myCodeP">                &quot;lineColor&quot;: {</p>
+  <p class="myCodeP">                  &quot;red&quot;: 247,</p>
+  <p class="myCodeP">                  &quot;green&quot;: 209,</p>
+  <p class="myCodeP">                  &quot;blue&quot;: 197,</p>
+  <p class="myCodeP">                  &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">                },</p>
+  <p class="myCodeP">                &quot;markerSymbolID&quot;: 0,</p>
+  <p class="myCodeP">                &quot;lineWidth&quot;: 0.1,</p>
+  <p class="myCodeP">                &quot;markerHeight&quot;: 0,</p>
+  <p class="myCodeP">                &quot;fillOpaqueRate&quot;: 100,</p>
+  <p class="myCodeP">                &quot;fillBackOpaque&quot;: true,</p>
+  <p class="myCodeP">                &quot;fillBackColor&quot;: {</p>
+  <p class="myCodeP">                  &quot;red&quot;: 255,</p>
+  <p class="myCodeP">                  &quot;green&quot;: 255,</p>
+  <p class="myCodeP">                  &quot;blue&quot;: 255,</p>
+  <p class="myCodeP">                  &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">                },</p>
+  <p class="myCodeP">                &quot;fillGradientMode&quot;: &quot;NONE&quot;,</p>
+  <p class="myCodeP">                &quot;lineSymbolID&quot;: 0,</p>
+  <p class="myCodeP">                &quot;fillGradientAngle&quot;: 0</p>
+  <p class="myCodeP">              }</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            {</p>
+  <p class="myCodeP">              &quot;visible&quot;: true,</p>
+  <p class="myCodeP">              &quot;unique&quot;: &quot;4&quot;,</p>
+  <p class="myCodeP">              &quot;caption&quot;: &quot;4&quot;,</p>
+  <p class="myCodeP">              &quot;style&quot;: {</p>
+  <p class="myCodeP">                &quot;fillGradientOffsetRatioX&quot;: 0,</p>
+  <p class="myCodeP">                &quot;markerSize&quot;: 2.4,</p>
+  <p class="myCodeP">                &quot;fillForeColor&quot;: {</p>
+  <p class="myCodeP">                  &quot;red&quot;: 247,</p>
+  <p class="myCodeP">                  &quot;green&quot;: 231,</p>
+  <p class="myCodeP">                  &quot;blue&quot;: 197,</p>
+  <p class="myCodeP">                  &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">                },</p>
+  <p class="myCodeP">                &quot;fillGradientOffsetRatioY&quot;: 0,</p>
+  <p class="myCodeP">                &quot;markerWidth&quot;: 0,</p>
+  <p class="myCodeP">                &quot;markerAngle&quot;: 0,</p>
+  <p class="myCodeP">                &quot;fillSymbolID&quot;: 0,</p>
+  <p class="myCodeP">                &quot;lineColor&quot;: {</p>
+  <p class="myCodeP">                  &quot;red&quot;: 247,</p>
+  <p class="myCodeP">                  &quot;green&quot;: 231,</p>
+  <p class="myCodeP">                  &quot;blue&quot;: 197,</p>
+  <p class="myCodeP">                  &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">                },</p>
+  <p class="myCodeP">                &quot;markerSymbolID&quot;: 0,</p>
+  <p class="myCodeP">                &quot;lineWidth&quot;: 0.1,</p>
+  <p class="myCodeP">                &quot;markerHeight&quot;: 0,</p>
+  <p class="myCodeP">                &quot;fillOpaqueRate&quot;: 100,</p>
+  <p class="myCodeP">                &quot;fillBackOpaque&quot;: true,</p>
+  <p class="myCodeP">                &quot;fillBackColor&quot;: {</p>
+  <p class="myCodeP">                  &quot;red&quot;: 255,</p>
+  <p class="myCodeP">                  &quot;green&quot;: 255,</p>
+  <p class="myCodeP">                  &quot;blue&quot;: 255,</p>
+  <p class="myCodeP">                  &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">                },</p>
+  <p class="myCodeP">                &quot;fillGradientMode&quot;: &quot;NONE&quot;,</p>
+  <p class="myCodeP">                &quot;lineSymbolID&quot;: 0,</p>
+  <p class="myCodeP">                &quot;fillGradientAngle&quot;: 0</p>
+  <p class="myCodeP">              }</p>
+  <p class="myCodeP">            }</p>
+  <p class="myCodeP">          ],</p>
+  <p class="myCodeP">          &quot;colorGradientType&quot;: null</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;displayOrderBy&quot;: null,</p>
+  <p class="myCodeP">        &quot;symbolScale&quot;: 0,</p>
+  <p class="myCodeP">        &quot;minScale&quot;: 0,</p>
+  <p class="myCodeP">        &quot;representationField&quot;: &quot;&quot;</p>
+  <p class="myCodeP">      },</p>
+  <p class="myCodeP">      {</p>
+  <p class="myCodeP">        &quot;joinItems&quot;: null,</p>
+  <p class="myCodeP">        &quot;completeLineSymbolDisplayed&quot;: false,</p>
+  <p class="myCodeP">        &quot;ugcLayerType&quot;: &quot;VECTOR&quot;,</p>
+  <p class="myCodeP">        &quot;displayFilter&quot;: null,</p>
+  <p class="myCodeP">        &quot;visible&quot;: true,</p>
+  <p class="myCodeP">        &quot;maxScale&quot;: 0,</p>
+  <p class="myCodeP">        &quot;fieldValuesDisplayFilter&quot;: {</p>
+  <p class="myCodeP">          &quot;fieldName&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">          &quot;values&quot;: [],</p>
+  <p class="myCodeP">          &quot;fieldValuesDisplayMode&quot;: &quot;DISABLE&quot;</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;caption&quot;: &quot;Countries@World&quot;,</p>
+  <p class="myCodeP">        &quot;description&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">        &quot;symbolScalable&quot;: false,</p>
+  <p class="myCodeP">        &quot;subLayers&quot;: {},</p>
+  <p class="myCodeP">        &quot;type&quot;: &quot;UGC&quot;,</p>
+  <p class="myCodeP">        &quot;datasetInfo&quot;: {</p>
+  <p class="myCodeP">          &quot;charset&quot;: null,</p>
+  <p class="myCodeP">          &quot;recordCount&quot;: 0,</p>
+  <p class="myCodeP">          &quot;isFileCache&quot;: false,</p>
+  <p class="myCodeP">          &quot;description&quot;: null,</p>
+  <p class="myCodeP">          &quot;type&quot;: &quot;REGION&quot;,</p>
+  <p class="myCodeP">          &quot;dataSourceName&quot;: &quot;World&quot;,</p>
+  <p class="myCodeP">          &quot;tableName&quot;: null,</p>
+  <p class="myCodeP">          &quot;isReadOnly&quot;: false,</p>
+  <p class="myCodeP">          &quot;encodeType&quot;: null,</p>
+  <p class="myCodeP">          &quot;bounds&quot;: {</p>
+  <p class="myCodeP">            &quot;top&quot;: 83.62359619140626,</p>
+  <p class="myCodeP">            &quot;left&quot;: -180,</p>
+  <p class="myCodeP">            &quot;bottom&quot;: -90,</p>
+  <p class="myCodeP">            &quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">              &quot;x&quot;: -180,</p>
+  <p class="myCodeP">              &quot;y&quot;: -90</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;right&quot;: 180,</p>
+  <p class="myCodeP">            &quot;rightTop&quot;: {</p>
+  <p class="myCodeP">              &quot;x&quot;: 180,</p>
+  <p class="myCodeP">              &quot;y&quot;: 83.62359619140626</p>
+  <p class="myCodeP">            }</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;name&quot;: &quot;Countries&quot;,</p>
+  <p class="myCodeP">          &quot;prjCoordSys&quot;: null,</p>
+  <p class="myCodeP">          &quot;datasourceConnectionInfo&quot;: null</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;queryable&quot;: false,</p>
+  <p class="myCodeP">        &quot;opaqueRate&quot;: 100,</p>
+  <p class="myCodeP">        &quot;minVisibleGeometrySize&quot;: 0.4,</p>
+  <p class="myCodeP">        &quot;name&quot;: &quot;Countries@World&quot;,</p>
+  <p class="myCodeP">        &quot;bounds&quot;: {</p>
+  <p class="myCodeP">          &quot;top&quot;: 83.62359619140626,</p>
+  <p class="myCodeP">          &quot;left&quot;: -180,</p>
+  <p class="myCodeP">          &quot;bottom&quot;: -90,</p>
+  <p class="myCodeP">          &quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: -180,</p>
+  <p class="myCodeP">            &quot;y&quot;: -90</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;right&quot;: 180,</p>
+  <p class="myCodeP">          &quot;rightTop&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: 180,</p>
+  <p class="myCodeP">            &quot;y&quot;: 83.62359619140626</p>
+  <p class="myCodeP">          }</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;style&quot;: {</p>
+  <p class="myCodeP">          &quot;fillGradientOffsetRatioX&quot;: 0,</p>
+  <p class="myCodeP">          &quot;markerSize&quot;: 2.4,</p>
+  <p class="myCodeP">          &quot;fillForeColor&quot;: {</p>
+  <p class="myCodeP">            &quot;red&quot;: 224,</p>
+  <p class="myCodeP">            &quot;green&quot;: 207,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 226,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;fillGradientOffsetRatioY&quot;: 0,</p>
+  <p class="myCodeP">          &quot;markerWidth&quot;: 0,</p>
+  <p class="myCodeP">          &quot;markerAngle&quot;: 0,</p>
+  <p class="myCodeP">          &quot;fillSymbolID&quot;: 1,</p>
+  <p class="myCodeP">          &quot;lineColor&quot;: {</p>
+  <p class="myCodeP">            &quot;red&quot;: 167,</p>
+  <p class="myCodeP">            &quot;green&quot;: 170,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 164,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;markerSymbolID&quot;: 0,</p>
+  <p class="myCodeP">          &quot;lineWidth&quot;: 0.1,</p>
+  <p class="myCodeP">          &quot;markerHeight&quot;: 0,</p>
+  <p class="myCodeP">          &quot;fillOpaqueRate&quot;: 100,</p>
+  <p class="myCodeP">          &quot;fillBackOpaque&quot;: true,</p>
+  <p class="myCodeP">          &quot;fillBackColor&quot;: {</p>
+  <p class="myCodeP">            &quot;red&quot;: 255,</p>
+  <p class="myCodeP">            &quot;green&quot;: 255,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 255,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;fillGradientMode&quot;: &quot;NONE&quot;,</p>
+  <p class="myCodeP">          &quot;lineSymbolID&quot;: 0,</p>
+  <p class="myCodeP">          &quot;fillGradientAngle&quot;: 0</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;displayOrderBy&quot;: null,</p>
+  <p class="myCodeP">        &quot;symbolScale&quot;: 0,</p>
+  <p class="myCodeP">        &quot;minScale&quot;: 5.439278476078758E-9,</p>
+  <p class="myCodeP">        &quot;representationField&quot;: &quot;&quot;</p>
+  <p class="myCodeP">      },</p>
+  <p class="myCodeP">      {</p>
+  <p class="myCodeP">        &quot;joinItems&quot;: null,</p>
+  <p class="myCodeP">        &quot;completeLineSymbolDisplayed&quot;: false,</p>
+  <p class="myCodeP">        &quot;ugcLayerType&quot;: &quot;VECTOR&quot;,</p>
+  <p class="myCodeP">        &quot;displayFilter&quot;: null,</p>
+  <p class="myCodeP">        &quot;visible&quot;: true,</p>
+  <p class="myCodeP">        &quot;maxScale&quot;: 0,</p>
+  <p class="myCodeP">        &quot;fieldValuesDisplayFilter&quot;: {</p>
+  <p class="myCodeP">          &quot;fieldName&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">          &quot;values&quot;: [],</p>
+  <p class="myCodeP">          &quot;fieldValuesDisplayMode&quot;: &quot;DISABLE&quot;</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;caption&quot;: &quot;OceanL@World&quot;,</p>
+  <p class="myCodeP">        &quot;description&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">        &quot;symbolScalable&quot;: false,</p>
+  <p class="myCodeP">        &quot;subLayers&quot;: {},</p>
+  <p class="myCodeP">        &quot;type&quot;: &quot;UGC&quot;,</p>
+  <p class="myCodeP">        &quot;datasetInfo&quot;: {</p>
+  <p class="myCodeP">          &quot;charset&quot;: null,</p>
+  <p class="myCodeP">          &quot;recordCount&quot;: 0,</p>
+  <p class="myCodeP">          &quot;isFileCache&quot;: false,</p>
+  <p class="myCodeP">          &quot;description&quot;: null,</p>
+  <p class="myCodeP">          &quot;type&quot;: &quot;LINE&quot;,</p>
+  <p class="myCodeP">          &quot;dataSourceName&quot;: &quot;World&quot;,</p>
+  <p class="myCodeP">          &quot;tableName&quot;: null,</p>
+  <p class="myCodeP">          &quot;isReadOnly&quot;: false,</p>
+  <p class="myCodeP">          &quot;encodeType&quot;: null,</p>
+  <p class="myCodeP">          &quot;bounds&quot;: {</p>
+  <p class="myCodeP">            &quot;top&quot;: 83.62359619999998,</p>
+  <p class="myCodeP">            &quot;left&quot;: -180,</p>
+  <p class="myCodeP">            &quot;bottom&quot;: -90,</p>
+  <p class="myCodeP">            &quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">              &quot;x&quot;: -180,</p>
+  <p class="myCodeP">              &quot;y&quot;: -90</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;right&quot;: 180,</p>
+  <p class="myCodeP">            &quot;rightTop&quot;: {</p>
+  <p class="myCodeP">              &quot;x&quot;: 180,</p>
+  <p class="myCodeP">              &quot;y&quot;: 83.62359619999998</p>
+  <p class="myCodeP">            }</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;name&quot;: &quot;Ocean_Label&quot;,</p>
+  <p class="myCodeP">          &quot;prjCoordSys&quot;: null,</p>
+  <p class="myCodeP">          &quot;datasourceConnectionInfo&quot;: null</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;queryable&quot;: false,</p>
+  <p class="myCodeP">        &quot;opaqueRate&quot;: 100,</p>
+  <p class="myCodeP">        &quot;minVisibleGeometrySize&quot;: 0.4,</p>
+  <p class="myCodeP">        &quot;name&quot;: &quot;OceanL@World&quot;,</p>
+  <p class="myCodeP">        &quot;bounds&quot;: {</p>
+  <p class="myCodeP">          &quot;top&quot;: 83.62359619999998,</p>
+  <p class="myCodeP">          &quot;left&quot;: -180,</p>
+  <p class="myCodeP">          &quot;bottom&quot;: -90,</p>
+  <p class="myCodeP">          &quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: -180,</p>
+  <p class="myCodeP">            &quot;y&quot;: -90</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;right&quot;: 180,</p>
+  <p class="myCodeP">          &quot;rightTop&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: 180,</p>
+  <p class="myCodeP">            &quot;y&quot;: 83.62359619999998</p>
+  <p class="myCodeP">          }</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;style&quot;: {</p>
+  <p class="myCodeP">          &quot;fillGradientOffsetRatioX&quot;: 0,</p>
+  <p class="myCodeP">          &quot;markerSize&quot;: 2.4,</p>
+  <p class="myCodeP">          &quot;fillForeColor&quot;: {</p>
+  <p class="myCodeP">            &quot;red&quot;: 208,</p>
+  <p class="myCodeP">            &quot;green&quot;: 255,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 240,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;fillGradientOffsetRatioY&quot;: 0,</p>
+  <p class="myCodeP">          &quot;markerWidth&quot;: 0,</p>
+  <p class="myCodeP">          &quot;markerAngle&quot;: 0,</p>
+  <p class="myCodeP">          &quot;fillSymbolID&quot;: 0,</p>
+  <p class="myCodeP">          &quot;lineColor&quot;: {</p>
+  <p class="myCodeP">            &quot;red&quot;: 179,</p>
+  <p class="myCodeP">            &quot;green&quot;: 209,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 255,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;markerSymbolID&quot;: 0,</p>
+  <p class="myCodeP">          &quot;lineWidth&quot;: 1,</p>
+  <p class="myCodeP">          &quot;markerHeight&quot;: 0,</p>
+  <p class="myCodeP">          &quot;fillOpaqueRate&quot;: 100,</p>
+  <p class="myCodeP">          &quot;fillBackOpaque&quot;: true,</p>
+  <p class="myCodeP">          &quot;fillBackColor&quot;: {</p>
+  <p class="myCodeP">            &quot;red&quot;: 255,</p>
+  <p class="myCodeP">            &quot;green&quot;: 255,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 255,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;fillGradientMode&quot;: &quot;NONE&quot;,</p>
+  <p class="myCodeP">          &quot;lineSymbolID&quot;: 0,</p>
+  <p class="myCodeP">          &quot;fillGradientAngle&quot;: 0</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;displayOrderBy&quot;: null,</p>
+  <p class="myCodeP">        &quot;symbolScale&quot;: 0,</p>
+  <p class="myCodeP">        &quot;minScale&quot;: 5.439278476078758E-9,</p>
+  <p class="myCodeP">        &quot;representationField&quot;: &quot;&quot;</p>
+  <p class="myCodeP">      },</p>
+  <p class="myCodeP">      {</p>
+  <p class="myCodeP">        &quot;ugcLayerType&quot;: &quot;GRID&quot;,</p>
+  <p class="myCodeP">        &quot;displayFilter&quot;: null,</p>
+  <p class="myCodeP">        &quot;dashStyle&quot;: null,</p>
+  <p class="myCodeP">        &quot;solidStyle&quot;: null,</p>
+  <p class="myCodeP">        &quot;sizeFixed&quot;: false,</p>
+  <p class="myCodeP">        &quot;fieldValuesDisplayFilter&quot;: {</p>
+  <p class="myCodeP">          &quot;fieldName&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">          &quot;values&quot;: [],</p>
+  <p class="myCodeP">          &quot;fieldValuesDisplayMode&quot;: &quot;DISABLE&quot;</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;specialValueTransparent&quot;: false,</p>
+  <p class="myCodeP">        &quot;verticalSpacing&quot;: 0,</p>
+  <p class="myCodeP">        &quot;caption&quot;: &quot;landcover@World&quot;,</p>
+  <p class="myCodeP">        &quot;description&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">        &quot;type&quot;: &quot;UGC&quot;,</p>
+  <p class="myCodeP">        &quot;colors&quot;: [</p>
+  <p class="myCodeP">          {</p>
+  <p class="myCodeP">            &quot;red&quot;: 179,</p>
+  <p class="myCodeP">            &quot;green&quot;: 209,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 255,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          {</p>
+  <p class="myCodeP">            &quot;red&quot;: 182,</p>
+  <p class="myCodeP">            &quot;green&quot;: 213,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 170,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          {</p>
+  <p class="myCodeP">            &quot;red&quot;: 178,</p>
+  <p class="myCodeP">            &quot;green&quot;: 210,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 174,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          {</p>
+  <p class="myCodeP">            &quot;red&quot;: 199,</p>
+  <p class="myCodeP">            &quot;green&quot;: 218,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 182,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          {</p>
+  <p class="myCodeP">            &quot;red&quot;: 161,</p>
+  <p class="myCodeP">            &quot;green&quot;: 197,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 181,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          {</p>
+  <p class="myCodeP">            &quot;red&quot;: 161,</p>
+  <p class="myCodeP">            &quot;green&quot;: 197,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 181,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          {</p>
+  <p class="myCodeP">            &quot;red&quot;: 199,</p>
+  <p class="myCodeP">            &quot;green&quot;: 218,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 182,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          {</p>
+  <p class="myCodeP">            &quot;red&quot;: 209,</p>
+  <p class="myCodeP">            &quot;green&quot;: 221,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 186,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          {</p>
+  <p class="myCodeP">            &quot;red&quot;: 227,</p>
+  <p class="myCodeP">            &quot;green&quot;: 226,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 217,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          {</p>
+  <p class="myCodeP">            &quot;red&quot;: 244,</p>
+  <p class="myCodeP">            &quot;green&quot;: 238,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 203,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          {</p>
+  <p class="myCodeP">            &quot;red&quot;: 233,</p>
+  <p class="myCodeP">            &quot;green&quot;: 225,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 192,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          {</p>
+  <p class="myCodeP">            &quot;red&quot;: 209,</p>
+  <p class="myCodeP">            &quot;green&quot;: 221,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 186,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          {</p>
+  <p class="myCodeP">            &quot;red&quot;: 246,</p>
+  <p class="myCodeP">            &quot;green&quot;: 241,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 220,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          {</p>
+  <p class="myCodeP">            &quot;red&quot;: 227,</p>
+  <p class="myCodeP">            &quot;green&quot;: 226,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 217,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          }</p>
+  <p class="myCodeP">        ],</p>
+  <p class="myCodeP">        &quot;datasetInfo&quot;: {</p>
+  <p class="myCodeP">          &quot;charset&quot;: null,</p>
+  <p class="myCodeP">          &quot;recordCount&quot;: 0,</p>
+  <p class="myCodeP">          &quot;isFileCache&quot;: false,</p>
+  <p class="myCodeP">          &quot;description&quot;: null,</p>
+  <p class="myCodeP">          &quot;type&quot;: &quot;GRID&quot;,</p>
+  <p class="myCodeP">          &quot;dataSourceName&quot;: &quot;World&quot;,</p>
+  <p class="myCodeP">          &quot;tableName&quot;: null,</p>
+  <p class="myCodeP">          &quot;isReadOnly&quot;: false,</p>
+  <p class="myCodeP">          &quot;encodeType&quot;: null,</p>
+  <p class="myCodeP">          &quot;bounds&quot;: {</p>
+  <p class="myCodeP">            &quot;top&quot;: 90,</p>
+  <p class="myCodeP">            &quot;left&quot;: -180,</p>
+  <p class="myCodeP">            &quot;bottom&quot;: -90,</p>
+  <p class="myCodeP">            &quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">              &quot;x&quot;: -180,</p>
+  <p class="myCodeP">              &quot;y&quot;: -90</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;right&quot;: 180,</p>
+  <p class="myCodeP">            &quot;rightTop&quot;: {</p>
+  <p class="myCodeP">              &quot;x&quot;: 180,</p>
+  <p class="myCodeP">              &quot;y&quot;: 90</p>
+  <p class="myCodeP">            }</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;name&quot;: &quot;LandCover&quot;,</p>
+  <p class="myCodeP">          &quot;prjCoordSys&quot;: null,</p>
+  <p class="myCodeP">          &quot;datasourceConnectionInfo&quot;: null</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;gridType&quot;: &quot;GRID&quot;,</p>
+  <p class="myCodeP">        &quot;horizontalSpacing&quot;: 0,</p>
+  <p class="myCodeP">        &quot;minVisibleGeometrySize&quot;: 0.4,</p>
+  <p class="myCodeP">        &quot;minScale&quot;: 0,</p>
+  <p class="myCodeP">        &quot;specialValue&quot;: -9999,</p>
+  <p class="myCodeP">        &quot;joinItems&quot;: null,</p>
+  <p class="myCodeP">        &quot;completeLineSymbolDisplayed&quot;: false,</p>
+  <p class="myCodeP">        &quot;visible&quot;: true,</p>
+  <p class="myCodeP">        &quot;maxScale&quot;: 0,</p>
+  <p class="myCodeP">        &quot;symbolScalable&quot;: false,</p>
+  <p class="myCodeP">        &quot;subLayers&quot;: {},</p>
+  <p class="myCodeP">        &quot;colorGradientType&quot;: null,</p>
+  <p class="myCodeP">        &quot;queryable&quot;: false,</p>
+  <p class="myCodeP">        &quot;brightness&quot;: 0,</p>
+  <p class="myCodeP">        &quot;opaqueRate&quot;: 100,</p>
+  <p class="myCodeP">        &quot;contrast&quot;: 0,</p>
+  <p class="myCodeP">        &quot;name&quot;: &quot;gl_latlong_1km_landcover@World&quot;,</p>
+  <p class="myCodeP">        &quot;bounds&quot;: {</p>
+  <p class="myCodeP">          &quot;top&quot;: 90,</p>
+  <p class="myCodeP">          &quot;left&quot;: -180,</p>
+  <p class="myCodeP">          &quot;bottom&quot;: -90,</p>
+  <p class="myCodeP">          &quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: -180,</p>
+  <p class="myCodeP">            &quot;y&quot;: -90</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;right&quot;: 180,</p>
+  <p class="myCodeP">          &quot;rightTop&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: 180,</p>
+  <p class="myCodeP">            &quot;y&quot;: 90</p>
+  <p class="myCodeP">          }</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;colorDictionary&quot;: {</p>
+  <p class="myCodeP">          &quot;0.0&quot;: {</p>
+  <p class="myCodeP">            &quot;red&quot;: 179,</p>
+  <p class="myCodeP">            &quot;green&quot;: 209,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 255,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;13.0&quot;: {</p>
+  <p class="myCodeP">            &quot;red&quot;: 227,</p>
+  <p class="myCodeP">            &quot;green&quot;: 226,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 217,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;1.0&quot;: {</p>
+  <p class="myCodeP">            &quot;red&quot;: 182,</p>
+  <p class="myCodeP">            &quot;green&quot;: 213,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 170,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;2.0&quot;: {</p>
+  <p class="myCodeP">            &quot;red&quot;: 178,</p>
+  <p class="myCodeP">            &quot;green&quot;: 210,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 174,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;12.0&quot;: {</p>
+  <p class="myCodeP">            &quot;red&quot;: 246,</p>
+  <p class="myCodeP">            &quot;green&quot;: 241,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 220,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;11.0&quot;: {</p>
+  <p class="myCodeP">            &quot;red&quot;: 209,</p>
+  <p class="myCodeP">            &quot;green&quot;: 221,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 186,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;3.0&quot;: {</p>
+  <p class="myCodeP">            &quot;red&quot;: 199,</p>
+  <p class="myCodeP">            &quot;green&quot;: 218,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 182,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;10.0&quot;: {</p>
+  <p class="myCodeP">            &quot;red&quot;: 233,</p>
+  <p class="myCodeP">            &quot;green&quot;: 225,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 192,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;4.0&quot;: {</p>
+  <p class="myCodeP">            &quot;red&quot;: 161,</p>
+  <p class="myCodeP">            &quot;green&quot;: 197,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 181,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;5.0&quot;: {</p>
+  <p class="myCodeP">            &quot;red&quot;: 161,</p>
+  <p class="myCodeP">            &quot;green&quot;: 197,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 181,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;6.0&quot;: {</p>
+  <p class="myCodeP">            &quot;red&quot;: 199,</p>
+  <p class="myCodeP">            &quot;green&quot;: 218,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 182,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;7.0&quot;: {</p>
+  <p class="myCodeP">            &quot;red&quot;: 209,</p>
+  <p class="myCodeP">            &quot;green&quot;: 221,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 186,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;8.0&quot;: {</p>
+  <p class="myCodeP">            &quot;red&quot;: 227,</p>
+  <p class="myCodeP">            &quot;green&quot;: 226,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 217,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          },</p>
+  <p class="myCodeP">          &quot;9.0&quot;: {</p>
+  <p class="myCodeP">            &quot;red&quot;: 244,</p>
+  <p class="myCodeP">            &quot;green&quot;: 238,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 203,</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">          }</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;specialColor&quot;: {</p>
+  <p class="myCodeP">          &quot;red&quot;: 255,</p>
+  <p class="myCodeP">          &quot;green&quot;: 255,</p>
+  <p class="myCodeP">          &quot;blue&quot;: 255,</p>
+  <p class="myCodeP">          &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;displayOrderBy&quot;: null,</p>
+  <p class="myCodeP">        &quot;symbolScale&quot;: 0,</p>
+  <p class="myCodeP">        &quot;representationField&quot;: &quot;&quot;</p>
+  <p class="myCodeP">      }</p>
+  <p class="myCodeP">    ]},</p>
+  <p class="myCodeP">    &quot;type&quot;: &quot;UGC&quot;,</p>
+  <p class="myCodeP">    &quot;queryable&quot;: false,</p>
+  <p class="myCodeP">    &quot;opaqueRate&quot;: 100,</p>
+  <p class="myCodeP">    &quot;minVisibleGeometrySize&quot;: 0,</p>
+  <p class="myCodeP">    &quot;name&quot;: &quot;World&quot;,</p>
+  <p class="myCodeP">    &quot;bounds&quot;: {</p>
+  <p class="myCodeP">      &quot;top&quot;: 90,</p>
+  <p class="myCodeP">      &quot;left&quot;: -180,</p>
+  <p class="myCodeP">      &quot;bottom&quot;: -90,</p>
+  <p class="myCodeP">      &quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">        &quot;x&quot;: -180,</p>
+  <p class="myCodeP">        &quot;y&quot;: -90</p>
+  <p class="myCodeP">      },</p>
+  <p class="myCodeP">      &quot;right&quot;: 180,</p>
+  <p class="myCodeP">      &quot;rightTop&quot;: {</p>
+  <p class="myCodeP">        &quot;x&quot;: 180,</p>
+  <p class="myCodeP">        &quot;y&quot;: 90</p>
+  <p class="myCodeP">      }</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    &quot;symbolScale&quot;: 0,</p>
+  <p class="myCodeP">    &quot;minScale&quot;: 0</p>
+  <p class="myCodeP">  }],</p>
+  <p class="myCodeP">  &quot;angle&quot;: 0,</p>
+  <p class="myCodeP">  &quot;prjCoordSys&quot;: {</p>
+  <p class="myCodeP">    &quot;distanceUnit&quot;: &quot;METER&quot;,</p>
+  <p class="myCodeP">    &quot;projectionParam&quot;: null,</p>
+  <p class="myCodeP">    &quot;epsgCode&quot;: 4326,</p>
+  <p class="myCodeP">    &quot;coordUnit&quot;: &quot;DEGREE&quot;,</p>
+  <p class="myCodeP">    &quot;name&quot;: &quot;GCS_WGS_1984&quot;,</p>
+  <p class="myCodeP">    &quot;projection&quot;: null,</p>
+  <p class="myCodeP">    &quot;type&quot;: &quot;PCS_EARTH_LONGITUDE_LATITUDE&quot;,</p>
+  <p class="myCodeP">    &quot;coordSystem&quot;: {</p>
+  <p class="myCodeP">      &quot;datum&quot;: {</p>
+  <p class="myCodeP">        &quot;name&quot;: &quot;D_WGS_1984&quot;,</p>
+  <p class="myCodeP">        &quot;type&quot;: &quot;DATUM_WGS_1984&quot;,</p>
+  <p class="myCodeP">        &quot;spheroid&quot;: {</p>
+  <p class="myCodeP">          &quot;flatten&quot;: 0.00335281066474748,</p>
+  <p class="myCodeP">          &quot;name&quot;: &quot;WGS_1984&quot;,</p>
+  <p class="myCodeP">          &quot;axis&quot;: 6378137,</p>
+  <p class="myCodeP">          &quot;type&quot;: &quot;SPHEROID_WGS_1984&quot;</p>
+  <p class="myCodeP">        }</p>
+  <p class="myCodeP">      },</p>
+  <p class="myCodeP">      &quot;unit&quot;: &quot;DEGREE&quot;,</p>
+  <p class="myCodeP">      &quot;spatialRefType&quot;: &quot;SPATIALREF_EARTH_LONGITUDE_LATITUDE&quot;,</p>
+  <p class="myCodeP">      &quot;name&quot;: &quot;GCS_WGS_1984&quot;,</p>
+  <p class="myCodeP">      &quot;type&quot;: &quot;GCS_WGS_1984&quot;,</p>
+  <p class="myCodeP">      &quot;primeMeridian&quot;: {</p>
+  <p class="myCodeP">        &quot;longitudeValue&quot;: 0,</p>
+  <p class="myCodeP">        &quot;name&quot;: &quot;Greenwich&quot;,</p>
+  <p class="myCodeP">        &quot;type&quot;: &quot;PRIMEMERIDIAN_GREENWICH&quot;</p>
+  <p class="myCodeP">      }</p>
+  <p class="myCodeP">    }</p>
+  <p class="myCodeP">  },</p>
+  <p class="myCodeP">  &quot;minScale&quot;: 0,</p>
+  <p class="myCodeP">  &quot;markerAngleFixed&quot;: false,</p>
+  <p class="myCodeP">  &quot;overlapDisplayedOptions&quot;: {</p>
+  <p class="myCodeP">    &quot;allowPointWithTextDisplay&quot;: true,</p>
+  <p class="myCodeP">    &quot;horizontalOverlappedSpaceSize&quot;: 0,</p>
+  <p class="myCodeP">    &quot;allowPointOverlap&quot;: true,</p>
+  <p class="myCodeP">    &quot;allowThemeGraduatedSymbolOverlap&quot;: false,</p>
+  <p class="myCodeP">    &quot;verticalOverlappedSpaceSize&quot;: 0,</p>
+  <p class="myCodeP">    &quot;allowTextOverlap&quot;: false,</p>
+  <p class="myCodeP">    &quot;allowThemeGraphOverlap&quot;: false,</p>
+  <p class="myCodeP">    &quot;allowTextAndPointOverlap&quot;: true</p>
+  <p class="myCodeP">  },</p>
+  <p class="myCodeP">  &quot;visibleScales&quot;: [</p>
+  <p class="myCodeP">    1.6901635716026555E-9,</p>
+  <p class="myCodeP">    3.375595414562003E-9,</p>
+  <p class="myCodeP">    6.751190829124006E-9,</p>
+  <p class="myCodeP">    1.3502381658248012E-8,</p>
+  <p class="myCodeP">    2.7004763316496024E-8,</p>
+  <p class="myCodeP">    5.400952663299205E-8,</p>
+  <p class="myCodeP">    1.080190532659841E-7,</p>
+  <p class="myCodeP">    2.1603810653196843E-7,</p>
+  <p class="myCodeP">    4.320762130639359E-7,</p>
+  <p class="myCodeP">    8.641524261278681E-7</p>
+  <p class="myCodeP">  ],</p>
+  <p class="myCodeP">  &quot;visibleScalesEnabled&quot;: false,</p>
+  <p class="myCodeP">  &quot;customEntireBoundsEnabled&quot;: false,</p>
+  <p class="myCodeP">  &quot;clipRegion&quot;: {</p>
+  <p class="myCodeP">    &quot;center&quot;: null,</p>
+  <p class="myCodeP">    &quot;parts&quot;: null,</p>
+  <p class="myCodeP">    &quot;style&quot;: null,</p>
+  <p class="myCodeP">    &quot;prjCoordSys&quot;: null,</p>
+  <p class="myCodeP">    &quot;id&quot;: 0,</p>
+  <p class="myCodeP">    &quot;type&quot;: &quot;REGION&quot;,</p>
+  <p class="myCodeP">    &quot;partTopo&quot;: null,</p>
+  <p class="myCodeP">    &quot;points&quot;: null</p>
+  <p class="myCodeP">  },</p>
+  <p class="myCodeP">  &quot;maxScale&quot;: 1.0E12,</p>
+  <p class="myCodeP">  &quot;customParams&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">  &quot;center&quot;: {</p>
+  <p class="myCodeP">    &quot;x&quot;: 0,</p>
+  <p class="myCodeP">    &quot;y&quot;: 0</p>
+  <p class="myCodeP">  },</p>
+  <p class="myCodeP">  &quot;colorMode&quot;: &quot;DEFAULT&quot;,</p>
+  <p class="myCodeP">  &quot;textAngleFixed&quot;: false,</p>
+  <p class="myCodeP">  &quot;customPrjCoordSysType&quot;: null,</p>
+  <p class="myCodeP">  &quot;rectifyType&quot;: &quot;BYCENTERANDMAPSCALE&quot;,</p>
+  <p class="myCodeP">  &quot;overlapDisplayed&quot;: false,</p>
+  <p class="myCodeP">  &quot;userToken&quot;: {&quot;userID&quot;: &quot;&quot;},</p>
+  <p class="myCodeP">  &quot;cacheEnabled&quot;: true,</p>
+  <p class="myCodeP">  &quot;dynamicProjection&quot;: false,</p>
+  <p class="myCodeP">  &quot;autoAvoidEffectEnabled&quot;: true,</p>
+  <p class="myCodeP">  &quot;customEntireBounds&quot;: null,</p>
+  <p class="myCodeP">  &quot;name&quot;: &quot;World&quot;,</p>
+  <p class="myCodeP">  &quot;bounds&quot;: {</p>
+  <p class="myCodeP">    &quot;top&quot;: 90,</p>
+  <p class="myCodeP">    &quot;left&quot;: -180,</p>
+  <p class="myCodeP">    &quot;bottom&quot;: -90,</p>
+  <p class="myCodeP">    &quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">      &quot;x&quot;: -180,</p>
+  <p class="myCodeP">      &quot;y&quot;: -90</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    &quot;right&quot;: 180,</p>
+  <p class="myCodeP">    &quot;rightTop&quot;: {</p>
+  <p class="myCodeP">      &quot;x&quot;: 180,</p>
+  <p class="myCodeP">      &quot;y&quot;: 90</p>
+  <p class="myCodeP">    }</p>
+  <p class="myCodeP">  },</p>
+  <p class="myCodeP">  &quot;backgroundStyle&quot;: {</p>
+  <p class="myCodeP">    &quot;fillGradientOffsetRatioX&quot;: 0,</p>
+  <p class="myCodeP">    &quot;markerSize&quot;: 2.4,</p>
+  <p class="myCodeP">    &quot;fillForeColor&quot;: {</p>
+  <p class="myCodeP">      &quot;red&quot;: 179,</p>
+  <p class="myCodeP">      &quot;green&quot;: 209,</p>
+  <p class="myCodeP">      &quot;blue&quot;: 255,</p>
+  <p class="myCodeP">      &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    &quot;fillGradientOffsetRatioY&quot;: 0,</p>
+  <p class="myCodeP">    &quot;markerWidth&quot;: 0,</p>
+  <p class="myCodeP">    &quot;markerAngle&quot;: 0,</p>
+  <p class="myCodeP">    &quot;fillSymbolID&quot;: 0,</p>
+  <p class="myCodeP">    &quot;lineColor&quot;: {</p>
+  <p class="myCodeP">      &quot;red&quot;: 0,</p>
+  <p class="myCodeP">      &quot;green&quot;: 0,</p>
+  <p class="myCodeP">      &quot;blue&quot;: 0,</p>
+  <p class="myCodeP">      &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    &quot;markerSymbolID&quot;: 0,</p>
+  <p class="myCodeP">    &quot;lineWidth&quot;: 0.1,</p>
+  <p class="myCodeP">    &quot;markerHeight&quot;: 0,</p>
+  <p class="myCodeP">    &quot;fillOpaqueRate&quot;: 100,</p>
+  <p class="myCodeP">    &quot;fillBackOpaque&quot;: false,</p>
+  <p class="myCodeP">    &quot;fillBackColor&quot;: {</p>
+  <p class="myCodeP">      &quot;red&quot;: 255,</p>
+  <p class="myCodeP">      &quot;green&quot;: 255,</p>
+  <p class="myCodeP">      &quot;blue&quot;: 255,</p>
+  <p class="myCodeP">      &quot;alpha&quot;: 255</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    &quot;fillGradientMode&quot;: &quot;NONE&quot;,</p>
+  <p class="myCodeP">    &quot;lineSymbolID&quot;: 0,</p>
+  <p class="myCodeP">    &quot;fillGradientAngle&quot;: 0</p>
+  <p class="myCodeP">  },</p>
+  <p class="myCodeP">  &quot;returnImage&quot;: true,</p>
+  <p class="myCodeP">  &quot;returnType&quot;: &quot;URL&quot;</p>
+  <p class="myCodeP">}</p>
+  <p class="myNormal">如果希望获取动态投影到 WebMercator 的地图，则需要设置 prjCoordSys={&quot;epsgCode&quot;:3857}，即对 World 地图资源：http://supermapiserver:8090/iserver/services/map-world/rest/maps/世界地图.rjson?prjCoordSys={&quot;epsgCode&quot;:3857} 执行 GET 请求，返回 rjson 格式的资源表述如下：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">    &quot;angle&quot;: 0,</p>
+  <p class="myCodeP">    &quot;antialias&quot;: true,</p>
+  <p class="myCodeP">    &quot;backgroundStyle&quot;: {</p>
+  <p class="myCodeP">        &quot;fillBackColor&quot;: {</p>
+  <p class="myCodeP">            &quot;blue&quot;: 255,</p>
+  <p class="myCodeP">            &quot;green&quot;: 255,</p>
+  <p class="myCodeP">            &quot;red&quot;: 255</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;fillBackOpaque&quot;: true,</p>
+  <p class="myCodeP">        &quot;fillForeColor&quot;: {</p>
+  <p class="myCodeP">            &quot;blue&quot;: 255,</p>
+  <p class="myCodeP">            &quot;green&quot;: 255,</p>
+  <p class="myCodeP">            &quot;red&quot;: 255</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;fillGradientAngle&quot;: 0,</p>
+  <p class="myCodeP">        &quot;fillGradientMode&quot;: &quot;NONE&quot;,</p>
+  <p class="myCodeP">        &quot;fillGradientOffsetRatioX&quot;: 0,</p>
+  <p class="myCodeP">        &quot;fillGradientOffsetRatioY&quot;: 0,</p>
+  <p class="myCodeP">        &quot;fillOpaqueRate&quot;: 100,</p>
+  <p class="myCodeP">        &quot;fillSymbolID&quot;: 0,</p>
+  <p class="myCodeP">        &quot;lineColor&quot;: {</p>
+  <p class="myCodeP">            &quot;blue&quot;: 0,</p>
+  <p class="myCodeP">            &quot;green&quot;: 0,</p>
+  <p class="myCodeP">            &quot;red&quot;: 0</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;lineSymbolID&quot;: 0,</p>
+  <p class="myCodeP">        &quot;lineWidth&quot;: 0.1,</p>
+  <p class="myCodeP">        &quot;markerAngle&quot;: 0,</p>
+  <p class="myCodeP">        &quot;markerSize&quot;: 2.4,</p>
+  <p class="myCodeP">        &quot;markerSymbolID&quot;: 0</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    &quot;bounds&quot;: {</p>
+  <p class="myCodeP">        &quot;bottom&quot;: -2.5776731363158423E7,</p>
+  <p class="myCodeP">        &quot;left&quot;: -2.0037508342789244E7,</p>
+  <p class="myCodeP">        &quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: -2.0037508342789244E7,</p>
+  <p class="myCodeP">            &quot;y&quot;: -2.5776731363158423E7</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;right&quot;: 2.0037508342789244E7,</p>
+  <p class="myCodeP">        &quot;rightTop&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: 2.0037508342789244E7,</p>
+  <p class="myCodeP">            &quot;y&quot;: 2.57767313631584E7</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;top&quot;: 2.57767313631584E7</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    &quot;cacheEnabled&quot;: false,</p>
+  <p class="myCodeP">    &quot;center&quot;: {</p>
+  <p class="myCodeP">        &quot;x&quot;: 1.0706007286235156E7,</p>
+  <p class="myCodeP">        &quot;y&quot;: 3258532.6200602674</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    &quot;clipRegion&quot;: {</p>
+  <p class="myCodeP">        &quot;center&quot;: null,</p>
+  <p class="myCodeP">        &quot;id&quot;: 0,</p>
+  <p class="myCodeP">        &quot;parts&quot;: null,</p>
+  <p class="myCodeP">        &quot;points&quot;: null,</p>
+  <p class="myCodeP">        &quot;style&quot;: null,</p>
+  <p class="myCodeP">        &quot;type&quot;: &quot;REGION&quot;</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    &quot;clipRegionEnabled&quot;: false,</p>
+  <p class="myCodeP">    &quot;colorMode&quot;: &quot;DEFAULT&quot;,</p>
+  <p class="myCodeP">    &quot;coordUnit&quot;: &quot;DEGREE&quot;,</p>
+  <p class="myCodeP">    &quot;customEntireBounds&quot;: null,</p>
+  <p class="myCodeP">    &quot;customEntireBoundsEnabled&quot;: false,</p>
+  <p class="myCodeP">    &quot;customParams&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">    &quot;description&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">    &quot;distanceUnit&quot;: &quot;METER&quot;,</p>
+  <p class="myCodeP">    &quot;dynamicPrjCoordSyses&quot;: [{</p>
+  <p class="myCodeP">        &quot;coordSystem&quot;: null,</p>
+  <p class="myCodeP">        &quot;coordUnit&quot;: null,</p>
+  <p class="myCodeP">        &quot;distanceUnit&quot;: null,</p>
+  <p class="myCodeP">        &quot;epsgCode&quot;: 0,</p>
+  <p class="myCodeP">        &quot;name&quot;: null,</p>
+  <p class="myCodeP">        &quot;projection&quot;: null,</p>
+  <p class="myCodeP">        &quot;projectionParam&quot;: null,</p>
+  <p class="myCodeP">        &quot;type&quot;: &quot;PCS_ALL&quot;</p>
+  <p class="myCodeP">    }],</p>
+  <p class="myCodeP">    &quot;dynamicProjection&quot;: true,</p>
+  <p class="myCodeP">    &quot;markerAngleFixed&quot;: false,</p>
+  <p class="myCodeP">    &quot;maxScale&quot;: 1.000000000000032E12,</p>
+  <p class="myCodeP">    &quot;maxVisibleTextSize&quot;: 1000,</p>
+  <p class="myCodeP">    &quot;maxVisibleVertex&quot;: 3600000,</p>
+  <p class="myCodeP">    &quot;minScale&quot;: 0,</p>
+  <p class="myCodeP">    &quot;minVisibleTextSize&quot;: 0.3,</p>
+  <p class="myCodeP">    &quot;name&quot;: &quot;世界地图&quot;,</p>
+  <p class="myCodeP">    &quot;overlapDisplayed&quot;: true,</p>
+  <p class="myCodeP">    &quot;paintBackground&quot;: true,</p>
+  <p class="myCodeP">    &quot;prjCoordSys&quot;: {</p>
+  <p class="myCodeP">        &quot;coordSystem&quot;: {</p>
+  <p class="myCodeP">            &quot;datum&quot;: {</p>
+  <p class="myCodeP">                &quot;name&quot;: &quot;D_WGS_1984&quot;,</p>
+  <p class="myCodeP">                &quot;spheroid&quot;: {</p>
+  <p class="myCodeP">                    &quot;axis&quot;: 6378137,</p>
+  <p class="myCodeP">                    &quot;flatten&quot;: 0.0033528107,</p>
+  <p class="myCodeP">                    &quot;name&quot;: &quot;WGS_1984&quot;,</p>
+  <p class="myCodeP">                    &quot;type&quot;: &quot;SPHEROID_WGS_1984&quot;</p>
+  <p class="myCodeP">                },</p>
+  <p class="myCodeP">                &quot;type&quot;: &quot;DATUM_WGS_1984&quot;</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;name&quot;: &quot;GCS_WGS_1984&quot;,</p>
+  <p class="myCodeP">            &quot;primeMeridian&quot;: {</p>
+  <p class="myCodeP">                &quot;longitudeValue&quot;: 0,</p>
+  <p class="myCodeP">                &quot;name&quot;: &quot;Greenwich&quot;,</p>
+  <p class="myCodeP">                &quot;type&quot;: &quot;PRIMEMERIDIAN_GREENWICH&quot;</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;spatialRefType&quot;: &quot;SPATIALREF_EARTH_LONGITUDE_LATITUDE&quot;,</p>
+  <p class="myCodeP">            &quot;type&quot;: &quot;GCS_WGS_1984&quot;,</p>
+  <p class="myCodeP">            &quot;unit&quot;: &quot;DEGREE&quot;</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;coordUnit&quot;: &quot;METER&quot;,</p>
+  <p class="myCodeP">        &quot;distanceUnit&quot;: &quot;METER&quot;,</p>
+  <p class="myCodeP">        &quot;epsgCode&quot;: 3857,</p>
+  <p class="myCodeP">        &quot;name&quot;: &quot;User Define&quot;,</p>
+  <p class="myCodeP">        &quot;projection&quot;: {</p>
+  <p class="myCodeP">            &quot;name&quot;: &quot;Mercator&quot;,</p>
+  <p class="myCodeP">            &quot;type&quot;: &quot;PRJ_MERCATOR&quot;</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;projectionParam&quot;: {</p>
+  <p class="myCodeP">            &quot;azimuth&quot;: 0,</p>
+  <p class="myCodeP">            &quot;centralMeridian&quot;: 0,</p>
+  <p class="myCodeP">            &quot;centralParallel&quot;: 0,</p>
+  <p class="myCodeP">            &quot;falseEasting&quot;: 0,</p>
+  <p class="myCodeP">            &quot;falseNorthing&quot;: 0,</p>
+  <p class="myCodeP">            &quot;firstPointLongitude&quot;: 0,</p>
+  <p class="myCodeP">            &quot;firstStandardParallel&quot;: 0,</p>
+  <p class="myCodeP">            &quot;scaleFactor&quot;: 0,</p>
+  <p class="myCodeP">            &quot;secondPointLongitude&quot;: 0,</p>
+  <p class="myCodeP">            &quot;secondStandardParallel&quot;: 0</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;type&quot;: &quot;PCS_USER_DEFINED&quot;</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    &quot;resourceParameter&quot;: null,</p>
+  <p class="myCodeP">    &quot;scale&quot;: 2.257298309111974E-8,</p>
+  <p class="myCodeP">    &quot;textAngleFixed&quot;: false,</p>
+  <p class="myCodeP">    &quot;textOrientationFixed&quot;: false,</p>
+  <p class="myCodeP">    &quot;userToken&quot;: {&quot;userID&quot;: &quot;&quot;},</p>
+  <p class="myCodeP">    &quot;viewBounds&quot;: {</p>
+  <p class="myCodeP">        &quot;bottom&quot;: 1758952.3535372897,</p>
+  <p class="myCodeP">        &quot;left&quot;: 9206427.019712178,</p>
+  <p class="myCodeP">        &quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: 9206427.019712178,</p>
+  <p class="myCodeP">            &quot;y&quot;: 1758952.3535372897</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;right&quot;: 1.2205587552758133E7,</p>
+  <p class="myCodeP">        &quot;rightTop&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: 1.2205587552758133E7,</p>
+  <p class="myCodeP">            &quot;y&quot;: 4758112.886583245</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;top&quot;: 4758112.886583245</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    &quot;viewer&quot;: {</p>
+  <p class="myCodeP">        &quot;bottom&quot;: 256,</p>
+  <p class="myCodeP">        &quot;height&quot;: 256,</p>
+  <p class="myCodeP">        &quot;left&quot;: 0,</p>
+  <p class="myCodeP">        &quot;leftTop&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: 0,</p>
+  <p class="myCodeP">            &quot;y&quot;: 0</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;right&quot;: 256,</p>
+  <p class="myCodeP">        &quot;rightBottom&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: 256,</p>
+  <p class="myCodeP">            &quot;y&quot;: 256</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;top&quot;: 0,</p>
+  <p class="myCodeP">        &quot;width&quot;: 256</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    &quot;visibleScales&quot;: [],</p>
+  <p class="myCodeP">    &quot;visibleScalesEnabled&quot;: false</p>
+  <p class="myCodeP">}</p>
+  <h3><a id="HEAD 请求"></a>HEAD 请求</h3>
+  <p class="myNormal">返回跟 GET 请求一样的 HTTP 响应头，但是没有响应实体。可以在不必传输整个响应内容的情况下，获取包含在响应消息头中的元数据信息。元数据信息包括媒体类型，字符编码，压缩编码，实体内容长度等。</p>
+  <p class="myNormal">HEAD 请求可以用来判断地图资源是否存在，或者客户端是否有权限访问地图资源。通过对加.&lt;format&gt;的 URI 执行 HEAD 请求，还可以快速判断地图资源是否支持&lt;format&gt;格式的表述。</p>
+  <h2>请参见</h2>
+  <ul class="referenceList">
+    <li class="referenceList"><a class="contentpagehyperlink" href="../vectortile.htm">vectorTile</a>、<a class="contentpagehyperlink" href="tiles.htm">tiles</a>、<a class="contentpagehyperlink" href="style.htm">style</a>、<a class="contentpagehyperlink" href="sprites.htm">sprites</a>、<a class="contentpagehyperlink" href="fonts.htm">fonts</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../clientBuildREST/ConstructRESTRequest.htm">客户端构建 REST 请求</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../StatusCodeDescription.htm">状态码列表及说明</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../SuperMap_iServer_REST_API_OutputFormat.htm">表述格式介绍</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../resource_hierarchy.htm">GIS 服务资源层次结构</a></li>
+  </ul>
+  <p> </p>
+
+</div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../../../../../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../../../../../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../../../../../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../../../../../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../../../../../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../../../../../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../../../../../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../../../../.."
+    gCommonRootRelPath = "../../../../.."
+    gTopicId = "8.2.2.6.17.1"
+  
+//]]></script>
+
+  <script src="../../../../../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../../../../../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../../../../../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../../../../../whxdata/layoutconfig.js"></script>
+  <script src="../../../../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

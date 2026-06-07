@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../../../../../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../../../../../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../../../../../../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../../../../../iserver-icon.png"/>
+    
+  <script data-relpath="../../../../../.." src="../../../../../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+<meta name="template" content="../../../../../../assets/layouts/RESTAPI.htt"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="Content-Language" content="zh-CN"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>regionPermission</title>
+<link rel="StyleSheet" href="../../../../../../assets/css/SuperMapHelp.css" type="text/css"/>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../../../../../../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../../assets/css/homeButtom.css"/>
+  <script src="../../../../../../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../../../../../../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../../../../../../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../../../../../../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../../../../../../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../../../../../../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../../../../../../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../../../../../../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../../../../../../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+<h2><a id="URI"></a>URI</h2>
+<p class="myNormal">&lt;<a class="contentpagehyperlink" href="regionPermissions.htm">regionPermissions_uri</a>&gt;/{authorizedEntityType}:{authorizedEntityID}[.&lt;format&gt;]</p>
+<h2>支持的方法</h2>
+<p class="myNormal"><a class="contentpagehyperlink" href="#GET 请求">GET</a>、<a class="contentpagehyperlink" href="#PUT 请求">PUT</a>、<a class="contentpagehyperlink" href="#DELETE 请求">DELETE</a>、<a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a></p>
+<h2>父资源</h2>
+<p class="myNormal"><a class="contentpagehyperlink" href="regionPermissions.htm">regionPermissions</a></p>
+<h2>介绍</h2>
+<p class="myNormal">regionPermission 资源是单个服务针对某个授权对象拥有的空间范围授权信息。授权的对象在访问授予了空间范围权限的服务时，只能访问指定空间范围内的内容。当服务类型为地图服务时，只能访问指定空间范围内的地图；当服务类型为数据服务时，只能访问指定空间范围内的数据集。</p>
+<p class="myNormal" style="font-weight: bold;">支持的方法：</p>
+<ul style="list-style: disc;" class="supportList">
+	<li class="supportList"><a class="contentpagehyperlink" href="#GET 请求">GET</a>：查询一个服务针对某个授权对象拥有的空间范围授权信息。</li>
+	<li class="supportList"><a class="contentpagehyperlink" href="#PUT 请求">PUT</a>：更新一个服务针对某个授权对象拥有的空间范围授权信息。</li>
+	<li class="supportList"><a class="contentpagehyperlink" href="#DELETE 请求">DELETE</a>：删除一个服务针对某个授权对象拥有的空间范围授权信息。</li>
+	<li class="supportList"><a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a>：检查 regionPermission 
+	 资源是否存在，或权限是否可以访问 regionPermission 资源。</li>
+</ul>
+<p class="myNormal"><span style="font-weight: bold;">支持的表述格式：</span>RJSON、JSON、XML。</p>
+<h2>资源层次</h2>
+<p class="myNormal"><img src="../../../../../../assets/images/Portal/img/regionPermission.png" alt="" usemap="#MAP354639010" style="border: none;" border="0"/>
+<map id="MAP354639010" name="MAP354639010">
+<area shape="rect" coords="-1, -1, 258, 43" href="../../../Portal.htm" alt=""/>
+<area shape="rect" coords="69, 50, 231, 91" href="../../services.htm" alt=""/>
+<area shape="rect" coords="140, 100, 271, 142" href="../service.htm" alt=""/>
+<area shape="rect" coords="221, 150, 395, 192" href="regionPermissions.htm" alt=""/>
+<area shape="rect" coords="336, 204, 526, 256" href="regionPermission.htm" alt=""/>
+</map> </p>
+<h2>HTTP 请求方法</h2>
+<p class="myNormal">对如下 URI 执行 HTTP 请求，以 rjson 输出格式为例加以说明，其中，supermapiportal 
+ 是服务器名，{id} 为服务 id，{authorizedEntityType} 为授权实体类型，{authorizedEntityID} 
+ 为授权实体 id。</p>
+<p class="uriStyle">http://supermapiportal:8190/iportal/web/services/{id}/regionpermissions/{authorizedEntityType}:{authorizedEntityID}.rjson</p>
+<h3><a id="GET 请求"></a>GET 请求</h3>
+<p class="myNormal">查询一个服务针对某个授权对象拥有的空间范围授权信息。</p>
+<h4 class="myNormal">响应结构</h4>
+<p class="myNormal">对 regionPermission 资源执行 GET 请求，获取一个服务针对某个授权对象的空间范围授权信息，由以下字段组成： 
+ </p>
+<table class="iServerTable" cellspacing="0" width="70%" align="center">
+	<colgroup><col style="width: 15%;"/>
+	<col style="width: 15%;"/>
+	<col style="width: 70%;"/>
+	</colgroup><tbody><tr class="t1st">
+		<td>名称</td>
+		<td>类型</td>
+		<td>含义</td>
+	</tr>
+	<tr class="t2Row">
+		<td>authorizedEntity</td>
+		<td><a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/iportal/web/commontypes/AuthorizedEntity.html">AuthorizedEntity</a></td>
+		<td>授权的实体对象。</td>
+	</tr>
+	<tr class="t1Row">
+		<td>region</td>
+		<td><a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/services/components/commontypes/Geometry.html">Geometry</a></td>
+		<td>授权的空间范围。</td>
+	</tr>
+</tbody></table>
+<h4>响应示例</h4>
+<p class="myNormal">对 regionPermission 资源：http://localhost:8190/iportal/web/services/1/regionpermissions/USER:user1.rjson 
+ 执行 GET 请求，获取 id 为 1 的服务针对用户 user1 的空间范围授权信息，返回的 rjson 格式的资源表述如下：</p>
+<p class="myCodeP">{</p>
+<p class="myCodeP">    &quot;authorizedEntity&quot;: 
+ {</p>
+<p class="myCodeP">        &quot;entityType&quot;: 
+ &quot;USER&quot;,</p>
+<p class="myCodeP">        &quot;entityID&quot;: 
+ &quot;user1&quot;</p>
+<p class="myCodeP">    },</p>
+<p class="myCodeP">    &quot;region&quot;: {</p>
+<p class="myCodeP">        &quot;center&quot;: 
+ {</p>
+<p class="myCodeP">            &quot;x&quot;: 
+ 109.057701432256,</p>
+<p class="myCodeP">            &quot;y&quot;: 
+ 35.3265380859375</p>
+<p class="myCodeP">        },</p>
+<p class="myCodeP">        &quot;parts&quot;: 
+ [</p>
+<p class="myCodeP">            5</p>
+<p class="myCodeP">        ],</p>
+<p class="myCodeP">        &quot;style&quot;: 
+ null,</p>
+<p class="myCodeP">        &quot;prjCoordSys&quot;: 
+ {</p>
+<p class="myCodeP">            &quot;distanceUnit&quot;: 
+ null,</p>
+<p class="myCodeP">            &quot;projectionParam&quot;: 
+ null,</p>
+<p class="myCodeP">            &quot;epsgCode&quot;: 
+ 0,</p>
+<p class="myCodeP">            &quot;coordUnit&quot;: 
+ null,</p>
+<p class="myCodeP">            &quot;name&quot;: 
+ null,</p>
+<p class="myCodeP">            &quot;projection&quot;: 
+ null,</p>
+<p class="myCodeP">            &quot;type&quot;: 
+ &quot;PCS_USER_DEFINED&quot;,</p>
+<p class="myCodeP">            &quot;coordSystem&quot;: 
+ null</p>
+<p class="myCodeP">        },</p>
+<p class="myCodeP">        &quot;id&quot;: 
+ 0,</p>
+<p class="myCodeP">        &quot;type&quot;: 
+ &quot;REGION&quot;,</p>
+<p class="myCodeP">        &quot;partTopo&quot;: 
+ null,</p>
+<p class="myCodeP">        &quot;points&quot;: 
+ [</p>
+<p class="myCodeP">            {</p>
+<p class="myCodeP">                &quot;x&quot;: 
+ 105.264129638672,</p>
+<p class="myCodeP">                &quot;y&quot;: 
+ 36.9085693359375</p>
+<p class="myCodeP">            },</p>
+<p class="myCodeP">            {</p>
+<p class="myCodeP">                &quot;x&quot;: 
+ 105.527801513672,</p>
+<p class="myCodeP">                &quot;y&quot;: 
+ 33.0413818359375</p>
+<p class="myCodeP">            },</p>
+<p class="myCodeP">            {</p>
+<p class="myCodeP">                &quot;x&quot;: 
+ 112.646942138672,</p>
+<p class="myCodeP">                &quot;y&quot;: 
+ 34.0081787109375</p>
+<p class="myCodeP">            },</p>
+<p class="myCodeP">            {</p>
+<p class="myCodeP">                &quot;x&quot;: 
+ 112.910614013672,</p>
+<p class="myCodeP">                &quot;y&quot;: 
+ 37.6116943359375</p>
+<p class="myCodeP">            },</p>
+<p class="myCodeP">            {</p>
+<p class="myCodeP">                &quot;x&quot;: 
+ 105.264129638672,</p>
+<p class="myCodeP">                &quot;y&quot;: 
+ 36.9085693359375</p>
+<p class="myCodeP">            }</p>
+<p class="myCodeP">        ]</p>
+<p class="myCodeP">    }</p>
+<p class="myCodeP">}</p>
+<h3><a id="PUT 请求"></a>PUT 请求</h3>
+<p class="myNormal">更新一个服务针对某个授权对象拥有的空间范围授权信息。</p>
+<h4 class="myNormal">请求参数</h4>
+<p class="myNormal">发送请求时，需要在请求体中包含如下参数：</p>
+<table class="iServerTable" cellspacing="0" width="70%" align="center">
+	<colgroup><col style="width: 15%;"/>
+	<col style="width: 15%;"/>
+	<col style="width: 70%;"/>
+	</colgroup><tbody><tr class="t1st">
+		<td>字段</td>
+		<td>类型</td>
+		<td>说明</td>
+	</tr>
+	<tr class="t2Row">
+		<td>id</td>
+		<td>int</td>
+		<td>几何对象的唯一标识符。</td>
+	</tr>
+	<tr class="t1Row">
+		<td>center</td>
+		<td><a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/services/components/commontypes/Point2D.html">Point2D</a></td>
+		<td>几何对象的中心点。</td>
+	</tr>
+	<tr class="t2Row">
+		<td>parts</td>
+		<td>int[]</td>
+		<td>几何对象中各个子对象所包含的节点的个数。</td>
+	</tr>
+	<tr class="t1Row">
+		<td>partTopo</td>
+		<td>int[]</td>
+		<td><span>part 的拓扑结构，1 代表为岛,-1 代表为洞。</span></td>
+	</tr>
+	<tr class="t2Row">
+		<td>points</td>
+		<td><a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/services/components/commontypes/Point2D.html">Point2D</a>[]</td>
+		<td>组成几何对象的节点的二维坐标对数组。</td>
+	</tr>
+	<tr class="t1Row">
+		<td>prjCoordSys</td>
+		<td><a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/services/components/commontypes/PrjCoordSys.html">PrjCoordSys</a></td>
+		<td>几何对象的投影坐标系。</td>
+	</tr>
+	<tr class="t2Row">
+		<td>style</td>
+		<td><a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/services/components/commontypes/Style.html">Style</a></td>
+		<td>几何对象的风格。</td>
+	</tr>
+	<tr class="t1Row">
+		<td>type</td>
+		<td><a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/services/components/commontypes/GeometryType.html">GeometryType</a></td>
+		<td>几何对象的类型。</td>
+	</tr>
+</tbody></table>
+<p class="myNormal"> </p>
+<h4 class="myNormal">响应结构</h4>
+<p class="myNormal">对 regionPermission 资源执行 PUT 请求，更新一个服务针对某个授权对象拥有的空间范围授权信息，返回的资源表述结构如下：</p>
+<table class="iServerTable" cellspacing="0" width="70%" align="center">
+	<colgroup><col style="width: 15%;"/>
+	<col style="width: 15%;"/>
+	<col style="width: 70%;"/>
+	</colgroup><tbody><tr class="t1st">
+		<td>字段</td>
+		<td>类型</td>
+		<td>说明</td>
+	</tr>
+	<tr class="t2Row">
+		<td>succeed</td>
+		<td>boolean</td>
+		<td>更新服务的空间范围授权信息是否成功。</td>
+	</tr>
+	<tr class="t1Row">
+		<td>error</td>
+		<td>Httperror</td>
+		<td>出错信息，如果更新空间范围授权信息成功，则没有本字段。</td>
+	</tr>
+</tbody></table>
+<h4>响应示例</h4>
+<p class="myNormal">对 regionPermission 资源：http://localhost:8190/iportal/web/services/1/regionpermissions/USER:user1.rjson 
+ 执行 PUT 请求，更新 id 为 1 的服务针对用户 user1 的空间范围授权信息，发送请求体如下：</p>
+<p class="myCodeP">{</p>
+<p class="myCodeP">    &quot;center&quot;: {</p>
+<p class="myCodeP">        &quot;x&quot;: 
+ 109.057701432256,</p>
+<p class="myCodeP">        &quot;y&quot;: 
+ 35.3265380859375</p>
+<p class="myCodeP">    },</p>
+<p class="myCodeP">    &quot;parts&quot;: [</p>
+<p class="myCodeP">        5</p>
+<p class="myCodeP">    ],</p>
+<p class="myCodeP">    &quot;style&quot;: null,</p>
+<p class="myCodeP">    &quot;prjCoordSys&quot;: {</p>
+<p class="myCodeP">        &quot;distanceUnit&quot;: 
+ null,</p>
+<p class="myCodeP">        &quot;projectionParam&quot;: 
+ null,</p>
+<p class="myCodeP">        &quot;epsgCode&quot;: 
+ 0,</p>
+<p class="myCodeP">        &quot;coordUnit&quot;: 
+ null,</p>
+<p class="myCodeP">        &quot;name&quot;: 
+ null,</p>
+<p class="myCodeP">        &quot;projection&quot;: 
+ null,</p>
+<p class="myCodeP">        &quot;type&quot;: 
+ &quot;PCS_USER_DEFINED&quot;,</p>
+<p class="myCodeP">        &quot;coordSystem&quot;: 
+ null</p>
+<p class="myCodeP">    },</p>
+<p class="myCodeP">    &quot;id&quot;: 0,</p>
+<p class="myCodeP">    &quot;type&quot;: &quot;REGION&quot;,</p>
+<p class="myCodeP">    &quot;partTopo&quot;: null,</p>
+<p class="myCodeP">    &quot;points&quot;: [</p>
+<p class="myCodeP">        {</p>
+<p class="myCodeP">            &quot;x&quot;: 
+ 105.264129638672,</p>
+<p class="myCodeP">            &quot;y&quot;: 
+ 36.9085693359375</p>
+<p class="myCodeP">        },</p>
+<p class="myCodeP">        {</p>
+<p class="myCodeP">            &quot;x&quot;: 
+ 105.527801513672,</p>
+<p class="myCodeP">            &quot;y&quot;: 
+ 33.0413818359375</p>
+<p class="myCodeP">        },</p>
+<p class="myCodeP">        {</p>
+<p class="myCodeP">            &quot;x&quot;: 
+ 112.646942138672,</p>
+<p class="myCodeP">            &quot;y&quot;: 
+ 34.0081787109375</p>
+<p class="myCodeP">        },</p>
+<p class="myCodeP">        {</p>
+<p class="myCodeP">            &quot;x&quot;: 
+ 112.910614013672,</p>
+<p class="myCodeP">            &quot;y&quot;: 
+ 37.6116943359375</p>
+<p class="myCodeP">        },</p>
+<p class="myCodeP">        {</p>
+<p class="myCodeP">            &quot;x&quot;: 
+ 105.264129638672,</p>
+<p class="myCodeP">            &quot;y&quot;: 
+ 36.9085693359375</p>
+<p class="myCodeP">        }</p>
+<p class="myCodeP">    ]</p>
+<p class="myCodeP">}</p>
+<p class="myNormal">则返回的 rjson 格式的表述如下：</p>
+<p class="myCodeP">{ &quot;succeed&quot;: true}</p>
+<h3><a id="DELETE 请求"></a>DELETE 请求</h3>
+<p class="myNormal">删除一个服务针对某个授权对象拥有的空间范围授权信息。</p>
+<h4 class="myNormal">响应示例</h4>
+<p class="myNormal">对 regionPermission 资源：http://localhost:8190/iportal/web/services/1/regionpermissions/USER:user1.rjson 
+ 执行 DELETE 请求，删除 id 为 1 的 服务针对用户 user1 的空间范围授权信息，返回的 rjson 格式的表述如下：</p>
+<p class="myCodeP">{ &quot;succeed&quot;: true}</p>
+<h3><a id="HEAD 请求"></a>HEAD 请求</h3>
+<p class="myNormal">返回跟 GET 请求一样的 HTTP 响应头，但是没有响应实体。可以在不必传输整个响应内容的情况下，获取包含在响应消息头中的元数据信息。元数据信息包括媒体类型，字符编码，压缩编码，实体内容长度等。</p>
+<p class="myNormal">HEAD 请求可以用来判断 regionPermission 资源是否存在，或者客户端是否有权限访问 
+ regionPermission 资源。通过对加.&lt;format&gt;的 URI 执行 HEAD 请求，还可以快速判断 regionPermission 
+ 资源是否支持&lt;format&gt;格式的表述。</p>
+<h2>请参见</h2>
+<ul class="referenceList">
+	<li class="referenceList"><a class="contentpagehyperlink" href="regionPermissions.htm">regionPermissions</a></li>
+	<li class="referenceList"><a class="contentpagehyperlink" href="../../../../clientBuildREST/ConstructRESTRequest.htm">客户端构建 
+	 REST 请求</a></li>
+	<li class="referenceList"><a class="contentpagehyperlink" href="../../../../StatusCodeDescription.htm">状态码列表及说明</a></li>
+	<li class="referenceList"><a class="contentpagehyperlink" href="../../../../SuperMap_iServer_REST_API_OutputFormat.htm">SuperMap 
+	 iServer REST API 表述格式介绍</a></li>
+	<li class="referenceList"><a class="contentpagehyperlink" href="../../../../iPortalArchitecture.htm">资源层次结构</a></li>
+</ul>
+
+
+<p><br/></p></div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../../../../../../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../../../../../../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../../../../../../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../../../../../../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../../../../../../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../../../../../../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../../../../../../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../../../../../.."
+    gCommonRootRelPath = "../../../../../.."
+    gTopicId = "8.2.4.12.7.5.2"
+  
+//]]></script>
+
+  <script src="../../../../../../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../../../../../../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../../../../../../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../../../../../../whxdata/layoutconfig.js"></script>
+  <script src="../../../../../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

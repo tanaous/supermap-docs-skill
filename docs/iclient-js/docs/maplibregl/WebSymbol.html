@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <script src="scripts/css-vars-ponyfill.min.js"></script>
+    <script src="../../examples/js/utils.js"></script>
+    <script src="../../examples/js/theme/themeConfig.js"></script>
+    <script src="../../examples/js/theme/theme.js"></script>
+<script type="text/javascript">
+
+</script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+        <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/adminlte/app.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="styles/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/adminlte/AdminLTE.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/adminlte/skin-blue.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jaguar.css">
+    
+
+</head>
+<body class='sidebar-mini'>
+
+<div id="wrap" class="clearfix">
+
+    <div class="navigationDiv">
+    </div>
+    <div class="main content-wrapper">
+        <h1 class="page-title" data-filename="WebSymbol.html">Class: WebSymbol</h1>
+        
+
+
+
+<section>
+    
+<header>
+    <h2></span>WebSymbol
+    
+    </h2>
+    
+        <div class="class-description"><p>Web 符号库。SuperMap iClient for MapboxGL 通过扩展 <a href="https://docs.mapbox.com/mapbox-gl-js/api/">MapboxGL</a> 的 API，实现了对 Web 符号库的支持，提供了前后端一致的 Web 符号化制图能力和自定义 Web 符号的能力。</p></div>
+    
+</header>  
+
+<article>
+    <div class="container-overview">
+    
+    
+    
+        
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="WebSymbol">
+          
+          
+          new WebSymbol<span class="signature">()</span>
+        </h4>
+        
+        <h5>Usage</h5>
+        
+
+<pre class="prettyprint">
+<code>// 浏览器
+&lt;script type="text/javascript" src="https://iclient.supermap.io/dist/maplibregl/iclient-maplibregl.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+  new maplibregl.supermap.WebSymbol();
+  
+&lt;/script&gt;
+
+<span class="nopretty">// ES6 Import</span>
+import { WebSymbol } from '@supermapgis/iclient-maplibregl';
+
+new WebSymbol();
+</code>
+</pre>
+
+
+        
+
+        
+        <div class="tag-source">
+            maplibregl/overlay/symbol/WebSymbol.js, line 6
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <h2>初始化</h2>
+<p>使用Web符号资源时，通过接口指定符号资源路径。</p>
+<pre class="prettyprint source"><code>new maplibregl.supermap.WebSymbol().init({basePath: &quot;./resources/symbols&quot;});
+</code></pre>
+<h2>新增 API</h2>
+<h2>maplibregl.Map.prototype.loadSymbol</h2>
+<p>通过<a href="../../../../../examples/maplibregl/websymbol_gallery.html">Web符号ID</a>加载Web符号， 用于Map#addSymbol。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">参数名称</th>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">id</td>
+<td style="text-align:left">string、string[]</td>
+<td style="text-align:left"><a href="../../../../../examples/maplibregl/websymbol_gallery.html">Web符号ID</a></td>
+</tr>
+<tr>
+<td style="text-align:left">callback</td>
+<td style="text-align:left">function</td>
+<td style="text-align:left">在符号加载完成后调用，返回符号信息；如果有错误，则返回错误参数。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Version:</strong></p>
+<p>11.1.1</p>
+<p><strong>Example</strong></p>
+<pre class="prettyprint source"><code>// 加载单个Web符号
+map.loadSymbol('point-1', (error, symbol) => {
+      if (error) throw error;
+      // Add the loaded symbol with the ID 'point-1'.
+      map.addSymbol('point-1', symbol);
+});
+
+// 加载多个Web符号
+var symbolIds = ['point-1', 'point-2'];
+map.loadSymbol(symbolIds, (error, symbols) => {
+     symbols.forEach((symbol, index) => {
+         symbol && map.addSymbol(symbolIds[index], symbol);
+     })
+});
+</code></pre>
+<h2>maplibregl.Map.prototype.addSymbol</h2>
+<p>添加一个符号。该符号可以显示在地图上。Maplibre layers 的 symbol属性可以使用该符号ID。</p>
+<table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>描述</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td>符号ID</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>symbol</td>
+<td>object</td>
+<td>由Maplibre Layers中的<a href="https://maplibre.org/maplibre-style-spec/layers/#paint-property">paint</a>、<a href="https://maplibre.org/maplibre-style-spec/layers/#layout-property">layout</a>（visibility 属性除外）组成的符号对象</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>参数名称</td>
+<td>类型</td>
+<td>描述</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>paint</td>
+<td>object</td>
+<td>可选，Maplibre Layers <a href="https://maplibre.org/maplibre-style-spec/layers/#paint-property">paint</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>layout</td>
+<td>object</td>
+<td>可选，Maplibre Layers <a href="https://maplibre.org/maplibre-style-spec/layers/#layout-property">layout</a>（visibility 属性除外）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Version:</strong></p>
+<p>11.1.1</p>
+<p><strong>Example</strong></p>
+<pre class="prettyprint source"><code>map.addSymbol('point-1', symbol);
+</code></pre>
+<h2>maplibregl.Map.prototype.setSymbol</h2>
+<p>给指定图层设置符号。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">参数名称</th>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">layerId</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">图层ID</td>
+</tr>
+<tr>
+<td style="text-align:left">symbol</td>
+<td style="text-align:left">string、array</td>
+<td style="text-align:left">已经添加的符号ID（addSymbol中的符号ID), 或者<a href="#expression">符号表达式</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Version:</strong></p>
+<p>11.1.1</p>
+<p><strong>Example</strong></p>
+<pre class="prettyprint source"><code>map.setSymbol(&quot;layerId&quot;, 'point-1');
+map.setSymbol(&quot;layerId&quot;, [
+  &quot;match&quot;,
+  [&quot;get&quot;, &quot;DLBM&quot;],
+  &quot;011&quot;, &quot;line-964458&quot;, //公路用地
+  &quot;013&quot;, &quot;line-964462&quot;, //农村道路
+  &quot;021&quot;, &quot;line-962613&quot;, //河流水面
+  &quot;023&quot;, &quot;line-962613&quot;, //河流水面
+  &quot;line-962613&quot;
+]);
+</code></pre>
+<h2>maplibregl.Map.prototype.hasSymbol</h2>
+<p>检查是否存在指定 ID 的符号。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">参数名称</th>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">id</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">符号ID</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Version:</strong></p>
+<p>11.1.1</p>
+<p><strong>Returns</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">boolean</td>
+<td style="text-align:left">符号是否存在</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong></p>
+<pre class="prettyprint source"><code>const pointExists = map.hasSymbol('point-1');
+</code></pre>
+<h2>maplibregl.Map.prototype.removeSymbol</h2>
+<p>删除指定 ID 的符号。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">参数名称</th>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">id</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">已经添加的符号ID</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Version:</strong></p>
+<p>11.1.1</p>
+<p><strong>Example</strong></p>
+<pre class="prettyprint source"><code>map.removeSymbol('point-1');
+</code></pre>
+<h2>maplibregl.Map.prototype.updateSymbol</h2>
+<p>更新指定 ID 的符号。</p>
+<table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>描述</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td>已经添加的符号ID</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>symbol</td>
+<td>object</td>
+<td>由Maplibre Layers中的<a href="https://maplibre.org/maplibre-style-spec/layers/#paint-property">paint</a>、<a href="https://maplibre.org/maplibre-style-spec/layers/#layout-property">layout</a>（visibility 属性除外）组成的符号对象</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>参数名称</td>
+<td>类型</td>
+<td>描述</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>paint</td>
+<td>object</td>
+<td>可选，Maplibre Layers <a href="https://maplibre.org/maplibre-style-spec/layers/#paint-property">paint</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>layout</td>
+<td>object</td>
+<td>可选，Maplibre Layers <a href="https://maplibre.org/maplibre-style-spec/layers/#layout-property">layout</a>（visibility 属性除外）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Version:</strong></p>
+<p>11.1.1</p>
+<p><strong>Example</strong></p>
+<pre class="prettyprint source"><code>map.updateSymbol('point-1', symbol);
+</code></pre>
+<h2>maplibregl.Map.prototype.getSymbol</h2>
+<p>获取指定 ID 的符号信息。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">参数名称</th>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">id</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">符号ID</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Version:</strong></p>
+<p>11.1.1</p>
+<p><strong>Returns</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">object</td>
+<td style="text-align:left">由Maplibre Layers中的<a href="https://maplibre.org/maplibre-style-spec/layers/#paint-property">paint</a>、<a href="https://maplibre.org/maplibre-style-spec/layers/#layout-property">layout</a>（visibility 属性除外）组成的符号对象</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong></p>
+<pre class="prettyprint source"><code>const point1 = map.getSymbol('point-1');
+</code></pre>
+<h2>maplibregl.Map.prototype.setSymbolProperty</h2>
+<p>设置指定ID符号的属性值。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">参数名称</th>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">id</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">符号ID</td>
+</tr>
+<tr>
+<td style="text-align:left">index</td>
+<td style="text-align:left">number、null</td>
+<td style="text-align:left">符号数组的index， 符号不是数组的设置为null</td>
+</tr>
+<tr>
+<td style="text-align:left">name</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">属性名称</td>
+</tr>
+<tr>
+<td style="text-align:left">value</td>
+<td style="text-align:left">any</td>
+<td style="text-align:left">可选，属性值</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Version:</strong></p>
+<p>11.1.1</p>
+<p><strong>Example</strong></p>
+<pre class="prettyprint source"><code>map.setSymbolProperty('point-1', null, &quot;icon-color&quot;, &quot;black&quot;);
+map.setSymbolProperty('line-962529', 0, &quot;line-width&quot;, 10);
+</code></pre>
+<h2>maplibregl.Map.prototype.getSymbolProperty</h2>
+<p>获取指定ID符号的属性值。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">参数名称</th>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">id</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">符号ID</td>
+</tr>
+<tr>
+<td style="text-align:left">index</td>
+<td style="text-align:left">number、null</td>
+<td style="text-align:left">符号数组的index， 符号不是数组的设置为null</td>
+</tr>
+<tr>
+<td style="text-align:left">name</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">属性名称</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Version:</strong></p>
+<p>11.1.1</p>
+<p><strong>Returns</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">any</td>
+<td style="text-align:left">属性值</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong></p>
+<pre class="prettyprint source"><code>map.getSymbolProperty('point-1', null, &quot;icon-color&quot;);
+map.getSymbolProperty('line-962529', 0, &quot;line-width&quot;);
+</code></pre>
+<h2>扩展 <a href="https://maplibre.org/maplibre-style-spec/layers/">Maplibre Layers</a></h2>
+<p>在<a href="https://maplibre.org/maplibre-style-spec/layers/">Maplibre Layers</a> 属性的基础上新增了symbol 属性， 指定符号ID 或者 <a href="#expression">符号表达式</a>。</p>
+<p><strong>符号ID</strong></p>
+<pre class="prettyprint source"><code>map.addLayer({
+    id: &quot;symbol&quot;,
+    source: &quot;sourceId&quot;,
+    type: &quot;symbol&quot;,
+    symbol: 'point-1'
+});
+</code></pre>
+<pre class="prettyprint source"><code>map.setStyle({
+    version: 8,
+    sources: {},
+    layers: [{
+        id: &quot;symbol&quot;,
+        source: &quot;sourceId&quot;,
+        type: &quot;symbol&quot;,
+        symbol: 'point-1'
+    }]
+})
+</code></pre>
+<p><strong><a id="expression">符号支持的MaplibreGL表达式</a></strong></p>
+<p><strong><a href="https://maplibre.org/maplibre-style-spec/expressions/#match">Match</a></strong></p>
+<pre class="prettyprint source"><code>map.addLayer({
+    id: &quot;symbol&quot;,
+    source: &quot;sourceId&quot;,
+    type: &quot;symbol&quot;,
+    symbol: [
+        &quot;match&quot;,
+        [&quot;get&quot;, &quot;DLBM&quot;],
+        &quot;011&quot;, &quot;line-964458&quot;, //公路用地
+        &quot;013&quot;, &quot;line-964462&quot;, //农村道路
+        &quot;021&quot;, &quot;line-962613&quot;, //河流水面
+        &quot;023&quot;, &quot;line-962613&quot;, //河流水面
+        &quot;line-962613&quot;
+      ]
+});
+</code></pre>
+<p><strong><a href="https://maplibre.org/maplibre-style-spec/expressions/#case">Case</a></strong></p>
+<pre class="prettyprint source"><code>map.addLayer({
+    id: &quot;symbol&quot;,
+    source: &quot;sourceId&quot;,
+    type: &quot;symbol&quot;,
+    symbol: [
+        &quot;case&quot;,
+        [&quot;all&quot;, [&quot;&lt;=&quot;, [&quot;get&quot;, &quot;dMaxZValue&quot;], 70]], &quot;PoPdensity_R_MAX70&quot;,
+        [&quot;all&quot;, [&quot;>&quot;, [&quot;get&quot;, &quot;dMaxZValue&quot;], 70],[&quot;&lt;=&quot;, [&quot;get&quot;, &quot;dMaxZValue&quot;], 140]], &quot;PoPdensity_R_MAX140&quot;,
+        [&quot;all&quot;, [&quot;>&quot;, [&quot;get&quot;, &quot;dMaxZValue&quot;], 140],[&quot;&lt;=&quot;, [&quot;get&quot;, &quot;dMaxZValue&quot;], 210]], &quot;PoPdensity_R_MAX210&quot;,
+        [&quot;all&quot;, [&quot;>&quot;, [&quot;get&quot;, &quot;dMaxZValue&quot;], 210],[&quot;&lt;=&quot;, [&quot;get&quot;, &quot;dMaxZValue&quot;], 280]], &quot;PoPdensity_R_MAX280&quot;,
+        [&quot;all&quot;, [&quot;>&quot;, [&quot;get&quot;, &quot;dMaxZValue&quot;], 280],[&quot;&lt;=&quot;, [&quot;get&quot;, &quot;dMaxZValue&quot;], 350]], &quot;PoPdensity_R_MAX350&quot;,
+        [&quot;all&quot;, [&quot;>&quot;, [&quot;get&quot;, &quot;dMaxZValue&quot;], 350],[&quot;&lt;=&quot;, [&quot;get&quot;, &quot;dMaxZValue&quot;], 420]], &quot;PoPdensity_R_MAX420&quot;,
+        [&quot;all&quot;, [&quot;>&quot;, [&quot;get&quot;, &quot;dMaxZValue&quot;], 420],[&quot;&lt;=&quot;, [&quot;get&quot;, &quot;dMaxZValue&quot;], 490]], &quot;PoPdensity_R_MAX490&quot;,
+        [&quot;all&quot;, [&quot;>&quot;, [&quot;get&quot;, &quot;dMaxZValue&quot;], 490],[&quot;&lt;=&quot;, [&quot;get&quot;, &quot;dMaxZValue&quot;], 560]], &quot;PoPdensity_R_MAX560&quot;,
+        [&quot;all&quot;, [&quot;>&quot;, [&quot;get&quot;, &quot;dMaxZValue&quot;], 560],[&quot;&lt;=&quot;, [&quot;get&quot;, &quot;dMaxZValue&quot;], 640]], &quot;PoPdensity_R_MAX640&quot;,
+        [&quot;all&quot;, [&quot;>&quot;, [&quot;get&quot;, &quot;dMaxZValue&quot;], 640],[&quot;&lt;=&quot;, [&quot;get&quot;, &quot;dMaxZValue&quot;], 700]], &quot;PoPdensity_R_MAX700&quot;,
+        [&quot;all&quot;, [&quot;>&quot;, [&quot;get&quot;, &quot;dMaxZValue&quot;], 700],[&quot;&lt;=&quot;, [&quot;get&quot;, &quot;dMaxZValue&quot;], 770]], &quot;PoPdensity_R_MAX770&quot;,
+        [&quot;all&quot;, [&quot;>&quot;, [&quot;get&quot;, &quot;dMaxZValue&quot;], 770],[&quot;&lt;=&quot;, [&quot;get&quot;, &quot;dMaxZValue&quot;], 1000]], &quot;PoPdensity_R_MAX1000&quot;,
+        [&quot;all&quot;, [&quot;>&quot;, [&quot;get&quot;, &quot;dMaxZValue&quot;], 1000]], &quot;PoPdensity_R_Exceed1000&quot;,
+        &quot;Country_R&quot;
+      ]
+});
+</code></pre>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</dd>
+
+    
+    </div>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+        
+        <dl>
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="init">
+          
+          
+          init<span class="signature">(config)</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            maplibregl/overlay/symbol/WebSymbol.js, line 309
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>初始化Web符号配置。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>config</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>配置信息</p>
+                
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>basePath</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>指定符号资源路径</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+            </td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+
+    
+<dl class="details">
+    
+        
+    
+    <dt class="tag-version">Version:</dt>
+    <dd class="tag-version"><ul class="dummy"><li>11.1.1</li></ul></dd>
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</dd>
+
+        </dl>
+    
+    
+    
+
+</article>
+
+</section>  
+
+
+
+
+
+        <footer>
+            Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc</a> on Fri Sep 26 2025 09:51:30 GMT+0800 (中国标准时间)
+        </footer>
+    </div>
+</div>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>

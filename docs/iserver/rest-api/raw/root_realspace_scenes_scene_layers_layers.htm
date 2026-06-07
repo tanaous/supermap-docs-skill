@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../../../../../../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../../../../../../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../../../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../../../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../../../../../../../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../../../../../../iserver-icon.png"/>
+    
+  <script data-relpath="../../../../../../.." src="../../../../../../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <meta name="template" content="../../../../../../../assets/layouts/RESTAPI.htt"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Language" content="zh-CN"/>
+  <meta name="topic-check-list" content="Ran Smart Index"/>
+  <meta name="topic-status" content="Complete"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>layers</title>
+  <link rel="StyleSheet" href="../../../../../../../assets/css/SuperMapHelp.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="Layers"/>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../../../../../../../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../../../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../../../assets/css/homeButtom.css"/>
+  <script src="../../../../../../../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../../../../../../../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../../../../../../../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../../../../../../../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../../../../../../../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../../../../../../../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../../../../../../../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../../../../../../../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../../../../../../../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <h2><a name="URI" id="URI"></a>URI</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="../scene.htm#URI">&lt;scene_uri&gt;</a>/layers[.&lt;format&gt;]</p>
+  <h2>支持的方法</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="#GET 请求">GET</a>、<a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a></p>
+  <h2>父资源</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="../scene.htm">scene</a></p>
+  <h2>子资源</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="layer.htm">layer</a></p>
+  <h2>介绍</h2>
+  <p class="myNormal">layers 资源对应一个三维场景中的三维图层集合。通过它可以获取当前三维场景中，三维图层的列表。</p>
+  <p class="myNormal" style="font-weight: bold;">支持的方法：</p>
+  <ul class="supportList" style="list-style: disc;">
+    <li class="supportList"><a class="contentpagehyperlink" href="#GET 请求">GET</a>：获取三维图层集合。</li>
+    <li class="supportList"><a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a>：检查三维图层集资源是否存在，或权限是否可以访问 layers 资源。</li>
+  </ul>
+  <p class="myNormal"><span style="font-weight: bold;">支持的表述格式：</span>RJSON、JSON、JSONP、HTML、XML。</p>
+  <h2>资源层次</h2>
+  <p><img alt="" border="0" height="272" src="../../../../../../../assets/images/root/Realspace/scenes/scene/layers/layers.png" usemap="#DrawArea" width="336"/><map id="DrawArea" name="DrawArea"><area alt="根资源" coords="5.95599,6.0332,262.365,46.9467" href="../../../../root.htm" shape="rect"/> <area alt="3D 资源" coords="62.274,58.86,208.044,99.66" href="../../../realspace.htm" shape="rect"/> <area alt="scenes 资源" coords="96.274,112.95,242.044,153.75" href="../../scenes.htm" shape="rect"/> <area alt="scene 资源" coords="133.274,166.24,279.044,212" href="../scene.htm" shape="rect"/> <area alt="layers 资源" coords="168.274,225.2,314.044,266" href="layers.htm" shape="rect"/></map></p>
+  <h2>HTTP 请求方法</h2>
+  <p class="myNormal">对如下 URI 执行 HTTP 请求，以 rjson 输出格式为例加以说明</p>
+  <p class="uriStyle">http://supermapiserver:8090/iserver/services/3D-sample/rest/realspace/scenes/scene/layers.rjson</p>
+  <h3><a id="GET 请求"></a>GET 请求</h3>
+  <p class="myNormal">获取当前三维场景中的三维图层列表。</p>
+  <h4 class="myNormal">请求参数</h4>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td style="text-align: center">名称</td>
+        <td style="text-align: center">类型</td>
+        <td style="text-align: center">含义</td>
+      </tr>
+      <tr class="t2Row">
+        <td>_cache</td>
+        <td>boolean</td>
+        <td>【可选参数】 是否使用缓存，默认为 true。如果为 false，则关闭所有缓存。</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4>响应结构</h4>
+  <p class="myNormal">对 layers （三维图层集）资源执行 GET 请求，返回的响应是一个三维图层集，其中单个三维图层的描述结构如下：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td style="text-align: center">字段</td>
+        <td style="text-align: center">类型</td>
+        <td style="text-align: center">说明</td>
+      </tr>
+      <tr class="t2Row">
+        <td>alwaysRender</td>
+        <td>boolean</td>
+        <td>图层是否始终渲染。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>bounds</td>
+        <td>Rectangle2D</td>
+        <td>图层范围。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>cachePassword</td>
+        <td>String</td>
+        <td>三维图层的密码。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>caption</td>
+        <td>String</td>
+        <td>图层的标题。 默认情况下图层的标题与图层的名称一致，用户可以根据具体情况修改图层的标题。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>dataConfigPath</td>
+        <td>String</td>
+        <td>三维图层所使用的数据的路径。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>dataName</td>
+        <td>String</td>
+        <td>三维图层名称。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>description</td>
+        <td>String</td>
+        <td>图层的描述信息。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>editable</td>
+        <td>boolean</td>
+        <td>图层是否可被编辑。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>hasLocalCache</td>
+        <td>boolean</td>
+        <td>三维切片缓存是否保存在本地。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>layer3DType</td>
+        <td>Layer3DType</td>
+        <td>图层的类型。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>level</td>
+        <td>int</td>
+        <td>缓存层号。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>maxVisibleAltitude</td>
+        <td>double</td>
+        <td>最大可见高度。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>minVisibleAltitude</td>
+        <td>double</td>
+        <td>最低可见高度。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>name</td>
+        <td>String</td>
+        <td>图层的名称。 图层的名称在图层所在的地图中唯一标识此图层，区分大小写。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>oldCache</td>
+        <td>boolean</td>
+        <td>是否使用旧缓存。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>queryable</td>
+        <td>boolean</td>
+        <td>图层中的对象是否可以查询。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>style</td>
+        <td>String</td>
+        <td>图层的渲染风格。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>subLayers</td>
+        <td>String</td>
+        <td>子图层信息。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>visible</td>
+        <td>boolean</td>
+        <td>图层是否可见。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>visibleDistance</td>
+        <td>double</td>
+        <td>三维图层中对象的可见距离。</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4>示例</h4>
+  <p class="myNormal">对示例三维服务的 layers 资源（scene 场景中的三维图层集 ）执行 GET 请求，返回的 rjson 格式的表述如下：</p>
+  <p class="myCodeP">[</p>
+  <p class="myCodeP">    {</p>
+  <p class="myCodeP">        &quot;alwaysRender&quot;: true,</p>
+  <p class="myCodeP">        &quot;bounds&quot;: null,</p>
+  <p class="myCodeP">        &quot;cachePassword&quot;: null,</p>
+  <p class="myCodeP">        &quot;caption&quot;: &quot;Tree@CBD&quot;,</p>
+  <p class="myCodeP">        &quot;dataConfigPath&quot;: &quot;C:/SuperMap/SuperMapiServer/samples/data/Realspace/CBD/Tree@CBD/Tree@CBD.scp&quot;,</p>
+  <p class="myCodeP">        &quot;dataName&quot;: &quot;Tree@CBD&quot;,</p>
+  <p class="myCodeP">        &quot;description&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">        &quot;editable&quot;: false,</p>
+  <p class="myCodeP">        &quot;hasLocalCache&quot;: true,</p>
+  <p class="myCodeP">        &quot;isWebDatasource&quot;: false,</p>
+  <p class="myCodeP">        &quot;layer3DType&quot;: &quot;OSGBLayer&quot;,</p>
+  <p class="myCodeP">        &quot;level&quot;: -1,</p>
+  <p class="myCodeP">        &quot;maxVisibleAltitude&quot;: 0,</p>
+  <p class="myCodeP">        &quot;minVisibleAltitude&quot;: 0,</p>
+  <p class="myCodeP">        &quot;name&quot;: &quot;Tree@CBD&quot;,</p>
+  <p class="myCodeP">        &quot;oldCache&quot;: false,</p>
+  <p class="myCodeP">        &quot;queryable&quot;: false,</p>
+  <p class="myCodeP">        &quot;subLayers&quot;: {},</p>
+  <p class="myCodeP">        &quot;type&quot;: null,</p>
+  <p class="myCodeP">        &quot;useTwoDimenCache&quot;: false,</p>
+  <p class="myCodeP">        &quot;visible&quot;: true,</p>
+  <p class="myCodeP">        &quot;visibleDistance&quot;: 0</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    {</p>
+  <p class="myCodeP">        &quot;alwaysRender&quot;: true,</p>
+  <p class="myCodeP">        &quot;bounds&quot;: null,</p>
+  <p class="myCodeP">        &quot;cachePassword&quot;: null,</p>
+  <p class="myCodeP">        &quot;caption&quot;: &quot;Lake@CBD&quot;,</p>
+  <p class="myCodeP">        &quot;dataConfigPath&quot;: &quot;C:/SuperMap/SuperMapiServer/samples/data/Realspace/CBD/Lake@CBD/Lake@CBD.scp&quot;,</p>
+  <p class="myCodeP">        &quot;dataName&quot;: &quot;Lake@CBD&quot;,</p>
+  <p class="myCodeP">        &quot;description&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">        &quot;editable&quot;: false,</p>
+  <p class="myCodeP">        &quot;hasLocalCache&quot;: true,</p>
+  <p class="myCodeP">        &quot;isWebDatasource&quot;: false,</p>
+  <p class="myCodeP">        &quot;layer3DType&quot;: &quot;OSGBLayer&quot;,</p>
+  <p class="myCodeP">        &quot;level&quot;: -1,</p>
+  <p class="myCodeP">        &quot;maxVisibleAltitude&quot;: 0,</p>
+  <p class="myCodeP">        &quot;minVisibleAltitude&quot;: 0,</p>
+  <p class="myCodeP">        &quot;name&quot;: &quot;Lake@CBD&quot;,</p>
+  <p class="myCodeP">        &quot;oldCache&quot;: false,</p>
+  <p class="myCodeP">        &quot;queryable&quot;: false,</p>
+  <p class="myCodeP">        &quot;subLayers&quot;: {},</p>
+  <p class="myCodeP">        &quot;type&quot;: null,</p>
+  <p class="myCodeP">        &quot;useTwoDimenCache&quot;: false,</p>
+  <p class="myCodeP">        &quot;visible&quot;: true,</p>
+  <p class="myCodeP">        &quot;visibleDistance&quot;: 0</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    {</p>
+  <p class="myCodeP">        &quot;alwaysRender&quot;: true,</p>
+  <p class="myCodeP">        &quot;bounds&quot;: null,</p>
+  <p class="myCodeP">        &quot;cachePassword&quot;: null,</p>
+  <p class="myCodeP">        &quot;caption&quot;: &quot;Ground_2@CBD&quot;,</p>
+  <p class="myCodeP">        &quot;dataConfigPath&quot;:&quot;C:/SuperMap/SuperMapiServer/samples/data/Realspace/CBD/Ground_2@CBD/Ground_2@CBD.scp&quot;,</p>
+  <p class="myCodeP">        &quot;dataName&quot;: &quot;Ground_2@CBD&quot;,</p>
+  <p class="myCodeP">        &quot;description&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">        &quot;editable&quot;: false,</p>
+  <p class="myCodeP">        &quot;hasLocalCache&quot;: true,</p>
+  <p class="myCodeP">        &quot;isWebDatasource&quot;: false,</p>
+  <p class="myCodeP">        &quot;layer3DType&quot;: &quot;OSGBLayer&quot;,</p>
+  <p class="myCodeP">        &quot;level&quot;: -1,</p>
+  <p class="myCodeP">        &quot;maxVisibleAltitude&quot;: 0,</p>
+  <p class="myCodeP">        &quot;minVisibleAltitude&quot;: 0,</p>
+  <p class="myCodeP">        &quot;name&quot;: &quot;Ground_2@CBD&quot;,</p>
+  <p class="myCodeP">        &quot;oldCache&quot;: false,</p>
+  <p class="myCodeP">        &quot;queryable&quot;: false,</p>
+  <p class="myCodeP">        &quot;subLayers&quot;: {},</p>
+  <p class="myCodeP">        &quot;type&quot;: null,</p>
+  <p class="myCodeP">        &quot;useTwoDimenCache&quot;: false,</p>
+  <p class="myCodeP">        &quot;visible&quot;: true,</p>
+  <p class="myCodeP">        &quot;visibleDistance&quot;: 0</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    {</p>
+  <p class="myCodeP">        &quot;alwaysRender&quot;: true,</p>
+  <p class="myCodeP">        &quot;bounds&quot;: null,</p>
+  <p class="myCodeP">        &quot;cachePassword&quot;: null,</p>
+  <p class="myCodeP">        &quot;caption&quot;: &quot;Ground_1@CBD&quot;,</p>
+  <p class="myCodeP">        &quot;dataConfigPath&quot;:&quot;C:/SuperMap/SuperMapiServer/samples/data/Realspace/CBD/Ground_1@CBD/Ground_1@CBD.scp&quot;,</p>
+  <p class="myCodeP">        &quot;dataName&quot;: &quot;Ground_1@CBD&quot;,</p>
+  <p class="myCodeP">        &quot;description&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">        &quot;editable&quot;: false,</p>
+  <p class="myCodeP">        &quot;hasLocalCache&quot;: true,</p>
+  <p class="myCodeP">        &quot;isWebDatasource&quot;: false,</p>
+  <p class="myCodeP">        &quot;layer3DType&quot;: &quot;OSGBLayer&quot;,</p>
+  <p class="myCodeP">        &quot;level&quot;: -1,</p>
+  <p class="myCodeP">        &quot;maxVisibleAltitude&quot;: 0,</p>
+  <p class="myCodeP">        &quot;minVisibleAltitude&quot;: 0,</p>
+  <p class="myCodeP">        &quot;name&quot;: &quot;Ground_1@CBD&quot;,</p>
+  <p class="myCodeP">        &quot;oldCache&quot;: false,</p>
+  <p class="myCodeP">        &quot;queryable&quot;: false,</p>
+  <p class="myCodeP">        &quot;subLayers&quot;: {},</p>
+  <p class="myCodeP">        &quot;type&quot;: null,</p>
+  <p class="myCodeP">        &quot;useTwoDimenCache&quot;: false,</p>
+  <p class="myCodeP">        &quot;visible&quot;: true,</p>
+  <p class="myCodeP">        &quot;visibleDistance&quot;: 0</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    {</p>
+  <p class="myCodeP">        &quot;alwaysRender&quot;: true,</p>
+  <p class="myCodeP">        &quot;bounds&quot;: null,</p>
+  <p class="myCodeP">        &quot;cachePassword&quot;: null,</p>
+  <p class="myCodeP">        &quot;caption&quot;: &quot;Building@CBD&quot;,</p>
+  <p class="myCodeP">        &quot;dataConfigPath&quot;:&quot;C:/SuperMap/SuperMapiServer/samples/data/Realspace/CBD/Building@CBD/Building@CBD.scp&quot;,</p>
+  <p class="myCodeP">        &quot;dataName&quot;: &quot;Building@CBD&quot;,</p>
+  <p class="myCodeP">        &quot;description&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">        &quot;editable&quot;: false,</p>
+  <p class="myCodeP">        &quot;hasLocalCache&quot;: true,</p>
+  <p class="myCodeP">        &quot;isWebDatasource&quot;: false,</p>
+  <p class="myCodeP">        &quot;layer3DType&quot;: &quot;OSGBLayer&quot;,</p>
+  <p class="myCodeP">        &quot;level&quot;: -1,</p>
+  <p class="myCodeP">        &quot;maxVisibleAltitude&quot;: 0,</p>
+  <p class="myCodeP">        &quot;minVisibleAltitude&quot;: 0,</p>
+  <p class="myCodeP">        &quot;name&quot;: &quot;Building@CBD&quot;,</p>
+  <p class="myCodeP">        &quot;oldCache&quot;: false,</p>
+  <p class="myCodeP">        &quot;queryable&quot;: false,</p>
+  <p class="myCodeP">        &quot;subLayers&quot;: {},</p>
+  <p class="myCodeP">        &quot;type&quot;: null,</p>
+  <p class="myCodeP">        &quot;useTwoDimenCache&quot;: false,</p>
+  <p class="myCodeP">        &quot;visible&quot;: true,</p>
+  <p class="myCodeP">        &quot;visibleDistance&quot;: 0</p>
+  <p class="myCodeP">    }</p>
+  <p class="myCodeP">]</p>
+  <h3><a id="HEAD 请求"></a>HEAD 请求</h3>
+  <p class="myNormal">返回跟 GET 请求一样的 HTTP 响应头，但是没有响应实体。可以在不必传输整个响应内容的情况下，获取包含在响应消息头中的元数据信息。元数据信息包括媒体类型，字符编码，压缩编码，实体内容长度等。</p>
+  <p class="myNormal">HEAD 请求可以用来判断三维图层集资源是否存在，或者客户端是否有权限访问 layers 资源。通过对加.&lt;format&gt;的 URI 执行 HEAD 请求，还可以快速判断 layers 资源是否支持&lt;format&gt;格式的表述。</p>
+  <h2>请参见</h2>
+  <ul class="referenceList">
+    <li class="referenceList"><a class="contentpagehyperlink" href="layer.htm">layer</a>、<a class="contentpagehyperlink" href="../scene.htm">scene</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../../../clientBuildREST/ConstructRESTRequest.htm">客户端构建 REST 请求</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../../../StatusCodeDescription.htm">状态码列表及说明</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../../../SuperMap_iServer_REST_API_OutputFormat.htm">SuperMap iServer REST API 表述格式介绍</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../../../resource_hierarchy.htm">GIS 服务资源层次结构</a></li>
+  </ul>
+  <p> </p>
+
+</div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../../../../../../../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../../../../../../../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../../../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../../../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../../../../../../../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../../../../../../../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../../../../../../../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../../../../../../../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../../../../../../../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../../../../../../.."
+    gCommonRootRelPath = "../../../../../../.."
+    gTopicId = "8.2.2.6.1.2.1.1"
+  
+//]]></script>
+
+  <script src="../../../../../../../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../../../../../../../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../../../../../../../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../../../../../../../whxdata/layoutconfig.js"></script>
+  <script src="../../../../../../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

@@ -1,0 +1,1153 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../../../../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../../../../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../../../../../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../../../../iserver-icon.png"/>
+    
+  <script data-relpath="../../../../.." src="../../../../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <meta name="template" content="../../../../../assets/layouts/SuperMapiServerMain.htt"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Language" content="zh-CN"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>配置地图服务提供者</title>
+  <link rel="StyleSheet" href="../../../../../assets/css/SuperMapHelp.css" type="text/css"/>
+  <script type="text/javascript" src="../../../../../assets/js/shCore.js"></script>
+  <script type="text/javascript" src="../../../../../assets/js/shBrushBash.js"></script>
+  <script type="text/javascript" src="../../../../../assets/js/shBrushCpp.js"></script>
+  <script type="text/javascript" src="../../../../../assets/js/shBrushCSharp.js"></script>
+  <script type="text/javascript" src="../../../../../assets/js/shBrushCss.js"></script>
+  <script type="text/javascript" src="../../../../../assets/js/shBrushDelphi.js"></script>
+  <script type="text/javascript" src="../../../../../assets/js/shBrushDiff.js"></script>
+  <script type="text/javascript" src="../../../../../assets/js/shBrushGroovy.js"></script>
+  <script type="text/javascript" src="../../../../../assets/js/shBrushJava.js"></script>
+  <script type="text/javascript" src="../../../../../assets/js/shBrushJScript.js"></script>
+  <script type="text/javascript" src="../../../../../assets/js/shBrushPhp.js"></script>
+  <script type="text/javascript" src="../../../../../assets/js/shBrushPlain.js"></script>
+  <script type="text/javascript" src="../../../../../assets/js/shBrushPython.js"></script>
+  <script type="text/javascript" src="../../../../../assets/js/shBrushRuby.js"></script>
+  <script type="text/javascript" src="../../../../../assets/js/shBrushScala.js"></script>
+  <script type="text/javascript" src="../../../../../assets/js/shBrushSql.js"></script>
+  <script type="text/javascript" src="../../../../../assets/js/shBrushVb.js"></script>
+  <script type="text/javascript" src="../../../../../assets/js/shBrushXml.js"></script>
+  <script type="text/javascript" src="../../../../../assets/js/ConfigiServer6R.js"></script>
+  <meta name="rh-index-keywords" content="配置,配置地图服务提供者,BingMaps_地图服务提供者"/>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../../../../../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../assets/css/homeButtom.css"/>
+  <script src="../../../../../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../../../../../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../../../../../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../../../../../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../../../../../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../../../../../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../../../../../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../../../../../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../../../../../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <p class="myNormal">SuperMap iServer 支持以下类型的地图服务提供者：</p>
+  <h2><a id="配置本地地图服务提供者"></a>配置本地地图服务提供者</h2>
+  <p class="myNormal">配置一个 UGC 地图服务提供者，如下所示：</p>
+  <pre class="brush:xml">&lt;provider name=&quot;ugcMapProvider1&quot; class=&quot;com.supermap.services.providers.UGCMapProvider&quot;&gt;
+        &lt;config class=&quot;com.supermap.services.providers.UGCMapProviderSetting&quot;&gt;
+                &lt;outputPath&gt;../webapps/iserver/output&lt;/outputPath&gt;
+                &lt;outputSite&gt;http://localhost:8090/iserver/output/&lt;/outputSite&gt;
+                &lt;workspacePath&gt;server=../samples/data/World/World.sxwu;password=supermap&lt;/workspacePath&gt;
+                &lt;cacheVersion&gt;5.0&lt;/cacheVersion&gt;
+                &lt;useCompactCache&gt;false&lt;/useCompactCache&gt;
+                &lt;multiThread&gt;true&lt;/multiThread&gt;
+                &lt;fullLabelEnabled&gt;false&lt;/fullLabelEnabled&gt;
+                &lt;!-- 是否禁用扩大查询功能 --&gt;
+                &lt;inflatDisabled&gt;true&lt;/inflatDisabled;&gt;
+                &lt;poolSize&gt;0&lt;/poolSize&gt;
+                &lt;preferedPNGType&gt;PNG&lt;/preferedPNGType&gt;
+                &lt;queryExpectCount&gt;1000&lt;/queryExpectCount&gt;
+                &lt;leftTopCorner&gt;
+                        &lt;x&gt;-180.0&lt;/x&gt;
+                        &lt;y&gt;90.0&lt;/y&gt;
+                &lt;/leftTopCorner&gt;
+                &lt;dpi&gt;0&lt;/dpi&gt;
+                &lt;usePreGeneratedUGCV5Cache&gt;false&lt;/usePreGeneratedUGCV5Cache&gt;
+               &lt;!-- 设置排除字段 --&gt;
+               &lt;excludedFieldsInMaps&gt;
+                     &lt;com.supermap.services.providers.ExcludedFieldsInMap&gt;
+                          &lt;mapName&gt;World&lt;/mapName&gt;
+                          &lt;excludedFieldsInLayers&gt;
+                               &lt;com.supermap.services.providers.ExcludedFieldsInLayer&gt;
+                                  &lt;layerName&gt;Captial@World&lt;/layerName&gt; 
+                                  &lt;excludedFields&gt;SMID,NAME&lt;/excludedFields&gt;
+                               &lt;/com.supermap.services.providers.ExcludedFieldsInLayer&gt;
+                          &lt;/excludedFieldsInLayers&gt;
+                    &lt;/com.supermap.services.providers.ExcludedFieldsInMap&gt;
+                &lt;/excludedFieldsInMaps&gt;
+        &lt;/config&gt;
+&lt;/provider&gt;</pre>
+  <p class="myNormal">其中&lt;provider&gt;中的 class 标识的是 UGC 服务提供者的实现类，&lt;config&gt;中的 class 标识的是 UGC 服务提供者对应的配置类，即 UGCMapProviderSetting ，&lt;config&gt;中的内容是 <a class="contentpagehyperlink" href="../../../../../mergedProjects/iServerJavadoc/com/supermap/services/providers/UGCMapProviderSetting.html">UGCMapProviderSetting</a> 对应的配置项：</p>
+  <ul style="list-style: circle;">
+    <li class="SymbolList1" style="list-style: disc;">&lt;inflatDisabled&gt;：动态出图是否禁用扩大查询范围功能。为true时表示关闭扩大查询范围，对于浏览瓦片地图时，可将该参数设置为false，表示开启扩大查询，以保证相邻瓦片正常拼接，出图完整。需要将该选项设置为false,即在动态出图时，扩大查询范围。当浏览非瓦片地图时，为了提高出图性能，可以将该参数设置为true，禁用扩大查询功能，仅浏览所需范围的区域。</li>
+    <li class="SymbolList1" style="list-style: disc;">&lt;outputPath&gt;：图片的输出路径。</li>
+    <li class="SymbolList1" style="list-style: disc;">&lt;outputSite&gt;：访问图片的根目录 URI。</li>
+    <li class="SymbolList1" style="list-style: disc;">&lt;workspacePath&gt;：该服务提供者所用的工作空间的路径。若工作空间有密码，假设密码为 supermap，则写为：  </li>
+    <li style="list-style: none; display: inline;">
+      <pre class="brush:xml">&lt;workspacePath&gt;server=../samples/data/World/World.sxwu;password=supermap&lt;/workspacePath&gt; </pre>
+      <p class="myNormal">此外，工作空间路径支持从环境变量和系统配置文件中读取。可写为：</p>
+      <pre class="brush:xml">&lt;workspacePath&gt;server=${datapath1}/World.sxwu;password=supermap&lt;/workspacePath&gt; </pre>
+      详细说明请参见：<a class="contentpagehyperlink" href="provider_setting_xml.htm#workspacepath">预设本地工作空间路径</a>
+    </li>
+    <li style="list-style: none; display: inline;"> </li>
+    <li class="SymbolList1" style="list-style: disc;"><a name="cacheVersion" id="cacheVersion"></a>&lt;cacheVersion&gt;：指定动态缓存的版本，默认为5.0，目前 iServer 支持的缓存版本信息详见<a class="contentpagehyperlink" href="../../../../../Subject_introduce/Cache/MapCache/TileFormat/CacheVersion.htm">SuperMap 缓存策略</a>。如果需要兼容 SuperMap iServer 2008生成的简易缓存，则缓存版本需设置为3.1。</li>
+    <li class="SymbolList1">&lt;ignoreHashcodeWhenUseCache&gt;：如果为 true，表示读取原始缓存时忽略 hashcode，默认为 false。此参数支持4.0和5.0缓存。</li>
+    <li class="SymbolList1">&lt;useCompactCache&gt;：是否使用紧凑格式的缓存，如果设为 true 则使用紧凑缓存，默认为 false。<span style="font-weight: bold;">目前只有5.0版本的缓存支持该参数。</span></li>
+    <li class="SymbolList1">&lt;multiThread&gt;：是否使用多线程，默认为 true。</li>
+    <li class="SymbolList1"><span style="font-weight: bold;">&lt;</span>fullLabelEnabled&gt;：是否完整显示标签，默认为 false。当设置为 true 时，浏览地图时将显示完整标签，而无法显示全的标签将不显示。</li>
+    <li class="SymbolList1">&lt;poolSize&gt;：线程缓冲池大小，详见<a class="contentpagehyperlink" href="../ProviderParameter/Provider_parameters.htm#地图服务提供者的配置">服务提供者配置的参数说明</a>。</li>
+    <li class="SymbolList1">&lt;preferedPNGType&gt;：使用 PNG 缓存时首选 PNG 图片类型，目前支持 PNG 和 PNG8，若为 null 则默认使用 PNG。详见<a class="contentpagehyperlink" href="../ProviderParameter/Provider_parameters.htm#地图服务提供者的配置">服务提供者配置的参数说明</a>。</li>
+    <li class="SymbolList1">&lt;queryExpectCount&gt;：服务端默认返回查询结果条目的数量，默认为1000。</li>
+    <li class="SymbolList1">&lt;leftTopCorner&gt;：设置地图切片时，左上角的起始点，默认为地图范围的左上角坐标。</li>
+    <li class="SymbolList1">&lt;dpi&gt;：设置地图的 DPI，DPI 最低可设为 60，如不设置该参数则将采用缺省值 0，即 DPI 使用地图默认值。</li>
+    <li class="SymbolList1">&lt;usePreGeneratedUGCV5Cache&gt;：是否支持使用跨版本的UGCV5原始型且为本地剖分层级的瓦片文件，默认为false，即不生效。</li>
+    <li class="SymbolList1"><a id="throwExceptionWhenOutputMapError"></a>&lt;throwExceptionWhenOutputMapError&gt;：是否支持在浏览出图发生异常时抛出异常而不出图，默认为 true。开启此配置时将对地图校验得更为严格，如遇导致出图失败的异常，则出图相关请求将报错400并返回错误信息供您排查问题，例如因网络问题或其他原因，导致数据库连接不可用等。</li>
+    <li class="SymbolList1">&lt;cacheDisabled&gt;：是否禁用缓存，默认为使用。出图参数中也可以设置是否使用缓存，当两者发生冲突时，采用禁用优先原则。详见<a class="contentpagehyperlink" href="../ProviderParameter/Provider_parameters.htm#地图服务提供者的配置">服务提供者配置的参数说明</a>。</li>
+    <li class="SymbolList1">&lt;tileCacheReadOnly&gt;：栅格瓦片缓存是否只读。</li>
+    <li class="SymbolList1">&lt;vectorCacheDisable&gt;：是否启用矢量瓦片缓存。</li>
+    <li class="SymbolList1">&lt;outputVectorPath&gt;：矢量瓦片缓存存储位置。</li>
+    <li class="SymbolList1">&lt;vectorCacheReadOnly&gt;：矢量瓦片缓存是否只读。</li>
+  </ul>
+  <ul style="list-style: disc;">
+    <li class="SymbolList1">&lt;metaTile&gt;：切图内存缓存节点配置。若您使用 <a href="../../../../../mergedProjects/SuperMapiServerRESTAPI/root/maps/map/clearCache.htm">clearCache</a> 资源清除文件缓存后，浏览地图时无法正常更新，意味着内存缓存可能仍在生效。此时建议配置此节点，降低内存缓存存活时间。</li>
+    <li class="SymbolList2">&lt;enable&gt;：是否开启，默认为 true，即动态出图时将开启切图内存缓存。</li>
+    <li class="SymbolList2">&lt;duration&gt;：内存缓存的存活时间，默认为120000，单位为毫秒。</li>
+  </ul>
+  <ul style="list-style: circle;">
+    <li class="SymbolList1">&lt;excludedFieldsInMaps&gt;：设置排除字段。管理员可以根据需要，排除指定图层的字段，当用户进行地图查询操作时，将查看不到已排除的字段。</li>
+  </ul>
+  <p class="myNormal">其中，com.supermap.services.providers.ExcludedFieldsInMap、com.supermap.services.providers.ExcludedFieldsInLayer为字段排除设置实现类。&lt;mapName&gt;为地图名称，&lt;layerName&gt;为数据集名称，&lt;excludedFields&gt;指定排除的字段。</p>
+  <p class="myNormal">SuperMap iServer 也支持 Oracle 、SQL Server、DM 数据库型的工作空间作为服务提供者。需要提供的参数如表1所示，没有特殊说明表示几种类型都需要该参数。</p>
+  <p class="myNormal" style="text-align: center;">表1 数据库型工作空间信息设置参数</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="80%">
+    <colgroup>
+      <col style="width: 20%;"/>
+      <col style="width: 80%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>参数名称</td>
+        <td>描述</td>
+      </tr>
+      <tr class="t2Row">
+        <td>type</td>
+        <td>工作空间的类型，目前支持的数据库型工作空间为 Oracle 工作空间、SQL Server 工作空间、DM 工作空间，其值分别为 ORACLE、 SQL、DM。ORACLE 表示工作空间保存在 oracle 数据库中，SQL 表示工作空间保存在 SQL Server 数据库中，DM 表示工作空间保存在 DM 数据库中。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>name</td>
+        <td>工作空间在数据库中的名称。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>username</td>
+        <td>用来登录数据库的用户名。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>password</td>
+        <td>用来登录数据库的密码。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>server</td>
+        <td>服务器名称。对于 Oracle 数据库，其服务器名为其 TNS 服务名称；对于 SQL Server 数据库，其服务器名为其系统 DSN（Database System Name）名称；对 DM 数据库，其服务器名为 DM 数据库所在机器的 IP，如 192.168.110.110。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>database</td>
+        <td>数据库名称。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>driver</td>
+        <td>当采用 ODBC 连接时的驱动程序名称。只有 SQL Server 数据库使用 ODBC 连接，其驱动程序名可为 SQL Server 或 SQL Native Client。</td>
+      </tr>
+    </tbody>
+  </table>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1">使用 Oracle 数据库提供数据源的&lt;workspacePath&gt;格式如下：</li>
+  </ul>
+  <pre class="brush:xml">&lt;workspacePath&gt;type=ORACLE;name=testOralce;username=cq;password=cq;server=ISERVER;database=iserver&lt;/workspacePath&gt;  </pre>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1">使用 SQL 数据库提供数据源的&lt;workspacePath&gt;为：</li>
+  </ul>
+  <pre class="brush:xml">&lt;workspacePath&gt;type=SQL;name=testSQL;username=sa;password=iserver;server=ISERVICE\SQL2005;driver= 
+ SQL Server;database=iserver&lt;/workspacePath&gt; </pre>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1">使用 DM 数据库提供数据源的&lt;workspacePath&gt;为：</li>
+  </ul>
+  <pre class="brush:xml">&lt;workspacePath&gt;type=DM;name=testDM;username=sa;password=iserver;server=ISERVICE\DM7;database=iserver&lt;/workspacePath&gt; </pre>
+  <p class="myNormal" style="text-align: left;"> </p>
+  <p class="myNormal" style="text-align: left;">此外，多个&lt;provider&gt;可以绑定为一个整体，即作为一个&lt;providerSet&gt;向服务组件（&lt;component&gt;）提供服务，详见<a class="contentpagehyperlink" href="../providerset_setting_xml.htm">通过 XML 文件配置服务提供者集合</a>。&lt;provider&gt; 和 &lt;providerSet&gt; 在配置文件中的结构如下所示：</p>
+  <pre class="brush:xml">&lt;server&gt;
+        ...
+        &lt;application&gt;
+                ...
+                &lt;providerSets&gt;
+                        ...
+                        &lt;providerSet&gt;
+                                ...
+                        &lt;/providerSet&gt;
+                &lt;/providerSets&gt;
+                &lt;providers&gt;
+                        ...
+                        &lt;provider&gt;
+                        ...
+                        &lt;/provider&gt;
+                &lt;/providers&gt;
+        &lt;/application&gt;
+&lt;/server&gt;</pre>
+  <h2><a id="配置_REST_地图服务提供者"></a>配置 REST 地图服务提供者</h2>
+  <p class="myNormal">配置 REST 服务提供者在&lt;provider&gt;节点中进行：</p>
+  <pre class="brush:xml">&lt;provider name=&quot;restMapProvider1&quot; class=&quot;com.supermap.services.providers.RESTMapProvider&quot;&gt;
+        &lt;config class=&quot;com.supermap.services.providers.RESTMapProviderSetting&quot;&gt;
+                &lt;restServiceRootURL&gt;http://localhost:8090/iserver/services/rest&lt;/restServiceRootURL&gt;
+                &lt;token&gt;GsXST0cE0CumxQUFXBX7Oopin4&lt;token&gt;
+        &lt;/config&gt;
+&lt;/provider&gt;</pre>
+  <p class="myNormal">其中&lt;provider&gt;中的 class 标识的是 REST 服务提供者的实现类，&lt;config&gt;中的 class 标识的是 REST 服务提供者对应的配置类，即 RESTMapProviderSetting ，&lt;config&gt;中的内容是 <a class="contentpagehyperlink" href="../../../../../mergedProjects/iServerJavadoc/com/supermap/services/providers/RESTMapProviderSetting.html">RESTMapProviderSetting</a> 对应的配置项：</p>
+  <ul style="list-style: circle;">
+    <li class="SymbolList1">&lt;restServiceRootURL&gt;：REST 地图服务的地址，指向服务的根资源路径，如 http://localhost:8090/iserver/services/map-china/rest。</li>
+    <li class="SymbolList1">&lt;useCache&gt;：是否使用缓存。默认为 true。开启缓存后，对资源的 REST 请求会缓存在本地，下次收到同样的请求就直接在缓存中读取，不需要再向服务端发送。</li>
+    <li class="SymbolList1">&lt;restProviderCacheConfig&gt;：服务提供者历史请求缓存在内存中的存储设置，包括：</li>
+    <li class="SymbolList2">&lt;maxElementsInMemory&gt;：内存中允许存储的最大请求记录数。0代表无限制；1代表不使用内存缓存，默认为1。如果不为1，则优先向内存中存储请求记录。</li>
+    <li class="SymbolList2">&lt;maxSizeOnDisk&gt;：磁盘最大容量。单位为 MB，默认大小为2048MB。</li>
+    <li class="SymbolList2">&lt;timeToLiveSeconds&gt;：设置缓存存活的时间上限，超时后会自动清除缓存。从创建记录开始计算，单位为秒，默认为0，代表缓存永久存活。</li>
+    <li class="SymbolList2">&lt;timeToIdleSeconds&gt;：设置缓存闲置的时间上限，超时后会自动清除缓存。从上次被访问开始计算，单位为秒，默认为0，代表缓存永久存活。</li>
+    <li class="SymbolList1">&lt;token&gt;：启用安全机制的情况下，访问受保护的 REST 资源需要提供<a class="contentpagehyperlink" href="../../../../../Subject_introduce/Security/config_role/token/Token.htm">Token 令牌</a>。</li>
+  </ul>
+  <h2><a id="配置_超图云_地图服务提供者"></a>配置 超图云 地图服务提供者</h2>
+  <p class="myNormal">超图云服务提供者的配置在&lt;provider&gt;节点中进行。具体配置方式如下：</p>
+  <pre class="brush:xml">&lt;provider name=&quot;CloudMapProvider1&quot; class=&quot;com.supermap.services.providers.CloudMapProvider&quot;&gt;
+        &lt;config class=&quot;com.supermap.services.providers.CloudMapProviderSetting&quot;&gt;
+                &lt;outputPath&gt;../webapps/iserver/output&lt;/outputPath&gt;
+                &lt;outputSite&gt;http://localhost:8090/iserver/output/&lt;/outputSite&gt;
+                &lt;servicesUrl&gt;http://t2.supermapcloud.com/FileService/image&lt;/servicesUrl&gt;
+                &lt;cacheEnabled&gt;true&lt;/cacheEnable&gt; 
+        &lt;/config&gt;
+&lt;/provider&gt;</pre>
+  <p class="myNormal">其中&lt;provider&gt;中的 class 标识的是 超图云 服务提供者的实现类，&lt;config&gt;中的  class 标识的是 超图云 服务提供者对应的配置类，即 CloudMapProviderSetting，&lt;config&gt;中的内容对应的是 <a class="contentpagehyperlink" href="../../../../../mergedProjects/iServerJavadoc/com/supermap/services/providers/CloudMapProviderSetting.html">CloudMapProviderSetting</a> 对应的配置项：</p>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1">&lt;outputPath&gt;：图片的输出路径。</li>
+    <li class="SymbolList1">&lt;outputSite&gt;：访问图片的根目录 URI。</li>
+    <li class="SymbolList1">&lt;servicesUrl&gt;：远程超图云地图服务的出图服务地址。如果用户设置 servicesUrl，则使用用户设置的服务地址，否则使用默认的服务地址：http://t2.supermapcloud.com/FileService/image。</li>
+    <li class="SymbolList1">&lt;cacheEnabled&gt;：是否缓存到本地。为 true 时，访问发布的服务时就可以在本地生成地图瓦片，从而可以提高后续服务浏览访问的速度。默认为 true。</li>
+    <li class="SymbolList1">&lt;tileCacheReadOnly&gt;：栅格瓦片缓存是否只读。</li>
+  </ul>
+  <h2><a id="GDP"></a>配置 GDP 地图服务提供者</h2>
+  <p class="myNormal">GDP 地图服务提供者的配置在&lt;provider&gt;节点中进行。具体配置方式如下：</p>
+  <pre class="brush:xml">&lt;provider class=&quot;com.supermap.services.providers.GDPMapProvider&quot; enabled=&quot;true&quot; name=&quot;gdpMapProvider-&quot;&gt; 
+	&lt;config class=&quot;com.supermap.services.providers.GDPMapProviderSetting&quot;&gt; 
+		&lt;cacheVersion&gt;5.0&lt;/cacheVersion&gt;  
+		&lt;filesPath&gt;F:\SuperMap\China_58b994e9-5856-4a10-a0dc-0e0e177d7962\7_0000_0000_192.168.120.42_2014_03_03_14_01_56.zip&lt;/filesPath&gt;  
+		&lt;dpi&gt;96.0&lt;/dpi&gt;  
+		&lt;tileSize&gt;256&lt;/tileSize&gt;  
+		&lt;zoom0ScaleDenator&gt;5.916587109091312E8&lt;/zoom0ScaleDenator&gt; 
+	&lt;/config&gt; 
+&lt;/provider&gt; </pre>
+  <p class="myNormal">其中&lt;provider&gt;中的 class 标识的是 GDP 服务提供者的实现类，&lt;config&gt;中的  class 标识的是 GDP 服务提供者对应的配置类，即 GDPMapProviderSetting，&lt;config&gt;中的内容对应的是 <a class="contentpagehyperlink" href="../../../../../mergedProjects/iServerJavadoc/com/supermap/services/providers/GDPMapProviderSetting.html">GDPMapProviderSetting</a> 对应的配置项：</p>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1">&lt;filesPath&gt;：GDP 瓦片包的路径。</li>
+    <li class="SymbolList1">&lt;cacheVersion&gt;：瓦片的版本。</li>
+    <li class="SymbolList1">&lt;dpi&gt;：瓦片的 DPI，默认为96。</li>
+    <li class="SymbolList1">&lt;tileSize&gt;：瓦片的大小，默认为256。</li>
+    <li class="SymbolList1">&lt;zoom0ScaleDenator&gt;：第0级比例尺分母，默认为5.916587109091312E8。</li>
+    <li class="SymbolList1">&lt;bounds&gt;：地图范围，默认为：-20037508.3427892440,-20037508.3427892440,20037508.3427892440,20037508.3427892440。</li>
+    <li class="SymbolList1">&lt;format&gt;：瓦片的格式，如 png。</li>
+    <li class="SymbolList1">&lt;watermark&gt;：设置发布的瓦片中是否带水印（其中所添加的类型包括：图片或者文字）。默认为false。详细请参照 <a class="contentpagehyperlink" href="#UGCV5">配置UGCV5地图服务提供者</a></li>
+  </ul>
+  <h2><a id="MongoDB"></a>配置 MongoDB 地图服务提供者</h2>
+  <p class="myNormal">MongoDB 服务提供者的配置在&lt;provider&gt;节点中进行。具体配置方式如下：</p>
+  <pre class="brush:xml">&lt;provider class=&quot;com.supermap.services.providers.MongoDBTileProvider&quot; enabled=&quot;true&quot; name=&quot;mongoDBMapProvider-China&quot;&gt; 
+      &lt;config class=&quot;com.supermap.services.providers.MongoDBTileProviderSetting&quot;&gt; 
+        &lt;serverAdresses&gt; 
+          &lt;string&gt;localhost:27017&lt;/string&gt; 
+        &lt;/serverAdresses&gt;  
+        &lt;mapName&gt;China&lt;/mapName&gt;  
+        &lt;tilesetName&gt;1181328118&lt;/tilesetName&gt;  
+        &lt;database&gt;smtiles&lt;/database&gt;  
+        &lt;username&gt;iserver&lt;/username&gt;  
+        &lt;password&gt;iserver&lt;/password&gt; 
+      &lt;/config&gt; 
+    &lt;/provider&gt; </pre>
+  <p class="myNormal">其中&lt;provider&gt;中的 class 标识的是 MongoDB 服务提供者的实现类，&lt;config&gt;中的  class 标识的是 MongoDB 服务提供者对应的配置类，即 MongoDBTileProviderSetting，&lt;config&gt;中的内容对应的是 <a class="contentpagehyperlink" href="../../../../../mergedProjects/iServerJavadoc/com/supermap/services/providers/MongoDBTileProviderSetting.html">MongoDBTileProviderSetting</a> 对应的配置项：</p>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1">&lt;serverAdresses&gt;：MongoDB 服务器的地址。</li>
+    <li class="SymbolList1">&lt;mapName&gt;：发布的地图的名称，如果不设置，默认发布当前存储位置的全部地图。</li>
+    <li class="SymbolList1">&lt;tilesetName&gt;：发布瓦片集的名称，不需手动设置。</li>
+    <li class="SymbolList1">&lt;database&gt;：用来存储这些地图瓦片的数据库。默认使用名为 smtiles 的数据库。</li>
+    <li class="SymbolList1">&lt;username&gt;：具有访问该数据库权限的用户名。</li>
+    <li class="SymbolList1">&lt;password&gt;：该用户的密码。</li>
+    <li class="SymbolList1">&lt;watermark&gt;：设置发布的瓦片中是否带水印（其中所添加的类型包括：图片或者文字）。默认为false。详细请参照 <a class="contentpagehyperlink" href="#UGCV5">配置UGCV5地图服务提供者</a></li>
+  </ul>
+  <h2><a id="MongoDB1"></a>配置 MongoDB MVT 地图服务提供者</h2>
+  <p class="myNormal">MongoDB MVT 服务提供者的配置在&lt;provider&gt;节点中进行。具体配置方式如下：</p>
+  <pre class="brush:xml">    &lt;provider class=&quot;com.supermap.services.providers.MongoDBMVTTileProvider&quot; enabled=&quot;true&quot; name=&quot;mongodbMvt-China&quot;&gt;
+      &lt;config class=&quot;com.supermap.services.providers.MongoDBTileProviderSetting&quot;&gt;
+        &lt;outputPath&gt;./output&lt;/outputPath&gt;  
+        &lt;outputSite&gt;http://{ip}:{port}/iserver/output/&lt;/outputSite&gt;  
+        &lt;serverAdresses&gt;
+          &lt;string&gt;localhost:27017&lt;/string&gt;
+        &lt;/serverAdresses&gt;  
+        &lt;mapName&gt;China&lt;/mapName&gt;  
+        &lt;tilesetName&gt;China&lt;/tilesetName&gt;  
+        &lt;database&gt;mvt&lt;/database&gt;  
+        &lt;username&gt;iserver&lt;/username&gt;
+        &lt;password&gt;iserver&lt;/password&gt;
+      &lt;/config&gt;
+    &lt;/provider&gt;</pre>
+  <p class="myNormal">其中&lt;provider&gt;中的 class 标识的是 MongoDB MVT 服务提供者的实现类，&lt;config&gt;中的  class 标识的是 MongoDB 服务提供者对应的配置类，即 MongoDBTileProviderSetting，&lt;config&gt;中的内容对应的是 <a class="contentpagehyperlink" href="../../../../../mergedProjects/iServerJavadoc/com/supermap/services/providers/MongoDBTileProviderSetting.html">MongoDBTileProviderSetting</a> 对应的配置项：</p>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1">&lt;serverAdresses&gt;：MongoDB 服务器的地址。</li>
+    <li class="SymbolList1">&lt;mapName&gt;：发布的地图的名称，如果不设置，默认发布当前存储位置的全部地图。</li>
+    <li class="SymbolList1">&lt;tilesetName&gt;：发布瓦片集的名称，不需手动设置。</li>
+    <li class="SymbolList1">&lt;database&gt;：用来存储这些地图瓦片的数据库。默认使用名为 smtiles 的数据库。</li>
+    <li class="SymbolList1">&lt;username&gt;：具有访问该数据库权限的用户名。</li>
+    <li class="SymbolList1">&lt;password&gt;：该用户的密码。</li>
+    <li class="SymbolList1">&lt;watermark&gt;：设置发布的瓦片中是否带水印（其中所添加的类型包括：图片或者文字）。默认为false。详细请参照 <a class="contentpagehyperlink" href="#UGCV5">配置UGCV5地图服务提供者</a></li>
+  </ul>
+  <h2><a id="OTS_mapserviceprovider"></a>配置 OTS 地图服务提供者</h2>
+  <p class="myNormal">OTS 服务提供者的配置在&lt;provider&gt;节点中进行。具体配置方式如下：</p>
+  <pre class="brush:xml">    &lt;provider class=&quot;com.supermap.services.providers.OTSTileProvider&quot; enabled=&quot;true&quot; name=&quot;ots-map&quot;&gt; 
+      &lt;config class=&quot;com.supermap.services.providers.OTSTileProviderSetting&quot;&gt;
+        &lt;outputPath&gt;D:\SuperMap\SuperMapiServer9D\webapps\iserver\output&lt;/outputPath&gt;  
+        &lt;outputSite&gt;http://{ip}:{port}/iserver/output/&lt;/outputSite&gt;  
+        &lt;nodeName&gt;cn-hangzhou&lt;/nodeName&gt;  
+        &lt;instanceName&gt;tileStore&lt;/instanceName&gt;  
+        &lt;accessKeyId&gt;accessKeyId&lt;/accessKeyId&gt;  
+        &lt;accessKeySecret&gt;accessKeySecret&lt;/accessKeySecret&gt;  
+        &lt;fromPublic&gt;true&lt;/fromPublic&gt; 
+      &lt;/config&gt; 
+    &lt;/provider&gt;  </pre>
+  <p class="myNormal">其中&lt;provider&gt;中的 class 标识的是 OTS 服务提供者的实现类，&lt;config&gt;中的  class 标识的是 OTS 服务提供者对应的配置类，即 OTSTileProviderSetting，&lt;config&gt;中的内容对应的是<a class="contentpagehyperlink" href="../../../../../mergedProjects/iServerJavadoc/com/supermap/services/providers/OTSTileProviderSetting.html">OTSTileProviderSetting</a> 对应的配置项：</p>
+  <ul class="SymbolList1" style="list-style: circle;">
+    <li class="SymbolList1" style="list-style: disc;">&lt;outputPath&gt;：图片的输出路径。</li>
+    <li class="SymbolList1" style="list-style: disc;">&lt;outputSite&gt;：访问图片的根目录 URI。</li>
+    <li class="SymbolList1" style="list-style: disc;">&lt;nodeName&gt;：节点名称。阿里云服务节点，为创建实例时选择的地址。</li>
+    <li class="SymbolList1" style="list-style: disc;">&lt;instanceName&gt;：实例名称。在此处填写在阿里云控制台管理中创建的实例名称。</li>
+    <li class="SymbolList1" style="list-style: disc;">&lt;accessKeyId&gt;：在阿里云官网的“管理控制台”申请获取的AccessKeyId。</li>
+    <li class="SymbolList1" style="list-style: disc;">&lt;accessKeySecret&gt;：在阿里云官网的“管理控制台”申请获取的AccessKeySecret。</li>
+    <li class="SymbolList1" style="list-style: disc;">&lt;fromPublic&gt;：是否公网访问。公网访问时，访问的OTS服务地址为：http://&lt;instanceName&gt;.&lt;nodeName&gt;.ots.aliyuncs.com。非公网访问时，访问的OTS服务地址为：http://&lt;instanceName&gt;.&lt;nodeName&gt;.ots-internal.aliyuncs.com。</li>
+    <li class="SymbolList1" style="list-style: disc;">&lt;watermark&gt;：设置发布的瓦片中是否带水印（其中所添加的类型包括：图片或者文字）。默认为false。详细请参照 <a class="contentpagehyperlink" href="#UGCV5">配置UGCV5地图服务提供者</a></li>
+  </ul>
+  <h2><a id="配置_SMTiles_地图服务提供者"></a>配置 SMTiles 地图服务提供者</h2>
+  <p class="myNormal">SMTiles 服务提供者的配置在&lt;provider&gt;节点中进行。具体配置方式如下：</p>
+  <pre class="brush:xml">&lt;provider name=&quot;smtilesMapProvider1&quot; class=&quot;com.supermap.services.providers.SMTilesMapProvider&quot;&gt;
+        &lt;config class=&quot;com.supermap.services.providers.SMTilesMapProviderSetting&quot;&gt;
+                &lt;filePath&gt;../webapps/iserver/output/sqlite/World_-411043745_256X256_PNG.smtiles&lt;/filePath&gt;
+        &lt;/config&gt;
+&lt;/provider&gt;</pre>
+  <p class="myNormal">其中&lt;provider&gt;中的 class 标识的是  SMTiles 地图服务提供者的实现类，&lt;config&gt;中的  class 标识的是 SMTiles 地图服务提供者对应的配置类，即 SMTilesMapProviderSetting，&lt;config&gt;中的内容对应的是 <a class="contentpagehyperlink" href="../../../../../mergedProjects/iServerJavadoc/com/supermap/services/providers/SMTilesMapProviderSetting.html">SMTilesMapProviderSetting</a> 对应的配置项：</p>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1">&lt;filePath&gt;：SMTiles 缓存文件的路径。该缓存文件可以是 SuperMap iServer 和 iEdge 生成的 SMTiles 缓存文件。</li>
+    <li class="SymbolList1">&lt;watermark&gt;：设置发布的瓦片中是否带水印（其中所添加的类型包括：图片或者文字）。默认为false。详细请参照 <a class="contentpagehyperlink" href="#UGCV5">配置UGCV5地图服务提供者</a></li>
+  </ul>
+  <h2><a id="配置_SVTiles_地图服务提供者1"></a>配置 SVTiles 地图服务提供者</h2>
+  <p class="myNormal">SVTiles 服务提供者的配置在&lt;provider&gt;节点中进行。具体配置方式如下：</p>
+  <pre class="brush:xml">&lt;provider name=&quot;svtilesMapProvider1&quot; class=&quot;com.supermap.services.providers.SVTilesMapProvider&quot;&gt;
+        &lt;config class=&quot;com.supermap.services.providers.SVTilesMapProviderSetting&quot;&gt;
+                &lt;filePath&gt;../webapps/iserver/output/sqlite/World_1715141636_256X256.svtiles&lt;/filePath&gt;
+        &lt;/config&gt;
+&lt;/provider&gt;</pre>
+  <p class="myNormal">其中&lt;provider&gt;中的 class 标识的是  SVTiles 地图服务提供者的实现类，&lt;config&gt;中的  class 标识的是 SVTiles 地图服务提供者对应的配置类，即 SVTilesMapProviderSetting，&lt;config&gt;中的内容对应的是 <a class="contentpagehyperlink" href="../../../../../mergedProjects/iServerJavadoc/com/supermap/services/providers/SVTilesMapProviderSetting.html">SVTilesMapProviderSetting</a> 对应的配置项：</p>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1">&lt;filePath&gt;：SVTiles 缓存文件的路径。该缓存文件可以是 SuperMap iServer 和 iEdge 生成的 SVTiles 缓存文件。</li>
+    <li class="SymbolList1">&lt;watermark&gt;：设置发布的瓦片中是否带水印（其中所添加的类型包括：图片或者文字）。默认为false。详细请参照 <a class="contentpagehyperlink" href="#UGCV5">配置UGCV5地图服务提供者</a></li>
+  </ul>
+  <h2><a id="UGCV5"></a>配置 UGCV5 地图服务提供者</h2>
+  <p class="myNormal">UGCV5 服务提供者的配置在&lt;provider&gt;节点中进行。具体配置方式如下：</p>
+  <pre class="brush:xml">    &lt;provider class=&quot;com.supermap.services.providers.UGCV5TileProvider&quot; enabled=&quot;true&quot; name=&quot;ugcv5-China&quot;&gt; 
+      &lt;config class=&quot;com.supermap.services.providers.UGCV5TileProviderSetting&quot;&gt;
+        &lt;watermark&gt;
+          &lt;imageUrl&gt;F:/test/test.png&lt;/imageUrl&gt;  
+          &lt;imageAlpha&gt;0.5&lt;/imageAlpha&gt;  
+          &lt;txtContent&gt;ABCD&lt;/txtContent&gt;  
+          &lt;fontSize&gt;5&lt;/fontSize&gt;  
+          &lt;fontColor&gt;  
+            &lt;red&gt;255&lt;/red&gt;  
+            &lt;green&gt;0&lt;/green&gt;  
+            &lt;blue&gt;0&lt;/blue&gt;  
+            &lt;alpha&gt;255&lt;/alpha&gt;  
+          &lt;/fontColor&gt;  
+          &lt;fontStyle&gt;微软雅黑&lt;/fontStyle&gt;  
+          &lt;xIndex&gt;4&lt;/xIndex&gt;  
+          &lt;yIndex&gt;5&lt;/yIndex&gt;  
+          &lt;random&gt;50&lt;/random&gt;
+        &lt;/watermark&gt;  
+        &lt;configFile&gt;../webapps/iserver/output/cache/China/China.sci&lt;/configFile&gt; 
+      &lt;/config&gt; 
+    &lt;/provider&gt;</pre>
+  <p class="myNormal">其中&lt;provider&gt;中的 class 标识的是 UGCV5 服务提供者的实现类，&lt;config&gt;中的  class 标识的是 UGCV5 服务提供者对应的配置类，即 UGCV5TileProviderSetting，&lt;config&gt;中的内容对应的是 <a class="contentpagehyperlink" href="../../../../../mergedProjects/iServerJavadoc/com/supermap/services/providers/UGCV5TileProviderSetting.html">UGCV5TileProviderSetting</a> 对应的配置项：</p>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1">&lt;configFile&gt;：SuperMap UGC V5 瓦片的配置文件或索引文件（*.sci 或 *.inf）。</li>
+    <li class="SymbolList1">&lt;watermark&gt;：设置发布的瓦片中是否带水印（其中所添加的类型包括：图片或者文字。两者同时配置时，图片优先显示）。默认为false。
+      <ul class="SymbolList1" style="list-style: disc;">
+        <li class="SymbolList1">&lt;imageUrl&gt;：图片的路径。</li>
+        <li class="SymbolList1">&lt;imageAlpha&gt;：图片的透明度。范围：0-&gt;1。默认：0.8</li>
+        <li class="SymbolList1">&lt;txtContent&gt;：文字内容。</li>
+        <li class="SymbolList1">&lt;fontSize&gt;：文字的大小。默认：20</li>
+        <li class="SymbolList1">&lt;fontColor&gt;：文字颜色。默认：100,100,100,128</li>
+        <li class="SymbolList1">&lt;fontStyle&gt;：文字类型。默认：Dialog</li>
+        <li class="SymbolList1">&lt;xIndex&gt;：水印的位置x。默认：瓦片的中心点x</li>
+        <li class="SymbolList1">&lt;yIndex&gt;：水印的位置y。默认：瓦片的中心点y</li>
+        <li class="SymbolList1">&lt;random&gt;：每张瓦片显示水印的几率。范围：1—&gt;100。默认：25</li>
+      </ul>
+    </li>
+  </ul>
+  <p class="myNormal">此外，SuperMap iServer 支持配置存储在 S3 对象存储服务中的 UGCV5 原始型瓦片，具体配置方式如下：</p>
+  <pre class="brush:xml">    &lt;provider class=&quot;com.supermap.services.providers.UGCV5TileProvider&quot; enabled=&quot;true&quot; name=&quot;map-China-9&quot;&gt; 
+      &lt;config class=&quot;com.supermap.services.providers.UGCV5TileProviderSetting&quot;&gt;
+        &lt;outputPath&gt;./output&lt;/outputPath&gt; 
+        &lt;outputSite&gt;http://{ip}:{port}/iserver/output/&lt;/outputSite&gt; 
+        &lt;configFile&gt;/iserver-1311973718/picture/png/China/China.sci&lt;/configFile&gt; 
+        &lt;s3ConnectionInfo&gt; 
+          &lt;endpoint&gt;https://cos.ap-beijing.myqcloud.com&lt;/endpoint&gt;  
+          &lt;region&gt;us-east-1&lt;/region&gt;  
+          &lt;accessKey&gt;AKIDwlNmxtgJ0UQDqHWYLtCH7C2dx4yRhjs0&lt;/accessKey&gt;  
+          &lt;secretKey&gt;1Dya5OTSM4av3w4Vr3A3kJoBPREnJfqn&lt;/secretKey&gt;  
+        &lt;/s3ConnectionInfo&gt; 
+      &lt;/config&gt; 
+    &lt;/provider&gt;</pre>
+  <p class="myNormal">其中，</p>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1">&lt;outputPath&gt;：地图瓦片在本地的存储位置，默认为 ./output。</li>
+    <li class="SymbolList1">&lt;outputSite&gt;：地图瓦片的发布站点，默认为 http://{ip}:{port}/iserver/output/。</li>
+    <li class="SymbolList1">&lt;configFile&gt;：缓存配置文件在 S3 对象存储服务中的存储路径。</li>
+    <li class="SymbolList1">&lt;s3ConnectionInfo&gt;：S3 对象存储服务的连接信息。
+      <ul class="SymbolList1" style="list-style: disc;">
+        <li class="SymbolList1">&lt;endpoint&gt;：终端节点即对象存储服务在不同区域的区域域名，用于处理各自区域的访问请求。</li>
+        <li class="SymbolList1">&lt;region&gt;：对象存储服务中桶(Bucket)所在的区域，当存储类型为 Amazon S3 对象存储时，该参数为必填项。</li>
+        <li class="SymbolList1">&lt;accessKey&gt;：访问密钥ID。与私有访问密钥关联的唯一标识符；访问密钥ID和私有访问密钥一起使用，对请求进行加密签名。</li>
+        <li class="SymbolList1">&lt;secretKey&gt;：与访问密钥ID结合使用的私有访问密钥，对请求进行加密签名，可标识发送方，并防止请求被修改。</li>
+      </ul>
+    </li>
+  </ul>
+  <h2><a id="配置_WMS_地图服务提供者"></a>配置 WMS 地图服务提供者</h2>
+  <p class="myNormal">配置 WMS 服务提供者在&lt;provider&gt;节点中进行：</p>
+  <pre class="brush:xml">&lt;!-- WMS 地图服务提供者示例，使用远程的 WMS 服务作为数据来源。--&gt;
+&lt;provider name=&quot;wmsMapProvider&quot; class=&quot;com.supermap.services.providers.WMSMapProvider&quot;&gt;
+        &lt;config class=&quot;com.supermap.services.providers.WMSMapProviderSetting&quot;&gt;
+                &lt;outputPath&gt;./output&lt;/outputPath&gt;
+                &lt;outputSite&gt;http://{ip}:{port}/iserver/output/&lt;/outputSite&gt;
+                &lt;cacheEnabled&gt;false&lt;/cacheEnabled&gt;
+                &lt;serviceRootURL&gt;http://localhost:7070/geoserver/wms&lt;/serviceRootURL&gt;
+                &lt;username&gt;&lt;/username&gt;
+                &lt;password&gt;&lt;/password&gt;
+                &lt;version&gt;1.3.0&lt;/version&gt;
+                &lt;reverseLayerOrder&gt;false&lt;/reverseLayerOrder&gt;
+                &lt;defaultScale&gt;1.0E-5&lt;/defaultScale&gt;
+                &lt;reverseCoordinateSRS&gt;
+                      &lt;string&gt;EPSG:4326&lt;/string&gt;
+                      &lt;string&gt;EPSG:3857&lt;/string&gt;
+                &lt;/reverseCoordinateSRS&gt;       
+        &lt;/config&gt;
+&lt;/provider&gt;</pre>
+  <p class="myNormal">其中&lt;provider&gt;中的 class 标识的是 WMS 服务提供者的实现类，&lt;config&gt;中的 class 标识的是 WMS 服务提供者对应的配置类，即 WMSMapProviderSetting ，&lt;config&gt;中的内容是 <a class="contentpagehyperlink" href="../../../../../mergedProjects/iServerJavadoc/com/supermap/services/providers/WMSMapProviderSetting.html">WMSMapProviderSetting</a> 对应的配置项：</p>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1">&lt;outputPath&gt;：图片的输出路径。</li>
+    <li class="SymbolList1">&lt;outputSite&gt;：访问图片的根目录 URI。</li>
+    <li class="SymbolList1">&lt;cacheEnabled&gt;：是否启用缓存。</li>
+    <li class="SymbolList1">&lt;serviceRootURL&gt;：WMS 服务的根目录。</li>
+    <li class="SymbolList1">&lt;username&gt;：WMS 服务授权访问的用户名（可选）。</li>
+    <li class="SymbolList1">&lt;password&gt;：WMS 服务授权访问的密码（可选）。</li>
+    <li class="SymbolList1">&lt;version&gt;：WMS 服务的版本号。</li>
+    <li class="SymbolList1">&lt;reverseCoordinateSRS&gt;: 翻转坐标系（可选），当使用远程的 WMS 服务(1.1.1及1.3.0)作为数据来源时，可设置此参数来对一种或多种坐标系进行翻转。</li>
+    <li class="SymbolList1">&lt;reverseLayerOrder&gt;：设置图层的顺序是否倒置。</li>
+    <li class="SymbolList1">&lt;tileCacheReadOnly&gt;：栅格瓦片缓存是否只读。</li>
+  </ul>
+  <h2><a id="配置_WMTS_地图服务提供者"></a>配置 WMTS 地图服务提供者</h2>
+  <p class="myNormal">配置 WMTS 服务提供者在&lt;provider&gt;节点中进行：</p>
+  <pre class="brush:xml">&lt;!-- WMTS 地图服务提供者示例，使用远程的 WMTS 服务作为数据来源。--&gt;
+&lt;provider name=&quot;wmtsMapProvider&quot; class=&quot;com.supermap.services.providers.WMTSMapProvider&quot;&gt;
+        &lt;config class=&quot;com.supermap.services.providers.WMTSMapProviderSetting&quot;&gt;
+                &lt;serviceRootURL&gt;http://server:7070/geoserver/wmts&lt;/serviceRootURL&gt;
+                &lt;username&gt;&lt;/username&gt;
+                &lt;password&gt;&lt;/password&gt;
+                &lt;version&gt;1.0.0&lt;/version&gt;
+                &lt;dpi&gt;90.7142857142857&lt;/dpi&gt;
+                &lt;layers&gt;
+                        &lt;com.supermap.services.providers.WMTSMapLayer&gt;
+                                &lt;identifier&gt;world:Countries&lt;/identifier&gt;
+                                &lt;tileMatrixSet&gt;EPSG:4610&lt;/tileMatrixSet&gt;
+                        &lt;/com.supermap.services.providers.WMTSMapLayer&gt;
+                        &lt;com.supermap.services.providers.WMTSMapLayer&gt;
+                                &lt;identifier&gt;nurc:Img_Sample&lt;/identifier&gt; 
+                                &lt;tileMatrixSet&gt;EPSG:900913&lt;/tileMatrixSet&gt;
+                        &lt;/com.supermap.services.providers.WMTSMapLayer&gt;
+                &lt;/layers&gt; 
+                &lt;reverseTopLeftCorner&gt;EPSG:4610&lt;/reverseTopLeftCorner&gt;
+                &lt;reverseBoundingBox&gt;urn:ogc:def:crs:EPSG::4610&lt;/reverseBoundingBox&gt;
+                &lt;cacheEnabled&gt;true&lt;/cacheEnabled&gt;
+                &lt;resolutions&gt;0.01903568804664224,0.00951784402332112,......&lt;/resolutions&gt; 
+                &lt;calcDefaultScaleByResolution&gt;false&lt;/calcDefaultScaleByResolution&gt; 
+                &lt;originPoint&gt;-20037508.3427892,20037508.3427892&lt;/originPoint&gt;
+        &lt;/config&gt;
+&lt;/provider&gt;</pre>
+  <p class="myNormal">其中&lt;provider&gt;中的 class 标识的是 WMTS 服务提供者的实现类，&lt;config&gt;中的 class 标识的是 WMTS 服务提供者对应的配置类，即 WMTSMapProviderSetting ，&lt;config&gt;中的内容是 <a class="contentpagehyperlink" href="../../../../../mergedProjects/iServerJavadoc/com/supermap/services/providers/WMTSMapProviderSetting.html">WMTSMapProviderSetting</a> 对应的配置项：</p>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1">&lt;serviceRootURL&gt;：WMTS 服务的根目录。</li>
+    <li class="SymbolList1">username：WMTS 服务授权访问的用户名（可选）。</li>
+    <li class="SymbolList1">password：WMTS 服务授权访问的密码（可选）。</li>
+    <li class="SymbolList1">version：WMTS 服务的版本号（目前支持 1.0.0 版本）。</li>
+    <li class="SymbolList1">dpi：WMTS 服务源的 dpi。</li>
+    <li class="SymbolList1">layers：WMTS 服务中的图层集合。</li>
+    <li class="SymbolList1">reverseTopLeftCorner：iServer 对于 TopLeftCorner 的默认解析规则：TileMatrixSet 使用地理坐标系统，且 TileMatrixSet 的 SupportedCRS 使用 EPSG 命名空间时，按 Y X 的顺序解析 TopLeftCorner；其余情况都按照 X Y 的顺序解析 TopLeftCorner。多个crs之间以英文逗号“,”隔开。若使用的 WMTS 服务的 TopLeftCorner 不满足该规则时，需要把该 TopLeftCorner 对应的 TileMatrixSet 标签下的 Identifier 加入 WMTSMapProvider 的 reverseTopLeftCorner 的配置项里，标识按默认规则相反的坐标顺序解析 TileMatrixSet 的 TopLeftCorner。示例中 Identifier 为 EPSG:4610的 tileMatrixSet，SupportedCRS 为 urn:ogc:def:crs:EPSG::4610，在 geoserver 中 TopLeftCorner 使用 XY 坐标顺序，与 iserver 默认解析规则相反，因此在该配置项下加入了该 layer 的 tileMatrixSet 的 Identifier。</li>
+    <li class="SymbolList1">cacheEnabled：是否缓存到本地。默认为 true。</li>
+    <li class="SymbolList1">resolutions：WMTS 服务各级别对应的分辨率（可选）。与所选择比例尺集下的 TileMatrix 保持一致，相邻分辨率以逗号隔开，需要填写 TileMartrix 下所有级别对应的分辨率。</li>
+    <li class="SymbolList1">calcDefaultScaleByResolution：是否根据默认分辨率计算默认比例尺，默认 false</li>
+    <li class="SymbolList1">originPoint： 获取起算点的 XY 坐标（可选），用“,”隔开。</li>
+    <li class="SymbolList1">reverseBoundingBox：设置需要逆序解析BoundingBox的crs集合，多个crs之间以英文逗号“,”隔开。设置了该参数后，对BoundingBox的解析将按照YX的顺序解析。</li>
+    <li class="SymbolList1">&lt;tileCacheReadOnly&gt;：栅格瓦片缓存是否只读。</li>
+  </ul>
+  <h2><a id="配置_BingMaps_地图服务提供者"></a>配置 Bing Maps 地图服务提供者</h2>
+  <p class="myNormal">BingMaps 服务提供者在&lt;provider&gt;节点中进行。具体配置方式如下：</p>
+  <pre class="brush:xml">&lt;provider name=&quot;BingMapsMapProvider1&quot; class=&quot;com.supermap.services.providers.BingMapsMapProvider&quot;&gt;
+        &lt;config class=&quot;com.supermap.services.providers.BingMapsMapProviderSetting&quot;&gt;
+                &lt;outputPath&gt;../webapps/iserver/output&lt;/outputPath&gt;
+                &lt;outputSite&gt;http://localhost:8090/iserver/output/&lt;/outputSite&gt;
+                &lt;apiKey&gt;fdskjkfdsk&lt;/apiKey&gt;
+                &lt;bingmapsRootUrl&gt;http://localhost:9876/bingmaps/&lt;/bingmapsRootUrl&gt;
+                &lt;imagerySet&gt;Road&lt;/imagerySet&gt;
+                &lt;mapVersion&gt;v1&lt;/mapVersion&gt;
+                &lt;cacheEnabled&gt;true&lt;/cacheEnable&gt;
+        &lt;/config&gt;
+&lt;/provider&gt;</pre>
+  <p class="myNormal">其中&lt;provider&gt;中的 class 标识的是 BingMaps 服务提供者的实现类，&lt;config&gt;中的  class 标识的是 BingMaps 服务提供者对应的配置类，即 BingMapsMapProviderSetting，&lt;config&gt;中的内容是 <a class="contentpagehyperlink" href="../../../../../mergedProjects/iServerJavadoc/com/supermap/services/providers/BingMapsMapProviderSetting.html">BingMapsMapProviderSetting</a> 对应的配置项：</p>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1">&lt;outputPath&gt;：图片的输出路径。</li>
+    <li class="SymbolList1">&lt;outputSite&gt;：访问图片的根目录 URI。</li>
+    <li class="SymbolList1">&lt;apiKey&gt;：设置 BingMaps 的授权 key。访问 BingMaps 地图服务需要申请 key，该 key 由 BingMaps 提供。</li>
+    <li class="SymbolList1">&lt;bingmapsRootUrl&gt;：远程 BingMaps 地图服务的出图服务地址。</li>
+    <li class="SymbolList1">&lt;imagerySet&gt;：BingMaps 的地图集名称。BingMaps 提供了&quot;Aerial&quot;、&quot;AerialWithLables&quot;、&quot;Birdseye&quot;、&quot;BirdseyeWithLables&quot;、&quot;Road&quot;几种数据集，分别对应不同类型的地图服务。</li>
+    <li class="SymbolList1">&lt;mapVersion&gt;：BingMaps 的地图版本，如 &quot;v0&quot;、&quot;v1&quot;。</li>
+    <li class="SymbolList1">&lt;cacheEnabled&gt;：是否缓存到本地。为 true 时，访问发布的服务时就可以在本地生成地图瓦片，从而可以提高后续服务浏览访问的速度。默认为 true。</li>
+    <li class="SymbolList1">&lt;tileCacheReadOnly&gt;：栅格瓦片缓存是否只读。</li>
+  </ul>
+  <h2 class="myNormal"><a id="Google_Maps"></a>配置 Google Maps 地图服务提供者</h2>
+  <p class="myNormal">Google 地图地图服务提供者的配置在&lt;provider&gt;节点中进行。具体配置方式如下：</p>
+  <pre class="brush:xml">&lt;provider class=&quot;com.supermap.services.providers.GoogleMapsMapProvider&quot; enabled=&quot;true&quot; name=&quot;googlemap&quot;&gt; 
+  &lt;config class=&quot;com.supermap.services.providers.GoogleMapsMapProviderSetting&quot;&gt; 
+    &lt;outputPath/&gt;  
+    &lt;outputSite/&gt;  
+    &lt;cacheEnabled&gt;false&lt;/cacheEnabled&gt;  
+    &lt;googleMapLanguage&gt;zh-cn&lt;/googleMapLanguage&gt;  
+    &lt;googleMapCryptoKey&gt;abcdefghijklmn=&lt;/googleMapCryptoKey&gt;  
+    &lt;googleMapClientID&gt;myClientID&lt;/googleMapClientID&gt;  
+    &lt;googleMapWidth&gt;400&lt;/googleMapWidth&gt;  
+    &lt;googleMapHeight&gt;400&lt;/googleMapHeight&gt;
+    &lt;googleProxyAddress&gt;127.0.0.1&lt;/googleProxyAddress&gt;		
+    &lt;googleProxyPort&gt;8787&lt;/googleProxyPort&gt;  
+    &lt;useTileImage&gt;true&lt;/useTileImage&gt; 
+  &lt;/config&gt; 
+&lt;/provider&gt;</pre>
+  <p class="myNormal">其中&lt;provider&gt;中的 class 标识的是 Google 地图服务提供者的实现类，&lt;config&gt;中的  class 标识的是 Google 地图服务提供者对应的配置类，即 GoogleMapsMapProviderSetting，&lt;config&gt;中的内容是 <a class="contentpagehyperlink" href="../../../../../mergedProjects/iServerJavadoc/com/supermap/services/providers/GoogleMapsMapProviderSetting.html">GoogleMapsMapProviderSetting</a> 对应的配置项：</p>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1">&lt;apiKey&gt;：Google Maps 的 API 密钥，当使用 Api Key 访问 Google Maps 时必填。（GoogleMaps支持仅使用API key 访问，但该方式可能会有请求限制，为避免配额限制，可通过带私钥的签名访问，这种情况下需要填写 googleMapCryptoKey。）</li>
+    <li class="SymbolList1">&lt;googleMapClientID&gt;：具有 Google Maps 访问权限的账户。当使用 ClientID  访问 Google Maps 时必填。</li>
+    <li class="SymbolList1">&lt;googleMapCryptoKey&gt;：该账户的私人密钥。当使用 ClientID  访问 Google Maps 时必填。</li>
+    <li class="SymbolList1">&lt;googleMapLanguage&gt;：地图中的文本标注所使用的语言。</li>
+    <li class="SymbolList1">&lt;googleMapWidth&gt;：每次向 Google Maps 请求瓦片时，瓦片的宽度（像素）。因为每次请求的单张瓦片上可能会有一个Geoogle的水印，所以将瓦片设置大一些可以减少整个视窗中的水印密度。但是，单张瓦片过大可能会影响瓦片获取的效率，因为您应该根据软硬件及网络条件，设置合理的值。</li>
+    <li class="SymbolList1">&lt;googleMapHeight&gt;：每次向 Google Maps 请求瓦片时，瓦片的高度（像素）。一般会设置为宽、高相等的瓦片。</li>
+    <li class="SymbolList1">&lt;googleProxyAddress&gt;：代理访问 Google Maps 的地址。如果不能正常访问Google Maps，则需要设置此参数。</li>
+    <li class="SymbolList1">&lt;googleProxyPort&gt;：代理访问 Google Maps 的端口。如果不能正常访问Google Maps，则需要设置此参数。</li>
+  </ul>
+  <ul style="list-style: circle;">
+    <li class="SymbolList1">&lt;tileCacheReadOnly&gt;：栅格瓦片缓存是否只读。</li>
+  </ul>
+  <h2 class="myNormal"><a name="配置_百度地图_地图服务提供者"></a>配置 百度 地图服务提供者</h2>
+  <p class="myNormal">百度地图服务提供者的配置在&lt;provider&gt;节点中进行。具体配置方式如下：</p>
+  <pre class="brush:xml">&lt;provider name=&quot;baiduMapProvider1&quot; class=&quot;com.supermap.services.providers.BaiduMapProvider&quot;&gt;
+        &lt;config class=&quot;com.supermap.services.providers.BaiduMapProviderSetting&quot;&gt;
+                &lt;outputPath&gt;../webapps/iserver/output&lt;/outputPath&gt;
+                &lt;outputSite&gt;http://localhost:8090/iserver/output/&lt;/outputSite&gt;
+                &lt;mapUrl&gt;http://online0.map.bdimg.com/tile/?qt=tile&amp;x={x}&amp;y={y}&amp;z={z}&amp;styles=pl&lt;/mapUrl&gt;
+                &lt;mapName&gt;true&lt;/mapName&gt; 
+                &lt;cacheEnabled&gt;true&lt;/cacheEnable&gt;
+        &lt;/config&gt;
+&lt;/provider&gt;</pre>
+  <p class="myNormal">其中&lt;provider&gt;中的 class 标识的是 百度地图地图 服务提供者的实现类，&lt;config&gt;中的  class 标识的是 百度 地图服务提供者对应的配置类，即 BaiduMapProviderSetting，&lt;config&gt;中的内容是 <a class="contentpagehyperlink" href="../../../../../mergedProjects/iServerJavadoc/com/supermap/services/providers/BaiduMapProviderSetting.html">BaiduMapProviderSetting</a> 对应的配置项：</p>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1">&lt;outputPath&gt;：图片的输出路径。</li>
+    <li class="SymbolList1">&lt;outputSite&gt;：访问图片的根目录 URI。</li>
+    <li class="SymbolList1">&lt;mapUrl&gt;：地图服务地址应为一个可获取地图切片的地址模板，其中{x},{y},{z}分别表示切片的列号,行号，级别。如：http://online0.map.bdimg.com/tile/?qt=tile&amp;x={x}&amp;y={y}&amp;z={z}&amp;styles=pl</li>
+    <li class="SymbolList1">&lt;mapName&gt;：自定义地图名称。当配置了 mapUrl 未配置该参数时，默认为&quot;baidu&quot;。</li>
+    <li class="SymbolList1">&lt;cacheEnabled&gt;：是否缓存到本地。为 true 时，访问发布的服务时就可以在本地生成地图瓦片，从而可以提高后续服务浏览访问的速度。默认为 true。</li>
+    <li class="SymbolList1">&lt;tileCacheReadOnly&gt;：栅格瓦片缓存是否只读。</li>
+  </ul>
+  <h2 class="myNormal"><a id="配置_百度地图_地图服务提供者1"></a>配置 OpenStreetMap 地图服务提供者</h2>
+  <p class="myNormal">OpenStreetMap 地图服务提供者的配置在&lt;provider&gt;节点中进行。具体配置方式如下：</p>
+  <pre class="brush:xml">&lt;provider name=&quot;openStreetMapProvider1&quot; class=&quot;com.supermap.services.providers.OpenStreetMapProvider&quot;&gt;
+        &lt;config class=&quot;com.supermap.services.providers.OpenStreetMapProviderSetting&quot;&gt;
+                &lt;outputPath&gt;../webapps/iserver/output&lt;/outputPath&gt;
+                &lt;outputSite&gt;http://localhost:8090/iserver/output/&lt;/outputSite&gt;
+                &lt;mapUrl&gt;http://a.tile.openstreetmap.org/{z}/{x}/{y}.png&lt;/mapUrl&gt;
+                &lt;mapName&gt;true&lt;/mapName&gt; 
+                &lt;cacheEnabled&gt;true&lt;/cacheEnable&gt;
+                &lt;apikey&gt;abcdefg&lt;/apikey&gt;
+        &lt;/config&gt;
+&lt;/provider&gt;</pre>
+  <p class="myNormal">其中&lt;provider&gt;中的 class 标识的是 OpenStreetMap 地图服务提供者的实现类，&lt;config&gt;中的  class 标识的是 OpenStreetMap 地图服务提供者对应的配置类，即 OpenStreetMap ProviderSetting，&lt;config&gt;中的内容是 <a class="contentpagehyperlink" href="../../../../../mergedProjects/iServerJavadoc/com/supermap/services/providers/OpenStreetMapProviderSetting.html">OpenStreetMapProviderSetting</a> 对应的配置项：</p>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1">&lt;outputPath&gt;：图片的输出路径。</li>
+    <li class="SymbolList1">&lt;outputSite&gt;：访问图片的根目录 URI。</li>
+    <li class="SymbolList1">&lt;mapUrl&gt;：地图服务地址应为一个可获取地图切片的地址模板，其中{x},{y},{z}分别表示切片的列号,行号，级别。如：http://a.tile.openstreetmap.org/{z}/{x}/{y}.png。</li>
+    <li class="SymbolList1">&lt;mapName&gt;：自定义地图名称。当配置了 mapUrl 未配置该参数时，默认为&quot;OSM&quot;。</li>
+    <li class="SymbolList1">&lt;cacheEnabled&gt;：是否缓存到本地。为 true 时，访问发布的服务时就可以在本地生成地图瓦片，从而可以提高后续服务浏览访问的速度。默认为 true。</li>
+    <li class="SymbolList1">&lt;apikey&gt;：访问 OpenStreetMap 的密钥，可选参数。如不配置该参数地图可能显示水印。</li>
+    <li class="SymbolList1">&lt;tileCacheReadOnly&gt;：栅格瓦片缓存是否只读。</li>
+  </ul>
+  <h2><a id="配置_天地图_地图服务提供者"></a>配置 天地图 地图服务提供者</h2>
+  <p class="myNormal">天地图服务提供者的配置在&lt;provider&gt;节点中进行。具体配置方式如下：</p>
+  <pre class="brush:xml">&lt;provider class=&quot;com.supermap.services.providers.TiandituMapProvider&quot; enabled=&quot;true&quot; name=&quot;tiandituMapProvider1&quot;&gt;
+        &lt;config class=&quot;com.supermap.services.providers.TiandituMapProviderSetting&quot;&gt;
+                &lt;outputPath&gt;../webapps/iserver/output&lt;/outputPath&gt;
+                &lt;outputSite&gt;http://localhost:8090/iserver/output/&lt;/outputSite&gt;
+                &lt;servicesUrl&gt;http://t5.tianditu.gov.cn&lt;/servicesUrl&gt;
+                &lt;cacheEnabled&gt;true&lt;/cacheEnable&gt;
+                &lt;key&gt;efb100fb46e3849b93f508c8fb949926&lt;/key&gt;
+        &lt;/config&gt;
+&lt;/provider&gt;</pre>
+  <p class="myNormal">其中&lt;provider&gt;中的 class 标识的是 天地图 服务提供者的实现类，&lt;config&gt;中的  class 标识的是 天地图 服务提供者对应的配置类，即 TiandituMapProviderSetting，&lt;config&gt;中的内容是 <a class="contentpagehyperlink" href="../../../../../mergedProjects/iServerJavadoc/com/supermap/services/providers/TiandituMapProviderSetting.html">TiandituMapProviderSetting</a> 对应的配置项：</p>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1">&lt;outputPath&gt;：图片的输出路径。</li>
+    <li class="SymbolList1">&lt;outputSite&gt;：访问图片的根目录 URI。</li>
+    <li class="SymbolList1">&lt;servicesUrl&gt;：远程天地图地图服务的出图服务地址。格式如下： http://t&lt;number &gt;.tianditu.gov.cn 天地图提供的服务地址 number 值为0-7，如果用户设置 servicesUrl，则使用用户设置的服务地址，否则随机从0-7中选取一个作为 number 的值来构建服务地址。</li>
+    <li class="SymbolList1">&lt;cacheEnabled&gt;：是否缓存到本地。为 true 时，访问发布的服务时就可以在本地生成地图瓦片，从而可以提高后续服务浏览访问的速度。默认为 true。</li>
+    <li class="SymbolList1">&lt;key&gt;：天地图 API 及服务接口调用所必需的 Token 字符串，该 Token 可由<a class="contentpagehyperlink" href="http://www.tianditu.gov.cn">www.tianditu.gov.cn</a>获取（在申请时请选择“<span style="font-weight: bold;">浏览器端</span>”许可）。</li>
+    <li class="SymbolList1">&lt;tileCacheReadOnly&gt;：栅格瓦片缓存是否只读。</li>
+  </ul>
+  <h2><a id="配置_ArcGIS_REST_地图服务提供者"></a>配置 ArcGIS REST 地图服务提供者</h2>
+  <p class="myNormal">ArcGIS REST 服务提供者的配置在&lt;provider&gt;节点中进行。配置方式如下：</p>
+  <pre class="brush:xml">    &lt;provider class=&quot;com.supermap.services.providers.ArcGISRestMapProvider&quot; enabled=&quot;true&quot; name=&quot;arcgis-Countries2&quot;&gt; 
+      &lt;config class=&quot;com.supermap.services.providers.ArcGISRestMapProviderSetting&quot;&gt; 
+        &lt;restServiceRootURL&gt;http://localhost:6080/arcgis/rest/services/mytest/Countries/MapServer&lt;/restServiceRootURL&gt;  
+        &lt;cacheEnabled&gt;false&lt;/cacheEnabled&gt;  
+        &lt;token&gt;_jLYzPo-SEJRXfB3Q-W2EearDDnaIZTqQqUfju4GD8Owd6PIiUVmabUJiSdZeX1V&lt;/token&gt;  
+        &lt;httpReferer&gt;ISERVER&lt;/httpReferer&gt;
+        &lt;replaceTRNS&gt;false&lt;/replaceTRNS&gt;
+        &lt;customMapName&gt;test&lt;/customMapName&gt;
+      &lt;/config&gt; 
+    &lt;/provider&gt; </pre>
+  <p class="myNormal">其中&lt;provider&gt;中的 class 标识的是 ArcGIS REST 地图服务提供者的实现类，&lt;config&gt;中的  class 标识的是 ArcGIS REST 地图服务提供者对应的配置类，即 ArcGISRestMapProviderSetting，&lt;config&gt;中的内容对应的是 <a class="contentpagehyperlink" href="../../../../../mergedProjects/iServerJavadoc/com/supermap/services/providers/ArcGISRestMapProviderSetting.html">ArcGISRestMapProviderSetting</a> 对应的配置项：</p>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1">&lt;restServiceRootURL&gt;：ArcGIS REST 服务地址。</li>
+    <li class="SymbolList1">&lt;token&gt;：针对具有访问权限限制的待发布服务的 Token 字符串。如果待发布的服务开启了安全控制，且安全认证方式选择了“Token”，则需要提供可用的 Token 字符串。</li>
+    <li class="SymbolList1">&lt;httpReferer&gt;：针对具有访问权限限制的待发布服务的 HTTP Referer 字符串 。如果待发布的服务开启了安全控制，安全认证方式选择了“Token”，且生成 Token 时填写了 HTTP Referer 时，需要设置该项。</li>
+    <li class="SymbolList1">&lt;replaceTRNS&gt;：默认值为false，返回原始瓦片。针对 ArcGIS Server 返回的有些图片为 PNG24 格式（不支持透明），又包含 tRNS 数据块（图像透明数据块）的情况，这种格式的图片，对透明效果支持得不够标准，在浏览器中看不到透明效果。如果期望返回的上述图片能看到透明效果，需设置 replaceTRNS 值为 true，这样在检测到有 PNG24 并且包含 tRNS 数据块时，就重新生成一个 PNG32（支持透明）的图片， 然后根据 tRNS 去填充 PNG32 图片的 Alpha 通道的值，有一定的性能开销。</li>
+    <li class="SymbolList1">&lt;customMapName&gt;：用于指定转发为 REST 地图服务后的地图名。</li>
+    <li class="SymbolList1">&lt;tileCacheReadOnly&gt;：栅格瓦片缓存是否只读。</li>
+    <li class="SymbolList1">&lt;filterVisibleScales&gt;：在转发 ArcGIS REST 服务为 WMTS 服务后，是否根据可见比例尺等信息返回经过滤后的比例尺 TileMatrix，默认为 true。</li>
+  </ul>
+  <h2><a id="TPK"></a>配置  ArcGIS TPK 地图服务提供者</h2>
+  <p class="myNormal">TPK 服务提供者的配置在&lt;provider&gt;节点中进行。配置方式如下：</p>
+  <pre class="brush:xml">    &lt;provider class=&quot;com.supermap.services.providers.TPKMapProvider&quot; enabled=&quot;true&quot; name=&quot;tpk-map1&quot;&gt; 
+      &lt;config class=&quot;com.supermap.services.providers.TPKMapProviderSetting&quot;&gt; 
+        &lt;tilePackagePath&gt;../samples/data/map1.tpk&lt;/tilePackagePath&gt; 
+      &lt;/config&gt; 
+    &lt;/provider&gt;</pre>
+  <p class="myNormal">其中&lt;provider&gt;中的 class 标识的是 TPK 地图服务提供者的实现类，&lt;config&gt;中的  class 标识的是 TPK 地图服务提供者对应的配置类，即 TPKMapProviderSetting，&lt;config&gt;中的内容对应的是 <a class="contentpagehyperlink" href="../../../../../mergedProjects/iServerJavadoc/com/supermap/services/providers/TPKMapProviderSetting.html">TPKMapProviderSetting</a> 对应的配置项：</p>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1">&lt;tilePackagePath&gt;：TPK 文件的路径。</li>
+  </ul>
+  <h2><a id="TPKX"></a>配置  ArcGIS TPKX 地图服务提供者</h2>
+  <p class="myNormal">TPKX 服务提供者的配置在&lt;provider&gt;节点中进行。配置方式如下：</p>
+  <pre class="brush:xml">    &lt;provider class=&quot;com.supermap.services.providers.TPKXMapProvider&quot; enabled=&quot;true&quot; name=&quot;tpkx-map1&quot;&gt; 
+      &lt;config class=&quot;com.supermap.services.providers.TPKXMapProviderSetting&quot;&gt; 
+        &lt;tilePackagePath&gt;../samples/data/map1.tpkx&lt;/tilePackagePath&gt; 
+                &lt;replaceTRNS&gt;false&lt;/replaceTRNS&gt; 
+      &lt;/config&gt; 
+    &lt;/provider&gt;</pre>
+  <p class="myNormal">其中&lt;provider&gt;中的 class 标识的是 TPKX 地图服务提供者的实现类，&lt;config&gt;中的  class 标识的是 TPKX 地图服务提供者对应的配置类，即 TPKXMapProviderSetting，&lt;config&gt;中的内容对应的是 <a class="contentpagehyperlink" href="../../../../../mergedProjects/iServerJavadoc/com/supermap/services/providers/TPKXMapProviderSetting.html">TPKXMapProviderSetting</a> 对应的配置项：</p>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1">&lt;tilePackagePath&gt;：TPKX 文件的路径。</li>
+    <li class="SymbolList1">&lt;replaceTRNS&gt;：默认值为false，返回原始瓦片。针对 ArcGIS Server 返回的有些图片为 PNG24 格式（不支持透明），又包含 tRNS 数据块（图像透明数据块）的情况，这种格式的图片，对透明效果支持得不够标准，在浏览器中看不到透明效果。如果期望返回的上述图片能看到透明效果，需设置 replaceTRNS 值为 true，这样在检测到有 PNG24 并且包含 tRNS 数据块时，就重新生成一个 PNG32（支持透明）的图片， 然后根据 tRNS 去填充 PNG32 图片的 Alpha 通道的值，有一定的性能开销。</li>
+  </ul>
+  <h2><a id="ArcGIS_VTPK"></a>配置  ArcGIS VTPK 地图服务提供者</h2>
+  <p class="myNormal">VTPK 服务提供者的配置在&lt;provider&gt;节点中进行。配置方式如下：</p>
+  <pre class="brush:xml">    &lt;provider class=&quot;com.supermap.services.providers.VTPKMapProvider&quot; enabled=&quot;true&quot; name=&quot;vtpk-map1&quot;&gt; 
+      &lt;config class=&quot;com.supermap.services.providers.VTPKMapProviderSetting&quot;&gt; 
+        &lt;outputPath&gt;./output&lt;/outputPath&gt; 
+        &lt;outputSite&gt;http://{ip}:{port}/iserver/output/&lt;/outputSite&gt; 
+        &lt;vectorTilePackagePath&gt;../samples/data/map1.vtpk&lt;/vectorTilePackagePath&gt; 
+        &lt;center&gt;
+            &lt;x&gt;1.303397289E7&lt;/x&gt;
+            &lt;y&gt;4390875.375&lt;/y&gt;
+        &lt;/center&gt;
+      &lt;/config&gt; 
+    &lt;/provider&gt;</pre>
+  <p class="myNormal">其中&lt;provider&gt;中的 class 标识的是 VTPK 地图服务提供者的实现类，&lt;config&gt;中的  class 标识的是 VTPK 地图服务提供者对应的配置类，即 VTPKMapProviderSetting，&lt;config&gt;中的内容对应的是 <a class="contentpagehyperlink" href="../../../../../mergedProjects/iServerJavadoc/com/supermap/services/providers/VTPKMapProviderSetting.html">VTPKMapProviderSetting</a> 对应的配置项：</p>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1">&lt;vectorTilePackagePath&gt;：VTPK 文件的路径。</li>
+    <li class="SymbolList1">&lt;outputPath&gt;:图片的输出路径。</li>
+    <li class="SymbolList1">&lt;outputSite&gt;:访问图片的根目录 URI。</li>
+    <li class="SymbolList1">&lt;center&gt;：设置地图的中心点（可选）。
+      <ul class="SymbolList1" style="list-style: disc;">
+        <li class="SymbolList1">&lt;x&gt;：中心点的横坐标。</li>
+        <li class="SymbolList1">&lt;y&gt;：中心点的纵坐标。</li>
+      </ul>
+    </li>
+  </ul>
+  <h2 class="myNormal"><a name="setGeoPackageMapProvider" id="setGeoPackageMapProvider"></a>配置 GeoPackage 地图服务提供者</h2>
+  <p class="myNormal">GeoPackage 服务提供者的配置在&lt;provider&gt;节点中进行。配置方式如下：</p>
+  <pre class="brush:xml"> &lt;provider class=&quot;com.supermap.services.providers.GeoPackageMapProvider&quot; enabled=&quot;true&quot; name=&quot;gpkgMap-map&quot;&gt; 
+      &lt;config class=&quot;com.supermap.services.providers.GeoPackageMapProviderSetting&quot;&gt; 
+        &lt;outputPath&gt;F:\dev\trunk\etc\iserver-debug\src\test\webapps\iserver\output&lt;/outputPath&gt;  
+        &lt;outputSite&gt;http://localhost:8090/iserver/output/&lt;/outputSite&gt;  
+        &lt;filePath&gt;E:/data/geopackage/map.gpkg&lt;/filePath&gt;  
+        &lt;defaultMapPrjCoordSys&gt;0&lt;/defaultMapPrjCoordSys&gt;  
+        &lt;queryExpectCount&gt;1000&lt;/queryExpectCount&gt;  
+        &lt;axisPositiveDirection&gt;RightUp&lt;/axisPositiveDirection&gt;  
+        &lt;originalPoint&gt;-180,-90&lt;/originalPoint&gt;
+      &lt;/config&gt; 
+    &lt;/provider&gt; </pre>
+  <p class="myNormal">其中&lt;provider&gt;中的 class 标识的是 GeoPackage 地图服务提供者的实现类，&lt;config&gt;中的 class 标识的是 GeoPackage 地图服务提供者对应的配置类，即 GeoPackageMapProviderSetting，&lt;config&gt;中的内容对应的是 <a class="contentpagehyperlink" href="../../../../../mergedProjects/iServerJavadoc/com/supermap/services/providers/GeoPackageMapProviderSetting.html">GeoPackageMapProviderSetting</a>  对应的配置项：</p>
+  <ul class="SymbolList1">
+    <li class="SymbolList1">&lt;outputPath&gt;：图片的输出路径。</li>
+    <li class="SymbolList1">&lt;outputSite&gt;：访问图片的根目录 URI。</li>
+    <li class="SymbolList1">&lt;filePath&gt;：GeoPackage 文件的路径。</li>
+    <li class="SymbolList1">&lt;defaultMapPrjCoordSys&gt;：GeoPackage 文件发布为地图服务后，地图的默认投影。</li>
+    <li class="SymbolList1">&lt;queryExpectCount&gt;：期望返回的查询数，默认为 1000 。</li>
+    <li class="SymbolList1">&lt;axisPositiveDirection&gt;：坐标轴正方向。包括RightDown 和RightUp。默认为RightDown 。</li>
+    <li class="SymbolList1">&lt;originalPoint&gt;：切片原点，格式为{x},{y}。</li>
+  </ul>
+  <h2><a id="配置_ZXYTiles_地图服务提供者"></a>配置 ZXYTiles 地图服务提供者</h2>
+  <p>ZXYTiles 服务提供者的配置在&lt;provider&gt;节点中进行。具体配置方式如下：</p>
+  <pre class="brush:xml">     &lt;provider class=&quot;com.supermap.services.providers.ZXYTilesMapProvider&quot; enabled=&quot;true&quot; name=&quot;zxytest&quot;&gt;
+      &lt;config class=&quot;com.supermap.services.providers.ZXYTilesMapProviderSetting&quot;&gt;
+        &lt;outputPath&gt;../../webapps/iserver/output&lt;/outputPath&gt;  
+        &lt;outputSite&gt;http://{ip}:{port}/iserver/output/&lt;/outputSite&gt;  
+        &lt;filePath&gt;E:/data/ZXYTilesSample.zip&lt;/filePath&gt;
+    &lt;/provider&gt; </pre>
+  <p class="myNormal">其中&lt;provider&gt;中的 class 标识的是  ZXYTiles 地图服务提供者的实现类，&lt;config&gt;中的  class 标识的是 ZXYTiles 地图服务提供者对应的配置类，即 ZXYTilesMapProviderSetting，&lt;config&gt;中的内容对应的是 <a class="contentpagehyperlink" href="../../../../../mergedProjects/iServerJavadoc/com/supermap/services/providers/ZXYTilesMapProviderSetting.html">ZXYTilesMapProviderSetting</a> 对应的配置项：</p>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1">&lt;outputPath&gt;：图片的输出路径。</li>
+    <li class="SymbolList1">&lt;outputSite&gt;：访问图片的根目录 URI。</li>
+    <li class="SymbolList1">&lt;filePath&gt;：zip 格式的 ZXYTiles 瓦片压缩文件或未压缩的ZXYTiles瓦片文件的存储路径 (路径需要写到地图名所在的层级，如此层级下存在多个地图，发布时会将多个地图瓦片一起发布出来)。</li>
+  </ul>
+  <h2><a id="配置_ArcGIS_缓存地图服务提供者"></a>配置 ArcGIS 缓存地图服务提供者</h2>
+  <p>ArcGIS 缓存服务提供者的配置在&lt;provider&gt;节点中进行。具体配置方式如下：</p>
+  <pre class="brush:xml">    &lt;provider class=&quot;com.supermap.services.providers.ArcGISCacheMapProvider&quot; enabled=&quot;true&quot; name=&quot;agscache-WorldCitiesPopulation&quot;&gt;
+      &lt;config class=&quot;com.supermap.services.providers.ArcGISCacheMapProviderSetting&quot;&gt;
+        &lt;outputPath&gt;../../webapps/iserver/output&lt;/outputPath&gt;  
+        &lt;outputSite&gt;http://{ip}:{port}/iserver/output/&lt;/outputSite&gt;  
+        &lt;configFile&gt;E:/data/arcgiscache/sample/World Cities Population/conf.xml&lt;/configFile&gt;
+      &lt;/config&gt; 
+    &lt;/provider&gt; </pre>
+  <p class="myNormal">其中&lt;provider&gt;中的 class 标识的是  ArcGIS 缓存地图服务提供者的实现类，&lt;config&gt;中的  class 标识的是 ArcGIS 缓存服务提供者对应的配置类，即 ArcGISCacheMapProviderSetting，&lt;config&gt;中的内容对应的是 <a class="contentpagehyperlink" href="../../../../../mergedProjects/iServerJavadoc/com/supermap/services/providers/ArcGISCacheMapProviderSetting.html">ArcGISCacheMapProviderSetting</a> 对应的配置项：</p>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1">&lt;outputPath&gt;：图片的输出路径。</li>
+    <li class="SymbolList1">&lt;outputSite&gt;：访问图片的根目录 URI。</li>
+    <li class="SymbolList1">&lt;configFile&gt;：ArcGIS 缓存配置文件的路径（*.xml或*.cdi）。</li>
+  </ul>
+  <h2><a id="配置_ArcGIS_紧凑型缓存__V2__地图服务提供者"></a>配置 ArcGIS 紧凑型缓存 (V2) 地图服务提供者</h2>
+  <p>ArcGIS 紧凑型缓存 (V2) 服务提供者的配置在&lt;provider&gt;节点中进行。具体配置方式如下：</p>
+  <pre class="brush:xml">    &lt;provider class=&quot;com.supermap.services.providers.ArcGISCacheV2MapProvider&quot; enabled=&quot;true&quot; name=&quot;agscachev2-WorldCitiesPopulation&quot;&gt;
+      &lt;config class=&quot;com.supermap.services.providers.ArcGISCacheMapProviderSetting&quot;&gt;
+        &lt;outputPath&gt;../../webapps/iserver/output&lt;/outputPath&gt;  
+        &lt;outputSite&gt;http://{ip}:{port}/iserver/output/&lt;/outputSite&gt;  
+        &lt;configFile&gt;E:/data/arcgiscachev2/sample/World Cities Population/conf.xml&lt;/configFile&gt;
+      &lt;/config&gt; 
+    &lt;/provider&gt; </pre>
+  <p class="myNormal">其中&lt;provider&gt;中的 class 标识的是  ArcGIS 紧凑型缓存 (V2) 地图服务提供者的实现类，&lt;config&gt;中的  class 标识的是 ArcGIS 紧凑型缓存 (V2) 服务提供者对应的配置类，即 ArcGISCacheMapProviderSetting，&lt;config&gt;中的内容对应的是 <a class="contentpagehyperlink" href="../../../../../mergedProjects/iServerJavadoc/com/supermap/services/providers/ArcGISCacheMapProviderSetting.html">ArcGISCacheMapProviderSetting</a> 对应的配置项：</p>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1">&lt;outputPath&gt;：图片的输出路径。</li>
+    <li class="SymbolList1">&lt;outputSite&gt;：访问图片的根目录 URI。</li>
+    <li class="SymbolList1">&lt;configFile&gt;：ArcGIS 紧凑型缓存 (V2) 配置文件的路径（*.xml或*.cdi）。</li>
+  </ul>
+  <h2><a id="配置__UGCV5_MVT__地图服务提供者"></a>配置  UGCV5(MVT) 地图服务提供者</h2>
+  <pre class="brush:xml">    &lt;provider class=&quot;com.supermap.services.providers.MVTTileProvider&quot; enabled=&quot;true&quot; name=&quot;UGCV5-MVT-MAP&quot;&gt;
+      &lt;config class=&quot;com.supermap.services.providers.MVTTileProviderSetting&quot;&gt; 
+        &lt;outputPath&gt;./output&lt;/outputPath&gt;  
+        &lt;outputSite&gt;http://{ip}:{port}/iserver/output/&lt;/outputSite&gt;  
+        &lt;configFilePath&gt;E:/supermap_packages/data/China_mvt/China.sci&lt;/configFilePath&gt;
+      &lt;/config&gt;
+    &lt;/provider&gt; </pre>
+  <p class="myNormal">其中&lt;provider&gt;中的 class 标识的是 UGCV5(MVT) 地图服务提供者的实现类，&lt;config&gt;中的  class 标识的是 UGCV5(MVT) 服务提供者对应的配置类，即 MVTTileProviderSetting，&lt;config&gt;中的内容是 <a class="contentpagehyperlink" href="../../../../../mergedProjects/iServerJavadoc/com/supermap/services/providers/MVTTileProviderSetting.html">MVTTileProviderSetting</a> 对应的配置项：</p>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1">&lt;outputPath&gt;：图片的输出路径。</li>
+    <li class="SymbolList1">&lt;outputSite&gt;：访问图片的根目录 URI。</li>
+    <li class="SymbolList1">&lt;configFilePath&gt;：UGCV5(MVT) 缓存文件的路径（*sci）。</li>
+  </ul>
+  <h2><a id="shape_map_provider"></a>配置 ShapeFile 地图服务提供者</h2>
+  <p class="myNormal">配置一个 ShapeFile 地图服务提供者，如下所示：</p>
+  <pre class="brush:xml">    &lt;provider class=&quot;com.supermap.services.providers.ShapefileMapProvider&quot; enabled=&quot;true&quot; name=&quot;shapefileMap-&quot;&gt;
+      &lt;config class=&quot;com.supermap.services.providers.ShapefileMapProviderSetting&quot;&gt;
+        &lt;outputPath&gt;./output&lt;/outputPath&gt;  
+        &lt;outputSite&gt;http://{ip}:{port}/iserver/output/&lt;/outputSite&gt;  
+        &lt;cacheDisabled&gt;false&lt;/cacheDisabled&gt;       
+        &lt;shpDir&gt;E:/supermap/data/shp&lt;/filePath&gt; 
+        &lt;styleFile&gt;E:/data/styles/style.json&lt;/styleFile&gt;
+        &lt;charset&gt;UTF-8&lt;/charset&gt;
+      &lt;/config&gt;
+    &lt;/provider&gt; </pre>
+  <p class="myNormal">其中&lt;provider&gt;中的 class 标识的是 ShapeFile 地图服务提供者的实现类，&lt;config&gt;中的 class 标识的是 ShapeFile 地图服务提供者对应的配置类，即 ShapefileMapProviderSetting，&lt;config&gt;中的内容与 <a class="contentpagehyperlink" href="../../../../../mergedProjects/iServerJavadoc/com/supermap/services/providers/ShapeFileMapProviderSetting.html">ShapefileMapProviderSetting</a>  中的配置项相对应：</p>
+  <ul class="SymbolList1">
+    <li class="SymbolList1">&lt;outputPath&gt;：图片的输出路径。</li>
+    <li class="SymbolList1">&lt;outputSite&gt;：访问图片的根目录 URI。</li>
+    <li class="SymbolList1">&lt;cacheDisabled&gt;：是否禁用缓存。</li>
+    <li class="SymbolList1">&lt;shpDir&gt;：ShapeFile 数据库文件所在目录。</li>
+    <li class="SymbolList1">&lt;charset&gt;：设置编码格式。</li>
+    <li class="SymbolList1">&lt;styleFile&gt;： 样式文件路径，文件格式为JSON，用于指定地图的样式。文件需遵循 Mapbox Style 规范。</li>
+  </ul>
+  <h2><a id="postgis_map_provider"></a>配置 PostGIS 地图服务提供者</h2>
+  <p class="myNormal">PostGIS 地图服务提供者的配置在&lt;provider&gt;节点中进行。具体配置方式如下：</p>
+  <pre class="brush:xml">    &lt;provider class=&quot;com.supermap.services.providers.PostgisMapProvider&quot; enabled=&quot;true&quot; name=&quot;map-postGIS&quot;&gt;
+      &lt;config class=&quot;com.supermap.services.providers.PostgisMapProviderSetting&quot;&gt; 
+        &lt;outputPath&gt;./output&lt;/outputPath&gt;   
+        &lt;outputSite&gt;http://{ip}:{port}/iserver/output/&lt;/outputSite&gt;
+        &lt;cacheDisabled&gt;false&lt;/cacheDisabled&gt;
+        &lt;dbType&gt;postgis&lt;/dbType&gt;  
+        &lt;host&gt;192.168.17.212&lt;/host&gt;  
+        &lt;port&gt;5432&lt;/port&gt;  
+        &lt;database&gt;postGIS&lt;/database&gt;  
+        &lt;user&gt;postgres&lt;/user&gt;  
+        &lt;passwd&gt;iserver&lt;/passwd&gt; 
+        &lt;styleFile&gt;E:/data/styles/style.json&lt;/styleFile&gt;
+      &lt;/config&gt;
+    &lt;/provider&gt; </pre>
+  <p class="myNormal">其中&lt;provider&gt;中的 class 标识的是 PostGIS 地图服务提供者的实现类，&lt;config&gt;中的  class 标识的是 PostGIS 服务提供者对应的配置类，即 PostgisMapProviderSetting，&lt;config&gt;中的内容对应的是 <a class="contentpagehyperlink" href="../../../../../mergedProjects/iServerJavadoc/com/supermap/services/providers/PostgisMapProviderSetting.html">PostgisMapProviderSetting</a> 对应的配置项：</p>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1">&lt;outputPath&gt;：图片的输出路径。</li>
+    <li class="SymbolList1">&lt;outputSite&gt;：访问图片的根目录 URI。</li>
+    <li class="SymbolList1">&lt;cacheDisabled&gt;：是否禁用缓存。</li>
+    <li class="SymbolList1">&lt;dbType&gt;：数据库类型。</li>
+    <li class="SymbolList1">&lt;host&gt;：PostGIS 服务器的地址。</li>
+    <li class="SymbolList1">&lt;port&gt;：PostGIS 服务器的端口号。</li>
+    <li class="SymbolList1">&lt;database&gt;：用来存储待发布数据的数据库。</li>
+    <li class="SymbolList1">&lt;username&gt;：具有访问该数据库权限的用户名。</li>
+    <li class="SymbolList1">&lt;password&gt;：该用户的密码。</li>
+    <li class="SymbolList1">&lt;styleFile&gt;： 样式文件路径，文件格式为 JSON，用于指定地图的样式。文件需遵循 Mapbox Style 规范。</li>
+  </ul>
+  <h2><a id="GeoTrellis_map_provider"></a>配置 GeoTrellis 地图服务提供者</h2>
+  <p class="myNormal">GeoTrellis 地图服务提供者的配置在&lt;provider&gt;节点中进行。具体配置方式如下：</p>
+  <pre class="brush:xml" style="height: 221px;">   &lt;provider class=&quot;com.supermap.services.providers.GeoTrellisMapProvider&quot; enabled=&quot;true&quot; name=&quot;test&quot;&gt; 
+      &lt;config class=&quot;com.supermap.services.providers.GeoTrellisMapProviderSetting&quot;&gt;  
+        &lt;outputPath&gt;../../webapps/iserver/output&lt;/outputPath&gt;  
+        &lt;outputSite&gt;http://{ip}:{port}/iserver/output/&lt;/outputSite&gt; 
+        &lt;cacheDisabled&gt;false&lt;/cacheDisabled&gt;  
+        &lt;connInfo&gt; 
+            &lt;engineType&gt;HBASE&lt;/engineType&gt;  
+            &lt;server&gt;localhost&lt;/server&gt;
+            &lt;dataBase&gt;test&lt;/dataBase&gt;   
+        &lt;/connInfo&gt;  
+        &lt;mapSettings&gt; 
+            &lt;com.supermap.services.providers.GeotrellisMapSetting&gt;  
+                  &lt;mapName&gt;mayimap&lt;/mapName&gt;
+                  &lt;layerIds&gt;
+                       &lt;string&gt;SV1-02_20190321&lt;/string&gt;
+                       &lt;string&gt;GF2_20160503&lt;/string&gt;
+                   &lt;/layerIds&gt;
+                  &lt;enableMultiVersion&gt;true&lt;/enableMultiVersion&gt;
+                  &lt;versionNames&gt;
+                        &lt;string&gt;T2015&lt;/string&gt;
+                        &lt;string&gt;T2016&lt;/string&gt;
+                   &lt;/versionNames&gt; 
+            &lt;/com.supermap.services.providers.GeotrellisMapSetting&gt;  
+        &lt;/mapSettings&gt;  
+     &lt;/config&gt; 
+   &lt;/provider&gt; </pre>
+  <p class="myNormal">其中&lt;provider&gt;中的 class 标识的是 GeoTrellis  地图服务提供者的实现类，&lt;config&gt;中的  class 标识的是 GeoTrellis  服务提供者对应的配置类，即 GeoTrellisProviderSetting，&lt;config&gt;中的内容对应的是 GeoTrellisProviderSetting 对应的配置项：</p>
+  <ul style="list-style: disc;">
+    <li class="SymbolList1">&lt;outputPath&gt;：图片的输出路径。</li>
+    <li class="SymbolList1">&lt;outputSite&gt;：访问图片的根目录 URI。</li>
+    <li class="SymbolList1">&lt;cacheDisabled&gt;：是否禁用缓存。</li>
+    <li class="SymbolList1">&lt;connInfo&gt; ：数据源配置信息。</li>
+    <li class="SymbolList2">&lt;engineType&gt;：数据源引擎类型，可设置为GEOTRELLISFILE、GEOTRELLISHDFS。</li>
+    <li class="SymbolList2">&lt;server&gt;：数据具体地址。如果engineType设置为GEOTRELLISFILE，则填写文件路径；如果engineType设置为GEOTRELLISHDFS，则填写HDFS文件路径，格式为，hdfs://{ip}:端口/test。</li>
+    <li class="SymbolList1">&lt;mapSettings&gt; ：地图设定信息。当前仅支持已进行数据注册的数据源引擎。</li>
+    <li class="SymbolList2">&lt;com.supermap.services.providers.GeotrellisMapSetting&gt;：此节点为设置待发布的地图信息，并支持设定多个。
+      <ul class="SymbolList2" style="list-style: lower-alpha;">
+        <li class="SymbolList2">&lt;mapName&gt;：待发布的地图名称。</li>
+        <li class="SymbolList2">&lt;enableMultiVersion&gt;：是否开启的多版本能力，默认为false。</li>
+        <li class="SymbolList2">&lt;layerIds&gt; ：图层名称。如果&lt;enableMultiVersion&gt;设定为ture时，支持设定多个图层名称。</li>
+        <li class="SymbolList2">&lt;versionNames&gt;：版本名称列表。仅&lt;enableMultiVersion&gt;设定为ture时，设定该参数，且设定个数必须与&lt;layerIds&gt;中设定的表名称个数相同，且按顺序一一对应。。</li>
+      </ul>
+    </li>
+  </ul>
+  <p style="margin-left: 0px; font-weight: bold;">注：该提供者仅用于栅格、影像的数据。</p>
+  <h2><a id="配置复合瓦片地图服务提供者"></a>配置复合瓦片地图服务提供者</h2>
+  <p class="myNormal">复合瓦片地图服务提供者的配置在&lt;provider&gt;节点中进行。复合瓦片的合并模式有三种，默认模式、底图模式、自定义模式，此处以底图模式、自定义模式为例介绍地图服务提供者的配置。</p>
+  <p class="myNormal">底图模式：</p>
+  <pre class="brush:xml" style="height: 221px;">&lt;provider class=&quot;com.supermap.services.providers.MultiTilesProvider&quot; enabled=&quot;true&quot; name=&quot;multiTiles3&quot;&gt; 
+  &lt;config class=&quot;com.supermap.services.providers.MultiTilesProviderSetting&quot;&gt; 
+   &lt;name&gt;ChinaTest&lt;/name&gt;  
+   &lt;outputPath&gt;./output&lt;/outputPath&gt;  
+   &lt;outputSite&gt;http://{ip}:{port}/iserver/output/&lt;/outputSite&gt;  
+   &lt;tilesets&gt; 
+     &lt;com.supermap.services.components.commontypes.TilesetSetting&gt; 
+      &lt;tilesourceInfo class=&quot;com.supermap.services.tilesource.MongoDBTilesourceInfo&quot;&gt; 
+        &lt;datastoreType&gt;TILES&lt;/datastoreType&gt;  
+        &lt;type&gt;MongoDB&lt;/type&gt;  
+        &lt;serverAdresses&gt; 
+         &lt;string&gt;192.168.17.214:27011&lt;/string&gt; 
+        &lt;/serverAdresses&gt;  
+        &lt;database&gt;jingjin_transparent&lt;/database&gt;  
+        &lt;username/&gt;  
+        &lt;password/&gt; 
+      &lt;/tilesourceInfo&gt;  
+      &lt;mapName&gt;京津地区地图&lt;/mapName&gt; 
+      &lt;tilesetName&gt;1181328118&lt;/tilesetName&gt; 
+     &lt;/com.supermap.services.components.commontypes.TilesetSetting&gt;  
+   &lt;/tilesets&gt;  
+   &lt;baseTileset&gt;  
+     &lt;tilesourceInfo class=&quot;com.supermap.services.tilesource.SMTilesTileSourceInfo&quot;&gt; 
+        &lt;datastoreType&gt;TILES&lt;/datastoreType&gt;  
+        &lt;outputPath&gt;E:/supermap/China_-1085299276_256X256_PNG.smtiles&lt;/outputPath&gt;  
+      &lt;/tilesourceInfo&gt;  
+      &lt;mapName&gt;China&lt;/mapName&gt; 
+      &lt;tilesetName&gt;smtiles_tileset_1181328119&lt;/tilesetName&gt; 
+   &lt;/baseTileset&gt;  
+   &lt;combiningMode&gt;BaseTileset&lt;/combiningMode&gt; 
+  &lt;/config&gt; 
+&lt;/provider&gt;   </pre>
+  <p class="myNormal"> </p>
+  <p class="myNormal">自定义模式：</p>
+  <pre class="brush:xml" style="height: 221px;">&lt;provider class=&quot;com.supermap.services.providers.MultiTilesProvider&quot; enabled=&quot;true&quot; name=&quot;multiTiles3&quot;&gt; 
+  &lt;config class=&quot;com.supermap.services.providers.MultiTilesProviderSetting&quot;&gt; 
+   &lt;name&gt;ChinaTest&lt;/name&gt;  
+   &lt;outputPath&gt;./output&lt;/outputPath&gt;  
+   &lt;outputSite&gt;http://{ip}:{port}/iserver/output/&lt;/outputSite&gt;  
+   &lt;tilesets&gt; 
+     &lt;com.supermap.services.components.commontypes.TilesetSetting&gt; 
+      &lt;tilesourceInfo class=&quot;com.supermap.services.tilesource.MongoDBTilesourceInfo&quot;&gt; 
+        &lt;datastoreType&gt;TILES&lt;/datastoreType&gt;  
+        &lt;type&gt;MongoDB&lt;/type&gt;  
+        &lt;serverAdresses&gt; 
+         &lt;string&gt;192.168.17.214:27011&lt;/string&gt; 
+        &lt;/serverAdresses&gt;  
+        &lt;database&gt;jingjin_transparent&lt;/database&gt;  
+        &lt;username/&gt;  
+        &lt;password/&gt; 
+      &lt;/tilesourceInfo&gt;  
+      &lt;mapName&gt;京津地区地图&lt;/mapName&gt; 
+     &lt;/com.supermap.services.components.commontypes.TilesetSetting&gt;  
+     &lt;com.supermap.services.components.commontypes.TilesetSetting&gt; 
+      &lt;tilesourceInfo class=&quot;com.supermap.services.tilesource.MongoDBTilesourceInfo&quot;&gt; 
+        &lt;datastoreType&gt;TILES&lt;/datastoreType&gt;  
+        &lt;type&gt;MongoDB&lt;/type&gt;  
+        &lt;serverAdresses&gt; 
+         &lt;string&gt;192.168.17.214:27011&lt;/string&gt; 
+        &lt;/serverAdresses&gt;  
+        &lt;database&gt;China4326&lt;/database&gt;  
+        &lt;username/&gt;  
+        &lt;password/&gt; 
+      &lt;/tilesourceInfo&gt;  
+      &lt;mapName&gt;China_4326&lt;/mapName&gt; 
+     &lt;/com.supermap.services.components.commontypes.TilesetSetting&gt; 
+   &lt;/tilesets&gt;  
+   &lt;customScales&gt; 
+     &lt;double&gt;4.0E-9&lt;/double&gt;  
+     &lt;double&gt;8.0E-9&lt;/double&gt;  
+     &lt;double&gt;1.5625E-8&lt;/double&gt;  
+     &lt;double&gt;3.125E-8&lt;/double&gt;  
+     &lt;double&gt;6.25E-8&lt;/double&gt;  
+     &lt;double&gt;1.25E-7&lt;/double&gt;  
+     &lt;double&gt;2.5E-7&lt;/double&gt;  
+     &lt;double&gt;5.0E-7&lt;/double&gt;  
+     &lt;double&gt;1.0E-6&lt;/double&gt; 
+   &lt;/customScales&gt;  
+   &lt;combiningMode&gt;CustomScales&lt;/combiningMode&gt; 
+  &lt;/config&gt; 
+&lt;/provider&gt;   </pre>
+  <p class="myNormal">其中&lt;provider&gt;中的 class 标识的是复合瓦片地图服务提供者的实现类，&lt;config&gt;中的  class 标识的是复合瓦片服务提供者对应的配置类，即 MultiTilesProviderSetting，&lt;config&gt;中的内容对应的是 <a class="contentpagehyperlink" href="../../../../../mergedProjects/iServerJavadoc/com/supermap/services/providers/MultiTilesProviderSetting.html">MultiTilesProviderSetting</a> 对应的配置项：</p>
+  <ul style="list-style: disc;">
+    <li class="SymbolList1">&lt;name&gt;：多个地图瓦片库聚合后发布成的地图服务的名称。</li>
+    <li class="SymbolList1">&lt;outputPath&gt;：图片的输出路径。</li>
+    <li class="SymbolList1">&lt;outputSite&gt;：访问图片的根目录 URI。</li>
+    <li class="SymbolList1">&lt;baseTileset&gt;：底图切片集设置。</li>
+    <li class="SymbolList1">&lt;customScales&gt; ：自定义比例尺（0&lt;比例尺&lt;1），数值仅支持 double 类型，如“0.00001”。</li>
+    <li class="SymbolList1">&lt;combiningMode&gt;：合并模式，支持三种合并模式 &quot;Default&quot;（默认模式）、&quot;CustomScales&quot;（自定义模式）、&quot;BaseTileset&quot;（底图模式）。</li>
+    <li class="SymbolList1">&lt;tilesets&gt;：需要发布的切片集。</li>
+    <li class="SymbolList2">&lt;com.supermap.services.components.commontypes.TilesetSetting&gt;：此节点为设置待发布的切片的信息，并支持设定多个。具体包括如下参数：</li>
+  </ul>
+  <ul style="list-style: disc;">
+    <li class="SymbolList1">&lt;tilesourceInfo&gt;：切片数据源信息，其中 class 标识的是复合瓦片服务提供者对应的配置类。</li>
+    <li class="SymbolList2">&lt;datastoreType&gt;：数据源类型，支持 TILES 类型。</li>
+  </ul>
+  <p style="margin-left: 80px;">文件型数据源配置参数：</p>
+  <ul style="list-style: disc;">
+    <li class="SymbolList2">&lt;outputPath&gt;：切片数据源存储路径。支持的瓦片格式包括 SMTiles、UGCV5 、SMTiles 等</li>
+  </ul>
+  <p style="margin-left: 80px;">数据库型数据源配置参数：</p>
+  <ul style="list-style: disc;">
+    <li class="SymbolList2">&lt;type&gt;：数据库类型。如 MongoDB。</li>
+    <li class="SymbolList2">&lt;serverAdresses&gt;：数据库的服务地址， MongoDB 数据库服务地址如“192.168.17.214:27017”。</li>
+    <li class="SymbolList2">&lt;database&gt;：数据库名称。</li>
+    <li class="SymbolList2">&lt;username&gt;：具有访问该数据库权限的用户名。</li>
+    <li class="SymbolList2">&lt;password&gt;：该用户的密码。</li>
+    <li class="SymbolList1">&lt;mapName&gt;：要发布的地图的名称。</li>
+    <li class="SymbolList1">&lt;tilesetName&gt;：发布的切片集的名称。</li>
+  </ul>
+  <h2 class="myNormal">配置 MBTiles 地图服务提供者</h2>
+  <p class="myNormal">MBTiles 服务提供者的配置在&lt;provider&gt;节点中进行。具体配置方式如下：</p>
+  <pre class="brush:xml">&lt;provider class=&quot;com.supermap.services.providers.MBTilesMapProvider&quot; enabled=&quot;true&quot; name=&quot;mbtiles-R&quot;&gt;
+        &lt;config class=&quot;com.supermap.services.providers.MBTilesMapProviderSetting&quot;&gt;
+                &lt;outputPath&gt;./output&lt;/outputPath&gt;
+                &lt;outputSite&gt;http://{ip}:{port}/iserver/output/&lt;/outputSite&gt;
+                &lt;filePath&gt;D:/R_Boundry.mbtiles&lt;/filePath&gt;
+                &lt;vectorFormat&gt;false&lt;/vectorFormat&gt;
+        &lt;/config&gt;
+&lt;/provider&gt;</pre>
+  <p class="myNormal">其中&lt;provider&gt;中的 class 标识的是  MBTiles 地图服务提供者的实现类，&lt;config&gt;中的  class 标识的是 MBTiles 地图服务提供者对应的配置类，即 MBTilesMapProviderSetting，&lt;config&gt;中的内容对应的是 <a class="contentpagehyperlink" href="../../../../../mergedProjects/iServerJavadoc/com/supermap/services/providers/MBTilesMapProviderSetting.html">MBTilesMapProviderSetting</a> 对应的配置项：</p>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1">&lt;outputPath&gt;：图片的输出路径。</li>
+    <li class="SymbolList1">&lt;outputSite&gt;：访问图片的根目录URI。</li>
+    <li class="SymbolList1">&lt;filePath&gt;：MBTiles 文件的路径。</li>
+    <li class="SymbolList1">&lt;vectorFormat&gt;：是否是矢量瓦片。</li>
+  </ul>
+  <p class="myNormal"> </p>
+
+</div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../../../../../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../../../../../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../../../../../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../../../../../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../../../../../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../../../../../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../../../../../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../../../../.."
+    gCommonRootRelPath = "../../../../.."
+    gTopicId = "5.2.1.1.3.0_1"
+  
+//]]></script>
+
+  <script src="../../../../../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../../../../../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../../../../../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../../../../../whxdata/layoutconfig.js"></script>
+  <script src="../../../../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

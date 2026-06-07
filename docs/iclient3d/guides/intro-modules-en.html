@@ -1,0 +1,451 @@
+<!--********************************************************************
+* Copyright© 2000 - 2020 SuperMap Software Co.Ltd. All rights reserved.
+*********************************************************************-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>iClient3D for WebGL/WebGPU Introduction</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="../css/introduction.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <script type="text/javascript" include='leaflet,iclient-leaflet,g6,isIntroduction' src="../js/include.js"></script>
+</head>
+
+<body class="hold-transition skin-blue">
+
+    <!--顶部导航-->
+    <header class="header-wrapper main-header icl-header"></header>
+    <script>
+        var identification = {
+            name: "WebGL"
+        };
+        var navigation = {
+            nav: {
+                title: "SuperMap iClient3D for WebGL/WebGPU",
+                path: "../../web/",
+                isLocal: window.isLocal
+            }
+        };
+        utils.loadTemplate(".icl-header", "../apis/header.html", navigation);
+
+    </script>
+    <!--顶部导航 end-->
+
+    <!--内容区-->
+    <div>
+        <div class="row">
+            <!--左侧导航-->
+            <div class="leftnav">
+                <nav class="icl-docs-sidebar hidden-print hidden-xs hidden-sm affix-top">
+                    <ul class="nav icl-docs-sidenav">
+                        <li><a href="#introduce">Overview</a></li>
+                        <li><a href="#download">Download</a></li>
+                        <li><a href="#techFeatures">Key Features</a></li>
+                        <li><a href="#modules">Modules</a></li>
+                        <li><a href="#license">Licenses</a></li>
+                        <li><a href="#environment">Environments</a></li>
+                    </ul>
+                    <a class="back-to-top" href="#top">
+                        Back to top
+                    </a>
+                </nav>
+            </div>
+            <!--Right side content area-->
+            <div class="col-md-9" id="main-content" role="main">
+                <div class="icl-docs-header">
+                    <h1 class="product">SuperMap iClient3D for WebGL/WebGPU</h1>
+                </div>
+                <!--Overview-->
+                <div class="section icl-docs-section">
+                    <h2 id="introduce" class="section-title"style="padding-top:100px; margin-top:-100px;">Overview</h2>
+                  <p class="lead">SuperMap iClient 3D for WebGL/WebGPU is a no plug-in, cross-browser client product in the SuperMap service GIS architecture system.
+                    It is based on the WebGL/WebGPU and is oriented to the development of HTML 5 3D applications. It could quickly build 3D real space applications with rich content, rapid response and smooth experience.
+                </p>
+                    <p>Starting from SuperMap iClient3D 2023, the product supports both WebGL and WebGPU rendering engines, and uses the same set of API interfaces, which facilitates 
+                        users to quickly switch according to actual needs and reduces migration costs.</p>
+                    <!--<p class="lead">GitHub 托管地址：<a-->
+                            <!--href="https://github.com/SuperMap/iClient-JavaScript/tree/master/src/leaflet"-->
+                            <!--target="_blank">https://github.com/SuperMap/iClient-JavaScript/tree/master/src/leaflet</a>-->
+                    <!--</p>-->
+                </div>
+                <!--Overview End-->
+                <!--Download-->
+                <div class="section icl-docs-section">
+                    <h2 id="download" class="section-title"style="padding-top:100px; margin-top:-100px;">Download</h2>
+                    <div style="text-align:center;margin:0 auto;margin-top: 30px">
+                        <!--address change-->
+                        <!--<a target="_blank" href="../download/download.html"-->
+                        <a target="_blank" href="../downloads/download1.html"
+                            class="btn btn-outline-inverse btn-lg">Go to download page</a>
+                    </div>
+                </div>
+                <!--Download End-->
+                <!--Key features-->
+              <div class="section icl-docs-section">
+                    <h2 id="techFeatures" class="section-title"style="padding-top:100px; margin-top:-100px;">Key Features</h2>
+                    <p class="lead"><strong>(1) Flexible interaction design and rich data presentation methods:</strong></p>
+                    <li class="lead">SuperMap iServer Services
+                    <ul class="lead">
+                        <li>Map service</li>
+                        <li>Data Service</li>
+                        <li>Measurement Service</li>
+                        <li>Query service</li>
+                        <li>Spatial relationship service</li>
+                        <li>Thematic map service</li>
+                        <li>Dynamic Plotting Service</li>
+                        <li>Spatial analysis service class</li>
+                    </ul>
+                    </li>
+                    <li class="lead">SuperMap Cloud Service</li>
+                    <li class="lead">OGC standard services (WMS, WFS, WMTS, KML)</li>
+                    <li class="lead">Other third-party services, such as Tianditu, etc.</li>
+                    <p class="lead"><strong>(2) Compatibility with other frameworks</strong></p>
+                    <li class="lead">jQuery 1.6 +</li>
+                    <li class="lead">SuperMap iClient for JavaScript</li>
+                  <li class="lead">proj4js.js</li>
+
+
+                    <div></div>
+                    </div>
+                <!--Modules-->
+                <div class="section icl-docs-section">
+                    <h2 id="modules" class="section-title"style="padding-top:100px; margin-top:-100px;">Modules</h2>
+                    <p class="lead"></p>
+                    <div class="highlight">
+                        <div id="moduleIntro"></div>
+                    </div>
+					<div>
+						<p style="color:#e14d57" class="lead">Note: If the service license is an iServer Basic license, the following features will not be available.</p>
+						<ul class="lead">
+							<li class="lead"><strong>GPU-Based Spatial Analysis:</strong></li>
+							</p>
+							ViewShed3D : "3D Viewshed Analysis"</p>
+							ShadowQueryPoints : "Shadow Analysis"</p>
+							Sightline : "Visibility Analysis"</p>
+							Skyline : "Skyline Analysis"</p>
+							ViewDome : "Viewdome Analysis"</p>
+							Profile : "Profile Analysis"</p>
+							Globe_SlopeSetting : "Terrain Slope and Aspect Analysis"</p>
+							S3MTilesLayer_hypsometricSetting : "Layer Tintng"</p>
+							<li class="lead"><strong>GPU-Based Spatial Query：</strong></li>
+							</p>
+							SpatialQuery3D : "3D Spatial Query"</p>
+							<li class="lead"><strong>Advanced Effects:</strong></li>
+							</p>
+							DirectionalLight : "Parallel Light Source"</p>
+							ParticleSystem : "Particle System"</p>
+							SpotLight : "Spotlight"</p>
+							PointLight : "Point Light"</p>
+							Scene_bloomEffect : "Ambient Light"</p>
+							Scene_hdrEnabled : "HDR Toggle"</p>
+							Scene_scanEffect : "Scan Line"</p>
+							Scene_addLightSource : "Add Light Source"</p>
+							DynamicLayer3D : "Dynamic Layer"</p>
+							Globe_setPBRMaterial : "Terrain PBR Material"</p>
+							CloudBox : "Stratus"</p>
+							SkyBox : "Skybox"</p>
+							S3MTilesLayer_setPBRMaterial : "PBR Material"</p>
+							ProjectionImage : "Video Placement"</p>
+					
+						</ul>
+					</div>
+                </div>
+                <!--Modules End-->
+                
+                    
+                <div class="section icl-docs-section">
+                    <h2 id="license" class="section-title"style="padding-top:100px; margin-top:-100px;">Licenses</h2>
+                    <a href="https://github.com/SuperMap/iClient-JavaScript/blob/master/LICENSE" target="_blank">
+                        <p class="lead">Apache License 2.0</p>
+                    </a>
+                </div>
+              <div class="section icl-docs-section">
+                    <h2 id="environment" class="section-title"style="padding-top:100px; margin-top:-100px;">Environments</h2>
+    <table width="100%" height="290" border="1px" style="border-color:#ddd">
+                      <tr>
+                        <th width="22%" style="text-align:center; vertical-align:middle"><div align="left"><strong>Product Name</strong></div></th>
+                        <th style="text-align:center; vertical-align:middle"><div align="left"><strong>Hardware and Software Requirements</strong></div></th>
+                        <th style="text-align:center; vertical-align:middle"><div align="left"><strong>Requirement Parameters</strong></div></th>
+                        <th style="text-align:center; vertical-align:middle"><div align="left">Basis</div></th>
+                      </tr>
+                      <tr>
+                        <td rowspan="20" style="text-align:center; vertical-align:middle"><div align="left">SuperMap iClient3D for WebGL</div></td>
+                        <td width="13%" rowspan="3" style="text-align:center; vertical-align:middle"><div align="left">Basic Enviroment Requirements</div></td>
+                        <td width="37%" style="text-align:center; vertical-align:middle"><div align="left">CPU：Intel Core i3 or equivalent configuration.</div></td>
+                        <td width="28%" rowspan="3" style="text-align:center; vertical-align:middle"><div align="left">Basic Development Configuration for iClient3D for WebGL</div></td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center; vertical-align:middle"><div align="left">Memory：8G</div></td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center; vertical-align:middle"><div align="left">Graphics Card/Video Memory: GTX 680/2GB or equivalent or higher configuration.</div></td>
+                      </tr>
+                      <tr>
+                        <td rowspan="3" style="text-align:center; vertical-align:middle"><div align="left">Recommended Environment Requirements</div></td>
+                        <td width="37%" style="text-align:center; vertical-align:middle"><div align="left">CPU：Core i7 9700 and above</div></td>
+                        <td width="28%" rowspan="3" style="text-align:center; vertical-align:middle"><div align="left">Recommended Development Configuration for iClient3D for WebGL</div></td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center; vertical-align:middle"><div align="left">Memory：16G and above</div></td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center; vertical-align:middle"><div align="left">Graphics Card/Video Memory：GTX 1650/4G and above</div></td>
+                      </tr>
+                      <tr>
+                        <td rowspan="3" style="text-align:center; vertical-align:middle"><div align="left">Operating System Requirements</div></td>
+                        <td width="37%" style="text-align:center; vertical-align:middle"><div align="left">Microsoft Windows 7, 8, 8.1, 10, and 11 versions</div></td>
+                        <td width="28%" rowspan="3" style="text-align:center; vertical-align:middle"><div align="left">Operating systems supported by iClient3D for WebGL</div></td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center; vertical-align:middle"><div align="left">Linux Series</div></td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center; vertical-align:middle"><div align="left">MacOs Series</div></td>
+                      </tr>
+                      <tr>
+                        <td rowspan="6" style="text-align:center; vertical-align:middle"><div align="left">Browser Requirements</div></td>
+                        <td width="37%" style="text-align:center; vertical-align:middle"><div align="left">11.0 and above</div></td>
+                        <td width="28%" rowspan="6" style="text-align:center; vertical-align:middle"><div align="left">Browsers supported by iClient3D for WebGL</div></td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center; vertical-align:middle"><div align="left">Chrome 90.0 and above, with the latest version recommended</div></td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center; vertical-align:middle"><div align="left">Firefox 85.0 and above, with the latest version recommended</div></td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center; vertical-align:middle"><div align="left">Opera 95.0 and above, with the latest version recommended</div></td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center; vertical-align:middle"><div align="left">Safari 150.0 and above, with the latest version recommended</div></td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center; vertical-align:middle"><div align="left">Edge 100.0 and above, with the latest version recommended</div></td>
+                      </tr>
+                      <tr>
+                        <td rowspan="5" style="text-align:center; vertical-align:middle"><div align="left">Mobile Device Requirements</div></td>
+                        <td width="37%" style="text-align:center; vertical-align:middle"><div align="left">iPhone XS and above versions</div></td>
+                        <td width="28%" rowspan="5" style="text-align:center; vertical-align:middle"><div align="left">Mobile devices supported by iClient3D for WebGL</div></td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center; vertical-align:middle"><div align="left">iPad Air and above versions</div></td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center; vertical-align:middle"><div align="left">Xiaomi 12 and above versions</div></td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center; vertical-align:middle"><div align="left">Huawei P20 and above versions</div></td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center; vertical-align:middle"><div align="left"> It is recommended to use Chrome 90.0 and above on the above devices for the best browsing experience.</div></td>
+                      </tr>
+                      <tr>
+                        <td rowspan="12" style="text-align:center; vertical-align:middle"><div align="left">SuperMap iClient3D for WebGPU</div></td>
+                        <td rowspan="3" style="text-align:center; vertical-align:middle"><div align="left">Basic Enviroment Requirements</div></td>
+                        <td style="text-align:center; vertical-align:middle"><div align="left">CPU：Core i3 or equivalent configuration</div></td>
+                        <td rowspan="3" style="text-align:center; vertical-align:middle"><div align="left">Basic Development Configuration for iClient3D for WebGPU</div></td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center; vertical-align:middle"><div align="left">Memory：8G</div></td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center; vertical-align:middle"><div align="left">Graphics Card/Video Memory：GTX 680/2G, equivalent or higher configuration</div></td>
+                      </tr>
+                      <tr>
+                        <td rowspan="3" style="text-align:center; vertical-align:middle"><div align="left">Recommended Environment Requirements</div></td>
+                        <td style="text-align:center; vertical-align:middle"><div align="left">CPU：Core i7 9700 and above</div></td>
+                        <td rowspan="3" style="text-align:center; vertical-align:middle"><div align="left">Recommended Development Configuration for iClient3D for WebGPU</div></td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center; vertical-align:middle"><div align="left">Memory：16G and above</div></td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center; vertical-align:middle"><div align="left">Graphics Card/Video Memory：GTX 1650/4G and higher configuration</div></td>
+                      </tr>
+                      <tr>
+                        <td rowspan="3" style="text-align:center; vertical-align:middle"><div align="left">Operating System Requirements</div></td>
+                        <td style="text-align:center; vertical-align:middle"><div align="left">Microsoft Windows 10 and 11 versions</div></td>
+                        <td rowspan="3" style="text-align:center; vertical-align:middle"><div align="left">Operating Systems Supportted by iClient3D for WebGPU</div></td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center; vertical-align:middle"><div align="left">Linux Series</div></td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center; vertical-align:middle"><div align="left">MacOS Series</div></td>
+                      </tr>
+                      <tr>
+                        <td rowspan="3" style="text-align:center; vertical-align:middle"><div align="left">Browser Requirements</div></td>
+                        <td style="text-align:center; vertical-align:middle"><div align="left">Chrome 113.0 and higher versions, with the latest version recommended</div></td>
+                        <td rowspan="3" style="text-align:center; vertical-align:middle"><div align="left">Browsers Supported by iClient3D for WebGPU</div></td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center; vertical-align:middle"><div align="left">Opera 99.0 and higher versions, with the latest version recommended</div></td>
+                      </tr>
+                      <tr>
+                        <td style="text-align:center; vertical-align:middle"><div align="left">Edge 113.0 and higher versions, with the latest version recommended</div></td>
+                      </tr>
+                    </table>
+                    <p class="lead"><span style="color:#e14d57">Note: SuperMap iClient3D for WebGPU does not currently support mobile devices.</span></p>
+              </div>
+            </div>
+        </div>
+    </div>
+    <!--内容区 end-->
+
+    <!--footer-->
+    <footer class="main-footer icl-footer"></footer>
+    <script>
+        utils.loadTemplate(".icl-footer", "../template/footer.html", navigation);
+
+    </script>
+    <!--footer end-->
+
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script>
+        var data = NodesConversionTool.depsToNodes("Documentation");
+
+        var Util = G6.Util;
+        // Prepare Layout Configuration
+        var layoutCfg = {
+            "direction": "LR",
+            "nodeSep": 20,
+            "nodeSize": 20,
+            "rankSep": 200
+        };
+        // Custom Tree Node
+        var DEFAULT_NODE_SIZE = 5;
+        G6.registNode('treeNode', {
+            draw(cfg, group) {
+                var origin = cfg.origin;
+                var r = layoutCfg.nodeSize ? layoutCfg.nodeSize / 2 : DEFAULT_NODE_SIZE;
+                var shapeCfg = {
+                    attrs: {
+                        x: cfg.x,
+                        y: cfg.y,
+                        r: r,
+                        stroke: '#003380',
+                        fill: 'white',
+                        fillOpacity: 1,
+                    },
+                };
+                if (origin.children && origin.children.length) {
+                    shapeCfg.class = origin.isCollapsed ? 'spreadoutButton' : 'collapseButton';
+                    shapeCfg.attrs.fill = '#044A9A';
+                    shapeCfg.attrs.stroke = '#003380';
+                    shapeCfg.attrs.fillOpacity = 0.4;
+                }
+                if (origin.root) {
+                    shapeCfg.attrs.fill = '#044A9A';
+                    shapeCfg.attrs.stroke = '#003380';
+                    shapeCfg.attrs.fillOpacity = 0.7;
+                }
+                shapeCfg.attrStash = Util.mix({}, shapeCfg.attrs);
+                return group.addShape('circle', shapeCfg);
+            },
+            afterDraw(cfg, group) {
+                var origin = cfg.origin;
+                var r = layoutCfg.nodeSize ? layoutCfg.nodeSize / 2 : DEFAULT_NODE_SIZE;
+                var align = origin.align;
+                var labelAttrs = {
+                    text: origin.name,
+                    fill: '#666',
+                    textBaseline: 'middle',
+                    fontSize: 35,
+                    x: cfg.x + r + DEFAULT_NODE_SIZE,
+                    y: cfg.y,
+                    textAlign: 'left',
+                };
+                if (align === 'R') {
+                    Util.mix(labelAttrs, {
+                        x: cfg.x - r - DEFAULT_NODE_SIZE,
+                        y: cfg.y,
+                        textAlign: 'right',
+                    });
+                } else if (align === 'T' || align === 'CH') {
+                    Util.mix(labelAttrs, {
+                        x: cfg.x,
+                        y: cfg.y + r + DEFAULT_NODE_SIZE,
+                        textAlign: 'right',
+                        rotate: -Math.PI / 2,
+                    });
+                } else if (align === 'B') {
+                    Util.mix(labelAttrs, {
+                        x: cfg.x,
+                        y: cfg.y - r - DEFAULT_NODE_SIZE,
+                        textAlign: 'left',
+                        rotate: -Math.PI / 2,
+                    });
+                }
+                var label = group.addShape('text', {
+                    attrs: labelAttrs,
+                });
+                return label;
+            }
+        });
+        // Generate Tree Diagram Instance
+        var tree = new G6.Tree({
+            id: 'moduleIntro', // container ID
+            height: 660, // Canvas Height
+            fitView: 'autoZoom', // Auto Scaling
+            layoutFn: G6.Layout.LayeredTidyTree, // Layout Type
+            layoutCfg: layoutCfg, // Layout Configuration
+            showButton: false
+        });
+        // Load Data
+        tree.source(data);
+        tree.node().shape('treeNode');
+        tree.edge()
+            .shape('smooth')
+            .style({
+                stroke: '#A9BCD3'
+            });
+        tree.tooltip(true);
+        tree.tooltip({
+            split: ''
+        });
+        tree.node().tooltip(function (obj) {
+            return [
+                [obj.des]
+            ]
+        });
+        // Render Tree Diagram
+        tree.render();
+        // Add Event
+        tree.on('itemclick', function (ev) {
+            if (ev.shape.__cfg.type !== 'circle' && ev.shape.__cfg.type !== 'path' && !ev.item.get('model')
+                .children && ev.item.get('model').name) {
+                window.open("../../docs/Documentation/" + ev.item.get('model').name + ".html");
+            }
+        });
+        tree.on('mouseenter', function (ev) {
+            if (ev.itemType === 'edge') {
+                return;
+            }
+            var shape = ev.shape;
+            if (shape.__cfg.type !== 'circle') {
+                shape._setAttr("fill", "#e14d57");
+                tree.refresh();
+            }
+        });
+        tree.on('mousemove', function (ev) {
+            $('#canvas_2').css('cursor', 'pointer');
+        });
+        tree.on('mouseleave', function (ev) {
+            if (ev.itemType === 'edge') {
+                return;
+            }
+            var shape = ev.shape;
+            if (shape.__cfg.type !== 'circle') {
+                shape._setAttr("fill", "#666");
+                tree.refresh();
+            }
+        });
+
+    </script>
+</body>
+
+</html>

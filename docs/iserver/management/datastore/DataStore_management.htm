@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../iserver-icon.png"/>
+    
+  <script data-relpath="../.." src="../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+<meta name="template" content="../../assets/layouts/SuperMapiServerMain.htt"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="Content-Language" content="zh-CN"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>iServer DataStore 配置与管理</title>
+<link rel="StyleSheet" href="../../assets/css/SuperMapHelp.css" type="text/css"/>
+<script type="text/javascript" src="../../assets/js/shCore.js"></script>
+<script type="text/javascript" src="../../assets/js/shBrushBash.js"></script>
+<script type="text/javascript" src="../../assets/js/shBrushCpp.js"></script>
+<script type="text/javascript" src="../../assets/js/shBrushCSharp.js"></script>
+<script type="text/javascript" src="../../assets/js/shBrushCss.js"></script>
+<script type="text/javascript" src="../../assets/js/shBrushDelphi.js"></script>
+<script type="text/javascript" src="../../assets/js/shBrushDiff.js"></script>
+<script type="text/javascript" src="../../assets/js/shBrushGroovy.js"></script>
+<script type="text/javascript" src="../../assets/js/shBrushJava.js"></script>
+<script type="text/javascript" src="../../assets/js/shBrushJScript.js"></script>
+<script type="text/javascript" src="../../assets/js/shBrushPhp.js"></script>
+<script type="text/javascript" src="../../assets/js/shBrushPlain.js"></script>
+<script type="text/javascript" src="../../assets/js/shBrushPython.js"></script>
+<script type="text/javascript" src="../../assets/js/shBrushRuby.js"></script>
+<script type="text/javascript" src="../../assets/js/shBrushScala.js"></script>
+<script type="text/javascript" src="../../assets/js/shBrushSql.js"></script>
+<script type="text/javascript" src="../../assets/js/shBrushVb.js"></script>
+<script type="text/javascript" src="../../assets/js/shBrushXml.js"></script>
+<script type="text/javascript" src="../../assets/js/ConfigiServer6R.js"></script>
+<script type="text/javascript" src="../../assets/js/SMCollapse.js"></script>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../assets/css/homeButtom.css"/>
+  <script src="../../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+<h2><a id="config_datastore"></a>搭建分布式 iServer DataStore </h2>
+<h3>Windows 上搭建 iServer DataStore 的环境准备</h3>
+<ol class="ListInParagraph">
+	<li class="ListInParagraph"><p class="myNormal">开放必要的端口：iServer DataStore 
+	 默认端口为 8020， 请先修改防火墙配置，使该端口通过。</p></li>
+	<li class="ListInParagraph"><p class="myNormal">请确认您的 Windows 系统中是否安装了 
+	 vcredist 2013，如未安装，请先安装 vcredist 2013。iServer DataStore 产品包中提供安装文件，位于【iServer 
+	 DataStore 安装目录】\support\vcredist\vcredist_x64-2013.exe。</p></li>
+</ol>
+<h3>Linux  上搭建 iServer DataStore 的环境准备</h3>
+<ol>
+	<li class="ListInParagraph"><p class="myNormal">开放必要的端口：iServer DataStore 
+	 默认端口为 8020， 请先修改防火墙配置，使该端口通过。</p></li>
+	<li class="ListInParagraph" style="font-weight: normal;"><p class="myNormal" style="font-weight: normal;">在 Ubuntu 上安装 iServer DataStore，且需要配置时空数据存储时，需要在安装 
+	 iServer DataStore 前进行下列环境准备。</p></li>
+	<li class="SymbolList1"><p class="myNormal">设置进程中内存映射区域的最大数量 max_map_count。此值默认是 
+	 65536，需调整为至少 655360。修改方法为：切换至 root 用户，编辑 sysctl.conf 文件：</p></li>
+</ol>
+<p class="myCodeP">vi /etc/sysctl.conf</p>
+<p class="myNormal" style="margin-left: 40px;">添加如下配置，保存后执行命令 sysctl -p 
+ </p>
+<p class="myCodeP">vm.max_map_count=655360</p>
+<ul class="SymbolList1">
+	<li class="SymbolList1"><p class="myNormal">设置 Linux 系统能够打开的文件句柄的个数 
+	 file-max 。此值默认为4096， 需修改至少65536。修改方法为：编辑 <span>/etc/security/limits.conf 
+	 文件，添加以下内容：</span></p></li>
+</ul>
+<p class="myCodeP">*    soft      nofile 
+      65536</p>
+<p class="myCodeP"><span style="font-weight: normal;">*    hard 
+     nofile      65536</span></p>
+<p class="myCodeP">*    soft      nproc 
+      65536</p>
+<p class="myCodeP"><span style="font-weight: normal;">*    hard 
+     nproc      65536</span></p>
+<ul class="SymbolList1">
+	<li class="SymbolList1"><p class="myNormal"><span style="font-weight: normal;">查看 
+	 /etc/security/limits.d 目录下是否有 90-nproc.conf 文件，没有的话新建此文件，添加以下内容：</span></p></li>
+</ul>
+<p class="myCodeP"><span style="font-weight: normal;">*    soft 
+     nproc   65536</span></p>
+<p class="myCodeP">*    hard     nproc 
+    65536</p>
+<ol start="3" class="ListInParagraph">
+	<li class="ListInParagraph"><p class="myNormal" style="font-weight: normal;">在所有 
+	 Linux 系统上安装 iServer DataStore，对产品包放置的目录和操作命令的用户都有一些要求，具体操作步骤如下：</p></li>
+</ol>
+<ul class="SymbolList1">
+	<li class="SymbolList1"><p class="myNormal" style="font-weight: normal;">在操作系统里创建一个非 
+	 root 用户，比如 datastoreUser</p></li>
+	<li class="SymbolList1"><p class="myNormal" style="font-weight: normal;">拷贝 
+	 supermap_iserver_datastore_*_*_*_linux64.tar.gz 产品包，放在 datastoreUser 
+	 主目录下，如：/home/datastoreUser</p></li>
+	<li class="SymbolList1"><p class="myNormal" style="font-weight: normal;">以 
+	 datastoreUser 用户登陆操作系统，执行&quot; tar -zxvf 文件名.tar.gz&quot; 命令解压缩 tar 
+	 包，得到目录 supermap_iserver_datastore_*_*_*_linux64</p></li>
+	<li class="SymbolList1"><p class="myNormal" style="font-weight: normal;">以 
+	 datastoreUser 用户，在 $SuperMapiServerDataStore2025$/bin 目录，运行 ./startup.sh 
+	 命令启动 SuperMap iServer DataStore 服务，运行 ./shutdown.sh 命令停止 SuperMap 
+	 iServer DataStore 服务。</p></li>
+</ul>
+<h3>配置到 iServer</h3>
+<p class="myNormal">首先您需要启动 iServer，并确认已进行初始化配置。准备多台计算机，依照以下向导在每台计算机上配置 
+ iServer DataStore：</p>
+<ol class="ListInParagraph">
+	<li class="ListInParagraph"><p class="myNormal">解压 iServer DataStore，并启动。</p></li>
+	<li class="ListInParagraph"><p class="myNormal">在浏览器中输入地址：http://{ip}:8020 
+	 访问 iServer DataStore 配置向导</p></li>
+	<li class="ListInParagraph"><p class="myNormal">指定 GIS 服务器的 URL，例如 
+	 http://{ip}:8090/</p></li>
+	<li class="ListInParagraph"><p class="myNormal">输入 iServer 管理员用户名、密码</p></li>
+	<li class="ListInParagraph"><p class="myNormal">指定内容目录，用于存储数据、日志，备份文件等。默认为【iServer 
+	 DataStore 安装目录】\data。<span style="font-weight: bold;">注意：iServer DataStore的内容目录暂不支持（包含中文）和空格的路径。</span></p></li>
+	<li class="ListInParagraph"><p class="myNormal">选择要创建的 iServer Datastore 
+	 类型，目前支持关系型数据库、二进制数据文件、切片缓存和时空数据库</p></li>
+	<li class="ListInParagraph"><p class="myNormal">关系型数据库的存储能力依托于 PostgreSQL 
+	 数据库，需要配置 PostgreSQL 数据库的访问端口。选择关系型数据库存储后，需指定 PostgreSQL 数据库的端口，如未指定，则系统将默认使用 
+	 5432 作为 PostgreSQL 数据库的端口</p></li>
+	<li class="ListInParagraph"><p class="myNormal">二进制数据和切片数据的存储能力依托于 
+	 MongoDB 数据库，需要在本机安装 MongoDB。选择创建二进制数据存储或切片数据存储后，指定本机 MongoDB 的安装路径，例如D:\mongodb</p></li>
+	<li class="ListInParagraph"><p class="myNormal">点击完成后，等待配置成功。</p></li>
+</ol>
+<h2><a id="use_data_in_datastore"></a>使用 iServer DataStore </h2>
+<p class="myNormal">iServer DataStore 中的数据可用于 iServer <a class="contentpagehyperlink" href="../Distributed_processing/use_processing.htm">分布式分析服务</a>。此外，所有对数据存储的操作都在 
+ iServer 中以 REST 资源的方式提供，详见<a class="contentpagehyperlink" href="../../iS/use_iserver/usebigdata/usebigdatacatalog.htm">数据目录服务</a>。</p>
+<p class="myNormal"> </p>
+
+
+</div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../.."
+    gCommonRootRelPath = "../.."
+    gTopicId = "5.8"
+  
+//]]></script>
+
+  <script src="../../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../../whxdata/layoutconfig.js"></script>
+  <script src="../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

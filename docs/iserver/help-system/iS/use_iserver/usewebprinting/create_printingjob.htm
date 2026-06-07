@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../../../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../../iserver-icon.png"/>
+    
+  <script data-relpath="../../.." src="../../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <meta name="template" content="../../../assets/layouts/SuperMapiServerMain.htt"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Language" content="zh-CN"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>创建打印任务</title>
+  <link rel="StyleSheet" href="../../../assets/css/SuperMapHelp.css" type="text/css"/>
+  <script type="text/javascript" src="../../../assets/js/shCore.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushBash.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushCpp.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushCSharp.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushCss.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushDelphi.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushDiff.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushGroovy.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushJava.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushJScript.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushPhp.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushPlain.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushPython.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushRuby.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushScala.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushSql.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushVb.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushXml.js"></script>
+  <script type="text/javascript" src="../../../assets/js/ConfigiServer6R.js"></script>
+  <script type="text/javascript" src="../../../assets/js/SMCollapse.js"></script>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../../../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../assets/css/homeButtom.css"/>
+  <script src="../../../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../../../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../../../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../../../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../../../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../../../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../../../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../../../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../../../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <p class="myNormal">Web 打印服务默认开启异步打印模式。创建一个打印任务的步骤如下：</p>
+  <ol class="ListInParagraph" style="list-style: decimal;">
+    <li class="ListInParagraph">访问 iServer 服务列表，选择 webprinting/rest 服务资源</li>
+    <li class="ListInParagraph">依次点击 <strong>webprinting</strong> -&gt; <strong>v1</strong> -&gt; <strong>jobs</strong>，进入打印任务列表资源页面</li>
+    <li class="ListInParagraph">点击创建打印任务，进入创建打印任务资源页面</li>
+    <li class="ListInParagraph">输入 POST 请求体，点击<strong>创建打印任务</strong>按钮即可开始执行任务。关于请求体如何编写请参见 <a class="contentpagehyperlink" href="../../../mergedProjects/SuperMapiServerRESTAPI/iServerOpenAPI.htm">打印任务列表资源的 POST 请求</a>。</li>
+  </ol>
+  <p class="myNormal">创建打印任务输入的请求体由三个顶层对象构成：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">    &quot;content&quot;: {},</p>
+  <p class="myCodeP">    &quot;layoutOptions&quot;: {},</p>
+  <p class="myCodeP">    &quot;exportOptions&quot;: {}</p>
+  <p class="myCodeP">}</p>
+  <h2>content</h2>
+  <p class="myNormal">content 对象是必选对象，用于定义待打印的 Web 内容。由以下参数组成：</p>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1">type：必选，Web 打印内容支持的类型，目前支持的类型：WEBMAP。</li>
+    <li class="SymbolList1">url：可选，待打印的 SuperMap iPortal 数据上图 Web App 制作的 WebMap 的 url 地址。例如：http://supermapiportal:8190/iportal/web/maps/{mapid}/map.rjson。</li>
+    <li class="SymbolList1">token：可选，如果待打印的是 SuperMap iPortal 用户私有的 WebMap，需要提供 SuperMap iPortal 用户的 token。</li>
+    <li class="SymbolList1">value（可选）：传递的是一个符合 <a class="contentpagehyperlink" href="../../../iP/Appendix/WebMap/WebMapSummary.htm">SuperMap WebMap 规范的 WebMap</a> 的 JSON 表达，也可以是一个完整的 SuperMap iPortal 数据上图制作的 WebMap 的 json 表达。如果已填了 url 参数，此参数可不传。</li>
+  </ul>
+  <p class="myNormal">示例1：传入一个SuperMap iPortal 数据上图 Web App 制作的 WebMap 的 url 地址</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">    &quot;content&quot;: {</p>
+  <p class="myCodeP">        &quot;type&quot;: &quot;WEBMAP&quot;,</p>
+  <p class="myCodeP">        &quot;url&quot;:&quot;http://supermapiportal:8190/iportal/web/maps/{mapid}/map.rjson&quot;</p>
+  <p class="myCodeP">     }</p>
+  <p class="myCodeP">}</p>
+  <p class="myNormal">示例2：传入一个完整的 SuperMap iPortal 数据上图制作的 WebMap 的 json 表达</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">    &quot;content&quot;: {</p>
+  <p class="myCodeP">        &quot;type&quot;: &quot;WEBMAP&quot;,</p>
+  <p class="myCodeP">        &quot;value&quot;: {</p>
+  <p class="myCodeP">            &quot;extent&quot;: {</p>
+  <p class="myCodeP">                &quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">                    &quot;x&quot;: -20037508.3427892,</p>
+  <p class="myCodeP">                    &quot;y&quot;: -20037508.3427891</p>
+  <p class="myCodeP">                },</p>
+  <p class="myCodeP">                &quot;rightTop&quot;: {</p>
+  <p class="myCodeP">                    &quot;x&quot;: 20037508.3427892,</p>
+  <p class="myCodeP">                    &quot;y&quot;: 20037508.3427891</p>
+  <p class="myCodeP">                }</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;maxScale&quot;: &quot;1:144447.927&quot;,</p>
+  <p class="myCodeP">            &quot;level&quot;: 4,</p>
+  <p class="myCodeP">            &quot;center&quot;: {</p>
+  <p class="myCodeP">                &quot;x&quot;: 11382417.9336122,</p>
+  <p class="myCodeP">                &quot;y&quot;: 4134167.44525748</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;baseLayer&quot;: {</p>
+  <p class="myCodeP">                &quot;layerType&quot;: &quot;TILE&quot;,</p>
+  <p class="myCodeP">                &quot;name&quot;: &quot;ChinaDark&quot;,</p>
+  <p class="myCodeP">                &quot;url&quot;: &quot;https://iserver.supermap.io/iserver/services/map-china/rest/maps/ChinaDark&quot;</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;layers&quot;: [</p>
+  <p class="myCodeP">                {</p>
+  <p class="myCodeP">                    &quot;layerType&quot;: &quot;VECTOR&quot;,</p>
+  <p class="myCodeP">                    &quot;visible&quot;: true,</p>
+  <p class="myCodeP">                    &quot;name&quot;: &quot;中国历史6级以上地震记录&quot;,</p>
+  <p class="myCodeP">                    &quot;featureType&quot;: &quot;POINT&quot;,</p>
+  <p class="myCodeP">                    &quot;xyField&quot;: {</p>
+  <p class="myCodeP">                        &quot;xField&quot;: &quot;经度&quot;,</p>
+  <p class="myCodeP">                        &quot;yField&quot;: &quot;纬度&quot;</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    &quot;style&quot;: {</p>
+  <p class="myCodeP">                        &quot;fillColor&quot;: &quot;#EE4D5A&quot;,</p>
+  <p class="myCodeP">                        &quot;strokeWidth&quot;: 1,</p>
+  <p class="myCodeP">                        &quot;offsetX&quot;: 0,</p>
+  <p class="myCodeP">                        &quot;offsetY&quot;: 0,</p>
+  <p class="myCodeP">                        &quot;fillOpacity&quot;: 0.9,</p>
+  <p class="myCodeP">                        &quot;radius&quot;: 8,</p>
+  <p class="myCodeP">                        &quot;strokeColor&quot;: &quot;#ffffff&quot;,</p>
+  <p class="myCodeP">                        &quot;type&quot;: &quot;BASIC_POINT&quot;,</p>
+  <p class="myCodeP">                        &quot;strokeOpacity&quot;: 1</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    &quot;projection&quot;: &quot;EPSG:4326&quot;,</p>
+  <p class="myCodeP">                    &quot;enableFields&quot;: [</p>
+  <p class="myCodeP">                        &quot;年&quot;,</p>
+  <p class="myCodeP">                        &quot;月&quot;,</p>
+  <p class="myCodeP">                        &quot;日&quot;,</p>
+  <p class="myCodeP">                        &quot;时&quot;,</p>
+  <p class="myCodeP">                        &quot;分&quot;,</p>
+  <p class="myCodeP">                        &quot;秒&quot;,</p>
+  <p class="myCodeP">                        &quot;经度&quot;,</p>
+  <p class="myCodeP">                        &quot;纬度&quot;,</p>
+  <p class="myCodeP">                        &quot;深度&quot;,</p>
+  <p class="myCodeP">                        &quot;震级&quot;,</p>
+  <p class="myCodeP">                        &quot;震级类型&quot;,</p>
+  <p class="myCodeP">                        &quot;参考地名&quot;</p>
+  <p class="myCodeP">                    ],</p>
+  <p class="myCodeP">                    &quot;dataSource&quot;: {</p>
+  <p class="myCodeP">                        &quot;name&quot;: &quot;ChinaRecordOfOver6Earthquakes&quot;,</p>
+  <p class="myCodeP">                        &quot;type&quot;: &quot;SAMPLE_DATA&quot;</p>
+  <p class="myCodeP">                    }</p>
+  <p class="myCodeP">                }</p>
+  <p class="myCodeP">            ],</p>
+  <p class="myCodeP">            &quot;description&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">            &quot;projection&quot;: &quot;EPSG:3857&quot;,</p>
+  <p class="myCodeP">            &quot;minScale&quot;: &quot;1:591658710.909&quot;,</p>
+  <p class="myCodeP">            &quot;title&quot;: &quot;testdizhen&quot;,</p>
+  <p class="myCodeP">            &quot;version&quot;: &quot;2.2.1&quot;,</p>
+  <p class="myCodeP">            &quot;rootUrl&quot;: &quot;https://iptl.supermap.io/iportal/services/../&quot;</p>
+  <p class="myCodeP">        }</p>
+  <p class="myCodeP">    }</p>
+  <p class="myCodeP">}</p>
+  <div class="pagenotice">
+    <div class="pagecontent"><img align="" class="notice_logo" src="../../../assets/images/notice.png"/> <span class="notice_label">注意事项：</span></div>
+    <div class="notice_content">
+      <p>当以 WMTS 服务方式打印天地图地图时，需要使用服务器端许可。</p>
+    </div>
+  </div>
+  <h2><a id="layoutOptions"></a>layoutOptions</h2>
+  <p class="myNormal">layoutOptions 对象是必选对象，用于定义打印的布局信息。由以下参数组成：</p>
+  <ul style="list-style: disc;">
+    <li class="SymbolList1">templateName：必选参数，布局模板文件夹的名称。</li>
+    <li class="SymbolList1">title：可选参数，如果在布局上存在地图主标题文本元素的文本，则该参数为必选，也可以传递空值。当需要输入多行文本时，可在需要换行的文字前输入换行符“\n”。</li>
+    <li class="SymbolList1">subTitle：可选参数，如果在布局上存在地图副标题文本元素的文本，则该参数为必选，也可以传递空值。当需要输入多行文本时，可在需要换行的文字前输入换行符“\n”。</li>
+    <li class="SymbolList1">author：可选参数，如果在布局上存在作者文本元素的文本，则该参数为必选，也可以传递空值。当需要输入多行文本时，可在需要换行的文字前输入换行符“\n”。</li>
+    <li class="SymbolList1">copyright：可选参数，如果在布局上存在版权文本元素的文本，则该参数为必选，也可以传递空值。当需要输入多行文本时，可在需要换行的文字前输入换行符“\n”。</li>
+    <li class="SymbolList1">scaleBarOptions：可选参数，用于更新比例尺，如果不传递该参数，则使用默认的比例尺条。</li>
+    <li class="SymbolList2">scaleText：可选参数，比例尺文本信息，例如：1:1000000。</li>
+    <li class="SymbolList2">type：可选参数，比例尺的样式，包括：LINE, BAR, BAR_SUB, GRID, LINE_CROSS_RAILWAY, RAILWAY_MID_SPLIT, RULER, BARRIER, GREATWALL, SAWTOOTH。</li>
+    <li class="SymbolList2">intervals：可选参数，比例尺条的段数。</li>
+    <li class="SymbolList2">unit：可选参数，比例尺的单位制，包括：METER, FOOT, DEGREES。</li>
+    <li class="SymbolList2">scaleBarVisible：可选参数，比例尺条是否显示。</li>
+    <li class="SymbolList1">northArrowOptions：可选参数，用于更新指北针，如果不传递该参数，则使用默认的指北针。优先级：picAsBase64 &gt; picAsUrl。</li>
+    <li class="SymbolList2">picAsBase64：可选参数，通过指定指北针的 base64 位图片信息，来更新布局中指北针的图片。</li>
+    <li class="SymbolList2">picAsUrl：可选参数，通过指定指北针的图片 url 地址，来更新布局中指北针的图片。</li>
+    <li class="SymbolList1">littleMapOptions：可选参数，如果布局中存在小地图，则该参数为必须参数。小地图可以是指定的主地图中的图层名称，也可以是一个 WebMap。优先级：layers&gt;layerNames，两者必选其一。</li>
+    <li class="SymbolList2">scale：可选参数，小地图的比例尺。</li>
+    <li class="SymbolList2">center：可选参数，小地图的中心点。</li>
+    <li class="SymbolList2">layerNames：可选参数，指定 WebMap 中图层名称的列表，用于渲染小地图。</li>
+    <li class="SymbolList2">layers：可选参数，指定 WebMap 中的 layers 图层。如果您不使用主地图中的图层来渲染小地图，而是希望使用一个 WebMap 图层来渲染小地图，可以通过此参数设置。</li>
+    <li class="SymbolList1"><a id="legend"></a>legendOptions：可选参数，指定布局中图例元素的属性。优先级：picAsBase64 &gt; picAsUrl &gt; customItems &gt; layers，四者必选其一。此外，图例元素支持自动排版，由 isAutoComposing 参数控制。</li>
+    <li class="SymbolList2">picAsUrl：可选参数，通过指定图例的图片 url 地址，来更新布局中图例的图片。图片中需包含图例名称。</li>
+    <li class="SymbolList2">picAsBase64：可选参数，通过指定图例的 base64 位图片信息，来更新布局中图例的图片。图片中需包含图例名称。</li>
+    <li class="SymbolList2">title：可选参数，图例的名称。不传递此参数将不显示图例名称。该参数是与 customItems 参数配合使用。</li>
+    <li class="SymbolList2">customItems：可选参数，自定义一组图例元素，用户可以传入一个 JSON 字符串。该 JSON 字符串由图例元素的名称和图片组成：name 指定图例元素的名称；picAsUrl 指定图例元素的图片 url 地址；picAsBase64 指定图例元素的 base64 位图片信息。</li>
+    <li class="SymbolList2">layers：可选参数，自定义用于获取图例子项的 iServer REST 地图服务的指定图层，用户可以传入一个对象组。该对象组由 REST 地图服务中一个图层 url 的字符串（必选）和表示子图层 name 的字符串数组（可选）组成：url 指定 REST 地图服务或临时图层集中的某一临时图层（指定 ID），目前只支持 TileLayer 图层类型；subLayerNames 指定子图层 name 的字符串数组，不设置该参数将打印上述 url 图层中的所有图例；useCaption 图例文本是否使用图层标题，否，则使用图层名称。</li>
+    <li class="SymbolList2">isAutoComposition：可选参数，是否使用图例自动排版功能。开启后系统将应用图例元素自动排版规则，打印结果将根据相应算法进行显示。默认为 true 自动排版算法请见：<a class="contentpagehyperlink" href="#图例元素自动排版规则">图例元素自动排版规则</a>。</li>
+    <li class="SymbolList2">itemsFont：可选参数，图例子项中的文字字体。isAutoComposition 为 true 时生效。</li>
+    <li class="SymbolList2">titleFont： 可选参数，图例标题的文字字体。</li>
+    <li class="SymbolList2">titleFontSize：可选参数，图例标题的文字字号。</li>
+  </ul>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1"><a id="standardMarginOptions"></a>standardMarginOptions：可选参数，设置布局模板中用于<a class="contentpagehyperlink" href="printing_standardMargin.htm">打印国家标准分幅地图</a>的属性。包含计算参数和整饰参数两部分。计算参数中优先级：mapNumber &gt; scaleDenominator 和 coordinate，两种参数设置必选其一。</li>
+  </ul>
+  <p class="myNormal">    计算参数：</p>
+  <ul class="SymbolList2" style="list-style: disc;">
+    <li class="SymbolList2">scaleDenominator：可选参数，仅可设置为500、1000、2000、5000、10000、25000、50000、100000、250000、500000、1000000，其中500、1000、2000为大比例尺分母。注：此参数设置后，exportOptions 中的 scale 参数将不生效。</li>
+    <li class="SymbolList2">coordinate：可选参数，分幅目标点坐标，即用户待分幅区域内某目标点的地理坐标。经纬度分幅为经纬度坐标，矩形分幅为公里坐标。注：此参数设置后，exportOptions 中的 center 参数将不生效，需要与 scaleDenominator 配合使用。</li>
+    <li class="SymbolList2">mapNumber：可选参数，分幅图幅号，需设置为新标准图幅号。注：此参数设置后，exportOptions中 的 scale 和 center 参数将不生效。当同时有 scaleDenominator、coordinate、mapNumber时，scaleDenominator 和 coordinate 不生效。</li>
+    <li class="SymbolList2">zoneNumber：可选参数，大比例尺地图的国家坐标系的条带号，当且仅当比例尺为大比例尺且坐标系为国家坐标系统时可选。</li>
+    <li class="SymbolList2">largeScaleSheetType：可选参数，大比例尺图幅分幅类型（40x50、50x50），当且仅当比例尺为大比例尺时可选。</li>
+  </ul>
+  <p class="myNormal">    整饰参数：</p>
+  <ul class="SymbolList2" style="list-style: disc;">
+    <li class="SymbolList2">frameOptions：可选参数，可选参数，国家标准分幅地图中图幅图框效果设置。</li>
+    <li class="SymbolList2">gridOptions：可选参数，国家标准分幅地图中格网效果设置。</li>
+    <li class="SymbolList2">informationOptions：可选参数，国家标准分幅地图中图幅信息设置。</li>
+    <li class="SymbolList2">neighborTableOptions：可选参数，国家标准分幅地图中邻接图表效果设置。</li>
+    <li class="SymbolList2">annotationsOptions：可选参数，国家标准分幅地图中附注信息设置。</li>
+    <li class="SymbolList2">title：可选参数，图幅名，默认值为“国家标准分幅地图”。</li>
+    <li class="SymbolList2">publisher：可选参数，出版单位，默认值为 null，即不显示。</li>
+    <li class="SymbolList2">safeInfo：可选参数，出版密级，默认值为 null，即不显示。</li>
+    <li class="SymbolList2">hasMapNumber：可选参数，是否显示图幅编号，默认值是 true，即显示。</li>
+    <li class="SymbolList2">hasScale：可选参数，是否显示比例尺，默认值是 false，即不显示。</li>
+  </ul>
+  <ul>
+    <li class="SymbolList1">mapGridOptions：可选参数，地图经纬网格参数。</li>
+    <li class="SymbolList2">originX：可选参数，左下角经度。</li>
+    <li class="SymbolList2">originY：可选参数，左下角纬度。</li>
+    <li class="SymbolList2">cellWidth：可选参数，单元格宽度。</li>
+    <li class="SymbolList2">cellHeight：可选参数，单元格高度。</li>
+    <li class="SymbolList2">markType：可选参数，坐标格式，支持的类型有 DMS（度分秒）、DecimalDegree（十进制），默认使用十进制格式。</li>
+  </ul>
+  <p class="myNormal">示例1：更新布局模板、更新布局中指北针的图片为 url 地址、更新小地图为一个 WebMap 图层、更新图例为一个 JSON 字符串</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">    &quot;layoutOptions&quot;: {</p>
+  <p class="myCodeP">        &quot;templateName&quot;: &quot;A4_landscape&quot;,</p>
+  <p class="myCodeP">        &quot;title&quot;: &quot;title&quot;,</p>
+  <p class="myCodeP">        &quot;author&quot;: &quot;authorName&quot;,</p>
+  <p class="myCodeP">        &quot;copyright&quot;: &quot;copyright&quot;,</p>
+  <p class="myCodeP">        &quot;subTitle&quot;: &quot;subTitle&quot;,</p>
+  <p class="myCodeP">        &quot;legendOptions&quot;: {</p>
+  <p class="myCodeP">            &quot;title&quot;: &quot;legend&quot;,</p>
+  <p class="myCodeP">            &quot;customItems&quot;: [</p>
+  <p class="myCodeP">                {</p>
+  <p class="myCodeP">                    &quot;name&quot;: &quot;Railway&quot;,</p>
+  <p class="myCodeP">                    &quot;picAsUrl&quot;:</p>
+  <p class="myCodeP">                        &quot;http://192.168.120.40:8090/iserver/services/map-China100/rest/maps/China/layers/Main_Railway_L@China@@China/legend&quot;</p>
+  <p class="myCodeP">                },</p>
+  <p class="myCodeP">                {</p>
+  <p class="myCodeP">                    &quot;name&quot;: &quot;River&quot;,</p>
+  <p class="myCodeP">                    &quot;picAsUrl&quot;:</p>
+  <p class="myCodeP">                        &quot;http://192.168.120.40:8090/iserver/services/map-China100/rest/maps/China/layers/River@China@@China/legend&quot;</p>
+  <p class="myCodeP">                },</p>
+  <p class="myCodeP">                {</p>
+  <p class="myCodeP">                    &quot;name&quot;: &quot;Mainroad&quot;,</p>
+  <p class="myCodeP">                    &quot;picAsUrl&quot;:</p>
+  <p class="myCodeP">                        &quot;http://192.168.120.40:8090/iserver/services/map-China100/rest/maps/China/layers/Main_Road_L@China@@China/legend&quot;</p>
+  <p class="myCodeP">                },</p>
+  <p class="myCodeP">                {</p>
+  <p class="myCodeP">                    &quot;name&quot;: &quot;Airport&quot;,</p>
+  <p class="myCodeP">                    &quot;picAsUrl&quot;:</p>
+  <p class="myCodeP">                        &quot;http://192.168.120.40:8090/iserver/services/map-China100/rest/maps/China/layers/Airport_pt@China.1@@China/legend&quot;</p>
+  <p class="myCodeP">                }</p>
+  <p class="myCodeP">            ]</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;northArrowOptions&quot;: {</p>
+  <p class="myCodeP">            &quot;picAsUrl&quot;: &quot;file://NorthArrow.svg&quot;</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;littleMapOptions&quot;: {</p>
+  <p class="myCodeP">            &quot;center&quot;: {</p>
+  <p class="myCodeP">                &quot;x&quot;: 12024583.8595938,</p>
+  <p class="myCodeP">                &quot;y&quot;: 4101942.08146721</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;scale&quot;: 5.4085234291297E-08,</p>
+  <p class="myCodeP">            &quot;layers&quot;: [</p>
+  <p class="myCodeP">                {</p>
+  <p class="myCodeP">                    &quot;layerType&quot;: &quot;TILE&quot;,</p>
+  <p class="myCodeP">                    &quot;name&quot;: &quot;China&quot;,</p>
+  <p class="myCodeP">                    &quot;url&quot;: &quot;http://192.168.120.40:8090/iserver/services/map-China100/rest/maps/China&quot;</p>
+  <p class="myCodeP">                }</p>
+  <p class="myCodeP">            ]</p>
+  <p class="myCodeP">        }</p>
+  <p class="myCodeP">    }</p>
+  <p class="myCodeP">}</p>
+  <h2>exportOptions</h2>
+  <p class="myNormal">exportOptions 对象是必选对象，用于定义打印的输出信息，由以下参数组成：</p>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1">format：必选参数Web 打印输出的格式，目前支持：PNG、PDF。</li>
+    <li class="SymbolList1">dpi：可选参数，Web 打印输出的分辨率，单位为每英寸点数。默认值为 96 dpi，最大值为 400 dpi。</li>
+    <li class="SymbolList1">scale：可选参数，Web 打印输出的地图比例尺。</li>
+    <li class="SymbolList1">rotation：可选参数，Web 打印输出的地图角度。</li>
+    <li class="SymbolList1">center：可选参数，Web 打印输出的地图中心点。</li>
+  </ul>
+  <p class="myNormal">示例：更新打印输出的格式为 PDF、打印的 dpi 为300dpi</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">    &quot;exportOptions&quot;: {</p>
+  <p class="myCodeP">        &quot;format&quot;: &quot;PDF&quot;,</p>
+  <p class="myCodeP">        &quot;dpi&quot;: 300,</p>
+  <p class="myCodeP">        &quot;center&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: 100,</p>
+  <p class="myCodeP">            &quot;y&quot;: -10</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;scale&quot;: 0.0001</p>
+  <p class="myCodeP">    }</p>
+  <p class="myCodeP">}</p>
+  <h2 class="myNormal"><a id="图例元素自动排版规则"></a>图例元素自动排版规则</h2>
+  <p class="myNormal">iServer Web 打印服务为用户提供了图例元素自动排版规则。当 Web 打印布局中的图例元素包含多个图例子项时，无需手动调整图例子项的字号、边距等参数，系统即可自动排版。</p>
+  <p class="myNormal">图例元素自动排版功能当前依照图例子项全部显示的规则，具体参数及设置方法参见：<a class="contentpagehyperlink" href="#legend">layoutOptions</a>，具体规则如下：</p>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1">支持设置列数。图例框大小不变时，图例子项和图例标题的字号会自动随着列数的增加而变小。</li>
+    <li class="SymbolList1">支持设置图例标题的字体和字号，图例子项的字体。</li>
+    <li class="SymbolList1">图例子项的边距根据百分比进行自动调整，如下图所示：</li>
+  </ul>
+  <p align="center"><img alt="" border="0" src="../../../assets/images/iS/use_iserver/image/legendRule.png" style="border: none;"/></p>
+  <ul class="Circle">
+    <li>①图例标题与图例子项的垂直距离为图例子项高度的10%。</li>
+    <li>②图例子项与图例子项的垂直距离为图例子项高度的20%。</li>
+    <li>③图例项列与列之间的水平距离为图例子项高度的20%。</li>
+    <li>④图例符号与图例文本之间的水平距离为图例子项高度的20%</li>
+  </ul>
+  <h2><a id="whitelist"></a>配置启用Web打印访问白名单</h2>
+  <p class="myNormal">内网穿透是一种能够让内网设备突破局域网限制实现从外网访问的技术，不当的使用可能会引发数据泄露、恶意攻击等安全问题。iServer Web打印服务支持配置访问白名单，当启用该配置时，仅设置中的地址可以通过请求访问，从而有效防止其他业务系统通过Web打印服务被内网穿透的风险。</p>
+  <p class="myNormal">Web打印访问白名单可在【SuperMap iServer 安装目录】\webapps\iserver\WEB-INF\iserver-system.xml 文件中&lt;externalUrlWhiteList&gt;节点进行配置，示例如下：</p>
+  <pre class="brush:xml">&lt;externalUrlWhiteList&gt; 
+        &lt;enabled&gt;false&lt;/enabled&gt;
+        &lt;urlPatterns&gt;
+                &lt;string&gt;^https://maptiles\.supermapol\.com/iserver/services/.*?&lt;/string&gt; 
+                &lt;string&gt;^https://iserver\.supermap\.io/iserver/services/.*?&lt;/string&gt;
+        &lt;/urlPatterns&gt; 
+&lt;/externalUrlWhiteList&gt; </pre>
+  <p class="myNormal">其中，</p>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1">&lt;enabled&gt;：是否开启Web打印访问白名单。默认为false，即不开启。当您的业务系统对安全要求较高时，建议开启此配置。开启后，若向不在白名单中的URL发送请求获取地图图层、图例等信息，将请求失败提示报错。Web打印请求中受影响的参数节点如下：
+      <ul>
+        <li class="SymbolList1">content&gt;url：打印的地图json及其中包含的地图服务地址</li>
+        <li class="SymbolList1">content&gt;value&gt;layers&gt;url：打印的地图服务地址</li>
+        <li class="SymbolList1">layoutOptions&gt;legendOptions&gt;customItems&gt;picAsUrl：打印的自定义图例地址</li>
+        <li class="SymbolList1">layoutOptions&gt;legendOptions&gt;layers&gt;url：用于获取图例的业务图层</li>
+        <li class="SymbolList1">layoutOptions&gt;littleMapOptions&gt;layers&gt;url：用于小地图打印的地图服务地址</li>
+      </ul>
+    </li>
+    <li class="SymbolList1">&lt;urlPatterns&gt;：可通过Web打印服务请求访问的URL。您可以在此节点中配置多个URL的正则表达式，每个在 &lt;string&gt; 节点中设置，有如下规则：
+      <ul>
+        <li class="SymbolList1">URL前需添加“^”锚点，表示URL将以后面的字符串开头</li>
+        <li class="SymbolList1">正则表达式需能够表达完整的 URL 请求路径，包含协议名、域名（或IP、端口）、路径等</li>
+        <li class="SymbolList1">URL 中的 “.” 符号前添加 &quot;\&quot; 来转义，否则将会发生错误的字符串匹配</li>
+        <li class="SymbolList1">对于非固定值使用“ .*?”来代替，例如服务组件名 map-world</li>
+      </ul>
+    </li>
+    <li class="SymbolList1">iServer配置文件中已默认配置了常用的公网地址，包括：
+      <ul>
+        <li class="SymbolList1">&lt;string&gt;^https://maptiles\.supermapol\.com/iserver/services/.*?&lt;/string&gt;</li>
+        <li class="SymbolList1">&lt;string&gt;^https://iserver\.supermap\.io/iserver/services/.*?&lt;/string&gt;</li>
+      </ul>
+    </li>
+  </ul>
+  <div class="pagenotice">
+    <div class="pagecontent"><img align="" class="notice_logo" src="../../../assets/images/notice.png"/> <span class="notice_label">注意事项：</span></div>
+    <div class="notice_content">
+      <p>1、若您需要启用Web打印访问白名单，为使iPortal数据上图WebApp能够正常使用打印功能，您需要配置iPortal的服务地址，例如：^http://localhost:8190/iportal/web/maps/.*?；若数据上图中还引用了第三方地图，也需要在此配置第三方服务地址。</p>
+      <p>2、符合如下情况的URL无需配置即可通过Web打印按需请求：</p>
+      <ul class="Disc">
+        <li>URL中Host与Web打印服务URL中Host一致</li>
+        <li>URL中包含本机地址（localhost/127.0.0.1/本机IP）且端口为iServer端口号/8190</li>
+      </ul>
+    </div>
+  </div>
+  <p class="myNormal"> </p>
+
+</div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../../../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../../../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../../../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../../../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../../../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../../../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../../../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../../.."
+    gCommonRootRelPath = "../../.."
+    gTopicId = "4.11.0_3"
+  
+//]]></script>
+
+  <script src="../../../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../../../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../../../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../../../whxdata/layoutconfig.js"></script>
+  <script src="../../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

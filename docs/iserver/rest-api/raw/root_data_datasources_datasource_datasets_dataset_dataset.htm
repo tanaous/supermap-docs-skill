@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../../../../../../../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../../../../../../../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../../../../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../../../../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../../../../../../../../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../../../../../../../iserver-icon.png"/>
+    
+  <script data-relpath="../../../../../../../.." src="../../../../../../../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <meta name="template" content="../../../../../../../../assets/layouts/RESTAPI.htt"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Language" content="zh-CN"/>
+  <meta name="topic-check-list" content="Ran Smart Index"/>
+  <meta name="topic-status" content="Complete"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>dataset</title>
+  <link rel="StyleSheet" href="../../../../../../../../assets/css/SuperMapHelp.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="Dataset"/>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../../../../../../../../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../../../../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../../../../assets/css/homeButtom.css"/>
+  <script src="../../../../../../../../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../../../../../../../../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../../../../../../../../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../../../../../../../../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../../../../../../../../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../../../../../../../../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../../../../../../../../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../../../../../../../../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../../../../../../../../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <h2><a name="URI" id="URI"></a>URI</h2>
+  <ol class="ListInParagraph" style="list-style: decimal;">
+    <li class="ListInParagraph"><a class="contentpagehyperlink" href="../datasets.htm#URI">&lt;datasets_uri&gt;</a>/name/{datasetName}[.&lt;format&gt;]</li>
+    <li class="ListInParagraph"><a class="contentpagehyperlink" href="../datasets.htm#URI">&lt;datasets_uri&gt;</a>/index/{datasetIndex}[.&lt;format&gt;]</li>
+    <li class="ListInParagraph"><a class="contentpagehyperlink" href="../datasets.htm#URI">&lt;datasets_uri&gt;</a>/{datasetName}[.&lt;format&gt;]</li>
+    <li class="ListInParagraph"><a class="contentpagehyperlink" href="../datasets.htm#URI">&lt;datasets_uri&gt;</a>/{datasetIndex}[.&lt;format&gt;]</li>
+  </ol>
+  <h2>支持的方法</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="#GET 请求">GET</a>、<a class="contentpagehyperlink" href="#PUT 请求">PUT</a>、<a class="contentpagehyperlink" href="#DELETE 请求">DELETE</a>、<a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a></p>
+  <h2>父资源</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="../datasets.htm">datasets</a></p>
+  <h2>子资源</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="features/features.htm">features</a>、<a class="contentpagehyperlink" href="fields/fields.htm">fields</a>、<a class="contentpagehyperlink" href="domain/domain.htm">domain</a> 、<a class="contentpagehyperlink" href="gridValues/gridValues.htm">gridValues</a>、<a class="contentpagehyperlink" href="gridValue/gridValue.htm">gridValue</a>、<a class="contentpagehyperlink" href="imageValues/imageValues.htm">imageValues</a>、<a class="contentpagehyperlink" href="imageValue/imageValue.htm">imageValue</a>、<a class="contentpagehyperlink" href="tilefeature/tilefeature.htm">tileFeature</a></p>
+  <h2>介绍</h2>
+  <p class="myNormal">dataset 资源表示一个数据集，通过对 dataset 资源执行 GET 请求可以获得该数据集（{datasetName}或{datasetIndex}）的描述信息，通过 PUT 和 DELETE 请求还可以修改或删除该数据集，当 dataset 资源不存在时，PUT 请求是创建一个数据集。</p>
+  <p class="myNormal">注意：1：dataset 资源支持以上4种 URI 表示方式，URI1、URI3 用数据集名称标识资源，URI2、URI4 用数据集索引标识资源；2：当<a class="contentpagehyperlink" href="../datasets.htm#URI">&lt;datasets_uri&gt;</a>中的<a class="contentpagehyperlink" href="../../datasource.htm#URI">&lt;datasource_uri&gt;</a>使用 URI1或 URI2时，dataset 只能使用 URI1或 URI2；当<a class="contentpagehyperlink" href="../datasets.htm#URI">&lt;datasets_uri&gt;</a>中的<a class="contentpagehyperlink" href="../../datasource.htm#URI">&lt;datasource_uri&gt;</a>使用 URI3或 URI4时，dataset 只能使用 URI3或 URI4；3：当使用 datasetIndex 时，索引值大小由创建数据集的顺序决定，并与 iDesktopX 中数据集排序一致。</p>
+  <p class="myNormal" style="font-weight: bold;">支持的方法：</p>
+  <ul class="supportList" style="list-style: disc;">
+    <li class="supportList"><a class="contentpagehyperlink" href="#GET 请求">GET</a>：获取数据集信息。</li>
+    <li class="supportList"><a class="contentpagehyperlink" href="#PUT 请求">PUT</a>：创建数据集或修改数据集信息（目前支持点/线/面数据集、文本数据集、CAD数据集和属性表数据集）。</li>
+    <li class="supportList"><a class="contentpagehyperlink" href="#DELETE 请求">DELETE</a>：删除数据集。</li>
+    <li class="supportList"><a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a>：检查数据集资源是否存在，或权限是否可以访问数据集资源。</li>
+  </ul>
+  <p class="myNormal"><span style="font-weight: bold;">支持的表述格式：</span>RJSON、JSON、HTML、XML、KML、OpenLayers3(with MVT)。</p>
+  <h2>资源层次</h2>
+  <p><img alt="" border="0" height="380" src="../../../../../../../../assets/images/root/data/datasources/datasource/datasets/dataset/D_dataset.png" usemap="#DrawArea" width="480"/><map id="DrawArea" name="DrawArea"><area alt="根资源" coords="5.591,2,262,42.9135" href="../../../../../root.htm" shape="rect"/> <area alt="data" coords="60.911,47.6,206.681,88.4" href="../../../../data.htm" shape="rect"/> <area alt="datasources.htm" coords="93.4999,92.9,232.5,133.7" href="../../../datasources.htm" shape="rect"/> <area alt="datasets.htm" coords="184.23,237.2,330,278" href="../datasets.htm" shape="rect"/> <area alt="datasource.htm" coords="138.115,138.6,340,228" href="../../datasource.htm" shape="rect"/> <area alt="dataset.htm" coords="234.23,280.698,458,376" href="dataset.htm" shape="rect"/></map></p>
+  <h2>HTTP 请求方法</h2>
+  <p class="myNormal">对如下 URI 执行 HTTP 请求，以 rjson 输出格式为例加以说明，其中，supermapiserver 是服务器名，World 是服务器上的一个数据源，Countries 是 World 数据源中的一个矢量数据集。</p>
+  <p class="uriStyle">http://supermapiserver:8090/iserver/services/data-world/rest/data/datasources/name/World/datasets/name/Countries.rjson</p>
+  <h3><a id="GET 请求"></a>GET 请求</h3>
+  <p class="myNormal">获取数据集的详细信息。</p>
+  <h4>请求参数</h4>
+  <p class="myNormal">无。</p>
+  <h4>响应结构</h4>
+  <p class="myNormal">对 dataset 资源执行 GET 请求，返回的资源表述的结构如下（资源表述在响应消息的实体主体里）：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>字段</td>
+        <td>类型</td>
+        <td>说明</td>
+      </tr>
+      <tr class="t2Row">
+        <td>datasetInfo</td>
+        <td>DatasetInfo</td>
+        <td>数据集详细信息。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>childUriList</td>
+        <td>List&lt;String&gt;</td>
+        <td>子资源列表。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>supportAttachments</td>
+        <td>boolean</td>
+        <td>附件功能是否可用</td>
+      </tr>
+      <tr class="t1Row">
+        <td>supportFeatureMetadatas</td>
+        <td>boolean</td>
+        <td>是否支持元信息功能</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="myNormal">其中数据集详细信息，即 DatasetInfo 的结构如下：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>字段</td>
+        <td>类型</td>
+        <td>说明</td>
+      </tr>
+      <tr class="t2Row">
+        <td>name</td>
+        <td>String</td>
+        <td>数据集名称，数据集的唯一标识。 该标识不区分大小写。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>description</td>
+        <td>String</td>
+        <td>数据集的描述信息。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>type</td>
+        <td>DatasetType</td>
+        <td>数据集类型。 目前版本支持的数据集类型包括纯属性表数据集、点数据集、EPS点数据集、线数据集、EPS线数据集、面数据集、EPS面数据集、文本数据集、EPS文本数据集、CAD数据集（CAD 数据集）等矢量数据集（DatasetVector），栅格数据集（DatasetGrid），影像数据集（DatasetImage），以及网络数据集（DatasetNetwork）。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>bounds</td>
+        <td>Rectangle2D</td>
+        <td>数据集范围。 对于矢量数据集来说，bounds 为数据集中所有对象的最小外接矩形；对于栅格，bounds 为当前格网或影像的地理范围。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>dataSourceName</td>
+        <td>String</td>
+        <td>该数据集对象所属的数据源名称。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>encodeType</td>
+        <td>EncodeType</td>
+        <td>数据集存储时的压缩编码方式。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>isReadOnly</td>
+        <td>boolean</td>
+        <td>数据集是否为只读。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>prjCoordSys</td>
+        <td>PrjCoordSys</td>
+        <td>数据集的投影信息。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>tableName</td>
+        <td>String</td>
+        <td>表名。 对数据库型数据源，指此数据集在数据库中所对应的数据表名称；对文件型数据源，指此数据集存储属性的表名称（文件型数据源文件用.udb 文件存储空间数据，.udd 文件存储属性数据）。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>charset</td>
+        <td>Charset</td>
+        <td>矢量数据集的字符集。仅当 dataset 资源标识的是矢量数据集时存在。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>isFileCache</td>
+        <td>boolean</td>
+        <td>是否使用文件形式的缓存。仅对数据库型数据源中的矢量数据集有效。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>recordCount</td>
+        <td>int</td>
+        <td>矢量数据集中的记录数。 仅当 dataset 资源标识的是矢量数据集时存在。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>blockSize</td>
+        <td>int</td>
+        <td>按像素分块存储，每一块的大小。 仅当 dataset 资源标识的是影像数据集或 Grid 数据集时存在。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>height</td>
+        <td>int</td>
+        <td>数据的高度。  仅当 dataset 资源标识的是影像数据集或 Grid 数据集时存在。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>width</td>
+        <td>int</td>
+        <td>数据的宽度。  仅当 dataset 资源标识的是影像数据集或 Grid 数据集时存在。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>pixelFormat</td>
+        <td>PixelFormat</td>
+        <td>数据存储的像素格式。仅当 dataset 资源标识的是影像数据集或 Grid 数据集时存在。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>isMultiBand</td>
+        <td>boolean</td>
+        <td>影像数据集是否是多波段影像数据集。 仅当 dataset 资源标识的是影像数据集时存在。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>palette</td>
+        <td>List&lt;java.awt.Color&gt;</td>
+        <td>影像数据的颜色调色板。  仅当 dataset 资源标识的是影像数据集时存在。</td>
+      </tr>
+      <tr>
+        <td>supportTransaction</td>
+        <td>boolean</td>
+        <td>当前数据集是否支持<span><a class="contentpagehyperlink" href="../../../../../../../../Appendix/Glossary.htm#rollbackOnFailure">回退事务</a></span>的数据库事务能力。仅工作空间中的 PostGIS 数据源中的数据集支持（不包括影像数据集、栅格数据集、版本数据集、矢量金字塔数据集和镶嵌数据集），参数值为 true，其余数据集返回 false。</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4>示例</h4>
+  <p class="myNormal">对示例 dataset 资源：http://supermapiserver:8090/iserver/services/data-world/rest/data/datasources/name/World/datasets/name/Countries.rjson 执行 GET 请求，返回 Countries 数据集的表述如下（Countries 数据集是矢量数据集）：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">    &quot;childUriList&quot;: [</p>
+  <p class="myCodeP">        &quot;http://supermapiserver:8090/iserver/services/data-world/rest/data/datasources/name/World/datasets/name/Countries/fields&quot;,</p>
+  <p class="myCodeP">        &quot;http://supermapiserver:8090/iserver/services/data-world/rest/data/datasources/name/World/datasets/name/Countries/features&quot;</p>
+  <p class="myCodeP">    ],</p>
+  <p class="myCodeP">    &quot;datasetInfo&quot;: {</p>
+  <p class="myCodeP">        &quot;bounds&quot;: {</p>
+  <p class="myCodeP">            &quot;bottom&quot;: -90,</p>
+  <p class="myCodeP">            &quot;left&quot;: -180,</p>
+  <p class="myCodeP">            &quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">                &quot;x&quot;: -180,</p>
+  <p class="myCodeP">                &quot;y&quot;: -90</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;right&quot;: 180,</p>
+  <p class="myCodeP">            &quot;rightTop&quot;: {</p>
+  <p class="myCodeP">                &quot;x&quot;: 180,</p>
+  <p class="myCodeP">                &quot;y&quot;: 83.62359619140626</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;top&quot;: 83.62359619140626</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;charset&quot;: &quot;GB18030&quot;,</p>
+  <p class="myCodeP">        &quot;dataSourceName&quot;: &quot;World&quot;,</p>
+  <p class="myCodeP">        &quot;description&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">        &quot;encodeType&quot;: &quot;NONE&quot;,</p>
+  <p class="myCodeP">        &quot;isFileCache&quot;: false,</p>
+  <p class="myCodeP">        &quot;isReadOnly&quot;: false,</p>
+  <p class="myCodeP">        &quot;name&quot;: &quot;Countries&quot;,</p>
+  <p class="myCodeP">        &quot;prjCoordSys&quot;: {</p>
+  <p class="myCodeP">            &quot;coordSystem&quot;: {</p>
+  <p class="myCodeP">                &quot;datum&quot;: {</p>
+  <p class="myCodeP">                    &quot;name&quot;: &quot;D_WGS_1984&quot;,</p>
+  <p class="myCodeP">                    &quot;spheroid&quot;: {</p>
+  <p class="myCodeP">                        &quot;axis&quot;: 6378137,</p>
+  <p class="myCodeP">                        &quot;flatten&quot;: 0.0033528107,</p>
+  <p class="myCodeP">                        &quot;name&quot;: &quot;WGS_1984&quot;,</p>
+  <p class="myCodeP">                        &quot;type&quot;: &quot;SPHEROID_WGS_1984&quot;</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    &quot;type&quot;: &quot;DATUM_WGS_1984&quot;</p>
+  <p class="myCodeP">                },</p>
+  <p class="myCodeP">                &quot;name&quot;: &quot;GCS_WGS_1984&quot;,</p>
+  <p class="myCodeP">                &quot;primeMeridian&quot;: {</p>
+  <p class="myCodeP">                    &quot;longitudeValue&quot;: 0,</p>
+  <p class="myCodeP">                    &quot;name&quot;: &quot;Greenwich&quot;,</p>
+  <p class="myCodeP">                    &quot;type&quot;: &quot;PRIMEMERIDIAN_GREENWICH&quot;</p>
+  <p class="myCodeP">                },</p>
+  <p class="myCodeP">                &quot;spatialRefType&quot;: &quot;SPATIALREF_EARTH_LONGITUDE_LATITUDE&quot;,</p>
+  <p class="myCodeP">                &quot;type&quot;: &quot;GCS_WGS_1984&quot;,</p>
+  <p class="myCodeP">                &quot;unit&quot;: &quot;DEGREE&quot;</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;coordUnit&quot;: &quot;DEGREE&quot;,</p>
+  <p class="myCodeP">            &quot;distanceUnit&quot;: &quot;METER&quot;,</p>
+  <p class="myCodeP">            &quot;epsgCode&quot;: 1,</p>
+  <p class="myCodeP">            &quot;name&quot;: &quot;Longitude / Latitude Coordinate System---GCS_WGS_1984&quot;,</p>
+  <p class="myCodeP">            &quot;projection&quot;: null,</p>
+  <p class="myCodeP">            &quot;projectionParam&quot;: null,</p>
+  <p class="myCodeP">            &quot;type&quot;: &quot;PCS_EARTH_LONGITUDE_LATITUDE&quot;</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;recordCount&quot;: 247,</p>
+  <p class="myCodeP">        &quot;tableName&quot;: &quot;Countries&quot;,</p>
+  <p class="myCodeP">        &quot;type&quot;: &quot;REGION&quot;</p>
+  <p class="myCodeP">    }</p>
+  <p class="myCodeP">}</p>
+  <p class="myNormal">对示例  dataset  资源：http://localhost:8090/iserver/services/data-world/rest/data/datasources/name/World/datasets/name/Capitals.kml 执行 GET 请求，返回 kml 格式表述（目前支持点、线、面数据集的 kml 表述）如下：</p>
+  <p class="myCodeP">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; standalone=&quot;no&quot; ?&gt;</p>
+  <p class="myCodeP">&lt;kml&gt;</p>
+  <p class="myCodeP">  &lt;Document&gt;</p>
+  <p class="myCodeP">    &lt;NetworkLink&gt;</p>
+  <p class="myCodeP">      &lt;Link&gt;</p>
+  <p class="myCodeP">        &lt;href&gt;http://localhost:8090/iserver/services/data-world/rest/data/datasources/name/World/datasets/name/Capitals/features.kml&lt;/href&gt;</p>
+  <p class="myCodeP">      &lt;/Link&gt;</p>
+  <p class="myCodeP">    &lt;/NetworkLink&gt;</p>
+  <p class="myCodeP">  &lt;/Document&gt;</p>
+  <p class="myCodeP">&lt;/kml&gt;</p>
+  <p class="myNormal">在 GoogleEarth 中访问 http://localhost:8090/iserver/services/data-world/rest/data/datasources/name/World/datasets/name/Capitals.kml，显示如下图所示：</p>
+  <p style="text-align: center;"><img alt="" border="0" height="500" src="../../../../../../../../assets/images/root/data/datasources/datasource/datasets/dataset/D_feature_kml.png" width="497"/></p>
+  <p class="myNormal">上图是默认显示效果，关于 kml 的默认显示风格，可以参考 %SuperMap iServer Java_HOME%\WEB-INF\lib\service-model-{version}.jar\config\kml\styles\default.xml 文件。</p>
+  <p class="myNormal">用户可以自定义 dataset 的 kml 数据的显示风格，具体操作请参考“配置管理 &gt; KML 风格配置”。</p>
+  <h3><a id="PUT 请求"></a>PUT 请求</h3>
+  <p class="myNormal">当资源标识为第一种方式的 URI 时，表示创建数据集或修改数据集信息，目前只支持矢量数据集。当 dataset 资源不存在时为创建，存在时为修改。</p>
+  <h4>请求参数</h4>
+  <p class="myNormal">当 dataset 资源不存在时，对一个新的 URI 发 PUT 请求，表示创建数据集时，需要在请求体中包含以下参数：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>名称</td>
+        <td>类型</td>
+        <td>含义</td>
+      </tr>
+      <tr class="t2Row">
+        <td>datasetName</td>
+        <td>String</td>
+        <td>数据集名。 注意要跟 URI 中的{datasetName}保持一致。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>datasetType</td>
+        <td>DatasetType</td>
+        <td>数据集类型。 目前支持创建的出聚集类型有：点、线、面、文本、复合（CAD）和属性数据集。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>isFileCache</td>
+        <td>boolean</td>
+        <td>是否使用文件形式的缓存。仅对数据库型数据源中的矢量数据集有效。</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="myNormal">当 dataset 资源存在时，对 dataset 资源执行 PUT 请求，对数据集信息进行修改，需要在请求体中包含以下参数：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>名称</td>
+        <td>类型</td>
+        <td>含义</td>
+      </tr>
+      <tr class="t2Row">
+        <td>description</td>
+        <td>String</td>
+        <td>数据集描述信息。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>prjCoordSys</td>
+        <td>PrjCoordSys</td>
+        <td>投影坐标系。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>charset</td>
+        <td>enum</td>
+        <td>矢量数据集的字符集。 【可选参数】当数据集类型为矢量数据集时，可以传递此参数。如果用户传递空值，则编码方式保持不变。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>palette</td>
+        <td>java.util.List&lt;<a class="contentpagehyperlink" href="../../../../../../../iServerJavadoc/com/supermap/services/components/commontypes/Color.html">Color</a>&gt;</td>
+        <td>影像数据的颜色调色板。 【可选参数】当数据集类型为影像数据集时，可以传递此参数。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>noValue</td>
+        <td>double</td>
+        <td>栅格数据集中没有数据的像元的栅格值。 【可选参数】当数据集类型为栅格数据集时，可以传递此参数。</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4>响应结构</h4>
+  <p class="myNormal">对 dataset 资源执行 PUT 请求，返回的操作结果表述的结构如下（表述在响应消息的实体主体里）：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>字段</td>
+        <td>类型</td>
+        <td>说明</td>
+      </tr>
+      <tr class="t2Row">
+        <td>succeed</td>
+        <td>boolean</td>
+        <td>操作是否成功。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>newResourceLoaction</td>
+        <td>String</td>
+        <td>新创建的数据集资源的 URI。如果 PUT 请求执行的是修改操作，则没有本字段。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>error</td>
+        <td>HttpError</td>
+        <td>出错信息，如果创建成功，则没有本字段。</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4>示例</h4>
+  <p class="myNormal">对 dataset 资源执行 PUT 请求，当 URI 所标识的资源不存在时，例如 URI 为 http://supermapiserver:8090/iserver/services/data-world/rest/data/datasources/name/World/datasets/name/World1.rjson，而 World 数据源中并没有 World1 数据集，此时对该 URI 执行 PUT 请求表示创建。</p>
+  <p class="myNormal">对 URI：http://supermapiserver:8090/iserver/services/data-world/rest/data/datasources/name/World/datasets/name/World1.rjson 执行 PUT 请求，请求体如下：</p>
+  <p class="myCodeP">{&quot;datasetType&quot;:&quot;POINT&quot;,&quot;datasetName&quot;:&quot;World1&quot;}</p>
+  <p class="myNormal">则返回 rjson 格式的操作结果的表述如下：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">    &quot;newResourceLocation&quot;: &quot;http://supermapiserver:8090/iserver/services/data-world/rest/data/datasources/name/World/datasets/name/World1&quot;,</p>
+  <p class="myCodeP">    &quot;succeed&quot;: true</p>
+  <p class="myCodeP">}</p>
+  <p class="myNormal">对示例 dataset 资源：http://supermapiserver:8090/iserver/services/data-world/rest/data/datasources/name/World/datasets/name/World1.rjson 执行 PUT 请求，在资源存在的情况下（World 数据源里数据集 World1 存在）表示修改。对该 URI 执行 PUT 请求，在请求体中传入以下参数，对数据集 World1 进行修改：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">    &quot;isFileCache&quot;: &quot;true&quot;,</p>
+  <p class="myCodeP">    &quot;description&quot;: &quot;123&quot;,</p>
+  <p class="myCodeP">    &quot;prjCoordSys&quot;: {</p>
+  <p class="myCodeP">        &quot;coordUnit&quot;: &quot;MILE&quot;,</p>
+  <p class="myCodeP">        &quot;name&quot;: &quot;Tokyo UTM 51&quot;,</p>
+  <p class="myCodeP">        &quot;epsgCode&quot;: 3902,</p>
+  <p class="myCodeP">        &quot;projection&quot;: null,</p>
+  <p class="myCodeP">        &quot;coordSystem&quot;: null,</p>
+  <p class="myCodeP">        &quot;type&quot;: &quot;PCS_USER_DEFINED&quot;,</p>
+  <p class="myCodeP">        &quot;distanceUnit&quot;: null,</p>
+  <p class="myCodeP">        &quot;projectionParam&quot;: null</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    &quot;charset&quot;: &quot;GB18030&quot;</p>
+  <p class="myCodeP">}</p>
+  <p class="myNormal">则返回 rjson 格式的操作结果的表述如下：</p>
+  <p class="myCodeP">{&quot;succeed&quot;: true}</p>
+  <h3><a id="DELETE 请求"></a>DELETE 请求</h3>
+  <p class="myNormal">删除数据集。对示例 dataset 资源，即 URI 而言，就是删除 World 数据源中的 Countries 数据集。</p>
+  <h4>请求参数</h4>
+  <p class="myNormal">无。</p>
+  <h4>响应结构</h4>
+  <p class="myNormal">对 dataset 资源执行 DELETE 请求，删除该数据集，返回的操作结果的表述如下：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>字段</td>
+        <td>类型</td>
+        <td>说明</td>
+      </tr>
+      <tr class="t2Row">
+        <td>succeed</td>
+        <td>boolean</td>
+        <td>删除数据集是否成功</td>
+      </tr>
+      <tr class="t1Row">
+        <td>error</td>
+        <td>HttpError</td>
+        <td>出错信息，如果操作成功，则没有本字段。</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4>示例</h4>
+  <p class="myNormal">对示例 dataset 资源：http://supermapiserver:8090/iserver/services/data-world/rest/data/datasources/name/World/datasets/name/Countries.rjson 执行 DELETE 请求，删除 Countries 数据集，在操作成功的情况下，返回 rjson 格式的表述如下：</p>
+  <p class="myCodeP">{&quot;succeed&quot;: true}</p>
+  <h3><a id="HEAD 请求"></a>HEAD 请求</h3>
+  <p class="myNormal">返回跟 GET 请求一样的 HTTP 响应头，但是没有响应实体。可以在不必传输整个响应内容的情况下，获取包含在响应消息头中的元数据信息。元数据信息包括媒体类型，字符编码，压缩编码，实体内容长度等。</p>
+  <p class="myNormal">HEAD 请求可以用来判断 dataset 资源是否存在，或者客户端是否有权限访问 dataset 资源。通过对加.&lt;format&gt;的 URI 执行 HEAD 请求，还可以快速判断 dataset 资源是否支持&lt;format&gt;格式的表述。</p>
+  <h2>请参见</h2>
+  <ul class="referenceList">
+    <li class="referenceList"><a class="contentpagehyperlink" href="features/features.htm">features</a>，<a class="contentpagehyperlink" href="fields/fields.htm">fields</a> ，<a class="contentpagehyperlink" href="tilefeature/tilefeature.htm">tileFeature</a>，<a class="contentpagehyperlink" href="domain/domain.htm">domain</a>，<a class="contentpagehyperlink" href="../datasets.htm">datasets</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../../../../clientBuildREST/ConstructRESTRequest.htm">客户端构建 REST 请求</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../../../../StatusCodeDescription.htm">状态码列表及说明</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../../../../SuperMap_iServer_REST_API_OutputFormat.htm">SuperMap iServer REST API 表述格式介绍</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../../../../resource_hierarchy.htm">GIS 服务资源层次结构</a></li>
+  </ul>
+  <p> </p>
+
+</div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../../../../../../../../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../../../../../../../../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../../../../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../../../../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../../../../../../../../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../../../../../../../../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../../../../../../../../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../../../../../../../../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../../../../../../../../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../../../../../../../.."
+    gCommonRootRelPath = "../../../../../../../.."
+    gTopicId = "8.2.2.6.4.2.1.1.1"
+  
+//]]></script>
+
+  <script src="../../../../../../../../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../../../../../../../../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../../../../../../../../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../../../../../../../../whxdata/layoutconfig.js"></script>
+  <script src="../../../../../../../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

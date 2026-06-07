@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../../../../../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../../../../../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../../../../../../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../../../../../iserver-icon.png"/>
+    
+  <script data-relpath="../../../../../.." src="../../../../../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <meta name="template" content="../../../../../../assets/layouts/RESTAPI.htt"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Language" content="zh-CN"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>zxyTileImage</title>
+  <link rel="StyleSheet" href="../../../../../../assets/css/SuperMapHelp.css" type="text/css"/>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../../../../../../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../../assets/css/homeButtom.css"/>
+  <script src="../../../../../../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../../../../../../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../../../../../../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../../../../../../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../../../../../../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../../../../../../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../../../../../../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../../../../../../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../../../../../../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <h2><a id="URI"></a>URI</h2>
+  <ol class="ListInParagraph" style="list-style: decimal;">
+    <li class="ListInParagraph"><a class="contentpagehyperlink" href="../map.htm#URI">&lt;map_uri&gt;</a>/zxyTileImage[.&lt;format&gt;]</li>
+    <li class="ListInParagraph"><a class="contentpagehyperlink" href="../map.htm#URI">&lt;map_uri&gt;</a>/zxyTileImage/z/x/y.[.&lt;format&gt;]</li>
+  </ol>
+  <h2>支持的方法</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="#GET 请求">GET</a>、<a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a></p>
+  <h2>父资源</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="../map.htm">map</a></p>
+  <h2>介绍</h2>
+  <p class="myNormal">将完整的地图图片以像素为单位切割成多个相同大小的格网，那么地图就可以由多个小块拼合而成。zxyTileImage 资源就表示以 ZXY 规范划分的地图的小块。详细请参考：<a class="contentpagehyperlink" href="../../../../../../Subject_introduce/Cache/MapCache/TileFormat/ZXY_format.htm">ZXY标准地图瓦片</a>。</p>
+  <p class="myNormal" style="font-weight: bold;">支持的方法：</p>
+  <ul class="supportList" style="list-style: disc;">
+    <li class="supportList"><a class="contentpagehyperlink" href="#GET 请求">GET</a>：获取地图的格网图片，URI 中的参数确定了格网的位置。</li>
+    <li class="supportList"><a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a>：获取地图格网图片的元数据信息。检查 tileImage 资源是否存在，权限是否可以访问。</li>
+  </ul>
+  <p class="myNormal"><span style="font-weight: bold;">支持的表述格式：</span>PNG、BMP、GIF、JPG、WebP、RJSON、JSON、HTML、XML、JSONP、FASTJSON。</p>
+  <h2>资源层次</h2>
+  <p class="myNormal"><img alt="" border="0" src="../../../../../../assets/images/root/maps/map/zxyTileImage/zxyTileImage.png" style="border: none;" usemap="#MAP461996258"/><map id="MAP461996258" name="MAP461996258"><area alt="" coords="9, 3, 269, 47" href="../../../root.htm" shape="rect"/> <area alt="" coords="82, 57, 230, 99" href="../../maps.htm" shape="rect"/> <area alt="" coords="122, 112, 280, 161" href="../map.htm" shape="rect"/> <area alt="" coords="193, 168, 357, 214" href="zxyTileImage.htm" shape="rect"/></map></p>
+  <h2>HTTP 请求方法</h2>
+  <p class="myNormal">对如下 URI 执行 HTTP 请求，以 png 输出格式为例加以说明，其中，supermapiserver 是服务器名。</p>
+  <ol style="list-style: decimal;">
+    <li>
+      <p class="uriStyle">http://supermapiserver:8090/iserver/services/map-China400/rest/maps/China/zxyTileImage.png</p>
+    </li>
+    <li>
+      <p class="uriStyle">http://supermapiserver:8090/iserver/services/map-China400/rest/maps/China/zxyTileImage/0/0/0.png</p>
+    </li>
+  </ol>
+  <h3><a id="GET 请求"></a>GET 请求</h3>
+  <p class="myNormal">获取地图的格网图片，URI 中的参数确定了格网的位置等信息。</p>
+  <h4>请求参数</h4>
+  <p class="myNormal">对 zxyTileImage 资源执行 GET 请求，获取地图的格网图片，需要在 URI 中包含相关参数，如果没有指定参数，则会按照地图的当前状态为准，进行切割和出图。参数如下所示：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="100%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>名称</td>
+        <td>类型</td>
+        <td>含义</td>
+      </tr>
+      <tr class="t2Row">
+        <td>z</td>
+        <td>int</td>
+        <td>地图缩放级别。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>x</td>
+        <td>long</td>
+        <td>格网在地图中列号，从左向右递增。默认情况下，切片从地图最左上角开始，其格网列号为0。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>y</td>
+        <td>long</td>
+        <td>格网在地图中行号，从上向下递增。默认情况下，切片从地图最左上角开始，其格网行号为0。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>width</td>
+        <td>int</td>
+        <td>格网的宽度，单位是像素，默认为 256 像素。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>height</td>
+        <td>int</td>
+        <td>格网的高度，单位是像素，默认为 256 像素。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>rasterfunction</td>
+        <td><a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/services/components/commontypes/RasterFunctionParameter.html">RasterFunctionParameter</a></td>
+        <td>栅格运算。仅支持请求栅格瓦片。 当前支持NDVI、HILLSHADE两种运算。可参见响应示例2
+          <ol style="list-style: lower-alpha;">
+            <li>NDVI 即 近红外区与红光区的反射率差值/近红外区与红光区的反射率和值。可用于反应出植物冠层的背景影响。参数使用时，可参照<a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/services/components/commontypes/NDVIParameter.html">NDVI参数构成</a></li>
+            <li>HILLSHADE 即 山体阴影，通过考虑照明源的角度和阴影，根据表面栅格创建地貌晕渲。参数使用时，可参照<a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/services/components/commontypes/HillshadeParameter.html">HILLSHADE参数构成</a></li>
+          </ol>
+        </td>
+      </tr>
+      <tr class="t2Row">
+        <td id="layersID">layersID</td>
+        <td>String</td>
+        <td>获取进行切片的地图图层 ID，即指定进行地图切片的图层，可以是临时图层集，也可以是当前地图中图层的组合。如果此参数缺省则对全部图层进行切片。 layersID 可以是临时图层创建时 templayers 的 ID，如 layersID=382139acf0，也可以是当前地图中的某些图层的 ID 编号。 其中，当前地图图层 ID 的定义规则如下： 1. 各级图层按照图层顺序自上而下从0开始编号； 2. 冒号（:）前为顶级图层； 3. 英文句号（.）表示其他各级图层间的从属关系； 4. 英文逗号（,）表示图层间的分隔。 例如： 1. [0:0,1,2.0]表示顶级图层0下面的子图层：0、1及其下属所有子图层，和2下的子图层0； 2. [1:1.2,2]表示顶级级图层1下面的子图层：1下的子图层2，和图层2及其下属所有子图层； 3. 两个示例合并在一起则是：[0:0,1,2.0,1:1.2,2] 此外，[0,1,2,3]表示顶级图层0下面的图层0、1、2、3及所有子图层，[0:,1:,2:]表示顶级图层0、1、2及其所有子图层。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>transparent</td>
+        <td>boolean</td>
+        <td>格网图片是否透明。</td>
+      </tr>
+      <tr>
+        <td>displayFilters</td>
+        <td><a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/services/components/commontypes/UGCLayer.html
+          ">displayFilter</a></td>
+        <td>图层的显示过滤条件，利用该参数控制图层中可显示的要素。<br/>
+          <br/>
+          参数结构：<br/>
+          {<br/>
+          &quot;&lt;layerName1&gt;&quot;: &quot;{displayFilter}&quot;,<br/>
+          &quot;&lt;layerName2&gt;&quot;: &quot;{displayFilter}&quot;<br/>
+          }<br/>
+          其中，<br/>
+          &lt;layerName&gt;为地图中某图层名称，可从 layer 资源响应体参数 caption 中获取；<br/>
+          {displayFilter} 为属性过滤条件，仅对数据中存在的属性生效。<br/>
+          <br/>
+          当前仅支持对工作空间数据源发布的地图进行属性过滤，支持对多图层同时过滤。<br/>
+          <br/>
+          <span style="font-weight:bold;">请注意：</span><br/>
+          1、如果在系统配置文件（参见：<a class="contentpagehyperlink" href="../../../../../../Appendix/iServer_configInfo.htm">iServer 配置文件说明</a>）中设置了 SQL 查询表达式中需要屏蔽掉的字符串，那么在属性过滤条件中一旦发现输入了已经设置的字符串，系统会认为该条查询表达式非法并返回400参数异常，防止 SQL 注入。<br/>
+          2、如果 displayFilter 选择对日期字段设置过滤条件，需对日期增加单引号。例如 data=&#39;2024-03-20 00:00:00&#39;<br/>
+          3、当过滤的图层不存在时，过滤无效，返回原出图效果<br/>
+          4、当过滤的图层存在，但过滤条件种字段或属性不存在或非法时，该图层将不展示内容
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h4>响应结构</h4>
+  <p class="myNormal">如果直接获取地图图片，可指定表述格式为 PNG、BMP、GIF 、WebP 或 JPG，则返回一幅图片。</p>
+  <p class="myNormal">如果获取地图图片信息，可指定表述格式为 RJSON、JSON、HTML 或 XML，则返回的表述结构如下：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>字段</td>
+        <td>类型</td>
+        <td>说明</td>
+      </tr>
+      <tr class="t2Row">
+        <td>lastModified</td>
+        <td>long</td>
+        <td>地图上次修改时间。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>imageUrl</td>
+        <td>String</td>
+        <td>指向地图图片的 URI，图片为 PNG 格式。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>mapParam</td>
+        <td><a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/services/components/commontypes/MapParameter.html">MapParameter</a></td>
+        <td>地图参数。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>customResponse</td>
+        <td>String</td>
+        <td>自定义处理结果</td>
+      </tr>
+      <tr class="t2Row">
+        <td>image</td>
+        <td>BufferedImage</td>
+        <td>地图图片对应的 BufferedImage 对象。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>imageData</td>
+        <td>byte[]</td>
+        <td>地图图片对应的二进制流。</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4>响应示例1</h4>
+  <p class="myNormal">执行 GET 请求：http://supermapiserver:8090/iserver/services/map-china/rest/maps/China/zxyTileImage.png?z=6&amp;x=52&amp;y=24&amp;width=256&amp;height=256，或http://supermapiserver:8090/iserver/services/map-china/rest/maps/China/zxyTileImage/6/52/24.png?width=256&amp;height=256，则返回 PNG 格式的图片如下所示。</p>
+  <p class="myNormal" style="text-align: center;"><img alt="" border="0" src="../../../../../../assets/images/root/maps/map/zxyTileImage/zxyTileImage_sample.png" style="border: none;"/></p>
+  <h4>响应示例2</h4>
+  <p class="myNormal">执行 GET 请求：http:///supermapiserver:8090/iserver/services/map-test/rest/maps/map1/zxyTileImage.png?z=0&amp;x=0&amp;y=0&amp;width=256&amp;height=256，返回的是 PNG 格式的图片，如下表左图所示。</p>
+  <p class="myNormal" style="text-align: center;">对上述 zxyTileImage 资源请求进行NDVI分析后的图片，即执行 GET 请求：http:///supermapiserver:8090/iserver/services/map-test/rest/maps/map1/zxyTileImage.png?z=0&amp;x=0&amp;y=0&amp;width=256&amp;height=256&amp;rasterfunction={%22type%22:%22NDVI%22,%22redIndex%22:0,%22nirIndex%22:2}，如下表右图所示。<span style="text-align: center;"><img alt="" border="0" src="../../../../../../assets/images/root/maps/map/image_ndvi.png" style="border: none;"/></span></p>
+<p class="myNormal" style="text-align: center;"><span style="text-align: center;">对</span>上述 zxyTileImage 资源请求进行HILLSHADE析后的图片，即执行 GET 请求：http:///supermapiserver:8090/iserver/services/map-test/rest/maps/map1/zxyTileImage.png?z=0&amp;x=0&amp;y=0&amp;width=256&amp;height=256&amp;rasterfunction={%22type%22:%22HILLSHADE%22,%22altitude%22:75,%22azimuth%22:120,%22zFactor%22:1.0}，如下表右图所示。<span style="text-align: center;"><img alt="" border="0" src="../../../../../../assets/images/root/maps/map/image_hillshade.png" style="border: none;"/></span></p>
+<h4>响应示例3</h4>
+<p class="myNormal">执行 GET 请求：http://supermapiserver:8090/iserver/services/map-Jingjin/rest/maps/京津地区地图/zxyTileImage/8/210/98.png?transparent=true，则返回 PNG 格式的图片如下所示。</p>
+<p class="myNormal" style="text-align: center;"><img alt="" border="0" src="../../../../../../assets/images/root/maps/map/zxyTileImage/zxyTileImage_sample1.png" style="border: none;"/></p>
+<h3><a id="HEAD 请求"></a>HEAD 请求</h3>
+<p class="myNormal">返回跟 GET 请求一样的 HTTP 响应头，但是没有响应实体。可以在不必传输整个响应内容的情况下，获取包含在响应消息头中的元数据信息。元数据信息包括媒体类型，字符编码，压缩编码，实体内容长度等。</p>
+<p class="myNormal">HEAD 请求可以用来判断 zxyTileImage 资源是否存在，或者客户端是否有权限访问 zxyTileImage 资源。通过对加.&lt;format&gt;的 URI 执行 HEAD 请求，还可以快速判断 zxyTileImage 资源是否支持&lt;format&gt;格式的表述。</p>
+<h2>请参见</h2>
+<ul class="referenceList">
+	<li class="referenceList"><a class="contentpagehyperlink" href="contents/root\maps\map\map.htm">map</a></li>
+	<li class="referenceList"><a class="contentpagehyperlink" href="../../../../clientBuildREST/ConstructRESTRequest.htm">客户端构建 REST 请求</a></li>
+	<li class="referenceList"><a class="contentpagehyperlink" href="../../../../StatusCodeDescription.htm">状态码列表及说明</a></li>
+	<li class="referenceList"><a class="contentpagehyperlink" href="../../../../SuperMap_iServer_REST_API_OutputFormat.htm">SuperMap iServer REST API 表述格式介绍</a></li>
+	<li class="referenceList"><a class="contentpagehyperlink" href="../../../../resource_hierarchy.htm">资源层次结构</a></li>
+</ul>
+<p> </p>
+</div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../../../../../../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../../../../../../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../../../../../../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../../../../../../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../../../../../../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../../../../../../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../../../../../../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../../../../../.."
+    gCommonRootRelPath = "../../../../../.."
+    gTopicId = "8.2.2.6.10.1.19"
+  
+//]]></script>
+
+  <script src="../../../../../../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../../../../../../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../../../../../../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../../../../../../whxdata/layoutconfig.js"></script>
+  <script src="../../../../../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

@@ -1,0 +1,988 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../../../../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../../../../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../../../../../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../../../../iserver-icon.png"/>
+    
+  <script data-relpath="../../../../.." src="../../../../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+<meta name="template" content="../../../../../assets/layouts/RESTAPI.htt"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="Content-Language" content="zh-CN"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>service</title>
+<link rel="StyleSheet" href="../../../../../assets/css/SuperMapHelp.css" type="text/css"/>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../../../../../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../assets/css/homeButtom.css"/>
+  <script src="../../../../../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../../../../../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../../../../../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../../../../../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../../../../../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../../../../../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../../../../../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../../../../../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../../../../../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+<h2><a id="URI"></a>URI</h2>
+<p class="myNormal">&lt;<a class="contentpagehyperlink" href="../services.htm">services_uri</a>&gt;/{id}[.&lt;format&gt;]</p>
+<h2>支持的方法</h2>
+<p class="myNormal"><a class="contentpagehyperlink" href="#GET 请求">GET</a>、<a class="contentpagehyperlink" href="#PUT 请求">PUT</a>、<a class="contentpagehyperlink" href="#DELETE 请求">DELETE </a>、<a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a></p>
+<h2>父资源</h2>
+<p class="myNormal"><a class="contentpagehyperlink" href="../services.htm">services</a></p>
+<h2>子资源</h2>
+<p class="myNormal"><a class="contentpagehyperlink" href="serviceCheckStatus.htm">serviceCheckStatus</a>、<a class="contentpagehyperlink" href="serviceOffline.htm">serviceOffline</a>、<a class="contentpagehyperlink" href="serviceShareSetting.htm">serviceShareSetting</a>、<a class="contentpagehyperlink" href="serviceStatus.htm">serviceStatus</a>、<a class="contentpagehyperlink" href="regionPermissions/regionPermissions.htm">regionPermissions</a></p>
+<h2>介绍</h2>
+<p class="myNormal">service 资源是指定的服务或服务集合,支持检索，更新和删除服务，支持 iso19139 媒体类型。</p>
+<p class="myNormal" style="font-weight: bold;">支持的方法：</p>
+<ul style="list-style: disc;" class="supportList">
+	<li class="supportList"><a class="contentpagehyperlink" href="#GET 请求">GET</a>：获取指定的服务或服务集合信息。</li>
+	<li class="supportList"><a class="contentpagehyperlink" href="#PUT 请求">PUT</a>：更新指定的服务或服务集合。</li>
+	<li class="supportList"><a class="contentpagehyperlink" href="#DELETE 请求">DELETE</a>：删除指定的服务或服务集合。</li>
+	<li class="supportList"><a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a>：检查 service 资源是否存在，或权限是否可以访问 
+	 service 资源。</li>
+</ul>
+<p class="myNormal"><span style="font-weight: bold;">支持的表述格式：</span>RJSON、JSON、HTML、XML。</p>
+<h2>资源层次</h2>
+<img src="../../../../../assets/images/Portal/img/service.png" alt="" usemap="#MAP257372954" style="border: none;" border="0"/>
+<map id="MAP257372954" name="MAP257372954">
+<area shape="rect" coords="4, 1, 259, 44" href="../../Portal.htm" alt=""/>
+<area shape="rect" coords="73, 55, 234, 97" href="../services.htm" alt=""/>
+<area shape="rect" coords="142, 105, 273, 146" href="service.htm" alt=""/>
+</map> 
+<h2>HTTP 请求方法</h2>
+<p class="myNormal">对如下 URI 执行 HTTP 请求，以 rjson 输出格式为例加以说明，其中，supermapiportal 
+ 是服务器名。</p>
+<p class="uriStyle">http://supermapiportal:8190/iportal/web/services/{id}.rjson</p>
+<h3><a id="GET 请求"></a>GET 请求</h3>
+<p class="myNormal">获取指定的服务或服务集合信息。</p>
+<h4 class="myNormal">响应结构</h4>
+<p class="myNormal">对 service 资源执行 GET 请求，获取指定的服务或服务集合信息，由以下字段组成：</p>
+<table class="iServerTable" cellspacing="0" width="70%" align="center">
+	<colgroup><col style="width: 15%;"/>
+	<col style="width: 15%;"/>
+	<col style="width: 70%;"/>
+	</colgroup><tbody><tr class="t1st">
+		<td>字段</td>
+		<td>类型</td>
+		<td>说明</td>
+	</tr>
+	<tr class="t2Row">
+		<td>addedMapNames</td>
+		<td>Set&lt;String&gt;</td>
+		<td>服务下的地图名称列表（注册服务时可选择使用字段）。</td>
+	</tr>
+	<tr class="t1Row">
+		<td>addedSceneNames</td>
+		<td>Set&lt;String&gt;</td>
+		<td>服务下的场景名称列表（注册服务时可选择使用字段）。</td>
+	</tr>
+	<tr class="t2Row">
+		<td>authorizeSetting</td>
+		<td>List&lt;<a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/iportal/web/commontypes/IportalAuthorizeEntity.html">IportalAuthorizeEntity</a>&gt;</td>
+		<td>授权信息。</td>
+	</tr>
+	<tr class="t1Row">
+		<td>checkStatus</td>
+		<td><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/iportal/web/commontypes/CheckStatus.html">CheckStatus</a></td>
+		<td>审核状态。</td>
+	</tr>
+	<tr class="t2Row">
+		<td>checkTime</td>
+		<td>Long</td>
+		<td>审核时间。</td>
+	</tr>
+	<tr class="t1Row">
+		<td>checkUser</td>
+		<td>String</td>
+		<td>审核人名称。</td>
+	</tr>
+	<tr class="t2Row">
+		<td>checkUserNick</td>
+		<td>String</td>
+		<td>审核人昵称。</td>
+	</tr>
+	<tr class="t1Row">
+		<td>createTime</td>
+		<td>Long</td>
+		<td>服务的注册时间。</td>
+	</tr>
+	<tr class="t2Row">
+		<td>description</td>
+		<td>String</td>
+		<td>服务的描述信息。</td>
+	</tr>
+	<tr class="t1Row">
+		<td>enable</td>
+		<td>Boolean</td>
+		<td>服务是否启用。</td>
+	</tr>
+	<tr class="t2Row">
+		<td>id</td>
+		<td>Integer</td>
+		<td>注册服务的标识。</td>
+	</tr>
+	<tr class="t1Row">
+		<td>isBatch</td>
+		<td>Boolean</td>
+		<td>是否是批量注册的。</td>
+	</tr>
+	<tr class="t2Row">
+		<td>isDataItemService</td>
+		<td>Boolean</td>
+		<td>是否是用户上传数据发布的服务注册进来的。</td>
+	</tr>
+	<tr class="t1Row">
+		<td>linkPage</td>
+		<td>String</td>
+		<td>服务的链接地址。</td>
+	</tr>
+	<tr class="t2Row">
+		<td>mapInfos</td>
+		<td>List&lt;<a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/iportal/web/commontypes/MapInfo.html">MapInfo</a>&gt;</td>
+		<td>服务中包含的地图列表。</td>
+	</tr>
+	<tr class="t1Row">
+		<td><p>metadata</p></td>
+		<td><p>Metadata</p></td>
+		<td>服务的元数据信息。</td>
+	</tr>
+	<tr class="t2Row">
+		<td>nickname</td>
+		<td>String</td>
+		<td>用户的昵称。</td>
+	</tr>
+	<tr class="t1Row">
+		<td>offline</td>
+		<td>Boolean</td>
+		<td>服务是否离线。</td>
+	</tr>
+	<tr class="t2Row">
+		<td>proxiedUrl</td>
+		<td>String</td>
+		<td>启用服务代理后的地址。</td>
+	</tr>
+	<tr class="t1Row">
+		<td><p>previewUrl</p></td>
+		<td><p>String</p></td>
+		<td>服务自定义预览地址。</td>
+	</tr>
+	<tr class="t2Row">
+		<td>resTitle</td>
+		<td>String</td>
+		<td>服务名称。</td>
+	</tr>
+	<tr class="t1Row">
+		<td>scenes</td>
+		<td>List&lt;<a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/iportal/web/commontypes/ServiceSceneInfo.html">ServiceSceneInfo</a>&gt;</td>
+		<td>服务中包含的三维场景列表。</td>
+	</tr>
+	<tr class="t2Row">
+		<td>serviceRootUrlId</td>
+		<td>Integer</td>
+		<td>该注册服务对应的服务根地址的标识。</td>
+	</tr>
+	<tr class="t1Row">
+		<td>tags</td>
+		<td>List&lt;String&gt;</td>
+		<td>服务的标签。</td>
+	</tr>
+	<tr class="t2Row">
+		<td>thumbnail</td>
+		<td>String</td>
+		<td>服务的缩略图路径。</td>
+	</tr>
+	<tr class="t1Row">
+		<td>tokenRefreshUrl</td>
+		<td>String</td>
+		<td>获取访问服务所需 Token 的 Token 刷新地址。</td>
+	</tr>
+	<tr class="t2Row">
+		<td>type</td>
+		<td><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/iportal/web/commontypes/SourceType.html">SourceType</a></td>
+		<td>服务的类型。</td>
+	</tr>
+	<tr class="t1Row">
+		<td>updateTime</td>
+		<td>Long</td>
+		<td>更新日期。</td>
+	</tr>
+	<tr class="t2Row">
+		<td>userName</td>
+		<td>String</td>
+		<td>用户标识。</td>
+	</tr>
+	<tr class="t1Row">
+		<td>verifyReason</td>
+		<td>String</td>
+		<td>审核意见。</td>
+	</tr>
+	<tr class="t2Row">
+		<td>version</td>
+		<td>String</td>
+		<td>服务的版本，如 WMS 服务的1.3.0。</td>
+	</tr>
+	<tr class="t1Row">
+		<td>visitCount</td>
+		<td>Integer</td>
+		<td>服务的访问次数，只有启用服务代理功能后，该参数才生效。</td>
+	</tr>
+</tbody></table>
+<h4>响应示例</h4>
+<p class="myNormal">对 service 资源：http://localhost:8190/iportal/web/services/1367633656.rjson 
+ 执行 GET 请求，返回的 rjson 格式的资源表述如下：</p>
+<p class="myCodeP">{</p>
+<p class="myCodeP">    &quot;addedSceneNames&quot;: 
+ null,</p>
+<p class="myCodeP">    &quot;linkPage&quot;: &quot;http://192.168.17.199:8090/iserver/services/data-world/rest&quot;,</p>
+<p class="myCodeP">    &quot;metadata&quot;: {</p>
+<p class="myCodeP">        &quot;mdLang&quot;: 
+ &quot;zh_CN&quot;,</p>
+<p class="myCodeP">        &quot;mdContact&quot;: 
+ {</p>
+<p class="myCodeP">            &quot;rpCntInfo&quot;: 
+ {</p>
+<p class="myCodeP">                &quot;faxNum&quot;: 
+ &quot;+86-10-59896666&quot;,</p>
+<p class="myCodeP">                &quot;cntOnLineRes&quot;: 
+ {</p>
+<p class="myCodeP">                    &quot;orFunct&quot;: 
+ &quot;&quot;,</p>
+<p class="myCodeP">                    &quot;orDesc&quot;: 
+ &quot;&quot;,</p>
+<p class="myCodeP">                    &quot;linkage&quot;: 
+ &quot;http://www.supermap.com.cn&quot;</p>
+<p class="myCodeP">                },</p>
+<p class="myCodeP">                &quot;voiceNum&quot;: 
+ &quot;+86-10-59896655&quot;,</p>
+<p class="myCodeP">                &quot;cntAddress&quot;: 
+ {</p>
+<p class="myCodeP">                    &quot;country&quot;: 
+ &quot;PR China&quot;,</p>
+<p class="myCodeP">                    &quot;delPoint&quot;: 
+ &quot;6/F, Building 107, No. A10, Jiuxianqiao North Road, Chaoyang District&quot;,</p>
+<p class="myCodeP">                    &quot;EMailAdd&quot;: 
+ &quot;support@supermap.com&quot;,</p>
+<p class="myCodeP">                    &quot;city&quot;: 
+ &quot;Beijing&quot;,</p>
+<p class="myCodeP">                    &quot;adminArea&quot;: 
+ &quot;Chaoyang District&quot;,</p>
+<p class="myCodeP">                    &quot;postCode&quot;: 
+ &quot;100015&quot;</p>
+<p class="myCodeP">                }</p>
+<p class="myCodeP">            },</p>
+<p class="myCodeP">            &quot;role&quot;: 
+ &quot;SuperMap Software Co. ,Ltd&quot;,</p>
+<p class="myCodeP">            &quot;rpIndName&quot;: 
+ &quot;&quot;,</p>
+<p class="myCodeP">            &quot;rpOrgName&quot;: 
+ &quot;SuperMap Software Co. ,Ltd&quot;,</p>
+<p class="myCodeP">            &quot;rpPosName&quot;: 
+ &quot;&quot;</p>
+<p class="myCodeP">        },</p>
+<p class="myCodeP">        &quot;contInfo&quot;: 
+ {</p>
+<p class="myCodeP">            &quot;fetCatDesc&quot;: 
+ null</p>
+<p class="myCodeP">        },</p>
+<p class="myCodeP">        &quot;spatRepInfo&quot;: 
+ {</p>
+<p class="myCodeP">            &quot;gridSpatRep&quot;: 
+ null,</p>
+<p class="myCodeP">            &quot;vectSpatRep&quot;: 
+ null</p>
+<p class="myCodeP">        },</p>
+<p class="myCodeP">        &quot;mdDateSt&quot;: 
+ &quot;2012-09-19&quot;,</p>
+<p class="myCodeP">        &quot;dqInfo&quot;: 
+ {</p>
+<p class="myCodeP">            &quot;dqStatement&quot;: 
+ &quot;dataQualityStatement&quot;,</p>
+<p class="myCodeP">            &quot;linStatement&quot;: 
+ &quot;&quot;</p>
+<p class="myCodeP">        },</p>
+<p class="myCodeP">        &quot;mdStanVer&quot;: 
+ &quot;1.0&quot;,</p>
+<p class="myCodeP">        &quot;dataIdInfo&quot;: 
+ {</p>
+<p class="myCodeP">            &quot;serIdent&quot;: 
+ null,</p>
+<p class="myCodeP">            &quot;dataIdent&quot;: 
+ {</p>
+<p class="myCodeP">                &quot;dsFormat&quot;: 
+ {</p>
+<p class="myCodeP">                    &quot;formatVer&quot;: 
+ &quot;smmd2007&quot;,</p>
+<p class="myCodeP">                    &quot;formatName&quot;: 
+ &quot;metadata content specification&quot;</p>
+<p class="myCodeP">                },</p>
+<p class="myCodeP">                &quot;idAbs&quot;: 
+ &quot;&quot;,</p>
+<p class="myCodeP">                &quot;dataScale&quot;: 
+ {</p>
+<p class="myCodeP">                    &quot;equScale&quot;: 
+ 0</p>
+<p class="myCodeP">                },</p>
+<p class="myCodeP">                &quot;resType&quot;: 
+ &quot;Topographical vector data&quot;,</p>
+<p class="myCodeP">                &quot;dataLang&quot;: 
+ &quot;zh_CN&quot;,</p>
+<p class="myCodeP">                &quot;idPurp&quot;: 
+ &quot;&quot;,</p>
+<p class="myCodeP">                &quot;graphOver&quot;: 
+ {</p>
+<p class="myCodeP">                    &quot;bgFileType&quot;: 
+ &quot;&quot;,</p>
+<p class="myCodeP">                    &quot;bgFileDesc&quot;: 
+ &quot;&quot;,</p>
+<p class="myCodeP">                    &quot;bgFileName&quot;: 
+ &quot;&quot;</p>
+<p class="myCodeP">                },</p>
+<p class="myCodeP">                &quot;refTheme&quot;: 
+ {</p>
+<p class="myCodeP">                    &quot;sourceCode&quot;: 
+ null,</p>
+<p class="myCodeP">                    &quot;code&quot;: 
+ null,</p>
+<p class="myCodeP">                    &quot;theme&quot;: 
+ null,</p>
+<p class="myCodeP">                    &quot;sourceName&quot;: 
+ null</p>
+<p class="myCodeP">                },</p>
+<p class="myCodeP">                &quot;tpCat&quot;: 
+ &quot;GIS Network engineering achievements&quot;,</p>
+<p class="myCodeP">                &quot;resSubType&quot;: 
+ &quot;&quot;,</p>
+<p class="myCodeP">                &quot;idStatus&quot;: 
+ &quot;completed&quot;,</p>
+<p class="myCodeP">                &quot;dataExt&quot;: 
+ {</p>
+<p class="myCodeP">                    &quot;exDesc&quot;: 
+ null,</p>
+<p class="myCodeP">                    &quot;geoEle&quot;: 
+ {</p>
+<p class="myCodeP">                        &quot;geoBndBox&quot;: 
+ {</p>
+<p class="myCodeP">                            &quot;eastBL&quot;: 
+ 0,</p>
+<p class="myCodeP">                            &quot;southBL&quot;: 
+ 0,</p>
+<p class="myCodeP">                            &quot;northBL&quot;: 
+ 0,</p>
+<p class="myCodeP">                            &quot;westBL&quot;: 
+ 0</p>
+<p class="myCodeP">                        }</p>
+<p class="myCodeP">                    }</p>
+<p class="myCodeP">                },</p>
+<p class="myCodeP">                &quot;idCitation&quot;: 
+ {</p>
+<p class="myCodeP">                    &quot;resRefDate&quot;: 
+ {</p>
+<p class="myCodeP">                        &quot;refDateType&quot;: 
+ &quot;productioncompleted&quot;,</p>
+<p class="myCodeP">                        &quot;refDate&quot;: 
+ &quot;2008-02-16&quot;</p>
+<p class="myCodeP">                    },</p>
+<p class="myCodeP">                    &quot;resTitle&quot;: 
+ &quot;data-world/rest&quot;,</p>
+<p class="myCodeP">                    &quot;resEd&quot;: 
+ &quot;&quot;</p>
+<p class="myCodeP">                },</p>
+<p class="myCodeP">                &quot;spatRpType&quot;: 
+ &quot;vector&quot;,</p>
+<p class="myCodeP">                &quot;dataChar&quot;: 
+ &quot;GB2312&quot;,</p>
+<p class="myCodeP">                &quot;keyword&quot;: 
+ &quot;service metadata&quot;,</p>
+<p class="myCodeP">                &quot;aggrInfo&quot;: 
+ {</p>
+<p class="myCodeP">                    &quot;aggrDSName&quot;: 
+ null,</p>
+<p class="myCodeP">                    &quot;assocType&quot;: 
+ null</p>
+<p class="myCodeP">                },</p>
+<p class="myCodeP">                &quot;idPoC&quot;: 
+ {</p>
+<p class="myCodeP">                    &quot;role&quot;: 
+ &quot;SuperMap Software Co. ,Ltd&quot;,</p>
+<p class="myCodeP">                    &quot;rpOrgName&quot;: 
+ &quot;SuperMap Software Co. ,Ltd&quot;</p>
+<p class="myCodeP">                },</p>
+<p class="myCodeP">                &quot;resConst&quot;: 
+ {</p>
+<p class="myCodeP">                    &quot;secConsts&quot;: 
+ {</p>
+<p class="myCodeP">                        &quot;clazz&quot;: 
+ &quot;confidential&quot;</p>
+<p class="myCodeP">                    }</p>
+<p class="myCodeP">                }</p>
+<p class="myCodeP">            }</p>
+<p class="myCodeP">        },</p>
+<p class="myCodeP">        &quot;refSysInfo&quot;: 
+ {</p>
+<p class="myCodeP">            &quot;refSysID&quot;: 
+ null,</p>
+<p class="myCodeP">            &quot;mdCoRefSys&quot;: 
+ {</p>
+<p class="myCodeP">                &quot;datum&quot;: 
+ &quot;datum&quot;,</p>
+<p class="myCodeP">                &quot;zoneMethod&quot;: 
+ &quot;zoneMethod&quot;,</p>
+<p class="myCodeP">                &quot;zone&quot;: 
+ 0,</p>
+<p class="myCodeP">                &quot;projection&quot;: 
+ &quot;projection&quot;,</p>
+<p class="myCodeP">                &quot;longCntMer&quot;: 
+ 0,</p>
+<p class="myCodeP">                &quot;ellipsoid&quot;: 
+ &quot;ellipsoid&quot;</p>
+<p class="myCodeP">            }</p>
+<p class="myCodeP">        },</p>
+<p class="myCodeP">        &quot;mdChar&quot;: 
+ &quot;GB2312&quot;,</p>
+<p class="myCodeP">        &quot;distInfo&quot;: 
+ {</p>
+<p class="myCodeP">            &quot;onLineSrc&quot;: 
+ {</p>
+<p class="myCodeP">                &quot;orFunct&quot;: 
+ &quot;&quot;,</p>
+<p class="myCodeP">                &quot;orDesc&quot;: 
+ &quot;&quot;,</p>
+<p class="myCodeP">                &quot;linkage&quot;: 
+ &quot;http://127.0.0.1:8195/portalproxy/iserver/services/data-world/rest&quot;</p>
+<p class="myCodeP">            },</p>
+<p class="myCodeP">            &quot;distFormat&quot;: 
+ {</p>
+<p class="myCodeP">                &quot;formatVer&quot;: 
+ null,</p>
+<p class="myCodeP">                &quot;formatName&quot;: 
+ null</p>
+<p class="myCodeP">            },</p>
+<p class="myCodeP">            &quot;distributor&quot;: 
+ {</p>
+<p class="myCodeP">                &quot;distorCont&quot;: 
+ {</p>
+<p class="myCodeP">                    &quot;rpCntInfo&quot;: 
+ null,</p>
+<p class="myCodeP">                    &quot;role&quot;: 
+ null,</p>
+<p class="myCodeP">                    &quot;rpIndName&quot;: 
+ null,</p>
+<p class="myCodeP">                    &quot;rpOrgName&quot;: 
+ null,</p>
+<p class="myCodeP">                    &quot;rpPosName&quot;: 
+ null</p>
+<p class="myCodeP">                },</p>
+<p class="myCodeP">                &quot;resFees&quot;: 
+ &quot;&quot;,</p>
+<p class="myCodeP">                &quot;ordInstr&quot;: 
+ &quot;&quot;</p>
+<p class="myCodeP">            }</p>
+<p class="myCodeP">        },</p>
+<p class="myCodeP">        &quot;mdFileID&quot;: 
+ &quot;-246945228&quot;,</p>
+<p class="myCodeP">        &quot;createdBy&quot;: 
+ &quot;0&quot;,</p>
+<p class="myCodeP">        &quot;mdStanName&quot;: 
+ &quot;the Geography Network Service specification metadata criterion&quot;</p>
+<p class="myCodeP">    },</p>
+<p class="myCodeP">    &quot;isDataItemService&quot;: 
+ false,</p>
+<p class="myCodeP">    &quot;metadataString&quot;: 
+ &quot;&lt;?xml version=\&quot;1.0\&quot; encoding=\&quot;UTF-8\&quot; 
+ standalone=\&quot;yes\&quot;?&gt;\n&lt;smmd:Metadata xmlns:smmd=\&quot;http://data.sbsm.gov.cn/smmd/2007\&quot; 
+ createdBy=\&quot;0\&quot;&gt;\n    &lt;smmd:mdFileID&gt;-246945228&lt;/smmd:mdFileID&gt;\n 
+    &lt;smmd:mdLang&gt;zh_CN&lt;/smmd:mdLang&gt;\n    &lt;smmd:mdChar&gt;GB2312&lt;/smmd:mdChar&gt;\n 
+    &lt;smmd:mdContact&gt;\n        &lt;smmd:rpIndName&gt;&lt;/smmd:rpIndName&gt;\n 
+        &lt;smmd:rpOrgName&gt;SuperMap 
+ Software Co. ,Ltd&lt;/smmd:rpOrgName&gt;\n        &lt;smmd:rpPosName&gt;&lt;/smmd:rpPosName&gt;\n 
+        &lt;smmd:rpCntInfo&gt;\n            &lt;smmd:cntAddress&gt;\n 
+                &lt;smmd:delPoint&gt;6/F, 
+ Building 107, No. A10, Jiuxianqiao North Road, Chaoyang District&lt;/smmd:delPoint&gt;\n 
+                &lt;smmd:city&gt;Beijing&lt;/smmd:city&gt;\n 
+                &lt;smmd:adminArea&gt;Chaoyang 
+ District&lt;/smmd:adminArea&gt;\n                &lt;smmd:postCode&gt;100015&lt;/smmd:postCode&gt;\n 
+                &lt;smmd:country&gt;PR 
+ China&lt;/smmd:country&gt;\n                &lt;smmd:eMailAdd&gt;support@supermap.com&lt;/smmd:eMailAdd&gt;\n 
+            &lt;/smmd:cntAddress&gt;\n 
+            &lt;smmd:cntOnLineRes&gt;\n 
+                &lt;smmd:linkage&gt;http://www.supermap.com.cn&lt;/smmd:linkage&gt;\n 
+                &lt;smmd:orDesc&gt;&lt;/smmd:orDesc&gt;\n 
+                &lt;smmd:orFunct&gt;&lt;/smmd:orFunct&gt;\n 
+            &lt;/smmd:cntOnLineRes&gt;\n 
+            &lt;smmd:voiceNum&gt;+86-10-59896655&lt;/smmd:voiceNum&gt;\n 
+            &lt;smmd:faxNum&gt;+86-10-59896666&lt;/smmd:faxNum&gt;\n 
+        &lt;/smmd:rpCntInfo&gt;\n        &lt;smmd:role&gt;SuperMap 
+ Software Co. ,Ltd&lt;/smmd:role&gt;\n    &lt;/smmd:mdContact&gt;\n 
+    &lt;smmd:mdDateSt&gt;2012-09-19&lt;/smmd:mdDateSt&gt;\n 
+    &lt;smmd:mdStanName&gt;the Geography Network Service 
+ specification metadata criterion&lt;/smmd:mdStanName&gt;\n    &lt;smmd:mdStanVer&gt;1.0&lt;/smmd:mdStanVer&gt;\n 
+    &lt;smmd:dataIdInfo&gt;\n        &lt;smmd:DataIdent&gt;\n 
+            &lt;smmd:idCitation&gt;\n 
+                &lt;smmd:resTitle&gt;data-world/rest&lt;/smmd:resTitle&gt;\n 
+                &lt;smmd:resRefDate&gt;\n 
+                    &lt;smmd:refDate&gt;2008-02-16&lt;/smmd:refDate&gt;\n 
+                    &lt;smmd:refDateType&gt;productioncompleted&lt;/smmd:refDateType&gt;\n 
+                &lt;/smmd:resRefDate&gt;\n 
+                &lt;smmd:resEd&gt;&lt;/smmd:resEd&gt;\n 
+            &lt;/smmd:idCitation&gt;\n 
+            &lt;smmd:idAbs&gt;&lt;/smmd:idAbs&gt;\n 
+            &lt;smmd:idPurp&gt;&lt;/smmd:idPurp&gt;\n 
+            &lt;smmd:dataLang&gt;zh_CN&lt;/smmd:dataLang&gt;\n 
+            &lt;smmd:idStatus&gt;completed&lt;/smmd:idStatus&gt;\n 
+            &lt;smmd:idPoC&gt;\n 
+                &lt;smmd:rpOrgName&gt;SuperMap 
+ Software Co. ,Ltd&lt;/smmd:rpOrgName&gt;\n                &lt;smmd:role&gt;SuperMap 
+ Software Co. ,Ltd&lt;/smmd:role&gt;\n            &lt;/smmd:idPoC&gt;\n 
+            &lt;smmd:keyword&gt;service 
+ metadata&lt;/smmd:keyword&gt;\n            &lt;smmd:graphOver&gt;\n 
+                &lt;smmd:bgFileName&gt;&lt;/smmd:bgFileName&gt;\n 
+                &lt;smmd:bgFileDesc&gt;&lt;/smmd:bgFileDesc&gt;\n 
+                &lt;smmd:bgFileType&gt;&lt;/smmd:bgFileType&gt;\n 
+            &lt;/smmd:graphOver&gt;\n 
+            &lt;smmd:resType&gt;Topographical 
+ vector data&lt;/smmd:resType&gt;\n            &lt;smmd:resSubType&gt;&lt;/smmd:resSubType&gt;\n 
+            &lt;smmd:tpCat&gt;GIS 
+ Network engineering achievements&lt;/smmd:tpCat&gt;\n            &lt;smmd:refTheme/&gt;\n 
+            &lt;smmd:resConst&gt;\n 
+                &lt;smmd:SecConsts&gt;\n 
+                    &lt;smmd:class&gt;confidential&lt;/smmd:class&gt;\n 
+                &lt;/smmd:SecConsts&gt;\n 
+            &lt;/smmd:resConst&gt;\n 
+            &lt;smmd:aggrInfo/&gt;\n 
+            &lt;smmd:dsFormat&gt;\n 
+                &lt;smmd:formatName&gt;metadata 
+ content specification&lt;/smmd:formatName&gt;\n                &lt;smmd:formatVer&gt;smmd2007&lt;/smmd:formatVer&gt;\n 
+            &lt;/smmd:dsFormat&gt;\n 
+            &lt;smmd:dataExt&gt;\n 
+                &lt;smmd:geoEle&gt;\n 
+                    &lt;smmd:GeoBndBox&gt;\n 
+                        &lt;smmd:westBL&gt;0.0&lt;/smmd:westBL&gt;\n 
+                        &lt;smmd:eastBL&gt;0.0&lt;/smmd:eastBL&gt;\n 
+                        &lt;smmd:southBL&gt;0.0&lt;/smmd:southBL&gt;\n 
+                        &lt;smmd:northBL&gt;0.0&lt;/smmd:northBL&gt;\n 
+                    &lt;/smmd:GeoBndBox&gt;\n 
+                &lt;/smmd:geoEle&gt;\n 
+            &lt;/smmd:dataExt&gt;\n 
+            &lt;smmd:spatRpType&gt;vector&lt;/smmd:spatRpType&gt;\n 
+            &lt;smmd:dataScale&gt;\n 
+                &lt;smmd:equScale&gt;0&lt;/smmd:equScale&gt;\n 
+            &lt;/smmd:dataScale&gt;\n 
+            &lt;smmd:dataChar&gt;GB2312&lt;/smmd:dataChar&gt;\n 
+        &lt;/smmd:DataIdent&gt;\n    &lt;/smmd:dataIdInfo&gt;\n 
+    &lt;smmd:dqInfo&gt;\n        &lt;smmd:dqStatement&gt;dataQualityStatement&lt;/smmd:dqStatement&gt;\n 
+        &lt;smmd:linStatement&gt;&lt;/smmd:linStatement&gt;\n 
+    &lt;/smmd:dqInfo&gt;\n    &lt;smmd:spatRepInfo/&gt;\n 
+    &lt;smmd:refSysInfo&gt;\n        &lt;smmd:MdCoRefSys&gt;\n 
+            &lt;smmd:projection&gt;projection&lt;/smmd:projection&gt;\n 
+            &lt;smmd:ellipsoid&gt;ellipsoid&lt;/smmd:ellipsoid&gt;\n 
+            &lt;smmd:datum&gt;datum&lt;/smmd:datum&gt;\n 
+            &lt;smmd:longCntMer&gt;0.0&lt;/smmd:longCntMer&gt;\n 
+            &lt;smmd:zoneMethod&gt;zoneMethod&lt;/smmd:zoneMethod&gt;\n 
+            &lt;smmd:zone&gt;0&lt;/smmd:zone&gt;\n 
+        &lt;/smmd:MdCoRefSys&gt;\n    &lt;/smmd:refSysInfo&gt;\n 
+    &lt;smmd:contInfo/&gt;\n    &lt;smmd:distInfo&gt;\n 
+        &lt;smmd:onLineSrc&gt;\n            &lt;smmd:linkage&gt;http://127.0.0.1:8195/portalproxy/iserver/services/data-world/rest&lt;/smmd:linkage&gt;\n 
+            &lt;smmd:orDesc&gt;&lt;/smmd:orDesc&gt;\n 
+            &lt;smmd:orFunct&gt;&lt;/smmd:orFunct&gt;\n 
+        &lt;/smmd:onLineSrc&gt;\n        &lt;smmd:distFormat/&gt;\n 
+        &lt;smmd:distributor&gt;\n            &lt;smmd:distorCont/&gt;\n 
+            &lt;smmd:ordInstr&gt;&lt;/smmd:ordInstr&gt;\n 
+            &lt;smmd:resFees&gt;&lt;/smmd:resFees&gt;\n 
+        &lt;/smmd:distributor&gt;\n 
+    &lt;/smmd:distInfo&gt;\n&lt;/smmd:Metadata&gt;\n&quot;,</p>
+<p class="myCodeP">    &quot;description&quot;: null,</p>
+<p class="myCodeP">    &quot;verifyReason&quot;: null,</p>
+<p class="myCodeP">    &quot;isBatch&quot;: true,</p>
+<p class="myCodeP">    &quot;serviceRootUrlId&quot;: 
+ 1,</p>
+<p class="myCodeP">    &quot;type&quot;: &quot;DATA&quot;,</p>
+<p class="myCodeP">    &quot;addedMapNames&quot;: null,</p>
+<p class="myCodeP">    &quot;offline&quot;: false,</p>
+<p class="myCodeP">    &quot;checkStatus&quot;: &quot;SUCCESSFUL&quot;,</p>
+<p class="myCodeP">    &quot;visitCount&quot;: 165,</p>
+<p class="myCodeP">    &quot;enable&quot;: true,</p>
+<p class="myCodeP">    &quot;nickname&quot;: &quot;admin&quot;,</p>
+<p class="myCodeP">    &quot;id&quot;: 1367633656,</p>
+<p class="myCodeP">    &quot;thumbnail&quot;: &quot;http://127.0.0.1:8190/iportal/services/../web/static/portal/img/map/cloud.png&quot;,</p>
+<p class="myCodeP">    &quot;previewUrl&quot;: null,</p>
+<p class="myCodeP">    &quot;proxiedUrl&quot;: &quot;http://127.0.0.1:8195/portalproxy/iserver/services/data-world/rest&quot;,</p>
+<p class="myCodeP">    &quot;authorizeSetting&quot;: 
+ [</p>
+<p class="myCodeP">        {</p>
+<p class="myCodeP">            &quot;permissionType&quot;: 
+ &quot;DELETE&quot;,</p>
+<p class="myCodeP">            &quot;aliasName&quot;: 
+ &quot;admin&quot;,</p>
+<p class="myCodeP">            &quot;entityRoles&quot;: 
+ [],</p>
+<p class="myCodeP">            &quot;entityType&quot;: 
+ &quot;USER&quot;,</p>
+<p class="myCodeP">            &quot;entityName&quot;: 
+ &quot;admin&quot;,</p>
+<p class="myCodeP">            &quot;entityId&quot;: 
+ null</p>
+<p class="myCodeP">        },</p>
+<p class="myCodeP">        {</p>
+<p class="myCodeP">            &quot;permissionType&quot;: 
+ &quot;SEARCH&quot;,</p>
+<p class="myCodeP">            &quot;aliasName&quot;: 
+ &quot;GUEST&quot;,</p>
+<p class="myCodeP">            &quot;entityRoles&quot;: 
+ [],</p>
+<p class="myCodeP">            &quot;entityType&quot;: 
+ &quot;USER&quot;,</p>
+<p class="myCodeP">            &quot;entityName&quot;: 
+ &quot;GUEST&quot;,</p>
+<p class="myCodeP">            &quot;entityId&quot;: 
+ null</p>
+<p class="myCodeP">        }</p>
+<p class="myCodeP">    ],</p>
+<p class="myCodeP">    &quot;updateTime&quot;: 1607395213816,</p>
+<p class="myCodeP">    &quot;userName&quot;: &quot;admin&quot;,</p>
+<p class="myCodeP">    &quot;version&quot;: null,</p>
+<p class="myCodeP">    &quot;tags&quot;: [</p>
+<p class="myCodeP">        &quot;用户服务&quot;</p>
+<p class="myCodeP">    ],</p>
+<p class="myCodeP">    &quot;resTitle&quot;: &quot;data-world/rest&quot;,</p>
+<p class="myCodeP">    &quot;checkUser&quot;: null,</p>
+<p class="myCodeP">    &quot;checkUserNick&quot;: null,</p>
+<p class="myCodeP">    &quot;checkTime&quot;: null,</p>
+<p class="myCodeP">    &quot;createTime&quot;: 1607395213816,</p>
+<p class="myCodeP">    &quot;tokenRefreshUrl&quot;: 
+ null,</p>
+<p class="myCodeP">    &quot;scenes&quot;: [],</p>
+<p class="myCodeP">    &quot;mapInfos&quot;: []</p>
+<p class="myCodeP">}</p>
+<h3><a id="PUT 请求"></a>PUT 请求</h3>
+<p class="myNormal">更新指定的服务或服务集合。只有服务注册者和门户管理员有权限对服务进行更新。</p>
+<h4 class="myNormal">请求参数</h4>
+<p class="myNormal">发送请求时，需要在请求体中包含如下参数：</p>
+<table class="iServerTable" cellspacing="0" width="70%" align="center">
+	<colgroup><col style="width: 15%;"/>
+	<col style="width: 15%;"/>
+	<col style="width: 70%;"/>
+	</colgroup><tbody><tr class="t1st">
+		<td>字段</td>
+		<td>类型</td>
+		<td>说明</td>
+	</tr>
+	<tr class="t2Row">
+		<td>authorizeSetting</td>
+		<td>List&lt;<a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/iportal/web/commontypes/IportalAuthorizeEntity.html">IportalAuthorizeEntity</a>&gt;</td>
+		<td>授权信息。服务的权限类型包括：DELETE（查看/编辑/删除）、READ（查看）、READWRITE（查看/编辑）。</td>
+	</tr>
+	<tr class="t1Row">
+		<td>tags</td>
+		<td>List&lt;String&gt;</td>
+		<td>服务的标签。</td>
+	</tr>
+	<tr class="t2Row">
+		<td><p>metadata</p></td>
+		<td><p>Metadata</p></td>
+		<td>服务的元数据信息。</td>
+	</tr>
+	<tr class="t1Row">
+		<td>thumbnail</td>
+		<td>String</td>
+		<td>服务的缩略图路径。</td>
+	</tr>
+	<tr class="t2Row">
+		<td><p>tokenRefreshUrl</p></td>
+		<td><p>String</p></td>
+		<td>ArcGIS REST 服务的令牌获取地址。通过该地址可获取访问服务所需 Token。</td>
+	</tr>
+	<tr class="t1Row">
+		<td><p>previewUrl</p></td>
+		<td><p>String</p></td>
+		<td>服务自定义预览地址。</td>
+	</tr>
+</tbody></table>
+<h4 class="myNormal">响应结构</h4>
+<p class="myNormal">返回的资源表述结构如下：</p>
+<table class="iServerTable" cellspacing="0" width="70%" align="center">
+	<colgroup><col style="width: 15%;"/>
+	<col style="width: 15%;"/>
+	<col style="width: 70%;"/>
+	</colgroup><tbody><tr class="t1st">
+		<td>字段</td>
+		<td>类型</td>
+		<td>说明</td>
+	</tr>
+	<tr class="t2Row">
+		<td>succeed</td>
+		<td>boolean</td>
+		<td>更新服务是否成功。</td>
+	</tr>
+	<tr class="t1Row">
+		<td>error</td>
+		<td>Httperror</td>
+		<td>出错信息，如果更新服务成功，则没有本字段。</td>
+	</tr>
+</tbody></table>
+<h4>响应示例</h4>
+<p class="myNormal">修改服务的名称，对 service 资源：http://localhost:8190/iportal/web/services/1.json 
+ 执行 PUT 请求，发送请求体如下：</p>
+<p class="myCodeP">{</p>
+<p class="myCodeP">    &quot;tags&quot;: [</p>
+<p class="myCodeP">        &quot;changchun&quot;</p>
+<p class="myCodeP">    ],</p>
+<p class="myCodeP">    &quot;authorizeSetting&quot;: 
+ [],</p>
+<p class="myCodeP">    &quot;metadata&quot;: {</p>
+<p class="myCodeP">        &quot;mdContact&quot;: 
+ {</p>
+<p class="myCodeP">            &quot;rpIndName&quot;: 
+ &quot;&quot;,</p>
+<p class="myCodeP">            &quot;rpOrgName&quot;: 
+ &quot;&quot;,</p>
+<p class="myCodeP">            &quot;rpCntInfo&quot;: 
+ {</p>
+<p class="myCodeP">                &quot;cntAddress&quot;: 
+ {</p>
+<p class="myCodeP">                    &quot;delPoint&quot;: 
+ &quot;&quot;,</p>
+<p class="myCodeP">                    &quot;eMailAdd&quot;: 
+ &quot;&quot;</p>
+<p class="myCodeP">                },</p>
+<p class="myCodeP">                &quot;voiceNum&quot;: 
+ &quot;&quot;,</p>
+<p class="myCodeP">                &quot;faxNum&quot;: 
+ &quot;&quot;</p>
+<p class="myCodeP">            }</p>
+<p class="myCodeP">        },</p>
+<p class="myCodeP">        &quot;refSysInfo&quot;: 
+ {</p>
+<p class="myCodeP">            &quot;mdCoRefSys&quot;: 
+ {</p>
+<p class="myCodeP">                &quot;projection&quot;: 
+ &quot;WGS84&quot;</p>
+<p class="myCodeP">            },</p>
+<p class="myCodeP">            &quot;refSysID&quot;: 
+ &quot;&quot;</p>
+<p class="myCodeP">        },</p>
+<p class="myCodeP">        &quot;dataIdInfo&quot;: 
+ {</p>
+<p class="myCodeP">            &quot;dataIdent&quot;: 
+ {</p>
+<p class="myCodeP">                &quot;idCitation&quot;: 
+ {</p>
+<p class="myCodeP">                    &quot;resTitle&quot;: 
+ &quot;changchun1&quot;</p>
+<p class="myCodeP">                },</p>
+<p class="myCodeP">                &quot;dataExt&quot;: 
+ {</p>
+<p class="myCodeP">                    &quot;geoEle&quot;: 
+ {</p>
+<p class="myCodeP">                        &quot;geoBndBox&quot;: 
+ {</p>
+<p class="myCodeP">                            &quot;westBL&quot;: 
+ &quot;0&quot;,</p>
+<p class="myCodeP">                            &quot;eastBL&quot;: 
+ &quot;0&quot;,</p>
+<p class="myCodeP">                            &quot;southBL&quot;: 
+ &quot;0&quot;,</p>
+<p class="myCodeP">                            &quot;northBL&quot;: 
+ &quot;0&quot;</p>
+<p class="myCodeP">                        }</p>
+<p class="myCodeP">                    },</p>
+<p class="myCodeP">                    &quot;exDesc&quot;: 
+ &quot;&quot;</p>
+<p class="myCodeP">                },</p>
+<p class="myCodeP">                &quot;idAbs&quot;: 
+ &quot;&quot;</p>
+<p class="myCodeP">            }</p>
+<p class="myCodeP">        },</p>
+<p class="myCodeP">        &quot;distInfo&quot;: 
+ {</p>
+<p class="myCodeP">            &quot;onLineSrc&quot;: 
+ {</p>
+<p class="myCodeP">                &quot;linkage&quot;: 
+ &quot;http://192.168.120.40:8091/iserver/services/map-changchun/rest&quot;</p>
+<p class="myCodeP">            }</p>
+<p class="myCodeP">        }</p>
+<p class="myCodeP">    },</p>
+<p class="myCodeP">    &quot;thumbnail&quot;: null,</p>
+<p class="myCodeP">    &quot;tokenRefreshUrl&quot;: 
+ null,</p>
+<p class="myCodeP">    &quot;previewUrl&quot;: &quot;https://arcgis.ispeco.com/ispeco&quot;</p>
+<p class="myCodeP">}</p>
+<p class="myNormal">则返回的 rjson 格式的表述如下：</p>
+<p class="myCodeP">{ &quot;succeed&quot;: true}</p>
+<h3><a id="DELETE 请求"></a>DELETE 请求</h3>
+<p class="myNormal">删除指定的服务或服务集合。</p>
+<h4>响应示例</h4>
+<p class="myNormal">对 service 资源：http://localhost:8190/iportal/web/services/3.rjson 
+ 执行 DELETE 请求，返回的 rjson 格式的表述如下：</p>
+<p class="myCodeP">{ &quot;succeed&quot;: true}</p>
+<h3><a id="HEAD 请求"></a>HEAD 请求</h3>
+<p class="myNormal">返回跟 GET 请求一样的 HTTP 响应头，但是没有响应实体。可以在不必传输整个响应内容的情况下，获取包含在响应消息头中的元数据信息。元数据信息包括媒体类型，字符编码，压缩编码，实体内容长度等。</p>
+<p class="myNormal">HEAD 请求可以用来判断 service 资源是否存在，或者客户端是否有权限访问 service 资源。通过对加.&lt;format&gt;的 
+ URI 执行 HEAD 请求，还可以快速判断 service 资源是否支持&lt;format&gt;格式的表述。</p>
+<h2>请参见</h2>
+<ul class="referenceList">
+	<li class="referenceList"><a class="contentpagehyperlink" href="../services.htm">services</a>、<a class="contentpagehyperlink" href="serviceCheckStatus.htm">serviceCheckStatus</a>、<a class="contentpagehyperlink" href="serviceOffline.htm">serviceOffline</a>、<a class="contentpagehyperlink" href="serviceShareSetting.htm">serviceShareSetting</a>、<a class="contentpagehyperlink" href="serviceStatus.htm">serviceStatus</a>、<a class="contentpagehyperlink" href="regionPermissions/regionPermissions.htm">regionPermissions</a></li>
+	<li class="referenceList"><a class="contentpagehyperlink" href="../../../clientBuildREST/ConstructRESTRequest.htm">客户端构建 
+	 REST 请求</a></li>
+	<li class="referenceList"><a class="contentpagehyperlink" href="../../../StatusCodeDescription.htm">状态码列表及说明</a></li>
+	<li class="referenceList"><a class="contentpagehyperlink" href="../../../SuperMap_iServer_REST_API_OutputFormat.htm">SuperMap 
+	 iServer REST API 表述格式介绍</a></li>
+	<li class="referenceList"><a class="contentpagehyperlink" href="../../../iPortalArchitecture.htm">资源层次结构</a></li>
+</ul>
+
+
+<p><br/></p></div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../../../../../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../../../../../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../../../../../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../../../../../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../../../../../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../../../../../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../../../../../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../../../../.."
+    gCommonRootRelPath = "../../../../.."
+    gTopicId = "8.2.4.12.7"
+  
+//]]></script>
+
+  <script src="../../../../../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../../../../../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../../../../../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../../../../../whxdata/layoutconfig.js"></script>
+  <script src="../../../../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

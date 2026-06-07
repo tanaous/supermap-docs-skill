@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../../../../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../../../../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../../../../../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../../../../iserver-icon.png"/>
+    
+  <script data-relpath="../../../../.." src="../../../../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <meta name="template" content="../../../../../assets/layouts/RESTAPI.htt"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Language" content="zh-CN"/>
+  <meta name="topic-status" content="Complete"/>
+  <meta name="topic-check-list" content="Ran Smart Index"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>serviceArea</title>
+  <link rel="StyleSheet" href="../../../../../assets/css/SuperMapHelp.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="TspPath:ServiceArea"/>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../../../../../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../assets/css/homeButtom.css"/>
+  <script src="../../../../../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../../../../../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../../../../../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../../../../../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../../../../../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../../../../../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../../../../../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../../../../../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../../../../../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <h2><a name="URI" id="URI"></a>URI</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="networkDataName.htm#URI">&lt;networkDataName_uri&gt;</a>/servicearea[.&lt;format&gt;]</p>
+  <h2>支持的方法</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="#GET 请求">GET</a>、<a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a></p>
+  <h2>父资源</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="networkDataName.htm">networkDataName</a></p>
+  <h2>介绍</h2>
+  <p class="myNormal">serviceArea 资源表示服务区分析功能，设置参数后，对 serviceArea 资源执行 GET 请求，可以获取服务区分析的结果。有关服务区分析的详细介绍，请参见：<a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/TransportationAnalyst.html#findServiceArea(int[], double[], boolean, boolean, java.lang.String, com.supermap.services.components.commontypes.analyst.TransportationAnalystParameter)">服务区分析</a>。</p>
+  <p class="myNormal" style="font-weight: bold;">支持的方法：</p>
+  <ul class="supportList" style="list-style: disc;">
+    <li class="supportList"><a class="contentpagehyperlink" href="#GET 请求">GET</a>：获取服务区分析的结果。</li>
+    <li class="supportList"><a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a>：检查 serviceArea 资源是否存在，或权限是否可以访问 serviceArea 资源。</li>
+  </ul>
+  <p class="myNormal"><span style="font-weight: bold;">支持的表述格式：</span>rjson、json、jsonp、html、xml。</p>
+  <h2>资源层次</h2>
+  <p class="myNormal"><img alt="" border="0" height="216" src="../../../../../assets/images/root/networkanalyst/networkDataName/serviceArea.png" style="border: none;" usemap="#MAP278139435" width="377"/><map id="MAP278139435" name="MAP278139435"><area alt="resources.htm" coords="3, 3, 259, 44" href="../../root.htm" shape="rect"/> <area alt="" coords="86, 55, 245, 96" href="../networkanalyst.htm" shape="rect"/> <area alt="" coords="220, 173, 376, 214" href="servicearea.htm" shape="rect"/> <area alt="" coords="143, 109, 309, 157" href="networkDataName.htm" shape="rect"/></map></p>
+  <h2>HTTP 请求方法</h2>
+  <p class="myNormal">对如下 URI 执行 HTTP 请求，以 rjson 输出格式为例加以说明，其中，supermapiserver 是服务器名，RoadNet@Changchun 为可进行分析的网络数据名称。[2,4]为要进行分析的服务中心点数组，[500,1000]为服务半径。</p>
+  <p class="uriStyle">http://supermapiserver:8090/iserver/services/transportationanalyst-sample/rest/networkanalyst/RoadNet@Changchun/servicearea.rjson?centers=[2,4]&amp;weights=[500,1000]</p>
+  <h3><a id="GET 请求"></a>GET 请求</h3>
+  <p class="myNormal">获取服务区分析的结果。</p>
+  <p class="myNormal"><strong>请求参数</strong></p>
+  <p class="myNormal">对 serviceArea 资源执行 GET 请求，需要在 URI 中包含一些参数，如下：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>名称</td>
+        <td>类型</td>
+        <td>含义</td>
+      </tr>
+      <tr class="t2Row">
+        <td>centers</td>
+        <td>int[]/<a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/Point2D.html">Point2D</a>[]</td>
+        <td>【必选参数】 服务中心集合。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>weights</td>
+        <td>double []</td>
+        <td>【必选参数】 服务半径集合。该集合的大小跟服务中心个数一致， 标识了在对每个服务中心进行服务区分析时，所用的范围值。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>isFromCenter</td>
+        <td>boolean</td>
+        <td>是否从中心点开始分析。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>isCenterMutuallyExclusive</td>
+        <td>boolean</td>
+        <td>按照中心点的距离进行判断是否要进行互斥处理。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>parameter</td>
+        <td><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/TransportationAnalystParameter.html">TransportationAnalystParameter</a></td>
+        <td>交通网络分析通用参数。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>isReturnComplexArea</td>
+        <td>boolean</td>
+        <td>是否返回详细服务区面。默认为false，返回默认服务区面，不返回详细服务区面。
+          <ul style="list-style: disc;">
+            <li>默认服务区面，能覆盖结果路由的凸面做为的结果服务区面。</li>
+            <li>详细服务区面，严格按照生成路由生成的面轮廓结果，分析结果较默认服务区面更准确，但分析时间更长。</li>
+          </ul>
+        </td>
+      </tr>
+      <tr class="t2Row">
+        <td>serviceBufferRadius</td>
+        <td>double</td>
+        <td>服务区缓冲半径，单位为米，默认值为 100。仅当 isReturnComplexArea 为 true 时此参数生效。</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><strong>响应结构</strong></p>
+  <p class="myNormal">执行服务区分析功能，返回的操作结果表述的结构如下（表述在响应消息的实体主体里）：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>字段</td>
+        <td>类型</td>
+        <td>说明</td>
+      </tr>
+      <tr class="t2Row">
+        <td>serviceAreaList</td>
+        <td>List&lt;<a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/ServiceAreaResult.html">ServiceAreaResult</a>&gt;</td>
+        <td>服务区集合，集合中的第 i 个元素对应第 i 个服务中心的服务区。</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><strong>响应示例</strong></p>
+  <p class="myNormal">对 RoadNet@Changchun 数据集执行服务器分析，即对如下 URI 执行 GET 请求：</p>
+  <p class="myCodeP">http://supermapiserver:8090/iserver/services/transportationAnalyst-Changchun/rest/networkanalyst/RoadNet@Changchun/servicearea.rjson?centers=[2,4]&amp;weights=[500,1000]&amp;isReturnComplexArea=true</p>
+  <p class="myNormal">获取的响应内容如下：</p>
+  <p><textarea cols="" id="txtComments" rows="" style="overflow: scroll; 
+			 width: 90%; height: 200px;">{&quot;serviceAreaList&quot;: [
+      {
+      &quot;nodeIDs&quot;: [],
+      &quot;routes&quot;: null,
+      &quot;edgeFeatures&quot;: null,
+      &quot;serviceRegion&quot;: {
+      &quot;center&quot;: {
+      &quot;x&quot;: 539.4359256472071,
+      &quot;y&quot;: -346.768701108465
+      },
+      &quot;parts&quot;: [7],
+      &quot;style&quot;: null,
+      &quot;prjCoordSys&quot;: {
+      &quot;distanceUnit&quot;: &quot;METER&quot;,
+      &quot;projectionParam&quot;: null,
+      &quot;epsgCode&quot;: -1000,
+      &quot;coordUnit&quot;: &quot;METER&quot;,
+      &quot;name&quot;: &quot;Planar Coordinate System---m&quot;,
+      &quot;projection&quot;: null,
+      &quot;type&quot;: &quot;PCS_NON_EARTH&quot;,
+      &quot;coordSystem&quot;: null
+      },
+      &quot;id&quot;: 1,
+      &quot;type&quot;: &quot;REGION&quot;,
+      &quot;partTopo&quot;: null,
+      &quot;points&quot;: [
+      {
+      &quot;x&quot;: 807.8129256274714,
+      &quot;y&quot;: -638.7967667715142
+      },
+      {
+      &quot;x&quot;: 718.8573024004489,
+      &quot;y&quot;: -90.67745939303335
+      },
+      {
+      &quot;x&quot;: 644.6426001116747,
+      &quot;y&quot;: -56.3684221475969
+      },
+      {
+      &quot;x&quot;: 70.1515638200593,
+      &quot;y&quot;: -54.7406354454158
+      },
+      {
+      &quot;x&quot;: 51.24697567265779,
+      &quot;y&quot;: -143.5445914099502
+      },
+      {
+      &quot;x&quot;: 51.214357235925725,
+      &quot;y&quot;: -187.29277488685227
+      },
+      {
+      &quot;x&quot;: 807.8129256274714,
+      &quot;y&quot;: -638.7967667715142
+      }
+      ]
+      },
+      &quot;nodeFeatures&quot;: null,
+      &quot;edgeIDs&quot;: []
+      },
+      {
+      &quot;nodeIDs&quot;: [],
+      &quot;routes&quot;: null,
+      &quot;edgeFeatures&quot;: null,
+      &quot;serviceRegion&quot;: {
+      &quot;center&quot;: {
+      &quot;x&quot;: 692.3220659470384,
+      &quot;y&quot;: -672.3272409177129
+      },
+      &quot;parts&quot;: [11],
+      &quot;style&quot;: null,
+      &quot;prjCoordSys&quot;: {
+      &quot;distanceUnit&quot;: &quot;METER&quot;,
+      &quot;projectionParam&quot;: null,
+      &quot;epsgCode&quot;: -1000,
+      &quot;coordUnit&quot;: &quot;METER&quot;,
+      &quot;name&quot;: &quot;Planar Coordinate System---m&quot;,
+      &quot;projection&quot;: null,
+      &quot;type&quot;: &quot;PCS_NON_EARTH&quot;,
+      &quot;coordSystem&quot;: null
+      },
+      &quot;id&quot;: 2,
+      &quot;type&quot;: &quot;REGION&quot;,
+      &quot;partTopo&quot;: null,
+      &quot;points&quot;: [
+      {
+      &quot;x&quot;: 283.27162882499226,
+      &quot;y&quot;: -1289.91384639001
+      },
+      {
+      &quot;x&quot;: 969.0134108428755,
+      &quot;y&quot;: -1067.888376620211
+      },
+      {
+      &quot;x&quot;: 997.2203541988224,
+      &quot;y&quot;: -1041.5399300224415
+      },
+      {
+      &quot;x&quot;: 1376.1193321396074,
+      &quot;y&quot;: -444.03096583216876
+      },
+      {
+      &quot;x&quot;: 1294.774446104217,
+      &quot;y&quot;: -58.420491670593066
+      },
+      {
+      &quot;x&quot;: 1169.4632181338036,
+      &quot;y&quot;: -57.97813949467999
+      },
+      {
+      &quot;x&quot;: 644.6426001116747,
+      &quot;y&quot;: -56.3684221475969
+      },
+      {
+      &quot;x&quot;: 70.1515638200593,
+      &quot;y&quot;: -54.7406354454158
+      },
+      {
+      &quot;x&quot;: 51.24697567265779,
+      &quot;y&quot;: -143.5445914099502
+      },
+      {
+      &quot;x&quot;: 51.214357235925725,
+      &quot;y&quot;: -187.29277488685227
+      },
+      {
+      &quot;x&quot;: 283.27162882499226,
+      &quot;y&quot;: -1289.91384639001
+      }
+      ]
+      },
+      &quot;nodeFeatures&quot;: null,
+      &quot;edgeIDs&quot;: []
+      }
+      ]}
+    </textarea></p>
+  <h3><a id="HEAD 请求"></a>HEAD 请求</h3>
+  <p class="myNormal">返回跟 GET 请求一样的 HTTP 响应头，但是没有响应实体。可以在不必传输整个响应内容的情况下，获取包含在响应消息头中的元数据信息。元数据信息包括媒体类型，字符编码，压缩编码，实体内容长度等。</p>
+  <p class="myNormal">HEAD 请求可以用来判断 serviceArea 资源是否存在，或者客户端是否有权限访问 serviceArea 资源。通过对加.&lt;format&gt;的 URI 执行 HEAD 请求，还可以快速判断 serviceArea 资源是否支持&lt;format&gt;格式的表述。</p>
+  <h2>请参见</h2>
+  <ul class="referenceList">
+    <li class="referenceList"><a class="contentpagehyperlink" href="networkDataName.htm">networkDataName</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../clientBuildREST/ConstructRESTRequest.htm">客户端构建 REST 请求</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../StatusCodeDescription.htm">状态码列表及说明</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../SuperMap_iServer_REST_API_OutputFormat.htm">SuperMap iServer REST API 表述格式介绍</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../resource_hierarchy.htm">GIS 服务资源层次结构</a></li>
+  </ul>
+  <p> </p>
+
+</div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../../../../../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../../../../../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../../../../../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../../../../../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../../../../../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../../../../../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../../../../../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../../../../.."
+    gCommonRootRelPath = "../../../../.."
+    gTopicId = "8.2.2.6.12.1.10"
+  
+//]]></script>
+
+  <script src="../../../../../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../../../../../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../../../../../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../../../../../whxdata/layoutconfig.js"></script>
+  <script src="../../../../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

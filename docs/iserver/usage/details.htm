@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../iserver-icon.png"/>
+    
+  <script data-relpath=".." src="../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <meta name="template" content="../assets/layouts/SuperMapiServerMain.htt"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Language" content="zh-CN"/>
+  <meta name="topic-check-list" content="Ran Smart Index"/>
+  <meta name="topic-status" content="Complete"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>各层次模块</title>
+  <link rel="StyleSheet" href="../assets/css/SuperMapHelp.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="各层次模块介绍"/>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../assets/css/homeButtom.css"/>
+  <script src="../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <p class="myNormal">SuperMap iServer 定义了 GIS 服务的整体框架，即三层服务结构。在这三个层次中，SuperMap iServer 分别提供一些默认的模块，如 Provider 层中利用 UGC 内核实现 GIS 功能的 UGCMapProvider，Component 层对基础地图功能进行封装的 Map 模块，如下表。用户可以直接对这些模块进行配置，从而发布出各种适应需求的 GIS 服务。</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="60%">
+    <colgroup>
+      <col style="width: 18%;"/>
+      <col style="width: 25%;"/>
+      <col style="width: 25%;"/>
+      <col style="width: 35%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>体系结构   </td>
+        <td>模块类型</td>
+        <td>模块名称</td>
+        <td>模块的作用</td>
+      </tr>
+      <tr class="t2Row">
+        <td rowspan="40">Provider 层</td>
+        <td rowspan="19">MapProvider</td>
+        <td>UGCMapProvider</td>
+        <td>利用 SuperMap 工作空间数据实现基础地图操作。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>RestMapProvider</td>
+        <td>利用在线的 iServer REST Map 服务实现基础地图操作。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>CloudMapProvider</td>
+        <td>利用超图云服务实现基础地图操作。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>GDPMapProvider</td>
+        <td>利用超图 GDP（*.zip）瓦片包实现基础地图操作。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>MongoDBTileProvider</td>
+        <td>利用 MongoDB 存储的瓦片实现基础地图操作。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>SMTilesMapProvider</td>
+        <td>利用 SMTiles 或 MBTiles 瓦片包实现基础地图操作。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>SVTilesMapProvider</td>
+        <td>利用 SVTiles 瓦片包实现地图操作。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>UGCV5TileProvider</td>
+        <td>利用 UGC V5格式的地图瓦片实现基础地图操作。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>WMSMapProvider</td>
+        <td>利用第三方 WMS 服务实现基础地图操作。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>WMTSMapProvider</td>
+        <td>利用第三方 WMTS 服务实现基础地图操作。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>BingMapsMapProvider</td>
+        <td>利用 Bing Maps 服务实现基础地图操作。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>TiandituMapProvider</td>
+        <td>利用天地图服务实现基础地图操作。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>ArcGISRestMapProvider</td>
+        <td>利用 ArcGIS REST Map 服务实现基础地图操作。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>tpkMapProvider</td>
+        <td>利用 ArcGIS TPK（*.tpk）瓦片包实现基础地图操作。</td>
+      </tr>
+      <tr>
+        <td>tpkxMapProvider</td>
+        <td>利用 ArcGIS TPKX（*.tpkx）瓦片包实现基础地图操作。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>BaiduMapProvider</td>
+        <td>利用百度地图服务实现基础地图操作。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>OpenStreetMapProvider</td>
+        <td>利用 OpenStreetMap 服务实现基础地图操作。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>AggregationMapProvider</td>
+        <td>将多来源地图服务进行聚合实现基础地图操作。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>GeoPackageMapProvider</td>
+        <td>利用 GeoPackage 瓦片包实现基础地图操作。</td>
+      </tr>
+      <tr class="t1Row">
+        <td rowspan="5">DataProvider</td>
+        <td>UGCDataProvider</td>
+        <td>利用 SuperMap 工作空间数据实现数据管理相关功能。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>WFSDataProvider</td>
+        <td>利用第三方 WFS 服务实现数据管理相关功能。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>RestDataProvider</td>
+        <td>利用 RSET Data 服务实现数据管理相关功能。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>AggregationDataProvider</td>
+        <td>将多来源数据进行聚合实现数据管理相关功能。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>GeoPackageDataProvider</td>
+        <td>利用 GeoPackage 数据包实现数据管理相关功能。</td>
+      </tr>
+      <tr class="t2Row">
+        <td rowspan="3">TransportationAnalystProvider</td>
+        <td>UGCTransportationAnalystProvider</td>
+        <td>利用 SuperMap 工作空间数据实现交通网络分析功能。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>RestTransportationAnalystProvider</td>
+        <td>利用 REST TransportationAnalyst 服务实现交通网络分析服务功能。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>ArcGISRestNetworkAnalystProvider</td>
+        <td>利用 ArcGIS REST 网络分析服务实现网络分析功能。</td>
+      </tr>
+      <tr class="t1Row">
+        <td rowspan="2">SpatialAnalystProvider</td>
+        <td>UGCSpatialAnalystProvider</td>
+        <td>利用 SuperMap 工作空间数据实现空间分析功能。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>RestSpatialAnalystProvider</td>
+        <td>利用 REST SpatialAnalyst 服务实现空间分析服务功能。</td>
+      </tr>
+      <tr class="t1Row">
+        <td rowspan="2">TrafficTransferAnalystProvider</td>
+        <td>UGCTrafficTransferAnalystProvider</td>
+        <td>利用 SuperMap 工作空间数据实现交通换乘分析功能。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>RestTrafficTransferAnalystProvider</td>
+        <td>利用 REST TrafficTransferAnalyst 服务实现交通换乘分析服务功能。</td>
+      </tr>
+      <tr class="t1Row">
+        <td rowspan="3">RealspaceProvider</td>
+        <td>UGCRealspaceProvider</td>
+        <td>利用 SuperMap 工作空间数据实现三维相关功能。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>RestRealspaceProvider</td>
+        <td>利用 REST 三维服务实现三维相关功能。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>MongoDBRealspaceProvider</td>
+        <td>利用 MongoDB 瓦片实现三维相关功能。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>NetworkAnalyst3DProvider</td>
+        <td>UGCNetworkAnalyst3DProvider</td>
+        <td>利用 SuperMap 工作空间数据实现三维网络分析相关功能。</td>
+      </tr>
+      <tr class="t1Row">
+        <td colspan="2">DSSProvider（领域空间服务提供者）</td>
+        <td>自定义领域空间服务提供者，用于实现特殊业务的空间处理功能。该模块是用户自定义的模块。</td>
+      </tr>
+      <tr>
+        <td>MVTProvider</td>
+        <td>UGCMVTProvider</td>
+        <td>利用 SuperMap 工作空间数据实现矢量瓦片相关功能。</td>
+      </tr>
+      <tr>
+        <td colspan="1" rowspan="2">AddressMatchProvider</td>
+        <td>UGCAddressMatchProvider</td>
+        <td>利用 SuperMap 工作空间数据实现地址匹配相关功能。</td>
+      </tr>
+      <tr>
+        <td>ArcGISRestGeocodeProvider</td>
+        <td>利用 ArcGIS REST Geocode 服务实现地址匹配操作。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>PlotProvider</td>
+        <td>UGCPlotProvider</td>
+        <td>利用Plot标号库文件实现动态标绘相关功能。</td>
+      </tr>
+      <tr class="t1Row">
+        <td rowspan="11">Component 层</td>
+        <td>Map  </td>
+        <td>MapImpl</td>
+        <td>将 MapProvider 类型的 Provider 模块进行功能封装。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>Data  </td>
+        <td>DataImpl</td>
+        <td>将 DataProvider 类型的 Provider 模块进行功能封装。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>TransportationAnalyst</td>
+        <td>TransportationAnalystImpl</td>
+        <td>将 TransportationAnalystProvider 类型的 Provider 模块进行功能封装。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>SpatialAnalyst</td>
+        <td>SpatialAnalystImpl</td>
+        <td>将 SpatialAnalystProvider 类型的 Provider 模块进行功能封装。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>TrafficTransferAnalyst</td>
+        <td>TrafficTransferAnalyst</td>
+        <td>将 TrafficTransferAnalystProvider 类型的 Provider 模块进行功能封装。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>Realspace</td>
+        <td>RealspaceImpl</td>
+        <td>将 RealspaceProvider 类型的 Provider 模块进行功能封装。</td>
+      </tr>
+      <tr>
+        <td>VectorTile</td>
+        <td>VectorTileImpl</td>
+        <td>将 UGCMVTProvider 类型的 Provider 模块进行功能封装。</td>
+      </tr>
+      <tr>
+        <td>AddressMatch</td>
+        <td>AddressMatchImpl</td>
+        <td>将 AddressMatchProvider 类型的 Provider 模块进行功能封装。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>NetworkAnalyst3D</td>
+        <td>NetworkAnalyst3DImpl</td>
+        <td>将 FacilityAnalyst3DProvider 类型的 Provider 模块进行功能封装。</td>
+      </tr>
+      <tr class="t2Row">
+        <td colspan="2">DSSComponent（领域空间服务组件）</td>
+        <td>自定义领域空间服务组件，它是用户自定义的模块。该组件可以：
+          <ol class="ListInParagraph" style="list-style: decimal;">
+            <li class="ListInParagraph">封装 Provider 层中任意模块；</li>
+            <li class="ListInParagraph">利用 DSSComponent 直接实现特殊业务的空间处理。</li>
+          </ol>
+        </td>
+      </tr>
+      <tr class="t1Row">
+        <td>Plot  </td>
+        <td>PlotImpl</td>
+        <td>将 PlotProvider 类型的 Provider 模块进行功能封装。</td>
+      </tr>
+      <tr class="t2Row">
+        <td rowspan="14"><a id="Interface"></a>Interface 层</td>
+        <td colspan="2">RestServlet</td>
+        <td>将除 SpatialAnalyst 组件之外的各种 Component 组件以 REST 风格的形式进行发布（Restlet 机制）。</td>
+      </tr>
+      <tr class="t1Row">
+        <td colspan="2">JaxrsServletForJersey</td>
+        <td>将 SpatialAnalyst 等组件以 REST 风格的形式进行发布（JAX-RS 机制）。</td>
+      </tr>
+      <tr class="t2Row">
+        <td colspan="2">AGSRestServlet<span style="vertical-align: Super;">1</span></td>
+        <td>将地图服务组件发布为 ArcGIS REST 服务。</td>
+      </tr>
+      <tr class="t1Row">
+        <td colspan="2">BaiduRestServlet<span style="vertical-align: Super;">1</span> </td>
+        <td>将地图服务组件发布为 Baidu REST 服务。</td>
+      </tr>
+      <tr class="t2Row">
+        <td colspan="2">GoogleRestServlet<span style="vertical-align: Super;">1</span></td>
+        <td>将地图服务组件发布为 Google REST 服务。</td>
+      </tr>
+      <tr class="t1Row">
+        <td colspan="2">OSMRestServlet<span style="vertical-align: Super;">1</span></td>
+        <td>将地图服务组件发布为 OSM REST 服务。</td>
+      </tr>
+      <tr class="t2Row">
+        <td colspan="2">TMSRestServlet<span style="vertical-align: Super;">1</span></td>
+        <td>将地图服务组件发布为 TMS REST 服务。</td>
+      </tr>
+      <tr class="t1Row">
+        <td colspan="2">WMSSerlvet  </td>
+        <td>将地图服务组件发布成 WMS 服务。</td>
+      </tr>
+      <tr class="t2Row">
+        <td colspan="2">WMTSServlet</td>
+        <td>
+          <p>将地图服务组件发布成 WMTS 服务。</p>
+        </td>
+      </tr>
+      <tr class="t1Row">
+        <td colspan="2">WFSServlet</td>
+        <td>将数据管理服务发布成 WFS 服务。</td>
+      </tr>
+      <tr class="t2Row">
+        <td colspan="2">WCSServlet</td>
+        <td>将覆盖服务组件发布成 WCS 服务。</td>
+      </tr>
+      <tr class="t1Row">
+        <td colspan="2">WPSServlet</td>
+        <td>将空间分析组件发布成 WPS 服务。</td>
+      </tr>
+      <tr class="t2Row">
+        <td colspan="2">HandlerServlet</td>
+        <td>将三维之外的其他组件，以 Handler 接口形式进行发布，用于对接 SuperMap iServer 2008。</td>
+        <td> </td>
+      </tr>
+      <tr class="t1Row">
+        <td colspan="2">DSSServlet</td>
+        <td>实现固定形式的服务发布机制，是用户自定义的模块。该 Servlet/Interface 可以：
+          <ol class="ListInParagraph" style="list-style: decimal;">
+            <li class="ListInParagraph">实现系统所需的公开的 SuperMap iServer 并未提供的服务形式，如 WPS 服务；</li>
+            <li class="ListInParagraph">实现符合自身系统特殊要求的形式的服务。</li>
+          </ol>
+        </td>
+        <td> </td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="myNormal" style="font-weight: bold;">注1：iServer高级版，iEdge提供该接口。</p>
+  <p class="myNormal">由于上述各个模块都对应各自特有的功能，因此在进行模块组装，以便构建 GIS 服务的时候，需要将各个层次上的具有相同服务能力的模块进行组合，不能将两个具有不同服务能力的模块进行组合，如具有地图服务能力的 UGCMapProvider 可以被 MapComponent 调用，但是不能够被 DataComponent 调用。</p>
+  <p class="myNormal"> </p>
+
+</div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = ".."
+    gCommonRootRelPath = ".."
+    gTopicId = "4.1.1"
+  
+//]]></script>
+
+  <script src="../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../whxdata/layoutconfig.js"></script>
+  <script src="../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

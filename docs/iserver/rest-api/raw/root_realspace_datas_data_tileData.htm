@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../../../../../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../../../../../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../../../../../../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../../../../../iserver-icon.png"/>
+    
+  <script data-relpath="../../../../../.." src="../../../../../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <meta name="template" content="../../../../../../assets/layouts/RESTAPI.htt"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Language" content="zh-CN"/>
+  <meta name="topic-check-list" content="Ran Smart Index"/>
+  <meta name="topic-status" content="Complete"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>tileData</title>
+  <link rel="StyleSheet" href="../../../../../../assets/css/SuperMapHelp.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="TileData"/>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../../../../../../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../../assets/css/homeButtom.css"/>
+  <script src="../../../../../../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../../../../../../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../../../../../../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../../../../../../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../../../../../../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../../../../../../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../../../../../../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../../../../../../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../../../../../../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <h2><a name="URI" id="URI"></a>URI</h2>
+  <ol class="ListInParagraph" style="list-style: decimal;">
+    <li class="ListInParagraph"><a class="contentpagehyperlink" href="data.htm#URI">&lt;data_uri&gt;</a>/data/index/{nRow}/{nCol}.{fileExtension}</li>
+    <li class="ListInParagraph"><a class="contentpagehyperlink" href="data.htm#URI">&lt;data_uri&gt;</a>/data/path/{filePath}.{fileExtension}</li>
+  </ol>
+  <h2>支持的方法</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="#GET 请求">GET</a>、<a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a></p>
+  <h2>父资源</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="data.htm">data</a></p>
+  <h2>介绍</h2>
+  <p class="myNormal">缓存文件，即瓦片数据。 可以根据瓦片数据的索引，或者数据文件的路径来唯一确定某一瓦片数据，所以有两种 URI 模板。其中 URI1表示通过瓦片数据的索引来获取，URI2 表示通过瓦片数据文件的路径来获取，数据文件的路径为相对路径（相对于瓦片数据的配置文件所在的目录，路径用“/”来分隔）。此外，通过 URI2还可以进行瓦片数据的打包下载，详细使用方法请参考 URI2的参数介绍。</p>
+  <p class="myNormal">注意：KML 数据没有索引的概念，所以只能通过 URI2 的形式，即通过数据文件的路径来获取，获取的是 KML 数据本身。</p>
+  <p class="myNormal" style="font-weight: bold;">支持的方法：</p>
+  <ul class="supportList" style="list-style: disc;">
+    <li class="supportList"><a class="contentpagehyperlink" href="#GET 请求">GET</a>：获取三维缓存数据里确定的一块缓存文件。</li>
+    <li class="supportList"><a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a>：检查 tileData 资源是否存在，或权限是否可以访问 tileData 资源。</li>
+  </ul>
+  <p class="myNormal"><span style="font-weight: bold;">支持的表述格式：</span>tileData 资源的表述格式就是三维数据的后缀，瓦片数据的后缀（{fileExtension}）随瓦片数据类型的不同而不同，列表如下：</p>
+  <p style="text-align: center;"><a id="表_瓦片数据后缀"></a>表：瓦片数据后缀</p>
+  <table align="center" cellspacing="0" class="iServerTable" style="left: 158px; top: 395px;" width="568">
+    <colgroup>
+      <col style="width: 113px;"/>
+      <col style="width: 352px;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td style="text-align: center;">数据类型</td>
+        <td style="text-align: center;">数据后缀</td>
+      </tr>
+      <tr class="t2Row">
+        <td style="">影像瓦片数据</td>
+        <td style="">png、jpeg</td>
+      </tr>
+      <tr class="t1Row">
+        <td style="">地形瓦片数据</td>
+        <td style="">bil</td>
+      </tr>
+      <tr class="t2Row">
+        <td style="">三维模型缓存数据</td>
+        <td style="">scvb、scvd 缓存数据，与 JPG、bmp、png 等模型纹理图片格式。</td>
+      </tr>
+      <tr class="t1Row">
+        <td style="">KML 数据</td>
+        <td style="">kml、kmz</td>
+      </tr>
+      <tr class="t2Row">
+        <td style="">SuperMap 矢量数据</td>
+        <td style="">scvb、scvd （如果后缀为 scvb，那么服务端返回空间信息，如果是 scvd，那么返回属性信息。）</td>
+      </tr>
+      <tr class="t1Row">
+        <td style="">栅格体数据</td>
+        <td style="">scvo</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>资源层次</h2>
+  <p><img alt="" border="0" src="../../../../../../assets/images/root/Realspace/datas/data/tileData.png" usemap="#DrawArea"/><map id="DrawArea" name="DrawArea"><area alt="根资源" coords="10, 5, 264, 46" href="../../../root.htm" shape="rect"/> <area alt="3D 资源" coords="68, 52, 214, 93" href="../../realspace.htm" shape="rect"/> <area alt="datas 资源" coords="112, 98, 258, 139" href="../datas.htm" shape="rect"/> <area alt="data 资源" coords="156, 145, 302, 198" href="data.htm" shape="rect"/> <area alt="tiledata 资源" coords="197, 211, 500, 266" href="tiledata.htm" shape="rect"/></map></p>
+  <h2>HTTP 请求方法</h2>
+  <p class="myNormal">对如下 URI 执行 HTTP 请求，以“WorldMap”数据为例加以说明，其中 supermapiserver 是服务器名。</p>
+  <p class="uriStyle">http://supermapiserver:8090/iserver/services/3D-sample/rest/realspace/datas/WorldMap/data/index/1/1.png?level=1</p>
+  <h3><a id="GET 请求"></a>GET 请求</h3>
+  <p class="myNormal">获取瓦片数据资源，即确定的某块缓存文件。</p>
+  <h4>请求参数</h4>
+  <p class="myNormal">对 tileData 资源执行 GET 请求，需要在 URI 中包含一些参数。</p>
+  <p class="myNormal">对于 URI1 而言，“？”之前传递的参数如下：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td style="text-align: center">名称</td>
+        <td style="text-align: center">类型</td>
+        <td style="text-align: center">含义</td>
+      </tr>
+      <tr class="t2Row">
+        <td>nCol</td>
+        <td>int</td>
+        <td>为缓存文件对应的分块在全球剖分格网中的列号。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>nRow</td>
+        <td>int</td>
+        <td>为缓存文件对应的分块在全球剖分格网中的行号。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>fileExtension</td>
+        <td>String</td>
+        <td>瓦片数据的后缀。（参见：<a class="contentpagehyperlink" href="#表_瓦片数据后缀">瓦片数据后缀</a>）</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="myNormal">“？”之后传递的参数是可选的，列举如下：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td style="text-align: center">名称</td>
+        <td style="text-align: center">类型</td>
+        <td style="text-align: center">含义</td>
+      </tr>
+      <tr class="t2Row">
+        <td>scale</td>
+        <td>double</td>
+        <td>数据切片的比例尺，推荐通过 scale 参数而不是 level 请求切片数据。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>level</td>
+        <td>int</td>
+        <td>数据切片的级别。当数据为二维地图瓦片时，或7.1以前版本的缓存数据时，为必选参数。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>dataVersion</td>
+        <td>String</td>
+        <td>数据版本。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>userName</td>
+        <td>String</td>
+        <td>用户名。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>userPassword</td>
+        <td>String</td>
+        <td>用户密码。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>serviceVersion</td>
+        <td>String</td>
+        <td>服务的版本 。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>_cache</td>
+        <td>boolean</td>
+        <td>是否使用缓存，默认为 true。如果为 false，则关闭所有缓存。</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="myNormal">SuperMap iServer 还支持通过具体图层名来获取影像瓦片数据，可通过在 URI1 “？”之后传递 sceneName 和 layerName 参数来获取。描述如下：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td style="text-align: center">名称</td>
+        <td style="text-align: center">类型</td>
+        <td style="text-align: center">含义</td>
+      </tr>
+      <tr class="t2Row">
+        <td>sceneName</td>
+        <td>String</td>
+        <td>【可选参数】 场景名。当请求具体图层的影像瓦片数据时，为必选参数。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>layerName</td>
+        <td>String</td>
+        <td>【可选参数】 图层名。当请求具体图层的影像瓦片数据时，为必选参数。</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="myNormal" style="text-align: center;"> </p>
+  <p class="myNormal">对于 URI2 而言，“？”之前传递的参数如下：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td style="text-align: center">名称</td>
+        <td style="text-align: center">类型</td>
+        <td style="text-align: center">含义</td>
+      </tr>
+      <tr class="t2Row">
+        <td>filePath</td>
+        <td>String</td>
+        <td>两种用途：
+          <p>1. 要下载单个瓦片数据文件时，表示单个瓦片数据文件的相对路径（相对于瓦片数据集本身的配置文件所在的目录算起）；</p>
+          <p>2. 要打包下载瓦片数据文件时，表示打包下载的瓦片数据文件数组，包含数据的相对路径和文件名及其后缀，形如：[/path1/a.png,/path1/b.png]。</p>
+        </td>
+      </tr>
+      <tr class="t1Row">
+        <td>fileExtension</td>
+        <td>String</td>
+        <td>对应 filePath，有两种情况： 1. 如果 filePath 表示单个瓦片数据文件的相对路径，fileExtension 则表示瓦片数据的后缀，如*.png，（参见：<a class="contentpagehyperlink" href="#表_瓦片数据后缀">瓦片数据后缀</a>）； 2. 如果 filePath 表示打包下载的瓦片数据文件数组，fileExtension 则表示要打包下载的瓦片数据文件数组的后缀，即打包文件的格式，目前仅支持*.7z。</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4>响应结构</h4>
+  <p class="myNormal">对 tileData 资源执行 GET 请求，返回的是瓦片数据资源（或 KML 数据本身），可以在客户端保存和使用。</p>
+  <h4>示例</h4>
+  <p class="myNormal">对示例 tileData 资源执行 GET 请求，URI 如下：</p>
+  <p class="myCodeP">http://supermapiserver:8090/iserver/services/3D-sample/rest/realspace/datas/WorldMap/data/index/1/1.png?level=1</p>
+  <p class="myNormal">则返回的是 WorldMap 级别为1，列号为1，行号为1的瓦片数据，如下图：</p>
+  <p style="text-align: center;"><img alt="" border="0" height="256" src="../../../../../../assets/images/root/Realspace/datas/data/tileData1.png" style="border: none;" width="256"/></p>
+  <h3><a id="HEAD 请求"></a>HEAD 请求</h3>
+  <p class="myNormal">返回跟 GET 请求一样的 HTTP 响应头，但是没有响应实体。可以在不必传输整个响应内容的情况下，获取包含在响应消息头中的元数据信息。元数据信息包括媒体类型，字符编码，压缩编码，实体内容长度等。</p>
+  <p class="myNormal">HEAD 请求可以用来判断 tileData 资源是否存在，或者客户端是否有权限访问 tileData 资源。通过对加.{fileExtension}的 URI 执行 HEAD 请求，还可以快速判断 tileData 资源是否支持.{fileExtension}格式的表述。</p>
+  <h2>请参见</h2>
+  <ul class="referenceList">
+    <li class="referenceList"><a class="contentpagehyperlink" href="data.htm">data</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../../clientBuildREST/ConstructRESTRequest.htm">客户端构建 REST 请求</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../../StatusCodeDescription.htm">状态码列表及说明</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../../SuperMap_iServer_REST_API_OutputFormat.htm">SuperMap iServer REST API 表述格式介绍</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../../resource_hierarchy.htm">GIS 服务资源层次结构</a></li>
+  </ul>
+  <p> </p>
+
+</div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../../../../../../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../../../../../../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../../../../../../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../../../../../../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../../../../../../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../../../../../../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../../../../../../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../../../../../.."
+    gCommonRootRelPath = "../../../../../.."
+    gTopicId = "8.2.2.6.1.3.1.4"
+  
+//]]></script>
+
+  <script src="../../../../../../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../../../../../../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../../../../../../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../../../../../../whxdata/layoutconfig.js"></script>
+  <script src="../../../../../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

@@ -1,0 +1,1437 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../../../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../../../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../../../../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../../../iserver-icon.png"/>
+    
+  <script data-relpath="../../../.." src="../../../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+<meta name="template" content="../../../../assets/layouts/RESTAPI.htt"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="Content-Language" content="zh-CN"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>services</title>
+<link rel="StyleSheet" href="../../../../assets/css/SuperMapHelp.css" type="text/css"/>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../../../../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../assets/css/homeButtom.css"/>
+  <script src="../../../../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../../../../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../../../../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../../../../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../../../../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../../../../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../../../../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../../../../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../../../../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+<h2><a id="URI"></a>URI</h2>
+<p class="myNormal">&lt;<a class="contentpagehyperlink" href="../Portal.htm">portal_uri</a>&gt;/services[.&lt;format&gt;]</p>
+<h2>支持的方法</h2>
+<p class="myNormal"><a class="contentpagehyperlink" href="#GET 请求">GET</a>、<a class="contentpagehyperlink" href="#POST 请求">POST</a>、<a class="contentpagehyperlink" href="#DELETE 请求">DELETE</a>、<a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a></p>
+<h2>父资源</h2>
+<p class="myNormal"><a class="contentpagehyperlink" href="../Portal.htm">portal</a></p>
+<h2>子资源</h2>
+<p class="myNormal"><a class="contentpagehyperlink" href="service/service.htm">service</a>、<a class="contentpagehyperlink" href="servicesCheckStatus.htm">servicesCheckStatus</a>、<a class="contentpagehyperlink" href="serviceShareSettings.htm">servicesShareSettings</a>、<a class="contentpagehyperlink" href="servicesStatus.htm">servicesStatus</a>、<a class="contentpagehyperlink" href="batchRegister/batchRegister.htm">batchRegister</a>、<a class="contentpagehyperlink" href="harvestBatchRegisterServices.htm">harvestBatchRegisterServices</a></p>
+<h2>介绍</h2>
+<p class="myNormal">services 资源是当前用户有权限查看的服务的集合，通过发送 POST 请求，可以申请注册新的单个服务；通过发送 
+ DETELE 请求，可以批量删除服务。普通的 iPortal 用户申请注册的服务默认不需要门户管理员审核即可注册到门户中。当然，门户管理员也可以开启服务审核功能，此时只有经过管理员审核通过后的服务才能注册到 
+ iPortal 门户中。审核单个服务的资源请参见：<a class="contentpagehyperlink" href="service/serviceCheckStatus.htm#PUT 请求">serviceCheckStatus 
+ 资源的 PUT 请求</a>。</p>
+<p class="myNormal" style="font-weight: bold;">支持的方法：</p>
+<ul style="list-style: disc;" class="supportList">
+	<li class="supportList"><a class="contentpagehyperlink" href="#GET 请求">GET</a>：根据查询参数获取服务列表信息。</li>
+	<li class="supportList"><a class="contentpagehyperlink" href="#POST 请求">POST</a>：申请注册新的单个服务。</li>
+	<li class="supportList"><a class="contentpagehyperlink" href="#DELETE 请求">DELETE</a>：删除服务，支持批量删除服务。</li>
+	<li class="supportList"><a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a>：检查 services 资源是否存在，或权限是否可以访问 
+	 services 资源。</li>
+</ul>
+<p class="myNormal"><span style="font-weight: bold;">支持的表述格式：</span>RJSON、JSON、HTML、XML。</p>
+<h2>资源层次</h2>
+<img src="../../../../assets/images/Portal/img/services.png" alt="" usemap="#MAP257101511" style="border: none;" border="0"/>
+<map id="MAP257101511" name="MAP257101511">
+<area shape="rect" coords="4, 2, 258, 44" href="../Portal.htm" alt=""/>
+<area shape="rect" coords="73, 57, 234, 98" href="services.htm" alt=""/>
+</map> 
+<h2>HTTP 请求方法</h2>
+<p class="myNormal">对如下 URI 执行 HTTP 请求，以 rjson 输出格式为例加以说明，其中，supermapiportal 
+ 是服务器名。</p>
+<p class="uriStyle">http://supermapiportal:8190/iportal/web/services.rjson</p>
+<h3><a id="GET 请求"></a>GET 请求</h3>
+<p class="myNormal">获取当前用户有权限查看的服务列表信息。</p>
+<h4 class="myNormal">请求参数</h4>
+<p class="myNormal">如果参数未设置，则返回用户有权限查看的当前第一页中的服务列表信息，设置参数后，会返回用户指定的服务列表信息，请求参数必须包含在 
+ URI 中。</p>
+<table class="iServerTable" cellspacing="0" width="70%" align="center">
+	<colgroup><col style="width: 15%;"/>
+	<col style="width: 15%;"/>
+	<col style="width: 70%;"/>
+	</colgroup><tbody><tr class="t1st">
+		<td>字段</td>
+		<td>类型</td>
+		<td>说明</td>
+	</tr>
+	<tr class="t2Row">
+		<td>ids</td>
+		<td>Integer[]</td>
+		<td>由服务项 id 组成的整型数组。</td>
+	</tr>
+	<tr class="t1Row">
+		<td>tags</td>
+		<td>String[]</td>
+		<td>根据标签过滤。</td>
+	</tr>
+	<tr class="t2Row">
+		<td>userNames</td>
+		<td>String[]</td>
+		<td>根据服务注册者名称过滤。</td>
+	</tr>
+	<tr class="t1Row">
+		<td>types</td>
+		<td><a class="contentpagehyperlink" href="../../../iServerJavadoc/com/supermap/iportal/web/commontypes/SourceType.html">SourceType</a>[]</td>
+		<td>根据服务类型过滤。</td>
+	</tr>
+	<tr class="t2Row">
+		<td>checkStatus</td>
+		<td><a class="contentpagehyperlink" href="../../../iServerJavadoc/com/supermap/iportal/web/commontypes/CheckStatus.html">CheckStatus</a></td>
+		<td>根据审核状态过滤。</td>
+	</tr>
+	<tr class="t1Row">
+		<td>isDataItemService</td>
+		<td>Boolean</td>
+		<td>根据是否为用户数据发布的服务过滤。</td>
+	</tr>
+	<tr class="t2Row">
+		<td>enable</td>
+		<td>Boolean</td>
+		<td>根据服务是否启用过滤。</td>
+	</tr>
+	<tr class="t1Row">
+		<td>offline</td>
+		<td>Boolean</td>
+		<td>根据服务是否离线过滤。</td>
+	</tr>
+	<tr class="t2Row">
+		<td>permissionType</td>
+		<td>String</td>
+		<td>根据权限类型过滤。权限类型包括 SEARCH（可检索）、READ（可查看）、DELETE（可删除）。</td>
+	</tr>
+	<tr class="t1Row">
+		<td><span style="font-style: italic;">shareToMe</span></td>
+		<td><span style="font-style: italic;">Boolean</span></td>
+		<td><span style="font-style: italic;">是否查询直接分享给我的资源。该参数已过期。</span></td>
+	</tr>
+	<tr class="t2Row">
+		<td>orderBy</td>
+		<td><a class="contentpagehyperlink" href="../../../iServerJavadoc/com/supermap/iportal/web/commontypes/ServiceSearchParameter.ServiceOrderBy.html">ServiceOrderBy</a></td>
+		<td>根据排序字段过滤。其中，按服务访问次数排序字段只有在启用服务代理功能后才生效。</td>
+	</tr>
+	<tr class="t1Row">
+		<td>orderType</td>
+		<td><a class="contentpagehyperlink" href="../../../iServerJavadoc/com/supermap/services/components/commontypes/SearchParameter.OrderType.html">OrderType</a></td>
+		<td>根据升序还是降序过滤。</td>
+	</tr>
+	<tr class="t2Row">
+		<td>keywords</td>
+		<td>String[]</td>
+		<td>根据关键字过滤。</td>
+	</tr>
+	<tr class="t1Row">
+		<td>currentPage</td>
+		<td>int</td>
+		<td>根据分页页码过滤。</td>
+	</tr>
+	<tr class="t2Row">
+		<td>pageSize</td>
+		<td>int</td>
+		<td>根据分页大小过滤。</td>
+	</tr>
+	<tr class="t1Row">
+		<td>isBatch</td>
+		<td>Boolean</td>
+		<td>根据服务是否是批量注册过滤。</td>
+	</tr>
+	<tr class="t2Row">
+		<td>dirIds</td>
+		<td>Integer[]</td>
+		<td>根据目录 id 过滤。</td>
+	</tr>
+	<tr class="t1Row">
+		<td>returnSubDir</td>
+		<td>Boolean</td>
+		<td>是否查询子目录的资源。true 表示返回当前查询目录及其子目录的资源，false 表示仅返回当前目录的资源。</td>
+	</tr>
+	<tr class="t2Row">
+		<td>isNotInDir</td>
+		<td>Boolean</td>
+		<td>根据是否是未分组的进行过滤，默认值为 false。如果为 true，则返回所有未分组的服务列表信息；如果为 false，则返回全部的服务列表信息。 
+		 
+		未分组是指未添加到目录的服务列表资源。</td>
+	</tr>
+	<tr class="t1Row">
+		<td>searchScope</td>
+		<td><a class="contentpagehyperlink" href="../../../iServerJavadoc/com/supermap/iportal/web/commontypes/SearchScope.html">SearchScope</a></td>
+		<td>根据共享范围过滤。</td>
+	</tr>
+	<tr class="t2Row">
+		<td>filterFields</td>
+		<td><a class="contentpagehyperlink" href="../../../iServerJavadoc/com/supermap/iportal/web/commontypes/ServiceSearchParameter.FilterField.html">FilterFields</a>[]</td>
+		<td>用于关键字查询时的字段过滤。字段名称需大写。例如：根据服务注册者的关键字符过滤，则需要设置 keywords=[&quot;admin&quot;]&amp;filterFields=[&quot;NICKNAME&quot;]。</td>
+	</tr>
+	<tr class="t1Row">
+		<td><span style="font-style: italic;">accessMode</span></td>
+		<td><span style="font-style: italic;">AccessMode</span></td>
+		<td><span><i style="font-style: italic;">根据服务访问模式过滤。</i></span><span style="font-style: italic;">该参数已过期。</span></td>
+	</tr>
+	<tr class="t2Row">
+		<td><span style="font-style: italic;">authorizedOnly</span></td>
+		<td><span style="font-style: italic;">Boolean</span></td>
+		<td><span style="font-style: italic;">根据是否是已授权访问的服务过滤，默认 false，返回全部的服务列表；如果为 
+		 true，则只返回经过授权访问的服务。此参数仅在服务共享 v2 模式下有效，iPortal 默认使用的是 v2模式。该参数已过期。</span></td>
+	</tr>
+	<tr class="t1Row">
+		<td>visitStart</td>
+		<td>Long</td>
+		<td>查询此时间值及此时间值之后的访问量，如果为null或者小于0，则起始时间不限制。</td>
+	</tr>
+	<tr class="t2Row">
+		<td>visitEnd</td>
+		<td>Long</td>
+		<td>查询此时间值及此时间值之前的访问量，如果为null或者小于0，则截止时间不限制。</td>
+	</tr>
+	<tr class="t1Row">
+		<td>createStart</td>
+		<td>Long</td>
+		<td>查询此时间值及此时间值之后创建的服务，如果为null或者小于0，则起始时间不限制。</td>
+	</tr>
+	<tr class="t2Row">
+		<td>createEnd</td>
+		<td>Long</td>
+		<td>查询此时间值及此时间值之前创建的服务，如果为null或者小于0，则截止时间不限制。</td>
+	</tr>
+</tbody></table>
+<h4>响应结构</h4>
+<p class="myNormal">对 services 资源执行 GET 请求，返回当前用户有权查看的服务列表信息。由以下字段组成：</p>
+<table class="iServerTable" cellspacing="0" width="70%" align="center">
+	<colgroup><col style="width: 15%;"/>
+	<col style="width: 15%;"/>
+	<col style="width: 70%;"/>
+	</colgroup><tbody><tr class="t1st">
+		<td>字段</td>
+		<td>类型</td>
+		<td>说明</td>
+	</tr>
+	<tr class="t2Row">
+		<td>content</td>
+		<td>List&lt;<a class="contentpagehyperlink" href="../../../iServerJavadoc/com/supermap/iportal/web/commontypes/ServiceInfo.html">ServiceInfo</a>&gt;</td>
+		<td>页面内容。</td>
+	</tr>
+	<tr class="t1Row">
+		<td>currentPage</td>
+		<td>int</td>
+		<td>当前第几页。</td>
+	</tr>
+	<tr class="t2Row">
+		<td>pageSize</td>
+		<td>int</td>
+		<td>每页大小。</td>
+	</tr>
+	<tr class="t1Row">
+		<td>searchParameter</td>
+		<td><a class="contentpagehyperlink" href="../../../iServerJavadoc/com/supermap/services/components/commontypes/SearchParameter.html">SearchParameter</a></td>
+		<td>当前页搜索参数。</td>
+	</tr>
+	<tr class="t2Row">
+		<td>total</td>
+		<td>int</td>
+		<td>总记录数。</td>
+	</tr>
+	<tr class="t1Row">
+		<td>totalPage</td>
+		<td>int</td>
+		<td>总页数。</td>
+	</tr>
+</tbody></table>
+<h4>响应示例</h4>
+<p class="myNormal">对 services 资源：http://localhost:8190/iportal/web/services.rjson 
+ 执行 GET 请求，返回 rjson 格式的资源表述如下：</p>
+<textarea name="textarea" rows="2" cols="20" style="width: 982px; height: 389px;">{
+    &quot;content&quot;: [
+        {
+            &quot;addedMapNames&quot;: null,
+            &quot;addedSceneNames&quot;: null,
+            &quot;authorizeSetting&quot;: null,
+            &quot;checkStatus&quot;: &quot;SUCCESSFUL&quot;,
+            &quot;checkTime&quot;: null,
+            &quot;checkUser&quot;: null,
+            &quot;checkUserNick&quot;: null,
+            &quot;createTime&quot;: 1482387816872,
+            &quot;description&quot;: null,
+            &quot;enable&quot;: true,
+            &quot;id&quot;: 1,
+            &quot;isBatch&quot;: true,
+            &quot;isDataItemService&quot;: false,
+            &quot;linkPage&quot;: null,
+            &quot;mapInfos&quot;: [],
+            &quot;metadata&quot;: null,
+            &quot;metadataString&quot;: &quot;&quot;,
+            &quot;nickname&quot;: &quot;admin&quot;,
+            &quot;offline&quot;: false,
+            &quot;proxiedUrl&quot;: null,
+            &quot;resTitle&quot;: &quot;transportationanalyst-sample/wps100&quot;,
+            &quot;scenes&quot;: [],
+            &quot;serviceRootUrlId&quot;: 1,
+            &quot;tags&quot;: [
+                &quot;系统服务&quot;
+            ],
+            &quot;thumbnail&quot;: null,
+            &quot;type&quot;: &quot;WPS&quot;,
+            &quot;updateTime&quot;: 1482387816872,
+            &quot;userName&quot;: &quot;admin&quot;,
+            &quot;verifyReason&quot;: null,
+            &quot;version&quot;: null,
+            &quot;visitCount&quot;: 0
+        },
+        {
+            &quot;addedMapNames&quot;: null,
+            &quot;addedSceneNames&quot;: null,
+            &quot;authorizeSetting&quot;: null,
+            &quot;checkStatus&quot;: &quot;SUCCESSFUL&quot;,
+            &quot;checkTime&quot;: null,
+            &quot;checkUser&quot;: null,
+            &quot;checkUserNick&quot;: null,
+            &quot;createTime&quot;: 1482387816905,
+            &quot;description&quot;: null,
+            &quot;enable&quot;: true,
+            &quot;id&quot;: 2,
+            &quot;isBatch&quot;: true,
+            &quot;isDataItemService&quot;: false,
+            &quot;linkPage&quot;: null,
+            &quot;mapInfos&quot;: [],
+            &quot;metadata&quot;: null,
+            &quot;metadataString&quot;: &quot;&quot;,
+            &quot;nickname&quot;: &quot;admin&quot;,
+            &quot;offline&quot;: false,
+            &quot;proxiedUrl&quot;: null,
+            &quot;resTitle&quot;: &quot;data-jingjin/wcs111&quot;,
+            &quot;scenes&quot;: [],
+            &quot;serviceRootUrlId&quot;: 1,
+            &quot;tags&quot;: [
+                &quot;系统服务&quot;
+            ],
+            &quot;thumbnail&quot;: null,
+            &quot;type&quot;: &quot;WCS&quot;,
+            &quot;updateTime&quot;: 1482387816905,
+            &quot;userName&quot;: &quot;admin&quot;,
+            &quot;verifyReason&quot;: null,
+            &quot;version&quot;: null,
+            &quot;visitCount&quot;: 0
+        },
+        {
+            &quot;addedMapNames&quot;: null,
+            &quot;addedSceneNames&quot;: null,
+            &quot;authorizeSetting&quot;: null,
+            &quot;checkStatus&quot;: &quot;SUCCESSFUL&quot;,
+            &quot;checkTime&quot;: null,
+            &quot;checkUser&quot;: null,
+            &quot;checkUserNick&quot;: null,
+            &quot;createTime&quot;: 1482387816886,
+            &quot;description&quot;: null,
+            &quot;enable&quot;: true,
+            &quot;id&quot;: 3,
+            &quot;isBatch&quot;: true,
+            &quot;isDataItemService&quot;: false,
+            &quot;linkPage&quot;: null,
+            &quot;mapInfos&quot;: [],
+            &quot;metadata&quot;: null,
+            &quot;metadataString&quot;: &quot;&quot;,
+            &quot;nickname&quot;: &quot;admin&quot;,
+            &quot;offline&quot;: false,
+            &quot;proxiedUrl&quot;: null,
+            &quot;resTitle&quot;: &quot;data-jingjin/wcs112&quot;,
+            &quot;scenes&quot;: [],
+            &quot;serviceRootUrlId&quot;: 1,
+            &quot;tags&quot;: [
+                &quot;系统服务&quot;
+            ],
+            &quot;thumbnail&quot;: null,
+            &quot;type&quot;: &quot;WCS&quot;,
+            &quot;updateTime&quot;: 1482387816886,
+            &quot;userName&quot;: &quot;admin&quot;,
+            &quot;verifyReason&quot;: null,
+            &quot;version&quot;: null,
+            &quot;visitCount&quot;: 0
+        },
+        {
+            &quot;addedMapNames&quot;: null,
+            &quot;addedSceneNames&quot;: null,
+            &quot;authorizeSetting&quot;: null,
+            &quot;checkStatus&quot;: &quot;SUCCESSFUL&quot;,
+            &quot;checkTime&quot;: null,
+            &quot;checkUser&quot;: null,
+            &quot;checkUserNick&quot;: null,
+            &quot;createTime&quot;: 1482387816900,
+            &quot;description&quot;: null,
+            &quot;enable&quot;: true,
+            &quot;id&quot;: 4,
+            &quot;isBatch&quot;: true,
+            &quot;isDataItemService&quot;: false,
+            &quot;linkPage&quot;: null,
+            &quot;mapInfos&quot;: [],
+            &quot;metadata&quot;: null,
+            &quot;metadataString&quot;: &quot;&quot;,
+            &quot;nickname&quot;: &quot;admin&quot;,
+            &quot;offline&quot;: false,
+            &quot;proxiedUrl&quot;: null,
+            &quot;resTitle&quot;: &quot;data-jingjin/rest&quot;,
+            &quot;scenes&quot;: [],
+            &quot;serviceRootUrlId&quot;: 1,
+            &quot;tags&quot;: [
+                &quot;系统服务&quot;
+            ],
+            &quot;thumbnail&quot;: null,
+            &quot;type&quot;: &quot;DATA&quot;,
+            &quot;updateTime&quot;: 1482387816900,
+            &quot;userName&quot;: &quot;admin&quot;,
+            &quot;verifyReason&quot;: null,
+            &quot;version&quot;: null,
+            &quot;visitCount&quot;: 0
+        },
+        {
+            &quot;addedMapNames&quot;: null,
+            &quot;addedSceneNames&quot;: null,
+            &quot;authorizeSetting&quot;: null,
+            &quot;checkStatus&quot;: &quot;SUCCESSFUL&quot;,
+            &quot;checkTime&quot;: null,
+            &quot;checkUser&quot;: null,
+            &quot;checkUserNick&quot;: null,
+            &quot;createTime&quot;: 1482387816889,
+            &quot;description&quot;: null,
+            &quot;enable&quot;: true,
+            &quot;id&quot;: 5,
+            &quot;isBatch&quot;: true,
+            &quot;isDataItemService&quot;: false,
+            &quot;linkPage&quot;: null,
+            &quot;mapInfos&quot;: [],
+            &quot;metadata&quot;: null,
+            &quot;metadataString&quot;: &quot;&quot;,
+            &quot;nickname&quot;: &quot;admin&quot;,
+            &quot;offline&quot;: false,
+            &quot;proxiedUrl&quot;: null,
+            &quot;resTitle&quot;: &quot;3D-zhufeng/rest&quot;,
+            &quot;scenes&quot;: [
+                {
+                    &quot;id&quot;: null,
+                    &quot;sceneName&quot;: &quot;zhufeng&quot;,
+                    &quot;sceneUrl&quot;: &quot;http://192.168.120.40:8091/iserver/services/3D-zhufeng/rest/realspace/scenes/zhufeng&quot;,
+                    &quot;serviceId&quot;: 5
+                }
+            ],
+            &quot;serviceRootUrlId&quot;: 1,
+            &quot;tags&quot;: [
+                &quot;系统服务&quot;
+            ],
+            &quot;thumbnail&quot;: null,
+            &quot;type&quot;: &quot;REALSPACE&quot;,
+            &quot;updateTime&quot;: 1482387816889,
+            &quot;userName&quot;: &quot;admin&quot;,
+            &quot;verifyReason&quot;: null,
+            &quot;version&quot;: null,
+            &quot;visitCount&quot;: 0
+        },
+        {
+            &quot;addedMapNames&quot;: null,
+            &quot;addedSceneNames&quot;: null,
+            &quot;authorizeSetting&quot;: null,
+            &quot;checkStatus&quot;: &quot;SUCCESSFUL&quot;,
+            &quot;checkTime&quot;: null,
+            &quot;checkUser&quot;: null,
+            &quot;checkUserNick&quot;: null,
+            &quot;createTime&quot;: 1482387816846,
+            &quot;description&quot;: null,
+            &quot;enable&quot;: true,
+            &quot;id&quot;: 6,
+            &quot;isBatch&quot;: true,
+            &quot;isDataItemService&quot;: false,
+            &quot;linkPage&quot;: null,
+            &quot;mapInfos&quot;: [],
+            &quot;metadata&quot;: null,
+            &quot;metadataString&quot;: &quot;&quot;,
+            &quot;nickname&quot;: &quot;admin&quot;,
+            &quot;offline&quot;: false,
+            &quot;proxiedUrl&quot;: null,
+            &quot;resTitle&quot;: &quot;3D-osgb/rest&quot;,
+            &quot;scenes&quot;: [
+                {
+                    &quot;id&quot;: null,
+                    &quot;sceneName&quot;: &quot;osgb&quot;,
+                    &quot;sceneUrl&quot;: &quot;http://192.168.120.40:8091/iserver/services/3D-osgb/rest/realspace/scenes/osgb&quot;,
+                    &quot;serviceId&quot;: 6
+                },
+                {
+                    &quot;id&quot;: null,
+                    &quot;sceneName&quot;: &quot;webgl&quot;,
+                    &quot;sceneUrl&quot;: &quot;http://192.168.120.40:8091/iserver/services/3D-osgb/rest/realspace/scenes/webgl&quot;,
+                    &quot;serviceId&quot;: 6
+                }
+            ],
+            &quot;serviceRootUrlId&quot;: 1,
+            &quot;tags&quot;: [
+                &quot;系统服务&quot;
+            ],
+            &quot;thumbnail&quot;: null,
+            &quot;type&quot;: &quot;REALSPACE&quot;,
+            &quot;updateTime&quot;: 1482387816846,
+            &quot;userName&quot;: &quot;admin&quot;,
+            &quot;verifyReason&quot;: null,
+            &quot;version&quot;: null,
+            &quot;visitCount&quot;: 0
+        },
+        {
+            &quot;addedMapNames&quot;: null,
+            &quot;addedSceneNames&quot;: null,
+            &quot;authorizeSetting&quot;: null,
+            &quot;checkStatus&quot;: &quot;SUCCESSFUL&quot;,
+            &quot;checkTime&quot;: null,
+            &quot;checkUser&quot;: null,
+            &quot;checkUserNick&quot;: null,
+            &quot;createTime&quot;: 1482387821498,
+            &quot;description&quot;: null,
+            &quot;enable&quot;: true,
+            &quot;id&quot;: 7,
+            &quot;isBatch&quot;: true,
+            &quot;isDataItemService&quot;: false,
+            &quot;linkPage&quot;: null,
+            &quot;mapInfos&quot;: [],
+            &quot;metadata&quot;: null,
+            &quot;metadataString&quot;: &quot;&quot;,
+            &quot;nickname&quot;: &quot;admin&quot;,
+            &quot;offline&quot;: false,
+            &quot;proxiedUrl&quot;: null,
+            &quot;resTitle&quot;: &quot;data-changchun/rest&quot;,
+            &quot;scenes&quot;: [],
+            &quot;serviceRootUrlId&quot;: 1,
+            &quot;tags&quot;: [
+                &quot;系统服务&quot;
+            ],
+            &quot;thumbnail&quot;: null,
+            &quot;type&quot;: &quot;DATA&quot;,
+            &quot;updateTime&quot;: 1482387821498,
+            &quot;userName&quot;: &quot;admin&quot;,
+            &quot;verifyReason&quot;: null,
+            &quot;version&quot;: null,
+            &quot;visitCount&quot;: 0
+        },
+        {
+            &quot;addedMapNames&quot;: null,
+            &quot;addedSceneNames&quot;: null,
+            &quot;authorizeSetting&quot;: null,
+            &quot;checkStatus&quot;: &quot;SUCCESSFUL&quot;,
+            &quot;checkTime&quot;: null,
+            &quot;checkUser&quot;: null,
+            &quot;checkUserNick&quot;: null,
+            &quot;createTime&quot;: 1482387816912,
+            &quot;description&quot;: null,
+            &quot;enable&quot;: true,
+            &quot;id&quot;: 8,
+            &quot;isBatch&quot;: true,
+            &quot;isDataItemService&quot;: false,
+            &quot;linkPage&quot;: null,
+            &quot;mapInfos&quot;: [
+                {
+                    &quot;id&quot;: null,
+                    &quot;mapThumbnail&quot;: null,
+                    &quot;mapTitle&quot;: &quot;全国温度变化图&quot;,
+                    &quot;mapUrl&quot;: null,
+                    &quot;serviceId&quot;: 8
+                }
+            ],
+            &quot;metadata&quot;: null,
+            &quot;metadataString&quot;: &quot;&quot;,
+            &quot;nickname&quot;: &quot;admin&quot;,
+            &quot;offline&quot;: false,
+            &quot;proxiedUrl&quot;: null,
+            &quot;resTitle&quot;: &quot;map-temperature/rest&quot;,
+            &quot;scenes&quot;: [],
+            &quot;serviceRootUrlId&quot;: 1,
+            &quot;tags&quot;: [
+                &quot;系统服务&quot;
+            ],
+            &quot;thumbnail&quot;: null,
+            &quot;type&quot;: &quot;MAP&quot;,
+            &quot;updateTime&quot;: 1482387816912,
+            &quot;userName&quot;: &quot;admin&quot;,
+            &quot;verifyReason&quot;: null,
+            &quot;version&quot;: null,
+            &quot;visitCount&quot;: 0
+        },
+        {
+            &quot;addedMapNames&quot;: null,
+            &quot;addedSceneNames&quot;: null,
+            &quot;authorizeSetting&quot;: null,
+            &quot;checkStatus&quot;: &quot;SUCCESSFUL&quot;,
+            &quot;checkTime&quot;: null,
+            &quot;checkUser&quot;: null,
+            &quot;checkUserNick&quot;: null,
+            &quot;createTime&quot;: 1482387816899,
+            &quot;description&quot;: null,
+            &quot;enable&quot;: true,
+            &quot;id&quot;: 9,
+            &quot;isBatch&quot;: true,
+            &quot;isDataItemService&quot;: false,
+            &quot;linkPage&quot;: null,
+            &quot;mapInfos&quot;: [
+                {
+                    &quot;id&quot;: null,
+                    &quot;mapThumbnail&quot;: null,
+                    &quot;mapTitle&quot;: &quot;长春市区图&quot;,
+                    &quot;mapUrl&quot;: null,
+                    &quot;serviceId&quot;: 9
+                },
+                {
+                    &quot;id&quot;: null,
+                    &quot;mapThumbnail&quot;: null,
+                    &quot;mapTitle&quot;: &quot;长春市区图_Local&quot;,
+                    &quot;mapUrl&quot;: null,
+                    &quot;serviceId&quot;: 9
+                }
+            ],
+            &quot;metadata&quot;: null,
+            &quot;metadataString&quot;: &quot;&quot;,
+            &quot;nickname&quot;: &quot;admin&quot;,
+            &quot;offline&quot;: false,
+            &quot;proxiedUrl&quot;: null,
+            &quot;resTitle&quot;: &quot;map-changchun/rest&quot;,
+            &quot;scenes&quot;: [],
+            &quot;serviceRootUrlId&quot;: 1,
+            &quot;tags&quot;: [
+                &quot;系统服务&quot;
+            ],
+            &quot;thumbnail&quot;: null,
+            &quot;type&quot;: &quot;MAP&quot;,
+            &quot;updateTime&quot;: 1482387816899,
+            &quot;userName&quot;: &quot;admin&quot;,
+            &quot;verifyReason&quot;: null,
+            &quot;version&quot;: null,
+            &quot;visitCount&quot;: 0
+        }
+    ],
+    &quot;currentPage&quot;: 1,
+    &quot;pageSize&quot;: 9,
+    &quot;searchParameter&quot;: {
+        &quot;accessMode&quot;: &quot;V2&quot;,
+        &quot;authorizedOnly&quot;: false,
+        &quot;checkStatus&quot;: null,
+        &quot;currentPage&quot;: 1,
+        &quot;currentUser&quot;: null,
+        &quot;departmentIds&quot;: null,
+        &quot;dirIds&quot;: null,
+        &quot;enable&quot;: null,
+        &quot;filterFields&quot;: null,
+        &quot;groupIds&quot;: null,
+        &quot;isBatch&quot;: null,
+        &quot;isNotInDir&quot;: false,
+        &quot;keywords&quot;: null,
+        &quot;offline&quot;: null,
+        &quot;orderBy&quot;: null,
+        &quot;orderType&quot;: &quot;ASC&quot;,
+        &quot;pageSize&quot;: 9,
+        &quot;resourceIds&quot;: null,
+        &quot;tags&quot;: null,
+        &quot;types&quot;: null,
+        &quot;userNames&quot;: null
+    },
+    &quot;total&quot;: 49,
+    &quot;totalPage&quot;: 6
+}</textarea>
+<p class="myNormal">如果希望获取指定的服务列表信息，如根据服务注册者的关键字符过滤，则需要设置 keywords=[&quot;admin&quot;]&amp;filterFields=[&quot;NICKNAME&quot;]，即对 
+ services 资源：http://localhost:8190/iportal/web/services.rjson?keywords=[&quot;admin&quot;]&amp;filterFields=[&quot;NICKNAME&quot;]执行 
+ GET 请求，返回的 rjson 格式的资源表述如下：</p>
+<textarea name="textarea1" rows="2" cols="20" style="width: 987px; height: 359px;">{
+    &quot;content&quot;: [
+        {
+            &quot;addedMapNames&quot;: null,
+            &quot;addedSceneNames&quot;: null,
+            &quot;authorizeSetting&quot;: null,
+            &quot;checkStatus&quot;: &quot;SUCCESSFUL&quot;,
+            &quot;checkTime&quot;: null,
+            &quot;checkUser&quot;: null,
+            &quot;checkUserNick&quot;: null,
+            &quot;createTime&quot;: 1482387816872,
+            &quot;description&quot;: null,
+            &quot;enable&quot;: true,
+            &quot;id&quot;: 1,
+            &quot;isBatch&quot;: true,
+            &quot;isDataItemService&quot;: false,
+            &quot;linkPage&quot;: null,
+            &quot;mapInfos&quot;: [],
+            &quot;metadata&quot;: null,
+            &quot;metadataString&quot;: &quot;&quot;,
+            &quot;nickname&quot;: &quot;admin&quot;,
+            &quot;offline&quot;: false,
+            &quot;proxiedUrl&quot;: null,
+            &quot;resTitle&quot;: &quot;transportationanalyst-sample/wps100&quot;,
+            &quot;scenes&quot;: [],
+            &quot;serviceRootUrlId&quot;: 1,
+            &quot;tags&quot;: [
+                &quot;系统服务&quot;
+            ],
+            &quot;thumbnail&quot;: null,
+            &quot;type&quot;: &quot;WPS&quot;,
+            &quot;updateTime&quot;: 1482387816872,
+            &quot;userName&quot;: &quot;admin&quot;,
+            &quot;verifyReason&quot;: null,
+            &quot;version&quot;: null,
+            &quot;visitCount&quot;: 0
+        },
+        {
+            &quot;addedMapNames&quot;: null,
+            &quot;addedSceneNames&quot;: null,
+            &quot;authorizeSetting&quot;: null,
+            &quot;checkStatus&quot;: &quot;SUCCESSFUL&quot;,
+            &quot;checkTime&quot;: null,
+            &quot;checkUser&quot;: null,
+            &quot;checkUserNick&quot;: null,
+            &quot;createTime&quot;: 1482387816905,
+            &quot;description&quot;: null,
+            &quot;enable&quot;: true,
+            &quot;id&quot;: 2,
+            &quot;isBatch&quot;: true,
+            &quot;isDataItemService&quot;: false,
+            &quot;linkPage&quot;: null,
+            &quot;mapInfos&quot;: [],
+            &quot;metadata&quot;: null,
+            &quot;metadataString&quot;: &quot;&quot;,
+            &quot;nickname&quot;: &quot;admin&quot;,
+            &quot;offline&quot;: false,
+            &quot;proxiedUrl&quot;: null,
+            &quot;resTitle&quot;: &quot;data-jingjin/wcs111&quot;,
+            &quot;scenes&quot;: [],
+            &quot;serviceRootUrlId&quot;: 1,
+            &quot;tags&quot;: [
+                &quot;系统服务&quot;
+            ],
+            &quot;thumbnail&quot;: null,
+            &quot;type&quot;: &quot;WCS&quot;,
+            &quot;updateTime&quot;: 1482387816905,
+            &quot;userName&quot;: &quot;admin&quot;,
+            &quot;verifyReason&quot;: null,
+            &quot;version&quot;: null,
+            &quot;visitCount&quot;: 0
+        },
+        {
+            &quot;addedMapNames&quot;: null,
+            &quot;addedSceneNames&quot;: null,
+            &quot;authorizeSetting&quot;: null,
+            &quot;checkStatus&quot;: &quot;SUCCESSFUL&quot;,
+            &quot;checkTime&quot;: null,
+            &quot;checkUser&quot;: null,
+            &quot;checkUserNick&quot;: null,
+            &quot;createTime&quot;: 1482387816886,
+            &quot;description&quot;: null,
+            &quot;enable&quot;: true,
+            &quot;id&quot;: 3,
+            &quot;isBatch&quot;: true,
+            &quot;isDataItemService&quot;: false,
+            &quot;linkPage&quot;: null,
+            &quot;mapInfos&quot;: [],
+            &quot;metadata&quot;: null,
+            &quot;metadataString&quot;: &quot;&quot;,
+            &quot;nickname&quot;: &quot;admin&quot;,
+            &quot;offline&quot;: false,
+            &quot;proxiedUrl&quot;: null,
+            &quot;resTitle&quot;: &quot;data-jingjin/wcs112&quot;,
+            &quot;scenes&quot;: [],
+            &quot;serviceRootUrlId&quot;: 1,
+            &quot;tags&quot;: [
+                &quot;系统服务&quot;
+            ],
+            &quot;thumbnail&quot;: null,
+            &quot;type&quot;: &quot;WCS&quot;,
+            &quot;updateTime&quot;: 1482387816886,
+            &quot;userName&quot;: &quot;admin&quot;,
+            &quot;verifyReason&quot;: null,
+            &quot;version&quot;: null,
+            &quot;visitCount&quot;: 0
+        },
+        {
+            &quot;addedMapNames&quot;: null,
+            &quot;addedSceneNames&quot;: null,
+            &quot;authorizeSetting&quot;: null,
+            &quot;checkStatus&quot;: &quot;SUCCESSFUL&quot;,
+            &quot;checkTime&quot;: null,
+            &quot;checkUser&quot;: null,
+            &quot;checkUserNick&quot;: null,
+            &quot;createTime&quot;: 1482387816900,
+            &quot;description&quot;: null,
+            &quot;enable&quot;: true,
+            &quot;id&quot;: 4,
+            &quot;isBatch&quot;: true,
+            &quot;isDataItemService&quot;: false,
+            &quot;linkPage&quot;: null,
+            &quot;mapInfos&quot;: [],
+            &quot;metadata&quot;: null,
+            &quot;metadataString&quot;: &quot;&quot;,
+            &quot;nickname&quot;: &quot;admin&quot;,
+            &quot;offline&quot;: false,
+            &quot;proxiedUrl&quot;: null,
+            &quot;resTitle&quot;: &quot;data-jingjin/rest&quot;,
+            &quot;scenes&quot;: [],
+            &quot;serviceRootUrlId&quot;: 1,
+            &quot;tags&quot;: [
+                &quot;系统服务&quot;
+            ],
+            &quot;thumbnail&quot;: null,
+            &quot;type&quot;: &quot;DATA&quot;,
+            &quot;updateTime&quot;: 1482387816900,
+            &quot;userName&quot;: &quot;admin&quot;,
+            &quot;verifyReason&quot;: null,
+            &quot;version&quot;: null,
+            &quot;visitCount&quot;: 0
+        },
+        {
+            &quot;addedMapNames&quot;: null,
+            &quot;addedSceneNames&quot;: null,
+            &quot;authorizeSetting&quot;: null,
+            &quot;checkStatus&quot;: &quot;SUCCESSFUL&quot;,
+            &quot;checkTime&quot;: null,
+            &quot;checkUser&quot;: null,
+            &quot;checkUserNick&quot;: null,
+            &quot;createTime&quot;: 1482387816889,
+            &quot;description&quot;: null,
+            &quot;enable&quot;: true,
+            &quot;id&quot;: 5,
+            &quot;isBatch&quot;: true,
+            &quot;isDataItemService&quot;: false,
+            &quot;linkPage&quot;: null,
+            &quot;mapInfos&quot;: [],
+            &quot;metadata&quot;: null,
+            &quot;metadataString&quot;: &quot;&quot;,
+            &quot;nickname&quot;: &quot;admin&quot;,
+            &quot;offline&quot;: false,
+            &quot;proxiedUrl&quot;: null,
+            &quot;resTitle&quot;: &quot;3D-zhufeng/rest&quot;,
+            &quot;scenes&quot;: [
+                {
+                    &quot;id&quot;: null,
+                    &quot;sceneName&quot;: &quot;zhufeng&quot;,
+                    &quot;sceneUrl&quot;: &quot;http://192.168.120.40:8091/iserver/services/3D-zhufeng/rest/realspace/scenes/zhufeng&quot;,
+                    &quot;serviceId&quot;: 5
+                }
+            ],
+            &quot;serviceRootUrlId&quot;: 1,
+            &quot;tags&quot;: [
+                &quot;系统服务&quot;
+            ],
+            &quot;thumbnail&quot;: null,
+            &quot;type&quot;: &quot;REALSPACE&quot;,
+            &quot;updateTime&quot;: 1482387816889,
+            &quot;userName&quot;: &quot;admin&quot;,
+            &quot;verifyReason&quot;: null,
+            &quot;version&quot;: null,
+            &quot;visitCount&quot;: 0
+        },
+        {
+            &quot;addedMapNames&quot;: null,
+            &quot;addedSceneNames&quot;: null,
+            &quot;authorizeSetting&quot;: null,
+            &quot;checkStatus&quot;: &quot;SUCCESSFUL&quot;,
+            &quot;checkTime&quot;: null,
+            &quot;checkUser&quot;: null,
+            &quot;checkUserNick&quot;: null,
+            &quot;createTime&quot;: 1482387816846,
+            &quot;description&quot;: null,
+            &quot;enable&quot;: true,
+            &quot;id&quot;: 6,
+            &quot;isBatch&quot;: true,
+            &quot;isDataItemService&quot;: false,
+            &quot;linkPage&quot;: null,
+            &quot;mapInfos&quot;: [],
+            &quot;metadata&quot;: null,
+            &quot;metadataString&quot;: &quot;&quot;,
+            &quot;nickname&quot;: &quot;admin&quot;,
+            &quot;offline&quot;: false,
+            &quot;proxiedUrl&quot;: null,
+            &quot;resTitle&quot;: &quot;3D-osgb/rest&quot;,
+            &quot;scenes&quot;: [
+                {
+                    &quot;id&quot;: null,
+                    &quot;sceneName&quot;: &quot;osgb&quot;,
+                    &quot;sceneUrl&quot;: &quot;http://192.168.120.40:8091/iserver/services/3D-osgb/rest/realspace/scenes/osgb&quot;,
+                    &quot;serviceId&quot;: 6
+                },
+                {
+                    &quot;id&quot;: null,
+                    &quot;sceneName&quot;: &quot;webgl&quot;,
+                    &quot;sceneUrl&quot;: &quot;http://192.168.120.40:8091/iserver/services/3D-osgb/rest/realspace/scenes/webgl&quot;,
+                    &quot;serviceId&quot;: 6
+                }
+            ],
+            &quot;serviceRootUrlId&quot;: 1,
+            &quot;tags&quot;: [
+                &quot;系统服务&quot;
+            ],
+            &quot;thumbnail&quot;: null,
+            &quot;type&quot;: &quot;REALSPACE&quot;,
+            &quot;updateTime&quot;: 1482387816846,
+            &quot;userName&quot;: &quot;admin&quot;,
+            &quot;verifyReason&quot;: null,
+            &quot;version&quot;: null,
+            &quot;visitCount&quot;: 0
+        },
+        {
+            &quot;addedMapNames&quot;: null,
+            &quot;addedSceneNames&quot;: null,
+            &quot;authorizeSetting&quot;: null,
+            &quot;checkStatus&quot;: &quot;SUCCESSFUL&quot;,
+            &quot;checkTime&quot;: null,
+            &quot;checkUser&quot;: null,
+            &quot;checkUserNick&quot;: null,
+            &quot;createTime&quot;: 1482387821498,
+            &quot;description&quot;: null,
+            &quot;enable&quot;: true,
+            &quot;id&quot;: 7,
+            &quot;isBatch&quot;: true,
+            &quot;isDataItemService&quot;: false,
+            &quot;linkPage&quot;: null,
+            &quot;mapInfos&quot;: [],
+            &quot;metadata&quot;: null,
+            &quot;metadataString&quot;: &quot;&quot;,
+            &quot;nickname&quot;: &quot;admin&quot;,
+            &quot;offline&quot;: false,
+            &quot;proxiedUrl&quot;: null,
+            &quot;resTitle&quot;: &quot;data-changchun/rest&quot;,
+            &quot;scenes&quot;: [],
+            &quot;serviceRootUrlId&quot;: 1,
+            &quot;tags&quot;: [
+                &quot;系统服务&quot;
+            ],
+            &quot;thumbnail&quot;: null,
+            &quot;type&quot;: &quot;DATA&quot;,
+            &quot;updateTime&quot;: 1482387821498,
+            &quot;userName&quot;: &quot;admin&quot;,
+            &quot;verifyReason&quot;: null,
+            &quot;version&quot;: null,
+            &quot;visitCount&quot;: 0
+        },
+        {
+            &quot;addedMapNames&quot;: null,
+            &quot;addedSceneNames&quot;: null,
+            &quot;authorizeSetting&quot;: null,
+            &quot;checkStatus&quot;: &quot;SUCCESSFUL&quot;,
+            &quot;checkTime&quot;: null,
+            &quot;checkUser&quot;: null,
+            &quot;checkUserNick&quot;: null,
+            &quot;createTime&quot;: 1482387816912,
+            &quot;description&quot;: null,
+            &quot;enable&quot;: true,
+            &quot;id&quot;: 8,
+            &quot;isBatch&quot;: true,
+            &quot;isDataItemService&quot;: false,
+            &quot;linkPage&quot;: null,
+            &quot;mapInfos&quot;: [
+                {
+                    &quot;id&quot;: null,
+                    &quot;mapThumbnail&quot;: null,
+                    &quot;mapTitle&quot;: &quot;全国温度变化图&quot;,
+                    &quot;mapUrl&quot;: null,
+                    &quot;serviceId&quot;: 8
+                }
+            ],
+            &quot;metadata&quot;: null,
+            &quot;metadataString&quot;: &quot;&quot;,
+            &quot;nickname&quot;: &quot;admin&quot;,
+            &quot;offline&quot;: false,
+            &quot;proxiedUrl&quot;: null,
+            &quot;resTitle&quot;: &quot;map-temperature/rest&quot;,
+            &quot;scenes&quot;: [],
+            &quot;serviceRootUrlId&quot;: 1,
+            &quot;tags&quot;: [
+                &quot;系统服务&quot;
+            ],
+            &quot;thumbnail&quot;: null,
+            &quot;type&quot;: &quot;MAP&quot;,
+            &quot;updateTime&quot;: 1482387816912,
+            &quot;userName&quot;: &quot;admin&quot;,
+            &quot;verifyReason&quot;: null,
+            &quot;version&quot;: null,
+            &quot;visitCount&quot;: 0
+        },
+        {
+            &quot;addedMapNames&quot;: null,
+            &quot;addedSceneNames&quot;: null,
+            &quot;authorizeSetting&quot;: null,
+            &quot;checkStatus&quot;: &quot;SUCCESSFUL&quot;,
+            &quot;checkTime&quot;: null,
+            &quot;checkUser&quot;: null,
+            &quot;checkUserNick&quot;: null,
+            &quot;createTime&quot;: 1482387816899,
+            &quot;description&quot;: null,
+            &quot;enable&quot;: true,
+            &quot;id&quot;: 9,
+            &quot;isBatch&quot;: true,
+            &quot;isDataItemService&quot;: false,
+            &quot;linkPage&quot;: null,
+            &quot;mapInfos&quot;: [
+                {
+                    &quot;id&quot;: null,
+                    &quot;mapThumbnail&quot;: null,
+                    &quot;mapTitle&quot;: &quot;长春市区图&quot;,
+                    &quot;mapUrl&quot;: null,
+                    &quot;serviceId&quot;: 9
+                },
+                {
+                    &quot;id&quot;: null,
+                    &quot;mapThumbnail&quot;: null,
+                    &quot;mapTitle&quot;: &quot;长春市区图_Local&quot;,
+                    &quot;mapUrl&quot;: null,
+                    &quot;serviceId&quot;: 9
+                }
+            ],
+            &quot;metadata&quot;: null,
+            &quot;metadataString&quot;: &quot;&quot;,
+            &quot;nickname&quot;: &quot;admin&quot;,
+            &quot;offline&quot;: false,
+            &quot;proxiedUrl&quot;: null,
+            &quot;resTitle&quot;: &quot;map-changchun/rest&quot;,
+            &quot;scenes&quot;: [],
+            &quot;serviceRootUrlId&quot;: 1,
+            &quot;tags&quot;: [
+                &quot;系统服务&quot;
+            ],
+            &quot;thumbnail&quot;: null,
+            &quot;type&quot;: &quot;MAP&quot;,
+            &quot;updateTime&quot;: 1482387816899,
+            &quot;userName&quot;: &quot;admin&quot;,
+            &quot;verifyReason&quot;: null,
+            &quot;version&quot;: null,
+            &quot;visitCount&quot;: 0
+        }
+    ],
+    &quot;currentPage&quot;: 1,
+    &quot;pageSize&quot;: 9,
+    &quot;searchParameter&quot;: {
+        &quot;accessMode&quot;: &quot;V2&quot;,
+        &quot;authorizedOnly&quot;: false,
+        &quot;checkStatus&quot;: null,
+        &quot;currentPage&quot;: 1,
+        &quot;currentUser&quot;: null,
+        &quot;departmentIds&quot;: null,
+        &quot;dirIds&quot;: null,
+        &quot;enable&quot;: null,
+        &quot;filterFields&quot;: [
+            &quot;NICKNAME&quot;
+        ],
+        &quot;groupIds&quot;: null,
+        &quot;isBatch&quot;: null,
+        &quot;isNotInDir&quot;: null,
+        &quot;keywords&quot;: [
+            &quot;admin&quot;
+        ],
+        &quot;offline&quot;: null,
+        &quot;orderBy&quot;: null,
+        &quot;orderType&quot;: &quot;ASC&quot;,
+        &quot;pageSize&quot;: 9,
+        &quot;resourceIds&quot;: null,
+        &quot;tags&quot;: null,
+        &quot;types&quot;: null,
+        &quot;userNames&quot;: null
+    },
+    &quot;total&quot;: 49,
+    &quot;totalPage&quot;: 6
+}</textarea>
+<h3><a id="POST 请求"></a>POST 请求</h3>
+<p class="myNormal">申请注册新的单个服务。普通的 iPortal 用户申请注册的服务默认不需要门户管理员审核即可注册到门户中。当然，门户管理员也可以开启服务审核功能，此时只有经过管理员审核通过后的服务才能注册到 
+ iPortal 门户中。审核单个服务的资源请参见：<a class="contentpagehyperlink" href="service/serviceCheckStatus.htm#PUT 请求">serviceCheckStatus 
+ 资源的 PUT 请求</a>。</p>
+<h4 class="myNormal">请求参数</h4>
+<p class="myNormal">发送请求时，需要在请求体中包含如下参数：</p>
+<table class="iServerTable" cellspacing="0" width="70%" align="center">
+	<colgroup><col style="width: 15%;"/>
+	<col style="width: 15%;"/>
+	<col style="width: 70%;"/>
+	</colgroup><tbody><tr class="t1st">
+		<td>名称</td>
+		<td>类型</td>
+		<td>含义</td>
+	</tr>
+	<tr class="t2Row">
+		<td><p>type</p></td>
+		<td><p><a class="contentpagehyperlink" href="../../../iServerJavadoc/com/supermap/iportal/web/commontypes/SourceType.html">SourceType</a></p></td>
+		<td>【必选参数】 
+		需要注册的服务的类型。</td>
+	</tr>
+	<tr class="t1Row">
+		<td><p>tags</p></td>
+		<td><p>List&lt;String&gt;</p></td>
+		<td>【必选参数】 
+		需要注册的服务的标签。</td>
+	</tr>
+	<tr class="t2Row">
+		<td><p>authorizeSetting</p></td>
+		<td><p>List&lt;<a class="contentpagehyperlink" href="../../../iServerJavadoc/com/supermap/iportal/web/commontypes/IportalAuthorizeEntity.html">IportalAuthorizeEntity</a>&gt;</p></td>
+		<td>【必选参数】 
+		需要注册的服务的共享设置。权限类型包括：DELETE（查看/编辑/删除）、READ（查看）、READWRITE（查看/编辑）。</td>
+	</tr>
+	<tr class="t1Row">
+		<td><p>metadata</p></td>
+		<td><p>Metadata</p></td>
+		<td>【可选参数】 
+		需要注册的服务的元数据信息。</td>
+	</tr>
+	<tr class="t2Row">
+		<td><p>addedMapNames</p></td>
+		<td><p>Set&lt;String&gt;</p></td>
+		<td>【可选参数】 
+		二维地图服务下的地图名称列表。目前仅支持 SuperMap REST 服务，其他服务类型时，该参数需设置为空值。</td>
+	</tr>
+	<tr class="t1Row">
+		<td><p>addedSceneNames</p></td>
+		<td><p>Set&lt;String&gt;</p></td>
+		<td>【可选参数】 
+		三维服务下的场景名称列表。目前仅支持 SuperMap REST 服务，其他服务类型时，该参数需设置为空值。</td>
+	</tr>
+	<tr class="t2Row">
+		<td><p>tokenRefreshUrl</p></td>
+		<td><p>String</p></td>
+		<td>【可选参数】 
+		ArcGIS REST 服务的令牌获取地址。应能通过该地址获取访问服务所需 Token。</td>
+	</tr>
+	<tr class="t1Row">
+		<td><p>previewUrl</p></td>
+		<td><p>String</p></td>
+		<td>【可选参数】 
+		服务自定义预览地址。</td>
+	</tr>
+</tbody></table>
+<h4 class="myNormal">响应结构</h4>
+<p class="myNormal">对 services 资源执行 POST 请求，返回的资源表述结构如下：</p>
+<table class="iServerTable" cellspacing="0" width="70%" align="center">
+	<colgroup><col style="width: 15%;"/>
+	<col style="width: 15%;"/>
+	<col style="width: 70%;"/>
+	</colgroup><tbody><tr class="t1st">
+		<td>字段</td>
+		<td>类型</td>
+		<td>说明</td>
+	</tr>
+	<tr class="t2Row">
+		<td>newResourceID</td>
+		<td>String</td>
+		<td>注册新服务的 id。</td>
+	</tr>
+	<tr class="t1Row">
+		<td>newResourceLocation</td>
+		<td>String</td>
+		<td>注册新服务的 URI。</td>
+	</tr>
+	<tr class="t2Row">
+		<td>succeed</td>
+		<td>boolean</td>
+		<td>注册新服务是否成功。</td>
+	</tr>
+</tbody></table>
+<h4>响应示例</h4>
+<p class="myNormal">对 services 资源:http://localhost:8190/iportal/web/services.rjson 
+ 执行 POST 请求，发送请求体如下：</p>
+<p class="myCodeP">{</p>
+<p class="myCodeP">    &quot;type&quot;: &quot;SUPERMAP_REST&quot;,</p>
+<p class="myCodeP">    &quot;tags&quot;: [</p>
+<p class="myCodeP">        &quot;china&quot;</p>
+<p class="myCodeP">    ],</p>
+<p class="myCodeP">    &quot;authorizeSetting&quot;: 
+ [</p>
+<p class="myCodeP">        {</p>
+<p class="myCodeP">            &quot;entityType&quot;: 
+ &quot;USER&quot;,</p>
+<p class="myCodeP">            &quot;entityName&quot;: 
+ &quot;GUEST&quot;,</p>
+<p class="myCodeP">            &quot;permissionType&quot;: 
+ &quot;READ&quot;</p>
+<p class="myCodeP">        }</p>
+<p class="myCodeP">    ],</p>
+<p class="myCodeP">    &quot;metadata&quot;: {</p>
+<p class="myCodeP">        &quot;mdContact&quot;: 
+ {</p>
+<p class="myCodeP">            &quot;rpIndName&quot;: 
+ &quot;&quot;,</p>
+<p class="myCodeP">            &quot;rpOrgName&quot;: 
+ &quot;&quot;,</p>
+<p class="myCodeP">            &quot;rpCntInfo&quot;: 
+ {</p>
+<p class="myCodeP">                &quot;cntAddress&quot;: 
+ {</p>
+<p class="myCodeP">                    &quot;delPoint&quot;: 
+ &quot;&quot;,</p>
+<p class="myCodeP">                    &quot;eMailAdd&quot;: 
+ &quot;&quot;</p>
+<p class="myCodeP">                },</p>
+<p class="myCodeP">                &quot;voiceNum&quot;: 
+ &quot;&quot;,</p>
+<p class="myCodeP">                &quot;faxNum&quot;: 
+ &quot;&quot;</p>
+<p class="myCodeP">            }</p>
+<p class="myCodeP">        },</p>
+<p class="myCodeP">        &quot;refSysInfo&quot;: 
+ {</p>
+<p class="myCodeP">            &quot;mdCoRefSys&quot;: 
+ {</p>
+<p class="myCodeP">                &quot;projection&quot;: 
+ &quot;&quot;</p>
+<p class="myCodeP">            },</p>
+<p class="myCodeP">            &quot;refSysID&quot;: 
+ &quot;&quot;</p>
+<p class="myCodeP">        },</p>
+<p class="myCodeP">        &quot;dataIdInfo&quot;: 
+ {</p>
+<p class="myCodeP">            &quot;dataIdent&quot;: 
+ {</p>
+<p class="myCodeP">                &quot;idCitation&quot;: 
+ {</p>
+<p class="myCodeP">                    &quot;resTitle&quot;: 
+ &quot;china&quot;</p>
+<p class="myCodeP">                },</p>
+<p class="myCodeP">                &quot;dataExt&quot;: 
+ {</p>
+<p class="myCodeP">                    &quot;geoEle&quot;: 
+ {</p>
+<p class="myCodeP">                        &quot;geoBndBox&quot;: 
+ {</p>
+<p class="myCodeP">                            &quot;westBL&quot;: 
+ 0,</p>
+<p class="myCodeP">                            &quot;eastBL&quot;: 
+ 0,</p>
+<p class="myCodeP">                            &quot;southBL&quot;: 
+ 0,</p>
+<p class="myCodeP">                            &quot;northBL&quot;: 
+ 0</p>
+<p class="myCodeP">                        }</p>
+<p class="myCodeP">                    },</p>
+<p class="myCodeP">                    &quot;exDesc&quot;: 
+ &quot;&quot;</p>
+<p class="myCodeP">                },</p>
+<p class="myCodeP">                &quot;idAbs&quot;: 
+ &quot;&quot;</p>
+<p class="myCodeP">            }</p>
+<p class="myCodeP">        },</p>
+<p class="myCodeP">        &quot;distInfo&quot;: 
+ {</p>
+<p class="myCodeP">            &quot;onLineSrc&quot;: 
+ {</p>
+<p class="myCodeP">                &quot;linkage&quot;: 
+ &quot;http://192.168.120.40:8091/iserver/services/map-china400/rest&quot;</p>
+<p class="myCodeP">            }</p>
+<p class="myCodeP">        }</p>
+<p class="myCodeP">    },</p>
+<p class="myCodeP">    &quot;addedMapNames&quot;: [</p>
+<p class="myCodeP">        &quot;China&quot;,</p>
+<p class="myCodeP">        &quot;China_4326&quot;</p>
+<p class="myCodeP">    ],</p>
+<p class="myCodeP">    &quot;addedSceneNames&quot;: 
+ []</p>
+<p class="myCodeP">}</p>
+<p class="myNormal">则返回的 rjson 格式响应结果如下：</p>
+<p class="myCodeP">{</p>
+<p class="myCodeP">    &quot;succeed&quot;: true,</p>
+<p class="myCodeP">    &quot;newResourceID&quot;: &quot;2&quot;,</p>
+<p class="myCodeP">    &quot;newResourceLocation&quot;: 
+ &quot;http://192.168.120.40:8190/iportal/web/services/2&quot;</p>
+<p class="myCodeP">}</p>
+<h3><a id="DELETE 请求"></a>DELETE 请求</h3>
+<p class="myNormal">删除服务，支持批量删除服务。url 中传递需要删除服务的 id 数组。</p>
+<h4>响应结构</h4>
+<p class="myNormal">返回的资源表述结构如下：</p>
+<table class="iServerTable" cellspacing="0" width="70%" align="center">
+	<colgroup><col style="width: 15%;"/>
+	<col style="width: 15%;"/>
+	<col style="width: 70%;"/>
+	</colgroup><tbody><tr class="t1st">
+		<td>字段</td>
+		<td>类型</td>
+		<td>说明</td>
+	</tr>
+	<tr class="t2Row">
+		<td>succeed</td>
+		<td>boolean</td>
+		<td>删除服务是否成功。</td>
+	</tr>
+	<tr class="t1Row">
+		<td>error</td>
+		<td>Httperror</td>
+		<td>出错信息，如果删除服务成功，则没有本字段。</td>
+	</tr>
+</tbody></table>
+<h4>响应示例</h4>
+<p class="myNormal">对 services 资源：http://localhost:8190/iportal/web/services.rjson?ids=[1,2] 
+ 执行 DELETE 请求，批量删除 id 为 1 和 2 的两个服务，返回的 rjson 格式响应结果如下：</p>
+<p class="myCodeP">{ &quot;succeed&quot;: true}</p>
+<h3><a id="HEAD 请求"></a>HEAD 请求</h3>
+<p class="myNormal">返回跟 GET 请求一样的 HTTP 响应头，但是没有响应实体。可以在不必传输整个响应内容的情况下，获取包含在响应消息头中的元数据信息。元数据信息包括媒体类型，字符编码，压缩编码，实体内容长度等。</p>
+<p class="myNormal">HEAD 请求可以用来判断 services 资源是否存在，或者客户端是否有权限访问 services 
+ 资源。通过对加.&lt;format&gt;的 URI 执行 HEAD 请求，还可以快速判断 services 资源是否支持&lt;format&gt;格式的表述。</p>
+<h2>请参见</h2>
+<ul class="referenceList">
+	<li class="referenceList"><a class="contentpagehyperlink" href="../Portal.htm">portal</a>、<a class="contentpagehyperlink" href="service/service.htm">service</a>、<a class="contentpagehyperlink" href="servicesCheckStatus.htm">servicesCheckStatus</a>、<a class="contentpagehyperlink" href="serviceShareSettings.htm">servicesShareSettings</a>、<a class="contentpagehyperlink" href="servicesStatus.htm">servicesStatus</a>、<a class="contentpagehyperlink" href="batchRegister/batchRegister.htm">batchRegister</a>、<a class="contentpagehyperlink" href="harvestBatchRegisterServices.htm">harvestBatchRegisterServices</a></li>
+	<li class="referenceList"><a class="contentpagehyperlink" href="../../clientBuildREST/ConstructRESTRequest.htm">客户端构建 
+	 REST 请求</a></li>
+	<li class="referenceList"><a class="contentpagehyperlink" href="../../StatusCodeDescription.htm">状态码列表及说明</a></li>
+	<li class="referenceList"><a class="contentpagehyperlink" href="../../SuperMap_iServer_REST_API_OutputFormat.htm">SuperMap 
+	 iServer REST API 表述格式介绍</a></li>
+	<li class="referenceList"><a class="contentpagehyperlink" href="../../iPortalArchitecture.htm">资源层次结构</a></li>
+</ul>
+
+
+<p><br/></p></div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../../../../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../../../../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../../../../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../../../../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../../../../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../../../../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../../../../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../../../.."
+    gCommonRootRelPath = "../../../.."
+    gTopicId = "8.2.4.12"
+  
+//]]></script>
+
+  <script src="../../../../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../../../../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../../../../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../../../../whxdata/layoutconfig.js"></script>
+  <script src="../../../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

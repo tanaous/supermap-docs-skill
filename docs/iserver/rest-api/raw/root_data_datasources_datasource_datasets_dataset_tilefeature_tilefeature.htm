@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../../../../../../../../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../../../../../../../../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../../../../../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../../../../../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../../../../../../../../../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../../../../../../../../iserver-icon.png"/>
+    
+  <script data-relpath="../../../../../../../../.." src="../../../../../../../../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <meta name="template" content="../../../../../../../../../assets/layouts/RESTAPI.htt"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Language" content="zh-CN"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>tileFeature</title>
+  <link rel="StyleSheet" href="../../../../../../../../../assets/css/SuperMapHelp.css" type="text/css"/>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../../../../../../../../../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../../../../../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../../../../../assets/css/homeButtom.css"/>
+  <script src="../../../../../../../../../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../../../../../../../../../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../../../../../../../../../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../../../../../../../../../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../../../../../../../../../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../../../../../../../../../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../../../../../../../../../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../../../../../../../../../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../../../../../../../../../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <h2><a id="URI"></a>URI</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="../dataset.htm#URI">&lt;dataset_uri&gt;</a>/tilefeature[.&lt;format&gt;]</p>
+  <h2>支持的方法</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="#GET 请求">GET</a>、<a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a></p>
+  <h2>父资源</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="../dataset.htm">dataset</a></p>
+  <h2>介绍</h2>
+  <p class="mynormal">通过对 tileFeature 资源执行请求，可以获取地图中矢量图层{layerName}中的瓦片要素。客户端获取的瓦片要素，可以通过自定义的样式进行渲染，并可查询交互。</p>
+  <p class="mynormal">您可以在 URI 中设置输出矢量切片的参数，如设置图层、切片大小、格网行列号等。其中，格网的划分规则如下：将地图全幅显示时的图片从左上角开始，往下和往右进行切割，切割的大小默认为256*256 像素，左上角的格网行号为 0，列号为 0，往下和往右依次递增。其中，格网的大小和地图的比例尺等参数都可以在请求时进行指定。</p>
+  <p class="myNormal" style="font-weight: bold;">支持的方法：</p>
+  <ul class="supportList" style="list-style: disc;">
+    <li class="supportList"><a class="contentpagehyperlink" href="#GET 请求">GET</a>：获取地图中指定矢量图层的瓦片要素，URI 中的参数确定了格网的位置。</li>
+    <li class="supportList"><a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a>：检查 tileFeature 资源是否存在，或权限是否可以访问 tileFeature 资源。</li>
+  </ul>
+  <p class="myNormal"><span style="font-weight: bold;">支持的表述格式：</span>MVT。</p>
+  <h2>资源层次</h2>
+  <p class="myNormal"><img alt="" border="0" src="../../../../../../../../../assets/images/root/data/datasources/datasource/datasets/dataset/tilefeature/tileFeature.png" style="border: none;" usemap="#MAP728501802"/><map id="MAP728501802" name="MAP728501802"><area alt="根资源" coords="3, 2, 259, 43" href="../../../../../../root.htm" shape="rect"/> <area alt="data" coords="59, 49, 205, 89" href="../../../../../data.htm" shape="rect"/> <area alt="datasources.htm" coords="90, 91, 229, 132" href="../../../../datasources.htm" shape="rect"/> <area alt="datasource.htm" coords="137, 137, 317, 229" href="../../../datasource.htm" shape="rect"/> <area alt="datasets.htm" coords="180, 234, 326, 275" href="../../datasets.htm" shape="rect"/> <area alt="dataset.htm" coords="226, 280, 450, 377" href="../dataset.htm" shape="rect"/> <area alt="features.htm" coords="272, 391, 418, 432" href="tilefeature.htm" shape="rect"/></map></p>
+  <h2>HTTP 请求方法</h2>
+  <p class="myNormal">对如下 URI 执行 HTTP 请求，以 rjson 输出格式为例加以说明，其中，supermapiserver 是服务器名，“China_Nation_B_pt”是图层名（{layerName}）。</p>
+  <p class="uriStyle">http://supermapiserver:8090/iserver/services/data-China100/rest/data/datasources/China/datasets/China_Nation_B_pt/tilefeature.mvt</p>
+  <h3><a id="GET 请求"></a>GET 请求</h3>
+  <p class="myNormal">获取地图的矢量瓦片，URI 中的参数确定了格网的位置等信息。</p>
+  <h4>请求参数</h4>
+  <p class="myNormal">对 tileFeature 资源执行 GET 请求，获取地图中指定矢量图层的瓦片要素，需要在 URI 中包含相关参数，如果没有指定参数，则会按照地图的当前状态为准，进行切割和出图。</p>
+  <p class="myNormal">目前有两种获取矢量瓦片的方式：一是按照瓦片的行列号获取（参数为 X、Y），二是按照视图范围获取（参数为 ViewBounds ），其他参数相同，具体如下所示：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>名称</td>
+        <td>类型</td>
+        <td>含义</td>
+      </tr>
+      <tr class="t2Row">
+        <td>x</td>
+        <td>long</td>
+        <td>格网在地图中列号，从左向右递增。默认情况下，切片从地图最左上角开始，其格网列号为0。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>y</td>
+        <td>long</td>
+        <td>格网在地图中行号，从上向下递增。默认情况下，切片从地图最左上角开始，其格网行号为0。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>z</td>
+        <td>long</td>
+        <td>地图显示层级，如 10。<br/>
+          注：1. 当该参数和 scale 同时存在时，scale 参数生效。2. 该参数不可与 origin 参数一同使用。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>ViewBounds</td>
+        <td>String</td>
+        <td>根据 ViewBounds 的范围获取对应的瓦片，如: viewBounds=1.2914800299064118E7,4931105.5687329285,1.299307181602814E7,5009377.085696951</td>
+      </tr>
+      <tr class="t2Row">
+        <td>scale</td>
+        <td>double</td>
+        <td>地图的比例尺。如0.0001表示比例尺为1：10000。详见<a class="contentpagehyperlink" href="../../../../../../../../../Appendix/scale.htm">比例尺的定义</a>。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>width</td>
+        <td>int</td>
+        <td>格网的宽度，单位是像素，默认为 256 像素。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>height</td>
+        <td>int</td>
+        <td>格网的高度，单位是像素，默认为 256 像素。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>origin</td>
+        <td><a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/services/components/commontypes/Point2D.html" style="color: #0000ff; text-decoration: underline; ">Point2D</a></td>
+        <td>切片的起始参考点，默认为数据范围的左上角。如果指定为其他值，则以所赋值作为切片的起始参考点，计算切片行列号。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>compressTolerance（已过时）</td>
+        <td>int</td>
+        <td>抽稀容限。 单位为像素，合并容限范围内的坐标序列。 注：mvt格式暂不支持设置。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>cacheEnabled</td>
+        <td>boolean</td>
+        <td>是否使用缓存，默认为 false。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>Attributes</td>
+        <td>boolean</td>
+        <td>是否返回属性，默认为 false。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>ViewBounds</td>
+        <td>String</td>
+        <td>根据 ViewBounds 的范围获取对应的瓦片，如:  viewBounds=1.2914800299064118E7,4931105.5687329285,1.299307181602814E7,5009377.085696951</td>
+      </tr>
+      <tr class="t1Row">
+        <td>returnFields</td>
+        <td>String</td>
+        <td>返回 returnField 中指定的字段，可设置多个字段，各字段间用英文 &#39;,&#39; 隔开。如: returnFields=Name,PAC</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4><br/>
+    响应示例</h4>
+  <p class="myNormal">对 tileFeature 资源请求 &quot; China100&quot; 下“China_Nation_B_pt”的矢量切片，则需执行 GET 请求：http://localhost:8090/iserver/services/data-China100/rest/data/datasources/China/datasets/China_Nation_B_pt/tilefeature.mvt?returnAttributes=true&amp;x=12&amp;y=6&amp;width=512&amp;height=512&amp;scale=5.408523429128497e-8&amp;origin=%7B%27x%27:-20037508.342789244,%27y%27:20037508.342789244%7D，则将获取一个后缀为 .mvt 的瓦片数据。</p>
+  <p class="myNormal"> </p>
+  <h3><a id="HEAD 请求"></a>HEAD 请求</h3>
+  <p class="myNormal">返回跟 GET 请求一样的 HTTP 响应头，但是没有响应实体。可以在不必传输整个响应内容的情况下，获取包含在响应消息头中的元数据信息。元数据信息包括媒体类型，字符编码，压缩编码，实体内容长度等。</p>
+  <p class="myNormal">HEAD 请求可以用来判断 tileFeature 资源是否存在，或者客户端是否有权限访问 tileFeature 资源。通过对加.&lt;format&gt;的 URI 执行 HEAD 请求，还可以快速判断 tileFeature 资源是否支持&lt;format&gt;格式的表述。</p>
+  <h2>请参见</h2>
+  <ul class="referenceList">
+    <li class="referenceList"><a class="contentpagehyperlink" href="../dataset.htm">dataset</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../../../../../clientBuildREST/ConstructRESTRequest.htm">客户端构建 REST 请求</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../../../../../StatusCodeDescription.htm">状态码列表及说明</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../../../../../SuperMap_iServer_REST_API_OutputFormat.htm">SuperMap iServer REST API 表述格式介绍</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../../../../../resource_hierarchy.htm">资源层次结构</a></li>
+  </ul>
+  <p> </p>
+
+</div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../../../../../../../../../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../../../../../../../../../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../../../../../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../../../../../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../../../../../../../../../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../../../../../../../../../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../../../../../../../../../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../../../../../../../../../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../../../../../../../../../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../../../../../../../../.."
+    gCommonRootRelPath = "../../../../../../../../.."
+    gTopicId = "8.2.2.6.4.2.1.1.1.8"
+  
+//]]></script>
+
+  <script src="../../../../../../../../../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../../../../../../../../../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../../../../../../../../../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../../../../../../../../../whxdata/layoutconfig.js"></script>
+  <script src="../../../../../../../../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

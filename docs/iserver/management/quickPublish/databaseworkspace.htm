@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../iserver-icon.png"/>
+    
+  <script data-relpath="../.." src="../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <meta name="template" content="../../assets/layouts/SuperMapiServerMain.htt"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>发布数据库型工作空间</title>
+  <link rel="StyleSheet" href="../../assets/css/SuperMapHelp.css" type="text/css"/>
+  <script type="text/javascript" src="../../assets/js/shCore.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushBash.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushCpp.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushCSharp.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushCss.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushDelphi.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushDiff.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushGroovy.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushJava.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushJScript.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushPhp.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushPlain.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushPython.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushRuby.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushScala.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushSql.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushVb.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushXml.js"></script>
+  <script type="text/javascript" src="../../assets/js/ConfigiServer6R.js"></script>
+  <script type="text/javascript" src="../../assets/js/SMCollapse.js"></script>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../assets/css/homeButtom.css"/>
+  <script src="../../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <p class="myNormal">在 SuperMap iServer 中，将 数据库型（Oracle 、SQL Server、PostgreSQL、PostGIS、DM、XUGU DB）工作空间快速发布为 GIS 服务，有以下两种方式：</p>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1">在服务管理<strong>首页</strong>点击<strong>快速发布</strong>，进入发布向导</li>
+    <li class="SymbolList1">在<strong>服务</strong>-&gt;<strong>服务管理</strong>页面，点击<strong>快速创建服务</strong>，进入发布向导</li>
+  </ul>
+  <h3 class="myNormal"><a id="_1_选择发布数据来源"></a>（1）选择发布数据来源</h3>
+  <p class="myNormal">选择数据源为对应的数据库工作空间，例如“Oracle工作空间”，然后点击按钮<strong>下一步</strong>。</p>
+  <h3><a id="_2_配置数据_"></a>（2）配置数据</h3>
+  <p class="myNormal">根据所选择的数据库类型，填写相应的参数配置，点击<strong><strong>下一步</strong></strong>。</p>
+  <table align="center" cellspacing="0" class="iServerTable" style="left: 0px; top: 200px; height: 332px; width: 1198px;">
+    <colgroup>
+      <col style="width: 10%;"/>
+      <col style="width: 18%;"/>
+      <col style="width: 18%;"/>
+      <col style="width: 18%;"/>
+      <col style="width: 119px;"/>
+      <col style="width: 44px;"/>
+      <col style="width: 20px;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td style="text-align: center;">参数名称</td>
+        <td style="text-align: center;">Oracle 工作空间</td>
+        <td style="text-align: center;">SQL Server 工作空间<br/>
+          <span style="font-weight:bold;">（仅 Windows 平台支持）</span>
+        </td>
+        <td style="text-align: center">PostgreSQL 工作空间</td>
+        <td style="text-align: center;">PostGIS 工作空间</td>
+        <td style="text-align: center;">DM 工作空间</td>
+        <td style="text-align: center;">XUGU DB工作空间</td>
+      </tr>
+      <tr class="t2Row">
+        <td style="text-align: center;">
+          <p style="text-align: center;">服务器地址</p>
+        </td>
+        <td style="text-align: center;">Oracle TNS 地址，例如：192.168.112.203:1521/orcl</td>
+        <td style="text-align: center;">SQL Sever 系统 DSN（Database System Name）地址</td>
+        <td style="text-align: center">PostgreSQL 数据库所在的机器的{ip}:{port}，如：192.168.110.110:5432</td>
+        <td style="text-align: center;">PostGIS 数据库所在的机器的{ip}:{port}，如：192.168.110.110:5432</td>
+        <td style="text-align: center;">DM 数据库所在机器的 ip 地址</td>
+        <td style="text-align: center;">虚谷 数据库所在机器的 ip 地址</td>
+      </tr>
+      <tr class="t1Row">
+        <td style="text-align: center;">
+          <p style="text-align: center;">工作空间名称</p>
+        </td>
+        <td colspan="6" rowspan="1" style="text-align: center;">
+          <p style="text-align: center;">工作空间在数据库中的名称</p>
+        </td>
+      </tr>
+      <tr class="t2Row">
+        <td style="text-align: center;">
+          <p style="text-align: center;">数据库名称</p>
+        </td>
+        <td style="text-align: center;">（选填）空间数据库名称</td>
+        <td style="text-align: center;">空间数据库名称</td>
+        <td style="text-align: center">空间数据库名称</td>
+        <td style="text-align: center;">空间数据库名称</td>
+        <td style="text-align: center;">（选填）空间数据库名称</td>
+        <td style="text-align: center;">空间数据库名称</td>
+      </tr>
+      <tr class="t1Row">
+        <td style="text-align: center;">
+          <p style="text-align: center;">用户名</p>
+        </td>
+        <td colspan="6" rowspan="1" style="text-align: center;">
+          <p style="text-align: center;">用来登录数据库的用户名</p>
+        </td>
+      </tr>
+      <tr class="t2Row">
+        <td style="text-align: center;">
+          <p style="text-align: center;">密码</p>
+        </td>
+        <td colspan="6" rowspan="1" style="text-align: center;">
+          <p style="text-align: center;">用来登录数据库的密码</p>
+        </td>
+      </tr>
+      <tr class="t1Row">
+        <td style="text-align: center;">
+          <p style="text-align: center;">驱动</p>
+        </td>
+        <td style="text-align: center;">-</td>
+        <td style="text-align: center;">当采用 ODBC 连接时的驱动程序名称。只有 SQL Server 数据库使用 ODBC 连接，其驱动程序名可为 SQL Server 或 SQL Native Client</td>
+        <td style="text-align: center">pgSQL Server</td>
+        <td style="text-align: center;">-</td>
+        <td style="text-align: center;">-</td>
+        <td style="text-align: center;">-</td>
+      </tr>
+    </tbody>
+  </table>
+  <ul class="SymbolList1" style="list-style: disc; margin-left: -8px;">
+    <li class="SymbolList1">进程模式下，可在此步骤启用多实例并设置实例数量，根据设置，服务实例将部署在相应数量的 Worker 中。不启用时，将发布为单实例，即服务实例只部署在一个 Worker 中。详细请参见：<a class="contentpagehyperlink" href="../GISService_Config/Multi_processes.htm#multiinstance">配置使用多服务实例</a></li>
+  </ul>
+  <h3><a id="_3_选择服务类型"></a>（3）选择服务类型</h3>
+  <p class="myNormal">选择服务接口类型，点击按钮<strong>下一步</strong>。</p>
+  <p class="myNormal">数据库型工作空间可以支持发布为：REST-地图服务、REST-数据服务、REST-三维服务、REST-空间分析服务、REST-三维网络分析服务、REST-交通网络分析服务、REST-交通换乘服务、REST-地址匹配服务、REST-矢量瓦片服务、WMS1.1.1 服务、WMS1.3.0 服务、WMTS1.0.0 服务、WMTS-CHINA 服务、WFS1.0.0 服务、WFS2.0.0 服务、WCS1.1.1 服务、WCS1.1.2 服务、WPS1.0.0 服务、OGC API 地图服务、OGC API 数据服务、ArcGIS REST 地图服务、ArcGIS REST 要素服务、ArcGIS REST 网络分析服务、ArcGIS REST 矢量瓦片服务、ArcGIS REST 地址匹配服务、Baidu REST 地图服务、Google REST 地图服务、REST-知识图谱服务。</p>
+  <p class="myNormal">SuperMap iServer 会对您所选择的工作空间进行分析判断，给出能够发布的服务类型选项。</p>
+  <h3 class="myNormal"><a id="_4_配置服务"></a>（4）配置服务</h3>
+  <p class="myNormal">选择或填写相应的服务配置，点击<strong>发布</strong>，进行服务的发布。</p>
+  <p class="myNormal">对应的服务配置项，请参考：<a class="contentpagehyperlink" href="fileworkspace.htm#_4_配置服务">发布文件型工作空间-配置服务</a></p>
+  <h3><a id="_5_发布"></a>（5）发布</h3>
+  <p class="myNormal">当发布完成后，会给出每个服务发布的状态和服务访问地址链接。点击<strong>返回服务管理页</strong>，可以回到服务管理页面，进行服务的查看和管理。</p>
+  <p class="myNormal"> </p>
+  <h2> </h2>
+  <p> </p>
+  <p class="myNormal"> </p>
+
+</div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../.."
+    gCommonRootRelPath = "../.."
+    gTopicId = "5.1.1.1.0_2"
+  
+//]]></script>
+
+  <script src="../../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../../whxdata/layoutconfig.js"></script>
+  <script src="../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../iserver-icon.png"/>
+    
+  <script data-relpath="../.." src="../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <meta name="template" content="../../assets/layouts/SuperMapiServerMain.htt"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Language" content="zh-CN"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>发布分布式栅格数据</title>
+  <link rel="StyleSheet" href="../../assets/css/SuperMapHelp.css" type="text/css"/>
+  <script type="text/javascript" src="../../assets/js/shCore.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushBash.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushCpp.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushCSharp.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushCss.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushDelphi.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushDiff.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushGroovy.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushJava.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushJScript.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushPhp.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushPlain.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushPython.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushRuby.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushScala.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushSql.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushVb.js"></script>
+  <script type="text/javascript" src="../../assets/js/shBrushXml.js"></script>
+  <script type="text/javascript" src="../../assets/js/ConfigiServer6R.js"></script>
+  <script type="text/javascript" src="../../assets/js/SMCollapse.js"></script>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../assets/css/homeButtom.css"/>
+  <script src="../../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <p class="myNormal">SuperMap iServer 支持将分布式栅格数据作为数据来源直接发布为 REST 地图服务，其中，栅格数据支持的存储类型有两种，分别为：本地存储、HDFS 存储，您可以通过分布式分析服务的 buildRasterPyramid 资源创建这两种分布式存储。</p>
+  <p class="myNormal">您可以通过以下步骤快速发布已有的栅格瓦片：</p>
+  <ol class="ListInParagraph" style="list-style: decimal;">
+    <li class="ListInParagraph">在服务管理<strong>首页</strong>-&gt;<strong>快速发布</strong>或在<strong>服务</strong>-&gt;<strong>服务管理</strong>页面，点击<strong>快速创建服务</strong>，进入发布向导；</li>
+    <li class="ListInParagraph">选择数据来源为“分布式栅格数据”，点击<strong>下一步</strong>；</li>
+    <li class="ListInParagraph">配置服务数据信息，点击<strong>下一步</strong>：</li>
+  </ol>
+  <ul style="list-style: disc; margin-left: -8px;">
+    <li>选择<strong>存储类型</strong>，并依次填写存储信息：
+      <ul style="list-style: disc;">
+        <li style="list-style: disc;">存储类型选择“本地存储”：填写&quot;本地目录&quot;，例如，F:\test\catalog；</li>
+        <li style="list-style: disc;">存储类型选择“HDFS存储”：填写“服务地址”，即HDFS服务地址，格式为：hdfs://{ip}:{port}/test；</li>
+      </ul>
+    </li>
+    <li>设置是否已开启 Kerberos 认证。若 HDFS 集群为开启 Kerberos 认证的模式时，则须勾选<strong>已开启 Kerberos 认证</strong>，并填入以下信息：
+      <ul style="list-style: disc;">
+        <li>Hadoop 集群 core-site.xml 文件路径：Hadoop 集群的配置文件 core-site.xml 在 iServer 主机中的路径。</li>
+        <li>HDFS 集群 hdfs-site.xml 文件路径：填写 HDFS 集群的配置文件 hdfs-site.xml 在 iServer 主机中的路径</li>
+        <li>Kerberos 客户端配置文件路径：填写 Kerberos 客户端的配置文件 krb5.ini 在 iServer 主机中的路径</li>
+        <li>Kerberos 主体名称：填写 Kerberos 主体名称；</li>
+        <li>Kerberos 秘钥文件路径：填写 Kerberos 秘钥文件路径；</li>
+        <li>jaas 配置文件路径：填写 jaas.conf 配置文件路径；</li>
+      </ul>
+    </li>
+  </ul>
+  <ol class="ListInParagraph" start="4" style="list-style: decimal;">
+    <li class="ListInParagraph">选择发布的服务类型，如 REST-地图服务、REST-数据服务等，点击<strong>下一步</strong>；</li>
+  </ol>
+  <ol class="ListInParagraph" start="5" style="list-style: decimal;">
+    <li class="ListInParagraph">根据选择的服务类型，进行相应的服务配置，并点击<strong>发布</strong>；
+      <ul style="list-style: disc;">
+        <li>如选择发布为地图服务，如 REST-地图服务、WMS1.0.0服务、WMTS1.0.0服务等时，则需输入或点击“选择”按钮来选取 .JSON 格式的样式文件，用于指定地图的样式 ；</li>
+        <li>如选择发布为数据服务，如 REST-数据服务、WFS1.0.0服务、ArcGIS REST要素服务等时，则需要设置数据服务是否“允许编辑”，默认不允许编辑。</li>
+      </ul>
+    </li>
+  </ol>
+  <ol class="ListInParagraph" start="6" style="list-style: decimal;">
+    <li class="ListInParagraph">发布完成后，可以看到当前发布的服务名和链接，点击可直接访问服务。</li>
+  </ol>
+  <p><span>当</span>您使用旧版 UI 进行服务发布，且栅格数据已进行了数据注册，则除了可以为地图指定样式外，还可以自定义地图状态。具体配置如下。配置完后，继续点击<strong>下一步</strong>。</p>
+  <ul style="list-style: circle; margin-left: -8px;">
+    <li style="list-style: disc;">指定地图样式。具体可参照<a class="contentpagehyperlink" href="stylefile.htm">栅格瓦片样式文件说明</a>。</li>
+    <li style="list-style: disc;">自定义地图状态。如下图所示：</li>
+  </ul>
+  <p style="margin-left: 120px;"><img align="center" alt="" border="0" height="559" src="../../assets/images/Server_Service_Management/publishrasterenable.png" style="border: none;" width="698"/></p>
+  <ul style="list-style: disc; margin-left: -8px;">
+    <li>选择“添加地图”或“移除地图”，即可添加或者移除所要发布的地图。可发布多个地图。</li>
+    <li>地图名称：可设定所要发布的地图名称。</li>
+    <li>是否开启多版本
+      <ul style="list-style: disc;">
+        <li>默认：不开启多版本。
+          <ul style="list-style: disc;">
+            <li>图层ID:所要发布的图层的ID</li>
+          </ul>
+        </li>
+        <li>勾选开启多版本
+          <ul style="list-style: disc;">
+            <li>选择“添加版本”或“移除版本”即可添加或者删除定义的版本。</li>
+            <li>版本名称：可自定义发布地图服务的版本名称。</li>
+            <li>图层ID：可选择每个版本对应的所要发布的图层ID</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <ul style="margin-left: -8px;">
+    <li>发布服务时，若选择“自定义地图状态”，开启了某个地图的多版本，则浏览该地图时，可选择版本进行浏览，如下图所示：</li>
+  </ul>
+  <p style="margin-left: 40px;"><img align="center" alt="" border="0" height="437" src="../../assets/images/Server_Service_Management/publishmoreversion.png" style="border: none;vertical-align: middle" width="698"/></p>
+  <p style="font-weight: bold;"> </p>
+
+</div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../.."
+    gCommonRootRelPath = "../.."
+    gTopicId = "5.1.2.0_12"
+  
+//]]></script>
+
+  <script src="../../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../../whxdata/layoutconfig.js"></script>
+  <script src="../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

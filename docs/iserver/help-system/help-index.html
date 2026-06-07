@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> SuperMap iServer OnlineHelp </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+ </HEAD>
+
+ <BODY>
+  
+ </BODY>
+
+ <SCRIPT LANGUAGE="JavaScript">
+//<!--
+	function getLanguage() {
+		var language = getLanguageFromCookie();
+		if(!language) {
+			language = window.navigator.language;
+		}
+		if(!language) {
+			language = window.navigator.browserLanguage;
+		}
+		if(!language) {
+			language = "en-us";
+		}
+		return language;
+	}
+
+	function getLanguageFromCookie() {
+		var cookie = document.cookie;
+		if(!cookie) {
+			return null;
+		}
+		var index = cookie.indexOf("language=");
+		if(index < 0) {
+			return null;
+		}
+		var languageStr = cookie.substring(index+9);
+		index = languageStr.indexOf(";");
+		if(index < 0) {
+			return languageStr;
+		} else {
+			return languageStr.substring(0, index);
+		}
+		
+	}
+	
+    window.onload=function() {
+		var pathStr = "html/en";
+		var language = getLanguage();
+		if(language.indexOf("zh") === 0) {
+			pathStr = "html/zh";
+		} else if(language.indexOf("ja") === 0) {
+			pathStr = "html/ja";
+		}
+		window.location.href=window.location.hash ? pathStr+"/"+window.location.hash.substr(1) : pathStr+"/index.htm";
+    }
+//-->
+</SCRIPT>
+</HTML>

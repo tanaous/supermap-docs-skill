@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../iserver-icon.png"/>
+    
+  <script data-relpath=".." src="../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <meta name="template" content="../assets/layouts/SuperMapiServerMain.htt"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Language" content="zh-CN"/>
+  <meta name="topic-check-list" content="Ran Smart Index"/>
+  <meta name="topic-status" content="Complete"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>全局属性配置</title>
+  <link rel="StyleSheet" href="../assets/css/SuperMapHelp.css" type="text/css"/>
+  <script type="text/javascript" src="../assets/js/shCore.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushBash.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushCpp.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushCSharp.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushCss.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushDelphi.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushDiff.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushGroovy.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushJava.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushJScript.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushPhp.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushPlain.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushPython.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushRuby.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushScala.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushSql.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushVb.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushXml.js"></script>
+  <script type="text/javascript" src="../assets/js/ConfigiServer6R.js"></script>
+  <meta name="rh-index-keywords" content="全局属性配置"/>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../assets/css/homeButtom.css"/>
+  <script src="../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <p class="myNormal">在 SuperMap iServer 中， 配置系统全局性质的变量信息，可以通过<strong>全局设置</strong>页面进行设置，如服务设置、服务配置信息存储、临时资源存储设置。</p>
+  <p class="myNormal">访问 SuperMap iServer 服务管理界面，点击<strong>高级</strong>-&gt;<strong>全局设置</strong>， 进入全局设置页面（http://localhost:8090/iserver/admin-ui/advanced/globalsettings），即可对 iServer 中用到的全局性的变量进行配置：</p>
+  <h2><a id="服务设置"></a>地图瓦片的缓存设置</h2>
+  <p class="myNormal" style="text-align: center;">表 1 地图瓦片缓存设置参数说明</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 30%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>参数名称</td>
+        <td>参数说明</td>
+      </tr>
+      <tr class="t2Row">
+        <td>缓存图片的输出路径</td>
+        <td>缓存图片的输出路径，默认为../webapps/iserver/output。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>地图图片的发布站点</td>
+        <td>地图图片的发布站点，即访问缓存图片的根目录 URI，默认为 http://{ip}:{port}/iserver/output/。注意，地图图片的发布站点应该为当前 iServer 应用的 IP 和 端口，且后两级资源路径(/iserver/output/)应该与缓存图片的输出路径保持一致。</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="myNormal">以上服务设置也可以通过系统配置文件来设置，请参考<a class="contentpagehyperlink" href="../Appendix/iServer_configInfo.htm#1.__properties__元素">iServer 配置文件说明</a>。</p>
+  <h2><a id="服务配置信息存储"></a>服务配置信息存储</h2>
+  <p>在 SuperMap iServer中，支持通过设置服务配置信息存储来选择将服务配置信息存储在数据库中或是配置文件中。修改配置后，需重启生效。</p>
+  <h3>服务配置信息存储在配置文件中</h3>
+  <ul class="SymbolList1">
+    <li class="SymbolList1">服务配置存储类型：若需要将服务配置信息存储在配置文件中，选择服务配置存储类型为 XML，详情请参见  <a class="contentpagehyperlink" href="../Appendix/iServer_configInfo.htm">iServer 配置文件说明</a>。</li>
+  </ul>
+  <h3>服务配置信息存储在数据库中</h3>
+  <p class="myNormal" style="text-align: center;">表 2 服务配置信息参数说明</p>
+  <table align="center" border="1" cellpadding="1" cellspacing="1" class="iServerTable" style="border-collapse: collapse; width: 1146px;">
+    <colgroup>
+      <col style="width: 160.438px;"/>
+      <col style="width: 130px;"/>
+      <col style="width: 703px;"/>
+    </colgroup>
+    <tbody>
+      <tr>
+        <td>参数名称</td>
+        <td style="">是否必须</td>
+        <td>参数说明</td>
+      </tr>
+      <tr>
+        <td>服务配置存储类型</td>
+        <td style="">必选</td>
+        <td>如需要将配置信息存储在数据库中，选择服务配置存储类型为对应的数据库，当前支持将配置信息存储在 Oracle、PostgreSQL、Kingbase、GaussDB、Vastbase、HighgoDB、GBase 8c南大通用数据库中，其中PostgreSQL、Kingbase、GaussDB、Vastbase、HighgoDB、GBase 8c 六者配置方法相同。<span>PostgreSQL 配置步骤请参考</span><span style="font-weight: bold;"> </span><span><a class="contentpagehyperlink" href="../Subject_introduce/Security/otherSecurity/PostgreSQL_install/PostgreSQL_install_config.htm" style="font-weight: normal;">PostgreSQL 安装与配置</a>，Oracle 安装与配置步骤详见 <a class="contentpagehyperlink" href="../Subject_introduce/Security/otherSecurity/Oracle_install/Oracle_install_config.htm" style="font-weight: normal;">Oracle 安装与配置</a></span><span style="font-weight: bold;">。</span></td>
+      </tr>
+      <tr>
+        <td>服务器地址</td>
+        <td style="">必选</td>
+        <td>数据库的服务地址，PostgreSQL、Kingbase、GaussDB、Vastbase、HighgoDB、GBase 8c数据库服务地址如 &#39;192.168.17.217:5432/SuperMap&#39;，Oracle 数据库服务地址如 &#39;192.168.17.217:1521:SuperMap。</td>
+      </tr>
+      <tr>
+        <td>用户名</td>
+        <td style="">必选</td>
+        <td>该数据库所有者的用户名。</td>
+      </tr>
+      <tr>
+        <td>密码</td>
+        <td style="">必选</td>
+        <td>该数据库所有者的密码。</td>
+      </tr>
+      <tr>
+        <td>模式名</td>
+        <td style="">选填</td>
+        <td>存储服务配置信息表所在的模式，默认存储于public模式下。若您需要将服务配置信息存储在数据库的非 public 模式下，输入指定模式名即可</td>
+      </tr>
+      <tr>
+        <td>服务存储表名</td>
+        <td style="">选填</td>
+        <td>存储服务配置信息的表的表名，默认为 iserver。</td>
+      </tr>
+      <tr>
+        <td><span style="font-size:11pt"><span style="line-height:130%"><span style="font-family:minorHAnsi"><span style="color:#333333"><span style="font-size:11.0000pt"><span style="font-family:minorHAnsi"><span style="color:#333333">数据库巡查时间间隔（秒）</span></span></span></span></span></span></span></td>
+        <td style="">选填</td>
+        <td>默认为5秒</td>
+      </tr>
+      <tr>
+        <td><span style="font-size:11pt"><span style="line-height:130%"><span style="font-family:minorHAnsi"><span style="color:#333333"><span style="font-size:11.0000pt"><span style="font-family:minorHAnsi"><span style="color:#333333">导入服务配置信息</span></span></span></span></span></span></span></td>
+        <td>选填</td>
+        <td>当您已选择一种存储方式后，可以将此之前已存储于其他 XML 文件、数据库中的配置信息导入至您当前选择的存储方式。预期导入的配置信息的类型，包括接口配置、提供者配置、提供者集合配置、组件配置、组件集合配置。</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><span style="font-size: 16px; font-weight: bold;">注意事项：</span></p>
+  <p class="myNormal">1.由于部分版本的 PostgreSQL 的数据库服务只监听 Localhost 地址，当 iServer 与 PostgreSQL 不在同一机器时，可能会出现 iServer 连接 PostgreSQL 服务失败的情况。您需要配置 PostgreSQL 的配置文件 postgresql.conf，设置：</p>
+  <p class="myCodeP"> listen_address=&#39;*&#39;</p>
+  <p class="myNormal">表示允许其他机器通过 IP 或域名访问 PostgreSQL 数据库服务。</p>
+  <p class="myNormal">2. PostgreSQL 的安全策略默认仅允许本机的用户访问，当 iServer 与 PostgreSQL 不在同一机器时，可能会出现 iServer 使用 PostgreSQL 的系统用户访问不了 PostgreSQL 服务的情况。您需要在 pg_hba.conf 文件中添加访问策略，允许指定网段的主机可以访问，设置内容如下 ：</p>
+  <p class="myCodeP">host all all 192.168.112.0/24 md5</p>
+  <ul class="Disc">
+    <li>host：表示安装PostgreSQL的主机</li>
+    <li>第一个 all：主机上的所有数据库实例</li>
+    <li>第二个 all：所有用户</li>
+    <li>192.168.112.0/24 ：表示可使用合法的用户信息来访问的网段，您可以将 &#39;192.168.112.0&#39; 替换为您期望的网段。</li>
+    <li>md5：验证方式</li>
+  </ul>
+  <p class="myNormal">3.若配置使用 Oracle 类型的数据库，需要您手动将相关的 ojdbc 驱动包（建议版本为 ojdbc14-10.2.0.4.0.jar）放到 %SuperMap iServer_HOME%\webapps\iserver\WEB-INF\lib目录下。</p>
+  <p class="myNormal">4.当设置配置信息存储在数据库中后，建议也将其安全信息的存储也切换到数据库中，以避免其他 iServer 在共享该服务配置时出现安全权限冲突的问题。同时如某一 iServer 需要共享来自于其他 iServer(后称 iServer1) 存储在数据库中的配置信息，除需要将配置信息切换到 iServer1 的配置信息存储数据库，也需要将安全信息存储切换到 iServer1 安全信息存储的数据库。具体安全信息存储设置请参考：<a class="contentpagehyperlink" href="../Subject_introduce/Security/otherSecurity/storageConfig.htm">安全信息存储</a></p>
+  <p class="myNormal">5.当您需要使用同一份存储在数据库中的服务配置信息来启用多个 iServer 节点或通过旧有版本 iServer 的服务配置信息来启用新的 iServer 时，您需要保证后启用的 iServer 使用的 Token 共享密钥与先启用的 iServer 一致。登录服务管理器，访问<strong>安全</strong>-&gt;<strong>安全配置</strong>页面，可以查看或者修改当前 Token 共享密钥。您也可以在系统配置文件 iserver-system.xml 中进行查看修改。详情请见：<a class="contentpagehyperlink" href="../Appendix/iServer_configInfo.htm#_tokenKey__用于设置Token的共享密钥">设置Token的共享密钥</a></p>
+  <p class="myNormal" style="font-weight: bold;"> </p>
+  <p class="myNormal">此处以 PostgreSQL 为例，说明数据库中存储信息的含义：</p>
+  <p class="myNormal" style="font-weight: bold;">1、元数据表</p>
+  <p class="myNormal">元数据表以键值对的形式管理服务存储表的基本信息。</p>
+  <p class="myNormal">表名：iserver_v1_metainfos。</p>
+  <p class="myNormal">字段结构：</p>
+  <p class="myNormal" style="text-align: center;">表 3 元数据字段结构及说明</p>
+  <table align="center" cellspacing="0" class="iServerTable" style="width: 339px;" width="18.632%">
+    <colgroup>
+      <col style="width: 71px;"/>
+      <col style="width: 30px;"/>
+      <col style="width: 39.89%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td style="">
+          <p>字段名</p>
+        </td>
+        <td style="">数据类型</td>
+        <td style="">
+          <p>是否必须</p>
+        </td>
+      </tr>
+      <tr class="t2Row">
+        <td style="">
+          <p style="text-align: center;">name</p>
+        </td>
+        <td style="">
+          <p style="text-align: center;">text</p>
+        </td>
+        <td style="">
+          <p style="text-align: center;">是</p>
+        </td>
+      </tr>
+      <tr class="t1Row">
+        <td style="">
+          <p style="text-align: center;">value</p>
+        </td>
+        <td style="">
+          <p style="text-align: center;">text</p>
+        </td>
+        <td style="">
+          <p style="text-align: center;">是</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="myNormal">字段(key)说明：</p>
+  <p class="myNormal">service.table.name：服务存储表的表名。</p>
+  <p class="myNormal">spaceversion：服务存储表的版本，不同的版本服务存储表的表结构不同。</p>
+  <p class="myNormal">主键：无。</p>
+  <p class="myNormal">举例：</p>
+  <p class="myNormal" style="text-align: center;">表 4 元数据表信息示例</p>
+  <table align="center" cellspacing="0" class="iServerTable" style="width: 339px;" width="37.324%">
+    <colgroup>
+      <col style="width: 45.326%;"/>
+      <col style="width: 54.674%;"/>
+    </colgroup>
+    <tbody>
+      <tr>
+        <td>
+          <p style="text-align: center;">name</p>
+        </td>
+        <td>
+          <p style="text-align: center;">value</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p style="text-align: center;">service.table.name</p>
+        </td>
+        <td>
+          <p style="text-align: center;">iserver_v1_metainfos</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p style="text-align: center;">spaceversion</p>
+        </td>
+        <td>
+          <p style="text-align: center;"> 1.0</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="myNormal" style="font-weight: bold;">2、服务存储表</p>
+  <p class="myNormal">服务存储表用来集中管理服务提供者、组件、提供者集合、组件集合、接口等配置信息。</p>
+  <p class="myNormal">表名：由用户自己定义，默认为iserver。</p>
+  <p class="myNormal">字段结构：</p>
+  <p class="myNormal" style="text-align: center;">表 5 服务存储表字段结构</p>
+  <table align="center" cellspacing="0" class="iServerTable" style="width: 413px;" width="18.632%">
+    <colgroup>
+      <col/>
+      <col/>
+      <col/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>
+          <p style="text-align: center;">字段名   </p>
+        </td>
+        <td>
+          <p style="text-align: center;">数据类型</p>
+        </td>
+        <td style="">
+          <p style="text-align: center;">是否必须</p>
+        </td>
+      </tr>
+      <tr class="t2Row">
+        <td>
+          <p style="text-align: center;">name</p>
+        </td>
+        <td>
+          <p style="text-align: center;">varchar</p>
+        </td>
+        <td style="">
+          <p style="text-align: center;">是</p>
+        </td>
+      </tr>
+      <tr class="t1Row">
+        <td>
+          <p style="text-align: center;">setting</p>
+        </td>
+        <td>
+          <p style="text-align: center;">text</p>
+        </td>
+        <td style="">
+          <p style="text-align: center;">是</p>
+        </td>
+      </tr>
+      <tr class="t2Row">
+        <td>
+          <p style="text-align: center;">type</p>
+        </td>
+        <td>
+          <p style="text-align: center;">varchar</p>
+        </td>
+        <td style="">
+          <p style="text-align: center;">是</p>
+        </td>
+      </tr>
+      <tr class="t1Row">
+        <td>
+          <p style="text-align: center;">timestamp</p>
+        </td>
+        <td>
+          <p style="text-align: center;"> varchar</p>
+        </td>
+        <td style="">
+          <p style="text-align: center;">是</p>
+        </td>
+      </tr>
+      <tr class="t2Row">
+        <td>
+          <p style="text-align: center;">enabled</p>
+        </td>
+        <td>
+          <p style="text-align: center;">varchar</p>
+        </td>
+        <td style="">
+          <p style="text-align: center;">是</p>
+        </td>
+      </tr>
+      <tr class="t1Row">
+        <td>
+          <p style="text-align: center;">extend</p>
+        </td>
+        <td>
+          <p style="text-align: center;">text</p>
+        </td>
+        <td style="">
+          <p style="text-align: center;">否</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="myNormal">字段说明：</p>
+  <p class="myNormal">name：服务提供者、组件、接口、提供者集合、组件集合的名字。</p>
+  <p class="myNormal">type：服务配置的类型。提供者、提供者集合、组件、组件集合、接口分别对应Provider，ProviderSet，Component，ComponentSet，Interface。</p>
+  <p class="myNormal">setting: 服务配置的具体内容</p>
+  <p class="myNormal">timestamp：服务配置信息更新到数据库的时间。</p>
+  <p class="myNormal">enabled：提供者与组件的可用关系，其余服务配置类型默认为true。</p>
+  <p class="myNormal">extend：扩展内容</p>
+  <p class="myNormal">主键：name和type</p>
+  <p class="myNormal">举例：</p>
+  <p class="myNormal" style="text-align: center;">表 6 服务存储表信息示例</p>
+  <table align="center" cellspacing="0" style="border-collapse: separate; border-collapse: separate;" width="66.955%">
+    <colgroup>
+      <col style="width: 10.258%;"/>
+      <col style="width: 7.387%;"/>
+      <col style="width: 50.844%;"/>
+      <col style="width: 16.772%;"/>
+      <col style="width: 8.796%;"/>
+      <col style="width: 5.942%;"/>
+    </colgroup>
+    <tbody>
+      <tr>
+        <td>
+          <p>name     </p>
+        </td>
+        <td>type</td>
+        <td>setting</td>
+        <td>timestamp</td>
+        <td>enabled</td>
+        <td>extend</td>
+      </tr>
+      <tr>
+        <td>map-Jingjin</td>
+        <td>Provider</td>
+        <td>
+          <p>{</p>
+          <p>    &quot;@type&quot;: &quot;com.supermap.server.config.ProviderSetting&quot;,</p>
+          <p>    &quot;config&quot;: {</p>
+          <p>        &quot;@type&quot;: &quot;com.supermap.services.providers.UGCMapProviderSetting&quot;,</p>
+          <p>        &quot;cacheDisabled&quot;: false,</p>
+          <p>        &quot;cacheVersion&quot;: &quot;4.0&quot;,</p>
+          <p>        &quot;extractCacheToFile&quot;: true,</p>
+          <p>        &quot;ignoreHashcodeWhenUseCache&quot;: false,</p>
+          <p>        &quot;inflatDisabled&quot;: false,</p>
+          <p>        &quot;layerCountPerDataType&quot;: 0,</p>
+          <p>        &quot;mapEditable&quot;: false,</p>
+          <p>        &quot;mapNames&quot;: [],</p>
+          <p>        &quot;multiInstance&quot;: false,</p>
+          <p>        &quot;multiThread&quot;: true,</p>
+          <p>        &quot;poolSize&quot;: 0,</p>
+          <p>        &quot;preferedPNGType&quot;: &quot;PNG&quot;,</p>
+          <p>        &quot;queryExpectCount&quot;: 1000,</p>
+          <p>        &quot;ugcMapSettings&quot;: [],</p>
+          <p>        &quot;useCompactCache&quot;: false,</p>
+          <p>        &quot;workspacePath&quot;: &quot;E:/iserver/samples/data/City/Jingjin.sxwu&quot;</p>
+          <p>    },</p>
+          <p>    &quot;enabled&quot;: true,</p>
+          <p>    &quot;name&quot;: &quot;map-Jingjin&quot;,</p>
+          <p>    &quot;type&quot;: &quot;com.supermap.services.providers.UGCMapProvider&quot;</p>
+          <p>}</p>
+        </td>
+        <td>2019-04-10 13:50:23  </td>
+        <td>true</td>
+        <td> </td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="myNormal" style="font-weight: bold;">注意事项：</p>
+  <p class="myNormal">前文中所有表名、字段名、表结构、示例均以 PostgreSQL 数据库为基础，Oracle 数据库稍有不同。不同点如下：</p>
+  <p class="myNormal">1、Oracle 中所有表名、字段名均为大写，如元数据表表名为 ISERVER_V1_METAINFOS</p>
+  <p class="myNormal">2、Oracle 中字段的数据类型与 PostgreSQL 不同。PostgreSQL 采用 varchar 和 text 数据类型对应 Oracle 为 varchar2 和 clob。</p>
+  <p class="myNormal">3、Oracle 配置信息无需设置模式名。</p>
+  <h2><a id="消息中间件设置"></a>消息中间件设置（已过时）</h2>
+  <p class="myNormal">SuperMap iServer 支持接入消息中间件，支持多机之间共享服务配置以及服务状态，并可精确控制服务实例个数，实现服务在多机上的动态伸缩。目前支持的消息中间件为 RabbitMQ ，在接入消息中间件前，请确保您已安装 RabbitMQ，若没有，请参见：RabbiMQ 的安装与配置。您可以通过旧版 iServer 服务管理器，在“全局设置”处接入消息中间件，该设置需重启生效。</p>
+  <ul class="SymbolList1">
+    <li class="SymbolList1">支持的中间件类型：必选，支持的中间件类型为 RabbitMQ 。</li>
+    <li class="SymbolList1">服务地址：必选，设置可用的 RabbitMQ Server 消息服务器地址，默认为 localhost:5672 。如果您的 RabbitMQ Server 与 GIS 服务器分别部署在了不同的服务器中，此处需要填写具体的 IP 地址或域名，如 ：192.168.17.2:5672 。</li>
+    <li class="SymbolList1">用户名：必选，预期可远程访问RabbitMQ Server 消息服务器所有者的用户名。</li>
+    <li class="SymbolList1">密码：必选，预期可远程访问RabbitMQ Server 消息服务器所有者的密码。</li>
+  </ul>
+  <p class="myNormal" style="font-weight: bold;">注意事项：</p>
+  <p class="myNormal">1. RabbitMQ Server 默认创建了一个角色为 administrator 的名为 guest 的用户，它拥有 RabbitMQ 的所有权限。出于安全因素的考虑，guest 用户只能通过 localhost 登录使用，如果您需要远程连接 RabbitMQ Server，建议您创建自己的用户，设置密码，授予权限，并为其设置角色，如：管理员。具体配置请参见：RabbitMQ 的安装与配置。</p>
+  <p class="myNormal">2.设置消息中间件时，请注意界面上的提示信息，如提示“消息中间件连接失败，请检查连接信息是否有异常”，请按照提示检查连接信息。</p>
+  <h2><a id="临时资源存储设置"></a>临时资源存储设置</h2>
+  <p class="myNormal">SuperMap iServer 支持将临时资源存储在本地文件、数据库中，并支持设置存活时间阈值。在配置文件中设置临时文件存储请详见<a class="contentpagehyperlink" href="../mergedProjects/SuperMapiServerRESTAPI/tempResourcesLife.htm">临时资源的存储与生命周期</a>，支持的临时资源请参考<a class="contentpagehyperlink" href="../mergedProjects/SuperMapiServerRESTAPI/tempResourcesLife.htm#MiniTOCBookMark5">临时资源列表</a>。此处将为您介绍如何在 iServer 全局设置页面中设置临时资源存储配置。</p>
+  <p class="myNormal" style="text-align: center;">表 7 服务存储表信息示例</p>
+  <table align="center" border="1" cellpadding="1" cellspacing="1" class="iServerTable" style="border-collapse: collapse; width: 1120px;">
+    <colgroup>
+      <col style="width: 167px;"/>
+      <col style="width: 177px;"/>
+      <col style="width: 68px;"/>
+      <col style="width: 1311px;"/>
+    </colgroup>
+    <tbody>
+      <tr>
+        <td style="">存储服务配置于</td>
+        <td>参数名称</td>
+        <td>是否必选</td>
+        <td>参数说明</td>
+      </tr>
+      <tr>
+        <td colspan="1" rowspan="3" style="">Encache</td>
+        <td>最大磁盘空间</td>
+        <td>必填</td>
+        <td>最大磁盘空间默认为10 g，您可以按照实际情况进行调整。</td>
+      </tr>
+      <tr>
+        <td>最大内存</td>
+        <td>选填</td>
+        <td>默认为 200m。支持的单位有：b、k、m、g、t、p。</td>
+      </tr>
+      <tr>
+        <td>磁盘存储路径</td>
+        <td>选填</td>
+        <td>磁盘的存储路径，默认为 java.io.tmpdir\tmpResources，指向<span style="font-size: 13px; font-variant-ligatures: normal; font-variant-caps: normal; 
+	 orphans: 2; text-indent: 24px; widows: 2; -webkit-text-stroke-width: 0px; 
+	 background-color: #ffffff; text-decoration-style: initial; text-decoration-color: initial; 
+	 display: inline	 ! important ; float: none;">【SuperMap iServer 安装目录】</span>\temp\tmpResources 目录。</td>
+      </tr>
+      <tr>
+        <td colspan="1" rowspan="3" style="">Redis</td>
+        <td>服务器地址</td>
+        <td>必填</td>
+        <td>数据库的服务地址，如 &#39;192.168.17.217:27017&#39;</td>
+      </tr>
+      <tr>
+        <td>用户名</td>
+        <td>选填</td>
+        <td>该数据库所有者的用户名。仅当使用 Redis 6.0 时支持设置用户名。如果配置用户名密码后仍无法正常连接，需确认 Redis 是否处于禁用保护模式，如未禁用，可执行“CONFIG SET protected-mode no”禁用。</td>
+      </tr>
+      <tr>
+        <td>密码</td>
+        <td>选填</td>
+        <td>该数据库所有者的密码。</td>
+      </tr>
+      <tr>
+        <td colspan="1" rowspan="5" style="">MongoDB</td>
+        <td>服务器地址</td>
+        <td>必填</td>
+        <td>数据库的服务地址，如 &#39;192.168.17.217:27017&#39;</td>
+      </tr>
+      <tr>
+        <td>用户名</td>
+        <td>选填</td>
+        <td>该数据库所有者的用户名。</td>
+      </tr>
+      <tr>
+        <td>密码</td>
+        <td>选填</td>
+        <td>该数据库所有者的密码。</td>
+      </tr>
+      <tr>
+        <td>数据库名称</td>
+        <td>选填</td>
+        <td>存储临时资源的数据库名称，当选择 MongoDB 时必填，且应为一个已存在的数据库。</td>
+      </tr>
+      <tr>
+        <td>临时资源失效时间（小时）</td>
+        <td>选填</td>
+        <td>临时资源的失效时间，单位为小时。</td>
+      </tr>
+      <tr>
+        <td style="">HSQLDB</td>
+        <td>选择HSQLDB</td>
+        <td>选填</td>
+        <td>选择HSQLDB数据库，若选择使用其他的HSQLDB，则需填入对应的服务器地址</td>
+      </tr>
+      <tr>
+        <td colspan="1" rowspan="2" style="">Caffeine</td>
+        <td>最大对象数</td>
+        <td>必填</td>
+        <td>缓存最大对象数默认为 1000，您可以按照实际情况进行调整。</td>
+      </tr>
+      <tr>
+        <td>临时资源失效时间（小时）</td>
+        <td>选填</td>
+        <td>临时资源的失效时间，单位为小时。</td>
+      </tr>
+      <tr>
+        <td colspan="1" rowspan="7" style="">PostgreSQL、Kingbase、GaussDB、Vastbase、HighGoDB、GBase 8c</td>
+        <td>服务器地址</td>
+        <td>必填</td>
+        <td>数据库的服务地址，如 &#39;192.168.17.217:27017/supermap&#39;</td>
+      </tr>
+      <tr>
+        <td>用户名</td>
+        <td>必填</td>
+        <td>该数据库所有者的用户名。</td>
+      </tr>
+      <tr>
+        <td>密码</td>
+        <td>必填</td>
+        <td>该数据库所有者的密码。</td>
+      </tr>
+      <tr>
+        <td>模式名</td>
+        <td>选填</td>
+        <td>存储服务配置信息表所在的模式，默认存储于public模式下。若您需要将临时资源存储在数据库的非 public 模式下，输入指定模式名即可</td>
+      </tr>
+      <tr>
+        <td>配置缓存个数</td>
+        <td>选填</td>
+        <td>在 PostgreSQL、Kingbase、GaussDB、Vastbase、HighGoDB、GBase 8c 中最高支持存储的缓存数量，如不设置则使用默认值 100。当缓存数量达到上限时，将删除近期使用最少的缓存记录。</td>
+      </tr>
+      <tr>
+        <td>资源过期时限（分钟）</td>
+        <td>选填</td>
+        <td>临时资源的失效时间，单位为小时。</td>
+      </tr>
+      <tr>
+        <td>删除过期数据时限（分钟）</td>
+        <td>选填</td>
+        <td>设置过一定时间后不访问（读取或者写入），存储的数据会被销毁，过期时间单位为小时。</td>
+      </tr>
+    </tbody>
+  </table>
+  <p> </p>
+  <p><a id="服务实例动态化管理设置" style="color: rgba(0, 0, 0, 0.85); font-family: 微软雅黑, Arial; font-size: 24px; font-weight: bold;"></a><span style="color: rgba(0, 0, 0, 0.85); font-family: 微软雅黑, Arial; font-size: 24px; font-weight: bold;">服务实例动态化管理设置</span></p>
+  <p class="myNormal"><br/>
+    SuperMap iServer 标准版、高级版、顶级版提供了服务实例动态化管理，使得存量 GIS 服务达到数千量级以上时，iServer 仍然能够快速启动，服务发布、访问、管理流畅，且资源使用更集约。</p>
+  <ul class="SymbolList1">
+    <li class="SymbolList1">
+      <p class="myNormal" style="text-indent: 0px;">开启服务实例动态化管理：默认为关闭状态。开启后，所有 GIS 服务实例处于动态化管理状态，即：服务延迟初始化、空闲时会被主动销毁、受最大服务实例数控制。此时，新发布的服务也会处于动态化管理状态。</p>
+    </li>
+    <li class="SymbolList1">
+      <p class="myNormal" style="text-indent: 0px;">服务状态巡检间隔时间：指检查服务实例是否处于空闲状态的间隔时间，单位毫秒，默认值为 30000 毫秒。该值越小，表示巡检越频繁，服务自动销毁的行为越精确，但同时也越占用计算机资源。</p>
+    </li>
+    <li class="SymbolList1">
+      <p class="myNormal" style="text-indent: 0px;">空闲服务主动销毁时间：当一个服务实例被检测到处于空闲状态，且空闲时间超过该阈值时，将被自动销毁。该参数单位毫秒，默认值为 300000 毫秒。</p>
+    </li>
+    <li class="SymbolList1">
+      <p class="myNormal" style="text-indent: 0px;">最大在线服务实例数：允许同时在线服务实例最大个数，默认值为 2000 个。当同时在线的服务个数超过该阈值，请求访问新的 GIS 服务时，该服务将不予以启动，同时 iServer 将予以报错提示。</p>
+    </li>
+  </ul>
+  <p class="myNormal" style="font-weight: normal;">如果您需要通过配置文件开启服务实例动态化管理功能，需要在【SuperMap iServer 安装目录】\webapps\iserver\WEB-INF\iserver-system.xml 文件中添加 &lt;serviceInstanceManager&gt; 元素配置参数。具体方式详见：<a class="contentpagehyperlink" href="../Appendix/iServer_configInfo.htm#服务实例动态化管理参数配置">服务实例动态化管理参数配置</a>。</p>
+  <p class="myNormal" style="font-weight: bold;">注意：服务实例动态化管理设置需保存并重启 iServer 后才能生效。</p>
+  <p class="myNormal" style="font-weight: normal;">在开启服务实例动态化管理功能后，除 iServer 的工具服务外，如数据目录服务、机器学习服务、处理自动化服务、Web打印服务等，您也可以单独设置某些服务实例不延迟初始化。即：随着 iServer 的启动，这些服务实例将立即初始化并启动。</p>
+  <p class="myNormal" style="font-weight: normal;">您可以在 iServer 服务管理页面选择无需延迟初始化的服务并点击“关闭动态化管理”按钮，取消服务延迟初始化。也可以在【SuperMap iServer 安装目录】\webapps\iserver\WEB-INF\iserver-services.xml 文件中，找到无需延迟初始化的服务实例对应的组件进行配置，具体方式详见：<a class="contentpagehyperlink" href="GISService_Config/Service_Config/Config_Component/component_config.htm#开启动态化管理的服务组件配置">开启动态化管理的服务组件配置</a>。</p>
+  <h2><a id="文件管理设置"></a>文件管理设置</h2>
+  <p class="myNormal" style=""><span style="font-weight: normal;">SupeMap iServer 中提供了文件管理设置功能，用于限制文件管理根目录并支持配置，防止暴露绝对路径和目录遍历的风险，提升系统安全性。您可以在服务管理<span style="font-weight:bold;">首页</span>‐&gt;</span><b>高级</b>‐&gt;<span style="font-weight:bold;">全局设置</span>‐&gt;<b>文件管理设置</b>标签页中设置文件管理根目录，即系统可浏览和上传数据的文件根目录。若您不设置，则默认不限制文件浏览范围。</p>
+  <p class="myNormal" style="">注意：该设置需保存并重启 iServer 后才能生效。</p>
+  <p class="myNormal" style="">如果您需要通过配置文件设置文件管理根目录，需要对【SuperMap iServer 安装目录】\webapps\iserver\WEB-INF\iserver-system.xml 文件中 &lt;fileManagerWorkDir&gt; 参数进行配置，具体方式及注意事项详见：<a href="../Appendix/iServer_configInfo.htm#fileManagerWorkDir">文件管理根目录配置</a>。</p>
+  <p class="myNormal" style=""> </p>
+
+</div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = ".."
+    gCommonRootRelPath = ".."
+    gTopicId = "1"
+  
+//]]></script>
+
+  <script src="../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../whxdata/layoutconfig.js"></script>
+  <script src="../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

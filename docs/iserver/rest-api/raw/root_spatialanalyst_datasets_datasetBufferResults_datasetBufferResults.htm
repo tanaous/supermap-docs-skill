@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../../../../../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../../../../../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../../../../../../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../../../../../iserver-icon.png"/>
+    
+  <script data-relpath="../../../../../.." src="../../../../../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <meta name="template" content="../../../../../../assets/layouts/RESTAPI.htt"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Language" content="zh-CN"/>
+  <meta name="topic-check-list" content="Ran Smart Index"/>
+  <meta name="topic-status" content="Complete"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>datasetBufferResults</title>
+  <link rel="StyleSheet" href="../../../../../../assets/css/SuperMapHelp.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="DatasetBufferResults"/>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../../../../../../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../../assets/css/homeButtom.css"/>
+  <script src="../../../../../../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../../../../../../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../../../../../../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../../../../../../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../../../../../../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../../../../../../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../../../../../../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../../../../../../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../../../../../../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <h2><a name="URI" id="URI"></a>URI</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="../dataset.htm#URI">&lt;dataset_uri&gt;</a>/buffer[.&lt;format&gt;]</p>
+  <h2>支持的方法</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="#GET 请求">GET</a>、<a class="contentpagehyperlink" href="#POST 请求">POST</a>、<a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a></p>
+  <h2>父资源</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="../dataset.htm">dataset</a></p>
+  <h2 class="myNormal">子资源</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="datasetBufferResult.htm">datasetBufferResult</a></p>
+  <h2>介绍</h2>
+  <p class="myNormal">数据集缓冲区分析结果集资源，支持对数据集、记录集进行缓冲区分析。注：不支持对无投影坐标系的数据集进行缓冲区分析。</p>
+  <p class="myNormal" style="font-weight: bold;">支持的方法：</p>
+  <ul style="list-style: disc;">
+    <li class="supportList"><a class="contentpagehyperlink" href="#GET 请求">GET</a>：html表述返回一个 POST 请求的表单，其他表述返回数据集缓冲区分析结果集列表。</li>
+    <li class="supportList"><a class="contentpagehyperlink" href="#POST 请求">POST</a>：创建一个缓冲区分析结果资源，相当于进行了一次缓冲区分析。</li>
+    <li class="supportList"><a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a>：检查 datasetBufferresults 资源是否存在，或权限是否可以访问 datasetBufferresults 资源。</li>
+  </ul>
+  <p class="myNormal"><span style="font-weight: bold;">支持的表述格式：</span>rjson、json、html、xml。</p>
+  <h2>资源层次</h2>
+  <p class="myNormal"><img alt="" border="0" height="288" src="../../../../../../assets/images/root/spatialanalyst/datasets/sp_ds_dt_bufferresults.png" usemap="#MAP263078720" width="480"/><map id="MAP263078720" name="MAP263078720"><area alt="" coords="9.388,4.551,265.797,45.4645" href="../../../root.htm" shape="rect"/> <area alt="" coords="81.028,57.4645,226.798,98.2645" href="../../spatialAnalyst.htm" shape="rect"/> <area alt="" coords="122.212,110.649,276,151.449" href="../datasets.htm" shape="rect"/> <area alt="" coords="181.106,168,306,220" href="../dataset.htm" shape="rect"/> <area alt="" coords="230.244,238.2,468,279" href="datasetBufferResults.htm" shape="rect"/></map></p>
+  <h2>HTTP 请求方法</h2>
+  <p class="myNormal">对如下 URI 执行 HTTP 请求，以 rjson 输出格式为例加以说明，其中，supermapiserver 是服务器名。</p>
+  <p class="uriStyle">http://supermapiserver:8090/iserver/services/spatialanalyst-sample/restjsr/spatialanalyst/datasets/SamplesP@Interpolation/buffer.rjson</p>
+  <h3><a name="GET 请求"></a>GET 请求</h3>
+  <p class="myNormal">html表述返回一个 POST 请求的表单，其他表述返回数据集缓冲区分析结果集列表。</p>
+  <h3><a name="POST 请求"></a>POST 请求</h3>
+  <p class="myNormal">对资源进行 POST 请求，传递相关参数后，就创建了一个缓冲区分析结果资源，相当于进行了一次缓冲区分析。</p>
+  <h4 class="myNormal">请求参数</h4>
+  <p class="myNormal">对资源进行 POST 请求，可以实现对象的缓冲区分析。</p>
+  <p class="myNormal">URI 中的参数如下：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>名称</td>
+        <td>类型</td>
+        <td>含义</td>
+      </tr>
+      <tr class="t2Row">
+        <td>asynchronousReturn</td>
+        <td>boolean</td>
+        <td>是否采用异步操作。如果为 true，则在客户端提交请求后会立即返回新资源的 URI（即 returnContent 的设置不起作用）； 为 false，则服务端在分析完成后根据 returnContent 的设置返回新资源的表述或者新资源的 URI。默认为 false。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>returnContent</td>
+        <td>boolean</td>
+        <td>是否立即返回新创建资源的表述还是返回新资源的 URI。如果为 true，则直接返回新创建资源，即分析结果的表述。为 false，则返回的是分析结果资源的 URI。默认为 false。</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="myNormal">请求体中的参数如下：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>名称</td>
+        <td>类型</td>
+        <td>含义</td>
+      </tr>
+      <tr class="t2Row">
+        <td>isAttributeRetained</td>
+        <td>boolean</td>
+        <td>是否保留属性字段，isUnion 为 false 时有效。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>isUnion</td>
+        <td>boolean</td>
+        <td>是否合并结果面对象。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>
+          bufferAnalystParameter
+        </td>
+        <td><a href="../../../../../iServerJavadoc/com/supermap/services/components/commontypes/BufferAnalystParameter.html">BufferAnalystParameter</a></td>
+        <td> 缓冲区分析参数，为缓冲区分析提供必要的参数信息，包括左缓冲距离、右缓冲距离、端点类型、平头缓冲、圆头缓冲圆弧处线段的个数等信息，详见 BufferAnalystParameter。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>filterQueryParameter</td>
+        <td><a href="../../../../../iServerJavadoc/com/supermap/services/components/commontypes/QueryParameter.html">QueryParameter</a></td>
+        <td>用来对数据集中的几何对象进行过滤的查询条件。只有满足此条件的几何对象才参与缓冲区分析。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>dataReturnOption</td>
+        <td><a href="../../../../../iServerJavadoc/com/supermap/services/components/commontypes/DataReturnOption.html">DataReturnOption</a></td>
+        <td>返回的提取结果设置，包括结果数据源名称、结果数据集名称、最大返回记录、数据返回模式、是否覆盖已有数据等参数。
+          <?rh-implicit_p ?>对于结果数据源名称，若设置了指定数据源名称，则将在原工作空间中创建该名称的数据源用于保存结果数据集；若您不进行设置，当被分析数据集所在数据源为udb或udbx时，则结果数据集将保存至原数据源，若数据源为只读类型矢量文件格式数据源，则结果数据集将保存至内存数据源中。
+          <?rh-implicit_p ?>对于数据返回模式，包括只返回数据集标识（DATASET_ONLY）、只返回记录集（RECORDSET_ONLY）和返回数据集标识和记录集（DATASET_AND_RECORDSET）三种模式，默认为只返回数据集标识。
+          <?rh-implicit_p ?>请注意，当返回的结果数据量较大时，建议您使用只返回数据集标识模式返回数据，对返回的数据集可以进行其他空间分析操作。
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h4>响应结构</h4>
+  <p class="myNormal">正常响应情况：响应码201。响应参数如下：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>字段</td>
+        <td>类型</td>
+        <td>说明</td>
+      </tr>
+      <tr class="t2Row">
+        <td>
+          <p>succeed</p>
+        </td>
+        <td>boolean</td>
+        <td>分析是否成功。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>newResourceID</td>
+        <td>String</td>
+        <td>分析结果资源的 ID。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>postResultType</td>
+        <td><span><a href="../../../../../iServerJavadoc/com/supermap/services/rest/PostResultType.html">PostResultType</a></span></td>
+        <td>
+          <p>POST 请求的结果类型，枚举说明 POST 请求对目标资源的影响，即处理结果是什么样的。</p>
+        </td>
+      </tr>
+      <tr class="t1Row">
+        <td>newResourceLocation</td>
+        <td>String</td>
+        <td>创建的新资源的 URI。</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4>响应示例</h4>
+  <p class="myNormal">对 buffer 资源：http://supermapiserver:8090/iserver/services/spatialanalyst-sample/restjsr/spatialanalyst/datasets/SamplesP@Interpolation/buffer.rjson，进行 POST 请求，参数如下：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">    &quot;isAttributeRetained&quot;: false,</p>
+  <p class="myCodeP">    &quot;isUnion&quot;: false,</p>
+  <p class="myCodeP">    &quot;bufferAnalystParameter&quot;: {</p>
+  <p class="myCodeP">        &quot;endType&quot;: &quot;ROUND&quot;,</p>
+  <p class="myCodeP">        &quot;semicircleLineSegment&quot;: 4,</p>
+  <p class="myCodeP">        &quot;leftDistance&quot;: {</p>
+  <p class="myCodeP">            &quot;value&quot;: 100</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;rightDistance&quot;: {</p>
+  <p class="myCodeP">            &quot;value&quot;: null</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;radiusUnit&quot;:&quot;METER&quot;</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    &quot;filterQueryParameter&quot;: {</p>
+  <p class="myCodeP">        &quot;attributeFilter&quot;: &quot;&quot;</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    &quot;dataReturnOption&quot;: {</p>
+  <p class="myCodeP">        &quot;dataset&quot;: &quot;SamplePbuffer&quot;,</p>
+  <p class="myCodeP">        &quot;dataReturnMode&quot;: &quot;DATASET_ONLY&quot;,</p>
+  <p class="myCodeP">        &quot;expectCount&quot;: 100,</p>
+  <p class="myCodeP">        &quot;deleteExistResultDataset&quot;: false</p>
+  <p class="myCodeP">    }</p>
+  <p class="myCodeP">}</p>
+  <p class="myNormal">则返回的 rjson 格式的资源描述如下：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">    &quot;succeed&quot;: true,</p>
+  <p class="myCodeP">    &quot;newResourceID&quot;: &quot;1&quot;,</p>
+  <p class="myCodeP">    &quot;postResultType&quot;: &quot;CreateChild&quot;,</p>
+  <p class="myCodeP">    &quot;newResourceLocation&quot;: &quot;http://supermapiserver:8090/iserver/services/spatialanalyst-sample/restjsr/spatialanalyst/datasets/SamplesP@Interpolation/buffer/1&quot;</p>
+  <p class="myCodeP">}</p>
+  <p class="myNormal">对 http://supermapiserver:8090/iserver/services/spatialanalyst-sample/restjsr/spatialanalyst/datasets/SamplesP@Interpolation/buffer/1.rjson ,执行 GET 请求，即可获取缓冲区分析结果的具体信息。请参见<a class="contentpagehyperlink" href="datasetBufferResult.htm">datasetBufferResult</a>。</p>
+  <h3><a name="HEAD 请求"></a>HEAD 请求</h3>
+  <p class="myNormal">获取资源所支持的操作以及所支持的内容格式。</p>
+  <p class="myNormal">返回跟 GET 请求一样的 HTTP 响应头，但是没有响应实体。可以在不必传输整个响应内容的情况下，获取包含在响应消息头中的元数据信息。元数据信息包括媒体类型，字符编码，压缩编码，实体内容长度等。</p>
+  <p class="myNormal">HEAD 请求可以用来判断 datasetBufferresults 资源是否存在，或者客户端是否有权限访问 datasetBufferresults 资源。通过对加.&lt;format&gt;的 URI 执行 HEAD 请求，还可以快速判断 datasetBufferresults 资源是否支持&lt;format&gt;格式的表述。</p>
+  <h2>请参见</h2>
+  <ul>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../dataset.htm">dataset</a>，<a href="datasetBufferResult.htm">datasetBufferResult</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../../clientBuildREST/ConstructRESTRequest.htm">客户端构建 REST 请求</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../../StatusCodeDescription.htm">状态码列表及说明</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../../SuperMap_iServer_REST_API_OutputFormat.htm">SuperMap iServer REST API 表述格式介绍</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../../resource_hierarchy.htm">GIS 服务资源层次结构</a></li>
+  </ul>
+  <p class="myNormal"> </p>
+
+</div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../../../../../../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../../../../../../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../../../../../../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../../../../../../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../../../../../../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../../../../../../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../../../../../../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../../../../../.."
+    gCommonRootRelPath = "../../../../../.."
+    gTopicId = "8.2.2.6.15.1.1.1"
+  
+//]]></script>
+
+  <script src="../../../../../../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../../../../../../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../../../../../../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../../../../../../whxdata/layoutconfig.js"></script>
+  <script src="../../../../../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

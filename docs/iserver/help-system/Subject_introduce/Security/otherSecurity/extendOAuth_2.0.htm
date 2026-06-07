@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../../../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../../iserver-icon.png"/>
+    
+  <script data-relpath="../../.." src="../../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <meta name="template" content="../../../assets/layouts/SuperMapiServerMain.htt"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Language" content="zh-CN"/>
+  <meta name="topic-check-list" content="Ran Smart Index"/>
+  <meta name="topic-status" content="Complete"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>扩展使用 OAuth2协议的账户</title>
+  <link rel="StyleSheet" href="../../../assets/css/SuperMapHelp.css" type="text/css"/>
+  <script type="text/javascript" src="../../../assets/js/shCore.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushBash.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushCpp.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushCSharp.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushCss.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushDelphi.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushDiff.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushGroovy.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushJava.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushJScript.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushPhp.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushPlain.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushPython.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushRuby.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushScala.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushSql.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushVb.js"></script>
+  <script type="text/javascript" src="../../../assets/js/shBrushXml.js"></script>
+  <script type="text/javascript" src="../../../assets/js/ConfigiServer6R.js"></script>
+  <meta name="rh-index-keywords" content="OAuthConfig,扩展使用OAuth2协议的账户,OAuth2协议,第三方登录"/>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../../../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../assets/css/homeButtom.css"/>
+  <script src="../../../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../../../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../../../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../../../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../../../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../../../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../../../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../../../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../../../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <p class="myNormal">SuperMap iServer 提供了 OAuth2Client 接口，用于遵循 OAuth2 协议的第三方登录方式扩展，这种第三方登录方式有 QQ、新浪微博等，其中 QQ 和新浪微博为 SuperMap iServer 内置的两种遵循 OAuth2 协议的第三方登录方式。</p>
+  <h2>OAuth2Client 接口介绍</h2>
+  <p class="myNormal">com.supermap.services.security.OAuth2Client 接口有如下方法：</p>
+  <ul class="SymbolList1" style="list-style: disc;">
+    <li class="SymbolList1">getRedirectURI(String clientID, String state, String redirectUri);</li>
+  </ul>
+  <p class="myNormal">该方法用于获取 OAuth 跳转 URI 。</p>
+  <ul class="CommonList" style="list-style: disc;">
+    <li class="CommonList" style="font-weight: normal;">getAccesstoken(String clientID, String clientSecret, String code, String redirectUri) throws IOException;</li>
+  </ul>
+  <p class="myNormal">该方法用于获取访问 Token 。</p>
+  <ul class="CommonList" style="list-style: disc;">
+    <li class="CommonList" style="font-weight: normal;">getUserID(String accesstoken) throws IOException;</li>
+  </ul>
+  <p class="myNormal">该方法用于获取用户 ID 。</p>
+  <ul class="CommonList" style="list-style: disc;">
+    <li class="CommonList" style="font-weight: normal;">getUserInfo(String token, String clientID, String userID) throws IOException;</li>
+  </ul>
+  <p class="myNormal">该方法用于获取用户信息。</p>
+  <ul class="CommonList" style="list-style: disc;">
+    <li class="CommonList" style="font-weight: normal;">logout(ServletRequest request, ServletResponse response, String accessToken) throws IOException</li>
+  </ul>
+  <p class="myNormal">该方法用于登出。</p>
+  <h2 class="myNormal">扩展和配置流程</h2>
+  <p class="myNormal">我们通过实现一个简单的扩展，来说明遵循 OAuth2 协议的第三方登录方式的扩展流程，以扩展“微博账户登录”方式为例。</p>
+  <h3 class="myNormal">1、“微博账户登录”方式实现类</h3>
+  <p class="myNormal">实现了 WeiboOAuth2ClientExtended 类，继承自 OAuth2Client 接口 ，代码如下所示：</p>
+  <p class="myCodeP">package com.supermap.services.security;</p>
+  <p class="myCodeP">import com.alibaba.fastjson.JSON;</p>
+  <p class="myCodeP">import com.alibaba.fastjson.JSONObject;</p>
+  <p class="myCodeP">import org.apache.commons.io.IOUtils;</p>
+  <p class="myCodeP">import org.apache.commons.lang3.StringUtils;</p>
+  <p class="myCodeP">import org.apache.http.HttpEntity;</p>
+  <p class="myCodeP">import org.apache.http.HttpResponse;</p>
+  <p class="myCodeP">import org.apache.http.client.entity.UrlEncodedFormEntity;</p>
+  <p class="myCodeP">import org.apache.http.client.methods.HttpPost;</p>
+  <p class="myCodeP">import org.apache.http.impl.client.DefaultHttpClient;</p>
+  <p class="myCodeP">import org.apache.http.message.BasicNameValuePair;</p>
+  <p class="myCodeP">import org.apache.http.protocol.HTTP;</p>
+  <p class="myCodeP">import org.apache.http.util.EntityUtils;</p>
+  <p class="myCodeP">import javax.servlet.ServletRequest;</p>
+  <p class="myCodeP">import javax.servlet.ServletResponse;</p>
+  <p class="myCodeP">import java.io.IOException;</p>
+  <p class="myCodeP">import java.io.UnsupportedEncodingException;</p>
+  <p class="myCodeP">import java.net.URI;</p>
+  <p class="myCodeP">import java.net.URISyntaxException;</p>
+  <p class="myCodeP">import java.util.ArrayList;</p>
+  <p class="myCodeP">import java.util.List;</p>
+  <p class="myCodeP">public class WeiboOAuth2ClientExtended implements OAuth2Client {</p>
+  <p class="myCodeP">    // 微博认证根地址</p>
+  <p class="myCodeP">    private static final String OAUTH_URL_WEIBO = System.getProperty(&quot;OAUTH_WEIBO&quot;,</p>
+  <p class="myCodeP">    &quot;https://api.weibo.com&quot;);</p>
+  <p class="myCodeP">    private static final String GET_CODE_URI_WEIBO = OAUTH_URL_WEIBO +</p>
+  <p class="myCodeP">&quot;/oauth2/authorize?client_id=%s&amp;response_type=code&amp;redirect_uri=%s&amp;state=%s&quot;;</p>
+  <p class="myCodeP">    private static final String USERINFO_URL_PATTERN = OAUTH_URL_WEIBO +</p>
+  <p class="myCodeP">&quot;/2/users/show.json?access_token=%s&amp;source=%s&amp;uid=%s&quot;;</p>
+  <p class="myCodeP">    private static final String EMAIL_URL_PATTERN = OAUTH_URL_WEIBO +</p>
+  <p class="myCodeP">&quot;/2/account/profile/email.json?access_token=%s&amp;source=%s&quot;;</p>
+  <p class="myCodeP">    private static final String GET_TOKEN_BY_CODE_WEIBO = OAUTH_URL_WEIBO</p>
+  <p class="myCodeP">+ &quot;/oauth2/access_token&quot;;</p>
+  <p class="myCodeP">    private static final String REVOKE_WEIBO = OAUTH_URL_WEIBO + &quot;/oauth2/revokeoauth2</p>
+  <p class="myCodeP">?access_token=%s&quot;;</p>
+  <p class="myCodeP">    private String userID;</p>
+  <p class="myCodeP">    //获取跳转 URI</p>
+  <p class="myCodeP">    @Override</p>
+  <p class="myCodeP">    public String getRedirectURI(String clientID, String state, String redirectUri) {</p>
+  <p class="myCodeP">        return String.format(GET_CODE_URI_WEIBO, clientID, redirectUri, state);</p>
+  <p class="myCodeP">   }</p>
+  <p class="myCodeP">    //获取访问 Token</p>
+  <p class="myCodeP">    @Override</p>
+  <p class="myCodeP">    public String getAccesstoken(String clientID, String clientSecret, String code, String</p>
+  <p class="myCodeP">    redirectUri) {</p>
+  <p class="myCodeP">        String tokenUrl = GET_TOKEN_BY_CODE_WEIBO;</p>
+  <p class="myCodeP">        List&lt;BasicNameValuePair&gt; nvps = new ArrayList&lt;BasicNameValuePair&gt;();</p>
+  <p class="myCodeP">        nvps.add(new BasicNameValuePair(&quot;client_id&quot;, clientID));</p>
+  <p class="myCodeP">        nvps.add(new BasicNameValuePair(&quot;client_secret&quot;, clientSecret));</p>
+  <p class="myCodeP">        nvps.add(new BasicNameValuePair(&quot;grant_type&quot;, &quot;authorization_code&quot;));</p>
+  <p class="myCodeP">        nvps.add(new BasicNameValuePair(&quot;code&quot;, code));</p>
+  <p class="myCodeP">        nvps.add(new BasicNameValuePair(&quot;redirect_uri&quot;, redirectUri));</p>
+  <p class="myCodeP">        String tokenResult = getContentByMethodPost(tokenUrl, nvps);</p>
+  <p class="myCodeP">        if (StringUtils.isBlank(tokenResult)) {</p>
+  <p class="myCodeP">            return null;</p>
+  <p class="myCodeP">       }</p>
+  <p class="myCodeP">        JSONObject tokenObj = JSON.parseObject(tokenResult);</p>
+  <p class="myCodeP">        userID = tokenObj.getString(&quot;uid&quot;);</p>
+  <p class="myCodeP">        return tokenObj.getString(&quot;access_token&quot;);</p>
+  <p class="myCodeP">   }</p>
+  <p class="myCodeP">    // 获取用户 ID</p>
+  <p class="myCodeP">    @Override</p>
+  <p class="myCodeP">    public String getUserID(String accessToken) {</p>
+  <p class="myCodeP">        return userID;</p>
+  <p class="myCodeP">   }</p>
+  <p class="myCodeP">    //获取用户信息</p>
+  <p class="myCodeP">    @Override</p>
+  <p class="myCodeP">    public OAuthUserInfo getUserInfo(String token, String clientID, String userID) throws</p>
+  <p class="myCodeP">    IOException {</p>
+  <p class="myCodeP">        String url = String.format(USERINFO_URL_PATTERN, token, clientID, userID);</p>
+  <p class="myCodeP">        OAuthUserInfo result = new OAuthUserInfo();</p>
+  <p class="myCodeP">        String content;</p>
+  <p class="myCodeP">        try {</p>
+  <p class="myCodeP">            content = IOUtils.toString(new URI(url), &quot;utf-8&quot;);</p>
+  <p class="myCodeP">            JSONObject json = JSON.parseObject(content);</p>
+  <p class="myCodeP">            if (json != null) {</p>
+  <p class="myCodeP">                result.figureurl = json.getString(&quot;profile_image_url&quot;);</p>
+  <p class="myCodeP">                result.nickName = json.getString(&quot;nickname&quot;);</p>
+  <p class="myCodeP">                result.name = json.getString(&quot;name&quot;);</p>
+  <p class="myCodeP">                result.email = getEmail(token, clientID);</p>
+  <p class="myCodeP">           }</p>
+  <p class="myCodeP">            return result;</p>
+  <p class="myCodeP">       } catch (IOException | URISyntaxException e) {</p>
+  <p class="myCodeP">            throw new IOException(e);</p>
+  <p class="myCodeP">       }</p>
+  <p class="myCodeP">   }</p>
+  <p class="myCodeP">    private String getEmail(String token, String clientId) throws IOException {</p>
+  <p class="myCodeP">        try {</p>
+  <p class="myCodeP">            String url = String.format(EMAIL_URL_PATTERN, token, clientId);</p>
+  <p class="myCodeP">            String content = IOUtils.toString(new URI(url), &quot;utf-8&quot;);</p>
+  <p class="myCodeP">            if (StringUtils.isBlank(content)) {</p>
+  <p class="myCodeP">                return StringUtils.EMPTY;</p>
+  <p class="myCodeP">           }</p>
+  <p class="myCodeP">            int startIndex = StringUtils.indexOf(content, &#39;[&#39;);</p>
+  <p class="myCodeP">            int endIndex = StringUtils.indexOf(content, &#39;]&#39;);</p>
+  <p class="myCodeP">            content = StringUtils.substring(content, startIndex + 1, endIndex);</p>
+  <p class="myCodeP">            JSONObject json = JSON.parseObject(content);</p>
+  <p class="myCodeP">            if (json != null) {</p>
+  <p class="myCodeP">                return json.getString(&quot;email&quot;);</p>
+  <p class="myCodeP">           }</p>
+  <p class="myCodeP">       } catch (IOException | URISyntaxException e) {</p>
+  <p class="myCodeP">            throw new IOException(e);</p>
+  <p class="myCodeP">       }</p>
+  <p class="myCodeP">        return StringUtils.EMPTY;</p>
+  <p class="myCodeP">   }</p>
+  <p class="myCodeP">    private String getContentByMethodPost(String url, List&lt;BasicNameValuePair&gt; nvps) {</p>
+  <p class="myCodeP">        HttpPost httpPost = new HttpPost(url);</p>
+  <p class="myCodeP">        try {</p>
+  <p class="myCodeP">            httpPost.setEntity(new UrlEncodedFormEntity(nvps, HTTP.UTF_8));</p>
+  <p class="myCodeP">       } catch (UnsupportedEncodingException e) {</p>
+  <p class="myCodeP">            return null;</p>
+  <p class="myCodeP">       }</p>
+  <p class="myCodeP">        DefaultHttpClient httpClient = new DefaultHttpClient();</p>
+  <p class="myCodeP">        try {</p>
+  <p class="myCodeP">            HttpResponse httpResponse = httpClient.execute(httpPost);</p>
+  <p class="myCodeP">            if (httpResponse.getStatusLine().getStatusCode() == 200) {</p>
+  <p class="myCodeP">                HttpEntity entity = httpResponse.getEntity();</p>
+  <p class="myCodeP">                return EntityUtils.toString(entity, HTTP.UTF_8);</p>
+  <p class="myCodeP">           }</p>
+  <p class="myCodeP">       } catch (IOException ignore) {</p>
+  <p class="myCodeP">       } finally {</p>
+  <p class="myCodeP">            IOUtils.closeQuietly(httpClient);</p>
+  <p class="myCodeP">       }</p>
+  <p class="myCodeP">        return null;</p>
+  <p class="myCodeP">   }</p>
+  <p class="myCodeP">    //登出，此处只实现了调用微博的收回access_token的接口，用户也可以重定向到微博的logout地址</p>
+  <p class="myCodeP">    @Override</p>
+  <p class="myCodeP">    public void logout(ServletRequest request, ServletResponse response, String accessToken)</p>
+  <p class="myCodeP">    throws IOException {</p>
+  <p class="myCodeP">        String url = String.format(REVOKE_WEIBO, accessToken);</p>
+  <p class="myCodeP">        try {</p>
+  <p class="myCodeP">            // 调用收回access_token接口</p>
+  <p class="myCodeP">            IOUtils.toString(new URI(url), &quot;utf-8&quot;);</p>
+  <p class="myCodeP">            // 重定向至认证中心的登出，销毁Cookies</p>
+  <p class="myCodeP">            // ((HttpServletResponse) response).sendRedirect(LOGOUT_WEIBO);</p>
+  <p class="myCodeP">       } catch (URISyntaxException e) {</p>
+  <p class="myCodeP">            throw new IOException(e);</p>
+  <p class="myCodeP">       }</p>
+  <p class="myCodeP">   }</p>
+  <p class="myCodeP">}</p>
+  <p class="myNormal">编译后包含 WeiboOAuth2ClientExtended.class 文件的整个 com 目录拷贝到 SuperMap iServer Web 应用下，即 %SuperMap iServer_HOME%\webapps\iserver\WEB-INF\classes 下（先在该目录下新建 classes 文件夹）。</p>
+  <h3>2、“微博账户登陆”方式的配置</h3>
+  <p class="myNormal">a. 在产品包根目录 %SuperMap iServer_HOME%webapps/iserver/WEB-INF 下新建一个 extendedOAuth.xml 文件，里面的内容如下所示：</p>
+  <p class="myCodeP">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</p>
+  <p class="myCodeP">&lt;extendedOAuthSettings&gt;</p>
+  <p class="myCodeP">     &lt;extendedOAuthSetting&gt;</p>
+  <p class="myCodeP">           &lt;loginType&gt;WEIBO_EXTENDED&lt;/loginType&gt;   </p>
+  <p class="myCodeP">           &lt;oAuth2ClientClass&gt;com.supermap.services.security.WeiboOAuth2ClientExtended</p>
+  <p class="myCodeP">           &lt;/oAuth2ClientClass&gt;</p>
+  <p class="myCodeP">      &lt;/extendedOAuthSetting&gt;</p>
+  <p class="myCodeP">&lt;/extendedOAuthSettings&gt;</p>
+  <p class="myNormal">其中&lt;extendedOAuthSettings&gt;为遵循 OAuth2 协议的第三方登录方式扩展实现配置集合，可以包含多个&lt;extendedOAuthSetting&gt;标签。每个&lt;extendedOAuthSetting&gt;标签对应一种遵循 OAuth2 协议的第三方登陆方式扩展实现配置，&lt;extendedOAuthSetting&gt;标签中的内容对应于 ExtendedOAuthSetting 中的配置项：</p>
+  <ul class="CommonList" style="list-style: disc;">
+    <li class="CommonList" style="font-weight: normal;">&lt;loginType&gt;：扩展后支持的登录类型，这里是“WEIBO_EXTENDED”（所有字母均要求为大写）。</li>
+    <li class="CommonList" style="font-weight: normal;">&lt;oAuthLoginResourceClass&gt;：扩展后登录类型的具体实现类，这里为“微博账号登陆”方式对应的实现类。</li>
+  </ul>
+  <p class="myNormal">b. 在产品包根目录 %SuperMap iServer_HOME%webapps/iserver/WEB-INF 下的 iserver-system.xml 文件的根节点&lt;server&gt;中添加如下内容：</p>
+  <p class="myCodeP">&lt;server&gt;</p>
+  <p class="myCodeP">     ...</p>
+  <p class="myCodeP">    &lt;oAuthConfigs&gt;       </p>
+  <p class="myCodeP">        &lt;oAuthConfig&gt;           </p>
+  <p class="myCodeP">            &lt;id&gt;1&lt;/id&gt;              </p>
+  <p class="myCodeP">            &lt;enabled&gt;true&lt;/enabled&gt;              </p>
+  <p class="myCodeP">            &lt;loginType&gt;WEIBO_EXTENDED&lt;/loginType&gt;   </p>
+  <p class="myCodeP">            &lt;buttonText&gt;微博账号登陆&lt;/buttonText&gt;             </p>
+  <p class="myCodeP">            &lt;clientID&gt;YOUR_CLIENT_ID&lt;/clientID&gt;             </p>
+  <p class="myCodeP">            &lt;clientSecret&gt;YOUR_CLIENT_SECRET&lt;/clientSecret&gt;              </p>
+  <p class="myCodeP">            &lt;redirectDomain&gt;iserver.supermap.com&lt;/redirectDomain&gt;</p>
+  <p class="myCodeP"><span>            &lt;roleMapping&gt;{&quot;role_admin&quot;:[&quot;ADMIN&quot;]}&lt;/roleMapping&gt;<span> </span></span>            </p>
+  <p class="myCodeP">            &lt;loginIcon&gt;weibo.png&lt;/loginIcon&gt;       </p>
+  <p class="myCodeP">        &lt;/oAuthConfig&gt;   </p>
+  <p class="myCodeP">    &lt;/oAuthConfigs&gt;   </p>
+  <p class="myCodeP">    &lt;!--&lt;oAuthMetas&gt;</p>
+  <p class="myCodeP">        &lt;oAuthMeta&gt;&lt;meta property=&quot;qc:admins&quot; content=&quot;4323423424235&quot; /&gt;&lt;/oAuthMeta&gt;</p>
+  <p class="myCodeP">    &lt;/oAuthMetas&gt;--&gt;</p>
+  <p class="myCodeP">&lt;/server&gt;</p>
+  <p class="myNormal"><a id="oAuthConfig"></a>其中&lt;oAuthConfigs&gt;为遵循 OAuth2 协议的第三方登陆方式 配置项集合，可以包含多个&lt;oAuthConfig&gt;标签。每个&lt;oAuthConfig&gt;标签对应一种登陆方式的配置，&lt;oAuthConfig&gt;中的内容对应于 <a class="contentpagehyperlink" href="../../../mergedProjects/iServerJavadoc/com/supermap/server/config/OAuthConfig.html">OAuthConfig</a>  中的配置项：</p>
+  <ul class="CommonList" style="list-style: disc;">
+    <li class="CommonList" style="font-weight: normal;">&lt;id&gt;：遵循 OAuth2 协议的第三方登陆方式对应的配置 ID 。</li>
+    <li class="CommonList" style="font-weight: normal;">&lt;enabled&gt;：是否启用遵循 OAuth2 协议的第三方登陆方式。</li>
+    <li class="CommonList" style="font-weight: normal;">&lt;loginType&gt;：遵循 OAuth2 协议的第三方登陆方式，这里为“WEIBO_EXTENDED”（所有字母均要求为大写）。</li>
+    <li class="CommonList" style="font-weight: normal;">&lt;buttonText&gt;：在登录界面显示的登录按钮名称，这里为“微博账号登陆”。</li>
+    <li class="CommonList" style="font-weight: normal;">&lt;clientSecret&gt;：申请应用时分配的 AppSecret ，这里为申请微博应用时分配的 Secret Key。</li>
+    <li class="CommonList" style="font-weight: normal;">&lt;clientID&gt;：申请应用时分配的 Appkey ，这里为申请微博应用时分配的 API KEY。</li>
+    <li class="CommonList" style="font-weight: normal;">&lt;redirectDomain&gt;：申请应用时填写的回调域名，这里为“iserver.supermap.com”。</li>
+    <li class="CommonList">&lt;roleMapping&gt;：根据 OAuthUserInfo.roles 字段生成 iportal/iserver 的角色配置，在 OAuth2Client.getUserInfo 方法返回的 roles 字段配置。如 OAuth2Client.getUserInfo 返回的 OAuthUserInfo.roles = [&quot;role_admin&quot;] , 然后 iportal 根据 roleMapping {&quot;role_admin&quot;:[&quot;ADMIN&quot;]} 映射出这个用户有 ADMIN 角色。</li>
+    <li class="CommonList" style="font-weight: normal;">&lt;loginIcon&gt;：在登录界面显示的登录图片标识，这里为“weibo.png”。该图片必须放于 %SuperMap iServer_HOME%webapps/iserver/WEB-INF/lib 目录下的 iserver-all.jar 的 ./staticFiles/img 文件夹下 。<span>若配置iPortal，该图片必须放于 %SuperMap iPortal_HOME%webapps/iportal/WEB-INF/lib 目录下的 iportal-all.jar 的 ./staticFiles/portal/img 文件夹下 。如果&lt;loginType&gt;值为 QQ 或 Weibo ，则此标签可省略。</span></li>
+  </ul>
+  <p class="myNormal">&lt;oAuthMetas&gt;标签代表的是用于验证网站地址的 meta 信息（将添加到首页 HTML 代码的 HEAD 标签中），扩展“微博账号登录”方式不需要填写元数据，在次已将该标签注释掉。</p>
+  <h3>3、查看扩展结果</h3>
+  <p class="myNormal">当完成以上步骤时，表示已经成功添加了“微博账号登录“方式。在第三方登陆配置页面（http://iserver.supermap.com:8090/iserver/manager/security/oauthconfig） 可以查看该登陆方式的配置信息，这些信息与&lt;oAuthConfig&gt;标签中的配置项相对应。访问  iPortal、 iServer 或  iEdge 的登陆页面，可以看到登录页面增加了“微博账号登陆”按钮，点击此按钮可以实现用微博账号登录  iPortal、 iServer 或  iEdge 的操作。想了解更多遵循 OAuth2 协议的第三方登录方式的使用，详细请参见：<a class="contentpagehyperlink" href="oauthConfig.htm#第三方登录方式的使用">第三方登录方式的使用</a>。</p>
+  <p class="myNormal"> </p>
+
+</div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../../../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../../../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../../../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../../../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../../../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../../../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../../../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../../.."
+    gCommonRootRelPath = "../../.."
+    gTopicId = "1.1.1.4.2_2"
+  
+//]]></script>
+
+  <script src="../../../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../../../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../../../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../../../whxdata/layoutconfig.js"></script>
+  <script src="../../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

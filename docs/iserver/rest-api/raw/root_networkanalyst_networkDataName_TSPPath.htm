@@ -1,0 +1,3772 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../../../../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../../../../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../../../../../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../../../../iserver-icon.png"/>
+    
+  <script data-relpath="../../../../.." src="../../../../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <meta name="template" content="../../../../../assets/layouts/RESTAPI.htt"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Language" content="zh-CN"/>
+  <meta name="topic-status" content="Complete"/>
+  <meta name="topic-check-list" content="Ran Smart Index"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>tspPath</title>
+  <link rel="StyleSheet" href="../../../../../assets/css/SuperMapHelp.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="TspPath"/>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../../../../../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../assets/css/homeButtom.css"/>
+  <script src="../../../../../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../../../../../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../../../../../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../../../../../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../../../../../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../../../../../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../../../../../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../../../../../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../../../../../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <h2><a name="URI" id="URI"></a>URI</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="networkDataName.htm#URI">&lt;networkDataName_uri&gt;</a>/tsppath[.&lt;format&gt;]</p>
+  <h2>支持的方法</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="#GET 请求">GET</a>、<a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a></p>
+  <h2>父资源</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="networkDataName.htm">networkDataName</a></p>
+  <h2>介绍</h2>
+  <p class="myNormal">TSPPath 资源表示旅行商分析功能，设置参数后，对 tspPath 资源执行 GET 请求，可以获取旅行商分析的结果。</p>
+  <p class="myNormal">旅行商分析是查找经过指定一系列点的路径，无序的路径分析。旅行商可以自己决定访问结点的顺序，目标是旅行路线阻抗总和最小（或接近最小）。如果指定了终止点，则旅行商必须最后一个访问终止点，而其他经过点的访问次序有旅行商自己决定。</p>
+  <p class="myNormal">需要注意的是，进行旅行商分析时暂不考虑访问节点，即目标点的转向权重。</p>
+  <p class="myNormal">有关旅行商分析的详细介绍，请参见：<a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/TransportationAnalyst.html#findtspPath(int[], boolean, java.lang.String, com.supermap.services.components.commontypes.analyst.TransportationAnalystParameter)">旅行商分析</a>。</p>
+  <p class="myNormal" style="font-weight: bold;">支持的方法：</p>
+  <ul class="supportList" style="list-style: disc;">
+    <li class="supportList"><a class="contentpagehyperlink" href="#GET 请求">GET</a>：获取旅行商分析的结果。</li>
+    <li class="supportList"><a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a>：检查 tspPath 资源是否存在，或权限是否可以访问 tspPath 资源。</li>
+  </ul>
+  <p class="myNormal"><span style="font-weight: bold;">支持的表述格式：</span>rjson、json、jsonp、html、xml。</p>
+  <h2>资源层次</h2>
+  <p class="myNormal"><img alt="" border="0" height="217" src="../../../../../assets/images/root/networkanalyst/networkDataName/tspPath.png" style="border: none;" usemap="#MAP274410193" width="377"/><map id="MAP274410193" name="MAP274410193"><area alt="resources.htm" coords="4, 4, 260, 45" href="../../root.htm" shape="rect"/> <area alt="" coords="87, 55, 246, 96" href="../networkanalyst.htm" shape="rect"/> <area alt="" coords="200, 173, 375, 214" href="TSPPath.htm" shape="rect"/> <area alt="" coords="148, 108, 314, 156" href="networkDataName.htm" shape="rect"/></map></p>
+  <h2>HTTP 请求方法</h2>
+  <p class="myNormal">对如下 URI 执行 HTTP 请求，以 rjson 输出格式为例加以说明，其中，supermapiserver 是服务器名，RoadNet@Changchun 为可进行分析的网络数据名称。[2,6,9,18,25]为要进行分析的网络结点数组，即旅行商分析的站点为结点 2,6,9,18,25 所在的位置。</p>
+  <p class="uriStyle">http://supermapiserver:8090/iserver/services/transportationanalyst-sample/rest/networkanalyst/RoadNet@Changchun/tsppath.rjson?nodes=[2,6,9,18,25]</p>
+  <h3><a id="GET 请求"></a>GET 请求</h3>
+  <p class="myNormal">获取旅行商分析的结果。</p>
+  <p class="myNormal"><strong>请求参数</strong></p>
+  <p class="myNormal">对 tspPath 资源执行 GET 请求，需要在 URI 中包含一些参数，如下：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>名称</td>
+        <td>类型</td>
+        <td>含义</td>
+      </tr>
+      <tr class="t2Row">
+        <td>nodes</td>
+        <td>int[]/<a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/Point2D.html">Point2D</a>[]</td>
+        <td>【必选参数】 进行旅行商分析的访问结点，即目标点。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>endNodeAssigned</td>
+        <td>boolean</td>
+        <td>是否指定终止点。true 表示指定终止点，则旅行商必须最后一个访问终止点，即指定的途经点的最后一个点。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>parameter</td>
+        <td><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/TransportationAnalystParameter.html">TransportationAnalystParameter</a></td>
+        <td>交通网络分析通用参数。</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><strong>响应结构</strong></p>
+  <p class="myNormal">执行旅行商分析功能，返回的操作结果表述的结构如下（表述在响应消息的实体主体里）：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>字段</td>
+        <td>类型</td>
+        <td>说明</td>
+      </tr>
+      <tr class="t2Row">
+        <td>tspPathList</td>
+        <td>List&lt;<a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/TSPPath.html">TSPPath</a>&gt;</td>
+        <td>旅行商分析结果路径集合。</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><strong>响应示例</strong></p>
+  <p class="myNormal">对 RoadNet@Changchun 数据集执行旅行商分析，即对如下 URI 执行 GET 请求：</p>
+  <p class="myCodeP">http://supermapiserver:8090/iserver/services/transportationanalyst-sample/rest/networkanalyst/RoadNet@Changchun/tsppath.rjson?nodes=[2,6,9,18,25]</p>
+  <p class="myNormal">获取的响应内容如下：</p>
+  <p><textarea cols="" id="txtComments" rows="" style="overflow: scroll; width: 85%; height: 200px;">{&quot;tspPathList&quot;: [{
+      &quot;edgeFeatures&quot;: null,
+      &quot;edgeIDs&quot;: [
+      8367,
+      8368,
+      8369,
+      2401,
+      2401,
+      8370,
+      2400,
+      2400,
+      8371,
+      8372,
+      8373,
+      2032,
+      9886,
+      9886,
+      2032,
+      6506,
+      3897,
+      10409,
+      10380,
+      6573,
+      6574,
+      6575,
+      6576,
+      6577,
+      514,
+      6579,
+      6580,
+      6581,
+      6547,
+      6548,
+      6549,
+      6550,
+      6551,
+      6552,
+      1066,
+      8662,
+      8663,
+      1068
+      ],
+      &quot;nodeFeatures&quot;: null,
+      &quot;nodeIDs&quot;: [
+      2,
+      3,
+      5,
+      8,
+      9,
+      8,
+      7,
+      6,
+      7,
+      12,
+      14,
+      11,
+      16,
+      18,
+      16,
+      11,
+      137,
+      184,
+      204,
+      220,
+      251,
+      253,
+      254,
+      295,
+      293,
+      294,
+      297,
+      339,
+      341,
+      221,
+      164,
+      91,
+      92,
+      94,
+      93,
+      70,
+      71,
+      72,
+      25
+      ],
+      &quot;pathGuideItems&quot;: null,
+      &quot;route&quot;: {
+      &quot;center&quot;: null,
+      &quot;id&quot;: 0,
+      &quot;length&quot;: 5295.838589664884,
+      &quot;line&quot;: {
+      &quot;center&quot;: {
+      &quot;x&quot;: 1733.3471119863548,
+      &quot;y&quot;: -1067.751489744444
+      },
+      &quot;id&quot;: 0,
+      &quot;parts&quot;: [258],
+      &quot;points&quot;: [
+      {
+      &quot;x&quot;: 119.61003975513272,
+      &quot;y&quot;: -122.62783944590828
+      },
+      {
+      &quot;x&quot;: 161.09530379013117,
+      &quot;y&quot;: -112.79242730387216
+      },
+      {
+      &quot;x&quot;: 171.90355999452908,
+      &quot;y&quot;: -113.24911418574811
+      },
+      {
+      &quot;x&quot;: 183.92964788392953,
+      &quot;y&quot;: -117.96821196513312
+      },
+      {
+      &quot;x&quot;: 199.15254394646175,
+      &quot;y&quot;: -120.86056221701423
+      },
+      {
+      &quot;x&quot;: 231.88177048090608,
+      &quot;y&quot;: -119.9471884532623
+      },
+      {
+      &quot;x&quot;: 299.3192000379238,
+      &quot;y&quot;: -106.55103991823394
+      },
+      {
+      &quot;x&quot;: 363.1031345399339,
+      &quot;y&quot;: -88.43579360382057
+      },
+      {
+      &quot;x&quot;: 367.8222323193189,
+      &quot;y&quot;: -87.52241984006864
+      },
+      {
+      &quot;x&quot;: 376.9559699568382,
+      &quot;y&quot;: -86.6090460763167
+      },
+      {
+      &quot;x&quot;: 401.61706157814046,
+      &quot;y&quot;: -83.86892478506093
+      },
+      {
+      &quot;x&quot;: 413.03423362503963,
+      &quot;y&quot;: -82.3466351788077
+      },
+      {
+      &quot;x&quot;: 425.3647794356907,
+      &quot;y&quot;: -78.54091116317464
+      },
+      {
+      &quot;x&quot;: 434.3462881125848,
+      &quot;y&quot;: -76.2574767537948
+      },
+      {
+      &quot;x&quot;: 458.0940059701351,
+      &quot;y&quot;: -75.19187402941755
+      },
+      {
+      &quot;x&quot;: 510.15631050399526,
+      &quot;y&quot;: -73.51735546253899
+      },
+      {
+      &quot;x&quot;: 525.7717933539819,
+      &quot;y&quot;: -72.03388459179025
+      },
+      {
+      &quot;x&quot;: 527.4891344169872,
+      &quot;y&quot;: -93.12525017785975
+      },
+      {
+      &quot;x&quot;: 525.7717933539819,
+      &quot;y&quot;: -72.03388459179025
+      },
+      {
+      &quot;x&quot;: 540.6021026290597,
+      &quot;y&quot;: -70.62500521065787
+      },
+      {
+      &quot;x&quot;: 552.0074139469053,
+      &quot;y&quot;: -71.40708370102442
+      },
+      {
+      &quot;x&quot;: 550.6770595319997,
+      &quot;y&quot;: -56.10502113825084
+      },
+      {
+      &quot;x&quot;: 552.0074139469053,
+      &quot;y&quot;: -71.40708370102442
+      },
+      {
+      &quot;x&quot;: 567.2421707384912,
+      &quot;y&quot;: -72.45175273816173
+      },
+      {
+      &quot;x&quot;: 572.8746422816281,
+      &quot;y&quot;: -77.32307947817205
+      },
+      {
+      &quot;x&quot;: 580.9427771947701,
+      &quot;y&quot;: -82.04217725755704
+      },
+      {
+      &quot;x&quot;: 587.1841645804084,
+      &quot;y&quot;: -83.41223790318494
+      },
+      {
+      &quot;x&quot;: 592.5626026508485,
+      &quot;y&quot;: -83.02806375529636
+      },
+      {
+      &quot;x&quot;: 599.9713972729354,
+      &quot;y&quot;: -82.49886413943301
+      },
+      {
+      &quot;x&quot;: 625.6980916186149,
+      &quot;y&quot;: -79.60651388755188
+      },
+      {
+      &quot;x&quot;: 643.9366305686932,
+      &quot;y&quot;: -79.56857533451276
+      },
+      {
+      &quot;x&quot;: 662.8886939433028,
+      &quot;y&quot;: -81.0400074081259
+      },
+      {
+      &quot;x&quot;: 671.5390689316017,
+      &quot;y&quot;: -81.71161972573859
+      },
+      {
+      &quot;x&quot;: 675.7749813625193,
+      &quot;y&quot;: -88.11714584078466
+      },
+      {
+      &quot;x&quot;: 680.6307834174736,
+      &quot;y&quot;: -94.93593170518854
+      },
+      {
+      &quot;x&quot;: 683.2136568509599,
+      &quot;y&quot;: -98.44863957472994
+      },
+      {
+      &quot;x&quot;: 687.7595140938959,
+      &quot;y&quot;: -100.10167857216118
+      },
+      {
+      &quot;x&quot;: 691.8921115874739,
+      &quot;y&quot;: -100.7215681961979
+      },
+      {
+      &quot;x&quot;: 699.9506766999513,
+      &quot;y&quot;: -98.7585843867483
+      },
+      {
+      &quot;x&quot;: 709.0423911858231,
+      &quot;y&quot;: -94.62598689317018
+      },
+      {
+      &quot;x&quot;: 718.8573024004489,
+      &quot;y&quot;: -90.67745939303335
+      },
+      {
+      &quot;x&quot;: 709.0423911858231,
+      &quot;y&quot;: -94.62598689317018
+      },
+      {
+      &quot;x&quot;: 699.9506766999513,
+      &quot;y&quot;: -98.7585843867483
+      },
+      {
+      &quot;x&quot;: 691.8921115874739,
+      &quot;y&quot;: -100.7215681961979
+      },
+      {
+      &quot;x&quot;: 687.7595140938959,
+      &quot;y&quot;: -100.10167857216118
+      },
+      {
+      &quot;x&quot;: 683.2136568509599,
+      &quot;y&quot;: -98.44863957472994
+      },
+      {
+      &quot;x&quot;: 680.6307834174736,
+      &quot;y&quot;: -94.93593170518854
+      },
+      {
+      &quot;x&quot;: 675.7749813625193,
+      &quot;y&quot;: -88.11714584078466
+      },
+      {
+      &quot;x&quot;: 671.5390689316017,
+      &quot;y&quot;: -81.71161972573859
+      },
+      {
+      &quot;x&quot;: 662.8886939433028,
+      &quot;y&quot;: -81.0400074081259
+      },
+      {
+      &quot;x&quot;: 643.9366305686932,
+      &quot;y&quot;: -79.56857533451276
+      },
+      {
+      &quot;x&quot;: 643.6924672099984,
+      &quot;y&quot;: -87.59247293840401
+      },
+      {
+      &quot;x&quot;: 643.3461799989506,
+      &quot;y&quot;: -93.19078285034493
+      },
+      {
+      &quot;x&quot;: 642.4227474361562,
+      &quot;y&quot;: -98.9622363678098
+      },
+      {
+      &quot;x&quot;: 636.8244375242152,
+      &quot;y&quot;: -115.18002075188608
+      },
+      {
+      &quot;x&quot;: 634.8621433282772,
+      &quot;y&quot;: -121.70176322662137
+      },
+      {
+      &quot;x&quot;: 633.9387107654828,
+      &quot;y&quot;: -133.76410107812293
+      },
+      {
+      &quot;x&quot;: 633.7655671599589,
+      &quot;y&quot;: -136.30354062580747
+      },
+      {
+      &quot;x&quot;: 634.5158561172293,
+      &quot;y&quot;: -140.63213076390613
+      },
+      {
+      &quot;x&quot;: 650.3873532902577,
+      &quot;y&quot;: -170.93226173059668
+      },
+      {
+      &quot;x&quot;: 663.8925545211255,
+      &quot;y&quot;: -198.86609675512665
+      },
+      {
+      &quot;x&quot;: 666.0857068577621,
+      &quot;y&quot;: -204.6375502725915
+      },
+      {
+      &quot;x&quot;: 668.9714336164946,
+      &quot;y&quot;: -217.62332068688744
+      },
+      {
+      &quot;x&quot;: 680.7451987921229,
+      &quot;y&quot;: -289.79534692278554
+      },
+      {
+      &quot;x&quot;: 699.5601372590584,
+      &quot;y&quot;: -388.60263114178406
+      },
+      {
+      &quot;x&quot;: 709.9487535904951,
+      &quot;y&quot;: -429.0028057640382
+      },
+      {
+      &quot;x&quot;: 715.0276326858642,
+      &quot;y&quot;: -439.5068511658243
+      },
+      {
+      &quot;x&quot;: 721.145373414377,
+      &quot;y&quot;: -451.3960454118019
+      },
+      {
+      &quot;x&quot;: 730.9568443940673,
+      &quot;y&quot;: -474.82814669270925
+      },
+      {
+      &quot;x&quot;: 741.6917479365519,
+      &quot;y&quot;: -492.95051073754894
+      },
+      {
+      &quot;x&quot;: 750.6952154237971,
+      &quot;y&quot;: -507.725431742259
+      },
+      {
+      &quot;x&quot;: 754.3889456749746,
+      &quot;y&quot;: -514.8820341039154
+      },
+      {
+      &quot;x&quot;: 755.0815200970704,
+      &quot;y&quot;: -524.2317888022085
+      },
+      {
+      &quot;x&quot;: 758.6598212778986,
+      &quot;y&quot;: -544.5473051836849
+      },
+      {
+      &quot;x&quot;: 760.0449701220901,
+      &quot;y&quot;: -547.4330319424173
+      },
+      {
+      &quot;x&quot;: 764.7775620064114,
+      &quot;y&quot;: -552.5119110377864
+      },
+      {
+      &quot;x&quot;: 770.2027283128283,
+      &quot;y&quot;: -557.1290738517582
+      },
+      {
+      &quot;x&quot;: 773.4347422826087,
+      &quot;y&quot;: -562.2079529471273
+      },
+      {
+      &quot;x&quot;: 779.8987702221693,
+      &quot;y&quot;: -576.9828739518374
+      },
+      {
+      &quot;x&quot;: 794.3274040158315,
+      &quot;y&quot;: -599.0298263885531
+      },
+      {
+      &quot;x&quot;: 796.866843563516,
+      &quot;y&quot;: -606.1864287502096
+      },
+      {
+      &quot;x&quot;: 807.8129256274714,
+      &quot;y&quot;: -638.7967667715142
+      },
+      {
+      &quot;x&quot;: 709.7358490469052,
+      &quot;y&quot;: -756.0991793863391
+      },
+      {
+      &quot;x&quot;: 684.1262547736252,
+      &quot;y&quot;: -787.6937956915049
+      },
+      {
+      &quot;x&quot;: 677.1233390056011,
+      &quot;y&quot;: -796.3333092404941
+      },
+      {
+      &quot;x&quot;: 739.2744749886702,
+      &quot;y&quot;: -841.4141028670601
+      },
+      {
+      &quot;x&quot;: 784.5133641032822,
+      &quot;y&quot;: -875.2733126579966
+      },
+      {
+      &quot;x&quot;: 796.0834625444727,
+      &quot;y&quot;: -884.583626247392
+      },
+      {
+      &quot;x&quot;: 796.4526997871387,
+      &quot;y&quot;: -884.8807468410998
+      },
+      {
+      &quot;x&quot;: 806.8996185105129,
+      &quot;y&quot;: -894.4881810242031
+      },
+      {
+      &quot;x&quot;: 867.5290575300961,
+      &quot;y&quot;: -950.4538170422799
+      },
+      {
+      &quot;x&quot;: 880.2667071094985,
+      &quot;y&quot;: -961.7841233160929
+      },
+      {
+      &quot;x&quot;: 917.3384735861845,
+      &quot;y&quot;: -994.7599455565907
+      },
+      {
+      &quot;x&quot;: 919.337166945891,
+      &quot;y&quot;: -996.547065520112
+      },
+      {
+      &quot;x&quot;: 922.2389924986796,
+      &quot;y&quot;: -999.1417158454658
+      },
+      {
+      &quot;x&quot;: 958.7530442395614,
+      &quot;y&quot;: -1031.7905413885514
+      },
+      {
+      &quot;x&quot;: 963.8832275412185,
+      &quot;y&quot;: -1049.8394590043813
+      },
+      {
+      &quot;x&quot;: 997.2203541988224,
+      &quot;y&quot;: -1041.5399300224415
+      },
+      {
+      &quot;x&quot;: 1024.4490246366838,
+      &quot;y&quot;: -1034.7611472629148
+      },
+      {
+      &quot;x&quot;: 1068.9926667117943,
+      &quot;y&quot;: -1049.8636782309356
+      },
+      {
+      &quot;x&quot;: 1081.0143727745456,
+      &quot;y&quot;: -1050.1432527905345
+      },
+      {
+      &quot;x&quot;: 1154.822056508647,
+      &quot;y&quot;: -1046.1593153162507
+      },
+      {
+      &quot;x&quot;: 1176.9084467169578,
+      &quot;y&quot;: -1043.363569720262
+      },
+      {
+      &quot;x&quot;: 1198.7152623656696,
+      &quot;y&quot;: -1041.40654780307
+      },
+      {
+      &quot;x&quot;: 1232.753464996832,
+      &quot;y&quot;: -1035.0112797522459
+      },
+      {
+      &quot;x&quot;: 1241.0710688339823,
+      &quot;y&quot;: -1034.5418076778592
+      },
+      {
+      &quot;x&quot;: 1247.7975423657153,
+      &quot;y&quot;: -1034.5418076778592
+      },
+      {
+      &quot;x&quot;: 1255.7544683727654,
+      &quot;y&quot;: -1035.8542903181974
+      },
+      {
+      &quot;x&quot;: 1263.957484874879,
+      &quot;y&quot;: -1037.9050444437257
+      },
+      {
+      &quot;x&quot;: 1277.0002811132395,
+      &quot;y&quot;: -1042.0065526947826
+      },
+      {
+      &quot;x&quot;: 1283.8908149750148,
+      &quot;y&quot;: -1045.287759295628
+      },
+      {
+      &quot;x&quot;: 1311.1248297620318,
+      &quot;y&quot;: -1063.2523654352567
+      },
+      {
+      &quot;x&quot;: 1315.9646094982788,
+      &quot;y&quot;: -1064.8109385706582
+      },
+      {
+      &quot;x&quot;: 1329.8277073868505,
+      &quot;y&quot;: -1065.303119560785
+      },
+      {
+      &quot;x&quot;: 1361.57338125003,
+      &quot;y&quot;: -1067.3538736863134
+      },
+      {
+      &quot;x&quot;: 1381.0965605250599,
+      &quot;y&quot;: -1069.6507183069052
+      },
+      {
+      &quot;x&quot;: 1396.1901108889488,
+      &quot;y&quot;: -1073.0139550727718
+      },
+      {
+      &quot;x&quot;: 1419.7797070479091,
+      &quot;y&quot;: -1079.3439003748183
+      },
+      {
+      &quot;x&quot;: 1442.0449731357635,
+      &quot;y&quot;: -1085.3184798259422
+      },
+      {
+      &quot;x&quot;: 1494.0981603947878,
+      &quot;y&quot;: -1097.9524970946254
+      },
+      {
+      &quot;x&quot;: 1551.6586972209118,
+      &quot;y&quot;: -1111.9232230875825
+      },
+      {
+      &quot;x&quot;: 1556.548198741611,
+      &quot;y&quot;: -1102.53538016784
+      },
+      {
+      &quot;x&quot;: 1572.788359502203,
+      &quot;y&quot;: -1073.1648766646415
+      },
+      {
+      &quot;x&quot;: 1574.976749959304,
+      &quot;y&quot;: -1070.4581832045428
+      },
+      {
+      &quot;x&quot;: 1578.2017464224004,
+      &quot;y&quot;: -1068.6729173053288
+      },
+      {
+      &quot;x&quot;: 1607.1691253677118,
+      &quot;y&quot;: -1068.8456849729946
+      },
+      {
+      &quot;x&quot;: 1667.4650413831016,
+      &quot;y&quot;: -1067.5787220767781
+      },
+      {
+      &quot;x&quot;: 1694.992689764531,
+      &quot;y&quot;: -1065.0447962843452
+      },
+      {
+      &quot;x&quot;: 1701.8458072486105,
+      &quot;y&quot;: -1065.2175639520112
+      },
+      {
+      &quot;x&quot;: 1733.3471119863548,
+      &quot;y&quot;: -1067.751489744444
+      },
+      {
+      &quot;x&quot;: 1738.7604989065521,
+      &quot;y&quot;: -1067.4059544091122
+      },
+      {
+      &quot;x&quot;: 1744.5194211620812,
+      &quot;y&quot;: -1066.3117591805617
+      },
+      {
+      &quot;x&quot;: 1767.5551101841977,
+      &quot;y&quot;: -1061.243907595696
+      },
+      {
+      &quot;x&quot;: 1794.737223230295,
+      &quot;y&quot;: -1056.06087756572
+      },
+      {
+      &quot;x&quot;: 1830.9032549950177,
+      &quot;y&quot;: -1049.2653493041955
+      },
+      {
+      &quot;x&quot;: 1889.0683697758618,
+      &quot;y&quot;: -1041.8939288171182
+      },
+      {
+      &quot;x&quot;: 1924.140206312034,
+      &quot;y&quot;: -1036.6533095645868
+      },
+      {
+      &quot;x&quot;: 1928.689754893902,
+      &quot;y&quot;: -1034.29215143982
+      },
+      {
+      &quot;x&quot;: 1935.4852831554265,
+      &quot;y&quot;: -1030.3184950835048
+      },
+      {
+      &quot;x&quot;: 1944.996056050761,
+      &quot;y&quot;: -1025.9992236432279
+      },
+      {
+      &quot;x&quot;: 1951.7150657637994,
+      &quot;y&quot;: -1023.5215888115449
+      },
+      {
+      &quot;x&quot;: 1956.2923911308067,
+      &quot;y&quot;: -1022.8496878402411
+      },
+      {
+      &quot;x&quot;: 1961.541617469118,
+      &quot;y&quot;: -1022.4717435438827
+      },
+      {
+      &quot;x&quot;: 1968.2186333714499,
+      &quot;y&quot;: -1023.1436445151866
+      },
+      {
+      &quot;x&quot;: 1972.2920330099794,
+      &quot;y&quot;: -1024.1934897828487
+      },
+      {
+      &quot;x&quot;: 1975.861506920031,
+      &quot;y&quot;: -1025.747260778989
+      },
+      {
+      &quot;x&quot;: 1979.3889870193761,
+      &quot;y&quot;: -1027.972932746433
+      },
+      {
+      &quot;x&quot;: 1986.6119224608924,
+      &quot;y&quot;: -1032.8442147883857
+      },
+      {
+      &quot;x&quot;: 1991.3152292600191,
+      &quot;y&quot;: -1034.3979857845259
+      },
+      {
+      &quot;x&quot;: 1999.0840842407197,
+      &quot;y&quot;: -1035.867769159253
+      },
+      {
+      &quot;x&quot;: 2004.4592920111504,
+      &quot;y&quot;: -1036.7916329947957
+      },
+      {
+      &quot;x&quot;: 2012.4381160453834,
+      &quot;y&quot;: -1036.4976763198504
+      },
+      {
+      &quot;x&quot;: 2024.490339718146,
+      &quot;y&quot;: -1036.119732023492
+      },
+      {
+      &quot;x&quot;: 2033.686984262867,
+      &quot;y&quot;: -1035.867769159253
+      },
+      {
+      &quot;x&quot;: 2044.9833193429129,
+      &quot;y&quot;: -1036.9176144269152
+      },
+      {
+      &quot;x&quot;: 2058.379344958283,
+      &quot;y&quot;: -1038.4713854230554
+      },
+      {
+      &quot;x&quot;: 2080.3841017684836,
+      &quot;y&quot;: -1038.2194225588164
+      },
+      {
+      &quot;x&quot;: 2102.1788895251516,
+      &quot;y&quot;: -1036.119732023492
+      },
+      {
+      &quot;x&quot;: 2125.695423520786,
+      &quot;y&quot;: -1033.0961776526246
+      },
+      {
+      &quot;x&quot;: 2137.075746222245,
+      &quot;y&quot;: -1030.7025304423548
+      },
+      {
+      &quot;x&quot;: 2153.7472890727213,
+      &quot;y&quot;: -1025.327322671924
+      },
+      {
+      &quot;x&quot;: 2221.4833057422893,
+      &quot;y&quot;: -1001.9787639191157
+      },
+      {
+      &quot;x&quot;: 2273.009711479152,
+      &quot;y&quot;: -983.8374376939122
+      },
+      {
+      &quot;x&quot;: 2291.4030005685945,
+      &quot;y&quot;: -976.2365579560376
+      },
+      {
+      &quot;x&quot;: 2337.239244954728,
+      &quot;y&quot;: -955.533609277738
+      },
+      {
+      &quot;x&quot;: 2358.488113172212,
+      &quot;y&quot;: -945.8750328152454
+      },
+      {
+      &quot;x&quot;: 2366.634912449271,
+      &quot;y&quot;: -941.0877383947056
+      },
+      {
+      &quot;x&quot;: 2375.5689225565566,
+      &quot;y&quot;: -937.5386110918113
+      },
+      {
+      &quot;x&quot;: 2385.0282015387133,
+      &quot;y&quot;: -933.7808153317764
+      },
+      {
+      &quot;x&quot;: 2414.927794761734,
+      &quot;y&quot;: -921.1826721198295
+      },
+      {
+      &quot;x&quot;: 2475.062931693428,
+      &quot;y&quot;: -896.4903114244136
+      },
+      {
+      &quot;x&quot;: 2508.154054530142,
+      &quot;y&quot;: -882.3803910270329
+      },
+      {
+      &quot;x&quot;: 2521.8440368204574,
+      &quot;y&quot;: -875.2414432069297
+      },
+      {
+      &quot;x&quot;: 2533.098378089797,
+      &quot;y&quot;: -868.4384458724784
+      },
+      {
+      &quot;x&quot;: 2540.4053011527258,
+      &quot;y&quot;: -862.1393742665049
+      },
+      {
+      &quot;x&quot;: 2552.583506257608,
+      &quot;y&quot;: -848.1974291119503
+      },
+      {
+      &quot;x&quot;: 2561.738156991623,
+      &quot;y&quot;: -837.6989764353278
+      },
+      {
+      &quot;x&quot;: 2568.877104811726,
+      &quot;y&quot;: -825.6047589518588
+      },
+      {
+      &quot;x&quot;: 2581.475248023673,
+      &quot;y&quot;: -798.3087819926405
+      },
+      {
+      &quot;x&quot;: 2585.926591958561,
+      &quot;y&quot;: -785.7106387806936
+      },
+      {
+      &quot;x&quot;: 2591.133824486165,
+      &quot;y&quot;: -768.7451392552716
+      },
+      {
+      &quot;x&quot;: 2595.585168421053,
+      &quot;y&quot;: -739.6014346249679
+      },
+      {
+      &quot;x&quot;: 2600.8763885700705,
+      &quot;y&quot;: -712.8093833942273
+      },
+      {
+      &quot;x&quot;: 2604.23589342659,
+      &quot;y&quot;: -699.1194011039116
+      },
+      {
+      &quot;x&quot;: 2608.687237361478,
+      &quot;y&quot;: -688.6209484272892
+      },
+      {
+      &quot;x&quot;: 2612.3826927036494,
+      &quot;y&quot;: -683.1617530354456
+      },
+      {
+      &quot;x&quot;: 2619.7736033879914,
+      &quot;y&quot;: -675.5188794868645
+      },
+      {
+      &quot;x&quot;: 2630.272056064614,
+      &quot;y&quot;: -667.9599935596964
+      },
+      {
+      &quot;x&quot;: 2640.182595391346,
+      &quot;y&quot;: -663.1726991391565
+      },
+      {
+      &quot;x&quot;: 2651.520924282098,
+      &quot;y&quot;: -662.1648476822007
+      },
+      {
+      &quot;x&quot;: 2690.5751682391333,
+      &quot;y&quot;: -659.5612314183984
+      },
+      {
+      &quot;x&quot;: 2716.611330877157,
+      &quot;y&quot;: -658.5533799614427
+      },
+      {
+      &quot;x&quot;: 2724.758130154216,
+      &quot;y&quot;: -657.7135037473129
+      },
+      {
+      &quot;x&quot;: 2742.311543029529,
+      &quot;y&quot;: -654.1020360265547
+      },
+      {
+      &quot;x&quot;: 2746.40732490664,
+      &quot;y&quot;: -652.660029981063
+      },
+      {
+      &quot;x&quot;: 2770.699359067116,
+      &quot;y&quot;: -644.1075090784102
+      },
+      {
+      &quot;x&quot;: 2818.7402785153395,
+      &quot;y&quot;: -626.9740343101624
+      },
+      {
+      &quot;x&quot;: 2845.784292610319,
+      &quot;y&quot;: -617.0634949834308
+      },
+      {
+      &quot;x&quot;: 2881.7309945750744,
+      &quot;y&quot;: -600.5179335650738
+      },
+      {
+      &quot;x&quot;: 2912.3864763908123,
+      &quot;y&quot;: -585.8200998178024
+      },
+      {
+      &quot;x&quot;: 2921.0372013963492,
+      &quot;y&quot;: -581.1167930186756
+      },
+      {
+      &quot;x&quot;: 2936.0709856292724,
+      &quot;y&quot;: -569.6104888850974
+      },
+      {
+      &quot;x&quot;: 2953.3724356403463,
+      &quot;y&quot;: -552.8129646025016
+      },
+      {
+      &quot;x&quot;: 2962.7790492386002,
+      &quot;y&quot;: -540.4667842547935
+      },
+      {
+      &quot;x&quot;: 2973.5294647794613,
+      &quot;y&quot;: -523.6692599721977
+      },
+      {
+      &quot;x&quot;: 2978.5687220642403,
+      &quot;y&quot;: -516.7822750163333
+      },
+      {
+      &quot;x&quot;: 2985.2877317772786,
+      &quot;y&quot;: -510.8191538960117
+      },
+      {
+      &quot;x&quot;: 2998.977714067594,
+      &quot;y&quot;: -502.42039175471376
+      },
+      {
+      &quot;x&quot;: 3006.0326742662846,
+      &quot;y&quot;: -499.73278786949845
+      },
+      {
+      &quot;x&quot;: 3032.0688369043082,
+      &quot;y&quot;: -495.53340679884946
+      },
+      {
+      &quot;x&quot;: 3054.073593714509,
+      &quot;y&quot;: -493.43371626352496
+      },
+      {
+      &quot;x&quot;: 3068.77142746178,
+      &quot;y&quot;: -490.3261742712447
+      },
+      {
+      &quot;x&quot;: 3078.010065817208,
+      &quot;y&quot;: -486.6307189290736
+      },
+      {
+      &quot;x&quot;: 3089.516369950786,
+      &quot;y&quot;: -479.3237958661444
+      },
+      {
+      &quot;x&quot;: 3097.663169227845,
+      &quot;y&quot;: -474.5365014456046
+      },
+      {
+      &quot;x&quot;: 3103.2063522411017,
+      &quot;y&quot;: -472.18484804604117
+      },
+      {
+      &quot;x&quot;: 3110.513275304031,
+      &quot;y&quot;: -470.58908323919457
+      },
+      {
+      &quot;x&quot;: 3119.7519136594588,
+      &quot;y&quot;: -471.42895945332435
+      },
+      {
+      &quot;x&quot;: 3127.8987129365178,
+      &quot;y&quot;: -474.03257571712675
+      },
+      {
+      &quot;x&quot;: 3152.8430364961728,
+      &quot;y&quot;: -485.37090460787897
+      },
+      {
+      &quot;x&quot;: 3171.4882884498543,
+      &quot;y&quot;: -492.1739019423303
+      },
+      {
+      &quot;x&quot;: 3180.642939183869,
+      &quot;y&quot;: -495.0294810703716
+      },
+      {
+      &quot;x&quot;: 3192.4851938030993,
+      &quot;y&quot;: -495.8693572845014
+      },
+      {
+      &quot;x&quot;: 3212.8101981850396,
+      &quot;y&quot;: -493.51770388493793
+      },
+      {
+      &quot;x&quot;: 3235.402868345131,
+      &quot;y&quot;: -489.06635995005
+      },
+      {
+      &quot;x&quot;: 3246.741197235883,
+      &quot;y&quot;: -484.3630531509232
+      },
+      {
+      &quot;x&quot;: 3257.9955385052226,
+      &quot;y&quot;: -478.8198701376665
+      },
+      {
+      &quot;x&quot;: 3266.8982263749986,
+      &quot;y&quot;: -471.5129470747373
+      },
+      {
+      &quot;x&quot;: 3274.7930627878186,
+      &quot;y&quot;: -462.6102592049615
+      },
+      {
+      &quot;x&quot;: 3278.9924438584676,
+      &quot;y&quot;: -453.6235837137727
+      },
+      {
+      &quot;x&quot;: 3287.1392431355266,
+      &quot;y&quot;: -433.7185174388966
+      },
+      {
+      &quot;x&quot;: 3293.690277605739,
+      &quot;y&quot;: -405.9186147512004
+      },
+      {
+      &quot;x&quot;: 3381.121391496651,
+      &quot;y&quot;: -404.9947509156576
+      },
+      {
+      &quot;x&quot;: 3420.483055357951,
+      &quot;y&quot;: -383.388590574506
+      },
+      {
+      &quot;x&quot;: 3461.6687229020363,
+      &quot;y&quot;: -360.78120944726186
+      },
+      {
+      &quot;x&quot;: 3480.5099710619143,
+      &quot;y&quot;: -373.42467860717977
+      },
+      {
+      &quot;x&quot;: 3481.832163915239,
+      &quot;y&quot;: -375.2426937805013
+      },
+      {
+      &quot;x&quot;: 3481.688869918136,
+      &quot;y&quot;: -378.6591243430127
+      },
+      {
+      &quot;x&quot;: 3529.384049350522,
+      &quot;y&quot;: -365.7336742174629
+      },
+      {
+      &quot;x&quot;: 3534.3934941442412,
+      &quot;y&quot;: -344.6259165429573
+      },
+      {
+      &quot;x&quot;: 3582.680471516261,
+      &quot;y&quot;: -299.1217239082416
+      },
+      {
+      &quot;x&quot;: 3580.4096471580488,
+      &quot;y&quot;: -294.77757943117746
+      },
+      {
+      &quot;x&quot;: 3602.6289411887833,
+      &quot;y&quot;: -278.3358849522864
+      },
+      {
+      &quot;x&quot;: 3624.9525835219583,
+      &quot;y&quot;: -260.389427390322
+      },
+      {
+      &quot;x&quot;: 3630.3997467927984,
+      &quot;y&quot;: -256.01224261911113
+      },
+      {
+      &quot;x&quot;: 3638.1814086082845,
+      &quot;y&quot;: -251.29461014347282
+      },
+      {
+      &quot;x&quot;: 3660.7968632595403,
+      &quot;y&quot;: -243.0752298508658
+      },
+      {
+      &quot;x&quot;: 3668.432618915986,
+      &quot;y&quot;: -237.14171271655778
+      },
+      {
+      &quot;x&quot;: 3676.9438115266735,
+      &quot;y&quot;: -230.13821708262043
+      },
+      {
+      &quot;x&quot;: 3692.7503120893793,
+      &quot;y&quot;: -211.31632256641385
+      },
+      {
+      &quot;x&quot;: 3696.8356845425096,
+      &quot;y&quot;: -203.58329613727471
+      },
+      {
+      &quot;x&quot;: 3707.778646470537,
+      &quot;y&quot;: -169.1980779900963
+      },
+      {
+      &quot;x&quot;: 3707.438198766109,
+      &quot;y&quot;: -158.69283453919027
+      },
+      {
+      &quot;x&quot;: 3713.5662574458042,
+      &quot;y&quot;: -147.7498726111632
+      },
+      {
+      &quot;x&quot;: 3730.58864266718,
+      &quot;y&quot;: -121.97311784736605
+      },
+      {
+      &quot;x&quot;: 3748.7782771608786,
+      &quot;y&quot;: -99.30902780976328
+      },
+      {
+      &quot;x&quot;: 3771.8800856756025,
+      &quot;y&quot;: -78.00672858987053
+      },
+      {
+      &quot;x&quot;: 3783.5773749318073,
+      &quot;y&quot;: -65.51383349599442
+      }
+      ],
+      &quot;style&quot;: null,
+      &quot;type&quot;: &quot;LINE&quot;
+      },
+      &quot;maxM&quot;: 5293,
+      &quot;minM&quot;: 0,
+      &quot;parts&quot;: [258],
+      &quot;points&quot;: [
+      {
+      &quot;measure&quot;: 0,
+      &quot;x&quot;: 119.61003975513272,
+      &quot;y&quot;: -122.62783944590828
+      },
+      {
+      &quot;measure&quot;: 42.612372981156696,
+      &quot;x&quot;: 161.09530379013117,
+      &quot;y&quot;: -112.79242730387216
+      },
+      {
+      &quot;measure&quot;: 53.42447476163204,
+      &quot;x&quot;: 171.90355999452908,
+      &quot;y&quot;: -113.24911418574811
+      },
+      {
+      &quot;measure&quot;: 66.3363997621166,
+      &quot;x&quot;: 183.92964788392953,
+      &quot;y&quot;: -117.96821196513312
+      },
+      {
+      &quot;measure&quot;: 81.82332754153322,
+      &quot;x&quot;: 199.15254394646175,
+      &quot;y&quot;: -120.86056221701423
+      },
+      {
+      &quot;measure&quot;: 114.54774652568574,
+      &quot;x&quot;: 231.88177048090608,
+      &quot;y&quot;: -119.9471884532623
+      },
+      {
+      &quot;measure&quot;: 183.26599298365295,
+      &quot;x&quot;: 299.3192000379238,
+      &quot;y&quot;: -106.55103991823394
+      },
+      {
+      &quot;measure&quot;: 249.53695627063618,
+      &quot;x&quot;: 363.1031345399339,
+      &quot;y&quot;: -88.43579360382057
+      },
+      {
+      &quot;measure&quot;: 254.34105601067105,
+      &quot;x&quot;: 367.8222323193189,
+      &quot;y&quot;: -87.52241984006864
+      },
+      {
+      &quot;measure&quot;: 263.5154285960949,
+      &quot;x&quot;: 376.9559699568382,
+      &quot;y&quot;: -86.6090460763167
+      },
+      {
+      &quot;measure&quot;: 288.3149824295334,
+      &quot;x&quot;: 401.61706157814046,
+      &quot;y&quot;: -83.86892478506093
+      },
+      {
+      &quot;measure&quot;: 299.8270195617774,
+      &quot;x&quot;: 413.03423362503963,
+      &quot;y&quot;: -82.3466351788077
+      },
+      {
+      &quot;measure&quot;: 312.72459398822457,
+      &quot;x&quot;: 425.3647794356907,
+      &quot;y&quot;: -78.54091116317464
+      },
+      {
+      &quot;measure&quot;: 321.98685773907914,
+      &quot;x&quot;: 434.3462881125848,
+      &quot;y&quot;: -76.2574767537948
+      },
+      {
+      &quot;measure&quot;: 345.7457296522577,
+      &quot;x&quot;: 458.0940059701351,
+      &quot;y&quot;: -75.19187402941755
+      },
+      {
+      &quot;measure&quot;: 397.8070365930693,
+      &quot;x&quot;: 510.15631050399526,
+      &quot;y&quot;: -73.51735546253899
+      },
+      {
+      &quot;measure&quot;: 413.484418393551,
+      &quot;x&quot;: 525.7717933539819,
+      &quot;y&quot;: -72.03388459179025
+      },
+      {
+      &quot;measure&quot;: 434.6342423089105,
+      &quot;x&quot;: 527.4891344169872,
+      &quot;y&quot;: -93.12525017785975
+      },
+      {
+      &quot;measure&quot;: 455.7840662242699,
+      &quot;x&quot;: 525.7717933539819,
+      &quot;y&quot;: -72.03388459179025
+      },
+      {
+      &quot;measure&quot;: 470.6731620631999,
+      &quot;x&quot;: 540.6021026290597,
+      &quot;y&quot;: -70.62500521065787
+      },
+      {
+      &quot;measure&quot;: 482.09912840838825,
+      &quot;x&quot;: 552.0074139469053,
+      &quot;y&quot;: -71.40708370102442
+      },
+      {
+      &quot;measure&quot;: 497.45067940860145,
+      &quot;x&quot;: 550.6770595319997,
+      &quot;y&quot;: -56.10502113825084
+      },
+      {
+      &quot;measure&quot;: 512.8022304088146,
+      &quot;x&quot;: 552.0074139469053,
+      &quot;y&quot;: -71.40708370102442
+      },
+      {
+      &quot;measure&quot;: 528.0645773563655,
+      &quot;x&quot;: 567.2421707384912,
+      &quot;y&quot;: -72.45175273816173
+      },
+      {
+      &quot;measure&quot;: 535.5073677009501,
+      &quot;x&quot;: 572.8746422816281,
+      &quot;y&quot;: -77.32307947817205
+      },
+      {
+      &quot;measure&quot;: 544.8492654910119,
+      &quot;x&quot;: 580.9427771947701,
+      &quot;y&quot;: -82.04217725755704
+      },
+      {
+      &quot;measure&quot;: 551.2358312508484,
+      &quot;x&quot;: 587.1841645804084,
+      &quot;y&quot;: -83.41223790318494
+      },
+      {
+      &quot;measure&quot;: 556.6250821622405,
+      &quot;x&quot;: 592.5626026508485,
+      &quot;y&quot;: -83.02806375529636
+      },
+      {
+      &quot;measure&quot;: 564.0487714650591,
+      &quot;x&quot;: 599.9713972729354,
+      &quot;y&quot;: -82.49886413943301
+      },
+      {
+      &quot;measure&quot;: 589.9236665265053,
+      &quot;x&quot;: 625.6980916186149,
+      &quot;y&quot;: -79.60651388755188
+      },
+      {
+      &quot;measure&quot;: 608.1524689875952,
+      &quot;x&quot;: 643.9366305686932,
+      &quot;y&quot;: -79.56857533451276
+      },
+      {
+      &quot;measure&quot;: 627.1513783469707,
+      &quot;x&quot;: 662.8886939433028,
+      &quot;y&quot;: -81.0400074081259
+      },
+      {
+      &quot;measure&quot;: 635.8231354574646,
+      &quot;x&quot;: 671.5390689316017,
+      &quot;y&quot;: -81.71161972573859
+      },
+      {
+      &quot;measure&quot;: 643.4984540567108,
+      &quot;x&quot;: 675.7749813625193,
+      &quot;y&quot;: -88.11714584078466
+      },
+      {
+      &quot;measure&quot;: 651.8650276582823,
+      &quot;x&quot;: 680.6307834174736,
+      &quot;y&quot;: -94.93593170518854
+      },
+      {
+      &quot;measure&quot;: 656.2227768444864,
+      &quot;x&quot;: 683.2136568509599,
+      &quot;y&quot;: -98.44863957472994
+      },
+      {
+      &quot;measure&quot;: 661.0572655018618,
+      &quot;x&quot;: 687.7595140938959,
+      &quot;y&quot;: -100.10167857216118
+      },
+      {
+      &quot;measure&quot;: 665.2338562335036,
+      &quot;x&quot;: 691.8921115874739,
+      &quot;y&quot;: -100.7215681961979
+      },
+      {
+      &quot;measure&quot;: 673.5236119246741,
+      &quot;x&quot;: 699.9506766999513,
+      &quot;y&quot;: -98.7585843867483
+      },
+      {
+      &quot;measure&quot;: 683.5051320236882,
+      &quot;x&quot;: 709.0423911858231,
+      &quot;y&quot;: -94.62598689317018
+      },
+      {
+      &quot;measure&quot;: 694.0788447604717,
+      &quot;x&quot;: 718.8573024004489,
+      &quot;y&quot;: -90.67745939303335
+      },
+      {
+      &quot;measure&quot;: 704.6525574972552,
+      &quot;x&quot;: 709.0423911858231,
+      &quot;y&quot;: -94.62598689317018
+      },
+      {
+      &quot;measure&quot;: 714.6340775962693,
+      &quot;x&quot;: 699.9506766999513,
+      &quot;y&quot;: -98.7585843867483
+      },
+      {
+      &quot;measure&quot;: 722.9238332874398,
+      &quot;x&quot;: 691.8921115874739,
+      &quot;y&quot;: -100.7215681961979
+      },
+      {
+      &quot;measure&quot;: 727.1004240190816,
+      &quot;x&quot;: 687.7595140938959,
+      &quot;y&quot;: -100.10167857216118
+      },
+      {
+      &quot;measure&quot;: 731.9349126764571,
+      &quot;x&quot;: 683.2136568509599,
+      &quot;y&quot;: -98.44863957472994
+      },
+      {
+      &quot;measure&quot;: 736.2926618626611,
+      &quot;x&quot;: 680.6307834174736,
+      &quot;y&quot;: -94.93593170518854
+      },
+      {
+      &quot;measure&quot;: 744.6592354642326,
+      &quot;x&quot;: 675.7749813625193,
+      &quot;y&quot;: -88.11714584078466
+      },
+      {
+      &quot;measure&quot;: 752.3345540634789,
+      &quot;x&quot;: 671.5390689316017,
+      &quot;y&quot;: -81.71161972573859
+      },
+      {
+      &quot;measure&quot;: 761.0063111739728,
+      &quot;x&quot;: 662.8886939433028,
+      &quot;y&quot;: -81.0400074081259
+      },
+      {
+      &quot;measure&quot;: 780.0052205333483,
+      &quot;x&quot;: 643.9366305686932,
+      &quot;y&quot;: -79.56857533451276
+      },
+      {
+      &quot;measure&quot;: 788.0285293342529,
+      &quot;x&quot;: 643.6924672099984,
+      &quot;y&quot;: -87.59247293840401
+      },
+      {
+      &quot;measure&quot;: 793.6345324846043,
+      &quot;x&quot;: 643.3461799989506,
+      &quot;y&quot;: -93.19078285034493
+      },
+      {
+      &quot;measure&quot;: 799.4762608983818,
+      &quot;x&quot;: 642.4227474361562,
+      &quot;y&quot;: -98.9622363678098
+      },
+      {
+      &quot;measure&quot;: 816.6239177404223,
+      &quot;x&quot;: 636.8244375242152,
+      &quot;y&quot;: -115.18002075188608
+      },
+      {
+      &quot;measure&quot;: 823.4308269538035,
+      &quot;x&quot;: 634.8621433282772,
+      &quot;y&quot;: -121.70176322662137
+      },
+      {
+      &quot;measure&quot;: 835.5219754912832,
+      &quot;x&quot;: 633.9387107654828,
+      &quot;y&quot;: -133.76410107812293
+      },
+      {
+      &quot;measure&quot;: 838.065946508378,
+      &quot;x&quot;: 633.7655671599589,
+      &quot;y&quot;: -136.30354062580747
+      },
+      {
+      &quot;measure&quot;: 842.4567257446365,
+      &quot;x&quot;: 634.5158561172293,
+      &quot;y&quot;: -140.63213076390613
+      },
+      {
+      &quot;measure&quot;: 876.6436888125636,
+      &quot;x&quot;: 650.3873532902577,
+      &quot;y&quot;: -170.93226173059668
+      },
+      {
+      &quot;measure&quot;: 907.654297730433,
+      &quot;x&quot;: 663.8925545211255,
+      &quot;y&quot;: -198.86609675512665
+      },
+      {
+      &quot;measure&quot;: 913.8250950317246,
+      &quot;x&quot;: 666.0857068577621,
+      &quot;y&quot;: -204.6375502725915
+      },
+      {
+      &quot;measure&quot;: 927.1205078898128,
+      &quot;x&quot;: 668.9714336164946,
+      &quot;y&quot;: -217.62332068688744
+      },
+      {
+      &quot;measure&quot;: 1000.2073875304078,
+      &quot;x&quot;: 680.7451987921229,
+      &quot;y&quot;: -289.79534692278554
+      },
+      {
+      &quot;measure&quot;: 1100.7361836882505,
+      &quot;x&quot;: 699.5601372590584,
+      &quot;y&quot;: -388.60263114178406
+      },
+      {
+      &quot;measure&quot;: 1142.4282999811755,
+      &quot;x&quot;: 709.9487535904951,
+      &quot;y&quot;: -429.0028057640382
+      },
+      {
+      &quot;measure&quot;: 1154.0895215895405,
+      &quot;x&quot;: 715.0276326858642,
+      &quot;y&quot;: -439.5068511658243
+      },
+      {
+      &quot;measure&quot;: 1167.4532070696594,
+      &quot;x&quot;: 721.145373414377,
+      &quot;y&quot;: -451.3960454118019
+      },
+      {
+      &quot;measure&quot;: 1192.8429042268801,
+      &quot;x&quot;: 730.9568443940673,
+      &quot;y&quot;: -474.82814669270925
+      },
+      {
+      &quot;measure&quot;: 1213.8948104373997,
+      &quot;x&quot;: 741.6917479365519,
+      &quot;y&quot;: -492.95051073754894
+      },
+      {
+      &quot;measure&quot;: 1231.1875802133775,
+      &quot;x&quot;: 750.6952154237971,
+      &quot;y&quot;: -507.725431742259
+      },
+      {
+      &quot;measure&quot;: 1239.2368713689816,
+      &quot;x&quot;: 754.3889456749746,
+      &quot;y&quot;: -514.8820341039154
+      },
+      {
+      &quot;measure&quot;: 1248.607216647253,
+      &quot;x&quot;: 755.0815200970704,
+      &quot;y&quot;: -524.2317888022085
+      },
+      {
+      &quot;measure&quot;: 1269.2244037005742,
+      &quot;x&quot;: 758.6598212778986,
+      &quot;y&quot;: -544.5473051836849
+      },
+      {
+      &quot;measure&quot;: 1272.423634129902,
+      &quot;x&quot;: 760.0449701220901,
+      &quot;y&quot;: -547.4330319424173
+      },
+      {
+      &quot;measure&quot;: 1279.3619905630146,
+      &quot;x&quot;: 764.7775620064114,
+      &quot;y&quot;: -552.5119110377864
+      },
+      {
+      &quot;measure&quot;: 1286.4821191735239,
+      &quot;x&quot;: 770.2027283128283,
+      &quot;y&quot;: -557.1290738517582
+      },
+      {
+      &quot;measure&quot;: 1292.4989361915266,
+      &quot;x&quot;: 773.4347422826087,
+      &quot;y&quot;: -562.2079529471273
+      },
+      {
+      &quot;measure&quot;: 1308.6173484207156,
+      &quot;x&quot;: 779.8987702221693,
+      &quot;y&quot;: -576.9828739518374
+      },
+      {
+      &quot;measure&quot;: 1334.951917701859,
+      &quot;x&quot;: 794.3274040158315,
+      &quot;y&quot;: -599.0298263885531
+      },
+      {
+      &quot;measure&quot;: 1342.5416416141857,
+      &quot;x&quot;: 796.866843563516,
+      &quot;y&quot;: -606.1864287502096
+      },
+      {
+      &quot;measure&quot;: 1376.9216175365802,
+      &quot;x&quot;: 807.8129256274714,
+      &quot;y&quot;: -638.7967667715142
+      },
+      {
+      &quot;measure&quot;: 1529.741489411045,
+      &quot;x&quot;: 709.7358490469052,
+      &quot;y&quot;: -756.0991793863391
+      },
+      {
+      &quot;measure&quot;: 1570.3899628965735,
+      &quot;x&quot;: 684.1262547736252,
+      &quot;y&quot;: -787.6937956915049
+      },
+      {
+      &quot;measure&quot;: 1581.5052438682412,
+      &quot;x&quot;: 677.1233390056011,
+      &quot;y&quot;: -796.3333092404941
+      },
+      {
+      &quot;measure&quot;: 1658.2432645753665,
+      &quot;x&quot;: 739.2744749886702,
+      &quot;y&quot;: -841.4141028670601
+      },
+      {
+      &quot;measure&quot;: 1714.7196416688123,
+      &quot;x&quot;: 784.5133641032822,
+      &quot;y&quot;: -875.2733126579966
+      },
+      {
+      &quot;measure&quot;: 1729.5625777025325,
+      &quot;x&quot;: 796.0834625444727,
+      &quot;y&quot;: -884.583626247392
+      },
+      {
+      &quot;measure&quot;: 1730.036261206784,
+      &quot;x&quot;: 796.4526997871387,
+      &quot;y&quot;: -884.8807468410998
+      },
+      {
+      &quot;measure&quot;: 1744.2216415008336,
+      &quot;x&quot;: 806.8996185105129,
+      &quot;y&quot;: -894.4881810242031
+      },
+      {
+      &quot;measure&quot;: 1826.6885132231735,
+      &quot;x&quot;: 867.5290575300961,
+      &quot;y&quot;: -950.4538170422799
+      },
+      {
+      &quot;measure&quot;: 1843.7270603999164,
+      &quot;x&quot;: 880.2667071094985,
+      &quot;y&quot;: -961.7841233160929
+      },
+      {
+      &quot;measure&quot;: 1893.3161967708552,
+      &quot;x&quot;: 917.3384735861845,
+      &quot;y&quot;: -994.7599455565907
+      },
+      {
+      &quot;measure&quot;: 1895.9959110784787,
+      &quot;x&quot;: 919.337166945891,
+      &quot;y&quot;: -996.547065520112
+      },
+      {
+      &quot;measure&quot;: 1899.8864845945568,
+      &quot;x&quot;: 922.2389924986796,
+      &quot;y&quot;: -999.1417158454658
+      },
+      {
+      &quot;measure&quot;: 1948.842081712124,
+      &quot;x&quot;: 958.7530442395614,
+      &quot;y&quot;: -1031.7905413885514
+      },
+      {
+      &quot;measure&quot;: 1967.5958779719408,
+      &quot;x&quot;: 963.8832275412185,
+      &quot;y&quot;: -1049.8394590043813
+      },
+      {
+      &quot;measure&quot;: 2001.9321751117861,
+      &quot;x&quot;: 997.2203541988224,
+      &quot;y&quot;: -1041.5399300224415
+      },
+      {
+      &quot;measure&quot;: 2029.9769351920336,
+      &quot;x&quot;: 1024.4490246366838,
+      &quot;y&quot;: -1034.7611472629148
+      },
+      {
+      &quot;measure&quot;: 2076.9859939696435,
+      &quot;x&quot;: 1068.9926667117943,
+      &quot;y&quot;: -1049.8636782309356
+      },
+      {
+      &quot;measure&quot;: 2089.0045050374392,
+      &quot;x&quot;: 1081.0143727745456,
+      &quot;y&quot;: -1050.1432527905345
+      },
+      {
+      &quot;measure&quot;: 2162.880012818829,
+      &quot;x&quot;: 1154.822056508647,
+      &quot;y&quot;: -1046.1593153162507
+      },
+      {
+      &quot;measure&quot;: 2185.1307129128404,
+      &quot;x&quot;: 1176.9084467169578,
+      &quot;y&quot;: -1043.363569720262
+      },
+      {
+      &quot;measure&quot;: 2207.013432031181,
+      &quot;x&quot;: 1198.7152623656696,
+      &quot;y&quot;: -1041.40654780307
+      },
+      {
+      &quot;measure&quot;: 2241.628647828263,
+      &quot;x&quot;: 1232.753464996832,
+      &quot;y&quot;: -1035.0112797522459
+      },
+      {
+      &quot;measure&quot;: 2249.9550250165607,
+      &quot;x&quot;: 1241.0710688339823,
+      &quot;y&quot;: -1034.5418076778592
+      },
+      {
+      &quot;measure&quot;: 2256.6778931328486,
+      &quot;x&quot;: 1247.7975423657153,
+      &quot;y&quot;: -1034.5418076778592
+      },
+      {
+      &quot;measure&quot;: 2264.7380161176025,
+      &quot;x&quot;: 1255.7544683727654,
+      &quot;y&quot;: -1035.8542903181974
+      },
+      {
+      &quot;measure&quot;: 2273.1889598220387,
+      &quot;x&quot;: 1263.957484874879,
+      &quot;y&quot;: -1037.9050444437257
+      },
+      {
+      &quot;measure&quot;: 2286.854118422305,
+      &quot;x&quot;: 1277.0002811132395,
+      &quot;y&quot;: -1042.0065526947826
+      },
+      {
+      &quot;measure&quot;: 2294.4819195785,
+      &quot;x&quot;: 1283.8908149750148,
+      &quot;y&quot;: -1045.287759295628
+      },
+      {
+      &quot;measure&quot;: 2327.0898614959187,
+      &quot;x&quot;: 1311.1248297620318,
+      &quot;y&quot;: -1063.2523654352567
+      },
+      {
+      &quot;measure&quot;: 2332.171683151348,
+      &quot;x&quot;: 1315.9646094982788,
+      &quot;y&quot;: -1064.8109385706582
+      },
+      {
+      &quot;measure&quot;: 2346.0360798743104,
+      &quot;x&quot;: 1329.8277073868505,
+      &quot;y&quot;: -1065.303119560785
+      },
+      {
+      &quot;measure&quot;: 2377.830872334984,
+      &quot;x&quot;: 1361.57338125003,
+      &quot;y&quot;: -1067.3538736863134
+      },
+      {
+      &quot;measure&quot;: 2397.478159152924,
+      &quot;x&quot;: 1381.0965605250599,
+      &quot;y&quot;: -1069.6507183069052
+      },
+      {
+      &quot;measure&quot;: 2412.9335901487934,
+      &quot;x&quot;: 1396.1901108889488,
+      &quot;y&quot;: -1073.0139550727718
+      },
+      {
+      &quot;measure&quot;: 2437.3446108847584,
+      &quot;x&quot;: 1419.7797070479091,
+      &quot;y&quot;: -1079.3439003748183
+      },
+      {
+      &quot;measure&quot;: 2460.385186420679,
+      &quot;x&quot;: 1442.0449731357635,
+      &quot;y&quot;: -1085.3184798259422
+      },
+      {
+      &quot;measure&quot;: 2513.9209479910446,
+      &quot;x&quot;: 1494.0981603947878,
+      &quot;y&quot;: -1097.9524970946254
+      },
+      {
+      &quot;measure&quot;: 2573.120918975557,
+      &quot;x&quot;: 1551.6586972209118,
+      &quot;y&quot;: -1111.9232230875825
+      },
+      {
+      &quot;measure&quot;: 2583.700084610271,
+      &quot;x&quot;: 1556.548198741611,
+      &quot;y&quot;: -1102.53538016784
+      },
+      {
+      &quot;measure&quot;: 2617.243521296093,
+      &quot;x&quot;: 1572.788359502203,
+      &quot;y&quot;: -1073.1648766646415
+      },
+      {
+      &quot;measure&quot;: 2620.722351290261,
+      &quot;x&quot;: 1574.976749959304,
+      &quot;y&quot;: -1070.4581832045428
+      },
+      {
+      &quot;measure&quot;: 2624.406535626266,
+      &quot;x&quot;: 1578.2017464224004,
+      &quot;y&quot;: -1068.6729173053288
+      },
+      {
+      &quot;measure&quot;: 2653.358902877075,
+      &quot;x&quot;: 1607.1691253677118,
+      &quot;y&quot;: -1068.8456849729946
+      },
+      {
+      &quot;measure&quot;: 2713.6358024248048,
+      &quot;x&quot;: 1667.4650413831016,
+      &quot;y&quot;: -1067.5787220767781
+      },
+      {
+      &quot;measure&quot;: 2741.2650116971913,
+      &quot;x&quot;: 1694.992689764531,
+      &quot;y&quot;: -1065.0447962843452
+      },
+      {
+      &quot;measure&quot;: 2748.1166321148953,
+      &quot;x&quot;: 1701.8458072486105,
+      &quot;y&quot;: -1065.2175639520112
+      },
+      {
+      &quot;measure&quot;: 2779.7027460929876,
+      &quot;x&quot;: 1733.3471119863548,
+      &quot;y&quot;: -1067.751489744444
+      },
+      {
+      &quot;measure&quot;: 2785.1242420261624,
+      &quot;x&quot;: 1738.7604989065521,
+      &quot;y&quot;: -1067.4059544091122
+      },
+      {
+      &quot;measure&quot;: 2790.983049226336,
+      &quot;x&quot;: 1744.5194211620812,
+      &quot;y&quot;: -1066.3117591805617
+      },
+      {
+      &quot;measure&quot;: 2814.556972583208,
+      &quot;x&quot;: 1767.5551101841977,
+      &quot;y&quot;: -1061.243907595696
+      },
+      {
+      &quot;measure&quot;: 2842.213986528935,
+      &quot;x&quot;: 1794.737223230295,
+      &quot;y&quot;: -1056.06087756572
+      },
+      {
+      &quot;measure&quot;: 2878.993189565923,
+      &quot;x&quot;: 1830.9032549950177,
+      &quot;y&quot;: -1049.2653493041955
+      },
+      {
+      &quot;measure&quot;: 2937.592117534984,
+      &quot;x&quot;: 1889.0683697758618,
+      &quot;y&quot;: -1041.8939288171182
+      },
+      {
+      &quot;measure&quot;: 2973.0343257367167,
+      &quot;x&quot;: 1924.140206312034,
+      &quot;y&quot;: -1036.6533095645868
+      },
+      {
+      &quot;measure&quot;: 2978.1573426396703,
+      &quot;x&quot;: 1928.689754893902,
+      &quot;y&quot;: -1034.29215143982
+      },
+      {
+      &quot;measure&quot;: 2986.0251717935585,
+      &quot;x&quot;: 1935.4852831554265,
+      &quot;y&quot;: -1030.3184950835048
+      },
+      {
+      &quot;measure&quot;: 2996.465189536134,
+      &quot;x&quot;: 1944.996056050761,
+      &quot;y&quot;: -1025.9992236432279
+      },
+      {
+      &quot;measure&quot;: 3003.622619523848,
+      &quot;x&quot;: 1951.7150657637994,
+      &quot;y&quot;: -1023.5215888115449
+      },
+      {
+      &quot;measure&quot;: 3008.2465161507753,
+      &quot;x&quot;: 1956.2923911308067,
+      &quot;y&quot;: -1022.8496878402411
+      },
+      {
+      &quot;measure&quot;: 3013.506510007186,
+      &quot;x&quot;: 1961.541617469118,
+      &quot;y&quot;: -1022.4717435438827
+      },
+      {
+      &quot;measure&quot;: 3020.2136501153514,
+      &quot;x&quot;: 1968.2186333714499,
+      &quot;y&quot;: -1023.1436445151866
+      },
+      {
+      &quot;measure&quot;: 3024.417909368496,
+      &quot;x&quot;: 1972.2920330099794,
+      &quot;y&quot;: -1024.1934897828487
+      },
+      {
+      &quot;measure&quot;: 3028.308809779485,
+      &quot;x&quot;: 1975.861506920031,
+      &quot;y&quot;: -1025.747260778989
+      },
+      {
+      &quot;measure&quot;: 3032.4775130703424,
+      &quot;x&quot;: 1979.3889870193761,
+      &quot;y&quot;: -1027.972932746433
+      },
+      {
+      &quot;measure&quot;: 3041.184914597421,
+      &quot;x&quot;: 1986.6119224608924,
+      &quot;y&quot;: -1032.8442147883857
+      },
+      {
+      &quot;measure&quot;: 3046.1355715413492,
+      &quot;x&quot;: 1991.3152292600191,
+      &quot;y&quot;: -1034.3979857845259
+      },
+      {
+      &quot;measure&quot;: 3054.0379997685723,
+      &quot;x&quot;: 1999.0840842407197,
+      &quot;y&quot;: -1035.867769159253
+      },
+      {
+      &quot;measure&quot;: 3059.4891008645727,
+      &quot;x&quot;: 2004.4592920111504,
+      &quot;y&quot;: -1036.7916329947957
+      },
+      {
+      &quot;measure&quot;: 3067.469058472376,
+      &quot;x&quot;: 2012.4381160453834,
+      &quot;y&quot;: -1036.4976763198504
+      },
+      {
+      &quot;measure&quot;: 3079.520743431485,
+      &quot;x&quot;: 2024.490339718146,
+      &quot;y&quot;: -1036.119732023492
+      },
+      {
+      &quot;measure&quot;: 3088.7159075886266,
+      &quot;x&quot;: 2033.686984262867,
+      &quot;y&quot;: -1035.867769159253
+      },
+      {
+      &quot;measure&quot;: 3100.0548414401237,
+      &quot;x&quot;: 2044.9833193429129,
+      &quot;y&quot;: -1036.9176144269152
+      },
+      {
+      &quot;measure&quot;: 3113.5334465340925,
+      &quot;x&quot;: 2058.379344958283,
+      &quot;y&quot;: -1038.4713854230554
+      },
+      {
+      &quot;measure&quot;: 3135.527850425812,
+      &quot;x&quot;: 2080.3841017684836,
+      &quot;y&quot;: -1038.2194225588164
+      },
+      {
+      &quot;measure&quot;: 3157.4118095732447,
+      &quot;x&quot;: 2102.1788895251516,
+      &quot;y&quot;: -1036.119732023492
+      },
+      {
+      &quot;measure&quot;: 3181.1092095147956,
+      &quot;x&quot;: 2125.695423520786,
+      &quot;y&quot;: -1033.0961776526246
+      },
+      {
+      &quot;measure&quot;: 3192.7323050971236,
+      &quot;x&quot;: 2137.075746222245,
+      &quot;y&quot;: -1030.7025304423548
+      },
+      {
+      &quot;measure&quot;: 3210.2395710234555,
+      &quot;x&quot;: 2153.7472890727213,
+      &quot;y&quot;: -1025.327322671924
+      },
+      {
+      &quot;measure&quot;: 3281.848380979756,
+      &quot;x&quot;: 2221.4833057422893,
+      &quot;y&quot;: -1001.9787639191157
+      },
+      {
+      &quot;measure&quot;: 3336.4458178071013,
+      &quot;x&quot;: 2273.009711479152,
+      &quot;y&quot;: -983.8374376939122
+      },
+      {
+      &quot;measure&quot;: 3356.337071221937,
+      &quot;x&quot;: 2291.4030005685945,
+      &quot;y&quot;: -976.2365579560376
+      },
+      {
+      &quot;measure&quot;: 3406.604977366936,
+      &quot;x&quot;: 2337.239244954728,
+      &quot;y&quot;: -955.533609277738
+      },
+      {
+      &quot;measure&quot;: 3429.9334711866336,
+      &quot;x&quot;: 2358.488113172212,
+      &quot;y&quot;: -945.8750328152454
+      },
+      {
+      &quot;measure&quot;: 3439.3776669703675,
+      &quot;x&quot;: 2366.634912449271,
+      &quot;y&quot;: -941.0877383947056
+      },
+      {
+      &quot;measure&quot;: 3448.9856740732666,
+      &quot;x&quot;: 2375.5689225565566,
+      &quot;y&quot;: -937.5386110918113
+      },
+      {
+      &quot;measure&quot;: 3459.1585772329295,
+      &quot;x&quot;: 2385.0282015387133,
+      &quot;y&quot;: -933.7808153317764
+      },
+      {
+      &quot;measure&quot;: 3491.5865079177743,
+      &quot;x&quot;: 2414.927794761734,
+      &quot;y&quot;: -921.1826721198295
+      },
+      {
+      &quot;measure&quot;: 3556.5589508211497,
+      &quot;x&quot;: 2475.062931693428,
+      &quot;y&quot;: -896.4903114244136
+      },
+      {
+      &quot;measure&quot;: 3592.5134406354036,
+      &quot;x&quot;: 2508.154054530142,
+      &quot;y&quot;: -882.3803910270329
+      },
+      {
+      &quot;measure&quot;: 3607.9447307367636,
+      &quot;x&quot;: 2521.8440368204574,
+      &quot;y&quot;: -875.2414432069297
+      },
+      {
+      &quot;measure&quot;: 3621.088384178148,
+      &quot;x&quot;: 2533.098378089797,
+      &quot;y&quot;: -868.4384458724784
+      },
+      {
+      &quot;measure&quot;: 3630.7304629658233,
+      &quot;x&quot;: 2540.4053011527258,
+      &quot;y&quot;: -862.1393742665049
+      },
+      {
+      &quot;measure&quot;: 3649.2323344973197,
+      &quot;x&quot;: 2552.583506257608,
+      &quot;y&quot;: -848.1974291119503
+      },
+      {
+      &quot;measure&quot;: 3663.154159017875,
+      &quot;x&quot;: 2561.738156991623,
+      &quot;y&quot;: -837.6989764353278
+      },
+      {
+      &quot;measure&quot;: 3677.1906575879957,
+      &quot;x&quot;: 2568.877104811726,
+      &quot;y&quot;: -825.6047589518588
+      },
+      {
+      &quot;measure&quot;: 3707.2375370820178,
+      &quot;x&quot;: 2581.475248023673,
+      &quot;y&quot;: -798.3087819926405
+      },
+      {
+      &quot;measure&quot;: 3720.5918002020085,
+      &quot;x&quot;: 2585.926591958561,
+      &quot;y&quot;: -785.7106387806936
+      },
+      {
+      &quot;measure&quot;: 3738.3289339460453,
+      &quot;x&quot;: 2591.133824486165,
+      &quot;y&quot;: -768.7451392552716
+      },
+      {
+      &quot;measure&quot;: 3767.7948205824973,
+      &quot;x&quot;: 2595.585168421053,
+      &quot;y&quot;: -739.6014346249679
+      },
+      {
+      &quot;measure&quot;: 3795.089723384856,
+      &quot;x&quot;: 2600.8763885700705,
+      &quot;y&quot;: -712.8093833942273
+      },
+      {
+      &quot;measure&quot;: 3809.178333505762,
+      &quot;x&quot;: 2604.23589342659,
+      &quot;y&quot;: -699.1194011039116
+      },
+      {
+      &quot;measure&quot;: 3820.575377575333,
+      &quot;x&quot;: 2608.687237361478,
+      &quot;y&quot;: -688.6209484272892
+      },
+      {
+      &quot;measure&quot;: 3827.1642036012413,
+      &quot;x&quot;: 2612.3826927036494,
+      &quot;y&quot;: -683.1617530354456
+      },
+      {
+      &quot;measure&quot;: 3837.7904884905047,
+      &quot;x&quot;: 2619.7736033879914,
+      &quot;y&quot;: -675.5188794868645
+      },
+      {
+      &quot;measure&quot;: 3850.720102100219,
+      &quot;x&quot;: 2630.272056064614,
+      &quot;y&quot;: -667.9599935596964
+      },
+      {
+      &quot;measure&quot;: 3861.720427216099,
+      &quot;x&quot;: 2640.182595391346,
+      &quot;y&quot;: -663.1726991391565
+      },
+      {
+      &quot;measure&quot;: 3873.0973600223037,
+      &quot;x&quot;: 2651.520924282098,
+      &quot;y&quot;: -662.1648476822007
+      },
+      {
+      &quot;measure&quot;: 3912.2173152813093,
+      &quot;x&quot;: 2690.5751682391333,
+      &quot;y&quot;: -659.5612314183984
+      },
+      {
+      &quot;measure&quot;: 3938.25901148556,
+      &quot;x&quot;: 2716.611330877157,
+      &quot;y&quot;: -658.5533799614427
+      },
+      {
+      &quot;measure&quot;: 3946.4445990693744,
+      &quot;x&quot;: 2724.758130154216,
+      &quot;y&quot;: -657.7135037473129
+      },
+      {
+      &quot;measure&quot;: 3964.3560703548224,
+      &quot;x&quot;: 2742.311543029529,
+      &quot;y&quot;: -654.1020360265547
+      },
+      {
+      &quot;measure&quot;: 3968.6959555533513,
+      &quot;x&quot;: 2746.40732490664,
+      &quot;y&quot;: -652.660029981063
+      },
+      {
+      &quot;measure&quot;: 3994.4357636433188,
+      &quot;x&quot;: 2770.699359067116,
+      &quot;y&quot;: -644.1075090784102
+      },
+      {
+      &quot;measure&quot;: 4045.4131883895857,
+      &quot;x&quot;: 2818.7402785153395,
+      &quot;y&quot;: -626.9740343101624
+      },
+      {
+      &quot;measure&quot;: 4074.200484053292,
+      &quot;x&quot;: 2845.784292610319,
+      &quot;y&quot;: -617.0634949834308
+      },
+      {
+      &quot;measure&quot;: 4113.750992968483,
+      &quot;x&quot;: 2881.7309945750744,
+      &quot;y&quot;: -600.5179335650738
+      },
+      {
+      &quot;measure&quot;: 4147.729606890656,
+      &quot;x&quot;: 2912.3864763908123,
+      &quot;y&quot;: -585.8200998178024
+      },
+      {
+      &quot;measure&quot;: 4157.570959851749,
+      &quot;x&quot;: 2921.0372013963492,
+      &quot;y&quot;: -581.1167930186756
+      },
+      {
+      &quot;measure&quot;: 4176.492523957663,
+      &quot;x&quot;: 2936.0709856292724,
+      &quot;y&quot;: -569.6104888850974
+      },
+      {
+      &quot;measure&quot;: 4200.5938474143595,
+      &quot;x&quot;: 2953.3724356403463,
+      &quot;y&quot;: -552.8129646025016
+      },
+      {
+      &quot;measure&quot;: 4216.106885727051,
+      &quot;x&quot;: 2962.7790492386002,
+      &quot;y&quot;: -540.4667842547935
+      },
+      {
+      &quot;measure&quot;: 4236.0393216763005,
+      &quot;x&quot;: 2973.5294647794613,
+      &quot;y&quot;: -523.6692599721977
+      },
+      {
+      &quot;measure&quot;: 4244.568485063151,
+      &quot;x&quot;: 2978.5687220642403,
+      &quot;y&quot;: -516.7822750163333
+      },
+      {
+      &quot;measure&quot;: 4253.547205072401,
+      &quot;x&quot;: 2985.2877317772786,
+      &quot;y&quot;: -510.8191538960117
+      },
+      {
+      &quot;measure&quot;: 4269.599568300038,
+      &quot;x&quot;: 2998.977714067594,
+      &quot;y&quot;: -502.42039175471376
+      },
+      {
+      &quot;measure&quot;: 4277.145069915076,
+      &quot;x&quot;: 3006.0326742662846,
+      &quot;y&quot;: -499.73278786949845
+      },
+      {
+      &quot;measure&quot;: 4303.503582146464,
+      &quot;x&quot;: 3032.0688369043082,
+      &quot;y&quot;: -495.53340679884946
+      },
+      {
+      &quot;measure&quot;: 4325.596439832965,
+      &quot;x&quot;: 3054.073593714509,
+      &quot;y&quot;: -493.43371626352496
+      },
+      {
+      &quot;measure&quot;: 4340.611141458214,
+      &quot;x&quot;: 3068.77142746178,
+      &quot;y&quot;: -490.3261742712447
+      },
+      {
+      &quot;measure&quot;: 4350.556126077332,
+      &quot;x&quot;: 3078.010065817208,
+      &quot;y&quot;: -486.6307189290736
+      },
+      {
+      &quot;measure&quot;: 4364.179159831216,
+      &quot;x&quot;: 3089.516369950786,
+      &quot;y&quot;: -479.3237958661444
+      },
+      {
+      &quot;measure&quot;: 4373.623355614949,
+      &quot;x&quot;: 3097.663169227845,
+      &quot;y&quot;: -474.5365014456046
+      },
+      {
+      &quot;measure&quot;: 4379.641519296999,
+      &quot;x&quot;: 3103.2063522411017,
+      &quot;y&quot;: -472.18484804604117
+      },
+      {
+      &quot;measure&quot;: 4387.116654112802,
+      &quot;x&quot;: 3110.513275304031,
+      &quot;y&quot;: -470.58908323919457
+      },
+      {
+      &quot;measure&quot;: 4396.38841774177,
+      &quot;x&quot;: 3119.7519136594588,
+      &quot;y&quot;: -471.42895945332435
+      },
+      {
+      &quot;measure&quot;: 4404.936561439248,
+      &quot;x&quot;: 3127.8987129365178,
+      &quot;y&quot;: -474.03257571712675
+      },
+      {
+      &quot;measure&quot;: 4432.3221846188935,
+      &quot;x&quot;: 3152.8430364961728,
+      &quot;y&quot;: -485.37090460787897
+      },
+      {
+      &quot;measure&quot;: 4452.159120230084,
+      &quot;x&quot;: 3171.4882884498543,
+      &quot;y&quot;: -492.1739019423303
+      },
+      {
+      &quot;measure&quot;: 4461.743660110256,
+      &quot;x&quot;: 3180.642939183869,
+      &quot;y&quot;: -495.0294810703716
+      },
+      {
+      &quot;measure&quot;: 4473.609296779165,
+      &quot;x&quot;: 3192.4851938030993,
+      &quot;y&quot;: -495.8693572845014
+      },
+      {
+      &quot;measure&quot;: 4494.0589279750275,
+      &quot;x&quot;: 3212.8101981850396,
+      &quot;y&quot;: -493.51770388493793
+      },
+      {
+      &quot;measure&quot;: 4517.073595805963,
+      &quot;x&quot;: 3235.402868345131,
+      &quot;y&quot;: -489.06635995005
+      },
+      {
+      &quot;measure&quot;: 4529.342145490134,
+      &quot;x&quot;: 3246.741197235883,
+      &quot;y&quot;: -484.3630531509232
+      },
+      {
+      &quot;measure&quot;: 4541.880821672183,
+      &quot;x&quot;: 3257.9955385052226,
+      &quot;y&quot;: -478.8198701376665
+      },
+      {
+      &quot;measure&quot;: 4553.391982054659,
+      &quot;x&quot;: 3266.8982263749986,
+      &quot;y&quot;: -471.5129470747373
+      },
+      {
+      &quot;measure&quot;: 4565.284608021371,
+      &quot;x&quot;: 3274.7930627878186,
+      &quot;y&quot;: -462.6102592049615
+      },
+      {
+      &quot;measure&quot;: 4575.198723498396,
+      &quot;x&quot;: 3278.9924438584676,
+      &quot;y&quot;: -453.6235837137727
+      },
+      {
+      &quot;measure&quot;: 4596.694914866549,
+      &quot;x&quot;: 3287.1392431355266,
+      &quot;y&quot;: -433.7185174388966
+      },
+      {
+      &quot;measure&quot;: 4625.240954618765,
+      &quot;x&quot;: 3293.690277605739,
+      &quot;y&quot;: -405.9186147512004
+      },
+      {
+      &quot;measure&quot;: 4712.630083471956,
+      &quot;x&quot;: 3381.121391496651,
+      &quot;y&quot;: -404.9947509156576
+      },
+      {
+      &quot;measure&quot;: 4757.507761439338,
+      &quot;x&quot;: 3420.483055357951,
+      &quot;y&quot;: -383.388590574506
+      },
+      {
+      &quot;measure&quot;: 4804.465052966141,
+      &quot;x&quot;: 3461.6687229020363,
+      &quot;y&quot;: -360.78120944726186
+      },
+      {
+      &quot;measure&quot;: 4827.143195956073,
+      &quot;x&quot;: 3480.5099710619143,
+      &quot;y&quot;: -373.42467860717977
+      },
+      {
+      &quot;measure&quot;: 4829.389961922781,
+      &quot;x&quot;: 3481.832163915239,
+      &quot;y&quot;: -375.2426937805013
+      },
+      {
+      &quot;measure&quot;: 4832.807563396773,
+      &quot;x&quot;: 3481.688869918136,
+      &quot;y&quot;: -378.6591243430127
+      },
+      {
+      &quot;measure&quot;: 4882.196634768558,
+      &quot;x&quot;: 3529.384049350522,
+      &quot;y&quot;: -365.7336742174629
+      },
+      {
+      &quot;measure&quot;: 4903.879060494007,
+      &quot;x&quot;: 3534.3934941442412,
+      &quot;y&quot;: -344.6259165429573
+      },
+      {
+      &quot;measure&quot;: 4970.1930540064095,
+      &quot;x&quot;: 3582.680471516261,
+      &quot;y&quot;: -299.1217239082416
+      },
+      {
+      &quot;measure&quot;: 4975.092286901083,
+      &quot;x&quot;: 3580.4096471580488,
+      &quot;y&quot;: -294.77757943117746
+      },
+      {
+      &quot;measure&quot;: 5002.7184976800145,
+      &quot;x&quot;: 3602.6289411887833,
+      &quot;y&quot;: -278.3358849522864
+      },
+      {
+      &quot;measure&quot;: 5031.34612567966,
+      &quot;x&quot;: 3624.9525835219583,
+      &quot;y&quot;: -260.389427390322
+      },
+      {
+      &quot;measure&quot;: 5038.330322175128,
+      &quot;x&quot;: 3630.3997467927984,
+      &quot;y&quot;: -256.01224261911113
+      },
+      {
+      &quot;measure&quot;: 5047.425461936917,
+      &quot;x&quot;: 3638.1814086082845,
+      &quot;y&quot;: -251.29461014347282
+      },
+      {
+      &quot;measure&quot;: 5071.4753363064565,
+      &quot;x&quot;: 3660.7968632595403,
+      &quot;y&quot;: -243.0752298508658
+      },
+      {
+      &quot;measure&quot;: 5081.140281829898,
+      &quot;x&quot;: 3668.432618915986,
+      &quot;y&quot;: -237.14171271655778
+      },
+      {
+      &quot;measure&quot;: 5092.156594649748,
+      &quot;x&quot;: 3676.9438115266735,
+      &quot;y&quot;: -230.13821708262043
+      },
+      {
+      &quot;measure&quot;: 5116.722052861245,
+      &quot;x&quot;: 3692.7503120893793,
+      &quot;y&quot;: -211.31632256641385
+      },
+      {
+      &quot;measure&quot;: 5125.46321925846,
+      &quot;x&quot;: 3696.8356845425096,
+      &quot;y&quot;: -203.58329613727471
+      },
+      {
+      &quot;measure&quot;: 5161.52838478856,
+      &quot;x&quot;: 3707.778646470537,
+      &quot;y&quot;: -169.1980779900963
+      },
+      {
+      &quot;measure&quot;: 5172.033509498921,
+      &quot;x&quot;: 3707.438198766109,
+      &quot;y&quot;: -158.69283453919027
+      },
+      {
+      &quot;measure&quot;: 5184.568777174788,
+      &quot;x&quot;: 3713.5662574458042,
+      &quot;y&quot;: -147.7498726111632
+      },
+      {
+      &quot;measure&quot;: 5215.4423912549355,
+      &quot;x&quot;: 3730.58864266718,
+      &quot;y&quot;: -121.97311784736605
+      },
+      {
+      &quot;measure&quot;: 5244.4875059379565,
+      &quot;x&quot;: 3748.7782771608786,
+      &quot;y&quot;: -99.30902780976328
+      },
+      {
+      &quot;measure&quot;: 5275.894880942961,
+      &quot;x&quot;: 3771.8800856756025,
+      &quot;y&quot;: -78.00672858987053
+      },
+      {
+      &quot;measure&quot;: 5293,
+      &quot;x&quot;: 3783.5773749318073,
+      &quot;y&quot;: -65.51383349599442
+      }
+      ],
+      &quot;region&quot;: {
+      &quot;center&quot;: {
+      &quot;x&quot;: 1850.1042789027886,
+      &quot;y&quot;: -584.0141221129167
+      },
+      &quot;id&quot;: 0,
+      &quot;parts&quot;: [259],
+      &quot;points&quot;: [
+      {
+      &quot;x&quot;: 119.61003975513272,
+      &quot;y&quot;: -122.62783944590828
+      },
+      {
+      &quot;x&quot;: 161.09530379013117,
+      &quot;y&quot;: -112.79242730387216
+      },
+      {
+      &quot;x&quot;: 171.90355999452908,
+      &quot;y&quot;: -113.24911418574811
+      },
+      {
+      &quot;x&quot;: 183.92964788392953,
+      &quot;y&quot;: -117.96821196513312
+      },
+      {
+      &quot;x&quot;: 199.15254394646175,
+      &quot;y&quot;: -120.86056221701423
+      },
+      {
+      &quot;x&quot;: 231.88177048090608,
+      &quot;y&quot;: -119.9471884532623
+      },
+      {
+      &quot;x&quot;: 299.3192000379238,
+      &quot;y&quot;: -106.55103991823394
+      },
+      {
+      &quot;x&quot;: 363.1031345399339,
+      &quot;y&quot;: -88.43579360382057
+      },
+      {
+      &quot;x&quot;: 367.8222323193189,
+      &quot;y&quot;: -87.52241984006864
+      },
+      {
+      &quot;x&quot;: 376.9559699568382,
+      &quot;y&quot;: -86.6090460763167
+      },
+      {
+      &quot;x&quot;: 401.61706157814046,
+      &quot;y&quot;: -83.86892478506093
+      },
+      {
+      &quot;x&quot;: 413.03423362503963,
+      &quot;y&quot;: -82.3466351788077
+      },
+      {
+      &quot;x&quot;: 425.3647794356907,
+      &quot;y&quot;: -78.54091116317464
+      },
+      {
+      &quot;x&quot;: 434.3462881125848,
+      &quot;y&quot;: -76.2574767537948
+      },
+      {
+      &quot;x&quot;: 458.0940059701351,
+      &quot;y&quot;: -75.19187402941755
+      },
+      {
+      &quot;x&quot;: 510.15631050399526,
+      &quot;y&quot;: -73.51735546253899
+      },
+      {
+      &quot;x&quot;: 525.7717933539819,
+      &quot;y&quot;: -72.03388459179025
+      },
+      {
+      &quot;x&quot;: 527.4891344169872,
+      &quot;y&quot;: -93.12525017785975
+      },
+      {
+      &quot;x&quot;: 525.7717933539819,
+      &quot;y&quot;: -72.03388459179025
+      },
+      {
+      &quot;x&quot;: 540.6021026290597,
+      &quot;y&quot;: -70.62500521065787
+      },
+      {
+      &quot;x&quot;: 552.0074139469053,
+      &quot;y&quot;: -71.40708370102442
+      },
+      {
+      &quot;x&quot;: 550.6770595319997,
+      &quot;y&quot;: -56.10502113825084
+      },
+      {
+      &quot;x&quot;: 552.0074139469053,
+      &quot;y&quot;: -71.40708370102442
+      },
+      {
+      &quot;x&quot;: 567.2421707384912,
+      &quot;y&quot;: -72.45175273816173
+      },
+      {
+      &quot;x&quot;: 572.8746422816281,
+      &quot;y&quot;: -77.32307947817205
+      },
+      {
+      &quot;x&quot;: 580.9427771947701,
+      &quot;y&quot;: -82.04217725755704
+      },
+      {
+      &quot;x&quot;: 587.1841645804084,
+      &quot;y&quot;: -83.41223790318494
+      },
+      {
+      &quot;x&quot;: 592.5626026508485,
+      &quot;y&quot;: -83.02806375529636
+      },
+      {
+      &quot;x&quot;: 599.9713972729354,
+      &quot;y&quot;: -82.49886413943301
+      },
+      {
+      &quot;x&quot;: 625.6980916186149,
+      &quot;y&quot;: -79.60651388755188
+      },
+      {
+      &quot;x&quot;: 643.9366305686932,
+      &quot;y&quot;: -79.56857533451276
+      },
+      {
+      &quot;x&quot;: 662.8886939433028,
+      &quot;y&quot;: -81.0400074081259
+      },
+      {
+      &quot;x&quot;: 671.5390689316017,
+      &quot;y&quot;: -81.71161972573859
+      },
+      {
+      &quot;x&quot;: 675.7749813625193,
+      &quot;y&quot;: -88.11714584078466
+      },
+      {
+      &quot;x&quot;: 680.6307834174736,
+      &quot;y&quot;: -94.93593170518854
+      },
+      {
+      &quot;x&quot;: 683.2136568509599,
+      &quot;y&quot;: -98.44863957472994
+      },
+      {
+      &quot;x&quot;: 687.7595140938959,
+      &quot;y&quot;: -100.10167857216118
+      },
+      {
+      &quot;x&quot;: 691.8921115874739,
+      &quot;y&quot;: -100.7215681961979
+      },
+      {
+      &quot;x&quot;: 699.9506766999513,
+      &quot;y&quot;: -98.7585843867483
+      },
+      {
+      &quot;x&quot;: 709.0423911858231,
+      &quot;y&quot;: -94.62598689317018
+      },
+      {
+      &quot;x&quot;: 718.8573024004489,
+      &quot;y&quot;: -90.67745939303335
+      },
+      {
+      &quot;x&quot;: 709.0423911858231,
+      &quot;y&quot;: -94.62598689317018
+      },
+      {
+      &quot;x&quot;: 699.9506766999513,
+      &quot;y&quot;: -98.7585843867483
+      },
+      {
+      &quot;x&quot;: 691.8921115874739,
+      &quot;y&quot;: -100.7215681961979
+      },
+      {
+      &quot;x&quot;: 687.7595140938959,
+      &quot;y&quot;: -100.10167857216118
+      },
+      {
+      &quot;x&quot;: 683.2136568509599,
+      &quot;y&quot;: -98.44863957472994
+      },
+      {
+      &quot;x&quot;: 680.6307834174736,
+      &quot;y&quot;: -94.93593170518854
+      },
+      {
+      &quot;x&quot;: 675.7749813625193,
+      &quot;y&quot;: -88.11714584078466
+      },
+      {
+      &quot;x&quot;: 671.5390689316017,
+      &quot;y&quot;: -81.71161972573859
+      },
+      {
+      &quot;x&quot;: 662.8886939433028,
+      &quot;y&quot;: -81.0400074081259
+      },
+      {
+      &quot;x&quot;: 643.9366305686932,
+      &quot;y&quot;: -79.56857533451276
+      },
+      {
+      &quot;x&quot;: 643.6924672099984,
+      &quot;y&quot;: -87.59247293840401
+      },
+      {
+      &quot;x&quot;: 643.3461799989506,
+      &quot;y&quot;: -93.19078285034493
+      },
+      {
+      &quot;x&quot;: 642.4227474361562,
+      &quot;y&quot;: -98.9622363678098
+      },
+      {
+      &quot;x&quot;: 636.8244375242152,
+      &quot;y&quot;: -115.18002075188608
+      },
+      {
+      &quot;x&quot;: 634.8621433282772,
+      &quot;y&quot;: -121.70176322662137
+      },
+      {
+      &quot;x&quot;: 633.9387107654828,
+      &quot;y&quot;: -133.76410107812293
+      },
+      {
+      &quot;x&quot;: 633.7655671599589,
+      &quot;y&quot;: -136.30354062580747
+      },
+      {
+      &quot;x&quot;: 634.5158561172293,
+      &quot;y&quot;: -140.63213076390613
+      },
+      {
+      &quot;x&quot;: 650.3873532902577,
+      &quot;y&quot;: -170.93226173059668
+      },
+      {
+      &quot;x&quot;: 663.8925545211255,
+      &quot;y&quot;: -198.86609675512665
+      },
+      {
+      &quot;x&quot;: 666.0857068577621,
+      &quot;y&quot;: -204.6375502725915
+      },
+      {
+      &quot;x&quot;: 668.9714336164946,
+      &quot;y&quot;: -217.62332068688744
+      },
+      {
+      &quot;x&quot;: 680.7451987921229,
+      &quot;y&quot;: -289.79534692278554
+      },
+      {
+      &quot;x&quot;: 699.5601372590584,
+      &quot;y&quot;: -388.60263114178406
+      },
+      {
+      &quot;x&quot;: 709.9487535904951,
+      &quot;y&quot;: -429.0028057640382
+      },
+      {
+      &quot;x&quot;: 715.0276326858642,
+      &quot;y&quot;: -439.5068511658243
+      },
+      {
+      &quot;x&quot;: 721.145373414377,
+      &quot;y&quot;: -451.3960454118019
+      },
+      {
+      &quot;x&quot;: 730.9568443940673,
+      &quot;y&quot;: -474.82814669270925
+      },
+      {
+      &quot;x&quot;: 741.6917479365519,
+      &quot;y&quot;: -492.95051073754894
+      },
+      {
+      &quot;x&quot;: 750.6952154237971,
+      &quot;y&quot;: -507.725431742259
+      },
+      {
+      &quot;x&quot;: 754.3889456749746,
+      &quot;y&quot;: -514.8820341039154
+      },
+      {
+      &quot;x&quot;: 755.0815200970704,
+      &quot;y&quot;: -524.2317888022085
+      },
+      {
+      &quot;x&quot;: 758.6598212778986,
+      &quot;y&quot;: -544.5473051836849
+      },
+      {
+      &quot;x&quot;: 760.0449701220901,
+      &quot;y&quot;: -547.4330319424173
+      },
+      {
+      &quot;x&quot;: 764.7775620064114,
+      &quot;y&quot;: -552.5119110377864
+      },
+      {
+      &quot;x&quot;: 770.2027283128283,
+      &quot;y&quot;: -557.1290738517582
+      },
+      {
+      &quot;x&quot;: 773.4347422826087,
+      &quot;y&quot;: -562.2079529471273
+      },
+      {
+      &quot;x&quot;: 779.8987702221693,
+      &quot;y&quot;: -576.9828739518374
+      },
+      {
+      &quot;x&quot;: 794.3274040158315,
+      &quot;y&quot;: -599.0298263885531
+      },
+      {
+      &quot;x&quot;: 796.866843563516,
+      &quot;y&quot;: -606.1864287502096
+      },
+      {
+      &quot;x&quot;: 807.8129256274714,
+      &quot;y&quot;: -638.7967667715142
+      },
+      {
+      &quot;x&quot;: 709.7358490469052,
+      &quot;y&quot;: -756.0991793863391
+      },
+      {
+      &quot;x&quot;: 684.1262547736252,
+      &quot;y&quot;: -787.6937956915049
+      },
+      {
+      &quot;x&quot;: 677.1233390056011,
+      &quot;y&quot;: -796.3333092404941
+      },
+      {
+      &quot;x&quot;: 739.2744749886702,
+      &quot;y&quot;: -841.4141028670601
+      },
+      {
+      &quot;x&quot;: 784.5133641032822,
+      &quot;y&quot;: -875.2733126579966
+      },
+      {
+      &quot;x&quot;: 796.0834625444727,
+      &quot;y&quot;: -884.583626247392
+      },
+      {
+      &quot;x&quot;: 796.4526997871387,
+      &quot;y&quot;: -884.8807468410998
+      },
+      {
+      &quot;x&quot;: 806.8996185105129,
+      &quot;y&quot;: -894.4881810242031
+      },
+      {
+      &quot;x&quot;: 867.5290575300961,
+      &quot;y&quot;: -950.4538170422799
+      },
+      {
+      &quot;x&quot;: 880.2667071094985,
+      &quot;y&quot;: -961.7841233160929
+      },
+      {
+      &quot;x&quot;: 917.3384735861845,
+      &quot;y&quot;: -994.7599455565907
+      },
+      {
+      &quot;x&quot;: 919.337166945891,
+      &quot;y&quot;: -996.547065520112
+      },
+      {
+      &quot;x&quot;: 922.2389924986796,
+      &quot;y&quot;: -999.1417158454658
+      },
+      {
+      &quot;x&quot;: 958.7530442395614,
+      &quot;y&quot;: -1031.7905413885514
+      },
+      {
+      &quot;x&quot;: 963.8832275412185,
+      &quot;y&quot;: -1049.8394590043813
+      },
+      {
+      &quot;x&quot;: 997.2203541988224,
+      &quot;y&quot;: -1041.5399300224415
+      },
+      {
+      &quot;x&quot;: 1024.4490246366838,
+      &quot;y&quot;: -1034.7611472629148
+      },
+      {
+      &quot;x&quot;: 1068.9926667117943,
+      &quot;y&quot;: -1049.8636782309356
+      },
+      {
+      &quot;x&quot;: 1081.0143727745456,
+      &quot;y&quot;: -1050.1432527905345
+      },
+      {
+      &quot;x&quot;: 1154.822056508647,
+      &quot;y&quot;: -1046.1593153162507
+      },
+      {
+      &quot;x&quot;: 1176.9084467169578,
+      &quot;y&quot;: -1043.363569720262
+      },
+      {
+      &quot;x&quot;: 1198.7152623656696,
+      &quot;y&quot;: -1041.40654780307
+      },
+      {
+      &quot;x&quot;: 1232.753464996832,
+      &quot;y&quot;: -1035.0112797522459
+      },
+      {
+      &quot;x&quot;: 1241.0710688339823,
+      &quot;y&quot;: -1034.5418076778592
+      },
+      {
+      &quot;x&quot;: 1247.7975423657153,
+      &quot;y&quot;: -1034.5418076778592
+      },
+      {
+      &quot;x&quot;: 1255.7544683727654,
+      &quot;y&quot;: -1035.8542903181974
+      },
+      {
+      &quot;x&quot;: 1263.957484874879,
+      &quot;y&quot;: -1037.9050444437257
+      },
+      {
+      &quot;x&quot;: 1277.0002811132395,
+      &quot;y&quot;: -1042.0065526947826
+      },
+      {
+      &quot;x&quot;: 1283.8908149750148,
+      &quot;y&quot;: -1045.287759295628
+      },
+      {
+      &quot;x&quot;: 1311.1248297620318,
+      &quot;y&quot;: -1063.2523654352567
+      },
+      {
+      &quot;x&quot;: 1315.9646094982788,
+      &quot;y&quot;: -1064.8109385706582
+      },
+      {
+      &quot;x&quot;: 1329.8277073868505,
+      &quot;y&quot;: -1065.303119560785
+      },
+      {
+      &quot;x&quot;: 1361.57338125003,
+      &quot;y&quot;: -1067.3538736863134
+      },
+      {
+      &quot;x&quot;: 1381.0965605250599,
+      &quot;y&quot;: -1069.6507183069052
+      },
+      {
+      &quot;x&quot;: 1396.1901108889488,
+      &quot;y&quot;: -1073.0139550727718
+      },
+      {
+      &quot;x&quot;: 1419.7797070479091,
+      &quot;y&quot;: -1079.3439003748183
+      },
+      {
+      &quot;x&quot;: 1442.0449731357635,
+      &quot;y&quot;: -1085.3184798259422
+      },
+      {
+      &quot;x&quot;: 1494.0981603947878,
+      &quot;y&quot;: -1097.9524970946254
+      },
+      {
+      &quot;x&quot;: 1551.6586972209118,
+      &quot;y&quot;: -1111.9232230875825
+      },
+      {
+      &quot;x&quot;: 1556.548198741611,
+      &quot;y&quot;: -1102.53538016784
+      },
+      {
+      &quot;x&quot;: 1572.788359502203,
+      &quot;y&quot;: -1073.1648766646415
+      },
+      {
+      &quot;x&quot;: 1574.976749959304,
+      &quot;y&quot;: -1070.4581832045428
+      },
+      {
+      &quot;x&quot;: 1578.2017464224004,
+      &quot;y&quot;: -1068.6729173053288
+      },
+      {
+      &quot;x&quot;: 1607.1691253677118,
+      &quot;y&quot;: -1068.8456849729946
+      },
+      {
+      &quot;x&quot;: 1667.4650413831016,
+      &quot;y&quot;: -1067.5787220767781
+      },
+      {
+      &quot;x&quot;: 1694.992689764531,
+      &quot;y&quot;: -1065.0447962843452
+      },
+      {
+      &quot;x&quot;: 1701.8458072486105,
+      &quot;y&quot;: -1065.2175639520112
+      },
+      {
+      &quot;x&quot;: 1733.3471119863548,
+      &quot;y&quot;: -1067.751489744444
+      },
+      {
+      &quot;x&quot;: 1738.7604989065521,
+      &quot;y&quot;: -1067.4059544091122
+      },
+      {
+      &quot;x&quot;: 1744.5194211620812,
+      &quot;y&quot;: -1066.3117591805617
+      },
+      {
+      &quot;x&quot;: 1767.5551101841977,
+      &quot;y&quot;: -1061.243907595696
+      },
+      {
+      &quot;x&quot;: 1794.737223230295,
+      &quot;y&quot;: -1056.06087756572
+      },
+      {
+      &quot;x&quot;: 1830.9032549950177,
+      &quot;y&quot;: -1049.2653493041955
+      },
+      {
+      &quot;x&quot;: 1889.0683697758618,
+      &quot;y&quot;: -1041.8939288171182
+      },
+      {
+      &quot;x&quot;: 1924.140206312034,
+      &quot;y&quot;: -1036.6533095645868
+      },
+      {
+      &quot;x&quot;: 1928.689754893902,
+      &quot;y&quot;: -1034.29215143982
+      },
+      {
+      &quot;x&quot;: 1935.4852831554265,
+      &quot;y&quot;: -1030.3184950835048
+      },
+      {
+      &quot;x&quot;: 1944.996056050761,
+      &quot;y&quot;: -1025.9992236432279
+      },
+      {
+      &quot;x&quot;: 1951.7150657637994,
+      &quot;y&quot;: -1023.5215888115449
+      },
+      {
+      &quot;x&quot;: 1956.2923911308067,
+      &quot;y&quot;: -1022.8496878402411
+      },
+      {
+      &quot;x&quot;: 1961.541617469118,
+      &quot;y&quot;: -1022.4717435438827
+      },
+      {
+      &quot;x&quot;: 1968.2186333714499,
+      &quot;y&quot;: -1023.1436445151866
+      },
+      {
+      &quot;x&quot;: 1972.2920330099794,
+      &quot;y&quot;: -1024.1934897828487
+      },
+      {
+      &quot;x&quot;: 1975.861506920031,
+      &quot;y&quot;: -1025.747260778989
+      },
+      {
+      &quot;x&quot;: 1979.3889870193761,
+      &quot;y&quot;: -1027.972932746433
+      },
+      {
+      &quot;x&quot;: 1986.6119224608924,
+      &quot;y&quot;: -1032.8442147883857
+      },
+      {
+      &quot;x&quot;: 1991.3152292600191,
+      &quot;y&quot;: -1034.3979857845259
+      },
+      {
+      &quot;x&quot;: 1999.0840842407197,
+      &quot;y&quot;: -1035.867769159253
+      },
+      {
+      &quot;x&quot;: 2004.4592920111504,
+      &quot;y&quot;: -1036.7916329947957
+      },
+      {
+      &quot;x&quot;: 2012.4381160453834,
+      &quot;y&quot;: -1036.4976763198504
+      },
+      {
+      &quot;x&quot;: 2024.490339718146,
+      &quot;y&quot;: -1036.119732023492
+      },
+      {
+      &quot;x&quot;: 2033.686984262867,
+      &quot;y&quot;: -1035.867769159253
+      },
+      {
+      &quot;x&quot;: 2044.9833193429129,
+      &quot;y&quot;: -1036.9176144269152
+      },
+      {
+      &quot;x&quot;: 2058.379344958283,
+      &quot;y&quot;: -1038.4713854230554
+      },
+      {
+      &quot;x&quot;: 2080.3841017684836,
+      &quot;y&quot;: -1038.2194225588164
+      },
+      {
+      &quot;x&quot;: 2102.1788895251516,
+      &quot;y&quot;: -1036.119732023492
+      },
+      {
+      &quot;x&quot;: 2125.695423520786,
+      &quot;y&quot;: -1033.0961776526246
+      },
+      {
+      &quot;x&quot;: 2137.075746222245,
+      &quot;y&quot;: -1030.7025304423548
+      },
+      {
+      &quot;x&quot;: 2153.7472890727213,
+      &quot;y&quot;: -1025.327322671924
+      },
+      {
+      &quot;x&quot;: 2221.4833057422893,
+      &quot;y&quot;: -1001.9787639191157
+      },
+      {
+      &quot;x&quot;: 2273.009711479152,
+      &quot;y&quot;: -983.8374376939122
+      },
+      {
+      &quot;x&quot;: 2291.4030005685945,
+      &quot;y&quot;: -976.2365579560376
+      },
+      {
+      &quot;x&quot;: 2337.239244954728,
+      &quot;y&quot;: -955.533609277738
+      },
+      {
+      &quot;x&quot;: 2358.488113172212,
+      &quot;y&quot;: -945.8750328152454
+      },
+      {
+      &quot;x&quot;: 2366.634912449271,
+      &quot;y&quot;: -941.0877383947056
+      },
+      {
+      &quot;x&quot;: 2375.5689225565566,
+      &quot;y&quot;: -937.5386110918113
+      },
+      {
+      &quot;x&quot;: 2385.0282015387133,
+      &quot;y&quot;: -933.7808153317764
+      },
+      {
+      &quot;x&quot;: 2414.927794761734,
+      &quot;y&quot;: -921.1826721198295
+      },
+      {
+      &quot;x&quot;: 2475.062931693428,
+      &quot;y&quot;: -896.4903114244136
+      },
+      {
+      &quot;x&quot;: 2508.154054530142,
+      &quot;y&quot;: -882.3803910270329
+      },
+      {
+      &quot;x&quot;: 2521.8440368204574,
+      &quot;y&quot;: -875.2414432069297
+      },
+      {
+      &quot;x&quot;: 2533.098378089797,
+      &quot;y&quot;: -868.4384458724784
+      },
+      {
+      &quot;x&quot;: 2540.4053011527258,
+      &quot;y&quot;: -862.1393742665049
+      },
+      {
+      &quot;x&quot;: 2552.583506257608,
+      &quot;y&quot;: -848.1974291119503
+      },
+      {
+      &quot;x&quot;: 2561.738156991623,
+      &quot;y&quot;: -837.6989764353278
+      },
+      {
+      &quot;x&quot;: 2568.877104811726,
+      &quot;y&quot;: -825.6047589518588
+      },
+      {
+      &quot;x&quot;: 2581.475248023673,
+      &quot;y&quot;: -798.3087819926405
+      },
+      {
+      &quot;x&quot;: 2585.926591958561,
+      &quot;y&quot;: -785.7106387806936
+      },
+      {
+      &quot;x&quot;: 2591.133824486165,
+      &quot;y&quot;: -768.7451392552716
+      },
+      {
+      &quot;x&quot;: 2595.585168421053,
+      &quot;y&quot;: -739.6014346249679
+      },
+      {
+      &quot;x&quot;: 2600.8763885700705,
+      &quot;y&quot;: -712.8093833942273
+      },
+      {
+      &quot;x&quot;: 2604.23589342659,
+      &quot;y&quot;: -699.1194011039116
+      },
+      {
+      &quot;x&quot;: 2608.687237361478,
+      &quot;y&quot;: -688.6209484272892
+      },
+      {
+      &quot;x&quot;: 2612.3826927036494,
+      &quot;y&quot;: -683.1617530354456
+      },
+      {
+      &quot;x&quot;: 2619.7736033879914,
+      &quot;y&quot;: -675.5188794868645
+      },
+      {
+      &quot;x&quot;: 2630.272056064614,
+      &quot;y&quot;: -667.9599935596964
+      },
+      {
+      &quot;x&quot;: 2640.182595391346,
+      &quot;y&quot;: -663.1726991391565
+      },
+      {
+      &quot;x&quot;: 2651.520924282098,
+      &quot;y&quot;: -662.1648476822007
+      },
+      {
+      &quot;x&quot;: 2690.5751682391333,
+      &quot;y&quot;: -659.5612314183984
+      },
+      {
+      &quot;x&quot;: 2716.611330877157,
+      &quot;y&quot;: -658.5533799614427
+      },
+      {
+      &quot;x&quot;: 2724.758130154216,
+      &quot;y&quot;: -657.7135037473129
+      },
+      {
+      &quot;x&quot;: 2742.311543029529,
+      &quot;y&quot;: -654.1020360265547
+      },
+      {
+      &quot;x&quot;: 2746.40732490664,
+      &quot;y&quot;: -652.660029981063
+      },
+      {
+      &quot;x&quot;: 2770.699359067116,
+      &quot;y&quot;: -644.1075090784102
+      },
+      {
+      &quot;x&quot;: 2818.7402785153395,
+      &quot;y&quot;: -626.9740343101624
+      },
+      {
+      &quot;x&quot;: 2845.784292610319,
+      &quot;y&quot;: -617.0634949834308
+      },
+      {
+      &quot;x&quot;: 2881.7309945750744,
+      &quot;y&quot;: -600.5179335650738
+      },
+      {
+      &quot;x&quot;: 2912.3864763908123,
+      &quot;y&quot;: -585.8200998178024
+      },
+      {
+      &quot;x&quot;: 2921.0372013963492,
+      &quot;y&quot;: -581.1167930186756
+      },
+      {
+      &quot;x&quot;: 2936.0709856292724,
+      &quot;y&quot;: -569.6104888850974
+      },
+      {
+      &quot;x&quot;: 2953.3724356403463,
+      &quot;y&quot;: -552.8129646025016
+      },
+      {
+      &quot;x&quot;: 2962.7790492386002,
+      &quot;y&quot;: -540.4667842547935
+      },
+      {
+      &quot;x&quot;: 2973.5294647794613,
+      &quot;y&quot;: -523.6692599721977
+      },
+      {
+      &quot;x&quot;: 2978.5687220642403,
+      &quot;y&quot;: -516.7822750163333
+      },
+      {
+      &quot;x&quot;: 2985.2877317772786,
+      &quot;y&quot;: -510.8191538960117
+      },
+      {
+      &quot;x&quot;: 2998.977714067594,
+      &quot;y&quot;: -502.42039175471376
+      },
+      {
+      &quot;x&quot;: 3006.0326742662846,
+      &quot;y&quot;: -499.73278786949845
+      },
+      {
+      &quot;x&quot;: 3032.0688369043082,
+      &quot;y&quot;: -495.53340679884946
+      },
+      {
+      &quot;x&quot;: 3054.073593714509,
+      &quot;y&quot;: -493.43371626352496
+      },
+      {
+      &quot;x&quot;: 3068.77142746178,
+      &quot;y&quot;: -490.3261742712447
+      },
+      {
+      &quot;x&quot;: 3078.010065817208,
+      &quot;y&quot;: -486.6307189290736
+      },
+      {
+      &quot;x&quot;: 3089.516369950786,
+      &quot;y&quot;: -479.3237958661444
+      },
+      {
+      &quot;x&quot;: 3097.663169227845,
+      &quot;y&quot;: -474.5365014456046
+      },
+      {
+      &quot;x&quot;: 3103.2063522411017,
+      &quot;y&quot;: -472.18484804604117
+      },
+      {
+      &quot;x&quot;: 3110.513275304031,
+      &quot;y&quot;: -470.58908323919457
+      },
+      {
+      &quot;x&quot;: 3119.7519136594588,
+      &quot;y&quot;: -471.42895945332435
+      },
+      {
+      &quot;x&quot;: 3127.8987129365178,
+      &quot;y&quot;: -474.03257571712675
+      },
+      {
+      &quot;x&quot;: 3152.8430364961728,
+      &quot;y&quot;: -485.37090460787897
+      },
+      {
+      &quot;x&quot;: 3171.4882884498543,
+      &quot;y&quot;: -492.1739019423303
+      },
+      {
+      &quot;x&quot;: 3180.642939183869,
+      &quot;y&quot;: -495.0294810703716
+      },
+      {
+      &quot;x&quot;: 3192.4851938030993,
+      &quot;y&quot;: -495.8693572845014
+      },
+      {
+      &quot;x&quot;: 3212.8101981850396,
+      &quot;y&quot;: -493.51770388493793
+      },
+      {
+      &quot;x&quot;: 3235.402868345131,
+      &quot;y&quot;: -489.06635995005
+      },
+      {
+      &quot;x&quot;: 3246.741197235883,
+      &quot;y&quot;: -484.3630531509232
+      },
+      {
+      &quot;x&quot;: 3257.9955385052226,
+      &quot;y&quot;: -478.8198701376665
+      },
+      {
+      &quot;x&quot;: 3266.8982263749986,
+      &quot;y&quot;: -471.5129470747373
+      },
+      {
+      &quot;x&quot;: 3274.7930627878186,
+      &quot;y&quot;: -462.6102592049615
+      },
+      {
+      &quot;x&quot;: 3278.9924438584676,
+      &quot;y&quot;: -453.6235837137727
+      },
+      {
+      &quot;x&quot;: 3287.1392431355266,
+      &quot;y&quot;: -433.7185174388966
+      },
+      {
+      &quot;x&quot;: 3293.690277605739,
+      &quot;y&quot;: -405.9186147512004
+      },
+      {
+      &quot;x&quot;: 3381.121391496651,
+      &quot;y&quot;: -404.9947509156576
+      },
+      {
+      &quot;x&quot;: 3420.483055357951,
+      &quot;y&quot;: -383.388590574506
+      },
+      {
+      &quot;x&quot;: 3461.6687229020363,
+      &quot;y&quot;: -360.78120944726186
+      },
+      {
+      &quot;x&quot;: 3480.5099710619143,
+      &quot;y&quot;: -373.42467860717977
+      },
+      {
+      &quot;x&quot;: 3481.832163915239,
+      &quot;y&quot;: -375.2426937805013
+      },
+      {
+      &quot;x&quot;: 3481.688869918136,
+      &quot;y&quot;: -378.6591243430127
+      },
+      {
+      &quot;x&quot;: 3529.384049350522,
+      &quot;y&quot;: -365.7336742174629
+      },
+      {
+      &quot;x&quot;: 3534.3934941442412,
+      &quot;y&quot;: -344.6259165429573
+      },
+      {
+      &quot;x&quot;: 3582.680471516261,
+      &quot;y&quot;: -299.1217239082416
+      },
+      {
+      &quot;x&quot;: 3580.4096471580488,
+      &quot;y&quot;: -294.77757943117746
+      },
+      {
+      &quot;x&quot;: 3602.6289411887833,
+      &quot;y&quot;: -278.3358849522864
+      },
+      {
+      &quot;x&quot;: 3624.9525835219583,
+      &quot;y&quot;: -260.389427390322
+      },
+      {
+      &quot;x&quot;: 3630.3997467927984,
+      &quot;y&quot;: -256.01224261911113
+      },
+      {
+      &quot;x&quot;: 3638.1814086082845,
+      &quot;y&quot;: -251.29461014347282
+      },
+      {
+      &quot;x&quot;: 3660.7968632595403,
+      &quot;y&quot;: -243.0752298508658
+      },
+      {
+      &quot;x&quot;: 3668.432618915986,
+      &quot;y&quot;: -237.14171271655778
+      },
+      {
+      &quot;x&quot;: 3676.9438115266735,
+      &quot;y&quot;: -230.13821708262043
+      },
+      {
+      &quot;x&quot;: 3692.7503120893793,
+      &quot;y&quot;: -211.31632256641385
+      },
+      {
+      &quot;x&quot;: 3696.8356845425096,
+      &quot;y&quot;: -203.58329613727471
+      },
+      {
+      &quot;x&quot;: 3707.778646470537,
+      &quot;y&quot;: -169.1980779900963
+      },
+      {
+      &quot;x&quot;: 3707.438198766109,
+      &quot;y&quot;: -158.69283453919027
+      },
+      {
+      &quot;x&quot;: 3713.5662574458042,
+      &quot;y&quot;: -147.7498726111632
+      },
+      {
+      &quot;x&quot;: 3730.58864266718,
+      &quot;y&quot;: -121.97311784736605
+      },
+      {
+      &quot;x&quot;: 3748.7782771608786,
+      &quot;y&quot;: -99.30902780976328
+      },
+      {
+      &quot;x&quot;: 3771.8800856756025,
+      &quot;y&quot;: -78.00672858987053
+      },
+      {
+      &quot;x&quot;: 3783.5773749318073,
+      &quot;y&quot;: -65.51383349599442
+      },
+      {
+      &quot;x&quot;: 119.61003975513272,
+      &quot;y&quot;: -122.62783944590828
+      }
+      ],
+      &quot;style&quot;: null,
+      &quot;type&quot;: &quot;REGION&quot;
+      },
+      &quot;style&quot;: null,
+      &quot;type&quot;: &quot;LINEM&quot;
+      },
+      &quot;stopIndexes&quot;: [
+      0,
+      2,
+      1,
+      3,
+      4
+      ],
+      &quot;stopWeights&quot;: [
+      434,
+      62,
+      197,
+      4600
+      ],
+      &quot;weight&quot;: 5293
+      }]}
+    </textarea></p>
+  <h3><a id="HEAD 请求"></a>HEAD 请求</h3>
+  <p class="myNormal">返回跟 GET 请求一样的 HTTP 响应头，但是没有响应实体。可以在不必传输整个响应内容的情况下，获取包含在响应消息头中的元数据信息。元数据信息包括媒体类型，字符编码，压缩编码，实体内容长度等。</p>
+  <p class="myNormal">HEAD 请求可以用来判断 tspPath 资源是否存在，或者客户端是否有权限访问 tspPath 资源。通过对加.&lt;format&gt;的 URI 执行 HEAD 请求，还可以快速判断 tspPath 资源是否支持&lt;format&gt;格式的表述。</p>
+  <h2>请参见</h2>
+  <ul class="referenceList">
+    <li class="referenceList"><a class="contentpagehyperlink" href="networkDataName.htm">networkDataName</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../clientBuildREST/ConstructRESTRequest.htm">客户端构建 REST 请求</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../StatusCodeDescription.htm">状态码列表及说明</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../SuperMap_iServer_REST_API_OutputFormat.htm">SuperMap iServer REST API 表述格式介绍</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../resource_hierarchy.htm">GIS 服务资源层次结构</a></li>
+  </ul>
+  <p> </p>
+
+</div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../../../../../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../../../../../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../../../../../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../../../../../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../../../../../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../../../../../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../../../../../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../../../../.."
+    gCommonRootRelPath = "../../../../.."
+    gTopicId = "8.2.2.6.12.1.12"
+  
+//]]></script>
+
+  <script src="../../../../../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../../../../../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../../../../../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../../../../../whxdata/layoutconfig.js"></script>
+  <script src="../../../../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

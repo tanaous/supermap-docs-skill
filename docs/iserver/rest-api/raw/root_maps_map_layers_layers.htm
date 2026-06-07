@@ -1,0 +1,2133 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../../../../../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../../../../../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../../../../../../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../../../../../iserver-icon.png"/>
+    
+  <script data-relpath="../../../../../.." src="../../../../../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <meta name="template" content="../../../../../../assets/layouts/RESTAPI.htt"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Language" content="zh-CN"/>
+  <meta name="topic-check-list" content="Ran Smart Index"/>
+  <meta name="topic-status" content="Complete"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>layers</title>
+  <link rel="StyleSheet" href="../../../../../../assets/css/SuperMapHelp.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="Layers"/>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../../../../../../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../../assets/css/homeButtom.css"/>
+  <script src="../../../../../../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../../../../../../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../../../../../../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../../../../../../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../../../../../../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../../../../../../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../../../../../../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../../../../../../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../../../../../../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <h2><a name="URI" id="URI"></a>URI</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="../map.htm#URI">&lt;map_uri&gt;</a>/layers[.&lt;format&gt;]</p>
+  <h2>支持的方法</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="#GET 请求">GET</a>、<a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a></p>
+  <h2>父资源</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="../map.htm">map</a></p>
+  <h2>子资源</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="layer/layer.htm">layer</a></p>
+  <h2>介绍</h2>
+  <p class="myNormal">layers 资源对应的是某幅地图的图层集合，通过它可以获取地图中的图层信息。</p>
+  <p class="myNormal">关于本资源的使用方法，可参考开发指南：<a class="contentpagehyperlink" href="../../../../../../DevelopGuide/Use_iServer/USE_RESTAPI/Layer_Opr/layerList.htm">获取图层列表</a>。</p>
+  <p class="myNormal" style="font-weight: bold;">支持的方法：</p>
+  <ul class="supportList" style="list-style: disc;">
+    <li class="supportList"><a class="contentpagehyperlink" href="#GET 请求">GET</a>：获取图层集合。</li>
+    <li class="supportList"><a class="contentpagehyperlink" href="#PUT_请求">PUT</a>：修改图层信息。</li>
+    <li class="supportList"><a class="contentpagehyperlink" href="#HEAD_请求">HEAD</a>：获取图层资源集合的元数据信息。检查 layers 资源是否存在，权限是否可以访问。</li>
+  </ul>
+  <p class="myNormal"><span style="font-weight: bold;">支持的表述格式：</span>RJSON、JSON、HTML、XML、JSONP、FASTJSON。</p>
+  <h2>资源层次</h2>
+  <p><img alt="" border="0" height="208" src="../../../../../../assets/images/root/maps/map/layers/layers.png" usemap="#DrawArea" width="356"/><map id="DrawArea" name="DrawArea"><area alt="resources.htm" coords="14.902,3.7,271.311,44.6135" href="../../../root.htm" shape="rect"/> <area alt="maps.htm" coords="83.542,56.6135,229.312,97.4135" href="../../maps.htm" shape="rect"/> <area alt="map.htm" coords="124.726,109.798,277.126,160" href="../map.htm" shape="rect"/> <area alt="layers.htm" coords="174.751,165.2,341.099,206" href="layers.htm" shape="rect"/></map></p>
+  <h2>HTTP 请求方法</h2>
+  <p class="myNormal">对如下 URI 执行 HTTP 请求，以 rjson 输出格式为例加以说明，其中，supermapiserver 是服务器名，“世界地图”是地图名（{mapName}），URI 表示的是“世界地图”包含的图层集合，即 layers 资源。</p>
+  <p class="uriStyle">http://supermapiserver:8090/iserver/services/map-world/rest/maps/世界地图/layers.rjson</p>
+  <h3><a id="GET 请求"></a>GET 请求</h3>
+  <h4 class="myNormal">请求参数</h4>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>名称</td>
+        <td>类型</td>
+        <td>含义</td>
+      </tr>
+      <tr class="t2Row">
+        <td>_cache</td>
+        <td>boolean</td>
+        <td>【可选参数】 是否使用缓存，默认为 true。如果为 false，则关闭所有缓存。</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4>响应结构</h4>
+  <p class="myNormal">对 layers 资源执行 GET 请求，返回 World 地图包含的图层信息，返回资源表述的是一个图层描述数组，数组中的元素所描述的图层，可能是 SuperMap 地图图层、WMS 图层或 WFS 图层，分别对应 Java 类：UGCMapLayer、WMSLayer 或 WFSLayer。其中 UGCMapLayer 中包含了地图中 SuperMap 数据所表示的所有图层，以 UGCMapLayer 的子图层（subLayers 字段内容）的形式存在。</p>
+  <p class="myNormal">以 UGCMapLayer 为例，响应集合中 UGCMapLayer 子元素的结构如下所示：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="100%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>名称</td>
+        <td>类型</td>
+        <td>含义</td>
+      </tr>
+      <tr class="t2Row">
+        <td>name</td>
+        <td>String</td>
+        <td>图层的名称。图层的名称在图层所在的地图中唯一标识此图层。该标识不区分大小写。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>bounds</td>
+        <td>double</td>
+        <td>图层范围。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>caption</td>
+        <td>String</td>
+        <td>图层的标题。默认情况下与 name 一致。在图例、图层控制列表中显示的图层的名称就是 caption 的值。注意与 name 相区别。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>description</td>
+        <td>String</td>
+        <td>图层的描述信息。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>queryable</td>
+        <td>boolean</td>
+        
+        <td>图层中的对象是否可以被查询。true 表示可以被查询，false 表示不能被查询。</td>
+        
+      </tr>
+      <tr class="t1Row">
+        <td>visible</td>
+        <td>boolean</td>
+        <td>图层是否可见，当图层不可见时，其他所有的属性的设置将无效。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>type</td>
+        <td>LayerType</td>
+        <td>图层的类型。 目前支持的图层类型包括四种：SuperMap UGC 类型图层，WFS 图层，WMS 图层以及自定义图层。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>subLayers</td>
+        <td>LayerCollection</td>
+        <td>子图层集。 UGCMapLayer 中即表示 SuperMap 数据表示的图层集合。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>completeLineSymbolDisplayed</td>
+        <td>boolean</td>
+        <td>是否显示完整线型。true 表示显示，false 表示不显示。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>maxScale</td>
+        <td>double</td>
+        <td>图层的最大可见比例尺。最大可见比例尺不可为负，当地图的当前显示比例尺大于图层最大可见比例尺时，此图层将不显示。 默认为0。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>minScale</td>
+        <td>double</td>
+        <td>图层的最小可见比例尺。最小可见比例尺不可为负。当地图的当前显示比例尺小于图层最小可见比例尺时，此图层将不显示。 默认为0。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>minVisibleGeometrySize</td>
+        <td>double</td>
+        <td>几何对象的最小可见大小，单位：像素。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>opaqueRate</td>
+        <td>int</td>
+        <td>图层的不透明度，0-100。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>symbolScalable</td>
+        <td>boolean</td>
+        <td>是否允许图层的符号大小随图缩放。 true 表示当图层被放大或缩小时，符号也随之放大或缩小；false 表示图层的符号大小不可随图缩放。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>symbolScale</td>
+        <td>double</td>
+        <td>图层的符号缩放基准比例尺。 符号缩放基准比例尺在允许符号随图缩放时有效，指定了在随图缩放时，所设置的符号大小所对应的地图显示比例尺。</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4>示例</h4>
+  <p class="myNormal">对示例 layers 资源：http://supermapiserver:8090/iserver/services/map-world/rest/maps/世界地图/layers.rjson，执行 GET 请求，返回 rjson 格式的资源描述如下：</p>
+  <p style="text-align: center;"><textarea cols="12" id="txtComments" rows="34" style="overflow: scroll; width: 100%;">[{
+      &quot;bounds&quot;: {
+      &quot;bottom&quot;: -90,
+      &quot;left&quot;: -180,
+      &quot;leftBottom&quot;: {
+      &quot;x&quot;: -180,
+      &quot;y&quot;: -90
+      },
+      &quot;right&quot;: 180,
+      &quot;rightTop&quot;: {
+      &quot;x&quot;: 180,
+      &quot;y&quot;: 90
+      },
+      &quot;top&quot;: 90
+      },
+      &quot;caption&quot;: null,
+      &quot;completeLineSymbolDisplayed&quot;: false,
+      &quot;description&quot;: &quot;&quot;,
+      &quot;maxScale&quot;: 0,
+      &quot;minScale&quot;: 0,
+      &quot;minVisibleGeometrySize&quot;: 0,
+      &quot;name&quot;: &quot;世界地图&quot;,
+      &quot;opaqueRate&quot;: 100,
+      &quot;queryable&quot;: false,
+      &quot;subLayers&quot;: {
+      &quot;layers&quot;: [{
+      &quot;bounds&quot;: {
+      &quot;bottom&quot;: -86.09592439558905,
+      &quot;left&quot;: -119.53556537446984,
+      &quot;leftBottom&quot;: {
+      &quot;x&quot;: -119.53556537446984,
+      &quot;y&quot;: -86.09592439558905
+      },
+      &quot;right&quot;: 154.3455355728378,
+      &quot;rightTop&quot;: {
+      &quot;x&quot;: 154.3455355728378,
+      &quot;y&quot;: 55.98430295074346
+      },
+      &quot;top&quot;: 55.98430295074346
+      },
+      &quot;caption&quot;: &quot;ContinentLabel@World&quot;,
+      &quot;completeLineSymbolDisplayed&quot;: false,
+      &quot;datasetInfo&quot;: {
+      &quot;bounds&quot;: {
+      &quot;bottom&quot;: -86.09592439558905,
+      &quot;left&quot;: -119.53556537446984,
+      &quot;leftBottom&quot;: {
+      &quot;x&quot;: -119.53556537446984,
+      &quot;y&quot;: -86.09592439558905
+      },
+      &quot;right&quot;: 154.3455355728378,
+      &quot;rightTop&quot;: {
+      &quot;x&quot;: 154.3455355728378,
+      &quot;y&quot;: 55.98430295074346
+      },
+      &quot;top&quot;: 55.98430295074346
+      },
+      &quot;dataSourceName&quot;: &quot;World&quot;,
+      &quot;description&quot;: null,
+      &quot;encodeType&quot;: null,
+      &quot;isReadOnly&quot;: false,
+      &quot;name&quot;: &quot;ContinentLabel&quot;,
+      &quot;prjCoordSys&quot;: null,
+      &quot;tableName&quot;: null,
+      &quot;type&quot;: &quot;TEXT&quot;
+      },
+      &quot;description&quot;: &quot;&quot;,
+      &quot;displayFilter&quot;: &quot;&quot;,
+      &quot;joinItems&quot;: null,
+      &quot;maxScale&quot;: 1.35817417E-8,
+      &quot;minScale&quot;: 4.3212921E-9,
+      &quot;minVisibleGeometrySize&quot;: 0,
+      &quot;name&quot;: &quot;ContinentLabel@World&quot;,
+      &quot;opaqueRate&quot;: 100,
+      &quot;queryable&quot;: true,
+      &quot;representationField&quot;: &quot;&quot;,
+      &quot;style&quot;: {
+      &quot;fillBackColor&quot;: {
+      &quot;blue&quot;: 255,
+      &quot;green&quot;: 255,
+      &quot;red&quot;: 255
+      },
+      &quot;fillBackOpaque&quot;: true,
+      &quot;fillForeColor&quot;: {
+      &quot;blue&quot;: 240,
+      &quot;green&quot;: 255,
+      &quot;red&quot;: 208
+      },
+      &quot;fillGradientAngle&quot;: 0,
+      &quot;fillGradientMode&quot;: &quot;NONE&quot;,
+      &quot;fillGradientOffsetRatioX&quot;: 0,
+      &quot;fillGradientOffsetRatioY&quot;: 0,
+      &quot;fillOpaqueRate&quot;: 100,
+      &quot;fillSymbolID&quot;: 0,
+      &quot;lineColor&quot;: {
+      &quot;blue&quot;: 0,
+      &quot;green&quot;: 128,
+      &quot;red&quot;: 0
+      },
+      &quot;lineSymbolID&quot;: 0,
+      &quot;lineWidth&quot;: 0.1,
+      &quot;markerAngle&quot;: 0,
+      &quot;markerSize&quot;: 2.4,
+      &quot;markerSymbolID&quot;: 0
+      },
+      &quot;subLayers&quot;: {},
+      &quot;symbolScalable&quot;: false,
+      &quot;symbolScale&quot;: 0,
+      &quot;type&quot;: &quot;UGC&quot;,
+      &quot;ugcLayerType&quot;: &quot;VECTOR&quot;,
+      &quot;visible&quot;: true
+      },
+      {
+      &quot;bounds&quot;: {
+      &quot;bottom&quot;: -27.664352011124283,
+      &quot;left&quot;: -174.00222163542406,
+      &quot;leftBottom&quot;: {
+      &quot;x&quot;: -174.00222163542406,
+      &quot;y&quot;: -27.664352011124283
+      },
+      &quot;right&quot;: 167.01111285379795,
+      &quot;rightTop&quot;: {
+      &quot;x&quot;: 167.01111285379795,
+      &quot;y&quot;: 86.79330098005532
+      },
+      &quot;top&quot;: 86.79330098005532
+      },
+      &quot;caption&quot;: &quot;OceanLabel@World&quot;,
+      &quot;completeLineSymbolDisplayed&quot;: false,
+      &quot;datasetInfo&quot;: {
+      &quot;bounds&quot;: {
+      &quot;bottom&quot;: -27.664352011124283,
+      &quot;left&quot;: -174.00222163542406,
+      &quot;leftBottom&quot;: {
+      &quot;x&quot;: -174.00222163542406,
+      &quot;y&quot;: -27.664352011124283
+      },
+      &quot;right&quot;: 167.01111285379795,
+      &quot;rightTop&quot;: {
+      &quot;x&quot;: 167.01111285379795,
+      &quot;y&quot;: 86.79330098005532
+      },
+      &quot;top&quot;: 86.79330098005532
+      },
+      &quot;dataSourceName&quot;: &quot;World&quot;,
+      &quot;description&quot;: null,
+      &quot;encodeType&quot;: null,
+      &quot;isReadOnly&quot;: false,
+      &quot;name&quot;: &quot;OceanLabel&quot;,
+      &quot;prjCoordSys&quot;: null,
+      &quot;tableName&quot;: null,
+      &quot;type&quot;: &quot;TEXT&quot;
+      },
+      &quot;description&quot;: &quot;&quot;,
+      &quot;displayFilter&quot;: &quot;&quot;,
+      &quot;joinItems&quot;: null,
+      &quot;maxScale&quot;: 7.56550553E-8,
+      &quot;minScale&quot;: 3.0420561E-9,
+      &quot;minVisibleGeometrySize&quot;: 0,
+      &quot;name&quot;: &quot;OceanLabel@World&quot;,
+      &quot;opaqueRate&quot;: 100,
+      &quot;queryable&quot;: true,
+      &quot;representationField&quot;: &quot;&quot;,
+      &quot;style&quot;: {
+      &quot;fillBackColor&quot;: {
+      &quot;blue&quot;: 255,
+      &quot;green&quot;: 255,
+      &quot;red&quot;: 255
+      },
+      &quot;fillBackOpaque&quot;: true,
+      &quot;fillForeColor&quot;: {
+      &quot;blue&quot;: 240,
+      &quot;green&quot;: 255,
+      &quot;red&quot;: 208
+      },
+      &quot;fillGradientAngle&quot;: 0,
+      &quot;fillGradientMode&quot;: &quot;NONE&quot;,
+      &quot;fillGradientOffsetRatioX&quot;: 0,
+      &quot;fillGradientOffsetRatioY&quot;: 0,
+      &quot;fillOpaqueRate&quot;: 100,
+      &quot;fillSymbolID&quot;: 0,
+      &quot;lineColor&quot;: {
+      &quot;blue&quot;: 0,
+      &quot;green&quot;: 128,
+      &quot;red&quot;: 0
+      },
+      &quot;lineSymbolID&quot;: 0,
+      &quot;lineWidth&quot;: 0.1,
+      &quot;markerAngle&quot;: 0,
+      &quot;markerSize&quot;: 2.4,
+      &quot;markerSymbolID&quot;: 0
+      },
+      &quot;subLayers&quot;: {},
+      &quot;symbolScalable&quot;: false,
+      &quot;symbolScale&quot;: 0,
+      &quot;type&quot;: &quot;UGC&quot;,
+      &quot;ugcLayerType&quot;: &quot;VECTOR&quot;,
+      &quot;visible&quot;: true
+      },
+      {
+      &quot;bounds&quot;: {
+      &quot;bottom&quot;: -9.314728112497873,
+      &quot;left&quot;: -165.95742956747793,
+      &quot;leftBottom&quot;: {
+      &quot;x&quot;: -165.95742956747793,
+      &quot;y&quot;: -9.314728112497873
+      },
+      &quot;right&quot;: 136.47574396746927,
+      &quot;rightTop&quot;: {
+      &quot;x&quot;: 136.47574396746927,
+      &quot;y&quot;: 85.66307648003726
+      },
+      &quot;top&quot;: 85.66307648003726
+      },
+      &quot;caption&quot;: &quot;标签专题图&quot;,
+      &quot;completeLineSymbolDisplayed&quot;: false,
+      &quot;datasetInfo&quot;: {
+      &quot;bounds&quot;: {
+      &quot;bottom&quot;: -9.314728112497873,
+      &quot;left&quot;: -165.95742956747793,
+      &quot;leftBottom&quot;: {
+      &quot;x&quot;: -165.95742956747793,
+      &quot;y&quot;: -9.314728112497873
+      },
+      &quot;right&quot;: 136.47574396746927,
+      &quot;rightTop&quot;: {
+      &quot;x&quot;: 136.47574396746927,
+      &quot;y&quot;: 85.66307648003726
+      },
+      &quot;top&quot;: 85.66307648003726
+      },
+      &quot;dataSourceName&quot;: &quot;World&quot;,
+      &quot;description&quot;: null,
+      &quot;encodeType&quot;: null,
+      &quot;isReadOnly&quot;: false,
+      &quot;name&quot;: &quot;OceanLabelP_C&quot;,
+      &quot;prjCoordSys&quot;: null,
+      &quot;tableName&quot;: null,
+      &quot;type&quot;: &quot;POINT&quot;
+      },
+      &quot;description&quot;: &quot;&quot;,
+      &quot;displayFilter&quot;: &quot;&quot;,
+      &quot;joinItems&quot;: null,
+      &quot;maxScale&quot;: 7.56550553E-8,
+      &quot;minScale&quot;: 3.0420561E-9,
+      &quot;minVisibleGeometrySize&quot;: 0,
+      &quot;name&quot;: &quot;标签专题图&quot;,
+      &quot;opaqueRate&quot;: 100,
+      &quot;queryable&quot;: false,
+      &quot;representationField&quot;: &quot;&quot;,
+      &quot;subLayers&quot;: {},
+      &quot;symbolScalable&quot;: false,
+      &quot;symbolScale&quot;: 0,
+      &quot;theme&quot;: {
+      &quot;alongLine&quot;: false,
+      &quot;alongLineDirection&quot;: &quot;LEFT_TOP_TO_RIGHT_BOTTOM&quot;,
+      &quot;angleFixed&quot;: false,
+      &quot;backStyle&quot;: {
+      &quot;fillBackColor&quot;: {
+      &quot;blue&quot;: 255,
+      &quot;green&quot;: 255,
+      &quot;red&quot;: 255
+      },
+      &quot;fillBackOpaque&quot;: true,
+      &quot;fillForeColor&quot;: {
+      &quot;blue&quot;: 204,
+      &quot;green&quot;: 255,
+      &quot;red&quot;: 255
+      },
+      &quot;fillGradientAngle&quot;: 0,
+      &quot;fillGradientMode&quot;: &quot;NONE&quot;,
+      &quot;fillGradientOffsetRatioX&quot;: 0,
+      &quot;fillGradientOffsetRatioY&quot;: 0,
+      &quot;fillOpaqueRate&quot;: 100,
+      &quot;fillSymbolID&quot;: 0,
+      &quot;lineColor&quot;: {
+      &quot;blue&quot;: 0,
+      &quot;green&quot;: 0,
+      &quot;red&quot;: 0
+      },
+      &quot;lineSymbolID&quot;: 0,
+      &quot;lineWidth&quot;: 0.1,
+      &quot;markerAngle&quot;: 0,
+      &quot;markerSize&quot;: 2.4,
+      &quot;markerSymbolID&quot;: 0
+      },
+      &quot;flowEnabled&quot;: true,
+      &quot;items&quot;: null,
+      &quot;labelBackShape&quot;: &quot;NONE&quot;,
+      &quot;labelExpression&quot;: &quot;OceanLabelP_C.ChineseName&quot;,
+      &quot;labelOverLengthMode&quot;: &quot;NONE&quot;,
+      &quot;labelRepeatInterval&quot;: 0,
+      &quot;leaderLineDisplayed&quot;: false,
+      &quot;leaderLineStyle&quot;: {
+      &quot;fillBackColor&quot;: {
+      &quot;blue&quot;: 255,
+      &quot;green&quot;: 255,
+      &quot;red&quot;: 255
+      },
+      &quot;fillBackOpaque&quot;: true,
+      &quot;fillForeColor&quot;: {
+      &quot;blue&quot;: 196,
+      &quot;green&quot;: 196,
+      &quot;red&quot;: 196
+      },
+      &quot;fillGradientAngle&quot;: 0,
+      &quot;fillGradientMode&quot;: &quot;NONE&quot;,
+      &quot;fillGradientOffsetRatioX&quot;: 0,
+      &quot;fillGradientOffsetRatioY&quot;: 0,
+      &quot;fillOpaqueRate&quot;: 100,
+      &quot;fillSymbolID&quot;: 0,
+      &quot;lineColor&quot;: {
+      &quot;blue&quot;: 0,
+      &quot;green&quot;: 0,
+      &quot;red&quot;: 0
+      },
+      &quot;lineSymbolID&quot;: 42,
+      &quot;lineWidth&quot;: 0.1,
+      &quot;markerAngle&quot;: 0,
+      &quot;markerSize&quot;: 2.4,
+      &quot;markerSymbolID&quot;: 0
+      },
+      &quot;matrixCells&quot;: null,
+      &quot;maxLabelLength&quot;: 0,
+      &quot;maxTextHeight&quot;: 0,
+      &quot;maxTextWidth&quot;: 0,
+      &quot;memoryData&quot;: null,
+      &quot;minTextHeight&quot;: 0,
+      &quot;minTextWidth&quot;: 0,
+      &quot;numericPrecision&quot;: -1,
+      &quot;offsetFixed&quot;: false,
+      &quot;offsetX&quot;: &quot;0.0&quot;,
+      &quot;offsetY&quot;: &quot;0.0&quot;,
+      &quot;overlapAvoided&quot;: false,
+      &quot;rangeExpression&quot;: &quot;&quot;,
+      &quot;repeatIntervalFixed&quot;: false,
+      &quot;repeatedLabelAvoided&quot;: false,
+      &quot;smallGeometryLabeled&quot;: false,
+      &quot;type&quot;: &quot;LABEL&quot;,
+      &quot;uniformMixedStyle&quot;: null,
+      &quot;uniformStyle&quot;: {
+      &quot;align&quot;: &quot;TOPLEFT&quot;,
+      &quot;backColor&quot;: {
+      &quot;blue&quot;: 255,
+      &quot;green&quot;: 255,
+      &quot;red&quot;: 255
+      },
+      &quot;backOpaque&quot;: false,
+      &quot;bold&quot;: false,
+      &quot;fontHeight&quot;: 6.397365,
+      &quot;fontName&quot;: &quot;微软雅黑&quot;,
+      &quot;fontScale&quot;: 1,
+      &quot;fontWeight&quot;: 0,
+      &quot;fontWidth&quot;: 0,
+      &quot;foreColor&quot;: {
+      &quot;blue&quot;: 230,
+      &quot;green&quot;: 170,
+      &quot;red&quot;: 0
+      },
+      &quot;italic&quot;: true,
+      &quot;italicAngle&quot;: 0,
+      &quot;opaqueRate&quot;: 0,
+      &quot;outline&quot;: false,
+      &quot;rotation&quot;: 0,
+      &quot;shadow&quot;: false,
+      &quot;sizeFixed&quot;: false,
+      &quot;strikeout&quot;: false,
+      &quot;underline&quot;: false
+      }
+      },
+      &quot;themeElementPosition&quot;: null,
+      &quot;type&quot;: &quot;UGC&quot;,
+      &quot;ugcLayerType&quot;: &quot;THEME&quot;,
+      &quot;visible&quot;: false
+      },
+      {
+      &quot;bounds&quot;: {
+      &quot;bottom&quot;: -9.314728112497873,
+      &quot;left&quot;: -165.95742956747793,
+      &quot;leftBottom&quot;: {
+      &quot;x&quot;: -165.95742956747793,
+      &quot;y&quot;: -9.314728112497873
+      },
+      &quot;right&quot;: 136.47574396746927,
+      &quot;rightTop&quot;: {
+      &quot;x&quot;: 136.47574396746927,
+      &quot;y&quot;: 85.66307648003726
+      },
+      &quot;top&quot;: 85.66307648003726
+      },
+      &quot;caption&quot;: &quot;OceanLabelP_C@World&quot;,
+      &quot;completeLineSymbolDisplayed&quot;: false,
+      &quot;datasetInfo&quot;: {
+      &quot;bounds&quot;: {
+      &quot;bottom&quot;: -9.314728112497873,
+      &quot;left&quot;: -165.95742956747793,
+      &quot;leftBottom&quot;: {
+      &quot;x&quot;: -165.95742956747793,
+      &quot;y&quot;: -9.314728112497873
+      },
+      &quot;right&quot;: 136.47574396746927,
+      &quot;rightTop&quot;: {
+      &quot;x&quot;: 136.47574396746927,
+      &quot;y&quot;: 85.66307648003726
+      },
+      &quot;top&quot;: 85.66307648003726
+      },
+      &quot;dataSourceName&quot;: &quot;World&quot;,
+      &quot;description&quot;: null,
+      &quot;encodeType&quot;: null,
+      &quot;isReadOnly&quot;: false,
+      &quot;name&quot;: &quot;OceanLabelP_C&quot;,
+      &quot;prjCoordSys&quot;: null,
+      &quot;tableName&quot;: null,
+      &quot;type&quot;: &quot;POINT&quot;
+      },
+      &quot;description&quot;: &quot;&quot;,
+      &quot;displayFilter&quot;: &quot;&quot;,
+      &quot;joinItems&quot;: null,
+      &quot;maxScale&quot;: 7.56550553E-8,
+      &quot;minScale&quot;: 3.0420561E-9,
+      &quot;minVisibleGeometrySize&quot;: 0,
+      &quot;name&quot;: &quot;OceanLabelP_C@World&quot;,
+      &quot;opaqueRate&quot;: 100,
+      &quot;queryable&quot;: false,
+      &quot;representationField&quot;: &quot;&quot;,
+      &quot;style&quot;: {
+      &quot;fillBackColor&quot;: {
+      &quot;blue&quot;: 0,
+      &quot;green&quot;: 0,
+      &quot;red&quot;: 0
+      },
+      &quot;fillBackOpaque&quot;: true,
+      &quot;fillForeColor&quot;: {
+      &quot;blue&quot;: 0,
+      &quot;green&quot;: 0,
+      &quot;red&quot;: 0
+      },
+      &quot;fillGradientAngle&quot;: 0,
+      &quot;fillGradientMode&quot;: &quot;NONE&quot;,
+      &quot;fillGradientOffsetRatioX&quot;: 0,
+      &quot;fillGradientOffsetRatioY&quot;: 0,
+      &quot;fillOpaqueRate&quot;: 100,
+      &quot;fillSymbolID&quot;: 0,
+      &quot;lineColor&quot;: {
+      &quot;blue&quot;: 152,
+      &quot;green&quot;: 132,
+      &quot;red&quot;: 0
+      },
+      &quot;lineSymbolID&quot;: 0,
+      &quot;lineWidth&quot;: 0.1,
+      &quot;markerAngle&quot;: 0,
+      &quot;markerSize&quot;: 0,
+      &quot;markerSymbolID&quot;: 0
+      },
+      &quot;subLayers&quot;: {},
+      &quot;symbolScalable&quot;: false,
+      &quot;symbolScale&quot;: 0,
+      &quot;type&quot;: &quot;UGC&quot;,
+      &quot;ugcLayerType&quot;: &quot;VECTOR&quot;,
+      &quot;visible&quot;: false
+      },
+      {
+      &quot;bounds&quot;: {
+      &quot;bottom&quot;: -19.7167779655572,
+      &quot;left&quot;: -166.0513892339789,
+      &quot;leftBottom&quot;: {
+      &quot;x&quot;: -166.0513892339789,
+      &quot;y&quot;: -19.7167779655572
+      },
+      &quot;right&quot;: 136.70336123401063,
+      &quot;rightTop&quot;: {
+      &quot;x&quot;: 136.70336123401063,
+      &quot;y&quot;: 78.35777582760446
+      },
+      &quot;top&quot;: 78.35777582760446
+      },
+      &quot;caption&quot;: &quot;标签专题图#1&quot;,
+      &quot;completeLineSymbolDisplayed&quot;: false,
+      &quot;datasetInfo&quot;: {
+      &quot;bounds&quot;: {
+      &quot;bottom&quot;: -19.7167779655572,
+      &quot;left&quot;: -166.0513892339789,
+      &quot;leftBottom&quot;: {
+      &quot;x&quot;: -166.0513892339789,
+      &quot;y&quot;: -19.7167779655572
+      },
+      &quot;right&quot;: 136.70336123401063,
+      &quot;rightTop&quot;: {
+      &quot;x&quot;: 136.70336123401063,
+      &quot;y&quot;: 78.35777582760446
+      },
+      &quot;top&quot;: 78.35777582760446
+      },
+      &quot;dataSourceName&quot;: &quot;World&quot;,
+      &quot;description&quot;: null,
+      &quot;encodeType&quot;: null,
+      &quot;isReadOnly&quot;: false,
+      &quot;name&quot;: &quot;OceanLabelP_E&quot;,
+      &quot;prjCoordSys&quot;: null,
+      &quot;tableName&quot;: null,
+      &quot;type&quot;: &quot;POINT&quot;
+      },
+      &quot;description&quot;: &quot;&quot;,
+      &quot;displayFilter&quot;: &quot;&quot;,
+      &quot;joinItems&quot;: null,
+      &quot;maxScale&quot;: 7.56550553E-8,
+      &quot;minScale&quot;: 3.0420561E-9,
+      &quot;minVisibleGeometrySize&quot;: 0,
+      &quot;name&quot;: &quot;标签专题图#1&quot;,
+      &quot;opaqueRate&quot;: 100,
+      &quot;queryable&quot;: false,
+      &quot;representationField&quot;: &quot;&quot;,
+      &quot;subLayers&quot;: {},
+      &quot;symbolScalable&quot;: false,
+      &quot;symbolScale&quot;: 0,
+      &quot;theme&quot;: {
+      &quot;alongLine&quot;: false,
+      &quot;alongLineDirection&quot;: &quot;LEFT_TOP_TO_RIGHT_BOTTOM&quot;,
+      &quot;angleFixed&quot;: false,
+      &quot;backStyle&quot;: {
+      &quot;fillBackColor&quot;: {
+      &quot;blue&quot;: 255,
+      &quot;green&quot;: 255,
+      &quot;red&quot;: 255
+      },
+      &quot;fillBackOpaque&quot;: true,
+      &quot;fillForeColor&quot;: {
+      &quot;blue&quot;: 204,
+      &quot;green&quot;: 255,
+      &quot;red&quot;: 255
+      },
+      &quot;fillGradientAngle&quot;: 0,
+      &quot;fillGradientMode&quot;: &quot;NONE&quot;,
+      &quot;fillGradientOffsetRatioX&quot;: 0,
+      &quot;fillGradientOffsetRatioY&quot;: 0,
+      &quot;fillOpaqueRate&quot;: 100,
+      &quot;fillSymbolID&quot;: 0,
+      &quot;lineColor&quot;: {
+      &quot;blue&quot;: 0,
+      &quot;green&quot;: 0,
+      &quot;red&quot;: 0
+      },
+      &quot;lineSymbolID&quot;: 0,
+      &quot;lineWidth&quot;: 0.1,
+      &quot;markerAngle&quot;: 0,
+      &quot;markerSize&quot;: 2.4,
+      &quot;markerSymbolID&quot;: 0
+      },
+      &quot;flowEnabled&quot;: true,
+      &quot;items&quot;: null,
+      &quot;labelBackShape&quot;: &quot;NONE&quot;,
+      &quot;labelExpression&quot;: &quot;OceanLabelP_E.EnglishName&quot;,
+      &quot;labelOverLengthMode&quot;: &quot;NONE&quot;,
+      &quot;labelRepeatInterval&quot;: 0,
+      &quot;leaderLineDisplayed&quot;: false,
+      &quot;leaderLineStyle&quot;: {
+      &quot;fillBackColor&quot;: {
+      &quot;blue&quot;: 255,
+      &quot;green&quot;: 255,
+      &quot;red&quot;: 255
+      },
+      &quot;fillBackOpaque&quot;: true,
+      &quot;fillForeColor&quot;: {
+      &quot;blue&quot;: 196,
+      &quot;green&quot;: 196,
+      &quot;red&quot;: 196
+      },
+      &quot;fillGradientAngle&quot;: 0,
+      &quot;fillGradientMode&quot;: &quot;NONE&quot;,
+      &quot;fillGradientOffsetRatioX&quot;: 0,
+      &quot;fillGradientOffsetRatioY&quot;: 0,
+      &quot;fillOpaqueRate&quot;: 100,
+      &quot;fillSymbolID&quot;: 0,
+      &quot;lineColor&quot;: {
+      &quot;blue&quot;: 0,
+      &quot;green&quot;: 0,
+      &quot;red&quot;: 0
+      },
+      &quot;lineSymbolID&quot;: 42,
+      &quot;lineWidth&quot;: 0.1,
+      &quot;markerAngle&quot;: 0,
+      &quot;markerSize&quot;: 2.4,
+      &quot;markerSymbolID&quot;: 0
+      },
+      &quot;matrixCells&quot;: null,
+      &quot;maxLabelLength&quot;: 0,
+      &quot;maxTextHeight&quot;: 0,
+      &quot;maxTextWidth&quot;: 0,
+      &quot;memoryData&quot;: null,
+      &quot;minTextHeight&quot;: 0,
+      &quot;minTextWidth&quot;: 0,
+      &quot;numericPrecision&quot;: -1,
+      &quot;offsetFixed&quot;: false,
+      &quot;offsetX&quot;: &quot;0.0&quot;,
+      &quot;offsetY&quot;: &quot;0.0&quot;,
+      &quot;overlapAvoided&quot;: false,
+      &quot;rangeExpression&quot;: &quot;&quot;,
+      &quot;repeatIntervalFixed&quot;: false,
+      &quot;repeatedLabelAvoided&quot;: false,
+      &quot;smallGeometryLabeled&quot;: false,
+      &quot;type&quot;: &quot;LABEL&quot;,
+      &quot;uniformMixedStyle&quot;: null,
+      &quot;uniformStyle&quot;: {
+      &quot;align&quot;: &quot;TOPLEFT&quot;,
+      &quot;backColor&quot;: {
+      &quot;blue&quot;: 255,
+      &quot;green&quot;: 255,
+      &quot;red&quot;: 255
+      },
+      &quot;backOpaque&quot;: false,
+      &quot;bold&quot;: false,
+      &quot;fontHeight&quot;: 4.422653,
+      &quot;fontName&quot;: &quot;Verdana&quot;,
+      &quot;fontScale&quot;: 1,
+      &quot;fontWeight&quot;: 0,
+      &quot;fontWidth&quot;: 0,
+      &quot;foreColor&quot;: {
+      &quot;blue&quot;: 230,
+      &quot;green&quot;: 170,
+      &quot;red&quot;: 0
+      },
+      &quot;italic&quot;: true,
+      &quot;italicAngle&quot;: 0,
+      &quot;opaqueRate&quot;: 0,
+      &quot;outline&quot;: false,
+      &quot;rotation&quot;: 0,
+      &quot;shadow&quot;: false,
+      &quot;sizeFixed&quot;: false,
+      &quot;strikeout&quot;: false,
+      &quot;underline&quot;: false
+      }
+      },
+      &quot;themeElementPosition&quot;: null,
+      &quot;type&quot;: &quot;UGC&quot;,
+      &quot;ugcLayerType&quot;: &quot;THEME&quot;,
+      &quot;visible&quot;: false
+      },
+      {
+      &quot;bounds&quot;: {
+      &quot;bottom&quot;: -19.7167779655572,
+      &quot;left&quot;: -166.0513892339789,
+      &quot;leftBottom&quot;: {
+      &quot;x&quot;: -166.0513892339789,
+      &quot;y&quot;: -19.7167779655572
+      },
+      &quot;right&quot;: 136.70336123401063,
+      &quot;rightTop&quot;: {
+      &quot;x&quot;: 136.70336123401063,
+      &quot;y&quot;: 78.35777582760446
+      },
+      &quot;top&quot;: 78.35777582760446
+      },
+      &quot;caption&quot;: &quot;OceanLabelP_E@World&quot;,
+      &quot;completeLineSymbolDisplayed&quot;: false,
+      &quot;datasetInfo&quot;: {
+      &quot;bounds&quot;: {
+      &quot;bottom&quot;: -19.7167779655572,
+      &quot;left&quot;: -166.0513892339789,
+      &quot;leftBottom&quot;: {
+      &quot;x&quot;: -166.0513892339789,
+      &quot;y&quot;: -19.7167779655572
+      },
+      &quot;right&quot;: 136.70336123401063,
+      &quot;rightTop&quot;: {
+      &quot;x&quot;: 136.70336123401063,
+      &quot;y&quot;: 78.35777582760446
+      },
+      &quot;top&quot;: 78.35777582760446
+      },
+      &quot;dataSourceName&quot;: &quot;World&quot;,
+      &quot;description&quot;: null,
+      &quot;encodeType&quot;: null,
+      &quot;isReadOnly&quot;: false,
+      &quot;name&quot;: &quot;OceanLabelP_E&quot;,
+      &quot;prjCoordSys&quot;: null,
+      &quot;tableName&quot;: null,
+      &quot;type&quot;: &quot;POINT&quot;
+      },
+      &quot;description&quot;: &quot;&quot;,
+      &quot;displayFilter&quot;: &quot;&quot;,
+      &quot;joinItems&quot;: null,
+      &quot;maxScale&quot;: 7.56550553E-8,
+      &quot;minScale&quot;: 3.0420561E-9,
+      &quot;minVisibleGeometrySize&quot;: 0,
+      &quot;name&quot;: &quot;OceanLabelP_E@World&quot;,
+      &quot;opaqueRate&quot;: 100,
+      &quot;queryable&quot;: false,
+      &quot;representationField&quot;: &quot;&quot;,
+      &quot;style&quot;: {
+      &quot;fillBackColor&quot;: {
+      &quot;blue&quot;: 0,
+      &quot;green&quot;: 0,
+      &quot;red&quot;: 0
+      },
+      &quot;fillBackOpaque&quot;: true,
+      &quot;fillForeColor&quot;: {
+      &quot;blue&quot;: 0,
+      &quot;green&quot;: 0,
+      &quot;red&quot;: 0
+      },
+      &quot;fillGradientAngle&quot;: 0,
+      &quot;fillGradientMode&quot;: &quot;NONE&quot;,
+      &quot;fillGradientOffsetRatioX&quot;: 0,
+      &quot;fillGradientOffsetRatioY&quot;: 0,
+      &quot;fillOpaqueRate&quot;: 100,
+      &quot;fillSymbolID&quot;: 0,
+      &quot;lineColor&quot;: {
+      &quot;blue&quot;: 152,
+      &quot;green&quot;: 132,
+      &quot;red&quot;: 0
+      },
+      &quot;lineSymbolID&quot;: 0,
+      &quot;lineWidth&quot;: 0.1,
+      &quot;markerAngle&quot;: 0,
+      &quot;markerSize&quot;: 0,
+      &quot;markerSymbolID&quot;: 0
+      },
+      &quot;subLayers&quot;: {},
+      &quot;symbolScalable&quot;: false,
+      &quot;symbolScale&quot;: 0,
+      &quot;type&quot;: &quot;UGC&quot;,
+      &quot;ugcLayerType&quot;: &quot;VECTOR&quot;,
+      &quot;visible&quot;: false
+      },
+      {
+      &quot;bounds&quot;: {
+      &quot;bottom&quot;: -41.21039581298828,
+      &quot;left&quot;: -99.12757110595705,
+      &quot;leftBottom&quot;: {
+      &quot;x&quot;: -99.12757110595705,
+      &quot;y&quot;: -41.21039581298828
+      },
+      &quot;right&quot;: 175.14494323730466,
+      &quot;rightTop&quot;: {
+      &quot;x&quot;: 175.14494323730466,
+      &quot;y&quot;: 64.31326293945314
+      },
+      &quot;top&quot;: 64.31326293945314
+      },
+      &quot;caption&quot;: &quot;标签专题图#2&quot;,
+      &quot;completeLineSymbolDisplayed&quot;: false,
+      &quot;datasetInfo&quot;: {
+      &quot;bounds&quot;: {
+      &quot;bottom&quot;: -41.21039581298828,
+      &quot;left&quot;: -99.12757110595705,
+      &quot;leftBottom&quot;: {
+      &quot;x&quot;: -99.12757110595705,
+      &quot;y&quot;: -41.21039581298828
+      },
+      &quot;right&quot;: 175.14494323730466,
+      &quot;rightTop&quot;: {
+      &quot;x&quot;: 175.14494323730466,
+      &quot;y&quot;: 64.31326293945314
+      },
+      &quot;top&quot;: 64.31326293945314
+      },
+      &quot;dataSourceName&quot;: &quot;World&quot;,
+      &quot;description&quot;: null,
+      &quot;encodeType&quot;: null,
+      &quot;isReadOnly&quot;: false,
+      &quot;name&quot;: &quot;Capitals&quot;,
+      &quot;prjCoordSys&quot;: null,
+      &quot;tableName&quot;: null,
+      &quot;type&quot;: &quot;POINT&quot;
+      },
+      &quot;description&quot;: &quot;&quot;,
+      &quot;displayFilter&quot;: &quot;&quot;,
+      &quot;joinItems&quot;: null,
+      &quot;maxScale&quot;: 0,
+      &quot;minScale&quot;: 7.56550553E-8,
+      &quot;minVisibleGeometrySize&quot;: 0.4,
+      &quot;name&quot;: &quot;标签专题图#2&quot;,
+      &quot;opaqueRate&quot;: 100,
+      &quot;queryable&quot;: false,
+      &quot;representationField&quot;: &quot;&quot;,
+      &quot;subLayers&quot;: {},
+      &quot;symbolScalable&quot;: false,
+      &quot;symbolScale&quot;: 0,
+      &quot;theme&quot;: {
+      &quot;alongLine&quot;: false,
+      &quot;alongLineDirection&quot;: &quot;LEFT_TOP_TO_RIGHT_BOTTOM&quot;,
+      &quot;angleFixed&quot;: false,
+      &quot;backStyle&quot;: {
+      &quot;fillBackColor&quot;: {
+      &quot;blue&quot;: 255,
+      &quot;green&quot;: 255,
+      &quot;red&quot;: 255
+      },
+      &quot;fillBackOpaque&quot;: true,
+      &quot;fillForeColor&quot;: {
+      &quot;blue&quot;: 204,
+      &quot;green&quot;: 255,
+      &quot;red&quot;: 255
+      },
+      &quot;fillGradientAngle&quot;: 0,
+      &quot;fillGradientMode&quot;: &quot;NONE&quot;,
+      &quot;fillGradientOffsetRatioX&quot;: 0,
+      &quot;fillGradientOffsetRatioY&quot;: 0,
+      &quot;fillOpaqueRate&quot;: 100,
+      &quot;fillSymbolID&quot;: 0,
+      &quot;lineColor&quot;: {
+      &quot;blue&quot;: 0,
+      &quot;green&quot;: 0,
+      &quot;red&quot;: 0
+      },
+      &quot;lineSymbolID&quot;: 0,
+      &quot;lineWidth&quot;: 0.1,
+      &quot;markerAngle&quot;: 0,
+      &quot;markerSize&quot;: 2.4,
+      &quot;markerSymbolID&quot;: 0
+      },
+      &quot;flowEnabled&quot;: true,
+      &quot;items&quot;: null,
+      &quot;labelBackShape&quot;: &quot;NONE&quot;,
+      &quot;labelExpression&quot;: &quot;Capital&quot;,
+      &quot;labelOverLengthMode&quot;: &quot;NONE&quot;,
+      &quot;labelRepeatInterval&quot;: 0,
+      &quot;leaderLineDisplayed&quot;: false,
+      &quot;leaderLineStyle&quot;: {
+      &quot;fillBackColor&quot;: {
+      &quot;blue&quot;: 255,
+      &quot;green&quot;: 255,
+      &quot;red&quot;: 255
+      },
+      &quot;fillBackOpaque&quot;: true,
+      &quot;fillForeColor&quot;: {
+      &quot;blue&quot;: 196,
+      &quot;green&quot;: 196,
+      &quot;red&quot;: 196
+      },
+      &quot;fillGradientAngle&quot;: 0,
+      &quot;fillGradientMode&quot;: &quot;NONE&quot;,
+      &quot;fillGradientOffsetRatioX&quot;: 0,
+      &quot;fillGradientOffsetRatioY&quot;: 0,
+      &quot;fillOpaqueRate&quot;: 100,
+      &quot;fillSymbolID&quot;: 0,
+      &quot;lineColor&quot;: {
+      &quot;blue&quot;: 0,
+      &quot;green&quot;: 0,
+      &quot;red&quot;: 0
+      },
+      &quot;lineSymbolID&quot;: 42,
+      &quot;lineWidth&quot;: 0.1,
+      &quot;markerAngle&quot;: 0,
+      &quot;markerSize&quot;: 6,
+      &quot;markerSymbolID&quot;: 0
+      },
+      &quot;matrixCells&quot;: null,
+      &quot;maxLabelLength&quot;: 0,
+      &quot;maxTextHeight&quot;: 0,
+      &quot;maxTextWidth&quot;: 0,
+      &quot;memoryData&quot;: null,
+      &quot;minTextHeight&quot;: 0,
+      &quot;minTextWidth&quot;: 0,
+      &quot;numericPrecision&quot;: -1,
+      &quot;offsetFixed&quot;: true,
+      &quot;offsetX&quot;: &quot;20&quot;,
+      &quot;offsetY&quot;: &quot;0&quot;,
+      &quot;overlapAvoided&quot;: false,
+      &quot;rangeExpression&quot;: &quot;&quot;,
+      &quot;repeatIntervalFixed&quot;: false,
+      &quot;repeatedLabelAvoided&quot;: false,
+      &quot;smallGeometryLabeled&quot;: true,
+      &quot;type&quot;: &quot;LABEL&quot;,
+      &quot;uniformMixedStyle&quot;: null,
+      &quot;uniformStyle&quot;: {
+      &quot;align&quot;: &quot;MIDDLELEFT&quot;,
+      &quot;backColor&quot;: {
+      &quot;blue&quot;: 255,
+      &quot;green&quot;: 255,
+      &quot;red&quot;: 255
+      },
+      &quot;backOpaque&quot;: false,
+      &quot;bold&quot;: false,
+      &quot;fontHeight&quot;: 4,
+      &quot;fontName&quot;: &quot;黑体&quot;,
+      &quot;fontScale&quot;: 1,
+      &quot;fontWeight&quot;: 0,
+      &quot;fontWidth&quot;: 0,
+      &quot;foreColor&quot;: {
+      &quot;blue&quot;: 0,
+      &quot;green&quot;: 0,
+      &quot;red&quot;: 0
+      },
+      &quot;italic&quot;: false,
+      &quot;italicAngle&quot;: 0,
+      &quot;opaqueRate&quot;: 0,
+      &quot;outline&quot;: false,
+      &quot;rotation&quot;: 0,
+      &quot;shadow&quot;: false,
+      &quot;sizeFixed&quot;: true,
+      &quot;strikeout&quot;: false,
+      &quot;underline&quot;: false
+      }
+      },
+      &quot;themeElementPosition&quot;: null,
+      &quot;type&quot;: &quot;UGC&quot;,
+      &quot;ugcLayerType&quot;: &quot;THEME&quot;,
+      &quot;visible&quot;: true
+      },
+      {
+      &quot;bounds&quot;: {
+      &quot;bottom&quot;: -41.21039581298828,
+      &quot;left&quot;: -99.12757110595705,
+      &quot;leftBottom&quot;: {
+      &quot;x&quot;: -99.12757110595705,
+      &quot;y&quot;: -41.21039581298828
+      },
+      &quot;right&quot;: 175.14494323730466,
+      &quot;rightTop&quot;: {
+      &quot;x&quot;: 175.14494323730466,
+      &quot;y&quot;: 64.31326293945314
+      },
+      &quot;top&quot;: 64.31326293945314
+      },
+      &quot;caption&quot;: &quot;Capitals@World&quot;,
+      &quot;completeLineSymbolDisplayed&quot;: false,
+      &quot;datasetInfo&quot;: {
+      &quot;bounds&quot;: {
+      &quot;bottom&quot;: -41.21039581298828,
+      &quot;left&quot;: -99.12757110595705,
+      &quot;leftBottom&quot;: {
+      &quot;x&quot;: -99.12757110595705,
+      &quot;y&quot;: -41.21039581298828
+      },
+      &quot;right&quot;: 175.14494323730466,
+      &quot;rightTop&quot;: {
+      &quot;x&quot;: 175.14494323730466,
+      &quot;y&quot;: 64.31326293945314
+      },
+      &quot;top&quot;: 64.31326293945314
+      },
+      &quot;dataSourceName&quot;: &quot;World&quot;,
+      &quot;description&quot;: null,
+      &quot;encodeType&quot;: null,
+      &quot;isReadOnly&quot;: false,
+      &quot;name&quot;: &quot;Capitals&quot;,
+      &quot;prjCoordSys&quot;: null,
+      &quot;tableName&quot;: null,
+      &quot;type&quot;: &quot;POINT&quot;
+      },
+      &quot;description&quot;: &quot;&quot;,
+      &quot;displayFilter&quot;: &quot;&quot;,
+      &quot;joinItems&quot;: null,
+      &quot;maxScale&quot;: 0,
+      &quot;minScale&quot;: 7.56550553E-8,
+      &quot;minVisibleGeometrySize&quot;: 0.4,
+      &quot;name&quot;: &quot;Capitals@World&quot;,
+      &quot;opaqueRate&quot;: 100,
+      &quot;queryable&quot;: true,
+      &quot;representationField&quot;: &quot;&quot;,
+      &quot;style&quot;: {
+      &quot;fillBackColor&quot;: {
+      &quot;blue&quot;: 255,
+      &quot;green&quot;: 255,
+      &quot;red&quot;: 255
+      },
+      &quot;fillBackOpaque&quot;: true,
+      &quot;fillForeColor&quot;: {
+      &quot;blue&quot;: 196,
+      &quot;green&quot;: 196,
+      &quot;red&quot;: 196
+      },
+      &quot;fillGradientAngle&quot;: 0,
+      &quot;fillGradientMode&quot;: &quot;NONE&quot;,
+      &quot;fillGradientOffsetRatioX&quot;: 0,
+      &quot;fillGradientOffsetRatioY&quot;: 0,
+      &quot;fillOpaqueRate&quot;: 100,
+      &quot;fillSymbolID&quot;: 0,
+      &quot;lineColor&quot;: {
+      &quot;blue&quot;: 0,
+      &quot;green&quot;: 0,
+      &quot;red&quot;: 0
+      },
+      &quot;lineSymbolID&quot;: 0,
+      &quot;lineWidth&quot;: 0.1,
+      &quot;markerAngle&quot;: 0,
+      &quot;markerSize&quot;: 2,
+      &quot;markerSymbolID&quot;: 12
+      },
+      &quot;subLayers&quot;: {},
+      &quot;symbolScalable&quot;: false,
+      &quot;symbolScale&quot;: 0,
+      &quot;type&quot;: &quot;UGC&quot;,
+      &quot;ugcLayerType&quot;: &quot;VECTOR&quot;,
+      &quot;visible&quot;: true
+      },
+      {
+      &quot;bounds&quot;: {
+      &quot;bottom&quot;: -90,
+      &quot;left&quot;: -180,
+      &quot;leftBottom&quot;: {
+      &quot;x&quot;: -180,
+      &quot;y&quot;: -90
+      },
+      &quot;right&quot;: 180,
+      &quot;rightTop&quot;: {
+      &quot;x&quot;: 180,
+      &quot;y&quot;: 90
+      },
+      &quot;top&quot;: 90
+      },
+      &quot;caption&quot;: &quot;Grids@World&quot;,
+      &quot;completeLineSymbolDisplayed&quot;: false,
+      &quot;datasetInfo&quot;: {
+      &quot;bounds&quot;: {
+      &quot;bottom&quot;: -90,
+      &quot;left&quot;: -180,
+      &quot;leftBottom&quot;: {
+      &quot;x&quot;: -180,
+      &quot;y&quot;: -90
+      },
+      &quot;right&quot;: 180,
+      &quot;rightTop&quot;: {
+      &quot;x&quot;: 180,
+      &quot;y&quot;: 90
+      },
+      &quot;top&quot;: 90
+      },
+      &quot;dataSourceName&quot;: &quot;World&quot;,
+      &quot;description&quot;: null,
+      &quot;encodeType&quot;: null,
+      &quot;isReadOnly&quot;: false,
+      &quot;name&quot;: &quot;Grids&quot;,
+      &quot;prjCoordSys&quot;: null,
+      &quot;tableName&quot;: null,
+      &quot;type&quot;: &quot;LINE&quot;
+      },
+      &quot;description&quot;: &quot;&quot;,
+      &quot;displayFilter&quot;: &quot;&quot;,
+      &quot;joinItems&quot;: null,
+      &quot;maxScale&quot;: 0,
+      &quot;minScale&quot;: 0,
+      &quot;minVisibleGeometrySize&quot;: 0,
+      &quot;name&quot;: &quot;Grids@World&quot;,
+      &quot;opaqueRate&quot;: 100,
+      &quot;queryable&quot;: true,
+      &quot;representationField&quot;: &quot;&quot;,
+      &quot;style&quot;: {
+      &quot;fillBackColor&quot;: {
+      &quot;blue&quot;: 0,
+      &quot;green&quot;: 0,
+      &quot;red&quot;: 0
+      },
+      &quot;fillBackOpaque&quot;: true,
+      &quot;fillForeColor&quot;: {
+      &quot;blue&quot;: 0,
+      &quot;green&quot;: 0,
+      &quot;red&quot;: 0
+      },
+      &quot;fillGradientAngle&quot;: 0,
+      &quot;fillGradientMode&quot;: &quot;NONE&quot;,
+      &quot;fillGradientOffsetRatioX&quot;: 0,
+      &quot;fillGradientOffsetRatioY&quot;: 0,
+      &quot;fillOpaqueRate&quot;: 100,
+      &quot;fillSymbolID&quot;: 0,
+      &quot;lineColor&quot;: {
+      &quot;blue&quot;: 156,
+      &quot;green&quot;: 158,
+      &quot;red&quot;: 156
+      },
+      &quot;lineSymbolID&quot;: 2,
+      &quot;lineWidth&quot;: 0.1,
+      &quot;markerAngle&quot;: 0,
+      &quot;markerSize&quot;: 0,
+      &quot;markerSymbolID&quot;: 0
+      },
+      &quot;subLayers&quot;: {},
+      &quot;symbolScalable&quot;: false,
+      &quot;symbolScale&quot;: 0,
+      &quot;type&quot;: &quot;UGC&quot;,
+      &quot;ugcLayerType&quot;: &quot;VECTOR&quot;,
+      &quot;visible&quot;: true
+      },
+      {
+      &quot;bounds&quot;: {
+      &quot;bottom&quot;: -9.500760592213298,
+      &quot;left&quot;: -175.20711490151245,
+      &quot;leftBottom&quot;: {
+      &quot;x&quot;: -175.20711490151245,
+      &quot;y&quot;: -9.500760592213298
+      },
+      &quot;right&quot;: 131.7577398056715,
+      &quot;rightTop&quot;: {
+      &quot;x&quot;: 131.7577398056715,
+      &quot;y&quot;: 70.43669187670935
+      },
+      &quot;top&quot;: 70.43669187670935
+      },
+      &quot;caption&quot;: &quot;ContinentBoundary@World&quot;,
+      &quot;completeLineSymbolDisplayed&quot;: false,
+      &quot;datasetInfo&quot;: {
+      &quot;bounds&quot;: {
+      &quot;bottom&quot;: -9.500760592213298,
+      &quot;left&quot;: -175.20711490151245,
+      &quot;leftBottom&quot;: {
+      &quot;x&quot;: -175.20711490151245,
+      &quot;y&quot;: -9.500760592213298
+      },
+      &quot;right&quot;: 131.7577398056715,
+      &quot;rightTop&quot;: {
+      &quot;x&quot;: 131.7577398056715,
+      &quot;y&quot;: 70.43669187670935
+      },
+      &quot;top&quot;: 70.43669187670935
+      },
+      &quot;dataSourceName&quot;: &quot;World&quot;,
+      &quot;description&quot;: null,
+      &quot;encodeType&quot;: null,
+      &quot;isReadOnly&quot;: false,
+      &quot;name&quot;: &quot;ContinentBoundary&quot;,
+      &quot;prjCoordSys&quot;: null,
+      &quot;tableName&quot;: null,
+      &quot;type&quot;: &quot;LINE&quot;
+      },
+      &quot;description&quot;: &quot;&quot;,
+      &quot;displayFilter&quot;: &quot;&quot;,
+      &quot;joinItems&quot;: null,
+      &quot;maxScale&quot;: 0,
+      &quot;minScale&quot;: 0,
+      &quot;minVisibleGeometrySize&quot;: 0,
+      &quot;name&quot;: &quot;ContinentBoundary@World&quot;,
+      &quot;opaqueRate&quot;: 100,
+      &quot;queryable&quot;: true,
+      &quot;representationField&quot;: &quot;&quot;,
+      &quot;style&quot;: {
+      &quot;fillBackColor&quot;: {
+      &quot;blue&quot;: 0,
+      &quot;green&quot;: 0,
+      &quot;red&quot;: 0
+      },
+      &quot;fillBackOpaque&quot;: true,
+      &quot;fillForeColor&quot;: {
+      &quot;blue&quot;: 0,
+      &quot;green&quot;: 0,
+      &quot;red&quot;: 0
+      },
+      &quot;fillGradientAngle&quot;: 0,
+      &quot;fillGradientMode&quot;: &quot;NONE&quot;,
+      &quot;fillGradientOffsetRatioX&quot;: 0,
+      &quot;fillGradientOffsetRatioY&quot;: 0,
+      &quot;fillOpaqueRate&quot;: 100,
+      &quot;fillSymbolID&quot;: 0,
+      &quot;lineColor&quot;: {
+      &quot;blue&quot;: 113,
+      &quot;green&quot;: 105,
+      &quot;red&quot;: 0
+      },
+      &quot;lineSymbolID&quot;: 962030,
+      &quot;lineWidth&quot;: 0.1,
+      &quot;markerAngle&quot;: 0,
+      &quot;markerSize&quot;: 0,
+      &quot;markerSymbolID&quot;: 0
+      },
+      &quot;subLayers&quot;: {},
+      &quot;symbolScalable&quot;: false,
+      &quot;symbolScale&quot;: 0,
+      &quot;type&quot;: &quot;UGC&quot;,
+      &quot;ugcLayerType&quot;: &quot;VECTOR&quot;,
+      &quot;visible&quot;: true
+      },
+      {
+      &quot;bounds&quot;: {
+      &quot;bottom&quot;: -50.49680374515408,
+      &quot;left&quot;: -178.96608326558336,
+      &quot;leftBottom&quot;: {
+      &quot;x&quot;: -178.96608326558336,
+      &quot;y&quot;: -50.49680374515408
+      },
+      &quot;right&quot;: 176.8499072304239,
+      &quot;rightTop&quot;: {
+      &quot;x&quot;: 176.8499072304239,
+      &quot;y&quot;: 75.97552711993293
+      },
+      &quot;top&quot;: 75.97552711993293
+      },
+      &quot;caption&quot;: &quot;CountryLabel@World&quot;,
+      &quot;completeLineSymbolDisplayed&quot;: false,
+      &quot;datasetInfo&quot;: {
+      &quot;bounds&quot;: {
+      &quot;bottom&quot;: -50.49680374515408,
+      &quot;left&quot;: -178.96608326558336,
+      &quot;leftBottom&quot;: {
+      &quot;x&quot;: -178.96608326558336,
+      &quot;y&quot;: -50.49680374515408
+      },
+      &quot;right&quot;: 176.8499072304239,
+      &quot;rightTop&quot;: {
+      &quot;x&quot;: 176.8499072304239,
+      &quot;y&quot;: 75.97552711993293
+      },
+      &quot;top&quot;: 75.97552711993293
+      },
+      &quot;dataSourceName&quot;: &quot;World&quot;,
+      &quot;description&quot;: null,
+      &quot;encodeType&quot;: null,
+      &quot;isReadOnly&quot;: false,
+      &quot;name&quot;: &quot;CountryLabel&quot;,
+      &quot;prjCoordSys&quot;: null,
+      &quot;tableName&quot;: null,
+      &quot;type&quot;: &quot;TEXT&quot;
+      },
+      &quot;description&quot;: &quot;&quot;,
+      &quot;displayFilter&quot;: &quot;&quot;,
+      &quot;joinItems&quot;: null,
+      &quot;maxScale&quot;: 7.56550553E-8,
+      &quot;minScale&quot;: 1.35817417E-8,
+      &quot;minVisibleGeometrySize&quot;: 0.4,
+      &quot;name&quot;: &quot;CountryLabel@World&quot;,
+      &quot;opaqueRate&quot;: 100,
+      &quot;queryable&quot;: true,
+      &quot;representationField&quot;: &quot;&quot;,
+      &quot;style&quot;: {
+      &quot;fillBackColor&quot;: {
+      &quot;blue&quot;: 255,
+      &quot;green&quot;: 255,
+      &quot;red&quot;: 255
+      },
+      &quot;fillBackOpaque&quot;: true,
+      &quot;fillForeColor&quot;: {
+      &quot;blue&quot;: 240,
+      &quot;green&quot;: 255,
+      &quot;red&quot;: 208
+      },
+      &quot;fillGradientAngle&quot;: 0,
+      &quot;fillGradientMode&quot;: &quot;NONE&quot;,
+      &quot;fillGradientOffsetRatioX&quot;: 0,
+      &quot;fillGradientOffsetRatioY&quot;: 0,
+      &quot;fillOpaqueRate&quot;: 100,
+      &quot;fillSymbolID&quot;: 0,
+      &quot;lineColor&quot;: {
+      &quot;blue&quot;: 0,
+      &quot;green&quot;: 128,
+      &quot;red&quot;: 0
+      },
+      &quot;lineSymbolID&quot;: 0,
+      &quot;lineWidth&quot;: 0.1,
+      &quot;markerAngle&quot;: 0,
+      &quot;markerSize&quot;: 6,
+      &quot;markerSymbolID&quot;: 0
+      },
+      &quot;subLayers&quot;: {},
+      &quot;symbolScalable&quot;: false,
+      &quot;symbolScale&quot;: 0,
+      &quot;type&quot;: &quot;UGC&quot;,
+      &quot;ugcLayerType&quot;: &quot;VECTOR&quot;,
+      &quot;visible&quot;: true
+      },
+      {
+      &quot;bounds&quot;: {
+      &quot;bottom&quot;: -90,
+      &quot;left&quot;: -180,
+      &quot;leftBottom&quot;: {
+      &quot;x&quot;: -180,
+      &quot;y&quot;: -90
+      },
+      &quot;right&quot;: 180,
+      &quot;rightTop&quot;: {
+      &quot;x&quot;: 180,
+      &quot;y&quot;: 83.62359619140626
+      },
+      &quot;top&quot;: 83.62359619140626
+      },
+      &quot;caption&quot;: &quot;单值专题图&quot;,
+      &quot;completeLineSymbolDisplayed&quot;: false,
+      &quot;datasetInfo&quot;: {
+      &quot;bounds&quot;: {
+      &quot;bottom&quot;: -90,
+      &quot;left&quot;: -180,
+      &quot;leftBottom&quot;: {
+      &quot;x&quot;: -180,
+      &quot;y&quot;: -90
+      },
+      &quot;right&quot;: 180,
+      &quot;rightTop&quot;: {
+      &quot;x&quot;: 180,
+      &quot;y&quot;: 83.62359619140626
+      },
+      &quot;top&quot;: 83.62359619140626
+      },
+      &quot;dataSourceName&quot;: &quot;World&quot;,
+      &quot;description&quot;: null,
+      &quot;encodeType&quot;: null,
+      &quot;isReadOnly&quot;: false,
+      &quot;name&quot;: &quot;Countries&quot;,
+      &quot;prjCoordSys&quot;: null,
+      &quot;tableName&quot;: null,
+      &quot;type&quot;: &quot;REGION&quot;
+      },
+      &quot;description&quot;: &quot;&quot;,
+      &quot;displayFilter&quot;: &quot;&quot;,
+      &quot;joinItems&quot;: null,
+      &quot;maxScale&quot;: 0,
+      &quot;minScale&quot;: 0,
+      &quot;minVisibleGeometrySize&quot;: 0.4,
+      &quot;name&quot;: &quot;单值专题图&quot;,
+      &quot;opaqueRate&quot;: 100,
+      &quot;queryable&quot;: true,
+      &quot;representationField&quot;: &quot;&quot;,
+      &quot;subLayers&quot;: {},
+      &quot;symbolScalable&quot;: false,
+      &quot;symbolScale&quot;: 0,
+      &quot;theme&quot;: {
+      &quot;defaultStyle&quot;: {
+      &quot;fillBackColor&quot;: {
+      &quot;blue&quot;: 255,
+      &quot;green&quot;: 255,
+      &quot;red&quot;: 255
+      },
+      &quot;fillBackOpaque&quot;: true,
+      &quot;fillForeColor&quot;: {
+      &quot;blue&quot;: 196,
+      &quot;green&quot;: 196,
+      &quot;red&quot;: 196
+      },
+      &quot;fillGradientAngle&quot;: 0,
+      &quot;fillGradientMode&quot;: &quot;NONE&quot;,
+      &quot;fillGradientOffsetRatioX&quot;: 0,
+      &quot;fillGradientOffsetRatioY&quot;: 0,
+      &quot;fillOpaqueRate&quot;: 100,
+      &quot;fillSymbolID&quot;: 0,
+      &quot;lineColor&quot;: {
+      &quot;blue&quot;: 0,
+      &quot;green&quot;: 0,
+      &quot;red&quot;: 0
+      },
+      &quot;lineSymbolID&quot;: 0,
+      &quot;lineWidth&quot;: 0.1,
+      &quot;markerAngle&quot;: 0,
+      &quot;markerSize&quot;: 6,
+      &quot;markerSymbolID&quot;: 0
+      },
+      &quot;items&quot;: [{
+      &quot;caption&quot;: &quot;1&quot;,
+      &quot;style&quot;: {
+      &quot;fillBackColor&quot;: {
+      &quot;blue&quot;: 255,
+      &quot;green&quot;: 255,
+      &quot;red&quot;: 255
+      },
+      &quot;fillBackOpaque&quot;: true,
+      &quot;fillForeColor&quot;: {
+      &quot;blue&quot;: 201,
+      &quot;green&quot;: 227,
+      &quot;red&quot;: 193
+      },
+      &quot;fillGradientAngle&quot;: 0,
+      &quot;fillGradientMode&quot;: &quot;NONE&quot;,
+      &quot;fillGradientOffsetRatioX&quot;: 0,
+      &quot;fillGradientOffsetRatioY&quot;: 0,
+      &quot;fillOpaqueRate&quot;: 100,
+      &quot;fillSymbolID&quot;: 0,
+      &quot;lineColor&quot;: {
+      &quot;blue&quot;: 181,
+      &quot;green&quot;: 178,
+      &quot;red&quot;: 181
+      },
+      &quot;lineSymbolID&quot;: 0,
+      &quot;lineWidth&quot;: 0.1,
+      &quot;markerAngle&quot;: 0,
+      &quot;markerSize&quot;: 6,
+      &quot;markerSymbolID&quot;: 0
+      },
+      &quot;unique&quot;: &quot;1&quot;,
+      &quot;visible&quot;: true
+      },
+      {
+      &quot;caption&quot;: &quot;2&quot;,
+      &quot;style&quot;: {
+      &quot;fillBackColor&quot;: {
+      &quot;blue&quot;: 255,
+      &quot;green&quot;: 255,
+      &quot;red&quot;: 255
+      },
+      &quot;fillBackOpaque&quot;: true,
+      &quot;fillForeColor&quot;: {
+      &quot;blue&quot;: 225,
+      &quot;green&quot;: 193,
+      &quot;red&quot;: 196
+      },
+      &quot;fillGradientAngle&quot;: 0,
+      &quot;fillGradientMode&quot;: &quot;NONE&quot;,
+      &quot;fillGradientOffsetRatioX&quot;: 0,
+      &quot;fillGradientOffsetRatioY&quot;: 0,
+      &quot;fillOpaqueRate&quot;: 100,
+      &quot;fillSymbolID&quot;: 0,
+      &quot;lineColor&quot;: {
+      &quot;blue&quot;: 181,
+      &quot;green&quot;: 178,
+      &quot;red&quot;: 181
+      },
+      &quot;lineSymbolID&quot;: 0,
+      &quot;lineWidth&quot;: 0.1,
+      &quot;markerAngle&quot;: 0,
+      &quot;markerSize&quot;: 6,
+      &quot;markerSymbolID&quot;: 0
+      },
+      &quot;unique&quot;: &quot;2&quot;,
+      &quot;visible&quot;: true
+      },
+      {
+      &quot;caption&quot;: &quot;3&quot;,
+      &quot;style&quot;: {
+      &quot;fillBackColor&quot;: {
+      &quot;blue&quot;: 255,
+      &quot;green&quot;: 255,
+      &quot;red&quot;: 255
+      },
+      &quot;fillBackOpaque&quot;: true,
+      &quot;fillForeColor&quot;: {
+      &quot;blue&quot;: 179,
+      &quot;green&quot;: 250,
+      &quot;red&quot;: 255
+      },
+      &quot;fillGradientAngle&quot;: 0,
+      &quot;fillGradientMode&quot;: &quot;NONE&quot;,
+      &quot;fillGradientOffsetRatioX&quot;: 0,
+      &quot;fillGradientOffsetRatioY&quot;: 0,
+      &quot;fillOpaqueRate&quot;: 100,
+      &quot;fillSymbolID&quot;: 0,
+      &quot;lineColor&quot;: {
+      &quot;blue&quot;: 181,
+      &quot;green&quot;: 178,
+      &quot;red&quot;: 181
+      },
+      &quot;lineSymbolID&quot;: 0,
+      &quot;lineWidth&quot;: 0.1,
+      &quot;markerAngle&quot;: 0,
+      &quot;markerSize&quot;: 6,
+      &quot;markerSymbolID&quot;: 0
+      },
+      &quot;unique&quot;: &quot;3&quot;,
+      &quot;visible&quot;: true
+      },
+      {
+      &quot;caption&quot;: &quot;4&quot;,
+      &quot;style&quot;: {
+      &quot;fillBackColor&quot;: {
+      &quot;blue&quot;: 255,
+      &quot;green&quot;: 255,
+      &quot;red&quot;: 255
+      },
+      &quot;fillBackOpaque&quot;: true,
+      &quot;fillForeColor&quot;: {
+      &quot;blue&quot;: 182,
+      &quot;green&quot;: 204,
+      &quot;red&quot;: 252
+      },
+      &quot;fillGradientAngle&quot;: 0,
+      &quot;fillGradientMode&quot;: &quot;NONE&quot;,
+      &quot;fillGradientOffsetRatioX&quot;: 0,
+      &quot;fillGradientOffsetRatioY&quot;: 0,
+      &quot;fillOpaqueRate&quot;: 100,
+      &quot;fillSymbolID&quot;: 0,
+      &quot;lineColor&quot;: {
+      &quot;blue&quot;: 181,
+      &quot;green&quot;: 178,
+      &quot;red&quot;: 181
+      },
+      &quot;lineSymbolID&quot;: 0,
+      &quot;lineWidth&quot;: 0.1,
+      &quot;markerAngle&quot;: 0,
+      &quot;markerSize&quot;: 6,
+      &quot;markerSymbolID&quot;: 0
+      },
+      &quot;unique&quot;: &quot;4&quot;,
+      &quot;visible&quot;: true
+      }],
+      &quot;memoryData&quot;: null,
+      &quot;type&quot;: &quot;UNIQUE&quot;,
+      &quot;uniqueExpression&quot;: &quot;COLOR_MAP&quot;
+      },
+      &quot;themeElementPosition&quot;: null,
+      &quot;type&quot;: &quot;UGC&quot;,
+      &quot;ugcLayerType&quot;: &quot;THEME&quot;,
+      &quot;visible&quot;: true
+      },
+      {
+      &quot;bounds&quot;: {
+      &quot;bottom&quot;: -90,
+      &quot;left&quot;: -180,
+      &quot;leftBottom&quot;: {
+      &quot;x&quot;: -180,
+      &quot;y&quot;: -90
+      },
+      &quot;right&quot;: 180,
+      &quot;rightTop&quot;: {
+      &quot;x&quot;: 180,
+      &quot;y&quot;: 83.62359619140626
+      },
+      &quot;top&quot;: 83.62359619140626
+      },
+      &quot;caption&quot;: &quot;Countries@World&quot;,
+      &quot;completeLineSymbolDisplayed&quot;: false,
+      &quot;datasetInfo&quot;: {
+      &quot;bounds&quot;: {
+      &quot;bottom&quot;: -90,
+      &quot;left&quot;: -180,
+      &quot;leftBottom&quot;: {
+      &quot;x&quot;: -180,
+      &quot;y&quot;: -90
+      },
+      &quot;right&quot;: 180,
+      &quot;rightTop&quot;: {
+      &quot;x&quot;: 180,
+      &quot;y&quot;: 83.62359619140626
+      },
+      &quot;top&quot;: 83.62359619140626
+      },
+      &quot;dataSourceName&quot;: &quot;World&quot;,
+      &quot;description&quot;: null,
+      &quot;encodeType&quot;: null,
+      &quot;isReadOnly&quot;: false,
+      &quot;name&quot;: &quot;Countries&quot;,
+      &quot;prjCoordSys&quot;: null,
+      &quot;tableName&quot;: null,
+      &quot;type&quot;: &quot;REGION&quot;
+      },
+      &quot;description&quot;: &quot;&quot;,
+      &quot;displayFilter&quot;: &quot;&quot;,
+      &quot;joinItems&quot;: null,
+      &quot;maxScale&quot;: 0,
+      &quot;minScale&quot;: 0,
+      &quot;minVisibleGeometrySize&quot;: 0.4,
+      &quot;name&quot;: &quot;Countries@World&quot;,
+      &quot;opaqueRate&quot;: 100,
+      &quot;queryable&quot;: true,
+      &quot;representationField&quot;: &quot;&quot;,
+      &quot;style&quot;: {
+      &quot;fillBackColor&quot;: {
+      &quot;blue&quot;: 255,
+      &quot;green&quot;: 255,
+      &quot;red&quot;: 255
+      },
+      &quot;fillBackOpaque&quot;: true,
+      &quot;fillForeColor&quot;: {
+      &quot;blue&quot;: 233,
+      &quot;green&quot;: 239,
+      &quot;red&quot;: 242
+      },
+      &quot;fillGradientAngle&quot;: 0,
+      &quot;fillGradientMode&quot;: &quot;NONE&quot;,
+      &quot;fillGradientOffsetRatioX&quot;: 0,
+      &quot;fillGradientOffsetRatioY&quot;: 0,
+      &quot;fillOpaqueRate&quot;: 100,
+      &quot;fillSymbolID&quot;: 0,
+      &quot;lineColor&quot;: {
+      &quot;blue&quot;: 128,
+      &quot;green&quot;: 128,
+      &quot;red&quot;: 128
+      },
+      &quot;lineSymbolID&quot;: 0,
+      &quot;lineWidth&quot;: 0.1,
+      &quot;markerAngle&quot;: 0,
+      &quot;markerSize&quot;: 2.4,
+      &quot;markerSymbolID&quot;: 0
+      },
+      &quot;subLayers&quot;: {},
+      &quot;symbolScalable&quot;: false,
+      &quot;symbolScale&quot;: 0,
+      &quot;type&quot;: &quot;UGC&quot;,
+      &quot;ugcLayerType&quot;: &quot;VECTOR&quot;,
+      &quot;visible&quot;: true
+      },
+      {
+      &quot;bounds&quot;: {
+      &quot;bottom&quot;: -90,
+      &quot;left&quot;: -180,
+      &quot;leftBottom&quot;: {
+      &quot;x&quot;: -180,
+      &quot;y&quot;: -90
+      },
+      &quot;right&quot;: 180,
+      &quot;rightTop&quot;: {
+      &quot;x&quot;: 180,
+      &quot;y&quot;: 90
+      },
+      &quot;top&quot;: 90
+      },
+      &quot;caption&quot;: &quot;Ocean@World&quot;,
+      &quot;completeLineSymbolDisplayed&quot;: false,
+      &quot;datasetInfo&quot;: {
+      &quot;bounds&quot;: {
+      &quot;bottom&quot;: -90,
+      &quot;left&quot;: -180,
+      &quot;leftBottom&quot;: {
+      &quot;x&quot;: -180,
+      &quot;y&quot;: -90
+      },
+      &quot;right&quot;: 180,
+      &quot;rightTop&quot;: {
+      &quot;x&quot;: 180,
+      &quot;y&quot;: 90
+      },
+      &quot;top&quot;: 90
+      },
+      &quot;dataSourceName&quot;: &quot;World&quot;,
+      &quot;description&quot;: null,
+      &quot;encodeType&quot;: null,
+      &quot;isReadOnly&quot;: false,
+      &quot;name&quot;: &quot;Ocean&quot;,
+      &quot;prjCoordSys&quot;: null,
+      &quot;tableName&quot;: null,
+      &quot;type&quot;: &quot;REGION&quot;
+      },
+      &quot;description&quot;: &quot;&quot;,
+      &quot;displayFilter&quot;: &quot;&quot;,
+      &quot;joinItems&quot;: null,
+      &quot;maxScale&quot;: 0,
+      &quot;minScale&quot;: 0,
+      &quot;minVisibleGeometrySize&quot;: 0.4,
+      &quot;name&quot;: &quot;Ocean@World&quot;,
+      &quot;opaqueRate&quot;: 100,
+      &quot;queryable&quot;: true,
+      &quot;representationField&quot;: &quot;&quot;,
+      &quot;style&quot;: {
+      &quot;fillBackColor&quot;: {
+      &quot;blue&quot;: 255,
+      &quot;green&quot;: 255,
+      &quot;red&quot;: 255
+      },
+      &quot;fillBackOpaque&quot;: true,
+      &quot;fillForeColor&quot;: {
+      &quot;blue&quot;: 204,
+      &quot;green&quot;: 179,
+      &quot;red&quot;: 153
+      },
+      &quot;fillGradientAngle&quot;: 0,
+      &quot;fillGradientMode&quot;: &quot;NONE&quot;,
+      &quot;fillGradientOffsetRatioX&quot;: 0,
+      &quot;fillGradientOffsetRatioY&quot;: 0,
+      &quot;fillOpaqueRate&quot;: 100,
+      &quot;fillSymbolID&quot;: 0,
+      &quot;lineColor&quot;: {
+      &quot;blue&quot;: 48,
+      &quot;green&quot;: 48,
+      &quot;red&quot;: 48
+      },
+      &quot;lineSymbolID&quot;: 5,
+      &quot;lineWidth&quot;: 0.1,
+      &quot;markerAngle&quot;: 0,
+      &quot;markerSize&quot;: 2.4,
+      &quot;markerSymbolID&quot;: 0
+      },
+      &quot;subLayers&quot;: {},
+      &quot;symbolScalable&quot;: false,
+      &quot;symbolScale&quot;: 0,
+      &quot;type&quot;: &quot;UGC&quot;,
+      &quot;ugcLayerType&quot;: &quot;VECTOR&quot;,
+      &quot;visible&quot;: true
+      }]
+      },
+      &quot;symbolScalable&quot;: false,
+      &quot;symbolScale&quot;: 0,
+      &quot;type&quot;: &quot;UGC&quot;,
+      &quot;visible&quot;: true
+      }]
+    </textarea></p>
+  <h3><a id="PUT_请求"></a>PUT 请求</h3>
+  <p class="myNormal">修改图层信息。需要在请求体中包含 name 属性以及变化字段修改后的描述信息。</p>
+  <h4>请求参数</h4>
+  <p class="myNormal">为修改图层信息资源，PUT 请求体中必须包含一些参数，如果参数合法，SuperMap iServer 服务器会根据这些参数修改 layer 资源。</p>
+  <p class="myNormal">这里，PUT 请求体中的参数是修改后的 layers 的描述或其子资源，即单个图层 layer 资源的描述。layers 资源的表述结构请参见：<a class="contentpagehyperlink" href="#GET 请求">GET 请求</a>的响应结构，layer 资源的表述结构请参见<a class="contentpagehyperlink" href="layer/layer.htm#GET 请求"> layer 资源的 GET 请求</a>的响应结构。</p>
+  <h4 class="myNormal">响应结构</h4>
+  <p class="myNormal">对 tempLayer 资源执行 PUT 请求，返回的操作结果表述的结构如下（表述在响应消息的实体主体里）：  </p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>字段</td>
+        <td>类型</td>
+        <td>说明</td>
+      </tr>
+      <tr class="t2Row">
+        <td>succeed</td>
+        <td>boolean</td>
+        <td>修改图层是否成功。如果不成功会有错误信息。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>error</td>
+        <td>HttpError</td>
+        <td>出错信息，如果修改成功，则没有本字段。</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 class="myNormal">示例</h4>
+  <p class="myNormal">对示例 layers 资源：http://supermapiserver:8090/iserver/services/map-world/rest/maps/世界地图/layers.rjson，执行 PUT 请求，修改 continent_T@World 图层信息，修改 lineColor 的属性值，请求体中的参数如下：</p>
+  <p class="myNormal"><textarea cols="12" id="txtComments1" rows="34" style="overflow: scroll; 
+								 width: 100%;">{
+      &quot;bounds&quot;: {
+      &quot;bottom&quot;: -84.34257921576281,
+      &quot;left&quot;: -150.51082428252954,
+      &quot;leftBottom&quot;: {
+      &quot;x&quot;: -150.51082428252954,
+      &quot;y&quot;: -84.34257921576281
+      },
+      &quot;right&quot;: 154.27853258850513,
+      &quot;rightTop&quot;: {
+      &quot;x&quot;: 154.27853258850513,
+      &quot;y&quot;: 65.22103117946571
+      },
+      &quot;top&quot;: 65.22103117946571
+      },
+      &quot;caption&quot;: &quot;continent_T@World&quot;,
+      &quot;completeLineSymbolDisplayed&quot;: false,
+      &quot;datasetInfo&quot;: {
+      &quot;bounds&quot;: {
+      &quot;bottom&quot;: -84.34257921576281,
+      &quot;left&quot;: -150.51082428252954,
+      &quot;leftBottom&quot;: {
+      &quot;x&quot;: -150.51082428252954,
+      &quot;y&quot;: -84.34257921576281
+      },
+      &quot;right&quot;: 154.27853258850513,
+      &quot;rightTop&quot;: {
+      &quot;x&quot;: 154.27853258850513,
+      &quot;y&quot;: 65.22103117946571
+      },
+      &quot;top&quot;: 65.22103117946571
+      },
+      &quot;charset&quot;: null,
+      &quot;dataSourceName&quot;: &quot;World&quot;,
+      &quot;datasourceConnectionInfo&quot;: null,
+      &quot;description&quot;: null,
+      &quot;encodeType&quot;: null,
+      &quot;isFileCache&quot;: false,
+      &quot;isReadOnly&quot;: false,
+      &quot;name&quot;: &quot;continent_T&quot;,
+      &quot;prjCoordSys&quot;: null,
+      &quot;recordCount&quot;: 0,
+      &quot;tableName&quot;: null,
+      &quot;type&quot;: &quot;TEXT&quot;
+      },
+      &quot;description&quot;: &quot;&quot;,
+      &quot;displayFilter&quot;: null,
+      &quot;displayOrderBy&quot;: null,
+      &quot;fieldValuesDisplayFilter&quot;: {
+      &quot;fieldName&quot;: &quot;&quot;,
+      &quot;fieldValuesDisplayMode&quot;: &quot;DISABLE&quot;,
+      &quot;values&quot;: []
+      },
+      &quot;joinItems&quot;: null,
+      &quot;maxScale&quot;: 1.350238165824801E-8,
+      &quot;minScale&quot;: 3.3755954145620026E-9,
+      &quot;minVisibleGeometrySize&quot;: 0.4,
+      &quot;name&quot;: &quot;continent_T@World&quot;,
+      &quot;opaqueRate&quot;: 100,
+      &quot;queryable&quot;: false,
+      &quot;representationField&quot;: &quot;&quot;,
+      &quot;style&quot;: {
+      &quot;fillBackColor&quot;: {
+      &quot;alpha&quot;: 255,
+      &quot;blue&quot;: 255,
+      &quot;green&quot;: 255,
+      &quot;red&quot;: 255
+      },
+      &quot;fillBackOpaque&quot;: true,
+      &quot;fillForeColor&quot;: {
+      &quot;alpha&quot;: 255,
+      &quot;blue&quot;: 240,
+      &quot;green&quot;: 255,
+      &quot;red&quot;: 208
+      },
+      &quot;fillGradientAngle&quot;: 0,
+      &quot;fillGradientMode&quot;: &quot;NONE&quot;,
+      &quot;fillGradientOffsetRatioX&quot;: 0,
+      &quot;fillGradientOffsetRatioY&quot;: 0,
+      &quot;fillOpaqueRate&quot;: 100,
+      &quot;fillSymbolID&quot;: 0,
+      &quot;lineColor&quot;: {
+      &quot;alpha&quot;: 255,
+      &quot;blue&quot;: 0,
+      &quot;green&quot;: 0,
+      &quot;red&quot;: 255
+      },
+      &quot;lineSymbolID&quot;: 0,
+      &quot;lineWidth&quot;: 0.1,
+      &quot;markerAngle&quot;: 0,
+      &quot;markerHeight&quot;: 0,
+      &quot;markerSize&quot;: 2.4,
+      &quot;markerSymbolID&quot;: 0,
+      &quot;markerWidth&quot;: 0
+      },
+      &quot;subLayers&quot;: {},
+      &quot;symbolScalable&quot;: false,
+      &quot;symbolScale&quot;: 0,
+      &quot;type&quot;: &quot;UGC&quot;,
+      &quot;ugcLayerType&quot;: &quot;VECTOR&quot;,
+      &quot;visible&quot;: false
+      }</textarea></p>
+  <p class="myNormal"> </p>
+  <h3><a id="HEAD 请求"></a>HEAD 请求</h3>
+  <p class="myNormal">返回跟 GET 请求一样的 HTTP 响应头，但是没有响应实体。可以在不必传输整个响应内容的情况下，获取包含在响应消息头中的元数据信息。元数据信息包括媒体类型，字符编码，压缩编码，实体内容长度等。</p>
+  <p class="myNormal">HEAD 请求可以用来判断 layers 资源是否存在，或者客户端是否有权限访问 layers 资源。通过对加.&lt;format&gt;的 URI 执行 HEAD 请求，还可以快速判断 layers 资源是否支持&lt;format&gt;格式的表述。</p>
+  <h2>请参见</h2>
+  <ul class="referenceList">
+    <li class="referenceList"><a class="contentpagehyperlink" href="../map.htm">map</a>，<a class="contentpagehyperlink" href="layer/layer.htm">layer</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../../clientBuildREST/ConstructRESTRequest.htm">客户端构建 REST 请求</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../../StatusCodeDescription.htm">状态码列表及说明</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../../SuperMap_iServer_REST_API_OutputFormat.htm">表述格式介绍</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../../resource_hierarchy.htm">GIS 服务资源层次结构</a></li>
+  </ul>
+  <p> </p>
+
+</div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../../../../../../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../../../../../../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../../../../../../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../../../../../../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../../../../../../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../../../../../../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../../../../../../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../../../../../.."
+    gCommonRootRelPath = "../../../../../.."
+    gTopicId = "8.2.2.6.10.1.8"
+  
+//]]></script>
+
+  <script src="../../../../../../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../../../../../../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../../../../../../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../../../../../../whxdata/layoutconfig.js"></script>
+  <script src="../../../../../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

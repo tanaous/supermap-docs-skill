@@ -1,0 +1,924 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../iserver-icon.png"/>
+    
+  <script data-relpath=".." src="../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <meta name="template" content="../assets/layouts/SuperMapiServerMain.htt"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Language" content="zh-CN"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>iServer 配置文件说明</title>
+  <link rel="StyleSheet" href="../assets/css/SuperMapHelp.css" type="text/css"/>
+  <script type="text/javascript" src="../assets/js/shCore.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushBash.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushCpp.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushCSharp.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushCss.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushDelphi.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushDiff.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushGroovy.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushJava.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushJScript.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushPhp.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushPlain.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushPython.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushRuby.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushScala.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushSql.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushVb.js"></script>
+  <script type="text/javascript" src="../assets/js/shBrushXml.js"></script>
+  <script type="text/javascript" src="../assets/js/ConfigiServer6R.js"></script>
+  <meta name="rh-index-keywords" content="Properties__元素"/>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../assets/css/homeButtom.css"/>
+  <script src="../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <p>SuperMap iServer 的主要配置信息位于 WEB-INF（【SuperMap iServer 安装目录】\webapps\iserver\WEB-INF）文件夹下，关于目录说明请参考：<a class="contentpagehyperlink" href="../Install_Uninstall/Catalog/Catalog_Introduction.htm">安装后目录说明</a>。</p>
+  <p class="myNormal"> </p>
+  <h2>配置文件简介</h2>
+  <p class="myNormal">WEB-INF 文件夹下存储了服务器及其所提供服务的配置信息，文件夹结构如下：</p>
+  <p class="ImageP"><img alt="" border="0" height="360" src="../assets/images/Appendix/config.png" style="border: none;" width="356"/></p>
+  <p class="myNormal">其中：</p>
+  <ul style="list-style: disc;">
+    <li class="SymbolList1">backup 文件夹：存放服务器配置信息的备份，详见<a class="contentpagehyperlink" href="../Server_Service_Management/backupAndRestore.htm">备份与恢复服务器配置</a>。</li>
+    <li class="SymbolList1">config 文件夹：配置文件，包括适用于 Bing Maps、天地图、云服务等的缓存方案。</li>
+    <li class="SymbolList1">iserver-datacatalog-manifests：存放数据目录服务下数据的配置信息。</li>
+    <li class="SymbolList1">lib 文件夹：存放 SuperMap iServer 运行时所依赖的 jar 文件。</li>
+    <li class="SymbolList1">worker-lib：存放启动多进程 Worker 节点时所需的 servlet-api.jar。</li>
+  </ul>
+  <p class="myNormal">各个配置文件的主要内容如下表所示：</p>
+  <p class="myNormal" style="text-align: center;">配置文件的内容</p>
+  <table align="center" cellspacing="0" class="iServerTable" style="width: 746px;" width="60%">
+    <colgroup>
+      <col style="width: 251px;"/>
+      <col style="width: 391px;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td style="">文件名</td>
+        <td>描述</td>
+      </tr>
+      <tr class="t2Row">
+        <td style="">iserver-datacatalog.xml</td>
+        <td>数据目录服务配置文件，包含数据目录服务中的数据存储的配置以及其他的一些配置信息。</td>
+      </tr>
+      <tr class="t1Row">
+        <td style="">iserver-log4j.properties</td>
+        <td>日志的配置文件。</td>
+      </tr>
+      <tr class="t2Row">
+        <td style="">iserver-rest-appContext.xml</td>
+        <td>REST 应用配置文件，其中定义了表述类型与 URI 后缀的映射关系。</td>
+      </tr>
+      <tr class="t1Row">
+        <td style="">iserver-rest-resources.xml</td>
+        <td>扩展资源的资源配置文件，用户可在其中指定扩展资源的名称、URI、类型、表述生成器名称、参数解析器名称等等。</td>
+      </tr>
+      <tr class="t2Row">
+        <td style="">iserver-services-interfaces.xml</td>
+        <td>服务接口实例，包含 iserver-services-samples.xml 和 iserver-services-user.xml 中所用到的接口实例，如：rest、restjsr、wms111、wms130、wfs100、wmts100、wmts-china、wcs111、wcs112、handler、gpserver。</td>
+      </tr>
+      <tr class="t1Row">
+        <td style="">iserver-services-samples.xml</td>
+        <td>产品提供的示例服务的配置信息。</td>
+      </tr>
+      <tr class="t2Row">
+        <td style="">iserver-services.xml</td>
+        <td>用户发布的服务的配置信息。此文件命名时只要以“iserver-services”开头，服务器即可识别为服务配置文件，且支持多个用户自定义服务配置文件，如 iserver-services-1.xml，iserver-services-2.xml。</td>
+      </tr>
+      <tr class="t1Row">
+        <td style="">iserver-services-buildin.xml</td>
+        <td>iServer内置服务（如Geometry服务、map服务）的配置信息。</td>
+      </tr>
+      <tr class="t2Row">
+        <td style="">iserver-system.xml</td>
+        <td>SuperMap iServer 系统级配置，包括元信息、集群、kml 样式配置等。</td>
+      </tr>
+      <tr class="t1Row">
+        <td style="">web.xml</td>
+        <td>SuperMap iServer 的初始化配置文件，定义了功能与类的映射关系。</td>
+      </tr>
+      <tr class="t2Row">
+        <td style="">iserver-security.db</td>
+        <td>用于存储用户、角色等信息的数据库。</td>
+      </tr>
+      <tr class="t1Row">
+        <td style="">iserver-services.db</td>
+        <td>用户存储服务授权信息的数据库。</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><a name="服务配置文件结构"></a>服务配置文件</h2>
+  <p class="myNormal">SuperMap iServer 的服务均由服务提供者、服务组件、服务接口三个层次组成，所有服务的配置信息存储于服务配置文件中，主要是用于提供接口实例的服务接口配置文件（iserver-services-interfaces.xml）、示例服务的配置文件（iserver-services-samples.xml）以及用户发布服务的配置文件（iserver-services.xml）。其中后两者结构类似，此不赘述。</p>
+  <p class="myNormal">通过服务配置文件，您可以：</p>
+  <ul>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../Server_Service_Management/GISService_Config/Service_Config/Config_Provider/ConfigProviderXML/provider_setting_xml.htm">通过 XML 文件配置服务提供者</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../Server_Service_Management/GISService_Config/Service_Config/Config_Provider/providerset_setting_xml.htm">通过 XML 文件配置服务提供者集合</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../Server_Service_Management/GISService_Config/Service_Config/Config_Component/component_config.htm">通过 XML 文件配置服务组件</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../Server_Service_Management/GISService_Config/Service_Config/Config_Component/componentset_setting_xml.htm">通过 XML 文件配置服务组件集合</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../Server_Service_Management/GISService_Config/Service_Config/Config_Interface/interface_config.htm">通过 XML 文件配置服务接口</a></li>
+  </ul>
+  <h3>服务接口配置文件</h3>
+  <p class="myNormal">服务接口配置文件 iserver-services-interfaces.xml，包含服务接口实例，根节点为 &lt;application&gt; 元素，包括&lt;interfaces&gt;子节点元素，其中的每一个 interface 元素用于配置一个具体的服务接口，包含以下属性：</p>
+  <ul style="list-style: circle;">
+    <li class="SymbolList2">name 属性，服务接口的名称。</li>
+    <li class="SymbolList2">class 属性，服务接口的实现类。</li>
+    <li class="SymbolList2">config 元素，服务接口的配置信息。</li>
+  </ul>
+  <h3>示范服务实例配置文件</h3>
+  <p class="myNormal">示范服务实例配置文件 iserver-services-samples.xml，包含产品提供的示范服务实例的配置信息，根节点为 &lt;application&gt; 元素，包括以下子节点元素：</p>
+  <h4>1. &lt;components&gt;</h4>
+  <p class="myNormal">其中的每一个 component 元素用于配置一个具体的服务组件。</p>
+  <ul style="list-style: circle;">
+    <li class="SymbolList2">name 属性，服务组件的名称。</li>
+    <li class="SymbolList2">alias 属性，服务组件的别名，可设置为中文，如“京津土地利用”。</li>
+    <li class="SymbolList2">class 属性，服务组件的实现类。</li>
+    <li class="SymbolList2">interfaceNames 属性，服务组件绑定的服务接口。</li>
+    <li class="SymbolList2">providers 属性，服务组件所使用的服务提供者。</li>
+    <li class="SymbolList2">config 元素，服务组件的配置信息。它包含 class、outputPath、outputSite、workspacePath 等属性，具体请参见<a class="contentpagehyperlink" href="../Server_Service_Management/GISService_Config/Service_Config/Config_Component/component_config.htm">通过 XML 文件配置服务组件</a>。当不包含 outputPath 和 outputSite 属性时，系统会采用&lt;properties&gt;元素中的相应值。数据服务组件中还包含 editable 属性，它用来设置数据服务组件是否可编辑。当 editable 为 true 时可编辑。</li>
+  </ul>
+  <p class="myNormal" style="font-weight: bold;"><a name="注_用户发布服务的配置文件_iserver-services.xml_的_component_元素除以上属性外还支持_initPriority_属性_该属性代表_GIS_服务启动的优先级_优先级数值越高启动_iServer_时_GIS_服务启动顺序越靠前_"></a>注：用户发布服务的配置文件（iserver-services.xml）的 component 元素除以上属性外还支持 initPriority 属性，该属性代表 GIS 服务启动的优先级，优先级数值越高启动 iServer 时 GIS 服务启动顺序越靠前。</p>
+  <h4>2. &lt;providers&gt;</h4>
+  <p class="myNormal">其中的每一个 provider 元素用于配置一个具体的服务提供者。</p>
+  <ul style="list-style: circle;">
+    <li class="SymbolList2">name 属性，服务提供者的名称。</li>
+    <li class="SymbolList2">class 属性，服务提供者的实现类。</li>
+    <li class="SymbolList2">inner-providerNames 元素，当使用集群服务提供者或者聚合服务提供者时，分别用来设置集群服务提供者所集群的服务提供者，和聚合服务提供者所聚合的服务提供者。</li>
+    <li class="SymbolList2">config 元素，服务提供者的配置信息，包括对工作空间的设置。它包含 class、outputPath、outputSite 等属性，具体请参见<a class="contentpagehyperlink" href="../Server_Service_Management/GISService_Config/Service_Config/Config_Provider/ConfigProviderXML/provider_setting_xml.htm">通过 XML 文件配置服务提供者</a>。当不包含 outputPath 和 outputSite 属性时，系统会采用&lt;properties&gt;元素中的相应值。</li>
+  </ul>
+  <h4>3. &lt;componentSets&gt;</h4>
+  <p class="myNormal">其中的每一个 componentSet 元素用于配置一个服务组件集合，每个服务组件集合可以引用多个服务组件。</p>
+  <h4>4. &lt;providerSets&gt;</h4>
+  <p class="myNormal">其中的每一个 providerSet 元素用于配置一个服务提供者集合，每个服务提供者集合可以引用多个服务提供者。</p>
+  <h3>内置服务的配置文件</h3>
+  <p class="myNormal">内置服务配置文件 iserver-services-buildin.xml，包含 iServer 提供的几何服务的配置信息，根节点为 &lt;application&gt; 元素，包括以下子节点元素：</p>
+  <h4 class="myNormal">1. &lt;componentSets&gt;</h4>
+  <p class="myNormal">其中的每一个 componentSet 元素用于配置一个服务组件集合，每个服务组件集合可以引用多个服务组件。</p>
+  <h4 class="myNormal">2. &lt;providerSets&gt;</h4>
+  <p class="myNormal">其中的每一个 providerSet 元素用于配置一个服务提供者集合，每个服务提供者集合可以引用多个服务提供者。</p>
+  <h4 class="myNormal">3. &lt;components&gt;</h4>
+  <p class="myNormal">其中的每一个 component 元素用于配置一个具体的服务组件。包含：</p>
+  <ul style="list-style: circle;">
+    <li class="SymbolList2">config 元素，服务组件的配置信息。它包含 class、enabled、instanceCount、interfaceNames 等属性，具体请参见<a class="contentpagehyperlink" href="../Server_Service_Management/GISService_Config/Service_Config/Config_Component/component_config.htm">通过 XML 文件配置服务组件</a>。</li>
+  </ul>
+  <h4>4. &lt;providers&gt;</h4>
+  <p class="myNormal">其中的每一个 provider 元素用于配置一个具体的服务提供者。</p>
+  <ul style="list-style: circle;">
+    <li class="SymbolList2">config 元素，服务提供者的配置信息。它包含 class、enabled 等属性，具体请参见<a class="contentpagehyperlink" href="../Server_Service_Management/GISService_Config/Service_Config/Config_Provider/ConfigProviderXML/provider_setting_xml.htm">通过 XML 文件配置服务提供者</a>。</li>
+  </ul>
+  <h2><a name="系统配置文件结构"></a>系统配置文件</h2>
+  <p class="myNormal">iserver-system.xml 包含了系统的配置信息，根节点为 &lt;server&gt; 元素，&lt;server&gt;节点目前主要包含 &lt;properties&gt; 、&lt;management&gt;、&lt;hosts&gt;、&lt;clustering&gt;、&lt;harLog&gt;、&lt;queryFilter&gt; 等子节点元素。</p>
+  <h4><a name="1.__properties__元素"></a></h4>
+  <h4>1. &lt;properties&gt;元素</h4>
+  <p class="myNormal">用于设置 SuperMap iServer 配置系统中全局性质的属性信息，如服务的默认输出路径和访问站点、环境检查与否的设置：</p>
+  <ul style="list-style: circle;">
+    <li class="SymbolList2">&lt;outputPath&gt;：缓存图片的输出路径，其值为../webapps/iserver/output。当未给具体的服务指定缓存图片输出路径时，SuperMap iServer 会采用该默认值。</li>
+    <li class="SymbolList2"><a name="outputSite"></a>&lt;outputSite&gt;：地图图片的发布站点，即访问缓存图片的根目录 URI，其值默认为 http://{ip}:{port}/iserver/output/。当未给具体的服务指定图片发布站点时，SuperMap iServer 会采用该默认值。如开启了 HTTPS 加密通信则需要将该值改为  https://{ip}:{port}/iserver/output/。</li>
+    <li class="SymbolList2">&lt;realspaceSecurityEnabled&gt;：三维数据安全控制是否启用，默认为 true。</li>
+    <li class="SymbolList2">&lt;realspaceCacheAccessKey&gt;：三维数据密码。</li>
+    <li class="SymbolList2">&lt;encryptionAlgorithm&gt;：集群相关敏感信息（包括集群安全密钥 ClusterSecurity、集群 token ClusterSetting、集群报告器 token ReporterSetting）、三维数据密码、邮件通知功能中的敏感信息加密算法的配置节点。可选值为 AES 和 SM4，默认值为 AES，分别指使用 AES/GCM/NoPadding 算法进行加密和使用 SM4/CTR/PKCS7Padding 算法进行加密。若不配置或配置为其他值，则默认使用 DES 算法进行加密。</li>
+    <li class="SymbolList2">&lt;envCheckEnabled&gt;：设置是否进行环境检查，默认为 true。</li>
+    <li class="SymbolList2">&lt;restartWhenCrash&gt;：服务非正常关闭后是否自动重启服务，默认为 true。</li>
+    <li class="SymbolList2"><a name="checkDatasourceConnectionInterval"></a>&lt;checkDatasourceConnectionInterval&gt;：iServer 检查数据库型工作空间是否改变、数据库型数据源是否断开或作为服务发布数据源的 PostGIS 服务中数据集是否改变的时间间隔，单位为秒，小于或等于0时表示从不检查，默认为30秒。建议您将此参数设置为大于等于30的数值，否则检查将过于频繁并可能导致数据查询发生卡住的现象。</li>
+    <li class="SymbolList2">&lt;refreshDatasource&gt;：设置是否开启刷新数据库型数据源（包括工作空间中的数据库数据源和作为服务发布数据源的 PostGIS 服务），默认为false，即不开启。需要搭配 checkDatasourceConnectionInterval 使用，也就是当 checkDatasourceConnectionInterval 参数值大于 0 且 refreshDatasource 为 true 时生效。</li>
+    <li class="SymbolList2">&lt;{iServerData1}&gt;、&lt;{iServerDataPath1}&gt;：代表工作空间文件或者路径的变量。详见<a class="contentpagehyperlink" href="../Server_Service_Management/GISService_Config/Service_Config/Config_Provider/ConfigProviderXML/provider_setting_xml.htm#workspacepath">预设本地工作空间路径</a>。</li>
+    <li class="SymbolList2">&lt;enableSQLFilter&gt;：是否开启 SQL 注入检测，默认为 false，data 资源下的 featureResults 子资源的 SQL 查询、map 资源下的 queryResults 子资源的所有查询都支持该参数。</li>
+    <li class="SymbolList2"><a name="_deniedFiles__过滤上传_zip_文件中数据格式"></a>&lt;deniedFiles&gt;：上传 zip 文件时禁止的内部文件格式，默认禁止的内部文件类型为：&lt;deniedFiles&gt;.jsp,.sh,.exe,.bat,.html,.js,.war,.class,.jar,.shtml,.htm,.php,.aspx,.asp,.asa,.jspx,.cgi&lt;/deniedFiles&gt;。修改该配置需重启 iServer 方能生效。（已过时）</li>
+    <li class="SymbolList2">&lt;checkServiceStorageConnectionInterval&gt;：iServer 检查存储服务配置信息的数据库是否断开的时间间隔，单位为秒，&lt;=0时表示从不检查；该值大于0小于20时，按20s的时间间隔进行检查。</li>
+  </ul>
+  <p class="myNormal">其中，全局属性 outputPath、outputSite 也可以通过服务管理器 WebManager 来设置，请参考<a class="contentpagehyperlink" href="../Server_Service_Management/properties.htm">全局属性设置</a>。</p>
+  <ul>
+    <li class="SymbolList2">&lt;encryptionAlgorithm&gt;：配置使用 AES/GCM/NoPadding 进行加密，其值为 AES 。不配置或配置其他项，则默认使用 DESede 加密。</li>
+    <li class="SymbolList2">&lt;maxFeatureWriteThreadCount&gt;：配置数据服务提供者的最大并发访问的线程数(可选)，默认为 1，即最大并发访问的线程数为 1 个。您可以根据服务器的可用资源情况对该值进行调整。请注意，此参数应小于被使用数据库的最大连接数。注意，当 iserver-system.xml 及服务提供者中均配置了该参数时，将优先使用提供者中的配置。</li>
+    <li class="SymbolList2">&lt;writePermitTimeout&gt;：配置数据服务提供者的等待获取写许可的超时时间(可选)，单位为秒，默认为 120，即等待获取写许可的时间大于 120 秒即为超时。 注意，当 iserver-system.xml 及服务提供者中均配置了该参数时，将优先使用提供者中的配置。</li>
+    <li class="SymbolList2">&lt;poolSize&gt;：配置地图服务提供者的线程池大小 (可选)，默认为 1。</li>
+    <li class="SymbolList2">&lt;maxAttachmentSize&gt;：配置数据服务中修改要素时上传的附件文件的最大限制，单位为M，默认值为100，取值区间为正整数。</li>
+    <li class="SymbolList2">&lt;tokenName&gt;：配置 iServer 密钥的名称，系统默认名称为 token，您可以根据项目需要配置为其他名称，配置完成后，需要重启 iServer 后生效。关于 token 的使用请参考：<a class="contentpagehyperlink" href="../Subject_introduce/Security/config_role/token/Token.htm">基于 Token 的认证</a>。</li>
+    <li class="SymbolList2">&lt;forceStop&gt;：开启资源定时回收后，是否强制停止 iServer，该参数为 true 表示会强制停止 iServer，默认为 false。</li>
+    <li class="SymbolList2">&lt;fastjson.autotype.allowPrefixs&gt;：使用自定义扩展类（类型名称前缀不为 com.supermap）且无法正确序列化 alibaba fastjson 时，可自定义添加 autotype 的类型名称前缀，支持设置多个前缀，用 ”;“分隔，如 com.huawei;com.apache。</li>
+    <li class="SymbolList2">&lt;returnSmgeometryField&gt;：用于控制响应体字段中是否包含 smgeometry 字段。默认为 false，即不返回该字段。受影响的资源响应体包括：featureResults 资源 POST 请求返回的查询结果 features 中的 fieldNames、fieldValues；feature 资源 GET 请求返回的结果 features 中的 fieldNames、fieldValues；datasetBufferResult 资源 GET 请求返回的结果 recordset 中的 fieldNames、fieldValues。</li>
+    <li class="SymbolList2">&lt;fileManagerWorkDir&gt;：文件管理目录，iServer、iEdge 系统可浏览可上传的目录，未设置时不限文件目录范围，默认为空。配置后，文件选择器只能访问该路径的子目录，并且返回的值是以占位符开头的路径，如 ${fileManagerWorkDir}/sample/data/China/China100.smwu ；仅能上传到该目录下，路径参数使用相对路径时，以 fileManagerWorkDir 为根目录所指定的目录下创建。<span style="font-weight: bold;">注意：1. 当通过环境变量方式配置了该参数时，无法再通过配置文件修改其值。2. 使用 Windows 版本时，通过在 startup.bat 中设置 FILEMANAGERWORKDIR 环境变量含中文时，若出现乱码情况，可在其前后加上 chcp 65001、chcp 936，详见 </span><a class="contentpagehyperlink" href="../Install_Uninstall/Windows/postInstall.htm">自定义配置文件管理根目录</a> <span style="font-weight: bold;">。3、更改根目录配置将会影响已经发布的服务正常使用，根据不同情况需要进行以下操作：若已经设置过根目录，更改设置需要手动将原目录文件迁移到新目录中，且保留原文件目录树结构；若要取消根目录设置，需手动替换配置文件中的占位符 ${fileManagerWorkDir} 为实际路径。4、此项修改需要手动重启 iServer、iEdge 才能生效。5、在初始化之后，iEdge 中只能通过修改配置文件中此设置进行修改。</span></li>
+    <li class="SymbolList2">&lt;releaseIdleDatasetIntervalMinutes&gt;：配置空闲数据集自动释放功能，大于0即为有效值，表示启用该功能，单位：分钟。默认未启用该功能。</li>
+    <li class="SymbolList2">&lt;forceShutdownSeconds&gt;：强制关闭进程功能，单位为秒。当该项值为0或没有该配置项时，表示不启用此功能；当该值大于0时，表示启用该功能，且该值为等待强制关闭进程的时间，启用后，执行shutdown.bat/.sh将会强制关闭与 SuperMap iServer 相关的所有进程。SuperMap iServer常规包默认开启此功能，默认值为30，war包默认无该配置项，即关闭此功能。</li>
+    <li class="SymbolList2" style=""><span style="font-weight: normal;"><span style="font-weight: normal;"><a id="disableFieldNameToUpperCase"></a></span>&lt;disableFieldNameToUpperCase</span>&gt;：是否禁用数据服务的字段名转化为大写，默认为 false，即不禁用。<span style="font-weight: bold;">注意：当通过配置文件全局设置值为true时，通过服务提供者层设置本地数据服务提供者值为false将不生效。<span style="font-weight: bold;">当通过配置文件全局设置值为false时，<span style="font-weight: bold;">通过服务提供者层设置值为true时可生效。</span></span></span></li>
+    <li class="SymbolList2" style=""><a id="客户端会话过期时间"></a>&lt;license.client.session.timeout&gt;：客户端访问会话过期时间，默认值为 5，单位为分钟。当激活 iServer 标准版（限3客户端）和标准版（限10客户端）许可时，配置生效，若超过此时长不访问 iServer，客户端将被强制下线。</li>
+  </ul>
+  <h4>2. &lt;uploadFileSetting&gt;元素</h4>
+  <p class="myNormal">用于统一设置 SuperMap iServer 文件上传相关配置，如上传文件最大体积、解压后最大体积、重名文件是否覆盖、存放目录等：</p>
+  <ul>
+    <li class="SymbolList2">&lt;uploadSize&gt;：上传文件最大体积，默认2048MB，支持正整数，单位Mb；不设置该值视为无限制。</li>
+    <li class="SymbolList2">&lt;uploadUnzipSize&gt;：上传文件解压后体积最大值，默认为5120MB，支持正整数，单位Mb；不设置该值视为无限制。</li>
+    <li class="SymbolList2">&lt;uploadOverwrite&gt;：上传重名文件是否覆盖，默认为否。</li>
+    <li class="SymbolList2"><a name="uploadDir_上传文件的存放目录"></a>&lt;uploadDir&gt;：上传文件的存放目录。配置后，文件选择器只能访问该路径的子目录，并且返回的值是以占位符开头的路径，如 ${uploadDir}\sample\data\China\China100.smwu 。优先级：fileManagerWorkDir &gt; uploadDir。（已过时）</li>
+    <li class="SymbolList2">&lt;deniedFiles&gt;：上传zip文件时禁止的内部文件格式，默认禁止的内部文件类型为：&lt;deniedFiles&gt;.jsp,.sh,.exe,.bat,.html,.js,.war,.class,.jar,.shtml,.htm,.php,.aspx,.asp,.asa,.jspx,.cgi&lt;/deniedFiles&gt;。修改该配置需重启 iServer 方能生效。</li>
+  </ul>
+  <h4>3. &lt;management&gt;元素</h4>
+  <p class="myNormal">用于配置 SuperMap iServer 的元数据信息，iServer 的元数据信息含服务组件类型元数据（&lt;component-types&gt;）、服务提供者类型元数据（&lt;provider-types&gt;）和服务接口类型元数据（&lt;interface-types&gt;），以及安全配置（&lt;security&gt;）。</p>
+  <p class="myNormal">安全配置节点示例如下所示：</p>
+  <pre class="brush:xml">    &lt;security&gt; 
+      &lt;accessControl&gt; 
+        &lt;SecuritySetting&gt; 
+          &lt;!-- 验证码配置，默认为关闭 --&gt;
+          &lt;captchaConfig&gt;
+              &lt;enable&gt;false&lt;/enable&gt;
+              &lt;type&gt;IMAGE_CAPTCHA&lt;/type&gt;
+              &lt;length&gt;4&lt;/length&gt;
+              &lt;expireInSeconds&gt;120&lt;/expireInSeconds&gt;
+          &lt;/captchaConfig&gt;
+          &lt;isSecurityEnabled&gt;true&lt;/isSecurityEnabled&gt;
+          &lt;disableRememberMe&gt;false&lt;/disableRememberMe&gt;
+          &lt;cacheInfoToMemory&gt;true&lt;/cacheInfoToMemory&gt;
+          &lt;tokenKey&gt;4da7ef8f2e734f56ab2ecfae20cce49a&lt;/tokenKey&gt;
+          &lt;PBKDF2Iterations&gt;1000&lt;/PBKDF2Iterations&gt;
+          &lt;!-- 密码防暴力破解设置 --&gt;
+          &lt;passwordProtectedSetting&gt; 
+            &lt;passwordDiffCount&gt;5&lt;/passwordDiffCount&gt;  
+            &lt;userPasswordErrorCounterSetting&gt; 
+              &lt;passwordErrorProtectEnable&gt;false&lt;/passwordErrorProtectEnable&gt;  
+              &lt;lockedTime&gt;1200000&lt;/lockedTime&gt;  
+              &lt;periodLength&gt;600000&lt;/periodLength&gt;  
+              &lt;allowFailCountPerPeriod&gt;5&lt;/allowFailCountPerPeriod&gt; 
+            &lt;/userPasswordErrorCounterSetting&gt; 
+          &lt;/passwordProtectedSetting&gt;
+          &lt;!-- 三段式根密钥配置 --&gt;
+          &lt;rootSecretKeySetting&gt; 
+            &lt;loadModelType&gt;TRIPART&lt;/loadModelType&gt;  
+            &lt;part3&gt;[B@7e31062c&lt;/part3&gt; 
+          &lt;/rootSecretKeySetting&gt; 
+        &lt;/SecuritySetting&gt; 
+      &lt;/accessControl&gt; 
+      &lt;!-- 安全信息存储配置 --&gt;
+      &lt;storage class=&quot;com.supermap.server.config.SQLSecurityInfoStorageSetting&quot;&gt; 
+        &lt;type&gt;MYSQL&lt;/type&gt;  
+        &lt;connInfo&gt; 
+          &lt;username&gt;root&lt;/username&gt;  
+          &lt;password&gt;super123.&lt;/password&gt;  
+          &lt;dbType&gt;MYSQL&lt;/dbType&gt;  
+          &lt;driverClass&gt;com.mysql.jdbc.Driver&lt;/driverClass&gt;  
+          &lt;jdbcUrl&gt;jdbc:mysql://192.168.120.44:3306/supermap?useUnicode=true&amp;characterEncoding=UTF-8&lt;/jdbcUrl&gt;  
+          &lt;maxPoolSize&gt;30&lt;/maxPoolSize&gt;  
+          &lt;initialPoolSize&gt;5&lt;/initialPoolSize&gt;  
+          &lt;minPoolSize&gt;5&lt;/minPoolSize&gt;  
+          &lt;maxIdleTime&gt;0&lt;/maxIdleTime&gt;  
+          &lt;maxWait&gt;3000&lt;/maxWait&gt; 
+        &lt;/connInfo&gt; 
+      &lt;/storage&gt; 
+      &lt;!-- iServer 内置会话配置 --&gt;         
+      &lt;session class=&quot;com.supermap.server.config.BuildInSessionSetting&quot;&gt; 
+          &lt;type&gt;BuildIn&lt;/type&gt;  
+          &lt;timeout&gt;10000&lt;/timeout&gt;  
+          &lt;checkLoggedInAnotherPlace&gt;true&lt;/checkLoggedInAnotherPlace&gt; 
+          &lt;loggedInAnotherPlaceProcessingStrategy&gt;Notifying&lt;/loggedInAnotherPlaceProcessingStrategy&gt; 
+      &lt;/session&gt; 
+      &lt;!-- iServer 加密算法及规格配置 --&gt;                
+      &lt;encryption class=&quot;com.supermap.server.config.EncryptionSetting&quot;&gt;           
+        &lt;serviceKeySettings&gt;
+          &lt;serviceKeySetting&gt;   
+            &lt;keyID&gt;keyIDNAME&lt;/keyID&gt;  
+            &lt;version&gt;1.1&lt;/version&gt;                     
+            &lt;algorithm&gt;AES&lt;/algorithm&gt;                     
+            &lt;keyLength&gt;256&lt;/keyLength&gt;                     
+            &lt;attributes&gt;abcd&lt;/attributes&gt;                 
+          &lt;/serviceKeySetting&gt;
+        &lt;/serviceKeySettings&gt;
+        &lt;sensitiveInfoKeySetting&gt;
+          &lt;algorithm&gt;SM4&lt;/algorithm&gt;
+          &lt;keyLength&gt;128&lt;/keyLength&gt;
+        &lt;/sensitiveInfoKeySetting&gt;
+      &lt;/encryption&gt; 
+    &lt;/security&gt;</pre>
+  <p class="myNormal">其中，</p>
+  <ul style="list-style: circle;">
+    <li class="SymbolList1"><a name="_captchaConfig__用于设置登录时的验证码_默认关闭_具体参数包括_"></a>&lt;captchaConfig&gt;：用于设置登录时的验证码，默认关闭，具体参数包括：</li>
+  </ul>
+  <ul style="list-style: circle;">
+    <li class="SymbolList2">&lt;enble&gt;：是否开启登录验证码</li>
+    <li class="SymbolList2">&lt;type&gt;：验证码类型，目前只支持图片验证码（即 IMAGE_CAPTCHA）</li>
+    <li class="SymbolList2">&lt;expireInSeconds&gt;：验证码过期时间，单位为秒</li>
+    <li class="SymbolList2">&lt;length&gt;：生成图片验证码的长度</li>
+  </ul>
+  <ul style="list-style: circle;">
+    <li class="SymbolList1">&lt;isSecurityEnabled&gt;：用于设置安全控制是否启用；</li>
+    <li class="SymbolList1">&lt;managementEnabled&gt;：用于设置服务器管理相关能力。默认为 true，当为 false 时，禁用所有管理能力</li>
+    <li class="SymbolList1">&lt;PBKDF2Iterations&gt;：用于设置 PBKDF2 密码加密算法的迭代次数，当 iServer <a class="contentpagehyperlink" href="../Cloud&amp;Clients/GISSystem/Security_Best_Practices.htm#PBKDF2">启用 PBKDF2 加密</a>后生效。迭代次数越大，登录 iServer 时花费时间越长</li>
+    <li class="SymbolList1"><a name="_tokenKey__用于设置Token的共享密钥_"></a>&lt;tokenKey&gt;：用于设置Token的共享密钥；</li>
+    <li class="SymbolList1"><a name="_disableRememberMe__用于设置是否关闭登陆页面的_记住我_功能"></a>&lt;disableRememberMe&gt;：用于设置是否关闭登陆页面的“记住我”功能，默认值为 false，即“记住我”功能可用。该配置项需重启 iServer 生效。</li>
+    <li class="SymbolList1">&lt;cacheInfoToMemory&gt;：用于设置是否将所有用户信息缓存到内存，并从内存查询用户信息。默认值为 true，表示缓存所有用户信息到内存。如果用户数量比较大，建议设置为 false，用户信息不缓存到内存，实时从数据库查询，因为缓存所有用户信息需要大量的 SQL 查询，性能慢，只在具体查询时查询相关的数据即可；</li>
+    <li class="SymbolList1">&lt;passwordProtectedSetting&gt;：用于设置密码保护以防暴力破解，具体参数包括：</li>
+    <li class="SymbolList2">&lt;passwordDiffCount&gt;：密码不可与前N次重复次数，默认为5次。</li>
+    <li class="SymbolList2">&lt;userPasswordErrorCounterSetting&gt;：包括是否启用密码防暴力破解的&lt;passwordErrorProtectEnable&gt;参数，以及在时间周期（&lt;periodLength&gt;，默认6000000毫秒，即10分钟）内允许连续失败次数（&lt;allowFailCountPerPeriod&gt;，默认为5次），自动解锁时间（ &lt;lockedTime&gt;，单位为毫秒，默认1200000，即20分钟）。</li>
+  </ul>
+  <ul style="list-style: circle;">
+    <li class="SymbolList1"><a id="三段式密钥"></a>&lt;rootSecretKeySetting&gt;：根密钥配置。该配置需在 iServer 首次初始化前进行配置，否则无法生效。具体参数包括：</li>
+  </ul>
+  <ul style="list-style: circle;">
+    <li class="SymbolList2">&lt;loadModelType&gt;：根密钥类型，有 KEYSTORE 方式和 TRIPAR T三段式，默认值为 KEYSTORE。TRIPART 三段式根密钥是由 part1、part2 和 part3 三段密钥组合动态生成。</li>
+    <li class="SymbolList2">&lt;part3&gt;：第三段密钥，默认在 iServer 启动时通过安全随机数生成，当根密钥类型为 TRIPART 时可用。</li>
+  </ul>
+  <ul class="SymbolList1" style="list-style: circle;">
+    <li class="SymbolList1">&lt;encryption&gt;：用于设置加密算法及规格，目前支持配置 GIS 服务加密算法设置和外置密钥设置，详见：<a class="contentpagehyperlink" href="../Subject_introduce/Security/tileEncryption.htm#2_SuperMap_iServer_中的瓦片加密">加密算法配置</a>。此外，在此节点中还支持通过 &lt;sensitiveInfoKeySetting&gt; 节点对服务配置和系统配置中的敏感信息加密方式进行配置，范围包括服务配置中的密码、token；安全信息配置存储、服务配置信息存储、会话信息存储、临时资源存储、注册入 iServer 的数据库或瓦片源的连接信息中的用户名密码及系统设置中的共享密钥。具体包含以下配置项：</li>
+    <li class="SymbolList2">&lt;algorithm&gt;：加密算法名。支持三段式完整写法，如：SM4/CTR/PKCS7Padding；也支持缺省写法，如：SM4。iServer 内置加密算法为 SM4 和 AES，默认为 AES。</li>
+    <li class="SymbolList2">&lt;keyLength&gt;：密钥长度，单位为 b。对于 iServer 内置的加密算法，SM4 的默认密钥长度为 128，AES 则为 256。</li>
+  </ul>
+  <ul class="SymbolList1" style="list-style: circle;">
+    <li class="SymbolList1">&lt;storage&gt;：用于设置安全信息的存储位置，包含用于指定存储类型的&lt;type&gt;字段，目前支持SQLITE、MYSQL、PostgreSQL 、Kingbase、GaussDB、Vastbase、GBase ，以及配置数据库连接信息的&lt;connInfo&gt;。以MYSQL数据库为例，连接信息具体参数包括：</li>
+  </ul>
+  <ul class="SymbolList2" style="list-style: circle;">
+    <li class="SymbolList2">&lt;driverClass&gt;：数据库的连接驱动类，为com.mysql.jdbc.Driver</li>
+    <li class="SymbolList2">&lt;jdbcUrl&gt;：连接数据库驱动的URL连接形式为 jdbc:mysql://{ip}:{port}/{database}?useUnicode=true&amp;characterEncoding=UTF-8。其中，{ip}为MySQL 所在机器的 IP 地址，{port}为 MySQL 的服务端口，默认为3306，{database}为数据库名，可设置为您已经创建的用来存储用户信息的数据库。这些参数您可以根据您安装的 MySQL 的实际情况来配置。</li>
+    <li class="SymbolList2">&lt;username&gt;：用户名，具有数据库{database}访问权限的用户。</li>
+    <li class="SymbolList2">&lt;password&gt;：该用户的密码。</li>
+    <li class="SymbolList2">&lt;initialPoolSize&gt;初始化的连接池大小，即初始化的连接数。默认值为5。</li>
+    <li class="SymbolList2">&lt;maxPoolSize&gt;：连接池在同一时刻内所提供的最大活动连接数。您可以根据 MySQL 服务器的性能来设置该值，默认为最多30个活动连接。</li>
+    <li class="SymbolList2">&lt;minPoolSize&gt;：连接池在同一时刻内所提供最小活动连接数。默认值为5。</li>
+    <li class="SymbolList2">&lt;maxIdleTime&gt;：空闲连接的等待时间，即当前连接空闲下来时，可保留的时间，单位为毫秒。超过该时间未操作，则自动关闭当前连接。默认值为3000。如果设为0，则永远保留空闲连接。</li>
+    <li class="SymbolList2">&lt;maxWait&gt;：异常连接的等待时间，即连接异常时，可等待的时间，单位为毫秒。在该时间段内连接异常未恢复，则自动关闭当前连接。默认值为300000。</li>
+    <li class="SymbolList2">&lt;useStoredAdmin&gt;：针对数据库中已经存储了初始化管理员（例如：admin1）的情况，两种选择：默认设为False，则将使用当前iServer的初始化管理员（admin2），同时覆盖数据库中存储的初始化管理员（数据库中存储的管理员将被改写为 admin2）；如果为True，将使用数据库中已经存储的初始化管理员（admin1），而不是当前 iServer 的管理员（例如:admin2）。</li>
+  </ul>
+  <ul class="SymbolList1" style="list-style: circle;">
+    <li class="SymbolList1">&lt;session&gt;：用于设置会话信息的存储位置、会话超时时间等会话配置信息。目前支持 iServer 内置会话和 Redis 会话、PostgreSQL会话 、Kingbase会话、GaussDB会话、Vastbase会话、GBase会话七种可选配置方式 ，您可以选择其中一种进行配置。</li>
+  </ul>
+  <p>  1） 对于 iServer 内置会话，具体配置参数包括：</p>
+  <ul style="list-style: circle;">
+    <li class="SymbolList2">&lt;type&gt;：会话类型，默认值为 BuildIn，表示 iServer 内置会话。</li>
+  </ul>
+  <ul style="list-style: circle;">
+    <li class="SymbolList2"><a id="iServer_timeout"></a>&lt;timeout&gt;：iServer 内置会话超时时间配置，即登录 iServer 后处于空闲状态的时间，单位毫秒。超时后，会话结束，iServer将退出登录。该配置仅在开启异地登录告警情况下生效，即设置&lt;checkLoggedInAnotherPlace&gt;为 true。</li>
+  </ul>
+  <ul style="list-style: circle;">
+    <li class="SymbolList2"><a id="开启异地登录"></a>&lt;checkLoggedInAnotherPlace&gt;：是否开启异地登录告警，true 表示开启异地登录告警，默认为 false。配置后需重启 iServer 方可生效。</li>
+    <li class="SymbolList2">&lt;loggedInAnotherPlaceProcessingStrategy&gt;：异地登录处理策略，设置 &lt;checkLoggedInAnotherPlace&gt; 为 true，此配置才生效。可选值包括：Notifying、LatestLoggedInFirst。Notifying，通知模式，代表同一账号可同时登录到多台主机中，且在登录时会通知当前检测到该账号的异地登录情况；LatestLoggedInFirst，最新登录优先，代表同一账号同一时间只能登录到一台主机中，登录时也会通知当前检测到的异地登录情况。与通知模式不同之处在于，上一次在其他主机登录的账号会被自动注销。若开启了异地登录，即配置 checkLoggedInAnotherPlace 为 true，但未配置异地登录处理策略，默认会使用 Notifying 模式。</li>
+  </ul>
+  <p> 2）对于 Redis 会话，具体配置参数包括：</p>
+  <ul style="list-style: circle;">
+    <li class="SymbolList2">&lt;type&gt;：会话类型，设置为 Redis。</li>
+    <li class="SymbolList2">&lt;host&gt;：Redis 数据库所在机器的 IP。</li>
+    <li class="SymbolList2">&lt;port&gt;：Redis 数据库服务端口号。</li>
+    <li class="SymbolList2">&lt;user&gt;：Redis 数据库用户名。</li>
+    <li class="SymbolList2">&lt;password&gt;：Redis 数据库密码。</li>
+    <li class="SymbolList2">&lt;MaxActive&gt;：连接池在同一时刻内所提供最大活动连接数 。</li>
+    <li class="SymbolList2">&lt;maxIdle&gt;：最大空闲连接数。数据库空闲连接的最大数量。</li>
+    <li class="SymbolList2">&lt;maxWait&gt;：当没有可用连接时，最大等待时间，单位毫秒，超时后将抛出异常。</li>
+    <li class="SymbolList2"><a name="Redis_timeout"></a>&lt;timeout&gt;：客户端与数据库连接后，处于空闲状态的时间，单位毫秒。超时后，将断开连接。</li>
+    <li class="SymbolList2">&lt;testOnBorrow&gt;：使用连接时，检测连接是否可用；为true时，得到的连接均是可用的。</li>
+    <li class="SymbolList2">&lt;checkLoggedInAnotherPlace&gt;：是否开启异地登录告警，true 表示开启异地登录告警，默认为 false。</li>
+    <li class="SymbolList2">&lt;loggedInAnotherPlaceProcessingStrategy&gt;：异地登录处理策略，设置 &lt;checkLoggedInAnotherPlace&gt; 为 true，此配置才生效。可选值包括：Notifying、LatestLoggedInFirst。Notifying，通知模式，代表同一账号可同时登录到多台主机中，且在登录时会通知当前检测到该账号的异地登录情况；LatestLoggedInFirst，最新登录优先，代表同一账号同一时间只能登录到一台主机中，登录时也会通知当前检测到的异地登录情况。与通知模式不同之处在于，上一次在其他主机登录的账号会被自动注销。若开启了异地登录，即配置 checkLoggedInAnotherPlace 为 true，但未配置异地登录处理策略，默认会使用 Notifying 模式。</li>
+  </ul>
+  <p>3）对于PostgreSQL、Kingbase、GaussDB、Vastbase会话、GBase会话，五者配置方法相同，以PostgreSQL为例，具体配置参数包括 ：</p>
+  <ul style="list-style: circle;">
+    <li class="SymbolList2">&lt;type&gt;: 会话类型，设置为PostgreSQL</li>
+    <li class="SymbolList2">&lt;checkLoggedInAnotherPlace&gt;: 是否开启异地登录告警，true 表示开启异地登录告警，默认为 false。配置后需重启 iServer 方可生效。</li>
+    <li class="SymbolList2">&lt;timeout&gt;：PostgreSQL会话超时时间配置，即登录PostgreSQL后处于空闲状态的时间，单位毫秒。超时后，会话结束，PostgreSQL将退出登录。该配置仅在开启异地登录告警情况下生效，即设置&lt;checkLoggedInAnotherPlace&gt;为 true。</li>
+    <li class="SymbolList2">&lt;jdbcUrl&gt;：服务地址，设置格式：jdbc:posrgresql://{ip}:{port}/{database}</li>
+    <li class="SymbolList2">&lt;tableName&gt;：PostgreSQL 数据库会话信息存储表名</li>
+    <li class="SymbolList2">&lt;user&gt;：PostgreSQL 数据库用户名。</li>
+    <li class="SymbolList2">&lt;password&gt;：PostgreSQL 数据库密码。</li>
+    <li class="SymbolList2">&lt;schemaName&gt;：PostgreSQL 数据库模式名</li>
+    <li class="SymbolList2">&lt;maxPoolSize&gt;：连接池在同一时刻内所提供的最大活动连接数。您可以根据 PostgreSQL 服务器的性能来设置该值，默认为最多50个活动连接。</li>
+    <li class="SymbolList2">&lt;minPoolSize&gt;：连接池在同一时刻内所提供最小活动连接数。默认值为10。</li>
+    <li class="SymbolList2">&lt;initialPoolSize&gt;：初始化的连接池大小，即初始化的连接数。默认值为50。</li>
+    <li class="SymbolList2">&lt;maxIdleTime&gt;：空闲连接的等待时间，即当前连接空闲下来时，可保留的时间，单位为毫秒。超过该时间未操作，则自动关闭当前连接。默认值为3000。如果设为0，则永远保留空闲连接。</li>
+    <li class="SymbolList2">&lt;maxWait&gt;：异常连接的等待时间，即连接异常时，可等待的时间，单位为毫秒。在该时间段内连接异常未恢复，则自动关闭当前连接。默认值为3000。</li>
+  </ul>
+  <h4>3. &lt;hosts&gt;元素</h4>
+  <p class="myNormal">用于配置 SuperMap iServer 服务的宿主。可包含多个&lt;host&gt;，一个 host 的示例如下：</p>
+  <pre class="brush:xml">&lt;host port=&quot;8090&quot; type=&quot;webapp&quot; uriBase=&quot;/services&quot;&gt;
+        &lt;interface-type&gt;com.supermap.services.wms.WMSServlet&lt;/interface-type&gt;
+        &lt;interface-type&gt;com.supermap.services.rest.RestServlet&lt;/interface-type&gt;
+        &lt;interface-type&gt;com.supermap.services.wfs.WFSServlet&lt;/interface-type&gt;
+        &lt;interface-type&gt;com.supermap.services.wmts.WMTSServlet&lt;/interface-type&gt;
+&lt;/host&gt;</pre>
+  <p class="myNormal">其中，&lt;interface-type&gt;表示服务宿主中包含的服务类型，&lt;host&gt;的各项属性含义如下：</p>
+  <ul style="list-style: circle;">
+    <li class="SymbolList2">port 属性，服务宿主的端口号，用户通过该端口访问服务宿主包含的服务，跟 servlet 容器的端口号一致，并在访问 SuperMap iServer 服务时与 servlet 容器的端口号实时同步。</li>
+    <li class="SymbolList2">type 属性，服务宿主的类型，“webapp”表示这是一个 Web 服务（Web Service），还可取值 rmi，表示其他宿主类型。</li>
+    <li class="SymbolList2">uriBase 属性，服务宿主的根路径，从 servlet 的根目录算起。</li>
+  </ul>
+  <h4>4. &lt;clustering&gt; 元素</h4>
+  <p class="myNormal">包含集群配置等应用。关于集群子节点相关元素的详细内容，请参考集群专题中<a class="contentpagehyperlink" href="../Subject_introduce/Cluster/ClusterManagement/ManagerClusterwithXML.htm">利用配置文件管理集群</a>。</p>
+  <h4>5. &lt;harLog&gt; 元素</h4>
+  <p class="myNormal">用于配置服务访问日志，如是否启用服务访问日志，服务访问日志的文件名称，监控的服务 URI 地址的设置：</p>
+  <ul style="list-style: circle;">
+    <li class="SymbolList2">&lt;enabled&gt;：设置是否开启服务访问日志，默认为 false。</li>
+    <li class="SymbolList2">&lt;name&gt;：输出的服务访问日志的文件名称，默认名称为 iServerHTTPArchive，支持用户自定义。</li>
+    <li class="SymbolList2">&lt;monitorURLs&gt;：需要被监控的 SuperMap iServer 的服务 URL 地址。</li>
+  </ul>
+  <h4><a name="6.__queryFilter__元素"></a>6. &lt;queryFilter&gt; 元素</h4>
+  <p class="myNormal">用于 SQL 查询时 attributeFilter 参数的过滤配置，防止 SQL 注入。这里的 SQL 注入，是指在进行 data 或 map 的 SQL 查询时，通过把非法的或违背用户意愿的字符串插入到 SQL 查询表达式中，欺骗服务器执行恶意的 SQL 命令。</p>
+  <ul style="list-style: circle;">
+    <li class="SymbolList2">&lt;enabled&gt;：设置是否启用 SQL 查询过滤，默认为 false。当 enabled 为 true，将默认禁用常量表达式、常量等价表达式、常量 IN 表达式、常量恒成立表达式等四类表达式，另外还将默认禁用部分威胁字符，禁用的字符包括 exec、insert、delete、update、join、union、master、truncate。除以上默认禁用的表达式和字符串外，您也可以通过 filterString 参数设置其他需要在 SQL 查询中禁用的字符串。</li>
+    <li class="SymbolList2">&lt;filterString&gt;：设置 SQL 查询过滤的字符串，支持任意字符串（数据操作语言（DML）、表达式、通配符、特殊字符等），以分号隔开，如：设置 &lt;filterString&gt;delete;SMID=.&lt;/filterString&gt; 。用户在进行 data 或 map 的 SQL 查询时，如果在 SQL 查询表达式中出现了 ‘delete 或 SMID=任意值’ 字符串，系统会默认该条查询表达式非法并返回400参数异常，防止执行恶意的 SQL 命令，从而保护用户的数据安全。如果没有设置 SQL 查询过滤的字符串，在 SQL 查询表达式中系统会默认屏蔽掉分号。该配置项保存即可生效，无需重启 iServer</li>
+    <li class="SymbolList2">&lt;attributeFilterNotNull&gt;：进行 SQL 查询时，attributeFilter 参数是否不能为空（即参数值为 null、‘’、“” 或不填）。默认为 true，当开启防止 SQL 注入配置，即同级配置项 &lt;enabled&gt; 为 true 时生效。</li>
+  </ul>
+  <h4>7. &lt;repository&gt;</h4>
+  <p class="myNormal">用于设置临时资源的存储位置。详细信息请参考：<a class="contentpagehyperlink" href="../mergedProjects/SuperMapiServerRESTAPI/tempResourcesLife.htm">临时资源的生命周期</a>。</p>
+  <h4>8. &lt;relayService&gt; 元素</h4>
+  <p class="myNormal">用于 iEdge 的中继服务配置，仅在 iEdge 产品中使用。</p>
+  <ul style="list-style: circle;">
+    <li class="SymbolList2">&lt;enabled&gt;：是否开启中继服务。</li>
+    <li class="SymbolList2">&lt;isLocalPriority&gt;：对于同名服务，是否优先使用本地服务。如果为 true，则优先使用本地服务，中继服务器中的同名服务将被隐藏；如果为 false，则优先使用中继服务，本地同名服务将被隐藏。</li>
+    <li class="SymbolList2">&lt;remoteServices&gt;：中继服务中的远程服务列表地址，格式如：http://&lt;server&gt;:&lt;ip&gt;/iserver/services。</li>
+    <li class="SymbolList2">&lt;updateInterval&gt;：中继服务动态更新的时间间隔，如果远程服务列表有变更，则中继服务会根据此时间间隔动态更新。单位为毫秒（ms），默认为60000ms。</li>
+  </ul>
+  <h4><a name="license_element"></a>9.&lt;license&gt;元素</h4>
+  <p class="myNormal">用于保存当前iServe的许可信息，包括正在使用的版本及扩展服务许可。详见<a class="contentpagehyperlink" href="../Install_Uninstall/License_config/License_type/chooselicense.htm">在iServer中选择许可</a>。示例如下：</p>
+  <pre class="brush:xml">  &lt;licenseMode&gt;DefaultLicense&lt;/licenseMode&gt;
+  &lt;license&gt; 
+    &lt;enabledmodules&gt;
+        &lt;string&gt;ENTERPRISE&lt;/string&gt; 
+        &lt;string&gt;CHART&lt;/string&gt;
+        &lt;string&gt;NETWORK&lt;/string&gt;
+        &lt;string&gt;SPACE&lt;/string&gt;
+        &lt;string&gt;SPATIAL&lt;/string&gt;
+        &lt;string&gt;TRAFFIC_TRANSFER&lt;/string&gt;
+        &lt;string&gt;PLOT&lt;/string&gt;
+        &lt;string&gt;SITUATIONEVOLUTION&lt;/string&gt;
+        &lt;string&gt;SPATIAL_PROCESSING&lt;/string&gt;
+        &lt;string&gt;GEO_BLOCKCHAIN_SERVICE&lt;/string&gt;
+        &lt;string&gt;SPATIAL_STREAMING&lt;/string&gt;
+        &lt;string&gt;MACHINE_LEARNING_SERVICE&lt;/string&gt;
+        &lt;string&gt;IMAGE_SERVICE&lt;/string&gt;
+    &lt;/enabledmodules&gt;
+  &lt;/license&gt; </pre>
+  <p class="myNormal">其中，</p>
+  <ul style="list-style: circle;">
+    <li class="SymbolList1">&lt;licenseMode&gt; 用于设置许可类型，包括：普通许可（DefaultLicense）、Web 许可（WebLicense） 以及云许可（CloudLicense） 等三种可选类型。</li>
+    <li class="SymbolList1">&lt;enabledmodules&gt; 中包含了使用的许可名称，具体包括：</li>
+  </ul>
+  <ul style="list-style: circle;">
+    <li class="SymbolList2">&quot;ENTERPRISE&quot;：高级版</li>
+    <li class="SymbolList2">&quot;STANDARD&quot;：标准版</li>
+    <li class="SymbolList2">&quot;CHART&quot;：海图服务扩展模块</li>
+    <li class="SymbolList2">&quot;NETWORK&quot;：网络分析服务扩展模块</li>
+    <li class="SymbolList2">&quot;SPACE&quot;：三维服务扩展模块</li>
+    <li class="SymbolList2">&quot;SPATIAL&quot;：空间分析服务扩展模块</li>
+    <li class="SymbolList2">&quot;TRAFFIC_TRANSFER&quot;：交通换乘服务扩展模块</li>
+    <li class="SymbolList2">&quot;SPATIAL_STREAMING&quot;：流数据服务扩展模块</li>
+    <li class="SymbolList2">&quot;SERVICE_NODE_ADDITION&quot;：服务节点扩展模块</li>
+    <li class="SymbolList2">&quot;PLOT&quot;：动态标绘服务扩展模块</li>
+    <li class="SymbolList2">&quot;SPATIAL_PROCESSING&quot;：分布式分析服务扩展模块</li>
+    <li class="SymbolList2">&quot;SITUATIONEVOLUTION&quot;：态势推演服务扩展模块</li>
+    <li class="SymbolList2">&quot;MACHINE_LEARNING_SERVICE&quot;：机器学习服务扩展模块</li>
+    <li class="SymbolList2">&quot;IMAGE_SERVICE&quot;：影像服务扩展模块</li>
+    <li class="SymbolList2">&quot;THREEDDESIGNER_SERVICE&quot;：三维地理设计服务扩展模块</li>
+  </ul>
+  <p class="myNormal">按核扩展模块的名称为在原扩展模块名称后加上核数信息，如机器学习服务(16核)扩展模块的名称为&#39;MACHINE_LEARNING_SERVICE_16CORES&#39;、机器学习服务(32核)扩展模块的名称为‘MACHINE_LEARNING_SERVICE_32CORES’。</p>
+  <h4><a name="multiworkers"></a>10.&lt;multiworkers&gt;元素</h4>
+  <p class="myNormal">用于配置多进程服务的相关信息。如进程数量、端口范围等，示例如下：</p>
+  <pre class="brush:xml">  &lt;multiworkers&gt;
+    &lt;enabled&gt;true&lt;/enabled&gt; 
+    &lt;workerCount&gt;4&lt;/workerCount&gt;
+    &lt;workerIP&gt;127.0.0.1&lt;/workerIP&gt; 
+    &lt;workerPortStart&gt;8900&lt;/workerPortStart&gt;
+    &lt;workerPortEnd&gt;9000&lt;/workerPortEnd&gt; 
+    &lt;workerBaseDir&gt;../../workers&lt;/workerBaseDir&gt;
+    &lt;xmx&gt;1024m&lt;/xmx&gt; 
+    &lt;communicationPort&gt;8100&lt;/communicationPort&gt;
+    &lt;requestDispatchMode&gt;RANDOM&lt;/requestDispatchMode&gt;  
+    &lt;timeout&gt;20&lt;/timeout&gt; 
+  &lt;/multiworkers&gt; </pre>
+  <p class="myNormal">具体参数描述如下：</p>
+  <ul>
+    <li class="SymbolList1">&lt;enabled&gt;：是否启用多进程模式。</li>
+    <li class="SymbolList1">&lt;workerCount&gt;：进程数量。</li>
+    <li class="SymbolList1">&lt;workerIP&gt;：设置主进程与子进程间的通信IP。</li>
+    <li class="SymbolList1">&lt;workerPortStart&gt;：Worker进程端口范围的起始端口号。</li>
+    <li class="SymbolList1">&lt;workerPortEnd&gt;：Worker进程端口范围的终止端口号。</li>
+    <li class="SymbolList1">&lt;workerBaseDir&gt;：子进程的工作目录。</li>
+    <li class="SymbolList1">&lt;xmx&gt;：Java虚拟机内存设置。</li>
+    <li class="SymbolList1">&lt;communicationPort&gt;：设置主进程与子进程间的通信端口号。</li>
+    <li class="SymbolList1">&lt;requestDispatchMode&gt;：主节点向子节点转发请求模式。包括：RANDOM，表示随机模式；TO_LEAST_REQUEST_WORKER， 表示主节点会将请求转发到请求处理数最小的子节点上。</li>
+    <li class="SymbolList1">&lt;timeout&gt;：指定主节点向子节点转发请求的超时时间。</li>
+    <li class="SymbolList1"><a name="自动回收工作进程"></a>&lt;workerRecycle&gt;：自动回收工作进程。</li>
+    <li class="SymbolList2">&lt;enabled&gt;：是否开启自动回收，默认为 false。</li>
+    <li class="SymbolList2">&lt;checkPeriodHours&gt;：工作进程资源占用情况巡检时间间隔。单位为小时，默认为 24 小时。</li>
+    <li class="SymbolList2">&lt;maxWaitDisposeSeconds&gt;：工作进程在销毁过程中的最大等待时间。如果一个工作进程在回收销毁过程中，持续时间超过设置的值，该进程将被自动销毁。单位为秒，默认 120 秒。</li>
+  </ul>
+  <p style="text-indent: 24px;"><span style="font-weight: bold;">注：</span>多进程相关参数（除 workerCount 外）修改后，需要手动重启 iServer 生效。</p>
+  <h4><a name="scheduledTasks"></a>11.&lt;scheduledTasks&gt;元素</h4>
+  <p class="myNormal">用于设置定时相关任务，如服务器配置文件定时备份、资源定时回收等，示例如下：</p>
+  <pre class="brush:xml">  &lt;scheduledTasks&gt;
+    &lt;scheduledRestart&gt;
+      &lt;enabled&gt;true&lt;/enabled&gt; 
+      &lt;restartTime&gt;
+        &lt;hour&gt;9&lt;/hour&gt;
+        &lt;minute&gt;35&lt;/minute&gt;
+      &lt;/restartTime&gt;
+      &lt;dayOfWeek&gt;1,2,3,4,5,6,7&lt;/dayOfWeek&gt; 
+      &lt;restartDate&gt;2023-11-1&lt;/restartDate&gt; 
+    &lt;/scheduledRestart&gt;
+    &lt;scheduledBackup&gt;
+      &lt;enabled&gt;true&lt;/enabled&gt; 
+      &lt;backupTime&gt;
+        &lt;hour&gt;10&lt;/hour&gt;
+        &lt;minute&gt;40&lt;/minute&gt;
+      &lt;/backupTime&gt;
+      &lt;dayOfWeek&gt;1,2,3&lt;/dayOfWeek&gt; 
+      &lt;backupDate&gt;2023-11-1&lt;/backupDate&gt; 
+    &lt;/scheduledBackup&gt;
+  &lt;/scheduledTasks&gt; </pre>
+  <p class="myNormal">具体参数描述如下：</p>
+  <ul style="list-style: circle;">
+    <li class="SymbolList1">&lt;scheduledRestart&gt; 用于设置服务器资源定时回收，具体包括：</li>
+  </ul>
+  <ul style="list-style: circle;">
+    <li class="SymbolList2">&lt;enabled&gt;：是否启用服务器资源定时回收。</li>
+    <li class="SymbolList2">&lt;restartTime&gt;：回收时间。其子参数 hour 用于设置指定回收时间的小时值，minute 用于设置分钟值。</li>
+    <li class="SymbolList2">&lt;dayOfWeek&gt;：以间隔时间的方式设置回收时间。当需要在每天或每周内的指定时间回收资源时使用此参数，并且不可与&lt;restartDate&gt;参数同时设置。输入数字来表示每周的星期数，以逗号间隔。例如需要每天进行定时回收，则设置该参数为1,2,3,4,5,6,7。</li>
+    <li class="SymbolList2">&lt;restartDate&gt;：以指定时间的方式设置回收时间。当需要在某一指定日期的指定时间回收资源时使用此参数，并且不可与&lt;dayOfWeek&gt;参数同时设置。例如：2023-11-1</li>
+  </ul>
+  <ul style="list-style: circle;">
+    <li class="SymbolList1"><a name="_scheduledBackup__用于设置服务器配置文件定时备份_具体包括_"></a>&lt;scheduledBackup&gt; 用于设置服务器配置文件定时备份，具体包括：</li>
+  </ul>
+  <ul style="list-style: circle;">
+    <li class="SymbolList2">&lt;enabled&gt;：是否启用服务器配置文件定时备份。</li>
+    <li class="SymbolList2">&lt;backupTime&gt;：备份时间。其子参数 hour 用于设置指定备份时间的小时值，minute 用于设置分钟值。</li>
+    <li class="SymbolList2">&lt;dayOfWeek&gt;：以间隔时间的方式设置备份时间，当需要在每天或每周内的指定时间备份配置文件时使用此参数。输入数字来表示每周的星期数，以逗号间隔。例如需要每天进行定时备份，则设置该参数为1,2,3,4,5,6,7。与&lt;backupDate&gt;参数同时设置时，&lt;backupDate&gt;参数值生效。</li>
+    <li class="SymbolList2">&lt;backupDate&gt;：以指定时间的方式设置备份时间，当需要在某一指定日期的指定时间备份配置文件时使用此参数。例如：2023-11-1。与&lt;dayOfWeek&gt;参数同时设置时，&lt;backupDate&gt;参数值生效。</li>
+  </ul>
+  <h4>12.&lt;spark&gt;元素</h4>
+  <p>      Spark 集群的基本配置：</p>
+  <ul style="list-style: disc;">
+    <li class="SymbolList1">&lt;sparkHome&gt;：Spark 安装目录。</li>
+    <li class="SymbolList1">&lt;masterAddress&gt;：Spark 分布式集群的 Master 节点地址。</li>
+  </ul>
+  <h4>13.&lt;processing&gt;元素</h4>
+  <p class="myNormal">用于分布式分析服务配置，示例如下：</p>
+  <pre class="brush:xml">&lt;processing&gt;
+     &lt;enabled&gt;true&lt;/enabled&gt;
+      &lt;referToken&gt;Token&lt;/referToken&gt;
+     &lt;referServicesAddress/&gt;
+     &lt;xmx&gt;1024m&lt;/xmx&gt;
+     &lt;workerPort&gt;6765&lt;/workerPort&gt;
+     &lt;defaultOutputType&gt;UDBX&lt;/defaultOutputType&gt;
+     &lt;rddStorageCount&gt;10&lt;/rddStorageCount&gt;
+     &lt;buildPyramid&gt;false&lt;/buildPyramid&gt;
+     &lt;publishService&gt;true&lt;/publishService&gt;
+&lt;/processing&gt;</pre>
+  <p>       具体参数描述如下：</p>
+  <ul style="list-style: circle;">
+    <li class="SymbolList1">&lt;enabled&gt;：是否开启分布式分析服务。true 表示开启该功能，false 表示关闭该功能</li>
+    <li class="SymbolList1">&lt;referToken&gt;：关联服务地址所具有发布服务权限的用户tocken信息</li>
+    <li class="SymbolList1">&lt;xmx&gt;：JVM最大堆大小，默认为1024m</li>
+    <li class="SymbolList1">&lt;workerPort&gt;：进程端口号</li>
+    <li class="SymbolList1">&lt;defaultOutputType&gt;：默认分析结果输出类型</li>
+    <li class="SymbolList1">&lt;rddStorageCount&gt;：rdd存储个数</li>
+    <li class="SymbolList1">
+      <p>&lt;buildPyramid&gt;：分布式内开启矢量金字塔，默认为false状态，即关闭</p>
+    </li>
+    <li class="SymbolList1">
+      <p>&lt;publishService&gt;：是否将分析结果发布为数据和地图服务，默认为true状态</p>
+    </li>
+  </ul>
+  <p><strong>      注意：</strong></p>
+  <p>      建议增加配置sparkSessionNoRebuild开关。启用此开关后，系统将不会因检测到Spark服务重启而自动重建SparkSession，从而避免相关报错。配置方式：在&lt;processing&gt;节点下新增&lt;sparkSessionNoRebuild&gt;true&lt;/sparkSessionNoRebuild&gt; ，然后重启iserver，重启后iserver.log会出现“sparkSessionNoRebuild is set to true ”即设置成功。</p>
+  <h4><a name="服务实例动态化管理参数配置"></a>14.&lt;serviceInstanceManager&gt;元素</h4>
+  <p class="myNormal">用于服务实例动态化管理配置，示例如下：</p>
+  <pre class="brush:xml">  &lt;serviceInstanceManager&gt;
+    &lt;enableLazyInitService&gt;true&lt;/enableLazyInitService&gt; 
+    &lt;idleDispose&gt;
+      &lt;enable&gt;true&lt;/enable&gt; 
+      &lt;checkPeriod&gt;30000&lt;/checkPeriod&gt;
+      &lt;maxIdleTime&gt;30000&lt;/maxIdleTime&gt;
+    &lt;/idleDispose&gt;
+    &lt;capacityLimit&gt;
+      &lt;enable&gt;true&lt;/enable&gt; 
+      &lt;maxInstanceCount&gt;2000&lt;/maxInstanceCount&gt;
+    &lt;/capacityLimit&gt;
+  &lt;/serviceInstanceManager&gt;</pre>
+  <p class="myNormal">其中，</p>
+  <ul style="list-style: disc;">
+    <li class="SymbolList1">&lt;enableLazyInitService&gt;：是否开启服务实例动态化管理。true 表示开启该功能，设置后，在 iServer 启动时将不立即初始化并启动服务；false 表示关闭该功能，设置后，在 iServer 启动时将立即初始化并启动服务，并且以下参数将不生效。</li>
+    <li class="SymbolList1">&lt;idleDispose&gt;：空闲服务相关设置，包括服务状态巡检间隔时间和空闲服务主动销毁时间。</li>
+    <li class="SymbolList2">&lt;enable&gt;：是否开启空闲服务相关设置。true 表示开启，此时您可以修改 checkPeriod 和 maxIdleTime 参数为符合实际应用场景的期望值。false 表示关闭，此时 checkPeriod 和 maxIdleTime 参数将分别设置为默认值30000（ms）和300000（ms），且不可修改。</li>
+    <li class="SymbolList2">&lt;checkPeriod&gt;：服务状态巡检间隔时间，单位毫秒，默认值为30秒。注意，该值越小，表示巡检越频繁，空闲服务自动销毁的行为越精确，但同时也越占用计算机资源。</li>
+    <li class="SymbolList2">&lt;maxIdleTime&gt;：空闲服务主动销毁时间。如果一个服务的空闲时间超过该阈值，将被自动销毁。该参数单位毫秒，默认值5分钟。</li>
+  </ul>
+  <ul style="list-style: disc;">
+    <li class="SymbolList1">&lt;capacityLimit&gt;：服务数量限制设置，包括最大在线服务实例数。</li>
+    <li class="SymbolList2">&lt;enable&gt;：是否开启服务数量限制设置。true 表示开启，此时您可以修改 maxInstanceCount 参数为符合实际应用场景的期望值。false 表示关闭，此时 maxInstanceCount 参数将设置为默认值2000（个），且不可修改。</li>
+    <li class="SymbolList2">&lt;maxInstanceCount&gt;：最大在线服务实例数，默认2000个。当同时在线的服务个数超过该值，请求新的服务时，相关服务将不予启动，同时 iServer 将予以报错。</li>
+  </ul>
+  <h4>15.&lt;storages&gt;元素</h4>
+  <p style="text-indent: 24px;">用于分布式切图库管理配置，示例如下：</p>
+  <pre class="brush:xml">  &lt;storages&gt;
+    &lt;storage&gt; 
+      &lt;id&gt;smtiles&lt;/id&gt;  
+      &lt;tileSourceInfo class=&quot;com.supermap.services.tilesource.MongoDBTilesourceInfo&quot;&gt;
+        &lt;datastoreType&gt;TILES&lt;/datastoreType&gt;  
+        &lt;type&gt;MongoDB&lt;/type&gt;
+        &lt;readPreference&gt;primary,nearest,secondary&lt;/readPreference&gt;
+        &lt;serverAdresses&gt; 
+          &lt;string&gt;172.16.120.199:27017&lt;/string&gt; 
+        &lt;/serverAdresses&gt;  
+        &lt;database&gt;smtiles&lt;/database&gt;
+      &lt;/tileSourceInfo&gt; 
+    &lt;/storage&gt;
+  &lt;/storages&gt;</pre>
+  <p style="text-indent: 24px;">其中，</p>
+  <ul>
+    <li class="CommonList" style="font-weight: normal;">&lt;storage&gt;：分布式切图库存储信息。</li>
+    <li class="CommonList" style="font-weight: normal;">&lt;id&gt;：存储 ID。</li>
+    <li class="CommonList" style="font-weight: normal;">&lt;tileSourceInfo&gt;：切片源连接信息。</li>
+  </ul>
+  <ul>
+    <li class="SymbolList2">&lt;datastoreType&gt;：数据存储类型。</li>
+    <li class="SymbolList2">&lt;type&gt;：数据库类型。</li>
+    <li class="SymbolList2"><a name="Mongo读取偏好"></a>&lt;readPreference&gt;：当数据库为 MongoDB 时，可以设置读取策略，包括：primary、primaryPreferred、secondary、secondaryPreferred、nearest。</li>
+    <li class="SymbolList2">&lt;serverAdresss&gt;：服务地址，包括 ip 和 port。</li>
+    <li class="SymbolList2">&lt;database&gt;：数据库名称。</li>
+  </ul>
+  <h4>16.<a name="dependencyServiceDetection"></a>&lt;dependencyServiceDetection&gt;元素</h4>
+  <p style="text-indent: 24px;">用于服务器启动依赖项的可用性检测与异常等待机制的开启与配置，示例如下：</p>
+  <pre class="brush:xml">  &lt;dependencyServiceDetection&gt;
+      &lt;enabled&gt;true&lt;/enabled&gt;  
+      &lt;periodSeconds&gt;5&lt;/periodSeconds&gt;
+      &lt;timeoutSeconds&gt;30&lt;/timeoutSeconds&gt;  
+      &lt;failureThreshold&gt;10&lt;/failureThreshold&gt;
+  &lt;/dependencyServiceDetection&gt;</pre>
+  <p style="text-indent: 24px;">其中，</p>
+  <ul>
+    <li class="CommonList" style="font-weight: normal;">&lt;enabled&gt;：是否开启服务器启动依赖项的可用性检测与异常等待，默认为 true。当开启后如下配置才可生效，此时系统将对使用的 web 许可中心、安全信息存储数据库、会话信息存储数据库、服务配置信息存储数据库、临时资源存储数据库及 iServer 主节点等服务进行可用性检测，当全部已配置的依赖服务均检测为可用时，服务器才可正常启动。</li>
+    <li class="CommonList" style="font-weight: normal;">&lt;periodSeconds&gt;：每个依赖项检测的时间间隔（从上一次执行结束到下一次执行开始的时间），单位为秒，默认值为5，可设置大于等于0的数值</li>
+    <li class="CommonList" style="font-weight: normal;">&lt;timeoutSeconds&gt;：每个依赖项的超时等待时间，单位为秒，默认值为30，可设置大于0的数值</li>
+    <li class="CommonList" style="font-weight: normal;">&lt;failureThreshold&gt;：依赖项检测的最大重试次数，默认值为10，若于最大次数检测时仍无法连接，则视为依赖项检测失败。可设置为大于等于1的数值</li>
+  </ul>
+  <p>注：支持检测的启动依赖项如下表所示</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="78.605%">
+    <colgroup>
+      <col style="width: 28.973%;"/>
+      <col style="width: 71.027%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>功能</td>
+        <td>依赖项</td>
+      </tr>
+      <tr class="t2Row">
+        <td>许可</td>
+        <td>Web 许可中心</td>
+      </tr>
+      <tr class="t1Row">
+        <td>安全信息存储</td>
+        <td>MySQL 数据库、Oracle 数据库、PostgreSQL 数据库、华为 GaussDB 数据库、金仓数据库、海量数据库 Vastbase、南大通用数据库 GBase</td>
+      </tr>
+      <tr class="t2Row">
+        <td>会话信息存储</td>
+        <td>Redis 数据库、PostgreSQL 数据库、华为 GaussDB 数据库、金仓数据库、海量数据库 Vastbase、南大通用数据库 GBase</td>
+      </tr>
+      <tr class="t1Row">
+        <td>服务配置信息存储</td>
+        <td>Oracle 数据库、PostgreSQL 数据库、华为 GaussDB 数据库、金仓数据库、海量数据库 Vastbase、南大通用数据库 GBase</td>
+      </tr>
+      <tr class="t2Row">
+        <td>临时资源存储</td>
+        <td>Redis 数据库、MongoDB 数据库、非本机的 HSQL 数据库、PostgreSQL 数据库、华为 GaussDB 数据库、金仓数据库、海量数据库 Vastbase、南大通用数据库 GBase</td>
+      </tr>
+      <tr class="t1Row">
+        <td>多机集群</td>
+        <td>iServer 主节点</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4>17.<a id="服务配置信息存储"></a><a name="dependencyServiceDetection"></a>&lt;serviceStorage&gt;元素</h4>
+  <p style="text-indent: 24px;">用于进行服务配置信息存储相关的配置，以配置瀚高数据库为例：</p>
+  <pre class="brush:xml"> &lt;serviceStorage&gt; 
+    &lt;connInfo&gt; 
+      &lt;username&gt;name&lt;/username&gt;  
+      &lt;password&gt;password&lt;/password&gt;  
+      &lt;dbType&gt;HIGHGO_DB&lt;/dbType&gt;  
+      &lt;driverClass&gt;com.highgo.jdbc.Driver&lt;/driverClass&gt;  
+      &lt;jdbcUrl&gt;jdbc:highgo://172.16.121.157:5866/highgo&lt;/jdbcUrl&gt;  
+      &lt;maxPoolSize&gt;30&lt;/maxPoolSize&gt;  
+      &lt;initialPoolSize&gt;5&lt;/initialPoolSize&gt;  
+      &lt;minPoolSize&gt;5&lt;/minPoolSize&gt;  
+      &lt;maxIdleTime&gt;600&lt;/maxIdleTime&gt;  
+      &lt;maxWait&gt;3000&lt;/maxWait&gt; 
+    &lt;/connInfo&gt;  
+    &lt;type&gt;HIGHGO_DB&lt;/type&gt;  
+    &lt;tableName&gt;iserver_v1_services&lt;/tableName&gt;  
+    &lt;metaTableName&gt;iserver_v1_metainfos&lt;/metaTableName&gt;  
+    &lt;eventLogTableName&gt;iserver_v1_eventLog&lt;/eventLogTableName&gt;  
+    &lt;patrolTime&gt;5&lt;/patrolTime&gt;  
+    &lt;schemaName&gt;test&lt;/schemaName&gt; 
+  &lt;/serviceStorage&gt; </pre>
+  <p style="text-indent: 24px;">其中，</p>
+  <ul>
+    <li class="CommonList" style="font-weight: normal;">&lt;connInfo&gt;：指数据库连接信息，包括数据库的用户名、密码、数据库类型名称、数据库连接地址等基础信息
+      <ul>
+        <li class="CommonList" style="font-weight: normal;">&lt;username&gt;：具有数据库访问权限的用户</li>
+        <li class="CommonList" style="font-weight: normal;">&lt;password&gt;：该用户的密码</li>
+        <li class="CommonList" style="font-weight: normal;">&lt;dbType&gt;：数据库类型。当前支持：GaussDB、GBASE8C、HIGHGO_DB、Kingbase、ORACLE、POSTGRESQL、Vastbase</li>
+        <li class="CommonList" style="font-weight: normal;">&lt;driverClass&gt;：配套该数据库的数据库驱动</li>
+        <li class="CommonList" style="font-weight: normal;">&lt;jdbcUrl&gt;：能够连接到该数据库驱动的 url</li>
+        <li class="CommonList" style="font-weight: normal;">&lt;maxPoolSize&gt;：数据库连接池在同一时刻内所提供的最大活动连接数</li>
+        <li class="CommonList" style="font-weight: normal;">&lt;initialPoolSize&gt;：初始连接池大小，即初始化的连接数</li>
+        <li class="CommonList" style="font-weight: normal;">&lt;minPoolSize&gt;：数据库连接池在同一时刻内所提供的最小活动连接数</li>
+        <li class="CommonList" style="font-weight: normal;">&lt;maxIdleTime&gt;：空闲连接的等待时间，即空闲连接可保留的时间，单位为毫秒</li>
+        <li class="CommonList" style="font-weight: normal;">&lt;maxWait&gt;：异常连接的等待时间，即连接异常时系统的等待时间，单位为毫秒</li>
+      </ul>
+    </li>
+    <li class="CommonList" style="font-weight: normal;">&lt;type&gt;：用于进行服务配置存储的数据库类型。当前支持：GaussDB、GBASE8C、HIGHGO_DB、Kingbase、ORACLE、POSTGRESQL、Vastbase</li>
+    <li class="CommonList" style="font-weight: normal;">&lt;tableName&gt;：服务存储表名。存储服务配置信息的表的表名，由服务管理 UI 配置时默认为 iserver，对应配置信息为 iserver_v1_services</li>
+    <li class="CommonList" style="font-weight: normal;">&lt;metaTableName&gt;：元信息表名。由服务管理 UI 配置时默认为 iserver，对应配置信息为 iserver_v1_metainfos</li>
+    <li class="CommonList" style="font-weight: normal;">&lt;eventLogTableName&gt;：事件记录表名。由服务管理 UI 配置时默认为 iserver，对应配置信息为 iserver_v1_eventLog</li>
+    <li class="CommonList" style="font-weight: normal;">&lt;patrolTime&gt;：数据库巡查时间间隔。单位为秒，默认值为 5</li>
+    <li class="CommonList" style="font-weight: normal;">&lt;schemaName&gt;：模式名。存储服务配置信息表所在的模式，默认存储于public模式下。若您需要将服务配置信息存储在数据库的非 public 模式下，填入指定模式名即可</li>
+  </ul>
+  <h2>数据存储配置文件</h2>
+  <p class="myNormal">数据存储配置文件 iserver-datastores.xml，根节点为 &lt;application&gt; 元素，包括&lt;datastores&gt;子节点元素，其中的每一个 datastore 元素用于配置一个具体的数据存储，包含以下属性：</p>
+  <ul style="list-style: circle;">
+    <li class="SymbolList2">datastoreType：数据存储类型。</li>
+    <li class="SymbolList2">type：数据类型</li>
+    <li class="SymbolList2">name：数据名称</li>
+    <li class="SymbolList2">url：数据存储目录</li>
+    <li class="SymbolList2">commonsCSVMetaData：csv 文件元数据信息</li>
+  </ul>
+  <p class="myNormal">示例如下：</p>
+  <pre class="brush:xml">  &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+   &lt;application&gt;
+    &lt;datastores&gt;
+     &lt;datastore&gt;
+      &lt;datastoreType&gt;BIGDATAFILESHARE&lt;/datastoreType&gt;
+      &lt;type&gt;FOLDER&lt;/type&gt;
+      &lt;name&gt;samples&lt;/name&gt;
+      &lt;url&gt;../../samples/data/ProcessingData&lt;/url&gt;
+      &lt;commonsCSVMetaData&gt; 
+       &lt;xIndex&gt;10&lt;/xIndex&gt;  
+       &lt;yIndex&gt;11&lt;/yIndex&gt;  
+       &lt;separator&gt;,&lt;/separator&gt;
+      &lt;/commonsCSVMetaData&gt; 
+     &lt;/datastore&gt; 
+    &lt;/datastores&gt; 
+   &lt;/application&gt;</pre>
+  <h2><a name="GIS_服务动态加密配置文件"></a>GIS 服务动态加密配置文件</h2>
+  <p style="text-indent: 24px;">GIS 服务动态加密配置文件 iserver-svcworkkeymappings.xml，位于 config（【SuperMap iServer 安装目录】\webapps\iserver\WEB-INF\config）文件夹下，可用于防止数据爬取，提高服务器的安全性。配置文件中存储了待加密的 GIS 服务、加密密钥以及服务的 URL 请求之间的映射关系，即一个服务类型只能用一个密钥，该密钥用于这个服务类型下的多个 URL 请求。配置方法详见：<a class="contentpagehyperlink" href="../Subject_introduce/Security/tileEncryption.htm">GIS 服务动态加密配置</a></p>
+  <p style="text-indent: 24px;"> </p>
+  <p> </p>
+
+</div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = ".."
+    gCommonRootRelPath = ".."
+    gTopicId = "9.1_9"
+  
+//]]></script>
+
+  <script src="../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../whxdata/layoutconfig.js"></script>
+  <script src="../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

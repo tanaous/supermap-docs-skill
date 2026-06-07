@@ -1,0 +1,1965 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../../../../../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../../../../../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../../../../../../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../../../../../iserver-icon.png"/>
+    
+  <script data-relpath="../../../../../.." src="../../../../../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+<meta name="template" content="../../../../../../assets/layouts/RESTAPI.htt"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="Content-Language" content="zh-CN"/>
+<meta name="topic-check-list" content="Ran Smart Index"/>
+<meta name="topic-status" content="Complete"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>geometryIsoregionResults</title>
+<link rel="StyleSheet" href="../../../../../../assets/css/SuperMapHelp.css" type="text/css"/>
+<meta name="rh-index-keywords" content="TspPath:GeometryIsoregionResults"/><meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../../../../../../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../../assets/css/homeButtom.css"/>
+  <script src="../../../../../../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../../../../../../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../../../../../../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../../../../../../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../../../../../../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../../../../../../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../../../../../../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../../../../../../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../../../../../../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+<h2><a name="URI" id="URI"></a>URI</h2>
+<p class="myNormal"><a class="contentpagehyperlink" href="../geometry.htm#URI">&lt;geometry_uri&gt;</a>/isoregion[.&lt;format&gt;]</p>
+<h2>支持的方法</h2>
+<p class="myNormal"><a class="contentpagehyperlink" href="#GET 请求">GET</a>、<a class="contentpagehyperlink" href="#POST 请求">POST</a>、<a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a></p>
+<h2>父资源</h2>
+<p class="myNormal"><a class="contentpagehyperlink" href="../geometry.htm">geometry</a></p>
+<h2 class="myNormal">子资源</h2>
+<p class="myNormal"><a class="contentpagehyperlink" href="geometryIsoregionResult.htm">geometryIsoregionResult</a></p>
+<h2>介绍</h2>
+<p class="myNormal">基于点数组提取等值面。</p>
+<p class="myNormal" style="font-weight: bold;">支持的方法：</p>
+<ul style="list-style: disc;" class="supportList">
+<li class="supportList"><a class="contentpagehyperlink" href="#GET 请求">GET</a>：返回一个进行 POST 请求的表单。</li>
+<li class="supportList"><a class="contentpagehyperlink" href="#POST 请求">POST</a>：创建一个等值面分析结果资源，相当于基于点数组进行提取等值面操作。</li>
+<li class="supportList"><a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a>：检查 geometryIsoregionResults 资源是否存在，或权限是否可以访问 geometryIsoregionResults 资源。</li>
+</ul>
+<p class="myNormal"><span style="font-weight: bold;">支持的表述格式：</span>rjson、json、html、xml。</p>
+<h2>资源层次</h2>
+<p class="myNormal"><img src="../../../../../../assets/images/root/spatialanalyst/geometry/sp_geo_isoregionresults.png" alt="" usemap="#MAP290168522" width="456" height="205" border="0"/> <map id="MAP290168522" name="MAP290168522">
+<area shape="rect" coords="3, 3, 249, 43" href="../../../root.htm" alt=""/>
+<area shape="rect" coords="81, 54, 235, 96" href="../../spatialanalyst.htm" alt=""/>
+<area shape="rect" coords="144, 108, 289, 148" href="../geometry.htm" alt=""/>
+<area shape="rect" coords="204, 162, 455, 202" href="geometryIsoregionResults.htm" alt=""/></map></p>
+<h2>HTTP 请求方法</h2>
+<p class="myNormal">对如下 URI 执行 HTTP 请求，以 rjson 输出格式为例加以说明，其中，supermapiserver 是服务器名。</p>
+<p class="uriStyle">http://supermapiserver:8090/iserver/services/spatialanalyst-sample/restjsr/spatialanalyst/geometry/isoregion.rjson</p>
+<h3><a id="GET 请求"></a>GET 请求</h3>
+<p class="myNormal">返回一个进行 POST 请求的表单。</p>
+<h3 class="myNormal"><a id="POST 请求"></a>POST 请求</h3>
+<p class="myNormal">创建一个等值面分析结果资源，相当于基于点数组进行提取等值面操作。</p>
+<h4 class="myNormal">请求参数</h4>
+<p class="myNormal">URI 中的参数如下：</p>
+<table class="iServerTable" cellspacing="0" align="center" width="70%">
+<colgroup><col style="width: 15%;"/>
+<col style="width: 15%;"/>
+<col style="width: 70%;"/>
+</colgroup><tbody><tr class="t1st">
+<td>名称</td>
+<td>类型</td>
+<td>含义</td>
+</tr>
+<tr class="t2Row">
+<td>asynchronousReturn</td>
+<td>boolean</td>
+<td>是否采用异步操作。如果为 true，则在客户端提交请求后会立即返回新资源的 URI（即 returnContent 的设置不起作用）； 为 false，则服务端在分析完成后根据 returnContent 的设置返回新资源的表述或者新资源的 URI。默认为 false。</td>
+</tr>
+<tr class="t1Row">
+<td>returnContent</td>
+<td>boolean</td>
+<td>是否立即返回新创建资源的表述还是返回新资源的 URI。如果为 true，则直接返回新创建资源，即分析结果的表述。为 false，则返回的是分析结果资源的 URI。默认为 false。</td>
+</tr>
+</tbody></table>
+<p>请求体中的参数如下：</p>
+<table class="iServerTable" cellspacing="0" align="center" width="70%">
+<colgroup><col style="width: 15%;"/>
+<col style="width: 15%;"/>
+<col style="width: 70%;"/>
+</colgroup><tbody><tr class="t1st">
+<td>名称</td>
+<td>类型</td>
+<td>含义</td>
+</tr>
+<tr class="t2Row">
+<td>points</td>
+<td>
+<p>Point2D[]</p>
+</td>
+<td>需要提取等值面的点集。</td>
+</tr>
+<tr class="t1Row">
+<td>zValues</td>
+<td>double[]</td>
+<td>用于提取操作的字段名称。提取等值面时，将使用该字段中的值，对点数据集进行插值分析，得到栅格数据集（中间结果），接着从栅格数据集提取等值线，最终由等值线构成等值面。</td>
+</tr>
+<tr class="t2Row">
+<td>extractParameter</td>
+<td><a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/services/components/commontypes/ExtractParameter.html" style="color: #0000ff; text-decoration: underline;">ExtractParameter</a></td>
+<td>提取操作需要的参数。</td>
+</tr>
+<tr class="t1Row">
+<td>resultSetting</td>
+<td><a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/services/components/commontypes/DataReturnOption.html" style="color: #0000ff; text-decoration: underline;">DataReturnOption</a></td>
+<td>返回的提取结果设置。</td>
+</tr>
+<tr class="t2Row">
+<td>resolution</td>
+<td>double</td>
+<td>
+<p>中间结果栅格数据集的分辨率，表示一个像元所代表的实地距离。该值越小，表示中间结果栅格数据集的精度越高，从而所提取的等值面精度也越高。该值的取值范围有如下限制：</p>
+<p>为保证数据的有效性，该值不能大于待分析数据集范围的短边边长；</p>
+<p>为保证服务器的运行效率，该值不能小于数据范围长边边长的万分之一，即控制结果栅格行列数（即所有采样点范围边长除以分辨率）均在10000以内。</p>
+<p>建议值为：所有采样点范围边长的1/500左右。</p>
+</td>
+</tr>
+<tr class="t1Row">
+<td>clipRegion</td>
+<td><a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/services/components/commontypes/Geometry.html">Geometry</a></td>
+<td>【可选参数】 裁剪面对象，如果不需要对操作结果进行裁剪，可以使用 null 值取代该参数。</td>
+</tr>
+<tr class="t2Row">
+<td>expectedZValues</td>
+<td>double[]</td>
+<td>【可选参数】 期望分析结果的 Z 值集合。</td>
+</tr>
+</tbody></table>
+<h4>响应结构</h4>
+<p class="myNormal">正常响应情况：响应码201。响应参数如下：</p>
+<table class="iServerTable" cellspacing="0" align="center" width="70%">
+<colgroup><col style="width: 15%;"/>
+<col style="width: 15%;"/>
+<col style="width: 70%;"/>
+</colgroup><tbody><tr class="t1st">
+<td>字段</td>
+<td>类型</td>
+<td>说明</td>
+</tr>
+<tr class="t2Row">
+<td>
+<p>succeed</p>
+</td>
+<td>boolean</td>
+<td>查询是否成功。</td>
+</tr>
+<tr class="t1Row">
+<td>newResourceID</td>
+<td>String</td>
+<td>分析结果资源的 ID。</td>
+</tr>
+<tr class="t2Row">
+<td>postResultType</td>
+<td><a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/services/rest/PostResultType.html" style="color: #0000ff; text-decoration: underline;"><span>PostResultType</span></a></td>
+<td>
+<p>POST 请求的结果类型，枚举说明 POST 请求对目标资源的影响，即处理结果是什么样的。</p>
+</td>
+</tr>
+<tr class="t1Row">
+<td>newResourceLocation</td>
+<td>String</td>
+<td>创建的新资源的 URI。</td>
+</tr>
+</tbody></table>
+<h4>响应示例</h4>
+<p class="myNormal">对资源：http://supermapiserver:8090/iserver/services/spatialanalyst-sample/restjsr/spatialanalyst/geometry/isoregion.rjson，执行 POST 请求，参数如下：</p>
+<p>
+<textarea id="txtComments" rows="" cols="" style="overflow: scroll; width: 90%; height: 200px;">{
+    &quot;points&quot;: [{
+        &quot;y&quot;: 5846399.011754164,
+        &quot;x&quot;: 1210581.346513096
+    },
+    {
+        &quot;y&quot;: 5806144.683668519,
+        &quot;x&quot;: 1374568.1968855715
+    },
+    {
+        &quot;y&quot;: 5770737.831291649,
+        &quot;x&quot;: 1521370.8530005363
+    },
+    {
+        &quot;y&quot;: 5528199.929583105,
+        &quot;x&quot;: 1095631.459772168
+    },
+    {
+        &quot;y&quot;: 5570741.490646067,
+        &quot;x&quot;: 1198626.2178598372
+    },
+    {
+        &quot;y&quot;: 5593290.502553593,
+        &quot;x&quot;: 1373169.3807736137
+    },
+    {
+        &quot;y&quot;: 5627352.642284978,
+        &quot;x&quot;: 1612502.8281910105
+    },
+    {
+        &quot;y&quot;: 5411257.388322545,
+        &quot;x&quot;: 1081393.2452306528
+    },
+    {
+        &quot;y&quot;: 5458415.294482666,
+        &quot;x&quot;: 1369469.8846276255
+    },
+    {
+        &quot;y&quot;: 5476577.894029853,
+        &quot;x&quot;: 1479703.1555390327
+    },
+    {
+        &quot;y&quot;: 5538359.532668987,
+        &quot;x&quot;: 1625450.5930904327
+    },
+    {
+        &quot;y&quot;: 5322253.555958582,
+        &quot;x&quot;: 874680.7560980343
+    },
+    {
+        &quot;y&quot;: 5387691.351356046,
+        &quot;x&quot;: 1247212.6046764243
+    },
+    {
+        &quot;y&quot;: 5365829.12376669,
+        &quot;x&quot;: 1552293.4250750828
+    },
+    {
+        &quot;y&quot;: 5189236.973831155,
+        &quot;x&quot;: 1129966.2695203842
+    },
+    {
+        &quot;y&quot;: 5263941.139760235,
+        &quot;x&quot;: 1421971.5173268518
+    },
+    {
+        &quot;y&quot;: 5316511.814620616,
+        &quot;x&quot;: 1646535.1712997695
+    },
+    {
+        &quot;y&quot;: 5380482.773487299,
+        &quot;x&quot;: 1781263.7373000357
+    },
+    {
+        &quot;y&quot;: 5387628.373045736,
+        &quot;x&quot;: 2020110.7478655667
+    },
+    {
+        &quot;y&quot;: 5149389.373350877,
+        &quot;x&quot;: 1404994.6955034048
+    },
+    {
+        &quot;y&quot;: 5175828.876635731,
+        &quot;x&quot;: 1548389.2686075717
+    },
+    {
+        &quot;y&quot;: 5309279.172401399,
+        &quot;x&quot;: 1907367.4314964274
+    },
+    {
+        &quot;y&quot;: 5293521.857410377,
+        &quot;x&quot;: 2062286.6638636011
+    },
+    {
+        &quot;y&quot;: 4976125.839822388,
+        &quot;x&quot;: 927814.7588465774
+    },
+    {
+        &quot;y&quot;: 5026632.568699232,
+        &quot;x&quot;: 1543409.9808747866
+    },
+    {
+        &quot;y&quot;: 5130288.827051805,
+        &quot;x&quot;: 1672545.493733304
+    },
+    {
+        &quot;y&quot;: 5188386.307743394,
+        &quot;x&quot;: 1815170.6158166437
+    },
+    {
+        &quot;y&quot;: 5093043.212162165,
+        &quot;x&quot;: 1776810.620376544
+    },
+    {
+        &quot;y&quot;: 5157034.502564225,
+        &quot;x&quot;: 2000720.9392682183
+    },
+    {
+        &quot;y&quot;: 5251089.301254044,
+        &quot;x&quot;: 2137211.956299985
+    },
+    {
+        &quot;y&quot;: 5332054.204347666,
+        &quot;x&quot;: -1384684.2197622396
+    },
+    {
+        &quot;y&quot;: 5275056.308383501,
+        &quot;x&quot;: -1266592.6719580323
+    },
+    {
+        &quot;y&quot;: 5175286.301711081,
+        &quot;x&quot;: -1173120.3754703253
+    },
+    {
+        &quot;y&quot;: 5241172.933846466,
+        &quot;x&quot;: -1666090.7220438174
+    },
+    {
+        &quot;y&quot;: 5203815.902033236,
+        &quot;x&quot;: -1462060.0483470496
+    },
+    {
+        &quot;y&quot;: 5089465.3051254805,
+        &quot;x&quot;: -1553103.0628854935
+    },
+    {
+        &quot;y&quot;: 4985329.134084863,
+        &quot;x&quot;: -1122827.8972311313
+    },
+    {
+        &quot;y&quot;: 5084477.143904437,
+        &quot;x&quot;: -1860653.0737309057
+    },
+    {
+        &quot;y&quot;: 5012320.004497735,
+        &quot;x&quot;: -1725720.7392514373
+    },
+    {
+        &quot;y&quot;: 4847254.456649401,
+        &quot;x&quot;: -1220678.0242665065
+    },
+    {
+        &quot;y&quot;: 4967869.579179868,
+        &quot;x&quot;: -1863459.0940122611
+    },
+    {
+        &quot;y&quot;: 4846715.029039686,
+        &quot;x&quot;: -1376674.687197066
+    },
+    {
+        &quot;y&quot;: 4749993.799084707,
+        &quot;x&quot;: -1503256.3959701843
+    },
+    {
+        &quot;y&quot;: 4733437.6562208235,
+        &quot;x&quot;: -1062382.7330463112
+    },
+    {
+        &quot;y&quot;: 4817393.2495100135,
+        &quot;x&quot;: -1666642.3185378732
+    },
+    {
+        &quot;y&quot;: 4731665.181996931,
+        &quot;x&quot;: -1268721.0651795512
+    },
+    {
+        &quot;y&quot;: 4691431.379461973,
+        &quot;x&quot;: -1784339.0745681566
+    },
+    {
+        &quot;y&quot;: 4643802.532478138,
+        &quot;x&quot;: -1537407.4064784427
+    },
+    {
+        &quot;y&quot;: 4595707.881575817,
+        &quot;x&quot;: -2419318.1651853206
+    },
+    {
+        &quot;y&quot;: 4697780.174467408,
+        &quot;x&quot;: -2175064.947991378
+    },
+    {
+        &quot;y&quot;: 4571808.980501302,
+        &quot;x&quot;: -2199394.381915284
+    },
+    {
+        &quot;y&quot;: 4596066.823439882,
+        &quot;x&quot;: -1978125.6284305337
+    },
+    {
+        &quot;y&quot;: 4496517.046471464,
+        &quot;x&quot;: -1432929.6567465702
+    },
+    {
+        &quot;y&quot;: 4311774.011786542,
+        &quot;x&quot;: -1425142.4755286604
+    },
+    {
+        &quot;y&quot;: 4452868.317491553,
+        &quot;x&quot;: -2347377.8808384025
+    },
+    {
+        &quot;y&quot;: 4340268.274635454,
+        &quot;x&quot;: -2287997.73283675
+    },
+    {
+        &quot;y&quot;: 4250483.425830898,
+        &quot;x&quot;: -2163460.0275789727
+    },
+    {
+        &quot;y&quot;: 4263739.817542193,
+        &quot;x&quot;: -1828785.5212808835
+    },
+    {
+        &quot;y&quot;: 4188669.3150986824,
+        &quot;x&quot;: -1212229.2824720086
+    },
+    {
+        &quot;y&quot;: 4183182.8387389183,
+        &quot;x&quot;: -2025606.9271885596
+    },
+    {
+        &quot;y&quot;: 4710813.7915879795,
+        &quot;x&quot;: -825209.3944219579
+    },
+    {
+        &quot;y&quot;: 4670956.244135948,
+        &quot;x&quot;: -925452.7068768775
+    },
+    {
+        &quot;y&quot;: 4526184.5763541795,
+        &quot;x&quot;: -321480.00337016343
+    },
+    {
+        &quot;y&quot;: 4529087.789700593,
+        &quot;x&quot;: -651959.4917517804
+    },
+    {
+        &quot;y&quot;: 4456951.669698392,
+        &quot;x&quot;: -217002.751793607
+    },
+    {
+        &quot;y&quot;: 4361674.173881491,
+        &quot;x&quot;: -862966.0323723028
+    },
+    {
+        &quot;y&quot;: 4356696.391350958,
+        &quot;x&quot;: -665822.612619922
+    },
+    {
+        &quot;y&quot;: 4318695.188269256,
+        &quot;x&quot;: -16755.895493976277
+    },
+    {
+        &quot;y&quot;: 4291518.681501339,
+        &quot;x&quot;: -548534.0275191526
+    },
+    {
+        &quot;y&quot;: 4214198.760832034,
+        &quot;x&quot;: -281463.84777592046
+    },
+    {
+        &quot;y&quot;: 4217114.789970843,
+        &quot;x&quot;: -993942.1769293299
+    },
+    {
+        &quot;y&quot;: 4188310.296903083,
+        &quot;x&quot;: -388864.10082736285
+    },
+    {
+        &quot;y&quot;: 4147044.700455064,
+        &quot;x&quot;: -163911.28277835716
+    },
+    {
+        &quot;y&quot;: 3994669.652291734,
+        &quot;x&quot;: -989326.1699265253
+    },
+    {
+        &quot;y&quot;: 4097277.4680672437,
+        &quot;x&quot;: -831169.1324349911
+    },
+    {
+        &quot;y&quot;: 4027790.2582361027,
+        &quot;x&quot;: -663189.7758112816
+    },
+    {
+        &quot;y&quot;: 4008890.1524949092,
+        &quot;x&quot;: -423251.71794886334
+    },
+    {
+        &quot;y&quot;: 3985439.0098199043,
+        &quot;x&quot;: -185918.90060111196
+    },
+    {
+        &quot;y&quot;: 3940087.843014853,
+        &quot;x&quot;: -887752.6423217809
+    },
+    {
+        &quot;y&quot;: 3902840.708227953,
+        &quot;x&quot;: -607958.6429741071
+    },
+    {
+        &quot;y&quot;: 3933468.6238576136,
+        &quot;x&quot;: -284995.3146274127
+    },
+    {
+        &quot;y&quot;: 3854005.315530641,
+        &quot;x&quot;: -98784.42162919845
+    },
+    {
+        &quot;y&quot;: 3823156.347624073,
+        &quot;x&quot;: -1062959.9844394172
+    },
+    {
+        &quot;y&quot;: 3808807.6550712436,
+        &quot;x&quot;: -378120.5224401556
+    },
+    {
+        &quot;y&quot;: 3778115.4734166022,
+        &quot;x&quot;: 0
+    },
+    {
+        &quot;y&quot;: 4730534.720172568,
+        &quot;x&quot;: 555675.8939736363
+    },
+    {
+        &quot;y&quot;: 4852624.171435939,
+        &quot;x&quot;: 719410.7659517572
+    },
+    {
+        &quot;y&quot;: 4596256.330055919,
+        &quot;x&quot;: 416086.8926742442
+    },
+    {
+        &quot;y&quot;: 4791746.948773282,
+        &quot;x&quot;: 788837.8597004436
+    },
+    {
+        &quot;y&quot;: 4453008.152320324,
+        &quot;x&quot;: 115404.7540462873
+    },
+    {
+        &quot;y&quot;: 4596011.987461325,
+        &quot;x&quot;: 641143.9830660761
+    },
+    {
+        &quot;y&quot;: 4481738.358798096,
+        &quot;x&quot;: 288969.73549622495
+    },
+    {
+        &quot;y&quot;: 4503841.155366805,
+        &quot;x&quot;: 445513.5966258035
+    },
+    {
+        &quot;y&quot;: 4547533.1139068995,
+        &quot;x&quot;: 735284.8907746232
+    },
+    {
+        &quot;y&quot;: 4410713.692703613,
+        &quot;x&quot;: 554568.91407516
+    },
+    {
+        &quot;y&quot;: 4443600.751319248,
+        &quot;x&quot;: 667140.2306366649
+    },
+    {
+        &quot;y&quot;: 4340461.478129971,
+        &quot;x&quot;: 697974.317012174
+    },
+    {
+        &quot;y&quot;: 4275630.554049344,
+        &quot;x&quot;: 63161.04945440512
+    },
+    {
+        &quot;y&quot;: 4386963.1282620365,
+        &quot;x&quot;: 200844.7047105074
+    },
+    {
+        &quot;y&quot;: 4202007.508177135,
+        &quot;x&quot;: 253524.48712527702
+    },
+    {
+        &quot;y&quot;: 4291562.138461853,
+        &quot;x&quot;: 419214.55097630794
+    },
+    {
+        &quot;y&quot;: 4246332.741613248,
+        &quot;x&quot;: 520391.41847044194
+    },
+    {
+        &quot;y&quot;: 4212339.5650682505,
+        &quot;x&quot;: 724422.3419775809
+    },
+    {
+        &quot;y&quot;: 4319799.307435994,
+        &quot;x&quot;: 803872.4404582562
+    },
+    {
+        &quot;y&quot;: 4129148.2394462284,
+        &quot;x&quot;: 104259.64215694085
+    },
+    {
+        &quot;y&quot;: 4109815.7660399284,
+        &quot;x&quot;: 403953.28813597944
+    },
+    {
+        &quot;y&quot;: 4182364.9195765033,
+        &quot;x&quot;: 658420.2373994242
+    },
+    {
+        &quot;y&quot;: 4116114.814604882,
+        &quot;x&quot;: 810569.0478714453
+    },
+    {
+        &quot;y&quot;: 4015665.7031279653,
+        &quot;x&quot;: 57888.61285015985
+    },
+    {
+        &quot;y&quot;: 4051893.798730688,
+        &quot;x&quot;: 207560.53288720318
+    },
+    {
+        &quot;y&quot;: 3955829.3950785063,
+        &quot;x&quot;: 276969.2552145735
+    },
+    {
+        &quot;y&quot;: 4033619.2114662286,
+        &quot;x&quot;: 529235.8905866949
+    },
+    {
+        &quot;y&quot;: 4074202.839647999,
+        &quot;x&quot;: 652385.2109960385
+    },
+    {
+        &quot;y&quot;: 3996377.3703957982,
+        &quot;x&quot;: 696258.0548386875
+    },
+    {
+        &quot;y&quot;: 4008021.5303751975,
+        &quot;x&quot;: 828160.9527746729
+    },
+    {
+        &quot;y&quot;: 3924572.250126263,
+        &quot;x&quot;: 395141.80540117475
+    },
+    {
+        &quot;y&quot;: 3987617.532555718,
+        &quot;x&quot;: 604975.0994465819
+    },
+    {
+        &quot;y&quot;: 3874146.399281319,
+        &quot;x&quot;: 574491.97093995
+    },
+    {
+        &quot;y&quot;: 3900010.4698660634,
+        &quot;x&quot;: 826688.5654787718
+    },
+    {
+        &quot;y&quot;: 3798192.2154325526,
+        &quot;x&quot;: 148384.11511321797
+    },
+    {
+        &quot;y&quot;: 3820764.883623278,
+        &quot;x&quot;: 233881.00740820862
+    },
+    {
+        &quot;y&quot;: 3751682.6673423555,
+        &quot;x&quot;: 364131.9938371991
+    },
+    {
+        &quot;y&quot;: 3754910.3556443713,
+        &quot;x&quot;: 538899.2224736068
+    },
+    {
+        &quot;y&quot;: 3813977.854491748,
+        &quot;x&quot;: 658807.4635671165
+    },
+    {
+        &quot;y&quot;: 3806050.1037092097,
+        &quot;x&quot;: 792225.2844255305
+    },
+    {
+        &quot;y&quot;: 4878613.669687378,
+        &quot;x&quot;: 989879.4510146382
+    },
+    {
+        &quot;y&quot;: 4913952.113706568,
+        &quot;x&quot;: 1247443.675713319
+    },
+    {
+        &quot;y&quot;: 4831270.944774808,
+        &quot;x&quot;: 1140083.2510781523
+    },
+    {
+        &quot;y&quot;: 4921315.05493549,
+        &quot;x&quot;: 1492086.6167464996
+    },
+    {
+        &quot;y&quot;: 5052757.707713311,
+        &quot;x&quot;: 1918509.2753008604
+    },
+    {
+        &quot;y&quot;: 5063796.813019381,
+        &quot;x&quot;: 2042017.2997923675
+    },
+    {
+        &quot;y&quot;: 4793681.904221991,
+        &quot;x&quot;: 877851.0997333587
+    },
+    {
+        &quot;y&quot;: 4774006.995349113,
+        &quot;x&quot;: 1040808.5086067809
+    },
+    {
+        &quot;y&quot;: 4825058.940827238,
+        &quot;x&quot;: 1372389.7854108088
+    },
+    {
+        &quot;y&quot;: 4809389.80096441,
+        &quot;x&quot;: 1543742.5278637895
+    },
+    {
+        &quot;y&quot;: 4902262.258833995,
+        &quot;x&quot;: 1597042.343587792
+    },
+    {
+        &quot;y&quot;: 4895476.54413311,
+        &quot;x&quot;: 1842559.9434883138
+    },
+    {
+        &quot;y&quot;: 4599996.604939047,
+        &quot;x&quot;: 932329.7912851481
+    },
+    {
+        &quot;y&quot;: 4634929.709817533,
+        &quot;x&quot;: 1130375.6558870135
+    },
+    {
+        &quot;y&quot;: 4663722.198935332,
+        &quot;x&quot;: 1271390.1018698853
+    },
+    {
+        &quot;y&quot;: 4697792.92263294,
+        &quot;x&quot;: 1416741.0287793688
+    },
+    {
+        &quot;y&quot;: 4699147.5474785445,
+        &quot;x&quot;: 1613992.8644604657
+    },
+    {
+        &quot;y&quot;: 4827335.189098092,
+        &quot;x&quot;: 1738675.3002621508
+    },
+    {
+        &quot;y&quot;: 4866923.041308589,
+        &quot;x&quot;: 1954423.5716503448
+    },
+    {
+        &quot;y&quot;: 4493384.048768748,
+        &quot;x&quot;: 958554.9844920259
+    },
+    {
+        &quot;y&quot;: 4584793.262616345,
+        &quot;x&quot;: 1039735.8753779468
+    },
+    {
+        &quot;y&quot;: 4573368.719742009,
+        &quot;x&quot;: 1264987.125449884
+    },
+    {
+        &quot;y&quot;: 4535682.898934459,
+        &quot;x&quot;: 1326693.9259942313
+    },
+    {
+        &quot;y&quot;: 4635574.883527959,
+        &quot;x&quot;: 1504197.3432253445
+    },
+    {
+        &quot;y&quot;: 4700294.42098123,
+        &quot;x&quot;: 1780949.1315812443
+    },
+    {
+        &quot;y&quot;: 4609648.656003613,
+        &quot;x&quot;: 1736296.8572612893
+    },
+    {
+        &quot;y&quot;: 4681629.349428268,
+        &quot;x&quot;: 1892050.8669771216
+    },
+    {
+        &quot;y&quot;: 4429115.494615303,
+        &quot;x&quot;: 819736.7840938661
+    },
+    {
+        &quot;y&quot;: 4391346.676023165,
+        &quot;x&quot;: 875265.4632116298
+    },
+    {
+        &quot;y&quot;: 4480718.865042775,
+        &quot;x&quot;: 1069883.2875826268
+    },
+    {
+        &quot;y&quot;: 4426733.672017401,
+        &quot;x&quot;: 1161193.5583540704
+    },
+    {
+        &quot;y&quot;: 4499741.207576295,
+        &quot;x&quot;: 1429545.7266807581
+    },
+    {
+        &quot;y&quot;: 4544119.35480714,
+        &quot;x&quot;: 1634202.9161613043
+    },
+    {
+        &quot;y&quot;: 4462966.02017487,
+        &quot;x&quot;: 1612068.9106345083
+    },
+    {
+        &quot;y&quot;: 4332966.078239502,
+        &quot;x&quot;: 963309.0101788022
+    },
+    {
+        &quot;y&quot;: 4261654.548436485,
+        &quot;x&quot;: 1032901.8353483415
+    },
+    {
+        &quot;y&quot;: 4335564.775845768,
+        &quot;x&quot;: 1105939.225169126
+    },
+    {
+        &quot;y&quot;: 4317860.357647642,
+        &quot;x&quot;: 1170895.8407751273
+    },
+    {
+        &quot;y&quot;: 4217404.249060418,
+        &quot;x&quot;: 895159.9217773122
+    },
+    {
+        &quot;y&quot;: 4172037.285068486,
+        &quot;x&quot;: 1013674.1774255243
+    },
+    {
+        &quot;y&quot;: 4294064.323209426,
+        &quot;x&quot;: 1410882.223112259
+    },
+    {
+        &quot;y&quot;: 4065800.4828681256,
+        &quot;x&quot;: 981182.9106279407
+    },
+    {
+        &quot;y&quot;: 4085762.366366327,
+        &quot;x&quot;: 1083753.047062522
+    },
+    {
+        &quot;y&quot;: 4132090.7520524934,
+        &quot;x&quot;: 1318132.2692009804
+    },
+    {
+        &quot;y&quot;: 4142586.734808678,
+        &quot;x&quot;: 1529070.0056755272
+    },
+    {
+        &quot;y&quot;: 3901432.308547681,
+        &quot;x&quot;: 934688.3653426437
+    },
+    {
+        &quot;y&quot;: 3979771.3162048384,
+        &quot;x&quot;: 1055867.4688408728
+    },
+    {
+        &quot;y&quot;: 3941036.3075741175,
+        &quot;x&quot;: 1065036.6671956114
+    },
+    {
+        &quot;y&quot;: 3945317.282583976,
+        &quot;x&quot;: 1157932.9886013204
+    },
+    {
+        &quot;y&quot;: 4021239.522476727,
+        &quot;x&quot;: 1239207.3702849862
+    },
+    {
+        &quot;y&quot;: 3959852.5588213224,
+        &quot;x&quot;: 1350795.4103596883
+    },
+    {
+        &quot;y&quot;: 4049571.6663974132,
+        &quot;x&quot;: 1410747.9096857495
+    },
+    {
+        &quot;y&quot;: 3812004.0719843972,
+        &quot;x&quot;: 930774.7628580885
+    },
+    {
+        &quot;y&quot;: 3861707.0504562463,
+        &quot;x&quot;: 1052333.0052869653
+    },
+    {
+        &quot;y&quot;: 3820762.9488621466,
+        &quot;x&quot;: 1192606.778480341
+    },
+    {
+        &quot;y&quot;: 3878446.397744965,
+        &quot;x&quot;: 1291276.5905477551
+    },
+    {
+        &quot;y&quot;: 3740457.1322103385,
+        &quot;x&quot;: -2280711.2893337477
+    },
+    {
+        &quot;y&quot;: 3610835.6465768386,
+        &quot;x&quot;: -1898494.8947958327
+    },
+    {
+        &quot;y&quot;: 3432858.020978356,
+        &quot;x&quot;: -1399626.0910837461
+    },
+    {
+        &quot;y&quot;: 3525877.2468072846,
+        &quot;x&quot;: -1283933.4892611878
+    },
+    {
+        &quot;y&quot;: 3417074.9256983995,
+        &quot;x&quot;: -1207841.1059202067
+    },
+    {
+        &quot;y&quot;: 3472059.7109441776,
+        &quot;x&quot;: -2235091.7538738195
+    },
+    {
+        &quot;y&quot;: 3405191.5810551345,
+        &quot;x&quot;: -1535719.261658893
+    },
+    {
+        &quot;y&quot;: 3317974.063750213,
+        &quot;x&quot;: -1313233.1022214004
+    },
+    {
+        &quot;y&quot;: 3215456.023662541,
+        &quot;x&quot;: -1668231.0790676078
+    },
+    {
+        &quot;y&quot;: 3213100.734077703,
+        &quot;x&quot;: -1543300.5038628752
+    },
+    {
+        &quot;y&quot;: 3226788.463817602,
+        &quot;x&quot;: -1322861.9636839945
+    },
+    {
+        &quot;y&quot;: 3174717.875474587,
+        &quot;x&quot;: -1726275.5353356436
+    },
+    {
+        &quot;y&quot;: 3071026.639358625,
+        &quot;x&quot;: -1213998.1039728494
+    },
+    {
+        &quot;y&quot;: 3042582.079568073,
+        &quot;x&quot;: -1551388.8266032175
+    },
+    {
+        &quot;y&quot;: 3718278.012159869,
+        &quot;x&quot;: -1134893.926110122
+    },
+    {
+        &quot;y&quot;: 3541408.5544612724,
+        &quot;x&quot;: -891441.2257767961
+    },
+    {
+        &quot;y&quot;: 3675701.197141478,
+        &quot;x&quot;: -834256.4397984666
+    },
+    {
+        &quot;y&quot;: 3540464.439599922,
+        &quot;x&quot;: -732998.0301551202
+    },
+    {
+        &quot;y&quot;: 3746189.5669284817,
+        &quot;x&quot;: -608366.655726914
+    },
+    {
+        &quot;y&quot;: 3606814.827940583,
+        &quot;x&quot;: -487052.6741149729
+    },
+    {
+        &quot;y&quot;: 3709929.5466406867,
+        &quot;x&quot;: -305817.3964722081
+    },
+    {
+        &quot;y&quot;: 3576785.1318503767,
+        &quot;x&quot;: -185572.12330141864
+    },
+    {
+        &quot;y&quot;: 3736802.08201411,
+        &quot;x&quot;: -188273.03422844442
+    },
+    {
+        &quot;y&quot;: 3671256.446405228,
+        &quot;x&quot;: -88798.55268419566
+    },
+    {
+        &quot;y&quot;: 3554207.6132366266,
+        &quot;x&quot;: -7623.304182909062
+    },
+    {
+        &quot;y&quot;: 3442294.0016021784,
+        &quot;x&quot;: -1043182.719348437
+    },
+    {
+        &quot;y&quot;: 3372470.133392552,
+        &quot;x&quot;: -879746.0059734449
+    },
+    {
+        &quot;y&quot;: 3329846.4658615887,
+        &quot;x&quot;: -735820.2624347302
+    },
+    {
+        &quot;y&quot;: 3385774.1722521204,
+        &quot;x&quot;: -598714.2916338673
+    },
+    {
+        &quot;y&quot;: 3365061.3710883446,
+        &quot;x&quot;: -467319.13892095536
+    },
+    {
+        &quot;y&quot;: 3438511.6724030804,
+        &quot;x&quot;: -432661.89096875046
+    },
+    {
+        &quot;y&quot;: 3289222.03255561,
+        &quot;x&quot;: -365797.2908334787
+    },
+    {
+        &quot;y&quot;: 3388770.1790684424,
+        &quot;x&quot;: -257770.63354085243
+    },
+    {
+        &quot;y&quot;: 3489340.014889814,
+        &quot;x&quot;: -225771.69297925572
+    },
+    {
+        &quot;y&quot;: 3470604.7546822317,
+        &quot;x&quot;: -132336.98535452466
+    },
+    {
+        &quot;y&quot;: 3443468.922936775,
+        &quot;x&quot;: -44754.622365783674
+    },
+    {
+        &quot;y&quot;: 3336462.9567291736,
+        &quot;x&quot;: -29663.170191185807
+    },
+    {
+        &quot;y&quot;: 3188348.3603367843,
+        &quot;x&quot;: -562133.8027324993
+    },
+    {
+        &quot;y&quot;: 3182395.102553785,
+        &quot;x&quot;: -451072.0290892085
+    },
+    {
+        &quot;y&quot;: 3171691.2776708156,
+        &quot;x&quot;: -190690.80834799097
+    },
+    {
+        &quot;y&quot;: 3246944.608980542,
+        &quot;x&quot;: -93001.31981324542
+    },
+    {
+        &quot;y&quot;: 3189044.906916246,
+        &quot;x&quot;: -1018939.2432069526
+    },
+    {
+        &quot;y&quot;: 3075883.6698584314,
+        &quot;x&quot;: -452936.7750086531
+    },
+    {
+        &quot;y&quot;: 3181664.9609899763,
+        &quot;x&quot;: -288960.4615969602
+    },
+    {
+        &quot;y&quot;: 3118781.2239375394,
+        &quot;x&quot;: -159790.7445777159
+    },
+    {
+        &quot;y&quot;: 3048061.6610416863,
+        &quot;x&quot;: -728952.0085410623
+    },
+    {
+        &quot;y&quot;: 3016310.1160733364,
+        &quot;x&quot;: -593441.2162723129
+    },
+    {
+        &quot;y&quot;: 3065512.7917198557,
+        &quot;x&quot;: -337546.79149758763
+    },
+    {
+        &quot;y&quot;: 3037253.544343302,
+        &quot;x&quot;: -38674.85881369523
+    },
+    {
+        &quot;y&quot;: 2870958.9179865606,
+        &quot;x&quot;: -562922.8573945801
+    },
+    {
+        &quot;y&quot;: 2940239.589357,
+        &quot;x&quot;: -267015.16607381543
+    },
+    {
+        &quot;y&quot;: 2876002.748849146,
+        &quot;x&quot;: -126172.57311585417
+    },
+    {
+        &quot;y&quot;: 2832711.954581689,
+        &quot;x&quot;: -472704.96379865234
+    },
+    {
+        &quot;y&quot;: 2800972.8503497857,
+        &quot;x&quot;: -272502.7081027229
+    },
+    {
+        &quot;y&quot;: 2772709.840500228,
+        &quot;x&quot;: -170569.94021037238
+    },
+    {
+        &quot;y&quot;: 2821578.0335128046,
+        &quot;x&quot;: -70850.18431489395
+    },
+    {
+        &quot;y&quot;: 2637288.510643946,
+        &quot;x&quot;: -655586.1204770276
+    },
+    {
+        &quot;y&quot;: 2644172.1839265637,
+        &quot;x&quot;: -587777.7267451585
+    },
+    {
+        &quot;y&quot;: 2703298.899468653,
+        &quot;x&quot;: -482287.72041299165
+    },
+    {
+        &quot;y&quot;: 2700248.2972229365,
+        &quot;x&quot;: -313691.5834534966
+    },
+    {
+        &quot;y&quot;: 2621928.103777759,
+        &quot;x&quot;: -349824.7477876109
+    },
+    {
+        &quot;y&quot;: 2618547.8901200592,
+        &quot;x&quot;: -233803.40853525937
+    },
+    {
+        &quot;y&quot;: 2679316.7597328294,
+        &quot;x&quot;: -115340.8723860747
+    },
+    {
+        &quot;y&quot;: 2531477.8697073124,
+        &quot;x&quot;: -728995.1007179908
+    },
+    {
+        &quot;y&quot;: 2563094.6488132644,
+        &quot;x&quot;: -125143.60317222273
+    },
+    {
+        &quot;y&quot;: 2502934.899520999,
+        &quot;x&quot;: -502247.56152175396
+    },
+    {
+        &quot;y&quot;: 2358890.8824017625,
+        &quot;x&quot;: -524954.1072237731
+    },
+    {
+        &quot;y&quot;: 2292630.5117716733,
+        &quot;x&quot;: -439585.3749905917
+    },
+    {
+        &quot;y&quot;: 2377779.7265067752,
+        &quot;x&quot;: -416990.3048070796
+    },
+    {
+        &quot;y&quot;: 2445570.1604807805,
+        &quot;x&quot;: -309745.082737913
+    },
+    {
+        &quot;y&quot;: 2232920.8583603576,
+        &quot;x&quot;: -359916.3992944942
+    },
+    {
+        &quot;y&quot;: 2352502.548550708,
+        &quot;x&quot;: -326398.3321045548
+    },
+    {
+        &quot;y&quot;: 2436706.3927038647,
+        &quot;x&quot;: -166103.91202709795
+    },
+    {
+        &quot;y&quot;: 3688008.895707773,
+        &quot;x&quot;: 67600.22720728667
+    },
+    {
+        &quot;y&quot;: 3663480.15988555,
+        &quot;x&quot;: 192838.1845297635
+    },
+    {
+        &quot;y&quot;: 3662810.5969428364,
+        &quot;x&quot;: 355703.3307535223
+    },
+    {
+        &quot;y&quot;: 3688204.187762022,
+        &quot;x&quot;: 458561.3952959383
+    },
+    {
+        &quot;y&quot;: 3644173.482835289,
+        &quot;x&quot;: 547133.5219779018
+    },
+    {
+        &quot;y&quot;: 3718679.28398731,
+        &quot;x&quot;: 671945.729762831
+    },
+    {
+        &quot;y&quot;: 3736696.4329654854,
+        &quot;x&quot;: 777367.1482989233
+    },
+    {
+        &quot;y&quot;: 3518527.4771429766,
+        &quot;x&quot;: 186765.44495685885
+    },
+    {
+        &quot;y&quot;: 3539458.569836056,
+        &quot;x&quot;: 696201.5730748323
+    },
+    {
+        &quot;y&quot;: 3638944.5959001407,
+        &quot;x&quot;: 865109.8551088024
+    },
+    {
+        &quot;y&quot;: 3408250.6546268537,
+        &quot;x&quot;: 282035.41013164416
+    },
+    {
+        &quot;y&quot;: 3484719.53651323,
+        &quot;x&quot;: 371995.50174161646
+    },
+    {
+        &quot;y&quot;: 3415764.8766247704,
+        &quot;x&quot;: 536177.0206151215
+    },
+    {
+        &quot;y&quot;: 3460331.706550587,
+        &quot;x&quot;: 617095.7188366835
+    },
+    {
+        &quot;y&quot;: 3441411.772176821,
+        &quot;x&quot;: 719233.6364178912
+    },
+    {
+        &quot;y&quot;: 3546714.9420923963,
+        &quot;x&quot;: 827799.0231700841
+    },
+    {
+        &quot;y&quot;: 3449748.548672987,
+        &quot;x&quot;: 839739.868053981
+    },
+    {
+        &quot;y&quot;: 3349980.9813490435,
+        &quot;x&quot;: 90421.65942428632
+    },
+    {
+        &quot;y&quot;: 3351011.0721426997,
+        &quot;x&quot;: 165247.2674443215
+    },
+    {
+        &quot;y&quot;: 3309382.620691914,
+        &quot;x&quot;: 234913.69606538085
+    },
+    {
+        &quot;y&quot;: 3299160.426489802,
+        &quot;x&quot;: 423508.6723597367
+    },
+    {
+        &quot;y&quot;: 3329772.0768911727,
+        &quot;x&quot;: 710677.7599318783
+    },
+    {
+        &quot;y&quot;: 3352006.0765095893,
+        &quot;x&quot;: 939912.9224508674
+    },
+    {
+        &quot;y&quot;: 3260166.7845416553,
+        &quot;x&quot;: 103889.7261913604
+    },
+    {
+        &quot;y&quot;: 3252089.697622625,
+        &quot;x&quot;: 264733.74515526386
+    },
+    {
+        &quot;y&quot;: 3212982.417114271,
+        &quot;x&quot;: 424247.1094237186
+    },
+    {
+        &quot;y&quot;: 3269120.012534639,
+        &quot;x&quot;: 595211.4390030195
+    },
+    {
+        &quot;y&quot;: 3233715.911396386,
+        &quot;x&quot;: 681507.1139124232
+    },
+    {
+        &quot;y&quot;: 3280596.970280573,
+        &quot;x&quot;: 863121.036452202
+    },
+    {
+        &quot;y&quot;: 3124913.8838264085,
+        &quot;x&quot;: 4790.183869418629
+    },
+    {
+        &quot;y&quot;: 3125950.5461812913,
+        &quot;x&quot;: 140506.95528566814
+    },
+    {
+        &quot;y&quot;: 3117269.8929029833,
+        &quot;x&quot;: 495831.120641366
+    },
+    {
+        &quot;y&quot;: 3134080.455536591,
+        &quot;x&quot;: 775380.7644865728
+    },
+    {
+        &quot;y&quot;: 3107858.762718601,
+        &quot;x&quot;: 922632.1394875564
+    },
+    {
+        &quot;y&quot;: 3046593.5443637296,
+        &quot;x&quot;: 41857.0362429994
+    },
+    {
+        &quot;y&quot;: 3056211.556197878,
+        &quot;x&quot;: 207498.12891658462
+    },
+    {
+        &quot;y&quot;: 3047811.127657084,
+        &quot;x&quot;: 363960.37935196055
+    },
+    {
+        &quot;y&quot;: 3014137.9004304614,
+        &quot;x&quot;: 523881.7779395319
+    },
+    {
+        &quot;y&quot;: 3086839.0436280574,
+        &quot;x&quot;: 643823.7842502822
+    },
+    {
+        &quot;y&quot;: 3002649.08852154,
+        &quot;x&quot;: 769827.4833575047
+    },
+    {
+        &quot;y&quot;: 2869651.628693182,
+        &quot;x&quot;: 27872.931748413404
+    },
+    {
+        &quot;y&quot;: 2915984.3712338824,
+        &quot;x&quot;: 184415.713127814
+    },
+    {
+        &quot;y&quot;: 2947341.330275152,
+        &quot;x&quot;: 317288.19073703396
+    },
+    {
+        &quot;y&quot;: 2897186.399902232,
+        &quot;x&quot;: 459764.10902280925
+    },
+    {
+        &quot;y&quot;: 2882905.729636032,
+        &quot;x&quot;: 636193.6001869313
+    },
+    {
+        &quot;y&quot;: 2898971.7531689852,
+        &quot;x&quot;: 756729.755392647
+    },
+    {
+        &quot;y&quot;: 2968738.556166012,
+        &quot;x&quot;: 916448.8160896833
+    },
+    {
+        &quot;y&quot;: 2890565.8162698783,
+        &quot;x&quot;: 976711.3389860386
+    },
+    {
+        &quot;y&quot;: 2791279.373797482,
+        &quot;x&quot;: 171902.057106717
+    },
+    {
+        &quot;y&quot;: 2839146.6111394614,
+        &quot;x&quot;: 361998.7737941324
+    },
+    {
+        &quot;y&quot;: 2754915.989578115,
+        &quot;x&quot;: 476456.06826857
+    },
+    {
+        &quot;y&quot;: 2822295.1332140043,
+        &quot;x&quot;: 557463.4371011496
+    },
+    {
+        &quot;y&quot;: 2772793.281167362,
+        &quot;x&quot;: 658343.4049611333
+    },
+    {
+        &quot;y&quot;: 2844691.4542012904,
+        &quot;x&quot;: 886760.6526373475
+    },
+    {
+        &quot;y&quot;: 2807138.335144382,
+        &quot;x&quot;: 943423.4251188046
+    },
+    {
+        &quot;y&quot;: 2662024.1185623295,
+        &quot;x&quot;: 18418.80673020621
+    },
+    {
+        &quot;y&quot;: 2663586.261990063,
+        &quot;x&quot;: 177481.05336135285
+    },
+    {
+        &quot;y&quot;: 2709676.473359335,
+        &quot;x&quot;: 255020.70915318988
+    },
+    {
+        &quot;y&quot;: 2727489.45631578,
+        &quot;x&quot;: 352799.33223594585
+    },
+    {
+        &quot;y&quot;: 2663296.580972992,
+        &quot;x&quot;: 532908.7569076398
+    },
+    {
+        &quot;y&quot;: 2735201.310011072,
+        &quot;x&quot;: 802909.6066380447
+    },
+    {
+        &quot;y&quot;: 2760413.644147722,
+        &quot;x&quot;: 998128.5715977435
+    },
+    {
+        &quot;y&quot;: 3721063.11897967,
+        &quot;x&quot;: 1096537.3935231194
+    },
+    {
+        &quot;y&quot;: 3806009.766366724,
+        &quot;x&quot;: 1264114.542137645
+    },
+    {
+        &quot;y&quot;: 3659897.8914728835,
+        &quot;x&quot;: 977303.1653559952
+    },
+    {
+        &quot;y&quot;: 3667119.1269373465,
+        &quot;x&quot;: 1276315.61125214
+    },
+    {
+        &quot;y&quot;: 3702016.0232953187,
+        &quot;x&quot;: 1383256.4582488476
+    },
+    {
+        &quot;y&quot;: 3553877.7773890067,
+        &quot;x&quot;: 993474.6081741418
+    },
+    {
+        &quot;y&quot;: 3468372.02258786,
+        &quot;x&quot;: 988812.4707273329
+    },
+    {
+        &quot;y&quot;: 3574413.543237962,
+        &quot;x&quot;: 1136200.785387387
+    },
+    {
+        &quot;y&quot;: 3485554.36380323,
+        &quot;x&quot;: 1280217.313951403
+    },
+    {
+        &quot;y&quot;: 3602651.628451882,
+        &quot;x&quot;: 1404852.6664553324
+    },
+    {
+        &quot;y&quot;: 3532437.8945520557,
+        &quot;x&quot;: 1534975.7004949152
+    },
+    {
+        &quot;y&quot;: 3389316.8374463916,
+        &quot;x&quot;: 1058628.6776923916
+    },
+    {
+        &quot;y&quot;: 3451596.5864182524,
+        &quot;x&quot;: 1137507.2802350293
+    },
+    {
+        &quot;y&quot;: 3388043.075075766,
+        &quot;x&quot;: 1273287.3328760871
+    },
+    {
+        &quot;y&quot;: 3431490.184649596,
+        &quot;x&quot;: 1352440.043371532
+    },
+    {
+        &quot;y&quot;: 3404118.136547506,
+        &quot;x&quot;: 1446840.4410162714
+    },
+    {
+        &quot;y&quot;: 3430248.270349106,
+        &quot;x&quot;: 1537904.457715784
+    },
+    {
+        &quot;y&quot;: 3300696.238288291,
+        &quot;x&quot;: 1138696.0089750627
+    },
+    {
+        &quot;y&quot;: 3269372.4020511936,
+        &quot;x&quot;: 1247991.0128511982
+    },
+    {
+        &quot;y&quot;: 3310808.8815425243,
+        &quot;x&quot;: 1368572.0417980603
+    },
+    {
+        &quot;y&quot;: 3307745.875236407,
+        &quot;x&quot;: 1436282.3006032947
+    },
+    {
+        &quot;y&quot;: 3183057.729784578,
+        &quot;x&quot;: 1050098.71440737
+    },
+    {
+        &quot;y&quot;: 3165123.623912988,
+        &quot;x&quot;: 1169757.5286660252
+    },
+    {
+        &quot;y&quot;: 3247205.0843053534,
+        &quot;x&quot;: 1508596.8046190727
+    },
+    {
+        &quot;y&quot;: 3220867.3050061967,
+        &quot;x&quot;: 1623292.939241635
+    },
+    {
+        &quot;y&quot;: 3072906.1280205715,
+        &quot;x&quot;: 1055834.0537688746
+    },
+    {
+        &quot;y&quot;: 3054259.103116134,
+        &quot;x&quot;: 1185083.1453954037
+    },
+    {
+        &quot;y&quot;: 3153271.28341821,
+        &quot;x&quot;: 1336444.5203740203
+    },
+    {
+        &quot;y&quot;: 3106608.2953502275,
+        &quot;x&quot;: 1442694.0693596063
+    },
+    {
+        &quot;y&quot;: 3162114.3166902494,
+        &quot;x&quot;: 1532059.5467476053
+    },
+    {
+        &quot;y&quot;: 3068112.2816459834,
+        &quot;x&quot;: 1522546.416469869
+    },
+    {
+        &quot;y&quot;: 2968163.182551749,
+        &quot;x&quot;: 1139742.5988121654
+    },
+    {
+        &quot;y&quot;: 2950198.460712459,
+        &quot;x&quot;: 1222724.7351557822
+    },
+    {
+        &quot;y&quot;: 3023025.033847958,
+        &quot;x&quot;: 1249618.6019452491
+    },
+    {
+        &quot;y&quot;: 3028386.49699655,
+        &quot;x&quot;: 1317873.8167660806
+    },
+    {
+        &quot;y&quot;: 2987528.206261337,
+        &quot;x&quot;: 1488901.1963909506
+    },
+    {
+        &quot;y&quot;: 2883359.911539713,
+        &quot;x&quot;: 1118210.8311772407
+    },
+    {
+        &quot;y&quot;: 2883598.587873241,
+        &quot;x&quot;: 1301055.0738268331
+    },
+    {
+        &quot;y&quot;: 2836475.4056941792,
+        &quot;x&quot;: 1419701.4283473317
+    },
+    {
+        &quot;y&quot;: 2958458.586052904,
+        &quot;x&quot;: 1543326.8307900922
+    },
+    {
+        &quot;y&quot;: 2773249.9748587757,
+        &quot;x&quot;: 1134190.4428769792
+    },
+    {
+        &quot;y&quot;: 2797825.8579814397,
+        &quot;x&quot;: 1230215.3926476221
+    },
+    {
+        &quot;y&quot;: 2698499.265373066,
+        &quot;x&quot;: 1210454.4310213024
+    },
+    {
+        &quot;y&quot;: 2779877.976375714,
+        &quot;x&quot;: 1308155.9944745467
+    },
+    {
+        &quot;y&quot;: 2781523.466416342,
+        &quot;x&quot;: 1478372.5311298936
+    },
+    {
+        &quot;y&quot;: 2780955.2564035747,
+        &quot;x&quot;: 1695729.51000478
+    },
+    {
+        &quot;y&quot;: 2510740.1276242807,
+        &quot;x&quot;: 6799.328028777925
+    },
+    {
+        &quot;y&quot;: 2585502.0735023524,
+        &quot;x&quot;: 308869.62466417974
+    },
+    {
+        &quot;y&quot;: 2551956.4589385763,
+        &quot;x&quot;: 447221.76718473545
+    },
+    {
+        &quot;y&quot;: 2541072.167230608,
+        &quot;x&quot;: 561536.9253824775
+    },
+    {
+        &quot;y&quot;: 2617749.620865224,
+        &quot;x&quot;: 746443.9667971656
+    },
+    {
+        &quot;y&quot;: 2616622.644095268,
+        &quot;x&quot;: 870118.731926645
+    },
+    {
+        &quot;y&quot;: 2526117.355519371,
+        &quot;x&quot;: 871138.4465391008
+    },
+    {
+        &quot;y&quot;: 2589894.8107570503,
+        &quot;x&quot;: 962572.7132316977
+    },
+    {
+        &quot;y&quot;: 2666076.8500070497,
+        &quot;x&quot;: 1073650.6683669835
+    },
+    {
+        &quot;y&quot;: 2595916.050900111,
+        &quot;x&quot;: 1127265.847895014
+    },
+    {
+        &quot;y&quot;: 2643960.9529985506,
+        &quot;x&quot;: 1322781.058915147
+    },
+    {
+        &quot;y&quot;: 2690579.3581378814,
+        &quot;x&quot;: 1625448.0503596873
+    },
+    {
+        &quot;y&quot;: 2439386.410984494,
+        &quot;x&quot;: 85592.52013502677
+    },
+    {
+        &quot;y&quot;: 2493652.9343016613,
+        &quot;x&quot;: 163473.37690824404
+    },
+    {
+        &quot;y&quot;: 2450556.7211649176,
+        &quot;x&quot;: 521986.4004062561
+    },
+    {
+        &quot;y&quot;: 2466884.1465693544,
+        &quot;x&quot;: 646186.9180199988
+    },
+    {
+        &quot;y&quot;: 2425626.3189612515,
+        &quot;x&quot;: 767653.1312149623
+    },
+    {
+        &quot;y&quot;: 2447486.4696193095,
+        &quot;x&quot;: 857239.3594679679
+    },
+    {
+        &quot;y&quot;: 2522243.1889932826,
+        &quot;x&quot;: 989620.3954393753
+    },
+    {
+        &quot;y&quot;: 2507730.9163674656,
+        &quot;x&quot;: 1197469.0237843061
+    },
+    {
+        &quot;y&quot;: 2515065.5362655967,
+        &quot;x&quot;: 1575725.7575531695
+    },
+    {
+        &quot;y&quot;: 2711088.223883681,
+        &quot;x&quot;: 1724911.1161599382
+    },
+    {
+        &quot;y&quot;: 2321657.019225234,
+        &quot;x&quot;: 192226.95533462946
+    },
+    {
+        &quot;y&quot;: 2358215.7463019024,
+        &quot;x&quot;: 333125.84907642344
+    },
+    {
+        &quot;y&quot;: 2340110.4303765353,
+        &quot;x&quot;: 616071.1196871599
+    },
+    {
+        &quot;y&quot;: 2386868.0482459776,
+        &quot;x&quot;: 942101.9799330588
+    },
+    {
+        &quot;y&quot;: 2427051.4605350755,
+        &quot;x&quot;: 1069925.2507115088
+    },
+    {
+        &quot;y&quot;: 2552373.8616701905,
+        &quot;x&quot;: 1691516.604359593
+    },
+    {
+        &quot;y&quot;: 2284684.516806565,
+        &quot;x&quot;: 377265.3007606633
+    },
+    {
+        &quot;y&quot;: 2232072.6150846556,
+        &quot;x&quot;: 433410.4215628289
+    },
+    {
+        &quot;y&quot;: 2212966.147268718,
+        &quot;x&quot;: 567501.5281171726
+    },
+    {
+        &quot;y&quot;: 2294192.766526101,
+        &quot;x&quot;: 726918.621760921
+    },
+    {
+        &quot;y&quot;: 2285821.6952323783,
+        &quot;x&quot;: 811372.65703444
+    },
+    {
+        &quot;y&quot;: 2083802.143100597,
+        &quot;x&quot;: 569203.736194104
+    },
+    {
+        &quot;y&quot;: 1974178.475648839,
+        &quot;x&quot;: 388581.6390896372
+    },
+    {
+        &quot;y&quot;: 2023621.247856548,
+        &quot;x&quot;: 490290.1314917419
+    },
+    {
+        &quot;y&quot;: 1997704.0501551162,
+        &quot;x&quot;: 586386.7288987898
+    },
+    {
+        &quot;y&quot;: 1884474.0662141703,
+        &quot;x&quot;: 489483.43657642923
+    }],
+    &quot;zValues&quot;: [-3, -2, 0, -1, -3, 0, 1, 0, 1, 1, 1, 2, 0, 3, -2, 5, 3, 2, 4, 6, 5, 5, 5, 2, 7, 5, 3, 4, 5, 4, 6, 5, 4, 8, 5, 9, 4, 4, 9, 6, 10, 8, 8, 11, -4, 15, 12, 12, 12, 7, 13, 11, 12, 12, 12, 13, 13, 11, 4, 12, 5, 10, 10, 5, 10, 10, 8, 8, 8, 10, 3, 8, 9, 5, 2, 5, 0, 1, 6, 4, 6, 11, -5, 1, 4, 5, 2, 6, 2, 6, 6, 6, 5, 4, 8, 5, 9, 10, 9, 8, 7, 9, -1, 8, 10, 9, 10, 14, 10, 9, 9, 10, 12, 10, 15, 11, 11, 13, 15, 9, 9, 11, 15, 12, 15, 3, 8, 6, 7, 5, 4, 4, 6, 8, 8, 7, 4, 3, 8, 8, 8, 7, 6, 6, 8, 6, 10, 10, 9, 6, 8, 3, 10, 11, 10, 10, 10, 8, 10, 13, 13, 12, 11, 14, 13, 12, 14, 13, 13, 12, 14, 15, 6, 13, 13, 13, 13, 14, 14, 14, 14, 1, 1, 0, -3, 0, 4, 0, 2, 7, 7, 9, 3, 6, 0, -4, 1, -2, 4, -3, -1, 0, 2, 3, 6, 15, 2, 4, 8, 7, 6, 1, 8, 9, 2, 6, 15, 17, 13, 4, 17, 17, 9, 5, 7, 3, 12, 6, 9, 18, 12, 17, 12, 13, 15, 13, 11, 15, 17, 15, 21, 17, 16, 15, 21, 15, 18, 20, 23, 19, 24, 22, 19, 19, 12, 14, 15, 7, 13, 12, 15, 15, 15, 15, 15, 16, 15, 16, 16, 15, 16, 17, 17, 17, 17, 17, 17, 17, 17, 16, 17, 17, 17, 18, 18, 17, 18, 17, 18, 8, 15, 17, 18, 17, 13, 16, 18, 17, 17, 12, 18, 19, 15, 15, 17, 17, 18, 17, 19, 15, 20, 15, 18, 19, 19, 20, 15, 14, 15, 15, 15, 16, 16, 16, 16, 15, 16, 16, 17, 16, 16, 17, 17, 17, 8, 9, 17, 12, 18, 17, 17, 18, 19, 18, 18, 15, 18, 18, 18, 12, 18, 19, 19, 20, 20, 18, 19, 20, 20, 13, 20, 26, 17, 21, 21, 20, 20, 20, 21, 20, 19, 22, 21, 25.2, 19, 22, 22, 21, 23, 22, 22, 22, 23, 24, 23, 22, 23, 23, 23, 25, 23, 23, 24, 23, 23, 25, 25, 24, 25, 26],
+    &quot;resolution&quot;: 2000,
+    &quot;extractParameter&quot;: {
+        &quot;datumValue&quot;: 100,
+        &quot;interval&quot;: 100,
+        &quot;resampleTolerance&quot;: 0.7,
+        &quot;smoothMethod&quot;: &quot;BSPLINE&quot;,
+        &quot;smoothness&quot;: 3
+    },
+    &quot;resultSetting&quot;: {
+        &quot;dataset&quot;: &quot;&quot;,
+        &quot;dataReturnMode&quot;: &quot;DATASET_ONLY&quot;,
+        &quot;deleteExistResultDataset&quot;: false
+    }
+}
+</textarea></p>
+<p class="myNormal">则返回的 rjson 格式的表述结果如下：</p>
+<p class="myCodeP">{</p>
+<p class="myCodeP">    &quot;succeed&quot;: true,</p>
+<p class="myCodeP">    &quot;newResourceID&quot;: &quot;1&quot;,</p>
+<p class="myCodeP">    &quot;postResultType&quot;: &quot;CreateChild&quot;,</p>
+<p class="myCodeP">    &quot;newResourceLocation&quot;: &quot;http://supermapiserver:8090/iserver/services/spatialanalyst-sample/restjsr/spatialanalyst/geometry/isoregion/1&quot;</p>
+<p class="myCodeP">}</p>
+<p class="myNormal">对 http://supermapiserver:8090/iserver/services/spatialanalyst-sample/restjsr/spatialanalyst/geometry/isoregion/1，执行 GET 请求，即可获取等值面提取的具体结果。请参见<a class="contentpagehyperlink" href="geometryIsoregionResult.htm">geometryIsoregionResult</a>。</p>
+<h3><a id="HEAD 请求"></a>HEAD 请求</h3>
+<p class="myNormal">返回跟 GET 请求一样的 HTTP 响应头，但是没有响应实体。可以在不必传输整个响应内容的情况下，获取包含在响应消息头中的元数据信息。元数据信息包括媒体类型，字符编码，压缩编码，实体内容长度等。</p>
+<p class="myNormal">HEAD 请求可以用来判断 geometryIsoregionResults 资源是否存在，或者客户端是否有权限访问 geometryIsoregionResults 资源。通过对加.&lt;format&gt;的 URI 执行 HEAD 请求，还可以快速判断 geometryIsoregionResults 资源是否支持&lt;format&gt;格式的表述。</p>
+<h2>请参见</h2>
+<ul class="referenceList">
+<li class="referenceList"><a class="contentpagehyperlink" href="../geometry.htm">geometry</a>，<a class="contentpagehyperlink" href="geometryIsoregionResult.htm">geometryIsoregionResult</a></li>
+<li class="referenceList"><a class="contentpagehyperlink" href="../../../../clientBuildREST/ConstructRESTRequest.htm">客户端构建 REST 请求</a></li>
+<li class="referenceList"><a class="contentpagehyperlink" href="../../../../StatusCodeDescription.htm">状态码列表及说明</a></li>
+<li class="referenceList"><a class="contentpagehyperlink" href="../../../../SuperMap_iServer_REST_API_OutputFormat.htm">SuperMap iServer REST API 表述格式介绍</a></li>
+<li class="referenceList"><a class="contentpagehyperlink" href="../../../../resource_hierarchy.htm">GIS 服务资源层次结构</a></li>
+</ul>
+
+
+<p><br/></p></div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../../../../../../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../../../../../../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../../../../../../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../../../../../../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../../../../../../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../../../../../../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../../../../../../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../../../../../.."
+    gCommonRootRelPath = "../../../../../.."
+    gTopicId = "8.2.2.6.15.2.4"
+  
+//]]></script>
+
+  <script src="../../../../../../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../../../../../../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../../../../../../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../../../../../../whxdata/layoutconfig.js"></script>
+  <script src="../../../../../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

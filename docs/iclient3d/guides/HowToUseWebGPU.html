@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+		<title>How to use iClient3D for WebGPU?</title>
+		<link rel="shortcut icon" type="image/x-icon" href="../../web/img/favicon.ico" />
+		<script type="text/javascript" include="jquery,bootstrap,template,admin-lte,jquery.scrollto,lazyload" src="../js/include-web.js" from="doc"></script>
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/examples.css" />
+		<link rel="stylesheet" href="../css/header.css" />
+		<link rel='stylesheet' href='../css/sm-extend.css' />
+		<link rel='stylesheet' href='../css/sm-doc.css' />
+	</head>
+
+	<body class="hold-transition skin-blue sidebar-mini" data-spy="scroll" data-target="#scrollSpy">
+		<!-- ./wrapper -->
+		<header class="header-wrapper main-header icl-header"></header>
+		<script>
+			var navigation = {
+				nav: {
+					title: 'SuperMap iClient3D for WebGL/WebGPU',
+					path: '../../web/',
+					isLocal: window.isLocal
+				}
+			};
+			identification = {};
+			utils.loadTemplate('.icl-header', '../template/header.html', navigation);
+		</script>
+		<div class="wrapper"></div>
+		<div id='container' class='container' style="width: 90%; padding-top: 75px;">
+			<div>
+				<h1>How to use iClient3D for WebGPU?</h1>
+				<hr/>
+				<h2 class="title">Summary<a name="Summary"> </a></h2>
+				<p>We have launched a 3D WebGPU client, offering a more realistic 3D scene representation and a more powerful capacity for handling massive amounts of data, which can better balance the visualization effects and business management needs. 
+					Starting from SuperMap iClient3D 2025, the product supports both WebGL and WebGPU rendering engines, and uses the same set of API interfaces, which facilitates 
+					users to quickly switch according to actual needs and reduces migration costs.</p>
+				<p>This documentation demonstrates, using the example of terrain loading, how to quickly switch from WebGL to WebGPU.</p>
+				<h2 class="title">Steps</h2>
+				<p>This is a guide to switching from WebGL to WebGPU by using the example of terrain and image loading. </p>
+				<h3>Step 1: Import Files</h3>
+				<p>（1）The file importing method for WebGPU client is the same as that for WebGL client. After decompressing the product package, create a new HTML file in the examples folder. Within this file, you can include the SuperMap3D.js file using the &lt;script&gt; tag, like so:</p>
+				<figure class="highlight">
+					<pre class="javascript">
+<code class="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;script type="text/javascript" src="../../Build/SuperMap3D/SuperMap3D.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;/html&gt;</code>
+                    </pre>
+				</figure>
+				<p>（2）At the same time, you should include other CSS and JavaScript files through the &lt;head&gt; tag as needed, like so:</p>
+				<figure class="highlight">
+					<pre class="javascript">
+<code class="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head>
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    &lt;link href="../../Build/SuperMap3D/Widgets/widgets.css" rel="stylesheet"&gt;
+    &lt;link href="./css/pretty.css" rel="stylesheet"&gt;
+    &lt;script src="./js/jquery.min.js"&gt;&lt;/script&gt
+    &lt;script src="./js/config.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="../../Build/SuperMap3D/SuperMap3D.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;/html&gt;</code>
+                 </pre>
+				</figure>
+				</figure>
+				<h3>Step 2: Using WebGPU to Load Terrain and Image</h3>
+				<p>（1）Add the WebGPU feature to the parameters of the Viewer interface. If this feature is not enabled, it will default to loading with WebGL 2.0.</p>
+				<p>（2）Due to the asynchronous nature of WebGPU, the initialization of the scene must be placed within a callback to be executed.</p>
+				<figure class="highlight">
+					<pre class="javascript">
+				<code> 
+&lt;script&gt;
+function onload(SuperMap3D) {
+    var viewer = new SuperMap3D.Viewer('Container',{
+        //Create an instance of the terrain service provider with the URL being the TIN terrain service published by SuperMap iServer.
+        terrainProvider : new SuperMap3D.SuperMapTerrainProvider({
+            url : URL_CONFIG.SiChuan_TERRAIN,
+            //When the terrain service originates from a SuperMap iServer, it is necessary to set `isSct` to `true`.
+            isSct : true,
+            invisibility:true
+        }),
+        //Using WebGPU to load data(If this feature is not enabled, it will default to loading with WebGL 2.0) 
+        contextOptions: {
+            contextType : SuperMap3D.ContextType.WebGPU,
+        }
+    });
+    viewer.resolutionScale = window.devicePixelRatio;
+    
+    viewer.scenePromise.then(function(scene){
+        // Initialize the scene (since WebGPU uses asynchronous loading, the scene initialization needs to be placed within a callback to be executed).	
+        init(SuperMap3D, scene, viewer);
+    });
+}
+function init(SuperMap3D, scene, viewer){
+    // Load the image service published by SuperMap iServer.
+    var layer = viewer.imageryLayers.addImageryProvider(new SuperMap3D.SuperMapImageryProvider({
+        url : URL_CONFIG.SiChuan_IMG
+    }));
+    // Set the camera position to locate to the terrain.
+    viewer.scene.camera.setView({
+        destination : new SuperMap3D.Cartesian3(-1206939.1925299785, 5337998.241228442, 3286279.2424502545),
+        orientation : {
+            heading : 1.4059101895600987,
+            pitch : -0.20917672793046682,
+            roll : 2.708944180085382e-13
+        }
+    });
+}
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+			</figure>
+				<p>In addition to this, the product package also provides some examples that use the WebGPU for loading data.</p>
+				<h2 class="title">Device Compatibility</h2>
+				<h3>Terminal Device and Browser Compatibility</h3>
+					<div>
+						<table width="100%" height="290" border="1px" style="border-color:#ddd">
+
+							<tr>
+								<td width="13%" style="text-align:center; vertical-align:middle"> IE</td>
+								<td width="15%" style="text-align:center; vertical-align:middle">Chrome</td>
+								<td width="16%" style="text-align:center; vertical-align:middle">Firefox</td>
+								<td width="15%" style="text-align:center; vertical-align:middle">Opera</td>
+								<td width="20%" style="text-align:center; vertical-align:middle">Safari</td>
+								<td width="21%" style="text-align:center; vertical-align:middle">Edge</td>
+							</tr>
+							<tr>
+								<td style="text-align:center; vertical-align:middle">/</td>
+								<td style="text-align:center; vertical-align:middle">
+									<font color="#e14d57">Recommended to use version 113.0 or above</font>
+								</td>
+								<td style="text-align:center; vertical-align:middle">Not directly supported yet</td>
+								<td style="text-align:center; vertical-align:middle">
+									<font color="#e14d57">Recommended to use the latest version</font>
+								</td>
+								<td style="text-align:center; vertical-align:middle">Not directly supported yet</td>
+								<td style="text-align:center; vertical-align:middle">
+									<font color="#e14d57">Recommended to use the latest version</font>
+								</td>
+							</tr>
+						</table>
+					</div>
+					</div>
+					<p>&nbsp;</p>
+					<h3>Mobile Device Compatibility</h3>
+					<p>WebGPU is not yet supported on mobile devices.</p>
+				
+
+			</div>
+			<!--法律申明-->
+			<div style="background-color: #1c1c1c;color: rgba(222,222,222,0.71)" class="icl-copyright" data-i18n="footer.copyright">© 1997-2025  SuperMap Software Co., Ltd.
+			</div>
+			<!--footer end-->
+			<script type="text/javascript" src="../js/utils.js"></script>
+	</body>
+
+</html>

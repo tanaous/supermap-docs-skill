@@ -1,0 +1,2041 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../../../../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../../../../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../../../../../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../../../../iserver-icon.png"/>
+    
+  <script data-relpath="../../../../.." src="../../../../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <meta name="template" content="../../../../../assets/layouts/RESTAPI.htt"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Language" content="zh-CN"/>
+  <meta name="topic-check-list" content="Ran Smart Index"/>
+  <meta name="topic-status" content="Complete"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>featureResults</title>
+  <link rel="StyleSheet" href="../../../../../assets/css/SuperMapHelp.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="FeatureResults"/>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../../../../../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../assets/css/homeButtom.css"/>
+  <script src="../../../../../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../../../../../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../../../../../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../../../../../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../../../../../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../../../../../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../../../../../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../../../../../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../../../../../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <h2><a name="URI" id="URI"></a>URI</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="../data.htm#URI">&lt;data_uri&gt;</a>/featureResults[.&lt;format&gt;]</p>
+  <h2>支持的方法</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="#GET 请求">GET</a>、<a class="contentpagehyperlink" href="#POST 请求">POST</a>、<a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a></p>
+  <h2>父资源</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="../data.htm">data</a></p>
+  <h2>子资源</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="featureResult.htm">featureResult</a></p>
+  <h2>介绍</h2>
+  <p class="myNormal">featureResults 资源表示数据查询结果的集合，通过对该资源执行 POST 请求，可以对数据源中的数据进行查询（可跨数据源），获取符合条件的要素集合，对数据进行查询的的步骤如下：</p>
+  <ol style="list-style: decimal;">
+    <li class="ListInParagraph">对 featureResults 执行 POST 请求，在请求体中包含必要的参数，返回一个确定的结果资源（featureResult 资源）的 URI；</li>
+    <li class="ListInParagraph">对返回的 URI 进行 GET 操作，得到需要的结果。</li>
+  </ol>
+  <p class="myNormal">进行数据查询，获取要素集合的方式有多种： ID 模式、几何对象的缓冲区模式、缓冲区加属性过滤器模式、空间查询模式、空间查询加属性过滤器的模式、SQL 模式等。若数据来源为ElasticSearch 服务，则获取要素的方式还包括：聚合查询模式。</p>
+  <p class="myNormal">关于本资源的使用方法，可参考开发指南：<a class="contentpagehyperlink" href="../../../../../DevelopGuide/Use_iServer/USE_RESTAPI/Data_Opr/QueryFeature.htm">数据要素的缓冲区查询</a>。</p>
+  <p class="myNormal" style="font-weight: bold;">支持的方法：</p>
+  <ul style="list-style: disc;">
+    <li class="supportList"><a class="contentpagehyperlink" href="#GET 请求">GET</a>：获取子资源（数据查询结果资源）集合。</li>
+    <li class="supportList"><a class="contentpagehyperlink" href="#POST 请求">POST</a>：根据给定条件，创建一个数据查询结果资源。</li>
+    <li class="supportList"><a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a>：检查 featureResults 资源是否存在，或权限是否可以访问 featureResults 资源。</li>
+  </ul>
+  <p class="myNormal"><span style="font-weight: bold;">支持的表述格式：</span>RJSON、JSON、HTML、XML、GeoJSON、FlatGeobuf。</p>
+  <p class="myNormal" style="font-weight: bold;"><span style="font-weight: bold;">注：当查询结果要素的类型为点、线、面时，GeoJSON表述可用。此时若对多个数据集进行查询请求，则返回的 CRS 坐标系信息为第一个数据集的坐标系。</span></p>
+  <h2>资源层次</h2>
+  <p><img alt="" border="0" height="144" src="../../../../../assets/images/root/data/featureResults/D_featureResults.png" usemap="#DrawArea" width="284"/><map id="DrawArea" name="DrawArea"><area alt="根资源" coords="7.591,2,264,42.9135" href="../../root.htm" shape="rect"/> <area alt="data" coords="47.911,50.6,193.681,91.4" href="../data.htm" shape="rect"/> <area alt="featureResults.htm" coords="94,100.9,239.77,141.7" href="featureResults.htm" shape="rect"/></map></p>
+  <h2>HTTP 请求方法</h2>
+  <p class="myNormal">对如下 URI 执行 HTTP 请求，以 rjson 输出格式为例加以说明，其中，supermapiserver 是服务器名。</p>
+  <p class="uriStyle">http://supermapiserver:8090/iserver/services/data-China400/rest/data/featureResults.rjson</p>
+  <h3><a name="GET"></a>GET 请求</h3>
+  <p class="myNormal">对 featureResults 资源执行 GET 请求，可以获取数据查询结果资源的集合。</p>
+  <h4>请求参数</h4>
+  <p class="myNormal">无。</p>
+  <h4>响应结构</h4>
+  <p class="myNormal">对 featureResults 资源执行 GET 请求，得到的是 featureResult 资源信息的集合，其中单个 featureResult 资源信息的结构如下：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>字段</td>
+        <td>类型</td>
+        <td>说明</td>
+      </tr>
+      <tr class="t2Row">
+        <td>name</td>
+        <td>String</td>
+        <td>featureResult 资源的名称。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>path</td>
+        <td>String</td>
+        <td>featureResult 资源的访问路径。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>resourceConfigID</td>
+        <td>String</td>
+        <td>资源配置项 ID。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>resourceType</td>
+        <td>String</td>
+        <td>资源类型。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>supportedMediaTypes</td>
+        <td>String[]</td>
+        <td>数据源资源支持的表述的媒体类型。</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4>示例</h4>
+  <p class="myNormal">在一次成功的数据查询（即对 featureResults 成功执行 <a class="contentpagehyperlink" href="#POST 请求">POST 请求</a>）后，featureResults 资源里保存了查询结果的信息，对 featureResults 资源执行 GET 请求，返回 rjson 格式的资源描述如下：</p>
+  <p class="myCodeP">[</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;name&quot;: &quot;c97763682c0f4eebb392a704ab8273b2_8fe12768e9244972bd4c051fde8b53ee&quot;,</p>
+  <p class="myCodeP">&quot;path&quot;: &quot;http://supermapiserver:8090/iserver/services/data-China400/rest/data/featureResults/c97763682c0f4eebb392a704ab8273b2_8fe12768e9244972bd4c051fde8b53ee.rjson&quot;,</p>
+  <p class="myCodeP">&quot;resourceConfigID&quot;: null,</p>
+  <p class="myCodeP">&quot;resourceType&quot;: &quot;ArithResultResource&quot;,</p>
+  <p class="myCodeP">&quot;supportedMediaTypes&quot;: [</p>
+  <p class="myCodeP">&quot;application/xml&quot;,</p>
+  <p class="myCodeP">&quot;text/xml&quot;,</p>
+  <p class="myCodeP">&quot;application/json&quot;,</p>
+  <p class="myCodeP">&quot;application/fastjson&quot;,</p>
+  <p class="myCodeP">&quot;application/rjson&quot;,</p>
+  <p class="myCodeP">&quot;text/html&quot;,</p>
+  <p class="myCodeP">&quot;application/jsonp&quot;,</p>
+  <p class="myCodeP">&quot;application/x-java-serialized-object&quot;</p>
+  <p class="myCodeP">]</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">]</p>
+  <h3><a name="POST"></a>POST 请求</h3>
+  <p class="myNormal">根据给定条件，创建一个数据查询结果资源。</p>
+  <p class="myNormal">若查询性能较低，建议：1） 给数据集创建空间索引或字段索引；2）查询时设置参数 returnFeaturesOnly=true。</p>
+  <h4>请求参数</h4>
+  <p class="myNormal">对 featureResults 资源执行 POST 请求，对数据进行查询（即创建一个 featureResult 资源），需传递参数如下：</p>
+  <p class="myNormal" style="font-weight: bold;">URI 中的参数</p>
+  <p class="myNormal" style="font-weight: normal;"> </p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>名称</td>
+        <td>类型</td>
+        <td>含义</td>
+      </tr>
+      <tr class="t2Row">
+        <td>returnContent</td>
+        <td>boolean</td>
+        <td>true 表示直接返回查询结果，即元素类型为 Feature 的数组;false 表示返回创建的 featureResult 资源的 URI。默认不传时为 false。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>fromIndex</td>
+        <td>int</td>
+        <td>查询结果的最小索引号。<br/>
+          默认值是0，如果该值大于预期查询结果的最大索引号，则查询结果为空。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>toIndex</td>
+        <td>int</td>
+        <td>查询结果的最大索引号。<br/>
+          如果该值大于预期查询结果的最大索引号，则以预期查询结果的最大索引号为实际查询结果的最大索引号。<br/>
+          例如：预期需要查询索引为0-9的要素，而 toIndex 参数值为10，则返回的查询结果中最大索引号为9。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>returnDatasetInfoOnly</td>
+        <td>boolean</td>
+        <td>表示是否仅返回要素的数据集信息，默认为false。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>returnFeaturesOnly</td>
+        <td>boolean</td>
+        <td>表示是否仅返回要素信息，默认为false。当 returnContent 为 true 时生效。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>returnCountOnly</td>
+        <td>boolean</td>
+        <td>表示是否仅返回查询结果的要素数量，默认为false。当 returnContent 为 true 时生效。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>withIndex</td>
+        <td>boolean</td>
+        <td>当使用 FlatGeobuf 表述时该参数可选。表示返回的表述为 FlatGeobuf 的结果是否包含空间索引，默认为true。</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="myNormal" style="font-weight: bold;">注：其中参数优先级：returnCountOnly &gt; returnFeaturesOnly &gt; returnDatasetInfoOnly。</p>
+  <p class="myNormal" style="font-weight: bold;"><a name="featureresultspost"></a>请求体参数</p>
+  <p class="myNormal">在请求体中包含查询参数，如下所示。其中，getFeatureMode 标识了数据查询的模式，数据查询模式不同，所需要的参数也不同。</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>名称</td>
+        <td>类型</td>
+        <td>含义</td>
+      </tr>
+      <tr class="t2Row">
+        <td>getFeatureMode</td>
+        <td><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/rest/commontypes/GetFeatureMode.html">GetFeatureMode</a></td>
+        <td>【必选参数】<br/>
+          数据查询的模式。有 ID、SQL、BOUNDS、BOUNDS_ATTRIBUTEFILTER、BUFFER、BUFFER_ATTRIBUTEFILTER、SPATIAL、SPATIAL_ATTRIBUTEFILTER 等。<br/>
+          如果对三维点、线、面、模型数据集进行查询，则目前支持的查询模式有 ID、SQL、BOUNDS、BOUNDS_ATTRIBUTEFILTER。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>datasetNames</td>
+        <td>String[]</td>
+        <td>【必选参数】<br/>
+          数据集名称数组(datasourceName:datasetName)。<br/>
+          数据集名称由数据源名和数据集名构成，例如 World 数据源下的 Ocean 数据集，这里的数据集名称就是“World:Ocean”。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>ids</td>
+        <td>int[]</td>
+        <td>要获取的资源的 ID 数组。<br/>
+          当 getFeatureMode（查询模式）为ID时，此参数必选。<br/>
+          Elasticsearch数据查询支持的数据类型：Geo_Point、Geo_Shape。<br/>
+          对于Elasticsearch数据，当数据为字符串类型，需加引号。<br/>
+          <br/>
+          <span style="font-weight:bold;">请注意：</span>对于 ArcSDE for Oracle 数据源，若需进行 ID 查询，仅支持 id 数小于等于 200 的查询
+        </td>
+      </tr>
+      <tr class="t1Row">
+        <td>bounds</td>
+        <td><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/Rectangle2D.html">Rectangle2D</a></td>
+        <td>进行范围查询时，需要设置的矩形坐标范围。<br/>
+          当 getFeatureMode（查询模式）为BOUNDS、BOUNDS_ATTRIBUTEFILTER时，此参数必选。<br/>
+          Elasticsearch数据查询支持的数据类型：Geo_Point、Geo_Shape。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>geometry</td>
+        <td><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/Geometry.html">Geometry</a></td>
+        <td>几何对象。<br/>
+          当 getFeatureMode（查询模式）为BUFFER、BUFFER_ATTRIBUTEFILTER、SPATIAL、SPATIAL_ATTRIBUTEFILTER时，此参数必选。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>bufferDistance</td>
+        <td>double</td>
+        <td>缓冲区半径，单位和数据集坐标单位一致。<br/>
+          当 getFeatureMode（查询模式）为BUFFER、BUFFER_ATTRIBUTEFILTER时，此参数必选。<br/>
+          不支持Elasticsearch数据来源。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>attributeFilter</td>
+        <td>String</td>
+        <td>属性查询过滤器。<br/>
+          当 getFeatureMode（查询模式）为BUFFER_ATTRIBUTEFILTER、SPATIAL_ATTRIBUTEFILTER、BOUNDS_ATTRIBUTEFILTER时，此参数必选。<br/>
+          <span style="font-weight:bold;">注意：</span><br/>
+          1、当 getFeatureMode（查询模式）为 SQL 时，如果在系统配置文件（参见：<a class="contentpagehyperlink" href="../../../../../Appendix/iServer_configInfo.htm">iServer 配置文件说明</a>）中设置了 SQL 查询表达式中需要屏蔽掉的字符串，那么在属性查询过滤器中一旦发现输入了已经设置的字符串，系统会认为该条查询表达式非法并返回400参数异常，防止 SQL 注入。如果在系统配置文件中没有设置 SQL 查询表达式中需要屏蔽掉的字符串，那么在属性查询过滤器中会默认屏蔽掉分号。<br/>
+          2、若您查询的数据量较大，且存储在 PostGIS、PostgreSQL、MySQL 等空间数据库中时，如果该数据库支持空间几何函数查询，您还可以将数据库几何函数作为查询条件，利用空间数据库进行计算，从而缓解 iServer 计算压力，提高返回结果的速度。请求体示例参见 <a class="contentpagehyperlink" href="#示例8_SQL查询_以空间几何函数为查询条件">示例8：SQL查询-以空间几何函数为查询条件</a><br/>
+          3、对于日期类型字段的查询，受数据库引擎影响，查询条件参数传递方式略有不同。当对 UDB 中的数据进行查询时，日期条件应写为 to_date(&quot;yyyy/mm/dd hh:mm:ss&quot;)，例如：&quot;date&quot;=to_date(&quot;2025/09/25 00:00:00&quot;)；当对 Orcale 数据库中的数据进行查询时，日期条件应写为 TO_TIMESTAMP(&#39;yyyy-mm-dd hh:mm:ss&#39;)，例如&quot;date&quot;=TO_TIMESTAMP(&#39;yyyy-mm-dd hh:mm:ss&#39;)；当对其他引擎中的数据进行查询时，日期条件应写为 yyyy-mm-dd hh:mm:ss，例如：&quot;date&quot;=&quot;2025-09-25 00:00:00&quot;
+        </td>
+      </tr>
+      <tr>
+        <td><a id="groupBy"></a>groupBy</td>
+        <td>String</td>
+        <td>查询结果分组字段。<br/>
+          当 getFeatureMode（查询模式）为 SPATIAL、SPATIAL_ATTRIBUTEFILTER、BOUNDS、BOUNDS_ATTRIBUTEFILTER 时，此参数可选。<br/>
+          <span style="font-weight:bold;">注意：</span><br/>
+          1、该参数仅对含 PostGIS（含其他 PostGIS 系数据库）、Yukon、Oracle Spatial、DM Spatial、XUGU DB 数据库数据源的工作空间数据生效。<br/>
+          2、结合 fields（查询字段）使用，fields 需设置为分组字段或其他统计字段，具体请参见 <a href="../../../../../FAQ/FAQ.htm#带groupBy_结果分组条件的字段_时_返回结果为空">FAQ</a><br/>
+          3、不支持在 iServer 前端 REST API页面进行分组条件（groupBy）查询，可以通过调用 REST API接口方式（例如：Fiddler、Postman）进行分组条件（groupBy）查询。
+        </td>
+      </tr>
+      <tr>
+        <td>fields</td>
+        <td>String[]</td>
+        <td>查询字段数组。<br/>
+          当 getFeatureMode（查询模式）为 SPATIAL、SPATIAL_ATTRIBUTEFILTER、BOUNDS、BOUNDS_ATTRIBUTEFILTER 时，此参数可选。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>spatialQueryMode</td>
+        <td><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/SpatialQueryMode.html">SpatialQueryMode</a></td>
+        <td>空间查询模式。<br/>
+          当 getFeatureMode（查询模式）为SPATIAL、SPATIAL_ATTRIBUTEFILTER时，此参数必选。<br/>
+          Elasticsearch数据查询支持的数据类型：Geo_Point、Geo_Shape。<br/>
+          当数据类型为Geo_Point时，支持的空间查询模式仅为CONTAIN。<br/>
+          当数据类型为Geo_Shape时，支持的空间查询模式CONTAIN、WITHIN、INTERSECT、DISJOINT。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>maxFeatures</td>
+        <td>int</td>
+        <td>进行 SQL 查询时，用于设置服务端返回查询结果条目的数量，默认为1000。<br/>
+          当该值大于fromIndex与toIndex区间内查询结果的个数，则返回索引区间内所有结果<br/>
+          当该值小于等于fromIndex与toIndex区间内查询结果的个数，则返回索引区间内从fromIndex起，指定数量的结果<br/>
+          当该值等于-1， 将返回全部结果（不受默认1000的限制），但优先级低于fromIndex和toIndex</td>
+      </tr>
+      <tr class="t1Row">
+        <td>queryParameter</td>
+        <td><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/QueryParameter.html">QueryParameter</a></td>
+        <td>查询参数。<br/>
+          这里已包含设置获取的结果字段名。<br/>
+          当 getFeatureMode（查询模式）为SQL时，此参数必选。 注意：当使用分组条件（groupBy）查询参数时，只支持属性查询，针对非 udb 或 udbx 的数据库型数据源需设置查询字段为分组字段或其他统计字段，具体请参见<a href="../../../../../FAQ/FAQ.htm#带groupBy_结果分组条件的字段_时_返回结果为空">FAQ</a>，并且不支持在 iServer 前端 REST API页面进行分组条件（groupBy）查询，可以通过调用 REST API接口方式（例如：Fiddler、Postman）进行分组条件（groupBy）查询。<br/>
+          Elasticsearch数据查询支持的数据类型：Geo_Point、Geo_Shape。<br/>
+          对于Elasticsearch数据，当字段值包含大写时，查询条件不加引号。<br/>
+          对于Elasticsearch数据，查询条件暂不支持区分大小写。例如：当查询条件为NAME=G12时 ，NAME=G12或NAME=g12符合条件的结果均会查询。<br/>
+          对于Elasticsearch数据，SQL查询仅支持常见操作符，如“&gt;”、“&lt; ”、“=” 等，其中“=”匹配内容仅支持数字；一些函数运算如：max()，min()，以及like操作符等尚不支持。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>targetPrj</td>
+        <td><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/PrjCoordSys.html">PrjCoordSys</a></td>
+        <td>动态投影的目标坐标系。<br/>
+          当此参数设置的坐标系统不同于数据的原有坐标系统时， 系统会进行动态投影，并返回动态投影后的查询结果。 参数使用时，需按照<a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/PrjCoordSys.html">PrjCoordSys</a>中的字段结构来构建，同时也支持通过只传递 epsgCode 的方式传入坐标参考系。<br/>
+          建议当目标投坐标系无对应的EpsgCode时，使用此参数。<br/>
+          使用时，需在请求url中添加returnContent参数，并设值为true</td>
+      </tr>
+      <tr class="t1Row">
+        <td>targetEpsgCode</td>
+        <td>int</td>
+        <td>动态投影的目标坐标系对应的<a class="contentpagehyperlink" href="../../../../../Appendix/CoordSystem/EPSGCode.htm">EPSG Code</a>。 使用时，需在请求url中添加returnContent参数，并设值为true<br/>
+          targetEpsgCode和targetPrj均可设置动态投影的目标坐标系，当两者都设置时，以targetEpsgCode为准。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>
+          <p><a name="aggregations"></a>aggregations</p>
+        </td>
+        <td><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/AggregationParameter.html">AggregationParameter</a></td>
+        <td>聚合查询参数（仅支持Elasticsearch数据源）。<br/>
+          使用聚合查询时，首先需要通过数据查询获得需要进行聚合查询的点数据集。目前支持的数据查询模式有BOUNDS、BOUNDS_ATTRIBUTEFILTER、SPATIAL、SPATIAL_ATTRIBUTEFILTER、ID、SQL等六种，您可根据需求进行选择。 请注意，在聚合查询中使用BOUNDS查询时，需将bounds参数中的坐标设置在x=[-180,180]，y=[-90,90]的范围内。<br/>
+          目前聚合查询支持以下两种聚合模式：
+          <ul style="list-style: disc;">
+            <li>格网聚合查询（<a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/GeoHashGridAggParameter.html">GeoHashGridAggParameter</a>），是实现基于格网划分对点要素数量count进行统计的聚合查询模式。具体指通过格网对地图要素进行划分，然后计算每个网格内点要素的数量count，最后返回包含count字段的点集合。格网聚合查询字段结构中包含精度precision，参数范围为1-12，默认为5。其中12代表最高精度，此时一个网格仅可覆盖小于1平方米的面积。</li>
+          </ul>
+          <ul style="list-style: disc;">
+            <li>指标聚合查询（<a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/MetricsAggParameter.html">MetricsAggParameter</a>），是实现对点要素的指定字段进行最大、最小、平均或求和统计的聚合查询模式。具体指根据最大（max）、最小（min）、平均（avg）、求和（sum）几种统计类型，对点要素的指定属性字段进行统计，最后返回包括统计值字段的点。通常情况下使用指标聚合查询时，建议您与网格聚合查询结合，从而实现返回包括 统计值字段的聚合结果点数据集。如果您仅使用使用指标聚合查询，则将返回包含统计值的单个点。</li>
+          </ul>
+          请注意，在使用聚合查询参数时，需在请求url中添加returnContent参数，并设值为true。例如：http://supermapiserver:8090/iserver/services/data-es/rest/data/featureResults.rjson?returnContent=true
+        </td>
+      </tr>
+      <tr class="t1Row">
+        <td>
+          <p>hasGeometry</p>
+        </td>
+        <td>boolean</td>
+        <td>是否返回空间几何对象信息。默认为true。当 getFeatureMode 不为 ID 时，且 URL 参数 returnContent=true 时，hasGeometry 有效。</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4>响应结构</h4>
+  <p class="myNormal">对 featureResults 资源执行 POST 请求，返回的创建结果的结构如下：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>字段</td>
+        <td>类型</td>
+        <td>含义</td>
+      </tr>
+      <tr class="t2Row">
+        <td>succeed</td>
+        <td>boolean</td>
+        <td>数据查询是否成功。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>newResourceID</td>
+        <td>String</td>
+        <td>创建的 featureResult 资源的 ID。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>newResourceLocation</td>
+        <td>String</td>
+        <td>创建的 featureResult 资源的 URI。</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="myNormal">如果 URI 参数 returnContent 为 true，则返回查询结果，其结构如下：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>字段</td>
+        <td>类型</td>
+        <td>含义</td>
+      </tr>
+      <tr class="t2Row">
+        <td>featureCount</td>
+        <td>int</td>
+        <td>返回的要素个数。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>features</td>
+        <td>String[]</td>
+        <td>返回的要素列表。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>totalCount</td>
+        <td>int</td>
+        <td>要素总个数。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>featureUriList</td>
+        <td>String[]</td>
+        <td>返回的要素子资源地址。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>
+          <p>datasetInfos</p>
+        </td>
+        <td>
+          <p><a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/rest/commontypes/FeatureDatasetInfo.html">datasetInfos</a></p>
+        </td>
+        <td>返回的数据集信息，包括数据集名称、数据集字段信息（字段名、字段别名和字段类型）以及数据集查询出的要素在 features 字段中的索引范围</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="myNormal">其中要素集合，即 features 字段中单个元素的描述结构如下：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>名称</td>
+        <td>类型</td>
+        <td>含义</td>
+      </tr>
+      <tr class="t2Row">
+        <td>ID</td>
+        <td>int</td>
+        <td>要素的 ID。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>fieldNames</td>
+        <td>String[]</td>
+        <td>要素的属性字段名集合。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>fieldValues</td>
+        <td>String[]</td>
+        <td>要素的属性字段值集合。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>geometry</td>
+        <td>Geometry</td>
+        <td>要素对应的几何对象。当hasGeometry为false时，返回的geometry的值为null。</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4>示例1</h4>
+  <p class="myNormal"><a name="POST 示例"></a>对示例 featureResults 资源：http://supermapiserver:8090/iserver/services/data-world/rest/data/featureResults.rjson 执行 POST 请求（returnContent 默认不传，则为 false），对 supermapiserver 服务器上的数据进行查询，根据 ID 来获取要素，请求体中的参数如下：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;getFeatureMode&quot;:&quot;ID&quot;,</p>
+  <p class="myCodeP">&quot;datasetNames&quot;:[&quot;World:Capitals&quot;],</p>
+  <p class="myCodeP">&quot;ids&quot;:[1, 2, 3]</p>
+  <p class="myCodeP">}</p>
+  <p class="myNormal">返回 rjson 格式的操作结果表述如下：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;newResourceID&quot;: &quot;48ba8fa1144640939a944f75e1682265_99dabf94794248c38776711d859164af&quot;,</p>
+  <p class="myCodeP">&quot;newResourceLocation&quot;: &quot;http://localhost:8080/iserver/services/data-world/rest/data/featureResults/48ba8fa1144640939a944f75e1682265_99dabf94794248c38776711d859164af.rjson&quot;,</p>
+  <p class="myCodeP">&quot;postResultType&quot;: &quot;CreateChild&quot;,</p>
+  <p class="myCodeP">&quot;succeed&quot;: true</p>
+  <p class="myCodeP">}</p>
+  <h4>示例2</h4>
+  <p class="myNormal">对示例 featureResults 资源：http://supermapiserver:8090/iserver/services/data-World/rest/data/featureResults.geojson?returnContent=true 执行 POST 请求，对 supermapiserver 服务器上的数据进行查询，根据 ID 来获取要素，请求体中的参数如下：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;getFeatureMode&quot;:&quot;ID&quot;,</p>
+  <p class="myCodeP">&quot;datasetNames&quot;:[&quot;World:capital&quot;],</p>
+  <p class="myCodeP">&quot;ids&quot;:[1]</p>
+  <p class="myCodeP">}</p>
+  <p class="myNormal">返回 geojson 格式的操作结果表述如下：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;features&quot;:[</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;geometry&quot;:{</p>
+  <p class="myCodeP">&quot;coordinates&quot;:[-47.8977476573595,-15.792110943058866],</p>
+  <p class="myCodeP">&quot;type&quot;:&quot;Point&quot;</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;id&quot;:&quot;1&quot;,</p>
+  <p class="myCodeP">&quot;type&quot;:&quot;Feature&quot;,</p>
+  <p class="myCodeP">&quot;properties&quot;:{</p>
+  <p class="myCodeP">&quot;SMLIBTILEID&quot;:&quot;1&quot;,</p>
+  <p class="myCodeP">&quot;COUNTRY_CH&quot;:&quot;巴西&quot;,</p>
+  <p class="myCodeP">&quot;CAPITAL_EN&quot;:&quot;Brasilia&quot;,</p>
+  <p class="myCodeP">&quot;POP&quot;:&quot;2207718.0&quot;,</p>
+  <p class="myCodeP">&quot;CAPITAL_CH&quot;:&quot;巴西利亚&quot;,</p>
+  <p class="myCodeP">&quot;SMID&quot;:&quot;1&quot;,</p>
+  <p class="myCodeP">&quot;CAPITAL_LO&quot;:&quot;Brasília&quot;,</p>
+  <p class="myCodeP">&quot;COUNTRY_EN&quot;:&quot;Brazil&quot;,</p>
+  <p class="myCodeP">&quot;USERID&quot;:&quot;0&quot;,</p>
+  <p class="myCodeP">&quot;SMGEOPOSITION&quot;:&quot;266502144&quot;,</p>
+  <p class="myCodeP">&quot;SMGEOMETRYSIZE&quot;:&quot;20&quot;,</p>
+  <p class="myCodeP">&quot;SMY&quot;:&quot;-15.792110943058866&quot;,</p>
+  <p class="myCodeP">&quot;SMX&quot;:&quot;-47.8977476573595&quot;,</p>
+  <p class="myCodeP">&quot;SMUSERID&quot;:&quot;0&quot;</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">}],</p>
+  <p class="myCodeP">&quot;type&quot;:&quot;FeatureCollection&quot;</p>
+  <p class="myCodeP">}</p>
+  <h4>示例3：查询并返回动态投影后的要素（设置 targetEpsgCode 参数）</h4>
+  <p class="myNormal">对示例 featureResults 资源：http://supermapiservert:8090/iserver/services/data-world/rest/data/featureResults.rjson?returnContent=true 执行 POST 请求，对 supermapiserver 服务器上的数据进行查询，根据 SQL来获取要素，并转换投影坐标系。请求体中的参数如下：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;getFeatureMode&quot;:&quot;SQL&quot;,</p>
+  <p class="myCodeP">&quot;datasetNames&quot;:[&quot;World:Capitals&quot;],</p>
+  <p class="myCodeP">&quot;targetEpsgCode&quot;:3857,</p>
+  <p class="myCodeP">&quot;maxFeatures&quot;:1000,</p>
+  <p class="myCodeP">&quot;queryParameter&quot;:{</p>
+  <p class="myCodeP">&quot;sortClause&quot;:null,</p>
+  <p class="myCodeP">&quot;ids&quot;:null, &quot;name&quot;:&quot;Capital&quot;,</p>
+  <p class="myCodeP">&quot;attributeFilter&quot;:&quot;SMID%26lt;5&quot;,</p>
+  <p class="myCodeP">&quot;groupClause&quot;:null,</p>
+  <p class="myCodeP">&quot;linkItems&quot;:null,</p>
+  <p class="myCodeP">&quot;joinItems&quot;:null,</p>
+  <p class="myCodeP">&quot;fields&quot;:null</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">hasGeometry:true</p>
+  <p class="myCodeP">}</p>
+  <p class="myNormal">返回 rjson 格式的操作结果表述如下：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;featureCount&quot;: 1,</p>
+  <p class="myCodeP">&quot;featureUriList&quot;: [],</p>
+  <p class="myCodeP">&quot;features&quot;: [{</p>
+  <p class="myCodeP">&quot;ID&quot;: 1,</p>
+  <p class="myCodeP">&quot;fieldNames&quot;: [</p>
+  <p class="myCodeP">&quot;SMID&quot;,</p>
+  <p class="myCodeP">&quot;SMX&quot;,</p>
+  <p class="myCodeP">&quot;SMY&quot;,</p>
+  <p class="myCodeP">&quot;SMLIBTILEID&quot;,</p>
+  <p class="myCodeP">&quot;SMUSERID&quot;,</p>
+  <p class="myCodeP">&quot;SMGEOMETRYSIZE&quot;,</p>
+  <p class="myCodeP">&quot;USERID&quot;,</p>
+  <p class="myCodeP">&quot;POP&quot;,</p>
+  <p class="myCodeP">&quot;CAPITAL_LO&quot;,</p>
+  <p class="myCodeP">&quot;CAPITAL_CH&quot;,</p>
+  <p class="myCodeP">&quot;COUNTRY_CH&quot;,</p>
+  <p class="myCodeP">&quot;CAPITAL_EN&quot;,</p>
+  <p class="myCodeP">&quot;COUNTRY_EN&quot;,</p>
+  <p class="myCodeP">&quot;COUNTRY&quot;,</p>
+  <p class="myCodeP">&quot;CAP_POP&quot;,</p>
+  <p class="myCodeP">&quot;CAPITAL&quot;</p>
+  <p class="myCodeP">],</p>
+  <p class="myCodeP">&quot;fieldValues&quot;: [</p>
+  <p class="myCodeP">&quot;1&quot;,</p>
+  <p class="myCodeP">&quot;-47.8977476573595&quot;,</p>
+  <p class="myCodeP">&quot;-15.792110943058866&quot;,</p>
+  <p class="myCodeP">&quot;1&quot;,</p>
+  <p class="myCodeP">&quot;0&quot;,</p>
+  <p class="myCodeP">&quot;16&quot;,</p>
+  <p class="myCodeP">&quot;0&quot;,</p>
+  <p class="myCodeP">&quot;2207718.0&quot;,</p>
+  <p class="myCodeP">&quot;Brasília&quot;,</p>
+  <p class="myCodeP">&quot;巴西利亚&quot;,</p>
+  <p class="myCodeP">&quot;巴西&quot;,</p>
+  <p class="myCodeP">&quot;Brasilia&quot;,</p>
+  <p class="myCodeP">&quot;Brazil&quot;,</p>
+  <p class="myCodeP">&quot;巴西&quot;,</p>
+  <p class="myCodeP">&quot;2207718.0&quot;,</p>
+  <p class="myCodeP">&quot;巴西利亚&quot;</p>
+  <p class="myCodeP">],</p>
+  <p class="myCodeP">&quot;geometry&quot;: {</p>
+  <p class="myCodeP">&quot;center&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: -5331952.879361972,</p>
+  <p class="myCodeP">&quot;y&quot;: -1780660.5109428319</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;id&quot;: 1,</p>
+  <p class="myCodeP">&quot;parts&quot;: [1],</p>
+  <p class="myCodeP">&quot;points&quot;: [{</p>
+  <p class="myCodeP">&quot;x&quot;: -5331952.879361972,</p>
+  <p class="myCodeP">&quot;y&quot;: -1780660.5109428319</p>
+  <p class="myCodeP">}],</p>
+  <p class="myCodeP">&quot;prjCoordSys&quot;: null,</p>
+  <p class="myCodeP">&quot;style&quot;: null,</p>
+  <p class="myCodeP">&quot;type&quot;: &quot;POINT&quot;</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">}],</p>
+  <p class="myCodeP">&quot;totalCount&quot;: 1</p>
+  <p class="myCodeP">}</p>
+  <h4 class="myNormal">示例4：通过 SQL 查询条件获取Elasticsearch数据要素</h4>
+  <p class="myNormal">对示例 featureResults 资源：http://supermapiservert:8090/iserver/services/data-es/rest/data/featureResults.json?returnContent=true 执行 POST 请求，对 supermapiserver 服务器上的数据进行查询，根据 SQL来获取要素。请求体中的参数如下：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;getFeatureMode&quot;: &quot;SQL&quot;,</p>
+  <p class="myCodeP">&quot;datasetNames&quot;: [</p>
+  <p class="myCodeP">&quot;居民点:supermap&quot;</p>
+  <p class="myCodeP">],</p>
+  <p class="myCodeP">&quot;maxFeatures&quot;: 1000,</p>
+  <p class="myCodeP">&quot;queryParameter&quot;: {</p>
+  <p class="myCodeP">&quot;sortClause&quot;: null,</p>
+  <p class="myCodeP">&quot;ids&quot;: null,</p>
+  <p class="myCodeP">&quot;name&quot;: null,</p>
+  <p class="myCodeP">&quot;attributeFilter&quot;: &quot;MAPTN = G4805200250&quot;,</p>
+  <p class="myCodeP">&quot;groupClause&quot;: null,</p>
+  <p class="myCodeP">&quot;linkItems&quot;: null,</p>
+  <p class="myCodeP">&quot;joinItems&quot;: null,</p>
+  <p class="myCodeP">&quot;fields&quot;: null</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">}</p>
+  <p class="myNormal">返回 rjson 格式的操作结果表述如下：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;features&quot;: [],</p>
+  <p class="myCodeP">&quot;featureUriList&quot;: [</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;stringID&quot;: &quot;AWTJ_JNbQGqPLMwBycPm&quot;,</p>
+  <p class="myCodeP">&quot;fieldNames&quot;: [</p>
+  <p class="myCodeP">&quot;AREA&quot;,</p>
+  <p class="myCodeP">&quot;CODE&quot;,</p>
+  <p class="myCodeP">&quot;COVERAGE&quot;,</p>
+  <p class="myCodeP">&quot;COVERAGE_ID&quot;,</p>
+  <p class="myCodeP">&quot;GB&quot;,</p>
+  <p class="myCodeP">&quot;MAPTN&quot;,</p>
+  <p class="myCodeP">&quot;PERIMETER&quot;,</p>
+  <p class="myCodeP">&quot;RNAME&quot;,</p>
+  <p class="myCodeP">&quot;SmID&quot;,</p>
+  <p class="myCodeP">&quot;TN&quot;,</p>
+  <p class="myCodeP">&quot;ZValue&quot;</p>
+  <p class="myCodeP">],</p>
+  <p class="myCodeP">&quot;geometry&quot;: {</p>
+  <p class="myCodeP">&quot;center&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 102.09679,</p>
+  <p class="myCodeP">&quot;y&quot;: 26.921792</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;parts&quot;: [</p>
+  <p class="myCodeP">1</p>
+  <p class="myCodeP">],</p>
+  <p class="myCodeP">&quot;style&quot;: null,</p>
+  <p class="myCodeP">&quot;prjCoordSys&quot;: null,</p>
+  <p class="myCodeP">&quot;id&quot;: 0,</p>
+  <p class="myCodeP">&quot;type&quot;: &quot;POINT&quot;,</p>
+  <p class="myCodeP">&quot;partTopo&quot;: null,</p>
+  <p class="myCodeP">&quot;points&quot;: [</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;x&quot;: 102.09679,</p>
+  <p class="myCodeP">&quot;y&quot;: 26.921792</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">]</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;fieldValues&quot;: [</p>
+  <p class="myCodeP">&quot;0.0&quot;,</p>
+  <p class="myCodeP">&quot;211&quot;,</p>
+  <p class="myCodeP">&quot;25&quot;,</p>
+  <p class="myCodeP">&quot;25&quot;,</p>
+  <p class="myCodeP">&quot;31091&quot;,</p>
+  <p class="myCodeP">&quot;G4805200250&quot;,</p>
+  <p class="myCodeP">&quot;0.0&quot;,</p>
+  <p class="myCodeP">&quot;新林村&quot;,</p>
+  <p class="myCodeP">&quot;4139&quot;,</p>
+  <p class="myCodeP">&quot;200250&quot;,</p>
+  <p class="myCodeP">&quot;1200.0&quot;</p>
+  <p class="myCodeP">],</p>
+  <p class="myCodeP">&quot;ID&quot;: 0</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;stringID&quot;: &quot;AWXNF_e10qCuSb4ZYqo-&quot;,</p>
+  <p class="myCodeP">&quot;fieldNames&quot;: [</p>
+  <p class="myCodeP">&quot;AREA&quot;,</p>
+  <p class="myCodeP">&quot;CODE&quot;,</p>
+  <p class="myCodeP">&quot;COVERAGE&quot;,</p>
+  <p class="myCodeP">&quot;COVERAGE_ID&quot;,</p>
+  <p class="myCodeP">&quot;GB&quot;,</p>
+  <p class="myCodeP">&quot;MAPTN&quot;,</p>
+  <p class="myCodeP">&quot;PERIMETER&quot;,</p>
+  <p class="myCodeP">&quot;RNAME&quot;,</p>
+  <p class="myCodeP">&quot;SmID&quot;,</p>
+  <p class="myCodeP">&quot;TN&quot;,</p>
+  <p class="myCodeP">&quot;ZValue&quot;</p>
+  <p class="myCodeP">],</p>
+  <p class="myCodeP">&quot;geometry&quot;: {</p>
+  <p class="myCodeP">&quot;center&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 102.09679,</p>
+  <p class="myCodeP">&quot;y&quot;: 26.921792</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;parts&quot;: [</p>
+  <p class="myCodeP">1</p>
+  <p class="myCodeP">],</p>
+  <p class="myCodeP">&quot;style&quot;: null,</p>
+  <p class="myCodeP">&quot;prjCoordSys&quot;: null,</p>
+  <p class="myCodeP">&quot;id&quot;: 0,</p>
+  <p class="myCodeP">&quot;type&quot;: &quot;POINT&quot;,</p>
+  <p class="myCodeP">&quot;partTopo&quot;: null,</p>
+  <p class="myCodeP">&quot;points&quot;: [</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;x&quot;: 102.09679,</p>
+  <p class="myCodeP">&quot;y&quot;: 26.921792</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">]</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;fieldValues&quot;: [</p>
+  <p class="myCodeP">&quot;0.0&quot;,</p>
+  <p class="myCodeP">&quot;211&quot;,</p>
+  <p class="myCodeP">&quot;25&quot;,</p>
+  <p class="myCodeP">&quot;25&quot;,</p>
+  <p class="myCodeP">&quot;31091&quot;,</p>
+  <p class="myCodeP">&quot;g4805200250&quot;,</p>
+  <p class="myCodeP">&quot;0.0&quot;,</p>
+  <p class="myCodeP">&quot;新林村&quot;,</p>
+  <p class="myCodeP">&quot;4139&quot;,</p>
+  <p class="myCodeP">&quot;200250&quot;,</p>
+  <p class="myCodeP">&quot;1200.0&quot;</p>
+  <p class="myCodeP">],</p>
+  <p class="myCodeP">&quot;ID&quot;: 0</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">],</p>
+  <p class="myCodeP">&quot;totalCount&quot;: 2,</p>
+  <p class="myCodeP">&quot;featureCount&quot;: 2</p>
+  <p class="myCodeP">}</p>
+  <h4>示例5：查询并返回动态投影后的要素（设置 targetPrj 参数）</h4>
+  <p class="myNormal">对示例 featureResults 资源：http://supermapiservert:8090/iserver/services/data-world/rest/data/featureResults.rjson?returnContent=true 执行 POST 请求，对 supermapiserver 服务器上的数据进行查询，根据 SQL来获取要素，通过设置 targetPrj 参数转换投影坐标系，targetPrj 参数的构造参考<a class="contentpagehyperlink" href="../../../../iServerJavadoc/com/supermap/services/components/commontypes/PrjCoordSys.html">PrjCoordSys</a>。请求体中的参数示例如下：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;getFeatureMode&quot;:&quot;SQL&quot;,</p>
+  <p class="myCodeP">&quot;targetPrj&quot;: {</p>
+  <p class="myCodeP">&quot;coordSystem&quot;: {</p>
+  <p class="myCodeP">&quot;datum&quot;: {</p>
+  <p class="myCodeP">&quot;name&quot;: &quot;D_Timbalai_1948&quot;,</p>
+  <p class="myCodeP">&quot;spheroid&quot;: {</p>
+  <p class="myCodeP">&quot;axis&quot;: 6377298.556,</p>
+  <p class="myCodeP">&quot;flatten&quot;: 0.003324448999999486,</p>
+  <p class="myCodeP">&quot;name&quot;: &quot;Everest_Definition_1967&quot;,</p>
+  <p class="myCodeP">&quot;type&quot;: &quot;SPHEROID_EVEREST_DEF_1967&quot;</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;type&quot;: &quot;DATUM_TIMBALAI_1948&quot;</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;name&quot;: &quot;GCS_Timbalai_1948&quot;,</p>
+  <p class="myCodeP">&quot;primeMeridian&quot;: {</p>
+  <p class="myCodeP">&quot;longitudeValue&quot;: 0,</p>
+  <p class="myCodeP">&quot;name&quot;: &quot;Greenwich&quot;,</p>
+  <p class="myCodeP">&quot;type&quot;: &quot;PRIMEMERIDIAN_GREENWICH&quot;</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;spatialRefType&quot;: &quot;SPATIALREF_EARTH_LONGITUDE_LATITUDE&quot;,</p>
+  <p class="myCodeP">&quot;type&quot;: &quot;GCS_TIMBALAI_1948&quot;,</p>
+  <p class="myCodeP">&quot;unit&quot;: &quot;DEGREE&quot;</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;coordUnit&quot;: &quot;METER&quot;,</p>
+  <p class="myCodeP">&quot;distanceUnit&quot;: &quot;METER&quot;,</p>
+  <p class="myCodeP">&quot;epsgCode&quot;: 29873,</p>
+  <p class="myCodeP">&quot;name&quot;: &quot;Timbalai_1948_RSO_Borneo_Meters&quot;,</p>
+  <p class="myCodeP">&quot;projection&quot;: {</p>
+  <p class="myCodeP">&quot;name&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">&quot;type&quot;: &quot;PRJ_RECTIFIED_SKEWED_ORTHOMORPHIC&quot;</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;projectionParam&quot;: {</p>
+  <p class="myCodeP">&quot;azimuth&quot;: 53.31582047908623,</p>
+  <p class="myCodeP">&quot;centralMeridian&quot;: 115,</p>
+  <p class="myCodeP">&quot;centralParallel&quot;: 4,</p>
+  <p class="myCodeP">&quot;falseEasting&quot;: 2000000,</p>
+  <p class="myCodeP">&quot;falseNorthing&quot;: 5000000,</p>
+  <p class="myCodeP">&quot;firstPointLongitude&quot;: 0,</p>
+  <p class="myCodeP">&quot;firstStandardParallel&quot;: 0,</p>
+  <p class="myCodeP">&quot;scaleFactor&quot;: 0.99984,</p>
+  <p class="myCodeP">&quot;secondPointLongitude&quot;: 0,</p>
+  <p class="myCodeP">&quot;secondStandardParallel&quot;: 0,</p>
+  <p class="myCodeP">&quot;rectifiedAngle&quot;:53.13010235415598</p>
+  <p class="myCodeP">}},</p>
+  <p class="myCodeP">&quot;datasetNames&quot;:[&quot;World:Capitals&quot;],</p>
+  <p class="myCodeP">&quot;maxFeatures&quot;:1000,</p>
+  <p class="myCodeP">&quot;queryParameter&quot;:{&quot;sortClause&quot;:null, &quot;ids&quot;:null, &quot;name&quot;:&quot;Capital&quot;, &quot;attributeFilter&quot;:&quot;SMID%26lt;2&quot;, &quot;groupClause&quot;:null, &quot;linkItems&quot;:null, &quot;joinItems&quot;:null, &quot;fields&quot;:null}</p>
+  <p class="myCodeP">}</p>
+  <p class="myNormal">返回 rjson 格式的操作结果表述如下：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;featureCount&quot;: 1,</p>
+  <p class="myCodeP">&quot;featureUriList&quot;: [],</p>
+  <p class="myCodeP">&quot;features&quot;: [{</p>
+  <p class="myCodeP">&quot;ID&quot;: 1,</p>
+  <p class="myCodeP">&quot;fieldNames&quot;: [</p>
+  <p class="myCodeP">&quot;SMID&quot;,</p>
+  <p class="myCodeP">&quot;SMX&quot;,</p>
+  <p class="myCodeP">&quot;SMY&quot;,</p>
+  <p class="myCodeP">&quot;SMLIBTILEID&quot;,</p>
+  <p class="myCodeP">&quot;SMUSERID&quot;,</p>
+  <p class="myCodeP">&quot;SMGEOMETRYSIZE&quot;,</p>
+  <p class="myCodeP">&quot;USERID&quot;,</p>
+  <p class="myCodeP">&quot;POP&quot;,</p>
+  <p class="myCodeP">&quot;CAPITAL_LO&quot;,</p>
+  <p class="myCodeP">&quot;CAPITAL_CH&quot;,</p>
+  <p class="myCodeP">&quot;COUNTRY_CH&quot;,</p>
+  <p class="myCodeP">&quot;CAPITAL_EN&quot;,</p>
+  <p class="myCodeP">&quot;COUNTRY_EN&quot;,</p>
+  <p class="myCodeP">&quot;COUNTRY&quot;,</p>
+  <p class="myCodeP">&quot;CAP_POP&quot;,</p>
+  <p class="myCodeP">&quot;CAPITAL&quot;</p>
+  <p class="myCodeP">],</p>
+  <p class="myCodeP">&quot;fieldValues&quot;: [</p>
+  <p class="myCodeP">&quot;1&quot;,</p>
+  <p class="myCodeP">&quot;-47.8977476573595&quot;,</p>
+  <p class="myCodeP">&quot;-15.792110943058866&quot;,</p>
+  <p class="myCodeP">&quot;1&quot;,</p>
+  <p class="myCodeP">&quot;0&quot;,</p>
+  <p class="myCodeP">&quot;16&quot;,</p>
+  <p class="myCodeP">&quot;0&quot;,</p>
+  <p class="myCodeP">&quot;2207718.0&quot;,</p>
+  <p class="myCodeP">&quot;Brasília&quot;,</p>
+  <p class="myCodeP">&quot;巴西利亚&quot;,</p>
+  <p class="myCodeP">&quot;巴西&quot;,</p>
+  <p class="myCodeP">&quot;Brasilia&quot;,</p>
+  <p class="myCodeP">&quot;Brazil&quot;,</p>
+  <p class="myCodeP">&quot;巴西&quot;,</p>
+  <p class="myCodeP">&quot;2207718.0&quot;,</p>
+  <p class="myCodeP">&quot;巴西利亚&quot;</p>
+  <p class="myCodeP">],</p>
+  <p class="myCodeP">&quot;geometry&quot;: {</p>
+  <p class="myCodeP">&quot;center&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 4379183.5624869745,</p>
+  <p class="myCodeP">&quot;y&quot;: 6771032.568773773</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;id&quot;: 1,</p>
+  <p class="myCodeP">&quot;parts&quot;: [1],</p>
+  <p class="myCodeP">&quot;points&quot;: [{</p>
+  <p class="myCodeP">&quot;x&quot;: 4379183.5624869745,</p>
+  <p class="myCodeP">&quot;y&quot;: 6771032.568773773</p>
+  <p class="myCodeP">}],</p>
+  <p class="myCodeP">&quot;prjCoordSys&quot;: null,</p>
+  <p class="myCodeP">&quot;style&quot;: null,</p>
+  <p class="myCodeP">&quot;type&quot;: &quot;POINT&quot;</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">}],</p>
+  <p class="myCodeP">&quot;totalCount&quot;: 1</p>
+  <p class="myCodeP">}</p>
+  <h4 class="myCodeP">示例6：基于格网的最大值聚合查询（设置 aggregations 参数）</h4>
+  <p class="myNormal"><a name="POST 示例1"></a>对示例 featureResults 资源：http://supermapiserver:8090/iserver/services/data-es/rest/data/featureResults.rjson?returnContent=true 执行 POST 请求，对 ES 数据进行基于 BOUNDS 查询的格网-最大值聚合查询，首先通过设置 bounds 参数对 ES 数据进行 BOUNDS 查询获取数据集，然后设置 aggregations 参数实现对获取到的数据集进行格网划分并对 fee 字段进行最大值指标聚合查询，请求体中的参数如下：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;getFeatureMode&quot;: &quot;BOUNDS&quot;,</p>
+  <p class="myCodeP">&quot;datasetNames&quot;: [</p>
+  <p class="myCodeP">&quot;test1100:_doc&quot;</p>
+  <p class="myCodeP">],</p>
+  <p class="myCodeP">&quot;bounds&quot;: {</p>
+  <p class="myCodeP">&quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;:-136.38671875,</p>
+  <p class="myCodeP">&quot;y&quot;:-54.345703125</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;rightTop&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;:116.38671875,</p>
+  <p class="myCodeP">&quot;y&quot;:84.345703125</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;spatialQueryMode&quot;: &quot;CONTAIN&quot;,</p>
+  <p class="myCodeP">&quot;maxFeatures&quot;:10000,</p>
+  <p class="myCodeP">&quot;aggregations&quot;: {</p>
+  <p class="myCodeP">&quot;aggName&quot;: &quot;test&quot;,</p>
+  <p class="myCodeP">&quot;aggType&quot;: &quot;geohash_grid&quot;,</p>
+  <p class="myCodeP">&quot;aggFieldName&quot;: &quot;location&quot;,</p>
+  <p class="myCodeP">&quot;precision&quot;: 3,</p>
+  <p class="myCodeP">&quot;subAggs&quot;: [{</p>
+  <p class="myCodeP">&quot;aggName&quot;:&quot;test2&quot;,</p>
+  <p class="myCodeP">&quot;aggType&quot;:&quot;max&quot;,</p>
+  <p class="myCodeP">&quot;aggFieldName&quot;:&quot;fee&quot;,</p>
+  <p class="myCodeP">&quot;subAgg&quot;:null</p>
+  <p class="myCodeP">}]</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">}</p>
+  <p class="myNormal">返回 rjson 格式的操作结果表述如下：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;featureCount&quot;: 215,</p>
+  <p class="myCodeP">&quot;featureUriList&quot;: [],</p>
+  <p class="myCodeP">&quot;features&quot;: [{</p>
+  <p class="myCodeP">&quot;ID&quot;: 0,</p>
+  <p class="myCodeP">&quot;fieldNames&quot;:[</p>
+  <p class="myCodeP">&quot;test&quot;,</p>
+  <p class="myCodeP">&quot;test2&quot;</p>
+  <p class="myCodeP">],</p>
+  <p class="myCodeP">&quot;fieldValues&quot;:[</p>
+  <p class="myCodeP">&quot;1996.52&quot;,</p>
+  <p class="myCodeP">&quot;1408&quot;</p>
+  <p class="myCodeP">],</p>
+  <p class="myCodeP">&quot;geometry&quot;: {</p>
+  <p class="myCodeP">&quot;center&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 115.3125,</p>
+  <p class="myCodeP">&quot;y&quot;: 39.375</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;id&quot;: 0,</p>
+  <p class="myCodeP">&quot;parts&quot;: [1],</p>
+  <p class="myCodeP">&quot;partTopo&quot;: null,</p>
+  <p class="myCodeP">&quot;points&quot;: [{</p>
+  <p class="myCodeP">&quot;x&quot;: 115.3125,</p>
+  <p class="myCodeP">&quot;y&quot;: 39.375</p>
+  <p class="myCodeP">}],</p>
+  <p class="myCodeP">&quot;prjCoordSys&quot;: null,</p>
+  <p class="myCodeP">&quot;style&quot;: null,</p>
+  <p class="myCodeP">&quot;type&quot;: &quot;POINT&quot;</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">......</p>
+  <p class="myCodeP">],</p>
+  <p class="myCodeP">&quot;totalCount&quot;: 215</p>
+  <p class="myCodeP">}</p>
+  <h4 class="myNormal">示例7</h4>
+  <p class="myNormal">对示例 featureResults 资源：http://supermapiserver:8090/iserver/services/data- testdatahbase /rest/data/featureResults.rjson?returnContent=true 执行 POST 请求，对分布式数据使用 ECQL 语言进行查询，获取要素，请求体中的参数示例如下：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;getFeatureMode&quot;: &quot;SQL&quot;,</p>
+  <p class="myCodeP">&quot;datasetNames&quot;: [&quot;testdatahbase:Muifa_4326&quot;],</p>
+  <p class="myCodeP">&quot;maxFeatures&quot;: 1000,</p>
+  <p class="myCodeP">&quot;queryParameter&quot;: {</p>
+  <p class="myCodeP">&quot;sortClause&quot;: null,</p>
+  <p class="myCodeP">&quot;ids&quot;: null,</p>
+  <p class="myCodeP">&quot;name&quot;: null,</p>
+  <p class="myCodeP">&quot;attributeFilter&quot;: &quot;BBOX(the_geom,131.03,23.35,132.87,24.97)&quot;,</p>
+  <p class="myCodeP">&quot;groupClause&quot;: null,</p>
+  <p class="myCodeP">&quot;linkItems&quot;: null,</p>
+  <p class="myCodeP">&quot;joinItems&quot;: null,</p>
+  <p class="myCodeP">&quot;fields&quot;: null</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">}</p>
+  <p>返回 rjson 格式的操作结果表述如下：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;features&quot;: [],</p>
+  <p class="myCodeP">&quot; featureUriList &quot;: [</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;stringID&quot;: &quot;00a3e328-9ac0-4765-9ad7-d3b19f00fcda&quot;,</p>
+  <p class="myCodeP">&quot;fieldNames&quot;: [</p>
+  <p class="myCodeP">&quot;SmID&quot;,</p>
+  <p class="myCodeP">&quot;TIME&quot;,</p>
+  <p class="myCodeP">&quot;STRENGTH&quot;,</p>
+  <p class="myCodeP">&quot;LAT&quot;,</p>
+  <p class="myCodeP">&quot;LON&quot;,</p>
+  <p class="myCodeP">&quot;PRES&quot;,</p>
+  <p class="myCodeP">&quot;WND&quot;,</p>
+  <p class="myCodeP">&quot;NAME&quot;,</p>
+  <p class="myCodeP">&quot;RTime&quot;</p>
+  <p class="myCodeP">],</p>
+  <p class="myCodeP">&quot;geometry&quot;: {</p>
+  <p class="myCodeP">&quot;center&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 132.8,</p>
+  <p class="myCodeP">&quot;y&quot;: 24.1</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;parts&quot;: [1],</p>
+  <p class="myCodeP">&quot;style&quot;: null,</p>
+  <p class="myCodeP">&quot;prjCoordSys&quot;: null,</p>
+  <p class="myCodeP">&quot;id&quot;: 0,</p>
+  <p class="myCodeP">&quot;type&quot;: &quot;POINT&quot;,</p>
+  <p class="myCodeP">&quot;partTopo&quot;: null,</p>
+  <p class="myCodeP">&quot;points&quot;: [{</p>
+  <p class="myCodeP">&quot;x&quot;: 132.8,</p>
+  <p class="myCodeP">&quot;y&quot;: 24.1</p>
+  <p class="myCodeP">}]</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;fieldValues&quot;: [</p>
+  <p class="myCodeP">&quot;29&quot;,</p>
+  <p class="myCodeP">&quot;2011080300&quot;,</p>
+  <p class="myCodeP">&quot;5.0&quot;,</p>
+  <p class="myCodeP">&quot;24.1&quot;,</p>
+  <p class="myCodeP">&quot;132.8&quot;,</p>
+  <p class="myCodeP">&quot;940.0&quot;,</p>
+  <p class="myCodeP">&quot;50.0&quot;,</p>
+  <p class="myCodeP">&quot;梅花&quot;,</p>
+  <p class="myCodeP">&quot;2011-08-02T16:00:00.000Z&quot;</p>
+  <p class="myCodeP">],</p>
+  <p class="myCodeP">&quot;ID&quot;: 0</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;stringID&quot;: &quot;70a3e328-9a8a-43fc-85b8-9301195874d0&quot;,</p>
+  <p class="myCodeP">……</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;stringID&quot;: &quot;30a3e328-9a8b-436e-bda5-9142b3826a6a&quot;,</p>
+  <p class="myCodeP">……</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">],</p>
+  <p class="myCodeP">&quot;totalCount&quot;: 3</p>
+  <p class="myCodeP">&quot;featureCount&quot;: 3</p>
+  <p class="myCodeP">}</p>
+  <h4 class="myNormal"><a name="示例8_SQL查询_以空间几何函数为查询条件"></a>示例8：SQL查询—以空间几何函数为查询条件</h4>
+  <p class="myNormal">对示例 featureResults 资源：http://supermapiserver:8090/iserver/services/data-postgisMap/rest/data/featureResults.rjson?returnContent=true 执行 POST 请求，对 supermapiserver 服务器上的数据进行查询，根据以空间几何函数为条件的 SQL 查询来获取要素。请求体中的参数如下：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;getFeatureMode&quot;:&quot;SQL&quot;,</p>
+  <p class="myCodeP">&quot;datasetNames&quot;:[&quot;postgisMap:basemap_p&quot;],</p>
+  <p class="myCodeP">&quot;maxFeatures&quot;:2,</p>
+  <p class="myCodeP">&quot;queryParameter&quot;:{</p>
+  <p class="myCodeP">&quot;sortClause&quot;:null,</p>
+  <p class="myCodeP">&quot;ids&quot;:null,</p>
+  <p class="myCodeP">&quot;name&quot;:null,</p>
+  <p class="myCodeP">&quot;attributeFilter&quot;:&quot;ST_Intersects(basemap_p.smgeometry,st_geomfromgeojson(&#39;{\&quot;type\&quot;:\&quot;Line\&quot;,\&quot;coordinates\&quot;:[[[117.39993002089760,40.0590434404580],[117.39993002089765,40.0590434404588]]]}&#39;))&quot;,</p>
+  <p class="myCodeP">&quot;groupClause&quot;:null,</p>
+  <p class="myCodeP">&quot;linkItems&quot;:null,</p>
+  <p class="myCodeP">&quot;joinItems&quot;:null,</p>
+  <p class="myCodeP">&quot;fields&quot;:null</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">hasGeometry:false</p>
+  <p class="myCodeP">}</p>
+  <p class="myNormal">返回 rjson 格式的操作结果表述如下：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;featureCount&quot;: 1,</p>
+  <p class="myCodeP">&quot;featureUriList&quot;: [],</p>
+  <p class="myCodeP">&quot;features&quot;: [{</p>
+  <p class="myCodeP">&quot;ID&quot;: 1,</p>
+  <p class="myCodeP">&quot;fieldNames&quot;: [</p>
+  <p class="myCodeP">&quot;smuserid&quot;,</p>
+  <p class="myCodeP">&quot;userid&quot;,</p>
+  <p class="myCodeP">&quot;name&quot;,</p>
+  <p class="myCodeP">&quot;code&quot;,</p>
+  <p class="myCodeP">&quot;adclass&quot;,</p>
+  <p class="myCodeP">&quot;adclass_1&quot;</p>
+  <p class="myCodeP">],</p>
+  <p class="myCodeP">&quot;fieldValues&quot;: [</p>
+  <p class="myCodeP">&quot;0&quot;,</p>
+  <p class="myCodeP">&quot;21&quot;,</p>
+  <p class="myCodeP">&quot;蓟县&quot;,</p>
+  <p class="myCodeP">&quot;120225&quot;,</p>
+  <p class="myCodeP">&quot;4&quot;,</p>
+  <p class="myCodeP">&quot;0.0&quot;</p>
+  <p class="myCodeP">],</p>
+  <p class="myCodeP">}],</p>
+  <p class="myCodeP">&quot;totalCount&quot;: 1</p>
+  <p class="myCodeP">}</p>
+  <h4>示例9：对多个数据集进行查询并按组返回数据集信息（设置 returnDatasetInfoOnly 参数）</h4>
+  <p class="myNormal">对示例 featureResults 资源： http://supermapiserver:8090/iserver/services/data-World/rest/data/featureResults.rjson?returnDatasetInfoOnly=true&amp;returnContent=true 执行 POST 请求，对 supermapiserver 服务器上的数据集进行查询，请求体中的参数如下：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;getFeatureMode&quot;:&quot;ID&quot;,</p>
+  <p class="myCodeP">&quot;datasetNames&quot;:[&quot;China:Airport_pt&quot;, &quot;China:China_Island&quot;],</p>
+  <p class="myCodeP">&quot;ids&quot;:[1,2,3]</p>
+  <p class="myCodeP">}</p>
+  <p class="myNormal">返回 rjson 格式的操作结果表述如下：</p>
+  <p class="myCodeP">[{</p>
+  <p class="myCodeP">    &quot;fieldInfos&quot;: [</p>
+  <p class="myCodeP">        {</p>
+  <p class="myCodeP">            &quot;name&quot;:&quot;SmID&quot;,</p>
+  <p class="myCodeP">            &quot;caption&quot;:&quot;SmID&quot;,</p>
+  <p class="myCodeP">           &quot;type&quot;:&quot;INT32&quot;</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        {</p>
+  <p class="myCodeP">            &quot;name&quot;:&quot;SmUserID&quot;,</p>
+  <p class="myCodeP">            &quot;caption&quot;:&quot;SmUserID&quot;,</p>
+  <p class="myCodeP">            &quot;type&quot;:&quot;INT32&quot;</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        {</p>
+  <p class="myCodeP">            &quot;name&quot;:&quot;GB&quot;,</p>
+  <p class="myCodeP">            &quot;caption&quot;:&quot;GB&quot;,</p>
+  <p class="myCodeP">            &quot;type&quot;:&quot;DOUBLE&quot;</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        {</p>
+  <p class="myCodeP">           &quot;name&quot;:&quot;RN&quot;,</p>
+  <p class="myCodeP">           &quot;caption&quot;:&quot;RN&quot;,</p>
+  <p class="myCodeP">            &quot;type&quot;:&quot;WTEXT&quot;</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        {</p>
+  <p class="myCodeP">            &quot;name&quot;:&quot;NAME&quot;,</p>
+  <p class="myCodeP">            &quot;caption&quot;:&quot;NAME&quot;,</p>
+  <p class="myCodeP">            &quot;type&quot;:&quot;WTEXT&quot;</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        {</p>
+  <p class="myCodeP">           &quot;name&quot;:&quot;PERIOD&quot;,</p>
+  <p class="myCodeP">           &quot;caption&quot;:&quot;PERIOD&quot;,</p>
+  <p class="myCodeP">            &quot;type&quot;: &quot;WTEXT&quot;</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        {</p>
+  <p class="myCodeP">            &quot;name&quot;:&quot;BRGLEV&quot;,</p>
+  <p class="myCodeP">            &quot;caption&quot;:&quot;BRGLEV&quot;,</p>
+  <p class="myCodeP">            &quot;type&quot;:&quot;DOUBLE&quot;</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        {</p>
+  <p class="myCodeP">            &quot;name&quot;:&quot;ANGLE&quot;,</p>
+  <p class="myCodeP">            &quot;caption&quot;:&quot;ANGLE&quot;,</p>
+  <p class="myCodeP">            &quot;type&quot;:&quot;DOUBLE&quot;</p>
+  <p class="myCodeP">        }</p>
+  <p class="myCodeP">    ],</p>
+  <p class="myCodeP">    &quot;featureRange&quot;: {</p>
+  <p class="myCodeP">        &quot;start&quot;: 0,</p>
+  <p class="myCodeP">        &quot;end&quot;: 2</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">   &quot;datasetName&quot;:&quot;China:Airport_pt&quot;</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">    &quot;fieldInfos&quot;: [</p>
+  <p class="myCodeP">        {</p>
+  <p class="myCodeP">            &quot;name&quot;:&quot;SmID&quot;,</p>
+  <p class="myCodeP">            &quot;caption&quot;:&quot;SmID&quot;,</p>
+  <p class="myCodeP">           &quot;type&quot;:&quot;INT32&quot;</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        {</p>
+  <p class="myCodeP">            &quot;name&quot;:&quot;SmUserID&quot;,</p>
+  <p class="myCodeP">            &quot;caption&quot;:&quot;SmUserID&quot;,</p>
+  <p class="myCodeP">            &quot;type&quot;:&quot;INT32&quot;</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        {</p>
+  <p class="myCodeP">            &quot;name&quot;:&quot;SmArea&quot;,</p>
+  <p class="myCodeP">            &quot;caption&quot;:&quot;SmArea&quot;,</p>
+  <p class="myCodeP">            &quot;type&quot;:&quot;DOUBLE&quot;</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        {</p>
+  <p class="myCodeP">           &quot;name&quot;:&quot;SmPerimeter&quot;,</p>
+  <p class="myCodeP">           &quot;caption&quot;:&quot;SmPerimeter&quot;,</p>
+  <p class="myCodeP">            &quot;type&quot;:&quot;DOUBLE&quot;</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        {</p>
+  <p class="myCodeP">            &quot;name&quot;:&quot;GB&quot;,</p>
+  <p class="myCodeP">            &quot;caption&quot;:&quot;GB&quot;,</p>
+  <p class="myCodeP">            &quot;type&quot;:&quot;DOUBLE&quot;</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        {</p>
+  <p class="myCodeP">            &quot;name&quot;:&quot;NAME&quot;,</p>
+  <p class="myCodeP">            &quot;caption&quot;:&quot;NAME&quot;,</p>
+  <p class="myCodeP">            &quot;type&quot;:&quot;WTEXT&quot;</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        {</p>
+  <p class="myCodeP">           &quot;name&quot;:&quot;SHAPE_Leng&quot;,</p>
+  <p class="myCodeP">           &quot;caption&quot;:&quot;SHAPE_Leng&quot;,</p>
+  <p class="myCodeP">            &quot;type&quot;: &quot;DOUBLE&quot;</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        {</p>
+  <p class="myCodeP">            &quot;name&quot;:&quot;SHAPE_Area&quot;,</p>
+  <p class="myCodeP">            &quot;caption&quot;:&quot;SHAPE_Area&quot;,</p>
+  <p class="myCodeP">            &quot;type&quot;:&quot;DOUBLE&quot;</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        {</p>
+  <p class="myCodeP">            &quot;name&quot;:&quot;PAC&quot;,</p>
+  <p class="myCodeP">            &quot;caption&quot;:&quot;PAC&quot;,</p>
+  <p class="myCodeP">            &quot;type&quot;:&quot;DOUBLE&quot;</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        {</p>
+  <p class="myCodeP">            &quot;name&quot;:&quot;CODE&quot;,</p>
+  <p class="myCodeP">            &quot;caption&quot;:&quot;CODE&quot;,</p>
+  <p class="myCodeP">            &quot;type&quot;:&quot;WTEXT&quot;</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        {</p>
+  <p class="myCodeP">            &quot;name&quot;:&quot;PINYIN&quot;,</p>
+  <p class="myCodeP">            &quot;caption&quot;:&quot;PINYIN&quot;,</p>
+  <p class="myCodeP">            &quot;type&quot;:&quot;WTEXT&quot;</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">    ],</p>
+  <p class="myCodeP">    &quot;featureRange&quot;: {</p>
+  <p class="myCodeP">        &quot;start&quot;: 3,</p>
+  <p class="myCodeP">        &quot;end&quot;: 5</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">   &quot;datasetName&quot;:&quot;China:China_Island&quot;</p>
+  <p class="myCodeP">}]</p>
+  <h4 class="myCodeP">示例10：BOUNDS查询以获取视频数据集中指定范围内的视频要素</h4>
+  <p class="myNormal">对示例 featureResults 资源：http://supermapiserver:8090/iserver/services/data-test0104/rest/data/featureResults.rjson?returnContent=true 执行 POST请求，根据地理范围获取视频要素，请求体中的参数如下：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;getFeatureMode&quot;:&quot;BOUNDS&quot;,</p>
+  <p class="myCodeP">&quot;datasetNames&quot;:[&quot;NewDatasource:ptz旋转画面_2&quot;],</p>
+  <p class="myCodeP">&quot;bounds&quot;:{</p>
+  <p class="myCodeP">&quot;leftBottom&quot;:{</p>
+  <p class="myCodeP">&quot;x&quot;:12929007,</p>
+  <p class="myCodeP">&quot;y&quot;:3279156</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;rightTop&quot;:{</p>
+  <p class="myCodeP">&quot;x&quot;:12929466,</p>
+  <p class="myCodeP">&quot;y&quot;:3279656</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">}</p>
+  <p class="myNormal">返回的 rjsonn 格式的操作结果表述如下：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;features&quot;: [{</p>
+  <p class="myCodeP">&quot;stringID&quot;: null,</p>
+  <p class="myCodeP">&quot;address&quot;: &quot;http://192.168.113.1:8090/iserver/services/video-test0104/restjsr/hls/stream/NewDatasource-ptz旋转画面_2/1/index.m3u8&quot;,</p>
+  <p class="myCodeP">&quot;videoParameters&quot;: {</p>
+  <p class="myCodeP">&quot;auxiliaryCalibrationParameter&quot;: {</p>
+  <p class="myCodeP">&quot;tiltGrowsUp&quot;: false,</p>
+  <p class="myCodeP">&quot;iterationCount&quot;: 1000,</p>
+  <p class="myCodeP">&quot;samplesCount&quot;: 200,</p>
+  <p class="myCodeP">&quot;supportHeight&quot;: false,</p>
+  <p class="myCodeP">&quot;panGrowsClockwise&quot;: false,</p>
+  <p class="myCodeP">&quot;cameraIteratorParameters&quot;: [</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;minValue&quot;: &quot;NaN&quot;,</p>
+  <p class="myCodeP">&quot;cameraParameterType&quot;: &quot;X&quot;,</p>
+  <p class="myCodeP">&quot;maxValue&quot;: &quot;NaN&quot;,</p>
+  <p class="myCodeP">&quot;value&quot;: 1.29295170697E7</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;minValue&quot;: &quot;NaN&quot;,</p>
+  <p class="myCodeP">&quot;cameraParameterType&quot;: &quot;Y&quot;,</p>
+  <p class="myCodeP">&quot;maxValue&quot;: &quot;NaN&quot;,</p>
+  <p class="myCodeP">&quot;value&quot;: 3279448.7247</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;minValue&quot;: 0,</p>
+  <p class="myCodeP">&quot;cameraParameterType&quot;: &quot;Z&quot;,</p>
+  <p class="myCodeP">&quot;maxValue&quot;: 80,</p>
+  <p class="myCodeP">&quot;value&quot;: &quot;NaN&quot;</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;minValue&quot;: &quot;NaN&quot;,</p>
+  <p class="myCodeP">&quot;cameraParameterType&quot;: &quot;FOV_X&quot;,</p>
+  <p class="myCodeP">&quot;maxValue&quot;: &quot;NaN&quot;,</p>
+  <p class="myCodeP">&quot;value&quot;: &quot;NaN&quot;</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;minValue&quot;: &quot;NaN&quot;,</p>
+  <p class="myCodeP">&quot;cameraParameterType&quot;: &quot;FOV_Y&quot;,</p>
+  <p class="myCodeP">&quot;maxValue&quot;: &quot;NaN&quot;,</p>
+  <p class="myCodeP">&quot;value&quot;: &quot;NaN&quot;</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">]</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;videoParameterList&quot;: [</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;videoWidth&quot;: 1540,</p>
+  <p class="myCodeP">&quot;calibrationModel&quot;: {</p>
+  <p class="myCodeP">&quot;isRansac&quot;: false,</p>
+  <p class="myCodeP">&quot;centerY&quot;: 0,</p>
+  <p class="myCodeP">&quot;centerX&quot;: 0,</p>
+  <p class="myCodeP">&quot;calibrationModelType&quot;: 0,</p>
+  <p class="myCodeP">&quot;calibrationPoints&quot;: [</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;spatialPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 1.2929429979064863E7,</p>
+  <p class="myCodeP">&quot;y&quot;: 3279405.072826336,</p>
+  <p class="myCodeP">&quot;z&quot;: 0</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;videoPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 546,</p>
+  <p class="myCodeP">&quot;y&quot;: 196</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;spatialPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 1.2929372108815093E7,</p>
+  <p class="myCodeP">&quot;y&quot;: 3279432.230745163,</p>
+  <p class="myCodeP">&quot;z&quot;: 0</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;videoPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 855,</p>
+  <p class="myCodeP">&quot;y&quot;: 445</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;spatialPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 1.2929376742628248E7,</p>
+  <p class="myCodeP">&quot;y&quot;: 3279481.6986007923,</p>
+  <p class="myCodeP">&quot;z&quot;: 0</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;videoPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 1281,</p>
+  <p class="myCodeP">&quot;y&quot;: 414</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;spatialPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 1.2929298549258841E7,</p>
+  <p class="myCodeP">&quot;y&quot;: 3279409.595201617,</p>
+  <p class="myCodeP">&quot;z&quot;: 0</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;videoPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 694,</p>
+  <p class="myCodeP">&quot;y&quot;: 590</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;spatialPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 1.2929325804647576E7,</p>
+  <p class="myCodeP">&quot;y&quot;: 3279495.6764664766,</p>
+  <p class="myCodeP">&quot;z&quot;: 0</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;videoPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 1244,</p>
+  <p class="myCodeP">&quot;y&quot;: 534</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;spatialPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 1.2929358878926704E7,</p>
+  <p class="myCodeP">&quot;y&quot;: 3279505.9148433916,</p>
+  <p class="myCodeP">&quot;z&quot;: 0</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;videoPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 1409,</p>
+  <p class="myCodeP">&quot;y&quot;: 456</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;spatialPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 1.2929424599934718E7,</p>
+  <p class="myCodeP">&quot;y&quot;: 3279463.9504835536,</p>
+  <p class="myCodeP">&quot;z&quot;: 0</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;videoPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 1273,</p>
+  <p class="myCodeP">&quot;y&quot;: 217</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;spatialPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 1.2929371030474676E7,</p>
+  <p class="myCodeP">&quot;y&quot;: 3279383.6257988643,</p>
+  <p class="myCodeP">&quot;z&quot;: 0</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;videoPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 432,</p>
+  <p class="myCodeP">&quot;y&quot;: 448</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">],</p>
+  <p class="myCodeP">&quot;fovX&quot;: 0,</p>
+  <p class="myCodeP">&quot;fovY&quot;: 0,</p>
+  <p class="myCodeP">&quot;isIntrinsic&quot;: false,</p>
+  <p class="myCodeP">&quot;isExtrinsic&quot;: false,</p>
+  <p class="myCodeP">&quot;cameraLocation&quot;: {</p>
+  <p class="myCodeP">&quot;cameraRoll&quot;: -0.7656412825751551,</p>
+  <p class="myCodeP">&quot;cameraYaw&quot;: -90.89065135311759,</p>
+  <p class="myCodeP">&quot;cameraY&quot;: 3279448.7247,</p>
+  <p class="myCodeP">&quot;cameraZ&quot;: 65.78334160898069,</p>
+  <p class="myCodeP">&quot;cameraX&quot;: 1.29295170697E7,</p>
+  <p class="myCodeP">&quot;cameraPitch&quot;: -39.80838777192129</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;clipRegion&quot;: {</p>
+  <p class="myCodeP">&quot;center&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 770,</p>
+  <p class="myCodeP">&quot;y&quot;: 385</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;parts&quot;: [5],</p>
+  <p class="myCodeP">&quot;style&quot;: null,</p>
+  <p class="myCodeP">&quot;prjCoordSys&quot;: null,</p>
+  <p class="myCodeP">&quot;id&quot;: 0,</p>
+  <p class="myCodeP">&quot;type&quot;: &quot;REGION&quot;,</p>
+  <p class="myCodeP">&quot;partTopo&quot;: [1],</p>
+  <p class="myCodeP">&quot;points&quot;: [</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;x&quot;: 0,</p>
+  <p class="myCodeP">&quot;y&quot;: 0</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;x&quot;: 1540,</p>
+  <p class="myCodeP">&quot;y&quot;: 0</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;x&quot;: 1540,</p>
+  <p class="myCodeP">&quot;y&quot;: 770</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;x&quot;: 0,</p>
+  <p class="myCodeP">&quot;y&quot;: 770</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;x&quot;: 0,</p>
+  <p class="myCodeP">&quot;y&quot;: 0</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">]</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;zoom&quot;: 1,</p>
+  <p class="myCodeP">&quot;time&quot;: 0,</p>
+  <p class="myCodeP">&quot;validBounds&quot;: {</p>
+  <p class="myCodeP">&quot;OUT_TOP&quot;: 2,</p>
+  <p class="myCodeP">&quot;OUT_RIGHT&quot;: 4,</p>
+  <p class="myCodeP">&quot;size&quot;: {</p>
+  <p class="myCodeP">&quot;width&quot;: 1540,</p>
+  <p class="myCodeP">&quot;height&quot;: 770</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;x&quot;: 0,</p>
+  <p class="myCodeP">&quot;width&quot;: 1540,</p>
+  <p class="myCodeP">&quot;y&quot;: 0,</p>
+  <p class="myCodeP">&quot;OUT_BOTTOM&quot;: 8,</p>
+  <p class="myCodeP">&quot;location&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 0,</p>
+  <p class="myCodeP">&quot;y&quot;: 0</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;OUT_LEFT&quot;: 1,</p>
+  <p class="myCodeP">&quot;height&quot;: 770</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;tilt&quot;: 23.9,</p>
+  <p class="myCodeP">&quot;pan&quot;: 156,</p>
+  <p class="myCodeP">&quot;videoHeight&quot;: 770</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;videoWidth&quot;: 1540,</p>
+  <p class="myCodeP">&quot;calibrationModel&quot;: {</p>
+  <p class="myCodeP">&quot;isRansac&quot;: false,</p>
+  <p class="myCodeP">&quot;centerY&quot;: 0,</p>
+  <p class="myCodeP">&quot;centerX&quot;: 0,</p>
+  <p class="myCodeP">&quot;calibrationModelType&quot;: 0,</p>
+  <p class="myCodeP">&quot;calibrationPoints&quot;: [</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;spatialPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 1.2929429979064863E7,</p>
+  <p class="myCodeP">&quot;y&quot;: 3279405.072826336,</p>
+  <p class="myCodeP">&quot;z&quot;: 0</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;videoPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 120,</p>
+  <p class="myCodeP">&quot;y&quot;: 126</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;spatialPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 1.2929371395548986E7,</p>
+  <p class="myCodeP">&quot;y&quot;: 3279432.6098156744,</p>
+  <p class="myCodeP">&quot;z&quot;: 0</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;videoPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 410,</p>
+  <p class="myCodeP">&quot;y&quot;: 442</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;spatialPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 1.2929377985228604E7,</p>
+  <p class="myCodeP">&quot;y&quot;: 3279478.5103589036,</p>
+  <p class="myCodeP">&quot;z&quot;: 0</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;videoPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 820,</p>
+  <p class="myCodeP">&quot;y&quot;: 444</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;spatialPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 1.2929298549258841E7,</p>
+  <p class="myCodeP">&quot;y&quot;: 3279409.595201617,</p>
+  <p class="myCodeP">&quot;z&quot;: 0</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;videoPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 228,</p>
+  <p class="myCodeP">&quot;y&quot;: 564</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;spatialPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 1.292926073318682E7,</p>
+  <p class="myCodeP">&quot;y&quot;: 3279503.7847872227,</p>
+  <p class="myCodeP">&quot;z&quot;: 0</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;videoPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 735,</p>
+  <p class="myCodeP">&quot;y&quot;: 641</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;spatialPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 1.2929358878926704E7,</p>
+  <p class="myCodeP">&quot;y&quot;: 3279505.9148433916,</p>
+  <p class="myCodeP">&quot;z&quot;: 0</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;videoPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 947,</p>
+  <p class="myCodeP">&quot;y&quot;: 504</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;spatialPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 1.2929424599934718E7,</p>
+  <p class="myCodeP">&quot;y&quot;: 3279463.9504835536,</p>
+  <p class="myCodeP">&quot;z&quot;: 0</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;videoPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 859,</p>
+  <p class="myCodeP">&quot;y&quot;: 262</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;spatialPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 1.2929388108285695E7,</p>
+  <p class="myCodeP">&quot;y&quot;: 3279545.695535939,</p>
+  <p class="myCodeP">&quot;z&quot;: 0</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;videoPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 1324,</p>
+  <p class="myCodeP">&quot;y&quot;: 465</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;spatialPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 1.2929322376055904E7,</p>
+  <p class="myCodeP">&quot;y&quot;: 3279573.704751997,</p>
+  <p class="myCodeP">&quot;z&quot;: 0</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;videoPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 1183,</p>
+  <p class="myCodeP">&quot;y&quot;: 579</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">],</p>
+  <p class="myCodeP">&quot;fovX&quot;: 0,</p>
+  <p class="myCodeP">&quot;fovY&quot;: 0,</p>
+  <p class="myCodeP">&quot;isIntrinsic&quot;: false,</p>
+  <p class="myCodeP">&quot;isExtrinsic&quot;: false,</p>
+  <p class="myCodeP">&quot;cameraLocation&quot;: {</p>
+  <p class="myCodeP">&quot;cameraRoll&quot;: -0.7656412825751551,</p>
+  <p class="myCodeP">&quot;cameraYaw&quot;: -70.89065135311759,</p>
+  <p class="myCodeP">&quot;cameraY&quot;: 3279448.7247,</p>
+  <p class="myCodeP">&quot;cameraZ&quot;: 65.78334160898069,</p>
+  <p class="myCodeP">&quot;cameraX&quot;: 1.29295170697E7,</p>
+  <p class="myCodeP">&quot;cameraPitch&quot;: -39.80838777192129</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;clipRegion&quot;: {</p>
+  <p class="myCodeP">&quot;center&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 770,</p>
+  <p class="myCodeP">&quot;y&quot;: 385</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;parts&quot;: [5],</p>
+  <p class="myCodeP">&quot;style&quot;: null,</p>
+  <p class="myCodeP">&quot;prjCoordSys&quot;: null,</p>
+  <p class="myCodeP">&quot;id&quot;: 0,</p>
+  <p class="myCodeP">&quot;type&quot;: &quot;REGION&quot;,</p>
+  <p class="myCodeP">&quot;partTopo&quot;: [1],</p>
+  <p class="myCodeP">&quot;points&quot;: [</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;x&quot;: 0,</p>
+  <p class="myCodeP">&quot;y&quot;: 0</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;x&quot;: 1540,</p>
+  <p class="myCodeP">&quot;y&quot;: 0</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;x&quot;: 1540,</p>
+  <p class="myCodeP">&quot;y&quot;: 770</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;x&quot;: 0,</p>
+  <p class="myCodeP">&quot;y&quot;: 770</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;x&quot;: 0,</p>
+  <p class="myCodeP">&quot;y&quot;: 0</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">]</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;zoom&quot;: 1,</p>
+  <p class="myCodeP">&quot;time&quot;: 12.733333333333333,</p>
+  <p class="myCodeP">&quot;validBounds&quot;: {</p>
+  <p class="myCodeP">&quot;OUT_TOP&quot;: 2,</p>
+  <p class="myCodeP">&quot;OUT_RIGHT&quot;: 4,</p>
+  <p class="myCodeP">&quot;size&quot;: {</p>
+  <p class="myCodeP">&quot;width&quot;: 1540,</p>
+  <p class="myCodeP">&quot;height&quot;: 770</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;x&quot;: 0,</p>
+  <p class="myCodeP">&quot;width&quot;: 1540,</p>
+  <p class="myCodeP">&quot;y&quot;: 0,</p>
+  <p class="myCodeP">&quot;OUT_BOTTOM&quot;: 8,</p>
+  <p class="myCodeP">&quot;location&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 0,</p>
+  <p class="myCodeP">&quot;y&quot;: 0</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;OUT_LEFT&quot;: 1,</p>
+  <p class="myCodeP">&quot;height&quot;: 770</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;tilt&quot;: 23.9,</p>
+  <p class="myCodeP">&quot;pan&quot;: 136,</p>
+  <p class="myCodeP">&quot;videoHeight&quot;: 770</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;videoWidth&quot;: 1540,</p>
+  <p class="myCodeP">&quot;calibrationModel&quot;: {</p>
+  <p class="myCodeP">&quot;isRansac&quot;: false,</p>
+  <p class="myCodeP">&quot;centerY&quot;: 0,</p>
+  <p class="myCodeP">&quot;centerX&quot;: 0,</p>
+  <p class="myCodeP">&quot;calibrationModelType&quot;: 0,</p>
+  <p class="myCodeP">&quot;calibrationPoints&quot;: [</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;spatialPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 1.292947775352481E7,</p>
+  <p class="myCodeP">&quot;y&quot;: 3279486.5758288642,</p>
+  <p class="myCodeP">&quot;z&quot;: 0</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;videoPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 1111,</p>
+  <p class="myCodeP">&quot;y&quot;: 52</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;spatialPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 1.2929377985228604E7,</p>
+  <p class="myCodeP">&quot;y&quot;: 3279478.5103589036,</p>
+  <p class="myCodeP">&quot;z&quot;: 0</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;videoPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 374,</p>
+  <p class="myCodeP">&quot;y&quot;: 420</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;spatialPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 1.292926073318682E7,</p>
+  <p class="myCodeP">&quot;y&quot;: 3279503.7847872227,</p>
+  <p class="myCodeP">&quot;z&quot;: 0</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;videoPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 263,</p>
+  <p class="myCodeP">&quot;y&quot;: 611</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;spatialPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 1.2929358878926704E7,</p>
+  <p class="myCodeP">&quot;y&quot;: 3279505.9148433916,</p>
+  <p class="myCodeP">&quot;z&quot;: 0</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;videoPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 491,</p>
+  <p class="myCodeP">&quot;y&quot;: 499</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;spatialPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 1.2929424599934718E7,</p>
+  <p class="myCodeP">&quot;y&quot;: 3279463.9504835536,</p>
+  <p class="myCodeP">&quot;z&quot;: 0</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;videoPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 448,</p>
+  <p class="myCodeP">&quot;y&quot;: 248</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;spatialPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 1.2929388108285695E7,</p>
+  <p class="myCodeP">&quot;y&quot;: 3279545.695535939,</p>
+  <p class="myCodeP">&quot;z&quot;: 0</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;videoPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 860,</p>
+  <p class="myCodeP">&quot;y&quot;: 506</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;spatialPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 1.2929407825861763E7,</p>
+  <p class="myCodeP">&quot;y&quot;: 3279565.077638886,</p>
+  <p class="myCodeP">&quot;z&quot;: 0</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;videoPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 1046,</p>
+  <p class="myCodeP">&quot;y&quot;: 497</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;spatialPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 1.2929445928769993E7,</p>
+  <p class="myCodeP">&quot;y&quot;: 3279564.7923564096,</p>
+  <p class="myCodeP">&quot;z&quot;: 0</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;videoPoint&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 1269,</p>
+  <p class="myCodeP">&quot;y&quot;: 418</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">],</p>
+  <p class="myCodeP">&quot;fovX&quot;: 0,</p>
+  <p class="myCodeP">&quot;fovY&quot;: 0,</p>
+  <p class="myCodeP">&quot;isIntrinsic&quot;: false,</p>
+  <p class="myCodeP">&quot;isExtrinsic&quot;: false,</p>
+  <p class="myCodeP">&quot;cameraLocation&quot;: {</p>
+  <p class="myCodeP">&quot;cameraRoll&quot;: -0.7656412825751551,</p>
+  <p class="myCodeP">&quot;cameraYaw&quot;: -50.89065135311759,</p>
+  <p class="myCodeP">&quot;cameraY&quot;: 3279448.7247,</p>
+  <p class="myCodeP">&quot;cameraZ&quot;: 65.78334160898069,</p>
+  <p class="myCodeP">&quot;cameraX&quot;: 1.29295170697E7,</p>
+  <p class="myCodeP">&quot;cameraPitch&quot;: -39.80838777192129</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;clipRegion&quot;: {</p>
+  <p class="myCodeP">&quot;center&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 770,</p>
+  <p class="myCodeP">&quot;y&quot;: 385</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;parts&quot;: [5],</p>
+  <p class="myCodeP">&quot;style&quot;: null,</p>
+  <p class="myCodeP">&quot;prjCoordSys&quot;: null,</p>
+  <p class="myCodeP">&quot;id&quot;: 0,</p>
+  <p class="myCodeP">&quot;type&quot;: &quot;REGION&quot;,</p>
+  <p class="myCodeP">&quot;partTopo&quot;: [1],</p>
+  <p class="myCodeP">&quot;points&quot;: [</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;x&quot;: 0,</p>
+  <p class="myCodeP">&quot;y&quot;: 0</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;x&quot;: 1540,</p>
+  <p class="myCodeP">&quot;y&quot;: 0</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;x&quot;: 1540,</p>
+  <p class="myCodeP">&quot;y&quot;: 770</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;x&quot;: 0,</p>
+  <p class="myCodeP">&quot;y&quot;: 770</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;x&quot;: 0,</p>
+  <p class="myCodeP">&quot;y&quot;: 0</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">]</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;zoom&quot;: 1,</p>
+  <p class="myCodeP">&quot;time&quot;: 23.266666666666666,</p>
+  <p class="myCodeP">&quot;validBounds&quot;: {</p>
+  <p class="myCodeP">&quot;OUT_TOP&quot;: 2,</p>
+  <p class="myCodeP">&quot;OUT_RIGHT&quot;: 4,</p>
+  <p class="myCodeP">&quot;size&quot;: {</p>
+  <p class="myCodeP">&quot;width&quot;: 1540,</p>
+  <p class="myCodeP">&quot;height&quot;: 770</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;x&quot;: 0,</p>
+  <p class="myCodeP">&quot;width&quot;: 1540,</p>
+  <p class="myCodeP">&quot;y&quot;: 0,</p>
+  <p class="myCodeP">&quot;OUT_BOTTOM&quot;: 8,</p>
+  <p class="myCodeP">&quot;location&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 0,</p>
+  <p class="myCodeP">&quot;y&quot;: 0</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;OUT_LEFT&quot;: 1,</p>
+  <p class="myCodeP">&quot;height&quot;: 770</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;tilt&quot;: 23.9,</p>
+  <p class="myCodeP">&quot;pan&quot;: 116,</p>
+  <p class="myCodeP">&quot;videoHeight&quot;: 770</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">],</p>
+  <p class="myCodeP">&quot;parameterInterpolation&quot;: false</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;fieldNames&quot;: [</p>
+  <p class="myCodeP">&quot;SMID&quot;,</p>
+  <p class="myCodeP">&quot;SMUSERID&quot;</p>
+  <p class="myCodeP">],</p>
+  <p class="myCodeP">&quot;name&quot;: &quot;ptz旋转画面.mp4&quot;,</p>
+  <p class="myCodeP">&quot;startTime&quot;: &quot;2023/11/22 09:16:51&quot;,</p>
+  <p class="myCodeP">&quot;geometry&quot;: {</p>
+  <p class="myCodeP">&quot;center&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 1.292926198036702E7,</p>
+  <p class="myCodeP">&quot;y&quot;: 3279399.5618885513</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;parts&quot;: [5],</p>
+  <p class="myCodeP">&quot;style&quot;: null,</p>
+  <p class="myCodeP">&quot;prjCoordSys&quot;: null,</p>
+  <p class="myCodeP">&quot;id&quot;: 1,</p>
+  <p class="myCodeP">&quot;type&quot;: &quot;REGION&quot;,</p>
+  <p class="myCodeP">&quot;partTopo&quot;: [1],</p>
+  <p class="myCodeP">&quot;points&quot;: [</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;x&quot;: 1.2929466274270147E7,</p>
+  <p class="myCodeP">&quot;y&quot;: 3279386.794475903</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;x&quot;: 1.2929463599646807E7,</p>
+  <p class="myCodeP">&quot;y&quot;: 3279488.8953134995</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;x&quot;: 1.2929031336155694E7,</p>
+  <p class="myCodeP">&quot;y&quot;: 3279642.3491254174</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;x&quot;: 1.292908470565614E7,</p>
+  <p class="myCodeP">&quot;y&quot;: 3279156.774651685</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;x&quot;: 1.2929466274270147E7,</p>
+  <p class="myCodeP">&quot;y&quot;: 3279386.794475903</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">]</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;endTime&quot;: &quot;2023/11/22 09:16:58&quot;,</p>
+  <p class="myCodeP">&quot;fieldValues&quot;: [</p>
+  <p class="myCodeP">&quot;1&quot;,</p>
+  <p class="myCodeP">&quot;0&quot;</p>
+  <p class="myCodeP">],</p>
+  <p class="myCodeP">&quot;ID&quot;: 1,</p>
+  <p class="myCodeP">&quot;cameraLocation&quot;: {</p>
+  <p class="myCodeP">&quot;cameraRoll&quot;: -0.7656412825751551,</p>
+  <p class="myCodeP">&quot;cameraYaw&quot;: -90.89065135311759,</p>
+  <p class="myCodeP">&quot;cameraY&quot;: 3279448.7247,</p>
+  <p class="myCodeP">&quot;cameraZ&quot;: 65.78334160898069,</p>
+  <p class="myCodeP">&quot;cameraX&quot;: 1.29295170697E7,</p>
+  <p class="myCodeP">&quot;cameraPitch&quot;: -39.80838777192129</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">}],</p>
+  <p class="myCodeP">&quot;featureUriList&quot;: [],</p>
+  <p class="myCodeP">&quot;datasetInfos&quot;: [{</p>
+  <p class="myCodeP">&quot;fieldInfos&quot;: [</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;name&quot;:</p>
+  <p class="myCodeP">&quot;SmID&quot;,</p>
+  <p class="myCodeP">&quot;caption&quot;: &quot;SmID&quot;,</p>
+  <p class="myCodeP">&quot;type&quot;: &quot;INT32&quot;</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;name&quot;: &quot;SmUserID&quot;,</p>
+  <p class="myCodeP">&quot;caption&quot;: &quot;SmUserID&quot;,</p>
+  <p class="myCodeP">&quot;type&quot;: &quot;INT32&quot;</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">],</p>
+  <p class="myCodeP">&quot;featureRange&quot;: {</p>
+  <p class="myCodeP">&quot;start&quot;: 0,</p>
+  <p class="myCodeP">&quot;end&quot;: 0</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;datasetName&quot;: &quot;NewDatasource:ptz旋转画面_2&quot;</p>
+  <p class="myCodeP">}],</p>
+  <p class="myCodeP">&quot;totalCount&quot;: 1,</p>
+  <p class="myCodeP">&quot;featureCount&quot;: 1</p>
+  <p class="myCodeP">}</p>
+  <h3><a name="HEAD"></a></h3>
+  <h4 class="myNormal">示例11 空间查询结果支持分组统计（以 BOUNDS_ATTRIBUTEFILTER 查询模式为例)</h4>
+  <p class="myNormal">对示例 featureResults 资源：http://supermapiserver:8090/iserver/services/data-China_pgis/rest/data/featureResults.rjson?returnContent=true 执行 POST 请求，对 PostGIS 数据源中的数据进行范围查询，并对结果进行分组统计，请求体中的参数示例如下：</p>
+  <p class="myCodeP">{<br/>
+        &quot;getFeatureMode&quot;: &quot;BOUNDS_ATTRIBUTEFILTER&quot;,<br/>
+        &quot;maxFeatures&quot;: &quot;100&quot;,<br/>
+        &quot;datasetNames&quot;: [<br/>
+            &quot;testdata:购物服务BF&quot;<br/>
+        ],<br/>
+        &quot;attributeFilter&quot;: &quot;SMID &gt; 2000000&quot;,<br/>
+        &quot;groupBy&quot;: &quot;province&quot;,<br/>
+        &quot;fields&quot;: [<br/>
+            &quot;province&quot;,<br/>
+            &quot;COUNT(province) as countmall&quot;<br/>
+        ],<br/>
+        &quot;bounds&quot;: {<br/>
+            &quot;leftBottom&quot;: {<br/>
+                &quot;x&quot;: 100.84,<br/>
+                &quot;y&quot;: 23.09<br/>
+            },<br/>
+            &quot;rightTop&quot;: {<br/>
+                &quot;x&quot;: 120.86,<br/>
+                &quot;y&quot;: 23.11<br/>
+            }<br/>
+        }<br/>
+    }</p>
+  <p>返回 rjson 格式的操作结果表述如下：</p>
+  <p class="myCodeP">{<br/>
+        &quot;features&quot;: [<br/>
+            {<br/>
+                &quot;stringID&quot;: null,<br/>
+                &quot;fieldNames&quot;: [<br/>
+                    &quot;province&quot;,<br/>
+                    &quot;countmall&quot;<br/>
+                ],<br/>
+                &quot;geometry&quot;: null,<br/>
+                &quot;fieldValues&quot;: [<br/>
+                    &quot;GUANGDONG&quot;,<br/>
+                    &quot;18&quot;<br/>
+                ],<br/>
+                &quot;ID&quot;: -1<br/>
+            },<br/>
+            {<br/>
+                &quot;stringID&quot;: null,<br/>
+                &quot;fieldNames&quot;: [<br/>
+                    &quot;province&quot;,<br/>
+                    &quot;countmall&quot;<br/>
+                ],<br/>
+                &quot;geometry&quot;: null,<br/>
+                &quot;fieldValues&quot;: [<br/>
+                    &quot;GUANGXI&quot;,<br/>
+                    &quot;1143&quot;<br/>
+                ],<br/>
+                &quot;ID&quot;: -1<br/>
+            },<br/>
+            {<br/>
+                &quot;stringID&quot;: null,<br/>
+                &quot;fieldNames&quot;: [<br/>
+                    &quot;province&quot;,<br/>
+                    &quot;countmall&quot;<br/>
+                ],<br/>
+                &quot;geometry&quot;: null,<br/>
+                &quot;fieldValues&quot;: [<br/>
+                    &quot;YUNNAN&quot;,<br/>
+                    &quot;4&quot;<br/>
+                ],<br/>
+                &quot;ID&quot;: -1<br/>
+            }<br/>
+        ],<br/>
+        &quot;featureUriList&quot;: [],<br/>
+        &quot;datasetInfos&quot;: [<br/>
+            {<br/>
+                &quot;fieldInfos&quot;: [<br/>
+                    {<br/>
+                        &quot;name&quot;: &quot;province&quot;,<br/>
+                        &quot;caption&quot;: &quot;province&quot;,<br/>
+                        &quot;type&quot;: &quot;WTEXT&quot;<br/>
+                    },<br/>
+                    {<br/>
+                        &quot;name&quot;: null,<br/>
+                        &quot;caption&quot;: null,<br/>
+                        &quot;type&quot;: null<br/>
+                    }<br/>
+                ],<br/>
+                &quot;featureRange&quot;: {<br/>
+                    &quot;start&quot;: 0,<br/>
+                    &quot;end&quot;: 2<br/>
+                },<br/>
+                &quot;datasetName&quot;: &quot;testdata:购物服务BF&quot;<br/>
+            }<br/>
+        ],<br/>
+        &quot;totalCount&quot;: 3,<br/>
+        &quot;featureCount&quot;: 3<br/>
+    }</p>
+  <h3>HEAD 请求</h3>
+  <p class="myNormal">返回跟 GET 请求一样的 HTTP 响应头，但是没有响应实体。可以在不必传输整个响应内容的情况下，获取包含在响应消息头中的元数据信息。元数据信息包括媒体类型，字符编码，压缩编码，实体内容长度等。</p>
+  <p class="myNormal">HEAD 请求可以用来判断 featureResults 资源是否存在，或者客户端是否有权限访问 featureResults 资源。通过对加.&lt;format&gt;的 URI 执行 HEAD 请求，还可以快速判断 featureResults 资源是否支持&lt;format&gt;格式的表述。</p>
+  <h2>请参见</h2>
+  <ul>
+    <li class="referenceList"><a class="contentpagehyperlink" href="featureResult.htm">featureResult</a>，<a class="contentpagehyperlink" href="../data.htm">data</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../clientBuildREST/ConstructRESTRequest.htm">客户端构建 REST 请求</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../StatusCodeDescription.htm">状态码列表及说明</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../SuperMap_iServer_REST_API_OutputFormat.htm">SuperMap iServer REST API 表述格式介绍</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../resource_hierarchy.htm">GIS 服务资源层次结构</a></li>
+  </ul>
+  <p class="myNormal"> </p>
+
+</div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../../../../../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../../../../../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../../../../../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../../../../../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../../../../../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../../../../../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../../../../../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../../../../.."
+    gCommonRootRelPath = "../../../../.."
+    gTopicId = "8.2.2.6.4.3"
+  
+//]]></script>
+
+  <script src="../../../../../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../../../../../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../../../../../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../../../../../whxdata/layoutconfig.js"></script>
+  <script src="../../../../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

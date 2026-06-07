@@ -1,0 +1,985 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../../../../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../../../../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../../../../../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../../../../iserver-icon.png"/>
+    
+  <script data-relpath="../../../../.." src="../../../../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <meta name="template" content="../../../../../assets/layouts/RESTAPI.htt"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Language" content="zh-CN"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>traceDown</title>
+  <link rel="StyleSheet" href="../../../../../assets/css/SuperMapHelp.css" type="text/css"/>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../../../../../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../assets/css/homeButtom.css"/>
+  <script src="../../../../../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../../../../../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../../../../../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../../../../../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../../../../../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../../../../../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../../../../../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../../../../../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../../../../../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <h2><a id="URI"></a>URI</h2>
+  <p class="myNormal">&lt;<a class="contentpagehyperlink" href="networkDataName.htm#URI">networkDataName_uri</a>_uri&gt;/tracedown[.&lt;format&gt;]</p>
+  <h2>支持的方法</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="#GET 请求">GET</a>、<a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a></p>
+  <h2>父资源</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="networkDataName.htm">networkDataName</a></p>
+  <h2>介绍</h2>
+  <p class="myNormal">traceDown 资源表示下游追踪分析，对 traceDown 执行 GET 请求，可查找给定弧段或节点的下游弧段和结点。</p>
+  <p class="myNormal" style="font-weight: bold;">支持的方法：</p>
+  <ul class="supportList" style="list-style: disc;">
+    <li class="supportList"><a class="contentpagehyperlink" href="#GET 请求">GET</a>：查找给定弧段或节点的下游弧段和节点。</li>
+    <li class="supportList"><a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a>：检查 traceDown 资源是否存在，或权限是否可以访问 traceDown 资源。</li>
+  </ul>
+  <p class="myNormal"><span style="font-weight: bold;">支持的表述格式：</span>RJSON、JSON、HTML、XML、FlatGeobuf。</p>
+  <h2>资源层次</h2>
+  <p class="myNormal"><img alt="" border="0" src="../../../../../assets/images/root/networkanalyst/networkDataName/traceDown.png" style="border: none;" usemap="#MAP452232073"/><map id="MAP452232073" name="MAP452232073"><area alt="" coords="3, 3, 262, 41" href="../../root.htm" shape="rect"/> <area alt="" coords="87, 54, 247, 94" href="../networkanalyst.htm" shape="rect"/> <area alt="" coords="142, 111, 308, 157" href="networkDataName.htm" shape="rect"/> <area alt="" coords="178, 168, 345, 215" href="traceDown.htm" shape="rect"/></map></p>
+  <h2>HTTP 请求方法</h2>
+  <p class="myNormal">对如下 URI 执行 HTTP 请求，以 rjson 输出格式为例加以说明，其中，supermapiserver 是服务器名。</p>
+  <p class="uriStyle">http://supermapiserver:8090/iserver/services/transportationAnalyst-facilityNet/rest/networkanalyst/WaterNet@FacilityNet/tracedown.rjson</p>
+  <h3><a id="GET 请求"></a>GET 请求</h3>
+  <p class="myNormal">查找给定弧段或节点的下游弧段和节点。</p>
+  <p class="myNormal"><strong>请求参数</strong></p>
+  <p class="myNormal">对 traceDown 资源执行 GET 请求，需要在 URI 中包含一些参数，如下：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>名称</td>
+        <td>类型</td>
+        <td>含义</td>
+      </tr>
+      <tr class="t2Row">
+        <td>edgeID</td>
+        <td>int</td>
+        <td>【与nodeID必填一项】需查找上游设施的弧段 ID 。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>nodeID</td>
+        <td>int</td>
+        <td>【与edgeID必填一项】需查找上游设施的结点 ID 。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>weightName</td>
+        <td>String</td>
+        <td>权重字段，默认为 SMLENGTH。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>isUncertainDirectionValid</td>
+        <td>boolean</td>
+        <td>选择是，表示不确定流向有效，遇到不确定流向时分析继续进行；选择否，表示不确定流向无效，遇到不确定流向将停止在该方向上继续查找。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>withIndex</td>
+        <td>boolean</td>
+        <td>当使用 FlatGeobuf 表述时该参数可选。表示返回的表述为 FlatGeobuf 的结果是否包含空间索引，默认为true。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>returnFeatures</td>
+        <td>boolean</td>
+        <td>否返回结果要素的详细描述信息。若为 false，只返回结果要素的 ID 集合。</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><strong>响应结构</strong></p>
+  <p class="myNormal">描述</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>字段</td>
+        <td>类型</td>
+        <td>说明</td>
+      </tr>
+      <tr class="t2Row">
+        <td>cost</td>
+        <td>double</td>
+        <td>分析结果中的耗费。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>edges</td>
+        <td>int[]</td>
+        <td>分析结果弧段 ID 集合。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>edgesFeatures</td>
+        <td>Feature[]</td>
+        <td>分析结果弧段详细描述信息。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>nodes</td>
+        <td>int[]</td>
+        <td>分析结果中的结点 ID 集合。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>nodesFeature</td>
+        <td>Feature[]</td>
+        <td>分析结果中的结点要素的详细描述信息。</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><strong>响应示例</strong></p>
+  <p class="myNormal">对示范数据 WaterNet@FacilityNet 数据集执行上游追踪分析，即对如下 URI 执行 GET 请求：</p>
+  <p class="myNormal">http://supermapiserver:8090/iserver/services/transportationAnalyst-facilityNet/rest/networkanalyst/WaterNet@FacilityNet/tracedown.rjson?edgeID=1&amp;isUncertainDirectionValid=true&amp;returnFeatures=true&amp;weightName=SMLENGTH</p>
+  <p class="myNormal">返回结果如下：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">    &quot;cost&quot;: 490392.3672126023,</p>
+  <p class="myCodeP">    &quot;edges&quot;: [</p>
+  <p class="myCodeP">        1,</p>
+  <p class="myCodeP">        2,</p>
+  <p class="myCodeP">        2</p>
+  <p class="myCodeP">    ],</p>
+  <p class="myCodeP">    &quot;edgesFeatures&quot;: [</p>
+  <p class="myCodeP">        {</p>
+  <p class="myCodeP">            &quot;ID&quot;: 1,</p>
+  <p class="myCodeP">            &quot;fieldNames&quot;: [</p>
+  <p class="myCodeP">                &quot;SMID&quot;,</p>
+  <p class="myCodeP">                &quot;SMSDRIW&quot;,</p>
+  <p class="myCodeP">                &quot;SMSDRIN&quot;,</p>
+  <p class="myCodeP">                &quot;SMSDRIE&quot;,</p>
+  <p class="myCodeP">                &quot;SMSDRIS&quot;,</p>
+  <p class="myCodeP">                &quot;SMUSERID&quot;,</p>
+  <p class="myCodeP">                &quot;SMRESISTANCEA&quot;,</p>
+  <p class="myCodeP">                &quot;SMRESISTANCEB&quot;,</p>
+  <p class="myCodeP">                &quot;SMLENGTH&quot;,</p>
+  <p class="myCodeP">                &quot;SMTOPOERROR&quot;,</p>
+  <p class="myCodeP">                &quot;SMFNODE&quot;,</p>
+  <p class="myCodeP">                &quot;SMTNODE&quot;,</p>
+  <p class="myCodeP">                &quot;SMEDGEID&quot;,</p>
+  <p class="myCodeP">                &quot;SMGEOMETRYSIZE&quot;,</p>
+  <p class="myCodeP">                &quot;DIRECTION&quot;</p>
+  <p class="myCodeP">            ],</p>
+  <p class="myCodeP">            &quot;fieldValues&quot;: [</p>
+  <p class="myCodeP">                &quot;1&quot;,</p>
+  <p class="myCodeP">                &quot;-948942.3&quot;,</p>
+  <p class="myCodeP">                &quot;3856350.0&quot;,</p>
+  <p class="myCodeP">                &quot;-926875.44&quot;,</p>
+  <p class="myCodeP">                &quot;3791757.5&quot;,</p>
+  <p class="myCodeP">                &quot;3332&quot;,</p>
+  <p class="myCodeP">                &quot;1.0&quot;,</p>
+  <p class="myCodeP">                &quot;1.0&quot;,</p>
+  <p class="myCodeP">                &quot;82880.9632134468&quot;,</p>
+  <p class="myCodeP">                &quot;1&quot;,</p>
+  <p class="myCodeP">                &quot;2&quot;,</p>
+  <p class="myCodeP">                &quot;7&quot;,</p>
+  <p class="myCodeP">                &quot;1&quot;,</p>
+  <p class="myCodeP">                &quot;632&quot;,</p>
+  <p class="myCodeP">                &quot;1&quot;</p>
+  <p class="myCodeP">            ],</p>
+  <p class="myCodeP">            &quot;geometry&quot;: {</p>
+  <p class="myCodeP">                &quot;center&quot;: {</p>
+  <p class="myCodeP">                    &quot;x&quot;: -926972.563544177,</p>
+  <p class="myCodeP">                    &quot;y&quot;: 3826413.0521438215</p>
+  <p class="myCodeP">                },</p>
+  <p class="myCodeP">                &quot;id&quot;: 1,</p>
+  <p class="myCodeP">                &quot;partTopo&quot;: null,</p>
+  <p class="myCodeP">                &quot;parts&quot;: [39],</p>
+  <p class="myCodeP">                &quot;points&quot;: [</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -941483.7569166485,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3856349.8855158235</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -942765.4042135794,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3853741.8282586816</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -943883.8576401076,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3851853.94355556</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -944163.6582859682,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3849501.8216074924</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -943682.0625984033,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3848103.741719451</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -942896.95807764,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3846722.2000929313</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -941486.8876817955,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3845068.129615492</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -939929.5695138746,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3844437.836164761</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -938168.7730279022,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3843818.4586299863</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -933916.5052925996,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3842211.0133842216</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -932983.020075049,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3841852.605190063</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -931956.7262807183,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3839772.193372</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -931443.1132447799,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3837766.41048471</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -931073.2835533952,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3836565.856309187</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -929962.6060571494,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3834794.6863347134</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -929176.6882087882,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3833412.885338366</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -927879.8650005814,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3831955.9660093724</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -926875.4594167685,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3830280.228622274</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -926883.7482657861,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3828551.9486851217</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -926972.563544177,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3826413.0521438215</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -927865.6994237883,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3824130.405792608</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -928627.8684607756,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3823175.8246027</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -929884.876685566,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3821992.3630313408</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -931952.1577797777,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3820766.421233274</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -934414.5315977258,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3819316.906936594</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -936386.3225472053,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3818197.6277481425</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -937441.5077787752,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3817024.198449457</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -938729.4167850106,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3814517.595375112</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -939830.2433983588,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3812326.4907802665</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -941962.1487272659,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3810385.2249598163</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -944119.7861036116,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3808951.710151221</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -945569.0461299194,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3807554.3591885213</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -947538.7330514987,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3804504.4852072173</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -948352.7391655098,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3802632.3853419162</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -948942.3154318775,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3800365.279127587</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -948876.7589196367,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3799149.4491934534</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -948576.0448517092,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3797335.61439268</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -948371.5294164096,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3795415.281548102</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -947728.2672767679,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3791757.5905491877</p>
+  <p class="myCodeP">                    }</p>
+  <p class="myCodeP">                ],</p>
+  <p class="myCodeP">                &quot;prjCoordSys&quot;: null,</p>
+  <p class="myCodeP">                &quot;style&quot;: null,</p>
+  <p class="myCodeP">                &quot;type&quot;: &quot;LINE&quot;</p>
+  <p class="myCodeP">            }</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        {</p>
+  <p class="myCodeP">            &quot;ID&quot;: 2,</p>
+  <p class="myCodeP">            &quot;fieldNames&quot;: [</p>
+  <p class="myCodeP">                &quot;SMID&quot;,</p>
+  <p class="myCodeP">                &quot;SMSDRIW&quot;,</p>
+  <p class="myCodeP">                &quot;SMSDRIN&quot;,</p>
+  <p class="myCodeP">                &quot;SMSDRIE&quot;,</p>
+  <p class="myCodeP">                &quot;SMSDRIS&quot;,</p>
+  <p class="myCodeP">                &quot;SMUSERID&quot;,</p>
+  <p class="myCodeP">                &quot;SMRESISTANCEA&quot;,</p>
+  <p class="myCodeP">                &quot;SMRESISTANCEB&quot;,</p>
+  <p class="myCodeP">                &quot;SMLENGTH&quot;,</p>
+  <p class="myCodeP">                &quot;SMTOPOERROR&quot;,</p>
+  <p class="myCodeP">                &quot;SMFNODE&quot;,</p>
+  <p class="myCodeP">                &quot;SMTNODE&quot;,</p>
+  <p class="myCodeP">                &quot;SMEDGEID&quot;,</p>
+  <p class="myCodeP">                &quot;SMGEOMETRYSIZE&quot;,</p>
+  <p class="myCodeP">                &quot;DIRECTION&quot;</p>
+  <p class="myCodeP">            ],</p>
+  <p class="myCodeP">            &quot;fieldValues&quot;: [</p>
+  <p class="myCodeP">                &quot;2&quot;,</p>
+  <p class="myCodeP">                &quot;-1130331.0&quot;,</p>
+  <p class="myCodeP">                &quot;3830856.5&quot;,</p>
+  <p class="myCodeP">                &quot;-947728.25&quot;,</p>
+  <p class="myCodeP">                &quot;3791757.5&quot;,</p>
+  <p class="myCodeP">                &quot;3331&quot;,</p>
+  <p class="myCodeP">                &quot;1.0&quot;,</p>
+  <p class="myCodeP">                &quot;1.0&quot;,</p>
+  <p class="myCodeP">                &quot;203755.70199957775&quot;,</p>
+  <p class="myCodeP">                &quot;1&quot;,</p>
+  <p class="myCodeP">                &quot;1&quot;,</p>
+  <p class="myCodeP">                &quot;7&quot;,</p>
+  <p class="myCodeP">                &quot;2&quot;,</p>
+  <p class="myCodeP">                &quot;1128&quot;,</p>
+  <p class="myCodeP">                &quot;2&quot;</p>
+  <p class="myCodeP">            ],</p>
+  <p class="myCodeP">            &quot;geometry&quot;: {</p>
+  <p class="myCodeP">                &quot;center&quot;: {</p>
+  <p class="myCodeP">                    &quot;x&quot;: -1032342.2904773944,</p>
+  <p class="myCodeP">                    &quot;y&quot;: 3830365.2858050363</p>
+  <p class="myCodeP">                },</p>
+  <p class="myCodeP">                &quot;id&quot;: 2,</p>
+  <p class="myCodeP">                &quot;partTopo&quot;: null,</p>
+  <p class="myCodeP">                &quot;parts&quot;: [70],</p>
+  <p class="myCodeP">                &quot;points&quot;: [</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -1130330.9808985773,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3829150.748031182</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -1128234.7904652364,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3828104.009454467</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -1126255.1325870433,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3827191.2146250424</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -1122147.7608089868,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3826389.2424355363</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -1118996.4354008625,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3826349.818749717</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -1116633.011077165,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3825863.564885844</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -1112647.1905697775,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3823530.7633450227</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -1109404.8613276782,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3823699.9458534885</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -1104963.4434357388,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3824236.9347074623</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -1103095.9252104952,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3823521.1464944556</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -1101196.1951914872,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3822197.7651115553</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -1098288.6053171528,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3821027.851704959</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -1095832.1990014191,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3822578.9350222354</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -1093939.1641607706,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3823288.186820875</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -1089976.8523173246,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3823290.9789834903</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -1086937.4282131107,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3823449.774688991</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -1083262.9294079782,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3823133.4122251435</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -1080308.5822595612,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3822982.831215473</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -1078235.039456045,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3824107.3188307434</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -1074918.6602512866,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3824788.8615466543</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -1070455.5874198638,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3824919.863382298</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -1067245.7101189618,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3825697.427543476</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -1064819.9154555884,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3825925.5840080306</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -1062809.7304527196,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3826335.4115854916</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -1060473.8727126697,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3826355.6158234435</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -1058230.3011492807,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3828099.3509229296</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -1054952.5848149788,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3829489.731349712</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -1051625.6774255729,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3829968.265531121</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -1047545.0995276025,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3829673.290573323</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -1044249.4125167541,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3828829.0674762647</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -1042493.8496550785,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3828310.5953339576</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -1041165.826380332,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3828176.832533287</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -1039155.6566114768,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3828586.9595481395</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -1035916.0248894612,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3830686.606986321</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -1034604.3518378383,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3830856.5284370193</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -1032342.2904773944,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3830365.2858050363</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -1028336.6603973655,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3829557.9055637843</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -1022852.5477079265,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3827709.800223688</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -1018665.7468791755,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3827318.389545431</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -1016111.2374263101,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3827045.36609677</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -1014350.740225432,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3826425.973536659</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -1013228.427009851,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3824451.650495656</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -1009849.8947843194,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3822087.1597893927</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -1006175.5904245786,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3821770.687496191</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -1003343.990563439,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3822019.717379139</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -998459.1918259463,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3821868.487222808</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -996184.2784175407,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3819243.2520305067</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -993627.724074437,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3817038.830280837</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -991616.0285358524,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3815517.9332023095</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -989677.3802649409,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3813484.626188326</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -987073.9536520431,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3812299.242406637</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -985356.8102337797,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3812490.72093764</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -982632.4309204014,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3812836.136456593</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -981320.3740559996,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3813006.377378464</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -978793.3263470794,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3813239.7172276108</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -975107.3118963279,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3812720.595938644</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -971150.6936600255,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3812825.47120951</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -968125.6205907371,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3811357.451177546</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -966017.596189799,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3809942.458276486</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -963306.8848134733,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3808661.392554484</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -961428.3700631196,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3807743.219723986</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -960120.220576681,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3806083.3319280534</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -959135.954318631,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3802882.7570908335</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -956872.1270410249,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3800459.701882651</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -953579.0758960873,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3797785.9142398983</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -952010.252238556,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3796953.061588975</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -951309.5905573696,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3795261.474610711</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -950335.7374882551,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3792263.6138790464</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -948180.5669224514,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3791868.173033622</p>
+  <p class="myCodeP">                    },</p>
+  <p class="myCodeP">                    {</p>
+  <p class="myCodeP">                        &quot;x&quot;: -947728.2672767679,</p>
+  <p class="myCodeP">                        &quot;y&quot;: 3791757.5905491877</p>
+  <p class="myCodeP">                    }</p>
+  <p class="myCodeP">                ],</p>
+  <p class="myCodeP">                &quot;prjCoordSys&quot;: null,</p>
+  <p class="myCodeP">                &quot;style&quot;: null,</p>
+  <p class="myCodeP">                &quot;type&quot;: &quot;LINE&quot;</p>
+  <p class="myCodeP">            }</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        null</p>
+  <p class="myCodeP">    ],</p>
+  <p class="myCodeP">    &quot;nodes&quot;: [</p>
+  <p class="myCodeP">        7,</p>
+  <p class="myCodeP">        2,</p>
+  <p class="myCodeP">        1</p>
+  <p class="myCodeP">    ],</p>
+  <p class="myCodeP">    &quot;nodesFeatures&quot;: [</p>
+  <p class="myCodeP">        {</p>
+  <p class="myCodeP">            &quot;ID&quot;: 7,</p>
+  <p class="myCodeP">            &quot;fieldNames&quot;: [</p>
+  <p class="myCodeP">                &quot;SMID&quot;,</p>
+  <p class="myCodeP">                &quot;SMX&quot;,</p>
+  <p class="myCodeP">                &quot;SMY&quot;,</p>
+  <p class="myCodeP">                &quot;SMLIBTILEID&quot;,</p>
+  <p class="myCodeP">                &quot;SMNODEID&quot;,</p>
+  <p class="myCodeP">                &quot;SMUSERID&quot;,</p>
+  <p class="myCodeP">                &quot;SMGEOMETRYSIZE&quot;,</p>
+  <p class="myCodeP">                &quot;NODETYPE&quot;,</p>
+  <p class="myCodeP">                &quot;FILTER&quot;</p>
+  <p class="myCodeP">            ],</p>
+  <p class="myCodeP">            &quot;fieldValues&quot;: [</p>
+  <p class="myCodeP">                &quot;7&quot;,</p>
+  <p class="myCodeP">                &quot;-947728.2672767679&quot;,</p>
+  <p class="myCodeP">                &quot;3791757.5905491877&quot;,</p>
+  <p class="myCodeP">                &quot;1&quot;,</p>
+  <p class="myCodeP">                &quot;7&quot;,</p>
+  <p class="myCodeP">                &quot;0&quot;,</p>
+  <p class="myCodeP">                &quot;16&quot;,</p>
+  <p class="myCodeP">                &quot;0&quot;,</p>
+  <p class="myCodeP">                &quot;true&quot;</p>
+  <p class="myCodeP">            ],</p>
+  <p class="myCodeP">            &quot;geometry&quot;: {</p>
+  <p class="myCodeP">                &quot;center&quot;: {</p>
+  <p class="myCodeP">                    &quot;x&quot;: -947728.2672767679,</p>
+  <p class="myCodeP">                    &quot;y&quot;: 3791757.5905491877</p>
+  <p class="myCodeP">                },</p>
+  <p class="myCodeP">                &quot;id&quot;: 7,</p>
+  <p class="myCodeP">                &quot;partTopo&quot;: null,</p>
+  <p class="myCodeP">                &quot;parts&quot;: [1],</p>
+  <p class="myCodeP">                &quot;points&quot;: [{</p>
+  <p class="myCodeP">                    &quot;x&quot;: -947728.2672767679,</p>
+  <p class="myCodeP">                    &quot;y&quot;: 3791757.5905491877</p>
+  <p class="myCodeP">                }],</p>
+  <p class="myCodeP">                &quot;prjCoordSys&quot;: null,</p>
+  <p class="myCodeP">                &quot;style&quot;: null,</p>
+  <p class="myCodeP">                &quot;type&quot;: &quot;POINT&quot;</p>
+  <p class="myCodeP">            }</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        {</p>
+  <p class="myCodeP">            &quot;ID&quot;: 2,</p>
+  <p class="myCodeP">            &quot;fieldNames&quot;: [</p>
+  <p class="myCodeP">                &quot;SMID&quot;,</p>
+  <p class="myCodeP">                &quot;SMX&quot;,</p>
+  <p class="myCodeP">                &quot;SMY&quot;,</p>
+  <p class="myCodeP">                &quot;SMLIBTILEID&quot;,</p>
+  <p class="myCodeP">                &quot;SMNODEID&quot;,</p>
+  <p class="myCodeP">                &quot;SMUSERID&quot;,</p>
+  <p class="myCodeP">                &quot;SMGEOMETRYSIZE&quot;,</p>
+  <p class="myCodeP">                &quot;NODETYPE&quot;,</p>
+  <p class="myCodeP">                &quot;FILTER&quot;</p>
+  <p class="myCodeP">            ],</p>
+  <p class="myCodeP">            &quot;fieldValues&quot;: [</p>
+  <p class="myCodeP">                &quot;2&quot;,</p>
+  <p class="myCodeP">                &quot;-941483.7569166485&quot;,</p>
+  <p class="myCodeP">                &quot;3856349.8855158235&quot;,</p>
+  <p class="myCodeP">                &quot;1&quot;,</p>
+  <p class="myCodeP">                &quot;2&quot;,</p>
+  <p class="myCodeP">                &quot;0&quot;,</p>
+  <p class="myCodeP">                &quot;16&quot;,</p>
+  <p class="myCodeP">                &quot;0&quot;,</p>
+  <p class="myCodeP">                &quot;true&quot;</p>
+  <p class="myCodeP">            ],</p>
+  <p class="myCodeP">            &quot;geometry&quot;: {</p>
+  <p class="myCodeP">                &quot;center&quot;: {</p>
+  <p class="myCodeP">                    &quot;x&quot;: -941483.7569166485,</p>
+  <p class="myCodeP">                    &quot;y&quot;: 3856349.8855158235</p>
+  <p class="myCodeP">                },</p>
+  <p class="myCodeP">                &quot;id&quot;: 2,</p>
+  <p class="myCodeP">                &quot;partTopo&quot;: null,</p>
+  <p class="myCodeP">                &quot;parts&quot;: [1],</p>
+  <p class="myCodeP">                &quot;points&quot;: [{</p>
+  <p class="myCodeP">                    &quot;x&quot;: -941483.7569166485,</p>
+  <p class="myCodeP">                    &quot;y&quot;: 3856349.8855158235</p>
+  <p class="myCodeP">                }],</p>
+  <p class="myCodeP">                &quot;prjCoordSys&quot;: null,</p>
+  <p class="myCodeP">                &quot;style&quot;: null,</p>
+  <p class="myCodeP">                &quot;type&quot;: &quot;POINT&quot;</p>
+  <p class="myCodeP">            }</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        {</p>
+  <p class="myCodeP">            &quot;ID&quot;: 1,</p>
+  <p class="myCodeP">            &quot;fieldNames&quot;: [</p>
+  <p class="myCodeP">                &quot;SMID&quot;,</p>
+  <p class="myCodeP">                &quot;SMX&quot;,</p>
+  <p class="myCodeP">                &quot;SMY&quot;,</p>
+  <p class="myCodeP">                &quot;SMLIBTILEID&quot;,</p>
+  <p class="myCodeP">                &quot;SMNODEID&quot;,</p>
+  <p class="myCodeP">                &quot;SMUSERID&quot;,</p>
+  <p class="myCodeP">                &quot;SMGEOMETRYSIZE&quot;,</p>
+  <p class="myCodeP">                &quot;NODETYPE&quot;,</p>
+  <p class="myCodeP">                &quot;FILTER&quot;</p>
+  <p class="myCodeP">            ],</p>
+  <p class="myCodeP">            &quot;fieldValues&quot;: [</p>
+  <p class="myCodeP">                &quot;1&quot;,</p>
+  <p class="myCodeP">                &quot;-1130330.9808985773&quot;,</p>
+  <p class="myCodeP">                &quot;3829150.748031182&quot;,</p>
+  <p class="myCodeP">                &quot;1&quot;,</p>
+  <p class="myCodeP">                &quot;1&quot;,</p>
+  <p class="myCodeP">                &quot;0&quot;,</p>
+  <p class="myCodeP">                &quot;16&quot;,</p>
+  <p class="myCodeP">                &quot;0&quot;,</p>
+  <p class="myCodeP">                &quot;true&quot;</p>
+  <p class="myCodeP">            ],</p>
+  <p class="myCodeP">            &quot;geometry&quot;: {</p>
+  <p class="myCodeP">                &quot;center&quot;: {</p>
+  <p class="myCodeP">                    &quot;x&quot;: -1130330.9808985773,</p>
+  <p class="myCodeP">                    &quot;y&quot;: 3829150.748031182</p>
+  <p class="myCodeP">                },</p>
+  <p class="myCodeP">                &quot;id&quot;: 1,</p>
+  <p class="myCodeP">                &quot;partTopo&quot;: null,</p>
+  <p class="myCodeP">                &quot;parts&quot;: [1],</p>
+  <p class="myCodeP">                &quot;points&quot;: [{</p>
+  <p class="myCodeP">                    &quot;x&quot;: -1130330.9808985773,</p>
+  <p class="myCodeP">                    &quot;y&quot;: 3829150.748031182</p>
+  <p class="myCodeP">                }],</p>
+  <p class="myCodeP">                &quot;prjCoordSys&quot;: null,</p>
+  <p class="myCodeP">                &quot;style&quot;: null,</p>
+  <p class="myCodeP">                &quot;type&quot;: &quot;POINT&quot;</p>
+  <p class="myCodeP">            }</p>
+  <p class="myCodeP">        }</p>
+  <p class="myCodeP">    ]</p>
+  <p class="myCodeP">}</p>
+  <h3><a id="HEAD 请求"></a>HEAD 请求</h3>
+  <p class="myNormal">返回跟 GET 请求一样的 HTTP 响应头，但是没有响应实体。可以在不必传输整个响应内容的情况下，获取包含在响应消息头中的元数据信息。元数据信息包括媒体类型，字符编码，压缩编码，实体内容长度等。</p>
+  <p class="myNormal">HEAD 请求可以用来判断 traceDown 资源是否存在，或者客户端是否有权限访问 traceDown 资源。通过对加.&lt;format&gt;的 URI 执行 HEAD 请求，还可以快速判断 traceDown 资源是否支持&lt;format&gt;格式的表述。</p>
+  <h2>请参见</h2>
+  <ul class="referenceList">
+    <li class="referenceList"><a class="contentpagehyperlink" href="networkDataName.htm">networkDataName</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../clientBuildREST/ConstructRESTRequest.htm">客户端构建 REST 请求</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../StatusCodeDescription.htm">状态码列表及说明</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../SuperMap_iServer_REST_API_OutputFormat.htm">SuperMap iServer REST API 表述格式介绍</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../resource_hierarchy.htm">资源层次结构</a></li>
+  </ul>
+  <p> </p>
+
+</div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../../../../../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../../../../../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../../../../../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../../../../../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../../../../../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../../../../../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../../../../../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../../../../.."
+    gCommonRootRelPath = "../../../../.."
+    gTopicId = "8.2.2.6.12.1.13"
+  
+//]]></script>
+
+  <script src="../../../../../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../../../../../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../../../../../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../../../../../whxdata/layoutconfig.js"></script>
+  <script src="../../../../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

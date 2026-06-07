@@ -1,0 +1,927 @@
+<!--********************************************************************
+* Copyright© 2000 - 2020 SuperMap Software Co.Ltd. All rights reserved.
+*********************************************************************-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>SuperMap iClient3D for WebGL Development Instruction</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="../css/develop.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <script type="text/javascript" include='isIntroduction,lazyload' src="../js/include.js"></script>
+    <script src=""></script>
+</head>
+
+<body class="hold-transition skin-blue">
+
+    <!--顶部导航-->
+    <header class="header-wrapper main-header icl-header"></header>
+    <script>
+        var identification = {
+            name: "WebGL"
+        };
+        var navigation = {
+            nav: {
+                title: "SuperMap iClient3D for WebGL",
+                path: "../../web/",
+                isLocal: window.isLocal
+            }
+        };
+        utils.loadTemplate(".icl-header", "../apis/header.html", navigation);
+
+    </script>
+    <!--顶部导航 end-->
+
+    <!--内容区-->
+    <div>
+        <div class="row">
+            <!--左侧导航-->
+            <div class="leftnav" role="complementary">
+                <nav class="icl-docs-sidebar hidden-print hidden-xs hidden-sm affix-top">
+                    <ul class="nav icl-docs-sidenav">
+                        <li>
+                            <a href="#Ready">Prepare</a>
+                            <ul class="nav">
+                                <li>
+                                    <a href="#GetLibs">Download SuperMap iClient3D for WebGL</a>
+                                </li>
+                                <li>
+                                    <a href="#Import">Import</a>
+                                </li>
+<!--                                <li>-->
+<!--                                    <a href="#Modules">模块化开发</a>-->
+<!--                                </li>-->
+                                <!--<li>
+                                    <a href="#ie8">兼容 IE8 浏览器</a>
+                                </li>-->
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#createMap">Create 3D Scene</a>
+                            <ul class="nav">
+                                <li>
+                                    <a href="#iServerMap">Initialize the 3D Globe</a>
+                                </li>
+                                <li>
+                                    <a href="#thirdMap">Set Map Style</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#multiProjection">Add layers</a>
+                            <ul class="nav">
+                                <li>
+                                    <a href="#addTerrain">Add map layers</a>
+                                </li>
+                                <li>
+                                    <a href="#addImage">Add imagery layers</a>
+                                </li>
+                                <li>
+                                    <a href="#addS3M">Add S3M layers</a>
+                                </li>
+                                <li>
+                                    <a href="#addMVT">Add MVT layers</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#SetScene">Scene Setting</a>
+                            <ul class="nav">
+                                <li>
+                                    <a href="#SetColor">Set color</a>
+                                </li>
+                                <li>
+                                    <a href="#SetBloomEffect">Set floodlight effects</a>
+                                </li>
+                                <li>
+                                    <a href="#MultiViewer">Multi-window display</a>
+                                </li>
+                                <li>
+                                    <a href="#OutPutScene">Scene output</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#Query">Query</a>
+                            <ul class="nav">
+                                <li>
+                                    <a href="#SpatialQuery">Spatial Analysis</a>
+                                </li>
+                                <li>
+                                    <a href="#AttQuery">Property Query</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#Measure">Measurement</a>
+                        </li>
+                        <li>
+                            <a href="#DrawHandler">Draw</a>
+                        </li>
+                        <li>
+                            <a href="#Analysis">3D Spatial Analysis</a>
+                            <ul class="nav">
+                                <li>
+                                    <a href="#SightLine">Sightline Analysis</a>
+                                </li>
+                                <li>
+                                    <a href="#viewshed3D">ViewShed Analysis</a>
+                                </li>
+                                <li>
+                                    <a href="#ShadowQuery">Shadow Analysis</a>
+                                </li>
+                                <li>
+                                    <a href="#SkyLine">Skyline Analysis</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a class="back-to-top" href="#top">
+                        Back to top
+                    </a>
+                </nav>
+            </div>
+            <!--右侧内容区-->
+            <div class="col-md-9" id="main-content" role="main">
+                <div class="icl-docs-header">
+                    <h1 class="product">SuperMap iClient3D for WebGL</h1>
+                </div>
+                <p class="lead">Mainly introduces the introduction usage of SuperMap iClient3D for WebGL. For detailed interface parameters, please refer to the API page. </p>
+
+                <!-- 1 准备 -->
+                <div class="section icl-docs-section">
+                    <h2 id="Ready" class="section-title">Prepare</h2>
+                    <div class="section section-level-2">
+                        <div class="section section-level-2">
+                            <h3 id="GetLibs" class="section-title">Get SuperMap iClient3D for WebGL</h3>
+                            <p>SuperMap iClient3D for WebGL needs to be introduced during development. Including the necessary CSS files and JS
+                                file. You can get it in the following ways:</p>
+                            <!--<h4 id="Leaflet" class="section-title"> Leaflet </h4>-->
+                            <!--<ul>-->
+                                <!--<li>通过<a href="https://leafletjs.com/download.html"> Leaflet 官网</a> 下载 Leaflet.zip</li>-->
+                                <!--<li>在 Leaflet 的<a href="https://github.com/Leaflet/Leaflet"> GitHub </a>上下载</li>-->
+                            <!--</ul>-->
+                            <h4 id="iClientforLeaflet" class="section-title"> SuperMap iClient3D for WebGL </h4>
+                            <ul>
+                                <li>via<a href="../downloads/download1.html">
+                                    SuperMap iClient3D for WebGL official website </a>Download the latest version</li>
+                                <!--<li>在 SuperMap iClient for Leaflet 的<a-->
+                                        <!--href="https://github.com/SuperMap/iClient-JavaScript/releases"> GitHub </a>中下载-->
+                                    <!--release 版本</li>-->
+                            <!--</ul>-->
+                        </div>
+                        <!-- 1.2 引入 -->
+                        <div>
+                            <h3 id="Import" class="section-title">Import</h3>
+                            <h4 class="section-title">Introduction by file method</h4>
+                            <p>After decompressing the obtained version of SuperMap iClient3D for WebGL, create a new HTML file in the examples folder,
+                                Pass in the file&lt;script&gt; The label introduces the Supermap3D.js file:</p>
+                            <figure class="highlight">
+                                <pre class="javascript">
+                                        <code class="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;script type="text/javascript" src="../Build/SuperMap3D/SuperMap3D.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;/html&gt;</code>
+                                    </pre>
+                            </figure><p>At the same time as needed &lt;head&gt; Other css files and js files of SuperMap iClient3D for WebGL are introduced in the label, as follows:</p>
+                            <figure class="highlight">
+                                <pre class="javascript">
+                                        <code class="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head>
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    &lt;link href="../Build/SuperMap3D/Widgets/widgets.css" rel="stylesheet"&gt;
+    &lt;link href="./css/pretty.css" rel="stylesheet"&gt;
+    &lt;script src="./js/jquery.min.js"&gt;&lt;/script&gt
+    &lt;script src="./js/config.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="../Build/SuperMap3D/SuperMap3D.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;/html&gt;</code>
+                                    </pre>
+                            </figure>
+
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 1.3 模块化开发 -->
+                        <div>
+<!--                            <h3 id="Modules" class="section-title">模块化开发</h3>-->
+<!--                            <h4 class="section-title">ES6</h4>-->
+<!--                            <p>-->
+<!--                                开发前需使用<a href='#npm'> npm </a>安装依赖，即package.json文件中列出的依赖，然后通过 ES6 的 import 模块加载语法引入相应的模块。-->
+<!--                            </p>-->
+<!--                            <p>-->
+<!--                                <b>&nbsp;&nbsp;部分模块引入</b>-->
+<!--                            </p>-->
+<!--                            <figure class="highlight">-->
+<!--                                <pre class="javascript">-->
+<!--                                            <code>import {S3MTilesLayer} from '../Build/SuperMap3D/SuperMap3D.js';-->
+<!--</code>-->
+<!--                                        </pre>-->
+<!--                            </figure>-->
+
+
+                            <!--<h4 class="section-title">打包配置</h4>-->
+                            <!--<p>新版本的SuperMap iClient3D for WebGL 使用了 ES6 语法，因此在打包和压缩的时候应该注意压缩和打包工具对ES6语法的支持。</p>-->
+                            <!--<p>SuperMap iClient3D for WebGL打包用到的工具主要有Gulp和Google Closure Compiler，并利用ant进行构建。 </p>-->
+                            <!--<p>首先需要进行ant和jre的配置。<a href="http://ant.apache.org/">下载ant</a>安装包后解压到拟安装的路径,-->
+                                <!--<a href="https://www.oracle.com/java/technologies/javase-downloads.html">下载jre</a>安装包解压后进行安装 ，然后将两者配置为环境变量。-->
+                                <!--配置完成后可以通过在命令行输入ant -version和java -version来检验其是否配置成功。</p>-->
+                            <!--<p>在本地工程目录下新建一个ant配置文件build.xml并进行基本的配置：</p>-->
+                            <!--<figure class="highlight">-->
+                                <!--<pre class="javascript">-->
+                                            <!--<code>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;-->
+<!--&lt;project name = "WebGLPackage" default = "01pack" baseDir = ".."&gt;-->
+    <!--&lt;property name = "SourceCodeDir" value = "${baseDir}\Source"/&gt;-->
+    <!--&lt;property name = "BuildSuperMap3DDir" value = "${baseDir}\Build\SuperMap3D"/&gt;-->
+    <!--&lt;target&gt;-->
+        <!--...-->
+    <!--&lt;/target&gt;-->
+<!--&lt;/project&gt;</code>-->
+                                <!--</pre>-->
+                            <!--</figure>-->
+                            <!--<p>gulp工具的使用：您从官网获取的SuperMap iClient3D for WebGL包里自带的gulpfile.js文件中已将相应版本的文件打包时所需-->
+                                <!--的gulp工具配置好，且您在配置模块化开发环境时已经安装了项目所需依赖（若未安装，此处须安装，否则不能正常运行），您在使用时只需要根据需要选取gulp task并配置到上一步所创建的buil.xml即可。-->
+                                <!--</p>-->
+                            <!--<figure class="highlight">-->
+                                <!--<pre class = "javascript">-->
+                                    <!--<code>&lt;target name = "gulp"&gt;-->
+    <!--&lt;exec executable = "cmd.exe" dir = "baseDir"&gt;-->
+        <!--&lt;arg line = "/c gulp minify"&gt;-->
+    <!--&lt;/exec&gt;-->
+<!--&lt;target&gt;</code>-->
+                                <!--</pre>-->
+                            <!--</figure>-->
+<!---->
+                            <!--<p>当完成gulp的配置后，为了使代码更加轻量便捷，可以使用Google Closure Compiler对代码进行压缩，其主要语法为：</p>-->
+                            <!--<figure class="highlight">-->
+                                <!--<pre class = "javascript">-->
+                                    <!--<code>java -jar compiler.jar &#45;&#45;js ../Build/SuperMap3D/SuperMap3D.js &#45;&#45;compilation_level SIMPLE_OPTIMIZATIONS &#45;&#45;js_output_file ../Build/SuperMap3D/SuperMap3D-GC.js &#45;&#45;warning_level QUIET</code>-->
+                                <!--</pre>-->
+                            <!--</figure>-->
+                            <!--<p>最后根据需要，在buil.xml文件中进行打包的其他配置，如压缩、命名等。</p>-->
+
+                            <!-- <p>
+                                <b>rollup</b>
+                            </p>
+                            <p>
+                                <b>parcel</b>
+                            </p> -->
+                        </div>
+                        <!-- 1.4 兼容ie8 -->
+
+
+                <!-- 2 创建一幅地图-->
+                    <div class="section icl-docs-section">
+                        <h2 id="createMap" class="section-title"style="padding-top:100px; margin-top:-100px;">Create a 3D scene</h2>
+                        <p class="lead"></p>
+                        <div class="section section-level-2">
+                            <!-- 2.1 SuperMap iServer 发布的地图 -->
+                            <h3 id="iServerMap" class="section-title"style="padding-top:100px; margin-top:-100px;">Initialize the three-dimensional ball</h3>
+                            <p>In the preparation chapter, a new HTML page has been created, continue to add code in the page to initialize the three-dimensional ball, as follows:</p>
+                            <figure class="highlight">
+                                <pre class="html">
+                                    <code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head>
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    &lt;link href="../Build/SuperMap3D/Widgets/widgets.css" rel="stylesheet"&gt;
+    &lt;link href="./css/pretty.css" rel="stylesheet"&gt;
+    &lt;script src="./js/jquery.min.js"&gt;&lt;/script&gt
+    &lt;script src="./js/config.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="../Build/SuperMap3D/SuperMap3D.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id="Container"&gt;&lt;/div&gt;
+&lt;script&gt;
+    function onload(SuperMap3D) {
+        var viewer = new SuperMap3D.Viewer('Container');
+    }
+&lt;/html&gt;</code>
+                            </pre>
+                        </figure>
+                        <h3 id="thirdMap" class="section-title"style="padding-top:100px; margin-top:-100px;">Set map style</h3>
+                        <p>While initializing, for example: superimpose <strong>local pictures</strong> on the initialized 3D ball as an image:</p>
+                        <figure class="highlight">
+                            <pre class="javascript">
+                                <code>&lt;script&gt;
+    function onload(SuperMap3D) {
+        var viewer = new SuperMap3D.Viewer('Container');
+          //Use a local picture to initialize the earth, the recommended picture aspect ratio is 2:1
+            viewer.imageryLayers.addImageryProvider(new SuperMap3D.SingleTileImageryProvider({
+            url :  './images/worldimage.jpg'
+        }));
+    }</code>
+                            </pre>
+                        </figure>
+                            <p>Operation effect</p>
+                            <div style="text-align:center; width:100%;">
+                                <iframe data-src="../../examples/webgl/image.html"></iframe>
+                            </div>
+                        <p><strong>Quoting online maps:</strong>SuperMap iClient3D for WebGL encapsulates a variety of Internet map information,
+                            For example, BingMap, Tianditu, etc, and provide image addition interfaces <code>BingMapsImageryProvider</code> and <code>TiandituImageryProvider</code></p>
+                        <p>Add BingMap image as:</p>
+                        <figure class="highlight">
+                            <pre class="javascript">
+                                <code>&lt;script&gt;
+    function onload(SuperMap3D) {
+        var viewer = new SuperMap3D.Viewer('Container');
+            viewer.imageryLayers.addImageryProvider(new SuperMap3D.BingMapsImageryProvider({
+            url : 'https://dev.virtualearth.net',
+            mapStyle : SuperMap3D.BingMapsStyle.AERIAL,
+            key : BING_MAP_KEY  //Key applied by BingMap official website
+        }));
+    }</code>
+                            </pre>
+                        </figure>
+                        <p>Operation effect</p>
+                        <div style="text-align:center; width:100%;">
+                            <iframe data-src="../../examples/webgl/bingMap.html"></iframe>
+                        </div>
+
+                        <p>Add the sky map as a base map:</p>
+                        <figure class="highlight">
+                            <pre class="javascript">
+                                <code>&lt;script&gt;
+    function onload(SuperMap3D) {
+        var viewer = new SuperMap3D.Viewer('Container');
+        var labelImagery = new SuperMap3D.TiandituImageryProvider({
+            mapStyle: SuperMap3D.TiandituMapsStyle.CIA_C,//TianDitu Global Chinese annotation service
+            token: TOKEN_TIANDITU //Key applied for by Tiantu official website
+        });
+        viewer.imageryLayers.addImageryProvider(labelImagery);
+    }</code>
+                            </pre>
+                        </figure>
+
+                        <!--分割线-->
+
+
+                        <p>Operation effect</p>
+                        <div style="text-align:center; width:100%;">
+                            <iframe data-src="../../examples/webgl/tianditu.html"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- 3 Add layer -->
+                <div class="section icl-docs-section">
+                    <h2 id="multiProjection" class="section-title"style="padding-top:100px; margin-top:-100px;">Add layer</h2>
+                    <p class="lead"></p>
+                    <div class="section section-level-2">
+                        <p>SuperMap iClient3D for WebGL provides a variety of interfaces to support adding a variety of data layers to the created 3D scene:</p>
+
+                        <p id="addTerrain" ><strong>Add terrain layer:</strong></p>
+                        <figure class="highlight">
+                            <pre class="javascript">
+                            <code>terrainProvider : new SuperMap3D.SuperMapTerrainProvider({
+    url : TEST_TERRAIN, //Address of terrain service
+    isSct : true //The terrain service is derived from SuperMap iServer and needs to be set to true when publishing
+})</code>
+                            </pre>
+                        </figure>
+
+                        <p id="addImage"><strong>Add an image layer:</strong></p>
+                        <figure class="highlight">
+                            <pre class="javascript">
+                            <code> var layer = new SuperMap3D.SuperMapImageryProvider({
+    url : TEST_IMG  //Address of image service
+});
+var imgLayer = viewer.imageryLayers.addImageryProvider(layer)</code>
+                            </pre>
+                        </figure>
+
+                        <p id="addS3M"><strong>Add S3M layer:</strong>The S3M service published on SuperMap iServer can be opened in the following two ways. </p>
+                        <p>(1). Open the entire scene through the open interface. This method is simple and easy to operate and it is not easy to miss the layer.</p>
+                        <figure class="highlight">
+                            <pre class="javascript">
+                            <code>var scene = viewer.scene;
+var promise = scene.open("http://localhost:8090/iserver/services/3D-test/rest/realspace");  //url is the service address published on SuperMap iServer</code>
+                            </pre>
+                        </figure>
+                        <p>(2). Add through the <code>addS3MTilesLayerByScp</code> interface. The advantage of this method is that you can select some layers to add to the scene according to your needs to improve the loading performance, but you need to load multiple layers The whole scene is not as convenient as scene.open. </p>
+                        <figure class="highlight">
+                            <pre class="javascript">
+                                <code>var promise = scene.addS3MTilesLayerByScp('http://localhost:8090/iserver/services/3D-test/rest/realspace/datas/zj/config',
+    {
+        name : "base",
+        cacheKey: "123456"  //3D cache key, set and obtained by SuperMap iServer
+    });
+promise.then(function(layer){
+    layer.visible = true;
+});</code>
+                            </pre>
+                        </figure>
+
+                        <p id="addMVT"><strong>Add MVT layer: </strong>After publishing the vector tile map generated by the map in the SuperMap desktop product through SuperMap iServer as a vector tile or 3D service,
+                            Use the interface addVectorTilesMap in WebGL to add the MVT layer service to the scene. </p>
+                        <figure class="highlight">
+                            <pre class="javascript">
+                                <code>var mvtMap = scene.addVectorTilesMap({
+    url: url,  //MVT service address
+    canvasWidth: 512,
+    name: 'testMVT',
+    viewer: viewer
+});</code>
+                            </pre>
+                        </figure>
+
+
+
+                    </div>
+                </div>
+
+
+                <!-- 4 Scene Setting -->
+                <div class="section icl-docs-section">
+                    <h2 id="SetScene" class="section-title"style="padding-top:100px; margin-top:-100px;">Scene Setting</h2>
+                    <p>SuperMap iClient3D for WebGL provides a variety of interfaces to facilitate users to customize the scene. </p>
+                    <div class="section section-level-2">
+                        <h3 id="SetColor" class="section-title"style="padding-top:100px; margin-top:-100px;">Color settings</h3>
+                        <p>SuperMap iClient3D for WebGL supports setting the color of the scene:</p>
+                        <figure class="highlight">
+                            <pre class="javascript">
+                                <code>viewer.scene.colorCorrection.show = true;
+viewer.scene.colorCorrection.saturation = $("#saturation").val();
+viewer.scene.colorCorrection.brightness = $("#brightness").val();
+viewer.scene.colorCorrection.contrast = $("#contrast").val();
+viewer.scene.colorCorrection.hue = $("#hue").val();
+    //Color correction switch
+$("#colorCorrectionShow").on("input change", function() {
+viewer.scene.colorCorrection.show = this.checked;
+});
+    //Adjust saturation
+$("#saturation").on("input change", function() {
+	viewer.scene.colorCorrection.saturation = this.value;
+});
+    //Adjust the brightness
+$("#brightness").on("input change", function() {
+viewer.scene.colorCorrection.brightness = this.value;
+});
+    //Adjust the contrast
+$("#contrast").on("input change", function() {
+viewer.scene.colorCorrection.contrast = this.value;
+});
+    //Adjust the hue
+$("#hue").on("input change", function() {
+viewer.scene.colorCorrection.hue = this.value;
+});</code>
+                            </pre>
+                        </figure>
+                    </div>
+
+                    <div class="section section-level-2">
+                        <h3 id="SetBloomEffect" class="section-title"style="padding-top:100px; margin-top:-100px;">looming effect setting</h3>
+                    <p>SuperMap iClient3D for WebGL supports enabling floodlight in the scene, and supports setting the floodlight effect</p>
+                        <figure class="highlight">
+                            <pre class="javascript">
+                                <code>//Flood light effect switch
+viewer.scene.bloomEffect.show = this.checked;
+//Adjust the brightness threshold
+$("#bloom-threshold").on("input change", function() {
+    viewer.scene.bloomEffect.threshold = parseFloat(this.value);
+});
+//Adjust flood light intensity
+$("#bloom-intensity").on("input change", function() {
+viewer.scene.bloomEffect.bloomIntensity = parseFloat(this.value);
+});</code>
+                            </pre>
+                        </figure>
+                    </div>
+
+                    <div class="section section-level-2">
+                        <h3 id="MultiViewer" class="section-title"style="padding-top:100px; margin-top:-100px;">Split screen display</h3>
+                        <p>Support split-screen display of the scene, and perform different operations on the data in the scene in different viewports. Currently SuperMap iClient3D for WebGL supports
+                        Set 6 modes: "NONE", "HORIZONTAL", "TRIPLE", "VERTICAL", "VerticalTrisection" and "QUAD". </p>
+                        <figure class="highlight">
+                            <pre class="javascript">
+                                <code>scene.multiViewportMode = SuperMap3D.MultiViewportMode[value];</code>
+                            </pre>
+                        </figure>
+                    </div>
+                    <div class="section section-level-2">
+                        <h3 id="OutPutScene" class="section-title"style="padding-top:100px; margin-top:-100px;">Scene drawing</h3>
+                        <p>SuperMap iClient3D for WebGL supports saving a certain angle of a specified scene as a picture in the browser to the local. The specific method is:</p>
+                        <figure class="highlight">
+                            <pre class="javascript">
+                                <code>//Generate a canvas based on the picture
+    function convertImageToCanvas(image) {
+        var canvas = document.createElement("canvas");
+        canvas.width = image.width;
+        canvas.height = image.height;
+        canvas.getContext("2d").drawImage(image, 0, 0);
+        return canvas;
+    }；
+//Save the picture locally
+    function download(base64data) {
+        var image = new Image();
+        image.src = base64data;
+        image.onload = function() {
+            var canvas = convertImageToCanvas(image);
+            url = canvas.toDataURL("image/jpeg");
+            var a = document.createElement('a');
+            var event = new MouseEvent('click');
+            a.download = (new Date()).getTime() + ".jpg"; // Specify the name of the downloaded picture
+            a.href = url;
+            a.dispatchEvent(event); // Click event that triggers hyperlink
+        }
+    } </code>
+                            </pre>
+                        </figure>
+                    </div>
+
+                </div>
+
+                <!-- 5 Query-->
+                <div class="section icl-docs-section">
+                    <h2 id="Query" class="section-title"style="padding-top:100px; margin-top:-100px;">Query</h2>
+                    <p class="lead"></p>
+                    <div class="section section-level-2">
+                        <h3 id="SpatialQuery" class="section-title"style="padding-top:100px; margin-top:-100px;">Spatial query</h3>
+                        <p>SuperMap iClient3D for WebGL provides a rich interface to support the spatial position information query of the scene model and GPU space query functions. </p>
+                        <p><strong>Spatial location information query:</strong> Obtain the spatial information of the mouse click position in real time. </p>
+                        <figure class="highlight">
+                            <pre class="javascript">
+                                <code>var handler = new SuperMap3D.ScreenSpaceEventHandler(scene.canvas);
+
+    //Set the left mouse button click callback event
+    handler.setInputAction(function(e) {
+        //First remove the points added before
+        viewer.entities.removeAll();
+        //Get the Cartesian coordinates of the click position
+        var position = scene.pickPosition(e.position);
+
+        //Convert Cartesian coordinates to latitude and longitude coordinates
+        var cartographic = SuperMap3D.Cartographic.fromCartesian(position);
+        var longitude = SuperMap3D.Math.toDegrees(cartographic.longitude);
+        var latitude = SuperMap3D.Math.toDegrees(cartographic.latitude);
+        var height = cartographic.height;
+        if(height < 0) {
+            height = 0;
+        }
+
+        //Create pop-up box information to view the acquired location information instantly
+        var entity = new SuperMap3D.Entity({
+            name : "Position Information",
+            description : createDescription(SuperMap3D, [longitude, latitude, height])
+        });
+        viewer.selectedEntity = entity;
+
+        //In order to display the location of the query more intuitively, add the corresponding point at the click
+        viewer.entities.add(new SuperMap3D.Entity({
+            point : new SuperMap3D.PointGraphics({
+                color : new SuperMap3D.Color(1, 1, 0),
+                pixelSize : 10,
+                outlineColor : new SuperMap3D.Color(0, 1, 1)
+            }),
+            position : SuperMap3D.Cartesian3.fromDegrees(longitude, latitude , height + 0.5)
+        }));
+    }, SuperMap3D.ScreenSpaceEventType.LEFT_CLICK);</code>
+                                </pre>
+                        </figure>
+                        <p><strong>GPU Spatial Query:</strong> Create a query object in the scene, and obtain the spatial relationship between the query object and the model or model sub-objects through GPU space analysis. Currently the query object supports GeoCone,
+                            GeoBox, GeoCylinder, GeoEllipsoid and GeoSphere, etc. The sample code is as follows:</p>
+                        <figure class="highlight">
+                            <pre class="javascript">
+                                    <code>var geometry = undefined;
+var pos = undefined;
+var mode = SuperMap3D.PositionMode.Intersects
+var spatialQuery = new SuperMap3D.SpatialQuery3D(scene);
+var handler = new SuperMap3D.ScreenSpaceEventHandler(scene.canvas);
+
+handler.setInputAction(function (evt) {
+    var length = 100;
+    var width = 100;
+    var height = 100;
+    // Get the Cartesian coordinates of the mouse click
+    var cartesian = scene.pickPosition(evt.position);
+    var cartographic = SuperMap3D.Cartographic.fromCartesian(cartesian);
+    pos = new SuperMap3D.Point3D(SuperMap3D.Math.toDegrees(cartographic.longitude), SuperMap3D.Math.toDegrees(cartographic.latitude), cartographic.height);
+    geometry = new SuperMap3D.GeoBox(length, width, height);
+    geometry.geoPosition = pos;
+    spatialQuery.geometry = geometry;
+    spatialQuery.positionMode = mode;
+    spatialQuery.layers = layerSelect;
+    spatialQuery.outlineColor = SuperMap3D.Color.CORNFLOWERBLUE;
+    spatialQuery.fillStyle = SuperMap3D.FillStyle.Fill_And_WireFrame
+
+    spatialQuery.build();
+    tooltip.setVisible(false);
+    handler.removeInputAction(SuperMap3D.ScreenSpaceEventType.MOUSE_MOVE)  //Remove mouse movement event listener
+}, SuperMap3D.ScreenSpaceEventType.LEFT_CLICK);</code>
+                            </pre>
+                        </figure>
+                        <p>Operation effect</p>
+                        <div style="text-align:center; width:100%;">
+                            <iframe data-src="../../examples/webgl/spatialQuery3D.html"></iframe>
+                        </div>
+                    </div>
+
+                    <p class="lead"></p>
+                    <div class="section section-level-2">
+                        <h3 id="AttQuery" class="section-title"style="padding-top:100px; margin-top:-100px;">Attribute query</h3>
+                        <p>Attribute query refers to querying the layer or object attributes of the S3M model in the scene</p>
+                        <figure class="highlight">
+                            <pre class="javascript">
+                                    <code>function doSqlQuery(SQL) {
+    var getFeatureParam;
+    getFeatureParam = new SuperMap.REST.FilterParameter({
+        attributeFilter: SQL //SQL is the query condition
+});</code>
+                            </pre>
+                        </figure>
+                    </div>
+                </div>
+                <!--6 量算-->
+                <div class="section icl-docs-section">
+                    <h2 id="Measure" class="section-title"style="padding-top:100px; margin-top:-100px;">Measurement</h2>
+                    <p>SuperMap iClient3D for WebGL provides a measurement function, which supports real-time measurement of distance, area and height difference of terrain or S3M models on the front end.
+                        It also supports the measurement of the ground distance and the ground area. </p>
+                    <P>The following code shows the method of distance measurement:</p>
+                        <figure class="highlight">
+                            <pre class="javascript">
+                                <code>var handlerDis;
+//Initialize measuring distance
+    handlerDis = new SuperMap3D.MeasureHandler(viewer, SuperMap3D.MeasureMode.Distance, clampMode);
+//Register the event of ranging function
+    handlerDis.measureEvt.addEventListener(function (result) {
+    var dis = Number(result.distance);
+    var selOptV = $("#selOpt").val();
+    var positions = result.positions;
+    if (selOptV == 3 || selOptV == 4) {
+        dis = Number(calcClampDistance(positions));
+    }
+    var distance = dis > 1000 ? (dis / 1000).toFixed(2) + 'km' : dis.toFixed(2) + 'm';
+    handlerDis.disLabel.text = 'Distance:' + distance;
+});</code>
+                            </pre>
+                        </figure>
+                    <p>Operation effect</p>
+                    <div style="text-align:center; width:100%;">
+                        <iframe data-src="../../examples/webgl/measureHandler.html"></iframe>
+                    </div>
+                </div>
+
+
+                <div class="section icl-docs-section">
+                    <h2 id="DrawHandler" class="section-title"style="padding-top:100px; margin-top:-100px;">Drawing</h2>
+                    <p>SuperMap iClient3D for WebGL supports real-time drawing of points, lines and areas on the front end. </p>
+                    <p>The following code shows how to draw a line on the front end:</p>
+                    <figure class="highlight">
+                            <pre class="javascript">
+                                <code>var handlerLine = new SuperMap3D.DrawHandler(viewer,SuperMap3D.DrawMode.Line);
+handlerLine.activeEvt.addEventListener(function(isActive){
+    if(isActive == true){
+        viewer.enableCursorStyle = false;
+        viewer._element.style.cursor = '';
+        $('body').removeClass('drawCur').addClass('drawCur');
+    }
+    else{
+        viewer.enableCursorStyle = true;
+        $('body').removeClass('drawCur');
+    }
+});
+handlerLine.movingEvt.addEventListener(function(windowPosition){
+    if(handlerLine.isDrawing){
+        tooltip.showAt(windowPosition,'&lt;p&gt;Left click to confirm the middle point of the polyline&lt;/p&gt;&lt;p&gt;Right click to end drawing&lt;/p&gt;');
+    }
+    else{
+        tooltip.showAt(windowPosition,'&lt;p&gt;Click to draw the first point&lt;/p&gt;');
+    }
+});
+handlerLine.drawEvt.addEventListener(function(result){
+    tooltip.setVisible(false);
+});</code>
+                            </pre>
+                    </figure>
+                </div>
+<!--三维空间分析-->
+                <div class="section icl-docs-section">
+                    <h2 id="Analysis" class="section-title"style="padding-top:100px; margin-top:-100px;">Three-Dimensional Spatial Analysis</h2>
+                    <p>SuperMap iClient3D for WebGL supports a series of spatial analysis of 3D scenes. </p>
+                    <p class="lead"></p>
+                    <div class="section section-level-2">
+                        <h3 id="SightLine" class="section-title"style="padding-top:100px; margin-top:-100px;">Visibility analysis</h3>
+                        <p>Visibility analysis refers to the analysis of the visibility between specified two points in the scene. The specific steps are as follows:</p>
+                        <p>(1). Open the 3D scene or add 3D layers. For this step, please refer to "Overlay S3M Layers" in <a href="multiProjection">"Add Layers"</a>.</p>
+                        <p>(2). Convert the acquired point coordinates to latitude and longitude coordinates, and conduct a visual analysis. </p>
+                        <figure class="highlight">
+                            <pre class="javascript">
+                                <code>var cartographic = SuperMap3D.Cartographic.fromCartesian(position);
+var longitude = SuperMap3D.Math.toDegrees(cartographic.longitude);
+var latitude = SuperMap3D.Math.toDegrees(cartographic.latitude);
+var height = cartographic.height;</code>
+                            </pre>
+                        </figure>
+                        <p>(3). Add observation points and target points, and conduct a visual analysis. </p>
+                        <figure class="highlight">
+                            <pre class="javascript">
+                                <code>//Set observation point
+sightline.viewPosition = [longitude, latitude, height];</code>
+                                </pre>
+                        </figure>
+                        <figure class="highlight">
+                            <pre class="javascript">
+                                <code>//Add target point
+sightline.addTargetPoint({
+    position : [longitude, latitude, height],
+    name : "point" + new Date()
+});</code>
+                            </pre>
+                        </figure>
+                    </div>
+                    <p class="lead"></p>
+                    <div class="section section-level-2">
+                        <h3 id="viewshed3D" class="section-title"style="padding-top:100px; margin-top:-100px;">ViewDom analysis</h3>
+                        <p>Visibility analysis refers to the analysis of the visibility of objects in a certain field of view based on a specified observation point in a three-dimensional scene. The main steps are:</p>
+                        <p>(1). Open the 3D scene. </p>
+                        <p>(2). Create a visual domain analysis object, and specify the display style of the visible area and the invisible area:</p>
+                        <figure class="highlight">
+                            <pre class="javascript">
+                                <code>var viewshed3D = new SuperMap3D.ViewShed3D(scene);
+var colorStr1 = viewshed3D.visibleAreaColor.toCssColorString();
+var colorStr2 = viewshed3D.hiddenAreaColor.toCssColorString();
+$("#colorPicker1").spectrum({
+    color: colorStr1,
+    showPalette: true,
+    showAlpha: true,
+    localStorageKey: "spectrum.demo",
+    palette: palette
+});
+$('#colorPicker2').spectrum({
+    color: colorStr2,
+    showPalette: true,
+    showAlpha: true,
+    localStorageKey: "spectrum.demo",
+    palette: palette
+});</code>
+                            </pre>
+                        </figure>
+                        <p>(3). Set the viewport position:</p>
+                        <figure class="highlight">
+                            <pre class="javascript">
+                                <code>var viewPosition;
+viewshed3D.viewPosition = [longitude, latitude, height];</code>
+                            </pre>
+                        </figure>
+                        <p>(4). Take the observer position (viewport position point) as the center of the sphere, pick a point in the scene, and draw the three-dimensional visual field with the line connecting the observer position and the point as the radius:</p>
+                        <figure class="highlight">
+                            <pre class="javascript">
+                                <code>//Calculate the distance between the point and the coordinate of the viewport position
+var distance = SuperMap3D.Cartesian3.distance(viewPosition, last);
+if (distance > 0) {
+    // Convert the coordinates of the current mouse point into latitude and longitude
+    var cartographic = SuperMap3D.Cartographic.fromCartesian(last);
+    var longitude = SuperMap3D.Math.toDegrees(cartographic.longitude);
+    var latitude = SuperMap3D.Math.toDegrees(cartographic.latitude);
+    var height = cartographic.height;
+    // Set the distance and direction of the visual domain analysis object through this point
+    viewshed3D.setDistDirByPoint([longitude, latitude, height]);
+}</code>
+                            </pre>
+                        </figure>
+                        <p>(5). Perform visual domain analysis:</p>
+                        <figure class="highlight">
+                            <pre class="javascript">
+                                <code>viewshed3D.build()；</code>
+                            </pre>
+                        </figure>
+                    </div>
+                    <p class="lead"></p>
+                    <div class="section section-level-2">
+                        <h3 id="ShadowQuery" class="section-title"style="padding-top:100px; margin-top:-100px;">Shadow analysis</h3>
+                        <p>Shadow analysis refers to the analysis of the shadow rate of a specified area in the scene within a specified time period. The main steps are:</p>
+                        <p>(1). Open the 3D scene. It is worth noting that when creating the Viewer, the shadow should be turned on to ensure that the shadow is available:</p>
+                        <figure class="highlight">
+                            <pre class="javascript">
+                                <code>var viewer = new SuperMap3D.Viewer('Container', {
+    shadows : true
+});</code>
+                                </pre>
+                        </figure>
+                        <p>(2). Create a shadow query object, and set the shadow mode of the layer:</p>
+                        <figure class="highlight">
+                            <pre class="javascript">
+                                <code>//Create a shadow query object
+var shadowQuery = new SuperMap3D.ShadowQueryPoints(scene);
+//Set the shadow mode of the layer
+layers[0].shadowType = 2; //2 means that all models on the layer produce shadows
+layers[1].shadowType = 2;</code>
+                                </pre>
+                        </figure>
+                        <p>(3). Draw the shadow analysis area:</p>
+                        <figure class="highlight">
+                            <pre class="javascript">
+                                <code>var handlerPolygon = new SuperMap3D.DrawHandler(viewer,SuperMap3D.DrawMode.Polygon,0);
+handlerPolygon.activeEvt.addEventListener(function(isActive){
+    if(isActive == true){
+    viewer.enableCursorStyle = false;
+    viewer._element.style.cursor = '';
+    $('body').removeClass('drawCur').addClass('drawCur');
+    }
+    else{
+    viewer.enableCursorStyle = true;
+    $('body').removeClass('drawCur');
+    }
+});</code>
+                                </pre>
+                        </figure>
+                        
+                        <p>(4).After the shadow analysis is completed, you can also obtain the shadow rate at the spatial position in the analysis area:</p>
+                        <figure class="highlight">
+                            <pre class="javascript">
+                                <code>var shadowRadio=shadowQuery.getShadowRadio(cartographic);</code>
+                                </pre>
+                        </figure>
+                        <p>(5).Perform shadow analysis:</p>
+                        <figure class="highlight">
+                            <pre class="javascript">
+                                <code>shadowQuery.build();</code>
+                                </pre>
+                        </figure>
+                    </div>
+
+                    <p class="lead"></p>
+                    <div class="section section-level-2">
+                        <h3 id="SkyLine" class="section-title"style="padding-top:100px; margin-top:-100px;">Skyline analysis</h3>
+                        <p>Skyline analysis refers to drawing and analyzing the skyline of a three-dimensional scene. The main steps are:</p>
+                        <p>(1). Open the 3D scene. </p>
+                        <p>(2). Create a skyline analysis object:</p>
+                        <figure class="highlight">
+                            <pre class="javascript">
+                                <code>var skyline = new SuperMap3D.Skyline(scene);</code>
+                                </pre>
+                        </figure>
+                        <p>(3). To make the result intuitive, set the current camera position as the viewport of the skyline analysis:</p>
+                        <figure class="highlight">
+                            <pre class="javascript">
+                                <code> //The viewport position of the skyline analysis is set to the current camera position
+skyline.viewPosition = [longitude, latitude, height];
+//Set pitch and direction
+skyline.pitch = SuperMap3D.Math.toDegrees(scene.camera.pitch);
+skyline.direction = SuperMap3D.Math.toDegrees(scene.camera.heading);
+skyline.radius = 10000; // Set the analysis radius of the skyline, unit: meter
+</code>
+                                </pre>
+                        </figure>
+                        <p>(4).Perform skyline analysis:</p>
+                        <figure class="highlight">
+                            <pre class="javascript">
+                                <code>skyline.build();</code>
+                                </pre>
+                        </figure>
+                        <p>(5).Extract two-dimensional skyline:</p>
+                        <figure class="highlight">
+                            <pre class="javascript">
+                                <code>var object = skyline.getSkyline2D();</code>
+                                </pre>
+                        </figure>
+                        <p>(6). In addition, SuperMap iClient3D for WebGL also supports drawing height-limiting bodies to assist planning and construction departments to make decisions.
+                            The meaning of the height limit body is that in the current viewport, in order to keep the current skyline unchanged, the height of the building built in the designated area cannot exceed the height of the height limit body. The drawing method is as follows:</p>
+                        <figure class="highlight">
+                            <pre class="javascript">
+                                <code>skyline.addLimitbody({
+        position: arr,
+        name: "limitBody"
+    });</code>
+                                </pre>
+                        </figure>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!--内容区 end-->
+    <!--footer-->
+    <footer class="main-footer icl-footer"></footer>
+    <script>
+        utils.loadTemplate(".icl-footer", "../template/footer.html", navigation);
+
+    </script>
+    <!--footer end-->
+
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script>
+        var myLazyLoad = new LazyLoad({
+            elements_selector: "iframe"
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../../../../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../../../../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../../../../../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../../../../iserver-icon.png"/>
+    
+  <script data-relpath="../../../../.." src="../../../../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Language" content="zh-CN"/>
+  <meta name="template" content="../../../../../assets/layouts/RESTAPI.htt"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>smlFileDownload</title>
+  <link rel="StyleSheet" href="../../../../../assets/css/SuperMapHelp.css" type="text/css"/>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../../../../../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../assets/css/homeButtom.css"/>
+  <script src="../../../../../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../../../../../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../../../../../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../../../../../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../../../../../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../../../../../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../../../../../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../../../../../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../../../../../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <h2><a name="URI" id="URI"></a>URI</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="../plot.htm#URI">&lt;plot_uri&gt;</a>/smlFileDownload[.&lt;format&gt;]</p>
+  <h2>支持的方法</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="#GET 请求">GET</a>、<a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a></p>
+  <h2>父资源</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="../plot.htm">plot</a></p>
+  <h2>介绍</h2>
+  <p class="myNormal">smlFileDownload资源用于下载态势图文件。</p>
+  <p class="myNormal" style="font-weight: bold;">支持的方法：</p>
+  <ul class="supportList" style="list-style: disc;">
+    <li class="supportList"><a class="contentpagehyperlink" href="#GET 请求">GET</a>：获取态势图文件。</li>
+    <li class="supportList"><a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a>：检查 smlFileDownload 资源是否存在，或权限是否可以访问 smlFileDownload 资源。</li>
+  </ul>
+  <p class="myNormal"><span style="font-weight: bold;">支持的表述格式：</span>RJSON、JSON、HTML、XML。</p>
+  <h2>资源层次</h2>
+  <p class="myNormal"><img alt="" border="0" src="../../../../../assets/images/root/plot/smlFileDownload/plot_smlFileDownload.png" style="border: none;" usemap="#MAP485236914"/><map id="MAP485236914" name="MAP485236914"><area alt="" coords="4, 4, 255, 43" href="../../root.htm" shape="rect"/> <area alt="" coords="77, 61, 236, 100" href="../plot.htm" shape="rect"/> <area alt="" coords="131, 114, 357, 158" href="smlFileDownload.htm" shape="rect"/></map></p>
+  <h2>HTTP 请求方法</h2>
+  <p class="myNormal">对如下 URI 执行 HTTP 请求，以 json 格式为例加以说明，其中，supermapiserver 是服务器名。</p>
+  <p class="uriStyle">http://supermapiserver:8090/iserver/services/plot-JY/rest/plot/smlFileDownload/{smlFileName}.json</p>
+  <h3><a id="GET 请求"></a>GET 请求</h3>
+  <p class="myNormal">获取态势图文件。</p>
+  <h4>响应结构</h4>
+  <p class="myNormal">对smlFileDownload资源执行 GET 请求，在响应消息的实体主体里是一个态势图文件，其结构如下：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>字段</td>
+        <td>类型</td>
+        <td>说明</td>
+      </tr>
+      <tr class="t2Row">
+        <td>smlInfo</td>
+        <td>Object</td>
+        <td>态势图信息。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>layerDatas</td>
+        <td>Object</td>
+        <td>图层信息，包含其中的标号信息。</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="myNormal"> </p>
+  <h4>响应示例</h4>
+  <p class="myNormal">对smlFileDownload资源：http://supermapiserver:8090/iserver/services/plot-JY/rest/plot/smlFileDownload/situationMap.sml，执行GET请求，则返回的内容如下：</p>
+  <p style="text-align: center;"><textarea cols="12" id="txtComments" rows="34" style="overflow: scroll; width: 100%;">{&quot;smlInfo&quot;:{&quot;SMLName&quot;:&quot;&quot;,&quot;SMLDesc&quot;:&quot;&quot;,&quot;SMLSeclevel&quot;:&quot;&quot;,&quot;SMLDepat&quot;:&quot;&quot;,&quot;SMLAuthor&quot;:&quot;&quot;,&quot;SMLTime&quot;:&quot;&quot;},
+      &quot;layerDatas&quot;:[{&quot;layerName&quot;:&quot;PlotService&quot;,
+      &quot;features&quot;:
+      ......
+      {
+      &quot;algoMaxEditPts&quot;: 1,
+      &quot;algoMinEditPts&quot;: 1,
+      &quot;anchorPoint&quot;:
+      {
+      &quot;x&quot;: 0,
+      &quot;y&quot;: 0
+      },
+      &quot;annotationPosition&quot;: 4,
+      &quot;center&quot;:
+      {
+      &quot;x&quot;: 0,
+      &quot;y&quot;: 0
+      },
+      &quot;annotationPosition&quot;: 4,
+      &quot;center&quot;:
+      {
+      &quot;x&quot;: 0,
+      &quot;y&quot;: 0
+      },
+      &quot;code&quot;: &quot;80800&quot;,
+      &quot;libID&quot;: &quot;421&quot;,
+      &quot;innerCells&quot;:
+      [
+      {
+      &quot;textContent&quot;: &quot;&quot;,
+      &quot;type&quot;: 32,
+      &quot;surroundLineColor&quot;:
+      {
+      &quot;red&quot;: 255,
+      &quot;blue&quot;: 0,
+      &quot;green&quot;: 255,
+      &quot;alpha&quot;: 255
+      },
+      &quot;surroundLineType&quot;: 0,
+      &quot;surroundLineWidth&quot;: 1,
+      &quot;surroundLineLimit&quot;: false,
+      &quot;surroundLineFlag&quot;: false,
+      &quot;positionPoints&quot;:
+      [
+      {
+      &quot;x&quot;: 0,
+      &quot;y&quot;: 100,
+      &quot;z&quot;: 0
+      },
+      {
+      &quot;x&quot;: 80,
+      &quot;y&quot;: &quot;60&quot;,
+      &quot;z&quot;: 0
+      },
+      {
+      &quot;x&quot;: 0,
+      &quot;y&quot;: &quot;60&quot;,
+      &quot;z&quot;: 0
+      }
+      ],
+      &quot;fillLimit&quot;: false,
+      &quot;fontColorLimit&quot;: false,
+      &quot;lineWidthLimit&quot;: false,
+      &quot;fillColorLimit&quot;: false,
+      &quot;lineColorLimit&quot;: false,
+      &quot;lineTypeLimit&quot;: false,
+      &quot;style&quot;:
+      {
+      &quot;fillBackOpaque&quot;: true,
+      &quot;lineWidth&quot;: 0.5,
+      &quot;fillBackColor&quot;:
+      {
+      &quot;red&quot;: 255,
+      &quot;blue&quot;: 0,
+      &quot;green&quot;: 0,
+      &quot;alpha&quot;: 255
+      },
+      &quot;markerWidth&quot;: 2.4,
+      &quot;markerAngle&quot;: 0,
+      &quot;fillForeColor&quot;:
+      {
+      &quot;red&quot;: 255,
+      &quot;blue&quot;: 0,
+      &quot;green&quot;: 0,
+      &quot;alpha&quot;: 255
+      },
+      &quot;markerSize&quot;: 2.4,
+      &quot;fillGradientOffsetRatioX&quot;: 0,
+      &quot;fillGradientOffsetRatioY&quot;: 0,
+      &quot;lineColor&quot;:
+      {
+      &quot;red&quot;: 255,
+      &quot;blue&quot;: 0,
+      &quot;green&quot;: 0,
+      &quot;alpha&quot;: 255
+      },
+      &quot;fillOpaqueRate&quot;: 100,
+      &quot;markerHeight&quot;: 2.4,
+      &quot;fillGradientMode&quot;: 0,
+      &quot;fillSymbolID&quot;: 1,
+      &quot;fillGradientAngle&quot;: 0,
+      &quot;markerSymbolID&quot;: 0,
+      &quot;lineSymbolID&quot;: 0
+      },
+      &quot;textStyle2D&quot;:
+      {
+      &quot;fontName&quot;: &quot;Microsoft YaHei&quot;,
+      &quot;fontWidth&quot;: 0,
+      &quot;align&quot;: 0,
+      &quot;backOpaque&quot;: false,
+      &quot;fontHeight&quot;: 7,
+      &quot;fontScale&quot;: 1,
+      &quot;italic&quot;: false,
+      &quot;outline&quot;: false,
+      &quot;opaqueRate&quot;: 100,
+      &quot;sizeFixed&quot;: false,
+      &quot;fontWeight&quot;: 0,
+      &quot;bold&quot;: false,
+      &quot;rotation&quot;: 0,
+      &quot;shadow&quot;: false,
+      &quot;italicAngle&quot;: 0,
+      &quot;underline&quot;: false,
+      &quot;stringAlignment&quot;: 0,
+      &quot;strikeout&quot;: false,
+      &quot;backColor&quot;:
+      {
+      &quot;red&quot;: 0,
+      &quot;blue&quot;: 0,
+      &quot;green&quot;: 0,
+      &quot;alpha&quot;: 255
+      },
+      &quot;foreColor&quot;:
+      {
+      &quot;red&quot;: 0,
+      &quot;blue&quot;: 0,
+      &quot;green&quot;: 0,
+      &quot;alpha&quot;: 255
+      }
+      }
+      },
+      {
+      &quot;textContent&quot;: &quot;&quot;,
+      &quot;type&quot;: 24,
+      &quot;surroundLineColor&quot;:
+      {
+      &quot;red&quot;: 255,
+      &quot;blue&quot;: 0,
+      &quot;green&quot;: 255,
+      &quot;alpha&quot;: 255
+      },
+      &quot;surroundLineType&quot;: 0,
+      &quot;surroundLineWidth&quot;: 1,
+      &quot;surroundLineLimit&quot;: false,
+      &quot;surroundLineFlag&quot;: false,
+      &quot;positionPoints&quot;:
+      [
+      {
+      &quot;x&quot;: 0,
+      &quot;y&quot;: 0,
+      &quot;z&quot;: 0
+      },
+      {
+      &quot;x&quot;: 0,
+      &quot;y&quot;: &quot;60&quot;,
+      &quot;z&quot;: 0
+      }
+      ],
+      &quot;fillLimit&quot;: false,
+      &quot;fontColorLimit&quot;: false,
+      &quot;lineWidthLimit&quot;: false,
+      &quot;fillColorLimit&quot;: false,
+      &quot;lineColorLimit&quot;: false,
+      &quot;lineTypeLimit&quot;: false,
+      &quot;style&quot;:
+      {
+      &quot;fillBackOpaque&quot;: true,
+      &quot;lineWidth&quot;: 0.5,
+      &quot;fillBackColor&quot;:
+      {
+      &quot;red&quot;: 255,
+      &quot;blue&quot;: 0,
+      &quot;green&quot;: 0,
+      &quot;alpha&quot;: 255
+      },
+      &quot;markerWidth&quot;: 2.4,
+      &quot;markerAngle&quot;: 0,
+      &quot;fillForeColor&quot;:
+      {
+      &quot;red&quot;: 255,
+      &quot;blue&quot;: 0,
+      &quot;green&quot;: 0,
+      &quot;alpha&quot;: 255
+      },
+      &quot;markerSize&quot;: 2.4,
+      &quot;fillGradientOffsetRatioX&quot;: 0,
+      &quot;fillGradientOffsetRatioY&quot;: 0,
+      &quot;lineColor&quot;:
+      {
+      &quot;red&quot;: 255,
+      &quot;blue&quot;: 0,
+      &quot;green&quot;: 0,
+      &quot;alpha&quot;: 255
+      },
+      &quot;fillOpaqueRate&quot;: 100,
+      &quot;markerHeight&quot;: 2.4,
+      &quot;fillGradientMode&quot;: 0,
+      &quot;fillSymbolID&quot;: 1,
+      &quot;fillGradientAngle&quot;: 0,
+      &quot;markerSymbolID&quot;: 0,
+      &quot;lineSymbolID&quot;: 0
+      },
+      &quot;textStyle2D&quot;:
+      {
+      &quot;fontName&quot;: &quot;Microsoft YaHei&quot;,
+      &quot;fontWidth&quot;: 0,
+      &quot;align&quot;: 0,
+      &quot;backOpaque&quot;: false,
+      &quot;fontHeight&quot;: 7,
+      &quot;fontScale&quot;: 1,
+      &quot;italic&quot;: false,
+      &quot;outline&quot;: false,
+      &quot;opaqueRate&quot;: 100,
+      &quot;sizeFixed&quot;: false,
+      &quot;fontWeight&quot;: 0,
+      &quot;bold&quot;: false,
+      &quot;rotation&quot;: 0,
+      &quot;shadow&quot;: false,
+      &quot;italicAngle&quot;: 0,
+      &quot;underline&quot;: false,
+      &quot;stringAlignment&quot;: 0,
+      &quot;strikeout&quot;: false,
+      &quot;backColor&quot;:
+      {
+      &quot;red&quot;: 0,
+      &quot;blue&quot;: 0,
+      &quot;green&quot;: 0,
+      &quot;alpha&quot;: 255
+      },
+      &quot;foreColor&quot;:
+      {
+      &quot;red&quot;: 0,
+      &quot;blue&quot;: 0,
+      &quot;green&quot;: 0,
+      &quot;alpha&quot;: 255
+      }
+      }
+      }
+      ],
+      &quot;limitWidthHeight&quot;: true,
+      &quot;localePoints&quot;:
+      [
+      {
+      &quot;x&quot;: &quot;117.0297923050529&quot;,
+      &quot;y&quot;: &quot;25.11111687487508&quot;,
+      &quot;z&quot;: 0
+      }
+      ],
+      &quot;middleMarkBounds&quot;:
+      {
+      &quot;rightTop&quot;:
+      {
+      &quot;x&quot;: 0,
+      &quot;y&quot;: 0
+      },
+      &quot;leftBottom&quot;:
+      {
+      &quot;x&quot;: 0,
+      &quot;y&quot;: 0
+      },
+      &quot;left&quot;: 0,
+      &quot;bottom&quot;: 0,
+      &quot;right&quot;: 0,
+      &quot;top&quot;: 0
+      },
+      &quot;middleMarkExist&quot;: false,
+      &quot;negativeImage&quot;: false,
+      &quot;rotate2D&quot;:
+      {
+      &quot;x&quot;: 0,
+      &quot;y&quot;: 0,
+      &quot;z&quot;: 0
+      },
+      &quot;scale2D&quot;:
+      {
+      &quot;x&quot;: 1,
+      &quot;y&quot;: 1,
+      &quot;z&quot;: 0
+      },
+      &quot;scaleByMap&quot;: false,
+      &quot;scalePoints&quot;: &quot;&quot;,
+      &quot;scaleValues&quot;: &quot;&quot;,
+      &quot;style&quot;:
+      {
+      &quot;fillBackOpaque&quot;: true,
+      &quot;lineWidth&quot;: 0.5,
+      &quot;fillBackColor&quot;:
+      {
+      &quot;red&quot;: 255,
+      &quot;blue&quot;: 0,
+      &quot;green&quot;: 0,
+      &quot;alpha&quot;: 255
+      },
+      &quot;markerWidth&quot;: 2.4,
+      &quot;markerAngle&quot;: 0,
+      &quot;fillForeColor&quot;:
+      {
+      &quot;red&quot;: 255,
+      &quot;blue&quot;: 0,
+      &quot;green&quot;: 0,
+      &quot;alpha&quot;: 80
+      },
+      &quot;markerSize&quot;: 2.4,
+      &quot;fillGradientOffsetRatioX&quot;: 0,
+      &quot;fillGradientOffsetRatioY&quot;: 0,
+      &quot;lineColor&quot;:
+      {
+      &quot;red&quot;: 255,
+      &quot;blue&quot;: 255,
+      &quot;green&quot;: 0,
+      &quot;alpha&quot;: 255
+      },
+      &quot;fillOpaqueRate&quot;: 100,
+      &quot;markerHeight&quot;: 2.4,
+      &quot;fillGradientMode&quot;: 0,
+      &quot;fillSymbolID&quot;: 1,
+      &quot;fillGradientAngle&quot;: 0,
+      &quot;markerSymbolID&quot;: 0,
+      &quot;lineSymbolID&quot;: 0
+      },
+      &quot;subSymbols&quot;: &quot;&quot;,
+      &quot;surroundLineColor&quot;:
+      {
+      &quot;red&quot;: 255,
+      &quot;blue&quot;: 0,
+      &quot;green&quot;: 255,
+      &quot;alpha&quot;: 255
+      },
+      &quot;surroundLineType&quot;: 0,
+      &quot;surroundLineWidth&quot;: 1,
+      &quot;symbolIsCanFill&quot;: false,
+      &quot;symbolName&quot;: &quot;\u76EE\u7684\u5730&quot;,
+      &quot;symbolRank&quot;: 0,&quot;symbolRanks&quot;:[],
+      &quot;symbolSize&quot;:
+      {
+      &quot;x&quot;: 80,
+      &quot;y&quot;: 100
+      },
+      &quot;symbolType&quot;: 1,
+      &quot;textContent&quot;: &quot;&quot;,
+      &quot;textStyle2D&quot;:
+      {
+      &quot;fontName&quot;: &quot;Microsoft YaHei&quot;,
+      &quot;fontWidth&quot;: 0,
+      &quot;align&quot;: 0,
+      &quot;backOpaque&quot;: false,
+      &quot;fontHeight&quot;: 7,
+      &quot;fontScale&quot;: 1,
+      &quot;italic&quot;: false,
+      &quot;outline&quot;: false,
+      &quot;opaqueRate&quot;: 100,
+      &quot;sizeFixed&quot;: false,
+      &quot;fontWeight&quot;: 0,
+      &quot;bold&quot;: false,
+      &quot;rotation&quot;: 0,
+      &quot;shadow&quot;: false,
+      &quot;italicAngle&quot;: 0,
+      &quot;underline&quot;: false,
+      &quot;stringAlignment&quot;: 0,
+      &quot;strikeout&quot;: false,
+      &quot;backColor&quot;:
+      {
+      &quot;red&quot;: 0,
+      &quot;blue&quot;: 0,
+      &quot;green&quot;: 0,
+      &quot;alpha&quot;: 255
+      },
+      &quot;foreColor&quot;:
+      {
+      &quot;red&quot;: 0,
+      &quot;blue&quot;: 0,
+      &quot;green&quot;: 0,
+      &quot;alpha&quot;: 255
+      }
+      },
+      &quot;type&quot;: &quot;GRAPHICOBJECT&quot;
+      },
+      ]
+      }]}
+    </textarea></p>
+  <h3><a id="HEAD 请求"></a>HEAD 请求</h3>
+  <p class="myNormal">返回跟 GET 请求一样的 HTTP 响应头，但是没有响应实体。可以在不必传输整个响应内容的情况下，获取包含在响应消息头中的元数据信息。元数据信息包括媒体类型，字符编码，压缩编码，实体内容长度等。</p>
+  <p class="myNormal">HEAD 请求可以用来判断 smlFileDownload 资源是否存在，或者客户端是否有权限访问 smlFileDownload 资源。通过对加.&lt;format&gt;的 URI 执行 HEAD 请求，还可以快速判断 smlFileDownload 资源是否支持&lt;format&gt;格式的表述。</p>
+  <h2>请参见</h2>
+  <ul class="referenceList">
+    <li class="referenceList"><a class="contentpagehyperlink" href="../plot.htm">plot</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../ConstructRESTRequest.htm">客户端构建 REST 请求</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../StatusCodeDescription.htm">状态码列表及说明</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../SuperMap_iServer_REST_API_OutputFormat.htm">SuperMap iServer REST API 表述格式介绍</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../resource_hierarchy.htm">资源层次结构</a></li>
+  </ul>
+  <p> </p>
+
+</div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../../../../../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../../../../../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../../../../../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../../../../../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../../../../../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../../../../../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../../../../../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../../../../.."
+    gCommonRootRelPath = "../../../../.."
+    gTopicId = "8.2.2.6.14.2"
+  
+//]]></script>
+
+  <script src="../../../../../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../../../../../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../../../../../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../../../../../whxdata/layoutconfig.js"></script>
+  <script src="../../../../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

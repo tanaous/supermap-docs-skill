@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../../../../../../../../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../../../../../../../../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../../../../../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../../../../../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../../../../../../../../../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../../../../../../../../iserver-icon.png"/>
+    
+  <script data-relpath="../../../../../../../../.." src="../../../../../../../../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <meta name="template" content="../../../../../../../../../assets/layouts/RESTAPI.htt"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Language" content="zh-CN"/>
+  <meta name="topic-check-list" content="Ran Smart Index"/>
+  <meta name="topic-status" content="Complete"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>fields</title>
+  <link rel="StyleSheet" href="../../../../../../../../../assets/css/SuperMapHelp.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="Fields"/>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../../../../../../../../../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../../../../../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../../../../../assets/css/homeButtom.css"/>
+  <script src="../../../../../../../../../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../../../../../../../../../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../../../../../../../../../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../../../../../../../../../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../../../../../../../../../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../../../../../../../../../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../../../../../../../../../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../../../../../../../../../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../../../../../../../../../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <h2><a name="URI" id="URI"></a>URI</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="../dataset.htm#URI">&lt;dataset_uri&gt;</a>/fields[.&lt;format&gt;]</p>
+  <h2>支持的方法</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="#GET 请求">GET</a>、<a class="contentpagehyperlink" href="#POST 请求">POST</a>、<a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a></p>
+  <h2>父资源</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="../dataset.htm">dataset</a></p>
+  <h2>子资源</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="field/field.htm">field</a></p>
+  <h2>介绍</h2>
+  <p class="myNormal">fields 资源表示一个数据集中所有属性字段（field）的集合。</p>
+  <p class="myNormal">通过对 fields 资源执行 GET 请求可以获取数据集中的字段信息列表，对 fields 资源执行 POST 请求可以在空数据集中添加一个字段。注意：因为对非空数据集的字段操作是不安全的，所以仅支持在空数据集中进行字段添加。</p>
+  <p class="myNormal">SuperMap 的数据集属性表中的属性字段分为系统字段和非系统字段。系统字段是用户创建一个新的数据集时默认生成的字段，字段本身不能进行编辑。非系统字段即用户创建的字段，用户可以编辑字段和字段的内容。不同类型数据集的系统字段不完全相同，但所有的系统字段都以英文字母“SM”开头。下面的表格以 UDB 文件型数据源引擎为例，列出了不同类型数据集的系统字段。</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="59.5%">
+    <colgroup>
+      <col style="width: 17.647%;"/>
+      <col style="width: 82.353%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>数据集类型</td>
+        <td>系统字段</td>
+      </tr>
+      <tr class="t2Row">
+        <td>点数据集</td>
+        <td>SMID、SMX、SMY、SMLIBTIL、SMGEOMETRYSIZE</td>
+      </tr>
+      <tr class="t1Row">
+        <td>线数据集</td>
+        <td>SMID、SMLENGTH、SMSDRIW、SMSDRIN、SMSDRIE、SMSDRIS、SMTOPOERROR、SMGEOMETRYSIZE</td>
+      </tr>
+      <tr class="t2Row">
+        <td>面数据集</td>
+        <td>SMID、SMSDRIW 、SMSDRIN、SMSDRIE、SMSDRIS、SMARE、SMPERIMETER、SMGEOMETRYSIZE</td>
+      </tr>
+      <tr class="t1Row">
+        <td>文本数据集</td>
+        <td>SMID、SMSDRIW、SMSDRIN、SMSDRIE、SMSDRIS、SMGEOMETRYSIZE</td>
+      </tr>
+      <tr class="t2Row">
+        <td>CAD数据集</td>
+        <td>SMID、SMSDRIW、SMSDRIN、SMSDRIE、SMSDRIS、SMGEOTYPE、SMLIBTIL、SMGEOMETRYSIZE</td>
+      </tr>
+      <tr class="t1Row">
+        <td>三维点数据集</td>
+        <td>SMID、SMX、SMY、SMZ、SMGEOMETRYSIZE</td>
+      </tr>
+      <tr class="t2Row">
+        <td>三维线数据集</td>
+        <td>SMID、SMLENGTH、SMSDRIW、SMSDRIN、SMSDRIE、SMSDRIS、SMTOPOERROR、SMGEOMETRYSIZE</td>
+      </tr>
+      <tr class="t1Row">
+        <td>三维面数据集</td>
+        <td>SMID、SMSDRIW 、SMSDRIN、SMSDRIE、SMSDRIS、SMARE、SMPERIMETER、SMGEOMETRYSIZE</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="myNormal"> </p>
+  <p class="myNormal" style="font-weight: bold;">支持的方法：</p>
+  <ul class="supportList" style="list-style: disc;">
+    <li class="supportList"><a class="contentpagehyperlink" href="#GET 请求">GET</a>：获取字段信息集合。</li>
+    <li class="supportList"><a class="contentpagehyperlink" href="#POST 请求">POST</a>：添加一个字段。</li>
+    <li class="supportList"><a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a>：检查 fields 资源是否存在，或权限是否可以访问 fields 资源。</li>
+  </ul>
+  <p class="myNormal"><span style="font-weight: bold;">支持的表述格式：</span>RJSON、JSON、HTML、XML。</p>
+  <h2>资源层次</h2>
+  <p><img alt="" border="0" height="440" src="../../../../../../../../../assets/images/root/data/datasources/datasource/datasets/dataset/fields/D_fields.png" usemap="#DrawArea" width="460"/><map id="DrawArea" name="DrawArea"><area alt="根资源" coords="6.591,2,263,42.9135" href="../../../../../../root.htm" shape="rect"/> <area alt="data" coords="61.911,47.6,207.681,88.4" href="../../../../../data.htm" shape="rect"/> <area alt="datasources.htm" coords="94.4999,92.9,233.5,133.7" href="../../../../datasources.htm" shape="rect"/> <area alt="datasource.htm" coords="139.116,138.6,319,232" href="../../../datasource.htm" shape="rect"/> <area alt="datasets.htm" coords="185.23,240.2,331,281" href="../../datasets.htm" shape="rect"/> <area alt="fields.htm" coords="276.115,390.2,421.885,431" href="fields.htm" shape="rect"/> <area alt="dataset.htm" coords="233.23,284.698,457,379" href="../dataset.htm" shape="rect"/></map></p>
+  <h2>HTTP 请求方法</h2>
+  <p class="myNormal">对如下 URI 执行 HTTP 请求，以 rjson 输出格式为例加以说明，其中，supermapiserver 是服务器名，World 是数据源名，Ocean 是 World 中的一个数据集名。</p>
+  <p class="uriStyle">http://supermapiserver:8090/iserver/services/data-world/rest/data/datasources/name/world/datasets/name/Ocean/fields.rjson</p>
+  <h3><a id="GET 请求"></a>GET 请求</h3>
+  <p class="myNormal">获取字段信息集合。其中集合中的单个元素（即单个字段信息）包括字段名称，字段类型，字段别名，字段默认值，字段是否允许为空，字段最大长度，是否允许长度为零，字段最大长度等。</p>
+  <h4>请求参数</h4>
+  <p class="myNormal">对 fields 资源执行 GET 请求，可在 URL 中添加如下参数：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>字段</td>
+        <td>类型</td>
+        <td>说明</td>
+      </tr>
+      <tr class="t2Row">
+        <td>returnAll</td>
+        <td>boolean</td>
+        <td>是否返回所有属性字段的详细描述信息。当为 false 时，仅返回字段的URL集合以及字段名称集合。默认为false。</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="myNormal"> </p>
+  <h4>响应结构</h4>
+  <p class="myNormal">对 fields 资源执行 GET 请求，返回的响应体的结构如下：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>字段</td>
+        <td>类型</td>
+        <td>说明</td>
+      </tr>
+      <tr class="t2Row">
+        <td>fieldNames</td>
+        <td>List&lt;String&gt;</td>
+        <td>字段名称列表。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>childUriList</td>
+        <td>List&lt;String&gt;</td>
+        <td>字段信息（field 资源）访问路径列表。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>name</td>
+        <td>String</td>
+        <td>字段名称。唯一标识一个字段，没有重名。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>caption</td>
+        <td>String</td>
+        <td>字段别名，不同的字段可以有相同的别名。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>type</td>
+        <td>FieldType</td>
+        <td>字段类型。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>defaultValue</td>
+        <td>String</td>
+        <td>字段的默认值。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>isRequired</td>
+        <td>boolean</td>
+        <td>是否为必填字段。true 表示是必填字段，false 表示非必填字段。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>isSystemField</td>
+        <td>boolean</td>
+        <td>是否为 SuperMap 系统字段，true 表示是 SuperMap 系统字段。 SuperMap 系统字段是以 SM 为前缀的字段，SMUserID 除外。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>isZeroLengthAllowed</td>
+        <td>boolean</td>
+        <td>是否允许零长度。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>maxLength</td>
+        <td>int</td>
+        <td>字段的最大长度。</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="myNormal"> </p>
+  <h4>示例1</h4>
+  <p class="myNormal">对示例 fields 资源：http://supermapiserver:8090/iserver/services/data-world/rest/data/datasources/name/World/datasets/name/Ocean/fields.rjson 执行 GET 请求，获取 World 数据源 Ocean 数据集中的字段信息集合，rjson 格式的资源表述如下：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">    &quot;childUriList&quot;: [</p>
+  <p class="myCodeP">        &quot;http://supermapiserver:8090/iserver/services/data-world/rest/data/datasources/name/World/datasets/name/Ocean/fields/SMID&quot;,</p>
+  <p class="myCodeP">        &quot;http://supermapiserver:8090/iserver/services/data-world/rest/data/datasources/name/World/datasets/name/Ocean/fields/SMSDRIW&quot;,</p>
+  <p class="myCodeP">        &quot;http://supermapiserver:8090/iserver/services/data-world/rest/data/datasources/name/World/datasets/name/Ocean/fields/SMSDRIN&quot;,</p>
+  <p class="myCodeP">        &quot;http://supermapiserver:8090/iserver/services/data-world/rest/data/datasources/name/World/datasets/name/Ocean/fields/SMSDRIE&quot;,</p>
+  <p class="myCodeP">        &quot;http://supermapiserver:8090/iserver/services/data-world/rest/data/datasources/name/World/datasets/name/Ocean/fields/SMSDRIS&quot;,</p>
+  <p class="myCodeP">        &quot;http://supermapiserver:8090/iserver/services/data-world/rest/data/datasources/name/World/datasets/name/Ocean/fields/SMUSERID&quot;,</p>
+  <p class="myCodeP">        &quot;http://supermapiserver:8090/iserver/services/data-world/rest/data/datasources/name/World/datasets/name/Ocean/fields/SMAREA&quot;,</p>
+  <p class="myCodeP">        &quot;http://supermapiserver:8090/iserver/services/data-world/rest/data/datasources/name/World/datasets/name/Ocean/fields/SMPERIMETER&quot;,</p>
+  <p class="myCodeP">        &quot;http://supermapiserver:8090/iserver/services/data-world/rest/data/datasources/name/World/datasets/name/Ocean/fields/SMGEOMETRYSIZE&quot;,</p>
+  <p class="myCodeP">        &quot;http://supermapiserver:8090/iserver/services/data-world/rest/data/datasources/name/World/datasets/name/Ocean/fields/WRLD30_ID&quot;</p>
+  <p class="myCodeP">    ],</p>
+  <p class="myCodeP">    &quot;fieldNames&quot;: [</p>
+  <p class="myCodeP">        &quot;SMID&quot;,</p>
+  <p class="myCodeP">        &quot;SMSDRIW&quot;,</p>
+  <p class="myCodeP">        &quot;SMSDRIN&quot;,</p>
+  <p class="myCodeP">        &quot;SMSDRIE&quot;,</p>
+  <p class="myCodeP">        &quot;SMSDRIS&quot;,</p>
+  <p class="myCodeP">        &quot;SMUSERID&quot;,</p>
+  <p class="myCodeP">        &quot;SMAREA&quot;,</p>
+  <p class="myCodeP">        &quot;SMPERIMETER&quot;,</p>
+  <p class="myCodeP">        &quot;SMGEOMETRYSIZE&quot;,</p>
+  <p class="myCodeP">        &quot;WRLD30_ID&quot;</p>
+  <p class="myCodeP">    ]</p>
+  <p class="myCodeP">}</p>
+  <h4>示例2</h4>
+  <p class="myNormal">对示例 fields 资源：http://supermapiserver:8090/iserver/services/data-world/rest/data/datasources/name/World/datasets/name/Ocean/fields.rjson?returnAll=true 执行 GET 请求，获取 World 数据源 Ocean 数据集中的字段的详细描述信息，rjson 格式的资源表述如下：</p>
+  <p class="myCodeP">[</p>
+  <p class="myCodeP">    {</p>
+  <p class="myCodeP">        &quot;caption&quot;: &quot;SmID&quot;,</p>
+  <p class="myCodeP">        &quot;defaultValue&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">        &quot;isRequired&quot;: true,</p>
+  <p class="myCodeP">        &quot;isSystemField&quot;: true,</p>
+  <p class="myCodeP">        &quot;isZeroLengthAllowed&quot;: true,</p>
+  <p class="myCodeP">        &quot;maxLength&quot;: 4,</p>
+  <p class="myCodeP">        &quot;name&quot;: &quot;SmID&quot;,</p>
+  <p class="myCodeP">        &quot;type&quot;: &quot;INT32&quot;</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    {</p>
+  <p class="myCodeP">        &quot;caption&quot;: &quot;SmSdriW&quot;,</p>
+  <p class="myCodeP">        &quot;defaultValue&quot;: &quot;0&quot;,</p>
+  <p class="myCodeP">        &quot;isRequired&quot;: true,</p>
+  <p class="myCodeP">        &quot;isSystemField&quot;: true,</p>
+  <p class="myCodeP">        &quot;isZeroLengthAllowed&quot;: true,</p>
+  <p class="myCodeP">        &quot;maxLength&quot;: 4,</p>
+  <p class="myCodeP">        &quot;name&quot;: &quot;SmSdriW&quot;,</p>
+  <p class="myCodeP">        &quot;type&quot;: &quot;SINGLE&quot;</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    {</p>
+  <p class="myCodeP">        &quot;caption&quot;: &quot;SmSdriN&quot;,</p>
+  <p class="myCodeP">        &quot;defaultValue&quot;: &quot;0&quot;,</p>
+  <p class="myCodeP">        &quot;isRequired&quot;: true,</p>
+  <p class="myCodeP">        &quot;isSystemField&quot;: true,</p>
+  <p class="myCodeP">        &quot;isZeroLengthAllowed&quot;: true,</p>
+  <p class="myCodeP">        &quot;maxLength&quot;: 4,</p>
+  <p class="myCodeP">        &quot;name&quot;: &quot;SmSdriN&quot;,</p>
+  <p class="myCodeP">        &quot;type&quot;: &quot;SINGLE&quot;</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    {</p>
+  <p class="myCodeP">        &quot;caption&quot;: &quot;SmSdriE&quot;,</p>
+  <p class="myCodeP">        &quot;defaultValue&quot;: &quot;0&quot;,</p>
+  <p class="myCodeP">        &quot;isRequired&quot;: true,</p>
+  <p class="myCodeP">        &quot;isSystemField&quot;: true,</p>
+  <p class="myCodeP">        &quot;isZeroLengthAllowed&quot;: true,</p>
+  <p class="myCodeP">        &quot;maxLength&quot;: 4,</p>
+  <p class="myCodeP">        &quot;name&quot;: &quot;SmSdriE&quot;,</p>
+  <p class="myCodeP">        &quot;type&quot;: &quot;SINGLE&quot;</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    {</p>
+  <p class="myCodeP">        &quot;caption&quot;: &quot;SmSdriS&quot;,</p>
+  <p class="myCodeP">        &quot;defaultValue&quot;: &quot;0&quot;,</p>
+  <p class="myCodeP">        &quot;isRequired&quot;: true,</p>
+  <p class="myCodeP">        &quot;isSystemField&quot;: true,</p>
+  <p class="myCodeP">        &quot;isZeroLengthAllowed&quot;: true,</p>
+  <p class="myCodeP">        &quot;maxLength&quot;: 4,</p>
+  <p class="myCodeP">        &quot;name&quot;: &quot;SmSdriS&quot;,</p>
+  <p class="myCodeP">        &quot;type&quot;: &quot;SINGLE&quot;</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    {</p>
+  <p class="myCodeP">        &quot;caption&quot;: &quot;SmUserID&quot;,</p>
+  <p class="myCodeP">        &quot;defaultValue&quot;: &quot;0&quot;,</p>
+  <p class="myCodeP">        &quot;isRequired&quot;: true,</p>
+  <p class="myCodeP">        &quot;isSystemField&quot;: false,</p>
+  <p class="myCodeP">        &quot;isZeroLengthAllowed&quot;: true,</p>
+  <p class="myCodeP">        &quot;maxLength&quot;: 4,</p>
+  <p class="myCodeP">        &quot;name&quot;: &quot;SmUserID&quot;,</p>
+  <p class="myCodeP">        &quot;type&quot;: &quot;INT32&quot;</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    {</p>
+  <p class="myCodeP">        &quot;caption&quot;: &quot;SmArea&quot;,</p>
+  <p class="myCodeP">        &quot;defaultValue&quot;: &quot;0&quot;,</p>
+  <p class="myCodeP">        &quot;isRequired&quot;: true,</p>
+  <p class="myCodeP">        &quot;isSystemField&quot;: true,</p>
+  <p class="myCodeP">        &quot;isZeroLengthAllowed&quot;: true,</p>
+  <p class="myCodeP">        &quot;maxLength&quot;: 8,</p>
+  <p class="myCodeP">        &quot;name&quot;: &quot;SmArea&quot;,</p>
+  <p class="myCodeP">        &quot;type&quot;: &quot;DOUBLE&quot;</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    {</p>
+  <p class="myCodeP">        &quot;caption&quot;: &quot;SmPerimeter&quot;,</p>
+  <p class="myCodeP">        &quot;defaultValue&quot;: &quot;0&quot;,</p>
+  <p class="myCodeP">        &quot;isRequired&quot;: true,</p>
+  <p class="myCodeP">        &quot;isSystemField&quot;: true,</p>
+  <p class="myCodeP">        &quot;isZeroLengthAllowed&quot;: true,</p>
+  <p class="myCodeP">        &quot;maxLength&quot;: 8,</p>
+  <p class="myCodeP">        &quot;name&quot;: &quot;SmPerimeter&quot;,</p>
+  <p class="myCodeP">        &quot;type&quot;: &quot;DOUBLE&quot;</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    {</p>
+  <p class="myCodeP">        &quot;caption&quot;: &quot;SmGeometrySize&quot;,</p>
+  <p class="myCodeP">        &quot;defaultValue&quot;: &quot;0&quot;,</p>
+  <p class="myCodeP">        &quot;isRequired&quot;: false,</p>
+  <p class="myCodeP">        &quot;isSystemField&quot;: true,</p>
+  <p class="myCodeP">        &quot;isZeroLengthAllowed&quot;: true,</p>
+  <p class="myCodeP">        &quot;maxLength&quot;: 4,</p>
+  <p class="myCodeP">        &quot;name&quot;: &quot;SmGeometrySize&quot;,</p>
+  <p class="myCodeP">        &quot;type&quot;: &quot;INT32&quot;</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    {</p>
+  <p class="myCodeP">        &quot;caption&quot;: &quot;WRLD30_ID&quot;,</p>
+  <p class="myCodeP">        &quot;defaultValue&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">        &quot;isRequired&quot;: false,</p>
+  <p class="myCodeP">        &quot;isSystemField&quot;: false,</p>
+  <p class="myCodeP">        &quot;isZeroLengthAllowed&quot;: true,</p>
+  <p class="myCodeP">        &quot;maxLength&quot;: 4,</p>
+  <p class="myCodeP">        &quot;name&quot;: &quot;WRLD30_ID&quot;,</p>
+  <p class="myCodeP">        &quot;type&quot;: &quot;INT32&quot;</p>
+  <p class="myCodeP">    }</p>
+  <p class="myCodeP">]</p>
+  <h3><a id="POST 请求"></a>POST 请求</h3>
+  <p class="myNormal">添加一个字段。<span style="font-weight:bold;">注：由 PostGIS 服务、shapefile 发布的数据服务不支持增加字段。</span></p>
+  <h4>请求参数</h4>
+  <p class="myNormal">对 fields 资源执行 POST 请求，给空数据集添加一个新的字段，需要在请求体中包含要创建的字段的信息，参数结构如下：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>字段</td>
+        <td>类型</td>
+        <td>说明</td>
+      </tr>
+      <tr class="t2Row">
+        <td>name</td>
+        <td>String</td>
+        <td>字段名称。唯一标识一个字段，没有重名。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>caption</td>
+        <td>String</td>
+        <td>字段别名，不同的字段可以有相同的别名。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>type</td>
+        <td>FieldType</td>
+        <td>字段类型。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>defaultValue</td>
+        <td>String</td>
+        <td>字段的默认值。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>isRequired</td>
+        <td>boolean</td>
+        <td>是否为必填字段。true 表示是必填字段，false 表示非必填字段。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>isSystemField</td>
+        <td>boolean</td>
+        <td>
+          <p>是否为 SuperMap 系统字段，true 表示是 SuperMap 系统字段。</p>
+          <p>SuperMap 系统字段是以 SM 为前缀的字段，SMUserID 除外。</p>
+        </td>
+      </tr>
+      <tr class="t2Row">
+        <td>isZeroLengthAllowed</td>
+        <td>boolean</td>
+        <td>是否允许零长度。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>maxLength</td>
+        <td>int</td>
+        <td>字段的最大长度。</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4>响应结构</h4>
+  <p class="myNormal">对 fields 资源执行 POST 请求，返回的操作结果表述的结构如下（表述在响应消息的实体主体里）：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>字段</td>
+        <td>类型</td>
+        <td>说明</td>
+      </tr>
+      <tr class="t2Row">
+        <td>succeed</td>
+        <td>boolean</td>
+        <td>操作是否成功。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>newResourceID</td>
+        <td>String</td>
+        <td>新创建的字段资源的 ID。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>newResourceLoaction</td>
+        <td>String</td>
+        <td>新创建的字段资源的 URI。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>error</td>
+        <td>HttpError</td>
+        <td>出错信息，如果创建成功，则没有本字段。</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4>示例</h4>
+  <p class="myNormal">示例 fields 资源对应的数据集 Ocean 非空，所以不能执行 POST 请求，添加新的字段。设 World 数据源中，有空数据集资源（dataset 资源）URI 如下：</p>
+  <p class="myCodeP">http://supermapiserver:8090/iserver/services/data-world/rest/data/datasources/name/World/datasets/name/RestCreate.rjson</p>
+  <p class="myNormal">则可以对该数据集对应的 fields 资源（即：http://supermapiserver:8090/iserver/services/data-world/rest/data/datasources/name/World/datasets/name/RestCreate/fields.rjson）执行 POST 请求，添加新的字段，POST 请求体中的参数如下：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">    &quot;isZeroLengthAllowed&quot;: &quot;false&quot;,</p>
+  <p class="myCodeP">    &quot;maxLength&quot;: &quot;0&quot;,</p>
+  <p class="myCodeP">    &quot;isRequired&quot;: &quot;false&quot;,</p>
+  <p class="myCodeP">    &quot;name&quot;: &quot;value&quot;,</p>
+  <p class="myCodeP">    &quot;caption&quot;: &quot;one&quot;,</p>
+  <p class="myCodeP">    &quot;type&quot;: &quot;INT32&quot;,</p>
+  <p class="myCodeP">    &quot;defaultValue&quot;: &quot;null&quot;,</p>
+  <p class="myCodeP">    &quot;isSystemField&quot;: &quot;false&quot;</p>
+  <p class="myCodeP">}</p>
+  <p class="myNormal">在添加成功的情况下，返回 rjson 格式的操作结果的表述如下：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">    &quot;newResourceID&quot;: &quot;value&quot;,</p>
+  <p class="myCodeP">    &quot;newResourceLocation&quot;: &quot;http://supermapiserver:8090/iserver/services/data-world/rest/data/datasources/name/World/datasets/name/RestCreate/fields/value.rjson&quot;,</p>
+  <p class="myCodeP">    &quot;succeed&quot;: true</p>
+  <p class="myCodeP">}</p>
+  <h3><a id="HEAD 请求"></a>HEAD 请求</h3>
+  <p class="myNormal">返回跟 GET 请求一样的 HTTP 响应头，但是没有响应实体。可以在不必传输整个响应内容的情况下，获取包含在响应消息头中的元数据信息。元数据信息包括媒体类型，字符编码，压缩编码，实体内容长度等。</p>
+  <p class="myNormal">HEAD 请求可以用来判断 fields 资源是否存在，或者客户端是否有权限访问 fields 资源。通过对加.&lt;format&gt;的 URI 执行 HEAD 请求，还可以快速判断 fields 资源是否支持&lt;format&gt;格式的表述。</p>
+  <h2>请参见</h2>
+  <ul class="referenceList">
+    <li class="referenceList"><a class="contentpagehyperlink" href="field/field.htm">field</a>，<a class="contentpagehyperlink" href="../dataset.htm">dataset</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../../../../../clientBuildREST/ConstructRESTRequest.htm">客户端构建 REST 请求</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../../../../../StatusCodeDescription.htm">状态码列表及说明</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../../../../../SuperMap_iServer_REST_API_OutputFormat.htm">SuperMap iServer REST API 表述格式介绍</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../../../../../resource_hierarchy.htm">GIS 服务资源层次结构</a></li>
+  </ul>
+  <p> </p>
+
+</div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../../../../../../../../../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../../../../../../../../../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../../../../../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../../../../../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../../../../../../../../../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../../../../../../../../../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../../../../../../../../../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../../../../../../../../../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../../../../../../../../../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../../../../../../../../.."
+    gCommonRootRelPath = "../../../../../../../../.."
+    gTopicId = "8.2.2.6.4.2.1.1.1.6"
+  
+//]]></script>
+
+  <script src="../../../../../../../../../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../../../../../../../../../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../../../../../../../../../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../../../../../../../../../whxdata/layoutconfig.js"></script>
+  <script src="../../../../../../../../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

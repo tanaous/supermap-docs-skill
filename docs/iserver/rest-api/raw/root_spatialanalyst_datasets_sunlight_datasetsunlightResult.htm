@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../../../../../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../../../../../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../../../../../../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../../../../../iserver-icon.png"/>
+    
+  <script data-relpath="../../../../../.." src="../../../../../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+<meta name="template" content="../../../../../../assets/layouts/RESTAPI.htt"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="Content-Language" content="zh-CN"/>
+<meta name="generator" content="Adobe RoboHelp 2022"/>
+<title>datasetSunlightResult</title>
+<link rel="StyleSheet" href="../../../../../../assets/css/SuperMapHelp.css" type="text/css"/>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../../../../../../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../../assets/css/homeButtom.css"/>
+  <script src="../../../../../../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../../../../../../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../../../../../../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../../../../../../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../../../../../../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../../../../../../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../../../../../../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../../../../../../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../../../../../../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+<h2><a id="URI"></a>URI</h2>
+<p class="myNormal">&lt;<a class="contentpagehyperlink" href="sunlight.htm#URI">sunlight_uri</a>&gt;/{datasetsunlightResultID}[.&lt;format&gt;]</p>
+<h2>支持的方法</h2>
+<p class="myNormal"><a class="contentpagehyperlink" href="#GET 请求">GET</a>、<a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a></p>
+<h2>父资源</h2>
+<p class="myNormal"><a class="contentpagehyperlink" href="sunlight.htm">sunlight</a></p>
+<h2>介绍</h2>
+<p class="myNormal" style="color: rgb(51, 51, 51); font-family: 微软雅黑, Arial, sans-serif; 
+	 font-size: 14px; font-variant-ligatures: normal; font-variant-caps: normal; 
+	 text-indent: 0px; background-color: #ffffff; display: inline	 ! important ;"><span style="orphans: 2; widows: 2; -webkit-text-stroke-width: 0px; text-decoration-style: initial; 
+	 text-decoration-color: initial;">数据集获取日照分析查询结果资源。</span></p>
+<p class="myNormal" style="font-weight: bold;">支持的方法：</p>
+<ul style="list-style: disc;" class="supportList">
+	<li class="supportList"><a class="contentpagehyperlink" href="#GET 请求">GET</a>：返回日照分析查询结果资源。</li>
+	<li class="supportList"><a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a>：检查 datasetSunlightResult 
+	 资源是否存在，或权限是否可以访问 datasetSunlightResult 资源。</li>
+</ul>
+<p class="myNormal"><span style="font-weight: bold;">支持的表述格式：</span>RJSON、JSON、HTML、XML。</p>
+<h2>资源层次</h2>
+<p class="myNormal"><img src="../../../../../../assets/images/root/spatialanalyst/datasets/sunlight/sp_ds_datasetsunlightResult.png" alt="" usemap="#MAP496885523" style="border: none;" border="0"/>
+<map id="MAP496885523" name="MAP496885523">
+<area shape="rect" coords="7, 6, 269, 49" href="../../../root.htm" alt=""/>
+<area shape="rect" coords="80, 58, 227, 97" href="../../spatialanalyst.htm" alt=""/>
+<area shape="rect" coords="121, 113, 289, 153" href="../datasets.htm" alt=""/>
+<area shape="rect" coords="179, 168, 308, 219" href="../dataset.htm" alt=""/>
+<area shape="rect" coords="234, 232, 383, 271" href="sunlight.htm" alt=""/>
+<area shape="rect" coords="291, 292, 537, 330" href="datasetsunlightResult.htm" alt=""/>
+</map> </p>
+<h2>HTTP 请求方法</h2>
+<p class="myNormal">对如下 URI 执行 HTTP 请求，以 rjson 输出格式为例加以说明，其中，supermapiserver 
+ 是服务器名。</p>
+<p class="uriStyle">http://supermapiserver:8090/iserver/services/spatialAnalysis-BIM/restjsr/spatialanalyst/datasets/结构柱@8ExportModel/sunlight/{datasetsunlightResultID}.rjson</p>
+<h3><a id="GET 请求"></a>GET 请求</h3>
+<p class="myNormal">返回日照分析查询结果资源。</p>
+<h4>响应结构</h4>
+<p class="myNormal">对资源执行 GET 请求后，响应参数如下： </p>
+<table class="iServerTable" cellspacing="0" width="70%" align="center">
+	<colgroup><col style="width: 15%;"/>
+	<col style="width: 15%;"/>
+	<col style="width: 70%;"/>
+	</colgroup><tbody><tr class="t1st">
+		<td>字段</td>
+		<td>类型</td>
+		<td>说明</td>
+	</tr>
+	<tr class="t2Row">
+		<td>sunlightpointresults</td>
+		<td>object</td>
+		<td>日照分析点集的属性信息，包括日照点的日照分析、日照时间、点的位置。</td>
+	</tr>
+	<tr class="t1Row">
+		<td>geometries</td>
+		<td><a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/services/components/commontypes/Geometry3D.html">Geometry3D</a></td>
+		<td>日照分析查询结果模型数组。</td>
+	</tr>
+	<tr class="t2Row">
+		<td>succeed</td>
+		<td>boolean</td>
+		<td>日照分析查询是否成功；成功则返回 true，否则返回 false。</td>
+	</tr>
+	<tr class="t1Row">
+		<td>message</td>
+		<td>String</td>
+		<td>日照分析查询过程中产生的相关信息。</td>
+	</tr>
+</tbody></table>
+<h4>响应示例</h4>
+<p class="myNormal">对 datasetSunlightResult 资源：http://supermapiserver:8090/iserver/services/spatialAnalysis-BIM/restjsr/spatialanalyst/datasets/结构柱@8ExportModel/sunlight/3e317537d15d45b6adfa6cb9898c923d.rjson执行 
+ GET 请求后，返回的 json 结果如下：</p>
+<p class="myCodeP">{</p>
+<p class="myCodeP">&quot;sunlightpointresults&quot;:[[{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50009521711114,&quot;y&quot;:39.49988561911403,&quot;z&quot;:-1.6999820321798325}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50010103803812,&quot;y&quot;:39.499885619109214,&quot;z&quot;:-1.6999814361333847}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50010103809974,&quot;y&quot;:39.49988561903939,&quot;z&quot;:-5.599981293082237}},{&quot;sunlight&quot;:100,&quot;period&quot;:[],&quot;position&quot;:{&quot;x&quot;:115.50009521716937,&quot;y&quot;:39.49988561904422,&quot;z&quot;:-5.599981770850718}},{&quot;sunlight&quot;:100,&quot;period&quot;:[],&quot;position&quot;:{&quot;x&quot;:115.50009812760464,&quot;y&quot;:39.49988561907676,&quot;z&quot;:-3.649981727823615}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.500101038069,&quot;y&quot;:39.4998856190743,&quot;z&quot;:-3.6499812453985214}},{&quot;sunlight&quot;:100,&quot;period&quot;:[],&quot;position&quot;:{&quot;x&quot;:115.5000966723577,&quot;y&quot;:39.49988561909554,&quot;z&quot;:-2.6749818213284016}},{&quot;sunlight&quot;:100,&quot;period&quot;:[],&quot;position&quot;:{&quot;x&quot;:115.50009521714043,&quot;y&quot;:39.49988561907913,&quot;z&quot;:-3.6499819615855813}},{&quot;sunlight&quot;:100,&quot;period&quot;:[],&quot;position&quot;:{&quot;x&quot;:115.50009958285202,&quot;y&quot;:39.49988561905794,&quot;z&quot;:-4.624981392174959}},{&quot;sunlight&quot;:100,&quot;period&quot;:[],&quot;position&quot;:{&quot;x&quot;:115.50009958282156,&quot;y&quot;:39.49988561909312,&quot;z&quot;:-2.6749815829098225}},{&quot;sunlight&quot;:100,&quot;period&quot;:[],&quot;position&quot;:{&quot;x&quot;:115.50009885519802,&quot;y&quot;:39.49988561910226,&quot;z&quot;:-2.187481631524861}},{&quot;sunlight&quot;:100,&quot;period&quot;:[],&quot;position&quot;:{&quot;x&quot;:115.50009667238726,&quot;y&quot;:39.49988561906062,&quot;z&quot;:-4.62498186994344}},{&quot;sunlight&quot;:100,&quot;period&quot;:[],&quot;position&quot;:{&quot;x&quot;:115.5000974000109,&quot;y&quot;:39.499885619051234,&quot;z&quot;:-5.112481583841145}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50010103805349,&quot;y&quot;:39.49988561909175,&quot;z&quot;:-2.6749813398346305}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50010103808438,&quot;y&quot;:39.49988561905685,&quot;z&quot;:-4.6249813893809915}},{&quot;sunlight&quot;:100,&quot;period&quot;:[],&quot;position&quot;:{&quot;x&quot;:115.50009521715491,&quot;y&quot;:39.499885619061665,&quot;z&quot;:-4.624981865286827}},{&quot;sunlight&quot;:100,&quot;period&quot;:[],&quot;position&quot;:{&quot;x&quot;:115.50009521712595,&quot;y&quot;:39.49988561909659,&quot;z&quot;:-2.6749820560216904}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50009521710271,&quot;y&quot;:39.49987933090548,&quot;z&quot;:-1.6999806025996804}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50009521711114,&quot;y&quot;:39.49988561911403,&quot;z&quot;:-1.6999820321798325}},{&quot;sunlight&quot;:100,&quot;period&quot;:[],&quot;position&quot;:{&quot;x&quot;:115.50009521716937,&quot;y&quot;:39.49988561904422,&quot;z&quot;:-5.599981770850718}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50009521716078,&quot;y&quot;:39.4998793308318,&quot;z&quot;:-5.599980338476598}},{&quot;sunlight&quot;:100,&quot;period&quot;:[],&quot;position&quot;:{&quot;x&quot;:115.50009521713605,&quot;y&quot;:39.49988247497395,&quot;z&quot;:-3.6499812556430697}},{&quot;sunlight&quot;:100,&quot;period&quot;:[],&quot;position&quot;:{&quot;x&quot;:115.50009521712357,&quot;y&quot;:39.49988404704433,&quot;z&quot;:-2.6749815866351128}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50009521713167,&quot;y&quot;:39.49987933086865,&quot;z&quot;:-3.6499805310741067}},{&quot;sunlight&quot;:100,&quot;period&quot;:[],&quot;position&quot;:{&quot;x&quot;:115.50009521714851,&quot;y&quot;:39.499880902903094,&quot;z&quot;:-4.624980919063091}},{&quot;sunlight&quot;:100,&quot;period&quot;:[],&quot;position&quot;:{&quot;x&quot;:115.50009521714043,&quot;y&quot;:39.49988561907913,&quot;z&quot;:-3.6499819615855813}},{&quot;sunlight&quot;:100,&quot;period&quot;:[],&quot;position&quot;:{&quot;x&quot;:115.50009521711314,&quot;y&quot;:39.49988168897479,&quot;z&quot;:-2.1874811593443155}},{&quot;sunlight&quot;:100,&quot;period&quot;:[],&quot;position&quot;:{&quot;x&quot;:115.5000952171192,&quot;y&quot;:39.499880902939566,&quot;z&quot;:-2.674980870448053}},{&quot;sunlight&quot;:100,&quot;period&quot;:[],&quot;position&quot;:{&quot;x&quot;:115.50009521715894,&quot;y&quot;:39.49988326097346,&quot;z&quot;:-5.112481588497758}},{&quot;sunlight&quot;:100,&quot;period&quot;:[],&quot;position&quot;:{&quot;x&quot;:115.50009521715272,&quot;y&quot;:39.499884047008806,&quot;z&quot;:-4.6249813959002495}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50009521714632,&quot;y&quot;:39.49987933085023,&quot;z&quot;:-4.6249804347753525}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50009521711719,&quot;y&quot;:39.49987933088705,&quot;z&quot;:-2.674980624578893}},{&quot;sunlight&quot;:100,&quot;period&quot;:[],&quot;position&quot;:{&quot;x&quot;:115.50009521712595,&quot;y&quot;:39.49988561909659,&quot;z&quot;:-2.6749820560216904}},{&quot;sunlight&quot;:100,&quot;period&quot;:[],&quot;position&quot;:{&quot;x&quot;:115.50009521715491,&quot;y&quot;:39.499885619061665,&quot;z&quot;:-4.624981865286827}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50010103803812,&quot;y&quot;:39.499885619109214,&quot;z&quot;:-1.6999814361333847}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50009521711114,&quot;y&quot;:39.49988561911403,&quot;z&quot;:-1.6999820321798325}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50009521710271,&quot;y&quot;:39.49987933090548,&quot;z&quot;:-1.6999806025996804}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50010103802883,&quot;y&quot;:39.499879330900654,&quot;z&quot;:-1.69998000562191}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50010103809974,&quot;y&quot;:39.49988561903939,&quot;z&quot;:-5.599981293082237}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50010103809082,&quot;y&quot;:39.49987933082699,&quot;z&quot;:-5.599979862570763}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50009521716078,&quot;y&quot;:39.4998793308318,&quot;z&quot;:-5.599980338476598}},{&quot;sunlight&quot;:100,&quot;period&quot;:[],&quot;position&quot;:{&quot;x&quot;:115.50009521716937,&quot;y&quot;:39.49988561904422,&quot;z&quot;:-5.599981770850718}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50010103803812,&quot;y&quot;:39.499885619109214,&quot;z&quot;:-1.6999814361333847}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50010103802883,&quot;y&quot;:39.499879330900654,&quot;z&quot;:-1.69998000562191}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50010103809082,&quot;y&quot;:39.49987933082699,&quot;z&quot;:-5.599979862570763}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50010103809974,&quot;y&quot;:39.49988561903939,&quot;z&quot;:-5.599981293082237}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50010103806437,&quot;y&quot;:39.49988247496905,&quot;z&quot;:-3.64998053945601}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.5001010380467,&quot;y&quot;:39.49988090293462,&quot;z&quot;:-2.6749803945422173}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.500101038069,&quot;y&quot;:39.4998856190743,&quot;z&quot;:-3.6499812453985214}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50010103808224,&quot;y&quot;:39.49988404700399,&quot;z&quot;:-4.624980919063091}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50010103805973,&quot;y&quot;:39.499879330863834,&quot;z&quot;:-3.6499798158183694}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50010103804239,&quot;y&quot;:39.49988326102217,&quot;z&quot;:-2.1874809209257364}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50010103805114,&quot;y&quot;:39.49988404703938,&quot;z&quot;:-2.6749811097979546}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50010103808651,&quot;y&quot;:39.4998816889156,&quot;z&quot;:-5.1124806348234415}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50010103807759,&quot;y&quot;:39.49988090289826,&quot;z&quot;:-4.624980442225933}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50010103808438,&quot;y&quot;:39.49988561905685,&quot;z&quot;:-4.6249813893809915}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50010103805349,&quot;y&quot;:39.49988561909175,&quot;z&quot;:-2.6749813398346305}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50010103804438,&quot;y&quot;:39.49987933088225,&quot;z&quot;:-2.674979911185801}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50010103807509,&quot;y&quot;:39.4998793308454,&quot;z&quot;:-4.624979957938194}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50010103802883,&quot;y&quot;:39.499879330900654,&quot;z&quot;:-1.69998000562191}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50009521710271,&quot;y&quot;:39.49987933090548,&quot;z&quot;:-1.6999806025996804}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50009521716078,&quot;y&quot;:39.4998793308318,&quot;z&quot;:-5.599980338476598}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50010103809082,&quot;y&quot;:39.49987933082699,&quot;z&quot;:-5.599979862570763}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50009812759576,&quot;y&quot;:39.499879330866264,&quot;z&quot;:-3.649980296380818}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50009521713167,&quot;y&quot;:39.49987933086865,&quot;z&quot;:-3.6499805310741067}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50009958281258,&quot;y&quot;:39.49987933088361,&quot;z&quot;:-2.674980152398348}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50010103805973,&quot;y&quot;:39.499879330863834,&quot;z&quot;:-3.6499798158183694}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50009667237856,&quot;y&quot;:39.49987933084919,&quot;z&quot;:-4.624980439431965}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50009667234899,&quot;y&quot;:39.49987933088601,&quot;z&quot;:-2.674980390816927}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.5000973999574,&quot;y&quot;:39.499879330894565,&quot;z&quot;:-2.187480440363288}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50009958284303,&quot;y&quot;:39.499879330846504,&quot;z&quot;:-4.624979961663485}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50009885523443,&quot;y&quot;:39.49987933083797,&quot;z&quot;:-5.11248015332967}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50009521711719,&quot;y&quot;:39.49987933088705,&quot;z&quot;:-2.674980624578893}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50009521714632,&quot;y&quot;:39.49987933085023,&quot;z&quot;:-4.6249804347753525}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50010103807509,&quot;y&quot;:39.4998793308454,&quot;z&quot;:-4.624979957938194}},{&quot;sunlight&quot;:0,&quot;period&quot;:[{&quot;startTime&quot;:&quot;2018-08-16 
+ 08:30:00&quot;,&quot;endTime&quot;:&quot;2018-08-16 08:30:00&quot;}],&quot;position&quot;:{&quot;x&quot;:115.50010103804438,&quot;y&quot;:39.49987933088225,&quot;z&quot;:-2.674979911185801}}]],</p>
+<p class="myCodeP">&quot;geometries&quot;:[{&quot;boundingBox&quot;:null,&quot;filePath&quot;:null,&quot;center&quot;:null,&quot;type&quot;:&quot;GEOMODEL3D&quot;,&quot;scaleZ&quot;:1,&quot;points&quot;:null,&quot;scaleX&quot;:1,&quot;scaleY&quot;:1,&quot;rotationX&quot;:0,&quot;rotationY&quot;:0,&quot;rotationZ&quot;:0,</p>
+<p class="myCodeP">&quot;parts&quot;:null,&quot;model&quot;:[4,0,0,0,115,51,109,0,120,-38,-19,86,91,-120,91,69,24,-98,108,-50,102,115,109,87,-16,77,40,-126,-120,82,-59,-100,91,54,-101,-102,76,76,-40,26,117,-69,69,92,-33,37,118,79,107,-80,-71,108,-78,-117,11,125,72,94,84,124,43,44,-118,91,-15,-63,11,-8,38,-107,83,-6,-106,83,-87,-8,-28,10,-6,82,-69,62,120,-73,21,91,-80,45,22,-39,7,27,-65,51,-103,-109,76,102,15,-74,-53,-94,44,-24,-127,115,50,-33,-4,-33,63,-73,124,-33,-52,60,-96,16,-110,45,53,-21,-53,13,-102,-120,102,-97,46,31,-77,14,-43,23,90,110,-71,100,-43,23,44,94,56,92,-82,90,-44,-44,50,-122,-86,78,-101,-102,-103,77,122,117,66,-40,72,-21,105,-61,48,52,-43,-16,13,-21,105,85,75,-101,-86,-87,77,-7,-122,53,53,-99,-42,13,109,74,-51,-8,103,-85,106,-54,48,50,102,-54,-65,-15,76,74,119,59,-97,-38,-110,60,99,-51,-43,23,-26,-54,75,-51,-54,10,-43,30,81,-39,-13,-80,122,7,-123,127,-98,-52,-122,42,-114,15,35,78,14,22,61,41,-2,21,32,88,-51,74,-7,-72,49,-61,96,-107,67,-73,92,99,-117,-89,79,-87,106,122,58,-109,78,101,-109,53,62,-7,66,-11,-7,-118,85,91,18,-118,7,-98,-95,-61,-66,-121,117,2,-95,-28,67,40,-119,-124,-94,15,-95,40,18,10,62,-124,2,-101,-113,48,-98,-103,-54,-47,-93,-53,45,75,40,-114,12,109,88,39,16,74,62,-124,-110,72,40,-6,16,-118,34,-95,-32,67,-24,15,77,24,-49,124,-61,58,-78,124,-68,-36,20,-53,24,-120,58,-56,20,42,69,74,-55,-113,82,26,-95,20,-3,40,-59,17,74,-63,-113,-46,31,-29,-56,-64,94,-88,-44,42,53,-85,-43,18,-23,-125,58,16,-98,109,-106,107,-83,70,-71,-119,-11,-98,-81,55,-105,42,-75,99,-12,-15,-62,-95,-7,-125,-39,-92,79,-60,109,93,84,84,82,82,91,-46,-37,29,-44,-69,19,-124,-124,8,33,27,-81,-99,-97,-98,-64,-81,18,36,-28,46,-46,127,-114,-112,-114,-13,-66,110,59,127,-68,-71,113,-50,-59,79,1,-97,55,108,26,92,-21,-29,3,-67,-74,115,86,-73,105,-62,-80,63,38,-92,-109,-81,2,-97,54,108,39,-54,-80,-5,116,-100,-4,-51,85,115,118,-83,-62,-30,-9,3,-81,27,6,-67,-92,63,-60,112,2,120,63,-8,79,-80,56,33,103,-111,-1,-127,97,56,23,123,-85,44,126,9,56,-117,-2,14,-13,-4,25,-16,79,104,118,-9,-93,94,-116,97,29,-8,-108,110,56,63,-14,-10,86,-64,-1,84,-77,115,-83,-75,-9,24,126,27,-8,-100,110,-48,13,-34,-34,39,-64,85,-12,-9,21,-61,-124,76,35,-1,50,-26,-9,3,-53,39,100,31,112,27,-3,-3,-62,-37,59,9,-2,38,-26,-9,53,-49,119,57,-34,-38,92,-65,118,45,119,-11,-54,-117,-7,27,-41,23,-13,110,76,-58,30,-97,-81,-61,109,-29,59,-27,-17,20,111,119,62,91,113,-1,9,-32,45,-78,-126,66,-58,73,4,56,-62,106,21,18,5,86,-56,4,-44,22,-59,111,8,-91,24,9,-30,29,-61,87,33,113,96,55,35,-116,-110,-126,47,65,94,20,-17,56,-66,65,-110,64,52,-63,114,66,100,15,106,-10,32,30,69,102,12,-20,24,106,-29,-24,97,47,-72,123,-111,-23,-74,49,-119,-102,73,-60,-29,108,60,-19,-46,61,-77,-101,-7,-44,99,-98,-66,-107,-95,-66,41,-12,77,-29,92,-81,-48,55,-123,-66,-99,8,-57,-78,-98,101,-67,-69,117,-54,29,-22,-31,-10,-21,57,92,-65,16,95,63,119,101,-6,117,99,-125,121,-28,18,-81,-66,36,-5,52,-45,107,83,-116,-53,-71,-63,125,42,-5,86,-98,-121,60,-49,72,-32,-13,51,6,112,-119,-5,80,-10,-27,-67,-67,94,-18,119,-76,-9,29,-9,9,124,73,-31,75,-25,32,-113,-65,-46,-21,117,23,5,95,53,8,113,-82,-128,-1,61,-25,-89,3,-99,-18,58,-16,-121,-52,-73,-124,-28,8,-95,39,-64,-65,-64,-7,95,-112,78,-18,20,112,-125,-7,118,-85,47,101,-33,-62,-89,-76,45,-28,-61,-89,20,62,117,-66,-27,-4,-19,-8,-12,-65,-122,-3,124,-86,48,-97,-123,73,-33,-79,-82,55,3,112,-105,-21,-80,16,83,120,-116,-7,78,97,-114,117,-67,25,-124,-81,92,111,-123,-103,46,19,-56,73,-80,-52,113,-8,50,-116,119,12,-33,16,115,111,-108,-7,63,8,95,-58,-16,78,-80,-106,38,17,-101,100,42,15,51,-9,-58,-39,46,-32,-23,-69,-13,100,-28,29,89,-33,-14,-71,3,61,83,-24,-103,-34,26,-22,125,-60,-57,-78,79,31,-76,-42,77,-24,-101,-50,-15,115,4,-6,-90,-48,55,-99,-27,-6,-123,30,29,-24,-111,94,-26,-5,-66,124,-18,64,-49,20,122,30,-100,35,-48,123,-82,-119,-72,119,-114,61,119,-85,-99,123,29,-40,-26,-25,18,-4,-46,-67,41,-100,27,-85,127,-74,-69,95,2,123,-25,18,-12,76,-95,103,-6,51,-41,43,-12,-114,-66,-67,-10,-103,-98,71,-50,29,-7,92,-38,-119,-66,119,-37,-71,-13,111,-100,67,-69,73,-33,-65,-67,-79,-1,27,89,-33,-78,-98,-27,-3,92,-34,-81,101,-67,99,-34,-12,-66,-107,-109,103,-68,-3,26,-9,30,-118,123,-49,96,-1,-107,-11,-114,123,19,125,11,-9,-94,-117,92,111,-14,126,-2,50,-16,-69,-90,-99,59,-51,-9,107,-36,-53,40,-18,101,-12,39,-34,30,69,-2,-81,-90,-35,93,-28,-5,53,-18,117,-12,51,-36,-37,-124,123,-43,-120,-98,101,-67,-53,-5,-75,-68,-97,-1,-65,127,111,111,-1,-34,77,-9,-84,125,-113,94,-35,-108,-17,89,-78,-66,-27,-3,92,-66,-81,-56,-6,-33,-55,61,-21,-17,-42,-49,-69,103,5,25,14,-80,21,-14,-26,-95,72,-3,-2,5,-67,56,38,5],&quot;style&quot;:null,&quot;prjCoordSys&quot;:null,&quot;position&quot;:{&quot;x&quot;:115.50009812760021,&quot;y&quot;:39.499882474971514,&quot;z&quot;:0},&quot;id&quot;:0,&quot;modelUrl&quot;:null,&quot;partTopo&quot;:null}],</p>
+<p class="myCodeP">&quot;succeed&quot;:true,</p>
+<p class="myCodeP">&quot;message&quot;:null</p>
+<p class="myCodeP">}</p>
+<h3><a id="HEAD 请求"></a>HEAD 请求</h3>
+<p class="myNormal">返回跟 GET 请求一样的 HTTP 响应头，但是没有响应实体。可以在不必传输整个响应内容的情况下，获取包含在响应消息头中的元数据信息。元数据信息包括媒体类型，字符编码，压缩编码，实体内容长度等。</p>
+<p class="myNormal">HEAD 请求可以用来判断 datasetSunlightResult 资源是否存在，或者客户端是否有权限访问 
+ datasetSunlightResult 资源。通过对加.&lt;format&gt;的 URI 执行 HEAD 请求，还可以快速判断 datasetSunlightResult 
+ 资源是否支持&lt;format&gt;格式的表述。</p>
+<h2>请参见</h2>
+<ul class="referenceList">
+	<li class="referenceList"><a class="contentpagehyperlink" href="sunlight.htm">sunlight</a></li>
+	<li class="referenceList"><a class="contentpagehyperlink" href="../../../../clientBuildREST/ConstructRESTRequest.htm">客户端构建 
+	 REST 请求</a></li>
+	<li class="referenceList"><a class="contentpagehyperlink" href="../../../../StatusCodeDescription.htm">状态码列表及说明</a></li>
+	<li class="referenceList"><a class="contentpagehyperlink" href="../../../../SuperMap_iServer_REST_API_OutputFormat.htm">SuperMap 
+	 iServer REST API 表述格式介绍</a></li>
+	<li class="referenceList"><a class="contentpagehyperlink" href="../../../../resource_hierarchy.htm">资源层次结构</a></li>
+</ul>
+
+
+<p><br/></p></div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../../../../../../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../../../../../../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../../../../../../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../../../../../../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../../../../../../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../../../../../../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../../../../../../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../../../../../.."
+    gCommonRootRelPath = "../../../../../.."
+    gTopicId = "8.2.2.6.15.1.1.21.1"
+  
+//]]></script>
+
+  <script src="../../../../../../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../../../../../../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../../../../../../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../../../../../../whxdata/layoutconfig.js"></script>
+  <script src="../../../../../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

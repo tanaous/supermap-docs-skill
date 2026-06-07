@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <script src="scripts/css-vars-ponyfill.min.js"></script>
+    <script src="../../examples/js/utils.js"></script>
+    <script src="../../examples/js/theme/themeConfig.js"></script>
+    <script src="../../examples/js/theme/theme.js"></script>
+<script type="text/javascript">
+
+</script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+        <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/adminlte/app.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="styles/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/adminlte/AdminLTE.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/adminlte/skin-blue.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jaguar.css">
+    
+
+</head>
+<body class='sidebar-mini'>
+
+<div id="wrap" class="clearfix">
+
+    <div class="navigationDiv">
+    </div>
+    <div class="main content-wrapper">
+        <h1 class="page-title" data-filename="BufferSetting.html">Class: BufferSetting</h1>
+        
+
+
+
+<section>
+    
+<header>
+    <h2></span>BufferSetting
+    
+    </h2>
+    
+        <div class="class-description"><p>缓冲区分析通用设置类。该类可用于设置缓冲区分析中的缓冲区端点类型、左/右侧缓冲距离、缓冲半径单位等参数。</p></div>
+    
+</header>  
+
+<article>
+    <div class="container-overview">
+    
+    
+    
+        
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="BufferSetting">
+          
+          
+          new BufferSetting<span class="signature">(options)</span>
+        </h4>
+        
+        <h5>Usage</h5>
+        
+
+<pre class="prettyprint">
+<code>// 浏览器
+&lt;script type="text/javascript" src="https://iclient.supermap.io/dist/mapboxgl/iclient-mapboxgl.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+  new mapboxgl.supermap.BufferSetting(options);
+    // 弃用的写法
+  new SuperMap.BufferSetting(options);
+
+&lt;/script&gt;
+
+<span class="nopretty">// ES6 Import</span>
+import { BufferSetting } from '@supermapgis/iclient-mapboxgl';
+
+new BufferSetting(options);
+</code>
+</pre>
+
+
+        
+
+        
+        <div class="tag-source">
+            common/iServer/BufferSetting.js, line 8
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+
+    
+
+    
+
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>可选参数。</p>
+                
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Default</th>
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>endType</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="global.html#BufferEndType">BufferEndType</a></span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    <a href="global.html#BufferEndType#.FLAT">BufferEndType.FLAT</a>
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>缓冲区端点枚举值。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>leftDistance</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="BufferDistance.html">BufferDistance</a></span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    100
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>左侧缓冲距离。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>rightDistance</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="BufferDistance.html">BufferDistance</a></span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    100
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>右侧缓冲距离。左/右缓冲距离的设置仅对线对象/数据集有效，如果是点/面对象/数据集，则只需要设置左缓冲距离，即使设置了右缓冲距离，在缓冲分析时也不起作用。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>semicircleLineSegment</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    4
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>圆头缓冲圆弧处线段的个数。</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>radiusUnit</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type"><a href="global.html#BufferRadiusUnit">BufferRadiusUnit</a></span>
+
+
+            
+            </td>
+            
+            
+                <td class="default">
+                
+                    <a href="global.html#BufferRadiusUnit#.METER">BufferRadiusUnit.METER</a>
+                
+                </td>
+            
+            
+            <td class="description last">
+                
+                    
+                        <span class="optional"> 可选</span>
+                    
+                    
+                        
+                    
+                
+                <p>缓冲半径单位。</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+            </td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</dd>
+
+    
+    </div>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <h3 class="subsection-title">Members</h3>
+        
+        <dl>
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="endType">
+          
+          endType<span class="type-signature type bufferendtype"><a href="global.html#BufferEndType">BufferEndType</a></span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>缓冲区端点枚举值。分为平头和圆头两种。当设置缓冲区端点为平头时，左侧、右侧缓冲距离需为相同数值。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    <dt class="tag-default">Default Value:</dt>
+    <a href="global.html#BufferEndType#.FLAT">BufferEndType.FLAT</a></li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="leftDistance">
+          
+          leftDistance<span class="type-signature type bufferdistance"><a href="BufferDistance.html">BufferDistance</a></span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>左侧缓冲距离。
+当为 GeometryBufferAnalyst 时，单位为默认地图的投影系的单位（如 EPSG:3857 为米，EPSG:4326 为度），
+当为 DatasetBufferAnalyst 时，单位通过<code>BufferSetting.radiusUnit</code>设置（默认全部为米）。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    <dt class="tag-default">Default Value:</dt>
+    100</li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="radiusUnit">
+          
+          radiusUnit<span class="type-signature type bufferradiusunit"><a href="global.html#BufferRadiusUnit">BufferRadiusUnit</a></span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>缓冲半径单位，可以是<a href="global.html#BufferRadiusUnit#.METER"><code>BufferRadiusUnit.METER</code></a>、<a href="global.html#BufferRadiusUnit#.MILLIMETER"><code>BufferRadiusUnit.MILLIMETER</code></a>、
+<a href="global.html#BufferRadiusUnit#.CENTIMETER"><code>BufferRadiusUnit.CENTIMETER</code></a>、<a href="global.html#BufferRadiusUnit#.DECIMETER"><code>BufferRadiusUnit.DECIMETER</code></a>、<a href="global.html#BufferRadiusUnit#.KILOMETER"><code>BufferRadiusUnit.KILOMETER</code></a>、
+<a href="global.html#BufferRadiusUnit#.FOOT"><code>BufferRadiusUnit.FOOT</code></a>、<a href="global.html#BufferRadiusUnit#.INCH"><code>BufferRadiusUnit.INCH</code></a>、<a href="global.html#BufferRadiusUnit#.MILE"><code>BufferRadiusUnit.MILE</code></a>、<a href="global.html#BufferRadiusUnit#.YARD"><code>BufferRadiusUnit.YARD</code></a>。
+仅对 BufferAnalyst 有效。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    <dt class="tag-default">Default Value:</dt>
+    <a href="global.html#BufferRadiusUnit#.METER">BufferRadiusUnit.METER</a></li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="rightDistance">
+          
+          rightDistance<span class="type-signature type bufferdistance"><a href="BufferDistance.html">BufferDistance</a></span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>右侧缓冲距离。
+当为 GeometryBufferAnalyst 时，单位为默认地图的投影系的单位（如 EPSG:3857 为米，EPSG:4326 为度），
+当为 DatasetBufferAnalyst 时，单位通过<a href="BufferSetting.html#radiusUnit"><code>BufferSetting#radiusUnit</code></a>设置（默认全部为米）。<br>
+左/右缓冲距离的设置仅对线对象/数据集有效，如果是点/面对象/数据集，则只需要设置左缓冲距离，即使设置了右缓冲距离，在缓冲分析时也不起作用。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    <dt class="tag-default">Default Value:</dt>
+    100</li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="semicircleLineSegment">
+          
+          semicircleLineSegment<span class="type-signature type number">number</span> 
+        </h4>
+        
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>圆头缓冲圆弧处线段的个数。即用多少个线段来模拟一个半圆。</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    <dt class="tag-default">Default Value:</dt>
+    4</li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+    
+</dd>
+
+        </dl>
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+        
+        <dl>
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="destroy">
+          
+          
+          destroy<span class="signature">()</span>
+        </h4>
+        
+
+        
+        <div class="tag-source">
+            common/iServer/BufferSetting.js, line 70
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>释放资源，将引用资源的属性置空。</p>
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</dd>
+
+        </dl>
+    
+    
+    
+
+</article>
+
+</section>  
+
+
+
+
+
+        <footer>
+            Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc</a> on Fri Sep 26 2025 09:51:09 GMT+0800 (中国标准时间)
+        </footer>
+    </div>
+</div>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>

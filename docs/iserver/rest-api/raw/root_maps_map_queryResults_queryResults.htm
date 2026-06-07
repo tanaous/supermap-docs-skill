@@ -1,0 +1,1086 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../../../../../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../../../../../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../../../../../../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../../../../../iserver-icon.png"/>
+    
+  <script data-relpath="../../../../../.." src="../../../../../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <meta name="template" content="../../../../../../assets/layouts/RESTAPI.htt"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Language" content="zh-CN"/>
+  <meta name="topic-check-list" content="Ran Smart Index"/>
+  <meta name="topic-status" content="Complete"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>queryResults</title>
+  <link rel="StyleSheet" href="../../../../../../assets/css/SuperMapHelp.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="QueryResults"/>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../../../../../../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../../assets/css/homeButtom.css"/>
+  <script src="../../../../../../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../../../../../../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../../../../../../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../../../../../../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../../../../../../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../../../../../../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../../../../../../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../../../../../../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../../../../../../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <h2><a name="URI" id="URI"></a>URI</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="../map.htm#URI">&lt;map_uri&gt;</a>/queryresults[.&lt;format&gt;]</p>
+  <h2>支持的方法</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="#GET 请求">GET</a>、<a class="contentpagehyperlink" href="#POST 请求">POST</a>、<a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a></p>
+  <h2>父资源</h2>
+  <p class="myNormal">
+    <?rh-udv_start name="map_link" ?><a class="contentpagehyperlink" href="../map.htm">map</a>
+    <?rh-udv_end ?>
+  </p>
+  <h2>子资源</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="queryResult.htm">queryResult</a></p>
+  <h2>介绍</h2>
+  <p class="myNormal">queryResults 资源表示查询结果的集合，通过该资源可以对地图（{mapName}）进行 SQL 查询、距离查询、空间查询、最近地物查询、范围查询以及海图查询等。</p>
+  <p class="myNormal">关于本资源的相关使用示例请参考：<a class="contentpagehyperlink" href="../../../../../../DevelopGuide/Use_iServer/USE_RESTAPI/Query_Opr/QueryBySQL.htm">SQL 查询</a>、<a class="contentpagehyperlink" href="../../../../../../DevelopGuide/Use_iServer/USE_RESTAPI/Query_Opr/queryByLinkItem.htm">关联表 SQL 查询</a>、<a class="contentpagehyperlink" href="../../../../../../DevelopGuide/Use_iServer/USE_RESTAPI/Query_Opr/QueryByDistance.htm">距离查询</a>。</p>
+  <p class="myNormal" style="font-weight: bold;">支持的方法：</p>
+  <ul style="list-style: disc;">
+    <li class="supportList"><a class="contentpagehyperlink" href="#GET 请求">GET</a>：获取查询结果集合。</li>
+    <li class="supportList"><a class="contentpagehyperlink" href="#POST 请求">POST</a>：按照给定参数创建一个地图查询的结果资源。</li>
+    <li class="supportList"><a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a>：获取查询结果集合资源的元数据信息。检查该 queryResults 资源是否存在，权限是否可以访问。</li>
+  </ul>
+  <p class="myNormal"><span style="font-weight: bold;">支持的表述格式：</span>RJSON、JSON、HTML、XML、JSONP、FASTJSON、GeoJSON、FlatGeobuf。</p>
+  <p class="myNormal" style="font-weight: bold;"><span style="font-weight: bold;">注：查询的图层为点、线、面数据集类型时，GeoJSON表述可用。</span></p>
+  <h2>资源层次</h2>
+  <p><img alt="" border="0" height="212" src="../../../../../../assets/images/root/maps/map/queryResults/queryresults.png" usemap="#DrawArea" width="363"/><map id="DrawArea" name="DrawArea"><area alt="根资源" class="contentpagehyperlink" coords="13.295,6.3435,269.704,47.257" href="../../../root.htm" shape="rect"/> <area alt="maps 资源" class="contentpagehyperlink" coords="84.935,59.257,230.705,100.057" href="../../maps.htm" shape="rect"/> <area alt="map 资源" class="contentpagehyperlink" coords="126.119,112.442,278.519,160" href="../map.htm" shape="rect"/> <area alt="queryResults 资源" class="contentpagehyperlink" coords="179.804,169.286,346,205.999" href="queryResults.htm" shape="rect"/></map></p>
+  <h2>HTTP 请求方法</h2>
+  <p class="myNormal">对如下 URI 执行 HTTP 请求，以 rjson 输出格式为例加以说明，其中，supermapiserver 是服务器名，“世界地图”是地图名（{mapName}），URI 表示一个“世界地图” 的查询集合。</p>
+  <p class="uriStyle">http://supermapiserver:8090/iserver/services/map-world/rest/maps/世界地图/queryResults.rjson</p>
+  <h3><a name="GET 请求"></a>GET 请求</h3>
+  <p class="myNormal">获取查询结果的集合，即已创建的 queryResult 资源表述集合。</p>
+  <h4 class="myNormal">请求参数</h4>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>名称</td>
+        <td>类型</td>
+        <td>含义</td>
+      </tr>
+      <tr class="t2Row">
+        <td>_cache</td>
+        <td>boolean</td>
+        <td>【可选参数】<br/>
+          是否使用缓存，默认为 true。如果为 false，则关闭所有缓存。</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4>响应结构</h4>
+  <p class="myNormal">对 queryResults 资源执行 GET 请求得到的是 queryResult 资源信息的集合，集合中的每一个元素的结构如下：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>字段</td>
+        <td>类型</td>
+        <td>说明</td>
+      </tr>
+      <tr class="t2Row">
+        <td>name</td>
+        <td>String</td>
+        <td>queryResult 资源的名称。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>path</td>
+        <td>String</td>
+        <td>queryResult 资源的访问路径。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>resourceConfigID</td>
+        <td>String</td>
+        <td>资源配置项 ID。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>resourceType</td>
+        <td>String</td>
+        <td>资源类型。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>supportedMediaTypes</td>
+        <td>String[]</td>
+        <td>数据源资源支持的表述的媒体类型。</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="myNormal"> </p>
+  <h4>示例</h4>
+  <p class="myNormal">在一次成功的查询（即对 queryResults 成功执行 <a class="contentpagehyperlink" href="#POST 请求">POST 请求</a>）后，queryResults 资源里保存了查询结果的信息，对 queryResults 资源执行 GET 请求，返回 rjson 格式的资源描述如下：</p>
+  <p class="myCodeP">[{</p>
+  <p class="myCodeP">&quot;name&quot;: &quot;1&quot;,</p>
+  <p class="myCodeP">&quot;path&quot;: &quot;http://supermapiserver:8090/iserver/services/map-world/rest/maps/世界地图/queryResults/1.rjson&quot;,</p>
+  <p class="myCodeP">&quot;resourceConfigID&quot;: null,</p>
+  <p class="myCodeP">&quot;resourceType&quot;: &quot;ArithResultResource&quot;,</p>
+  <p class="myCodeP">&quot;supportedMediaTypes&quot;: [</p>
+  <p class="myCodeP">&quot;application/xml&quot;,</p>
+  <p class="myCodeP">&quot;text/xml&quot;,</p>
+  <p class="myCodeP">&quot;application/json&quot;,</p>
+  <p class="myCodeP">&quot;application/rjson&quot;,</p>
+  <p class="myCodeP">&quot;text/html&quot;</p>
+  <p class="myCodeP">]</p>
+  <p class="myCodeP">}]</p>
+  <h3><a name="POST 请求"></a>POST 请求</h3>
+  <p class="myNormal">按照给定参数创建一个地图查询的结果资源，其中 returnContent 必须包含在 URI 中。</p>
+  <h4 class="myCodeP">请求参数</h4>
+  <p class="myNormal">通过对 queryResults 资源执行 POST 请求，可以进行 SQL 查询、距离查询、空间查询、最近地物查询、范围查询等，由 queryMode 参数来指定进行的是哪种查询模式，不同查询模式用到的查询参数也不一样。其中，URI 中的参数为可选参数。</p>
+  <p class="myNormal">URI 中的参数如下：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>名称</td>
+        <td>类型</td>
+        <td>含义</td>
+      </tr>
+      <tr class="t2Row">
+        <td>returnContent</td>
+        <td>boolean</td>
+        <td>是否立即返回新创建资源的表述还是返回新资源的 URI，默认为 false。<br/>
+          如果为 true，则直接返回新创建资源，即查询结果的表述。如果为 false，则返回的是查询结果资源的 URI。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>withIndex</td>
+        <td>boolean</td>
+        <td>当使用 FlatGeobuf 表述时该参数可选。表示返回的表述为 FlatGeobuf 的结果是否包含空间索引，默认为true。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>returnCustomResult</td>
+        <td>boolean</td>
+        <td>是否返回查询结果的 Bounds 信息，当 returnContent=false 时有效。<br/>
+          如果为 true，返回查询结果的 Bounds 信息（响应结构中的 customResult 字段）。<br/>
+          如果为 false，则不返回 Bounds 信息。默认为 false。</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="myNormal">其中，对 queryResults 执行 POST 请求时，如果 returnContent 为 true，将直接得到查询结果资源（queryResult）的表述；如果 returnContent 为 false，将得到结果资源（queryResult 资源）的 URI，对该结果资源执行 GET 操作，可得到需要的结果。</p>
+  <p class="myNormal">请求体中的参数如下：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="100%">
+    <colgroup>
+      <col style="width: 8.824%;"/>
+      <col style="width: 8.824%;"/>
+      <col style="width: 41.176%;"/>
+      <col style="width: 41.176%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>名称</td>
+        <td>类型</td>
+        <td colspan="2">含义</td>
+      </tr>
+      <tr class="t2Row">
+        <td>queryMode</td>
+        <td><a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/services/rest/commontypes/QueryMode.html">QueryMode</a></td>
+        <td colspan="2">【必选参数】<br/>
+          查询的模式，有 SQL 查询、距离查询、空间查询、最近地物查找、范围查询以及海图查询等几种类型。其中：
+          <ol style="list-style: decimal;">
+            <li>对于三维点、线、面图层，目前只支持 SQL 查询和范围查询</li>
+            <li>对于 CAD 图层，目前只支持 SQL 查询和范围查询</li>
+            <li>对于海图服务，目前支持海图属性查询和海图范围查询两种模式，参数见<a class="contentpagehyperlink" href="#附表_海图查询参数">附表 海图查询参数</a>。</li>
+            <li>EPS数据目前仅支持SQL查询和范围查询</li>
+            <li>当查询的模式为最近地物查找时，会对查询结果按照距离进行升序排列。</li>
+          </ol>
+        </td>
+      </tr>
+      <tr class="t1Row">
+        <td rowspan="5">queryParameters</td>
+        <td rowspan="5"><a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/services/components/commontypes/QueryParameterSet.html">QueryParameterSet</a></td>
+        <td rowspan="5">
+          <p>【必选参数】</p>
+          <p>属性查询的参数集合，包含了查询参数数组（<a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/services/components/commontypes/QueryParameter.html">queryParams</a>）、期望返回的结果记录数（expectCount）、查询起始记录位置（startRecord）、查询结果选项对象（queryOption）等，详情请参考 <a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/services/components/commontypes/QueryParameterSet.html">QueryParameterSet</a>。</p>
+          <p>其中，查询参数数组（<a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/services/components/commontypes/QueryParameter.html">queryParams</a>）包含要查询的图层的名称（name）、查询字段数组（fields）、SQL 查询属性过滤条件（attributeFilter）、分组条件（groupBy）、查询 id 数组（ids）、连接查询项数组（joinItems）、关联外部表（linkItems）、SQL 查询排序的字段（orderBy）等信息。</p>
+          <p><span style="font-weight: bold;">注意：</span><br/>
+            1.部分查询模式，不支持所有的查询参数，详情如右单元格。<br/>
+            2.当设置关联查询（linkItems）参数时，如果设置的关联表中的字段不存在，则可能没有查询结果。<br/>
+            3.使用分组条件（groupBy）参数时，需设置查询字段为分组字段或其他统计字段。</p>
+          <p>4.对于期望返回的结果记录数（expectCount），当您设置为&lt;0的值时，将默认返回 1000 条记录（您可通过修改服务配置文件iserver-service.xml文件中 UGCMapProviderSetting&gt;&gt;queryExpectCount 的参数值来设置其他默认返回记录数）；当您设置为0时，将返回所有查询结果；当您设置为&gt;0的值时，将根据该值返回结果记录数。</p>
+          <p>5. 对于 ArcSDE for Oracle 数据源，若需进行 ID 查询，仅支持 id 数小于等于 200 的查询</p>
+        </td>
+        <td>
+          <p>距离查询：不支持查询参数数组（<a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/services/components/commontypes/QueryParameter.html">queryParams</a>）中的fields、ids、name、groupBy、orderBy、joinItems、linkItems等</p>
+          <p>注意：当查询模式为距离查询，且查询结果数大于期望返回的结果记录数（expectCount）时，距离查询结果为从查询总记录中随机抽取的 expectCount 个地物。</p>
+        </td>
+      </tr>
+      <tr class="t2Row">
+        <td>
+          <p>范围查询：不支持查询参数数组（<a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/services/components/commontypes/QueryParameter.html">queryParams</a>）中的fields、ids、name、groupBy、orderBy、joinItems、linkItems等</p>
+        </td>
+      </tr>
+      <tr class="t1Row">
+        <td>
+          <p>最近地物查找：不支持查询参数数组（<a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/services/components/commontypes/QueryParameter.html">queryParams</a>）中的fields、ids、name、groupBy、orderBy、joinItems、linkItems等，不支持查询起始记录位置（startRecord）参数。</p>
+          <p>注意：当查询模式为最近地物查找，且查询结果数大于期望返回的结果记录数（expectCount）时，最近地物查找结果为查询总记录中距离中心最近的 expectCount 个地物，这 expectCount 个地物为无序排列。</p>
+        </td>
+      </tr>
+      <tr class="t2Row">
+        <td>
+          <p>空间查询：不支持 groupBy 字段，否则可能导致空间查询的结果不正确。</p>
+        </td>
+      </tr>
+      <tr class="t1Row">
+        <td>
+          <p>SQL 查询时：</p>
+          <p>注意：1.当查询模式为 SQL 查询时，如果在系统配置文件（参见：<a class="contentpagehyperlink" href="../../../../../../Appendix/iServer_configInfo.htm">iServer 配置文件说明</a>）中设置了 SQL 查询表达式中需要屏蔽掉的字符串，那么在 SQL 查询过滤条件（attributeFilter）中一旦发现输入了已经设置的字符串，系统会认为该条查询表达式非法并返回400参数异常，防止 SQL 注入。如果在系统配置文件中没有设置 SQL 查询表达式中需要屏蔽掉的字符串，那么在 SQL 查询过滤条件（attributeFilter）中会默认屏蔽掉分号。</p>
+          <p>2.当查询模式为 SQL 查询，查询的数据量较大，且存储在 PostGIS、PostgreSQL、MySQL 等空间数据库中时，如果该数据库支持空间几何函数查询，您还可以在查询参数中，如：查询字段数组（fields）、SQL 查询属性过滤条件（attributeFilter）等写入空间几何函数，利用空间数据库进行计算，从而缓解 iServer 计算压力，提高返回结果的速度。请求体示例参见 <a class="contentpagehyperlink" href="#示例6_SQL查询_以空间几何函数为条件">示例6 SQL查询-以空间几何函数为条件</a></p>
+        </td>
+      </tr>
+      <tr class="t2Row">
+        <td>geometry</td>
+        <td><a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/services/components/commontypes/Geometry.html">Geometry</a></td>
+        <td colspan="2">queryMode 为距离查询或空间查询时必选。<br/>
+          空间对象信息。geometry 的投影坐标系与地图坐标系相同。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>bounds</td>
+        <td><a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/services/components/commontypes/Rectangle2D.html">Rectangle2D</a></td>
+        <td colspan="2">queryMode 为范围查询时必选。<br/>
+          查询指定图层落在该范围内的记录。bounds 的投影坐标系与地图坐标系相同。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>spatialQueryMode</td>
+        <td><a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/services/components/commontypes/SpatialQueryMode.html">SpatialQueryMode</a></td>
+        <td colspan="2">queryMode 为空间查询时必选。<br/>
+          空间查询操作模式。<br/>
+          有包含、交叉、分离、重合、相交、叠加、 邻接、被包含等。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>distance</td>
+        <td>double</td>
+        <td colspan="2">queryMode 为距离查询或最近地物查询时必选。distance 的单位与地图坐标单位相同。<br/>
+          距离查询时，表示距离地物的距离。最近地物查询时，表示搜索的范围。</td>
+      </tr>
+    </tbody>
+  </table>
+  <p style="text-align: center;"> </p>
+  <p style="text-align: center;"><a name="附表_海图查询参数"></a>附表 海图查询参数</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>名称</td>
+        <td>类型</td>
+        <td>含义</td>
+      </tr>
+      <tr class="t2Row">
+        <td>queryMode</td>
+        <td><a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/services/rest/commontypes/QueryMode.html">QueryMode</a></td>
+        <td>海图查询，有以下模式：海图属性查询（ChartAttributeQuery）、海图范围查询（ChartBoundsQuery）和海图要素范围查询模式（ChartFeatureBoundsQuery）。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>chartLayerNames</td>
+        <td>String[]</td>
+        <td>待查询的图层名。若数组长度为 0，则查询全部图层。当查询模式为 ChartAttributeQuery、ChartBoundsQuery 时必填。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>chartQueryParameters</td>
+        <td><a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/services/components/commontypes/ChartQueryParameterSet.html">ChartQueryParameterSet</a></td>
+        <td>海图查询参数集合（数组）。当查询模式为 ChartAttributeQuery、ChartBoundsQuery 时必填。包含以下参数：
+          <ul style="list-style: disc;">
+            <li>
+              <p style="text-indent: 12px;"><a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/services/components/commontypes/ChartQueryParameter.html">chartQueryParams</a>，海图查询参数数组，详细参数见下表；</p>
+            </li>
+            <li>
+              <p style="text-indent: 12px;"><span>startRecord，查询起始记录位置，默认为 0。当对多个海图数据集进行查询时，该参数对每个数据集分别生效。</span></p>
+            </li>
+            <li>
+              <p style="text-indent: 12px;">expectCount，查询记录期望返回结果记录，该值大于 0。当对多个海图数据集进行查询时，该参数对每个数据集分别生效。</p>
+            </li>
+            <li>
+              <p style="text-indent: 12px;"><span style="text-indent: 12px;">expectCount，查询记录期望返回结果记录，该值大于 0。</span></p>
+            </li>
+          </ul>
+        </td>
+      </tr>
+      <tr class="t1Row">
+        <td>bounds</td>
+        <td><a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/services/components/commontypes/Rectangle2D.html">Rectangle2D</a></td>
+        <td>指定的查询范围，当查询模式为 ChartBoundsQuery、ChartFeatureBoundsQuery 时必填。</td>
+      </tr>
+    </tbody>
+  </table>
+  <p style="text-align: center;">海图查询参数数组（chartQueryParams[]）</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>名称</td>
+        <td>类型</td>
+        <td>含义</td>
+      </tr>
+      <tr class="t2Row">
+        <td>attributeFilter</td>
+        <td>String</td>
+        <td>查询过滤条件。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>charFeatureInfoSpecCode</td>
+        <td>
+          <p>int</p>
+        </td>
+        <td>
+          <p>查询物标代号，可通过 <a class="contentpagehyperlink" href="../chartFeatureInfoSpecs.htm" title="chartQ">chartFeatureInfoSpecs</a> 资源查看物标类对应的代号。</p>
+        </td>
+      </tr>
+      <tr class="t2Row">
+        <td>isQueryLine</td>
+        <td>
+          <p>boolean</p>
+        </td>
+        <td>
+          <p>是否查询线。</p>
+        </td>
+      </tr>
+      <tr class="t1Row">
+        <td>isQueryPoint</td>
+        <td>
+          <p>boolean</p>
+        </td>
+        <td>是否查询点。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>isQueryRegion</td>
+        <td>
+          <p>boolean</p>
+        </td>
+        <td>是否查询面。</td>
+      </tr>
+    </tbody>
+  </table>
+  <p style="text-align: center;">关键字查询</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>名称</td>
+        <td>类型</td>
+        <td>含义</td>
+      </tr>
+      <tr class="t2Row">
+        <td>queryMode</td>
+        <td><a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/services/rest/commontypes/QueryMode.html">QueryMode</a></td>
+        <td>【必选参数】关键字查询（KeywordsQuery）。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>
+          <p>keywordsQueryParameters</p>
+        </td>
+        <td><a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/services/components/commontypes/KeywordsQueryParameterSet.html">KeywordsQueryParameterSet</a></td>
+        <td>【必选参数】关键字查询参数集合。</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4> </h4>
+  <h4>响应结构</h4>
+  <p class="myNormal">对 queryResults 资源执行 POST 请求，进行查询，创建查询结果资源。</p>
+  <p class="myNormal">在 returnContent=false 的情况下，返回操作结果的表述如下：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>字段</td>
+        <td>类型</td>
+        <td>说明</td>
+      </tr>
+      <tr class="t2Row">
+        <td>succeed</td>
+        <td>boolean</td>
+        <td>查询是否成功。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>newResourceID</td>
+        <td>String</td>
+        <td>查询结果资源的 ID。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>postResultType</td>
+        <td><a class="contentpagehyperlink" href="../../../../../iServerJavadoc/com/supermap/services/rest/PostResultType.html">postResultType</a></td>
+        <td>
+          <p>POST 请求的结果类型。</p>
+          <p>说明 POST 请求对目标资源的影响，即处理结果是什么样的。</p>
+        </td>
+      </tr>
+      <tr class="t1Row">
+        <td>newResourceLocation</td>
+        <td>String</td>
+        <td>创建的新资源的 URI。</td>
+      </tr>
+      <tr class="t2Row">
+        <td>customResult</td>
+        <td>Object</td>
+        <td>返回查询结果的 Bounds 信息。<br/>
+          如果地图设置了动态投影，返回的 Bounds 的投影坐标系与地图坐标系相同。<br/>
+          如果地图没有设置动态投影，返回的 Bounds 的投影坐标系与查询结果所在的数据集的投影坐标系相同。</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="myNormal">在 returnContent=true 的情况下，返回的表述中没有 newResourceLocation 字段，取而代之的是 newResourceLocation 所标识的资源，即 queryResult 资源的表述。请参见 <a class="contentpagehyperlink" href="queryResult.htm#queryResult_表述">queryResult 资源表述的结构</a>。</p>
+  <p class="myNormal">注意，queryResult 的表述中，查询记录集中的字段信息由 Recordset 中的 fields 字段记录。每个 Feature 中的 fieldNames 字段均为 null。</p>
+  <h4>示例1：SQL 查询</h4>
+  <p class="myNormal">对 queryResults 资源：http://supermapiserver:8090/iserver/services/map-world/rest/maps/世界地图/queryResults.rjson?returnCustomResult=true，执行如下参数的 POST 请求，对 World 地图进行 SQL 查询：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;queryMode&quot;: &quot;SqlQuery&quot;,</p>
+  <p class="myCodeP">&quot;bounds&quot;: {</p>
+  <p class="myCodeP">&quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 0,</p>
+  <p class="myCodeP">&quot;y&quot;: 0</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;rightTop&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 100,</p>
+  <p class="myCodeP">&quot;y&quot;: 100</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;distance&quot;: 1,</p>
+  <p class="myCodeP">&quot;queryParameters&quot;: {</p>
+  <p class="myCodeP">&quot;queryParams&quot;: [{</p>
+  <p class="myCodeP">&quot;attributeFilter&quot;: &quot;SMID %26gt; 0&quot;,</p>
+  <p class="myCodeP">&quot;name&quot;: &quot;ContinentLabel@World&quot;</p>
+  <p class="myCodeP">}],</p>
+  <p class="myCodeP">&quot;startRecord&quot;: 0,</p>
+  <p class="myCodeP">&quot;expectCount&quot;: 20,</p>
+  <p class="myCodeP">&quot;networkType&quot;: &quot;LINE&quot;,</p>
+  <p class="myCodeP">&quot;queryOption&quot;: &quot;ATTRIBUTEANDGEOMETRY&quot;</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;spatialQueryMode&quot;: &quot;INTERSECT&quot;</p>
+  <p class="myCodeP">}</p>
+  <p class="myNormal">返回 rjson 格式的资源描述如下：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;succeed&quot;: true,</p>
+  <p class="myCodeP">&quot;newResourceID&quot;: &quot;iypwfdzf_91c24c622e9641e18a808ae8a89f698b&quot;,</p>
+  <p class="myCodeP">&quot;postResultType&quot;: &quot;CreateChild&quot;,</p>
+  <p class="myCodeP">&quot;customResult&quot;: {</p>
+  <p class="myCodeP">&quot;rightTop&quot;: {</p>
+  <p class="myCodeP">&quot;y&quot;: 55.98430295074347,</p>
+  <p class="myCodeP">&quot;x&quot;: 140.7362260537166</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">&quot;y&quot;: -82.49592439558907,</p>
+  <p class="myCodeP">&quot;x&quot;: -119.53556537446983</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;bottom&quot;: -82.49592439558907,</p>
+  <p class="myCodeP">&quot;left&quot;: -119.53556537446983,</p>
+  <p class="myCodeP">&quot;right&quot;: 140.7362260537166,</p>
+  <p class="myCodeP">&quot;top&quot;: 55.98430295074347</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;newResourceLocation&quot;: &quot;http://supermapiserver:8090/iserver/services/map-world/rest/maps/世界地图/queryResults/iypwfdzf_91c24c622e9641e18a808ae8a89f698b.json&quot;</p>
+  <p class="myCodeP">}</p>
+  <p class="myNormal">对 &quot;http://supermapiserver:8090/iserver/services/map-world/rest/maps/世界地图/queryResults/1.rjson” 执行 GET 请求，即获取查询的具体结果。请参见 <a class="contentpagehyperlink" href="queryResult.htm#GET 请求">queryResult 的 GET 请求</a>。</p>
+  <h4>示例2：SQL 查询返回 GeoJSON 表述的结果</h4>
+  <p class="myNormal">对 queryResults 资源：http://supermapiserver:8090/iserver/services/map-World/rest/maps/世界地图/queryResults.geojson?returnCustomResult=true，执行如下参数的 POST 请求，对 World 地图进行 SQL 查询：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;queryMode&quot;: &quot;SqlQuery&quot;,</p>
+  <p class="myCodeP">&quot;bounds&quot;: {</p>
+  <p class="myCodeP">&quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 0,</p>
+  <p class="myCodeP">&quot;y&quot;: 0</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;rightTop&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 100,</p>
+  <p class="myCodeP">&quot;y&quot;: 100</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;distance&quot;: 1,</p>
+  <p class="myCodeP">&quot;queryParameters&quot;: {</p>
+  <p class="myCodeP">&quot;queryParams&quot;: [{</p>
+  <p class="myCodeP">&quot;attributeFilter&quot;: &quot;SMID %26gt; 0&quot;,</p>
+  <p class="myCodeP">&quot;name&quot;: &quot;Capitals@World&quot;</p>
+  <p class="myCodeP">}],</p>
+  <p class="myCodeP">&quot;startRecord&quot;: 0,</p>
+  <p class="myCodeP">&quot;expectCount&quot;: 1,</p>
+  <p class="myCodeP">&quot;networkType&quot;: &quot;LINE&quot;,</p>
+  <p class="myCodeP">&quot;queryOption&quot;: &quot;ATTRIBUTEANDGEOMETRY&quot;</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;spatialQueryMode&quot;: &quot;INTERSECT&quot;</p>
+  <p class="myCodeP">}</p>
+  <p class="myNormal">返回 geojson 格式的资源描述如下：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;features&quot;:[</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;geometry&quot;:{</p>
+  <p class="myCodeP">&quot;coordinates&quot;:[-47.8977476573595,-15.792110943058866],</p>
+  <p class="myCodeP">&quot;type&quot;:&quot;Point&quot;</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;id&quot;:&quot;1&quot;,</p>
+  <p class="myCodeP">&quot;type&quot;:&quot;Feature&quot;,</p>
+  <p class="myCodeP">&quot;properties&quot;:{</p>
+  <p class="myCodeP">&quot;SmGeometrySize&quot;:&quot;16&quot;,</p>
+  <p class="myCodeP">&quot;CAP_POP&quot;:&quot;2207718.0&quot;,</p>
+  <p class="myCodeP">&quot;COUNTRY_CH&quot;:&quot;巴西&quot;,</p>
+  <p class="myCodeP">&quot;CAPITAL_EN&quot;:&quot;Brasilia&quot;,</p>
+  <p class="myCodeP">&quot;POP&quot;:&quot;2207718.0&quot;,</p>
+  <p class="myCodeP">&quot;CAPITAL_CH&quot;:&quot;巴西利亚&quot;,</p>
+  <p class="myCodeP">&quot;SMID&quot;:&quot;1&quot;,</p>
+  <p class="myCodeP">&quot;COUNTRY&quot;:&quot;巴西&quot;,</p>
+  <p class="myCodeP">&quot;CAPITAL_LO&quot;:&quot;Brasília&quot;,</p>
+  <p class="myCodeP">&quot;COUNTRY_EN&quot;:&quot;Brazil&quot;,</p>
+  <p class="myCodeP">&quot;SmUserID&quot;:&quot;0&quot;,</p>
+  <p class="myCodeP">&quot;USERID&quot;:&quot;0&quot;,</p>
+  <p class="myCodeP">&quot;SMY&quot;:&quot;-15.792110943058866&quot;,</p>
+  <p class="myCodeP">&quot;SMX&quot;:&quot;-47.8977476573595&quot;,</p>
+  <p class="myCodeP">&quot;SMUSERID&quot;:&quot;0&quot;,</p>
+  <p class="myCodeP">&quot;CAPITAL&quot;:&quot;巴西利亚&quot;,</p>
+  <p class="myCodeP">&quot;SmLibTileID&quot;:&quot;1&quot;</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">}],</p>
+  <p class="myCodeP">&quot;type&quot;:&quot;FeatureCollection&quot;</p>
+  <p class="myCodeP">}</p>
+  <h4>示例3：SQL查询—多字段分组统计</h4>
+  <p class="myNormal">对 queryResults 资源：http://localhost:8090/iserver/services/map-China100/rest/maps/China/queryResults.json，执行如下参数的 POST 请求，对 Airport_pt@China#1 图层进行多字段分组统计：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;queryMode&quot;: &quot;SqlQuery&quot;,</p>
+  <p class="myCodeP">&quot;bounds&quot;: {</p>
+  <p class="myCodeP">&quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 0,</p>
+  <p class="myCodeP">&quot;y&quot;: 0</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;rightTop&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 100,</p>
+  <p class="myCodeP">&quot;y&quot;: 100</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;distance&quot;: 1,</p>
+  <p class="myCodeP">&quot;queryParameters&quot;: {</p>
+  <p class="myCodeP">&quot;queryParams&quot;: [</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;name&quot;: &quot;Airport_pt@China#1&quot;,</p>
+  <p class="myCodeP">&quot;fields&quot;:[&quot;min(GB) as minANGLE&quot;,&quot;max(ANGLE) as maxSmGeometrySize&quot;,&quot;SUM(GB) as SUMSmGeometrySize&quot;,&quot;SUM(ANGLE) as sumAngle&quot;],</p>
+  <p class="myCodeP">&quot;groupBy&quot;:&quot;NAME&quot;</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">],</p>
+  <p class="myCodeP">&quot;startRecord&quot;: 0,</p>
+  <p class="myCodeP">&quot;expectCount&quot;: 40,</p>
+  <p class="myCodeP">&quot;networkType&quot;: &quot;LINE&quot;,</p>
+  <p class="myCodeP">&quot;queryOption&quot;: &quot;ATTRIBUTEANDGEOMETRY&quot;</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;keywords&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">&quot;spatialQueryMode&quot;: &quot;INTERSECT&quot;</p>
+  <p class="myCodeP">}</p>
+  <p class="myNormal">其中，queryParams 查询参数数组包含要查询的图层的名称（name）、查询字段数组（fields）、分组条件（groupBy）。</p>
+  <p class="myNormal">返回 rjson 格式的资源描述如下：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;postResultType&quot;: &quot;CreateChild&quot;,</p>
+  <p class="myCodeP">&quot;newResourceID&quot;: &quot;6ea0d91a10224b6dbdbf0215df433e26_56f2a45c75d742d4a793255a6e1959fa&quot;,</p>
+  <p class="myCodeP">&quot;succeed&quot;: true,</p>
+  <p class="myCodeP">&quot;newResourceLocation&quot;: &quot;http://localhost:8090/iserver/services/map-China100/rest/maps/China/queryResults/6ea0d91a10224b6dbdbf0215df433e26_56f2a45c75d742d4a793255a6e1959fa.json&quot;</p>
+  <p class="myCodeP">}</p>
+  <p class="myNormal">对 &quot;http://localhost:8090/iserver/services/map-China100/rest/maps/China/queryResults/6ea0d91a10224b6dbdbf0215df433e26_56f2a45c75d742d4a793255a6e1959fa.json” 执行 GET 请求，即获取查询的具体结果。请参见 <a class="contentpagehyperlink" href="queryResult.htm#GET 请求">queryResult 的 GET 请求</a>。</p>
+  <h4>示例4：对 CAD 图层进行范围查询</h4>
+  <p class="myNormal">请求体示例：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;queryMode&quot;: &quot;BoundsQuery&quot;,</p>
+  <p class="myCodeP">&quot;bounds&quot;: {</p>
+  <p class="myCodeP">&quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 112.35,</p>
+  <p class="myCodeP">&quot;y&quot;: 34.6</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;rightTop&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 112.4,</p>
+  <p class="myCodeP">&quot;y&quot;: 34.62</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;distance&quot;: 1,</p>
+  <p class="myCodeP">&quot;queryParameters&quot;: {</p>
+  <p class="myCodeP">&quot;queryParams&quot;: [{</p>
+  <p class="myCodeP">&quot;attributeFilter&quot;: &quot;SMID &amp;gt; 0&quot;,</p>
+  <p class="myCodeP">&quot;name&quot;: &quot;testCAD@test1&quot;</p>
+  <p class="myCodeP">}],</p>
+  <p class="myCodeP">&quot;startRecord&quot;: 0,</p>
+  <p class="myCodeP">&quot;expectCount&quot;: 20,</p>
+  <p class="myCodeP">&quot;networkType&quot;: &quot;LINE&quot;,</p>
+  <p class="myCodeP">&quot;queryOption&quot;: &quot;ATTRIBUTEANDGEOMETRY&quot;</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;keywords&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">&quot;spatialQueryMode&quot;: &quot;INTERSECT&quot;</p>
+  <p class="myCodeP">}</p>
+  <p class="myNormal">响应结果示例：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;customResult&quot;: {</p>
+  <p class="myCodeP">&quot;bottom&quot;: 34.54666099978054,</p>
+  <p class="myCodeP">&quot;left&quot;: 112.26249133678498,</p>
+  <p class="myCodeP">&quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 112.26249133678498,</p>
+  <p class="myCodeP">&quot;y&quot;: 34.54666099978054</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;right&quot;: 112.48668999981291,</p>
+  <p class="myCodeP">&quot;rightTop&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 112.48668999981291,</p>
+  <p class="myCodeP">&quot;y&quot;: 34.72305325426654</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;top&quot;: 34.72305325426654</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;newResourceID&quot;: &quot;62599fc42ee044c7acea57b5e8d9bc87_9bfbea897ac3473fa75728ed0880f8fb&quot;,</p>
+  <p class="myCodeP">&quot;newResourceLocation&quot;: &quot;http://server:8090/iserver/services/map-henan/rest/maps/luoyang/queryResults/62599fc42ee044c7acea57b5e8d9bc87_9bfbea897ac3473fa75728ed0880f8fb.rjson&quot;,</p>
+  <p class="myCodeP">&quot;postResultType&quot;: &quot;CreateChild&quot;,</p>
+  <p class="myCodeP">&quot;succeed&quot;: true</p>
+  <p class="myCodeP">}</p>
+  <h4 class="myNormal">示例5：ECQL查询</h4>
+  <p class="myNormal">对 queryResults 资源：http://supermapiserver:8090/iserver/services/map-demo/rest/maps/map_hbase/queryResults.rjson?returnCustomResult=true，执行如下参数的 POST 请求，对分布式数据地图使用 ECQL 语言进行查询，请求体中的参数示例如下：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;queryMode&quot;: &quot;SqlQuery&quot;,</p>
+  <p class="myCodeP">&quot;queryParameters&quot;: {</p>
+  <p class="myCodeP">&quot;queryParams&quot;: [{</p>
+  <p class="myCodeP">&quot;attributeFilter&quot;: &quot;BBOX(the_geom,103 ,17 ,119 ,27)&quot;,</p>
+  <p class="myCodeP">&quot;name&quot;: &quot;Muifa_4326@map_hbase&quot;</p>
+  <p class="myCodeP">}],</p>
+  <p class="myCodeP">&quot;startRecord&quot;: 0,</p>
+  <p class="myCodeP">&quot;expectCount&quot;: 20,</p>
+  <p class="myCodeP">&quot;queryOption&quot;: &quot;ATTRIBUTEANDGEOMETRY&quot;</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">}</p>
+  <p class="myNormal">返回 rjson 格式的操作结果表述如下：</p>
+  <p class="myCodeP">[{</p>
+  <p class="myCodeP">&quot;resourceConfigID&quot;: null,</p>
+  <p class="myCodeP">&quot;supportedMediaTypes&quot;: [</p>
+  <p class="myCodeP">&quot;application/xml&quot;,</p>
+  <p class="myCodeP">&quot;text/xml&quot;,</p>
+  <p class="myCodeP">&quot;application/json&quot;,</p>
+  <p class="myCodeP">&quot;application/fastjson&quot;,</p>
+  <p class="myCodeP">&quot;application/rjson&quot;,</p>
+  <p class="myCodeP">&quot;text/html&quot;,</p>
+  <p class="myCodeP">&quot;application/jsonp&quot;,</p>
+  <p class="myCodeP">&quot;application/x-java-serialized-object&quot;,</p>
+  <p class="myCodeP">&quot;image/bmp&quot;,</p>
+  <p class="myCodeP">&quot;image/gif&quot;,</p>
+  <p class="myCodeP">&quot;image/jpeg&quot;,</p>
+  <p class="myCodeP">&quot;image/jpg&quot;,</p>
+  <p class="myCodeP">&quot;image/png&quot;,</p>
+  <p class="myCodeP">&quot;image/webp&quot;,</p>
+  <p class="myCodeP">&quot;application/geojson&quot;</p>
+  <p class="myCodeP">],</p>
+  <p class="myCodeP">&quot;path&quot;: &quot;http://localhost:8090/iserver/services/map-demo/rest/maps/ map_hbase/queryResults/3899fc437cd748e1b60b92aa87083f54_af3b0f0dcc1248a8b7c57029b783fbfc.rjson&quot;,</p>
+  <p class="myCodeP">&quot;name&quot;: &quot;3899fc437cd748e1b60b92aa87083f54_af3b0f0dcc1248a8b7c57029b783fbfc&quot;,</p>
+  <p class="myCodeP">&quot;resourceType&quot;: &quot;ArithResultResource&quot;</p>
+  <p class="myCodeP">}]</p>
+  <p class="myNormal">对 http://localhost:8090/iserver/services/map-demo/rest/maps/ map_hbase/queryResults/3899fc437cd748e1b60b92aa87083f54_af3b0f0dcc1248a8b7c57029b783fbfc.rjson 执行 GET 请求，即获取查询的具体结果:</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;recordsets&quot;: [</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;datasetName&quot;: &quot;Muifa_4326&quot;,</p>
+  <p class="myCodeP">&quot;features&quot;: [</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;fieldNames&quot;: [],</p>
+  <p class="myCodeP">&quot;ID&quot;: 0,</p>
+  <p class="myCodeP">&quot;fieldValues&quot;: [],</p>
+  <p class="myCodeP">&quot;geometry&quot;: {</p>
+  <p class="myCodeP">&quot;id&quot;: 0,</p>
+  <p class="myCodeP">&quot;center&quot;: {</p>
+  <p class="myCodeP">&quot;y&quot;: 24.1,</p>
+  <p class="myCodeP">&quot;x&quot;: 132.8</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;style&quot;: null,</p>
+  <p class="myCodeP">&quot;parts&quot;: [</p>
+  <p class="myCodeP">1</p>
+  <p class="myCodeP">],</p>
+  <p class="myCodeP">&quot;partTopo&quot;: [],</p>
+  <p class="myCodeP">&quot;points&quot;: [</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;y&quot;: 24.1,</p>
+  <p class="myCodeP">&quot;x&quot;: 132.8</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">],</p>
+  <p class="myCodeP">&quot;type&quot;: &quot;POINT&quot;</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;fieldNames&quot;: [],</p>
+  <p class="myCodeP">&quot;ID&quot;: 0,</p>
+  <p class="myCodeP">&quot;fieldValues&quot;: [],</p>
+  <p class="myCodeP">&quot;geometry&quot;: {</p>
+  <p class="myCodeP">&quot;id&quot;: 0,</p>
+  <p class="myCodeP">&quot;center&quot;: {</p>
+  <p class="myCodeP">&quot;y&quot;: 24.4,</p>
+  <p class="myCodeP">&quot;x&quot;: 131.4</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;style&quot;: null,</p>
+  <p class="myCodeP">&quot;parts&quot;: [</p>
+  <p class="myCodeP">1</p>
+  <p class="myCodeP">],</p>
+  <p class="myCodeP">&quot;partTopo&quot;: [],</p>
+  <p class="myCodeP">&quot;points&quot;: [</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;y&quot;: 24.4,</p>
+  <p class="myCodeP">&quot;x&quot;: 131.4</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">],</p>
+  <p class="myCodeP">&quot;type&quot;: &quot;POINT&quot;</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;fieldNames&quot;: [],</p>
+  <p class="myCodeP">&quot;ID&quot;: 0,</p>
+  <p class="myCodeP">&quot;fieldValues&quot;: [],</p>
+  <p class="myCodeP">&quot;geometry&quot;: {</p>
+  <p class="myCodeP">&quot;id&quot;: 0,</p>
+  <p class="myCodeP">&quot;center&quot;: {</p>
+  <p class="myCodeP">&quot;y&quot;: 24.3,</p>
+  <p class="myCodeP">&quot;x&quot;: 132.1</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;style&quot;: null,</p>
+  <p class="myCodeP">&quot;parts&quot;: [</p>
+  <p class="myCodeP">1</p>
+  <p class="myCodeP">],</p>
+  <p class="myCodeP">&quot;partTopo&quot;: [],</p>
+  <p class="myCodeP">&quot;points&quot;: [</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;y&quot;: 24.3,</p>
+  <p class="myCodeP">&quot;x&quot;: 132.1</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">],</p>
+  <p class="myCodeP">&quot;type&quot;: &quot;POINT&quot;</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">],</p>
+  <p class="myCodeP">&quot;fieldCaptions&quot;: [],</p>
+  <p class="myCodeP">&quot;fieldTypes&quot;: [],</p>
+  <p class="myCodeP">&quot;fields&quot;: []</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">],</p>
+  <p class="myCodeP">&quot;totalCount&quot;: 3,</p>
+  <p class="myCodeP">&quot;currentCount&quot;: 3,</p>
+  <p class="myCodeP">&quot;customResponse&quot;: null</p>
+  <p class="myCodeP">}</p>
+  <p class="myNormal">返回 rjson 格式的资源描述如下：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;postResultType&quot;: &quot;CreateChild&quot;,</p>
+  <p class="myCodeP">&quot;newResourceID&quot;: &quot;3bd49e762198498aa7ce26d6dbde94bd_a17b2f68d6e949f88a2af296a36c70e9&quot;,</p>
+  <p class="myCodeP">&quot;succeed&quot;: true,</p>
+  <p class="myCodeP">&quot;customResult&quot;: {</p>
+  <p class="myCodeP">&quot;top&quot;: 0,</p>
+  <p class="myCodeP">&quot;left&quot;: 0,</p>
+  <p class="myCodeP">&quot;bottom&quot;: 0,</p>
+  <p class="myCodeP">&quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 0,</p>
+  <p class="myCodeP">&quot;y&quot;: 0</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;right&quot;: 0,</p>
+  <p class="myCodeP">&quot;rightTop&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: 0,</p>
+  <p class="myCodeP">&quot;y&quot;: 0</p>
+  <p class="myCodeP">}},</p>
+  <p class="myCodeP">&quot;newResourceLocation&quot;: &quot;http://lsupermapiserver:8090/iserver/services/map-postgisMap/rest/maps/postgisMap/queryResults/3bd49e762198498aa7ce26d6dbde94bd_a17b2f68d6e949f88a2af296a36c70e9.rjson&quot;</p>
+  <p class="myCodeP">}</p>
+  <h3 style="text-indent: 12px;">示例6：海图物标查询</h3>
+  <p class="myNormal">对 queryResults 资源：http://localhost:8090/iserver/services/map-ChartW/rest/maps/海图/queryResults.rjson，执行如下参数的 POST 请求，对海图进行物标查询，请求体中的参数示例如下：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;queryMode&quot;: &quot;ChartAttributeQuery&quot;,</p>
+  <p class="myCodeP">&quot;chartLayerNames&quot;:[],</p>
+  <p class="myCodeP">&quot;chartQueryParameters&quot;:{</p>
+  <p class="myCodeP">&quot;startRecord&quot;:0,</p>
+  <p class="myCodeP">&quot;expectCount&quot;:20,</p>
+  <p class="myCodeP">&quot;chartQueryParams&quot; :[{</p>
+  <p class="myCodeP">&quot;isQueryLine&quot;:true,</p>
+  <p class="myCodeP">&quot;isQueryRegion&quot;:true,</p>
+  <p class="myCodeP">&quot;isQueryPoint&quot;:true,</p>
+  <p class="myCodeP">&quot;chartFeatureInfoSpecCode&quot;:1,</p>
+  <p class="myCodeP">&quot;attributeFilter&quot;:&quot;SMID &amp;gt; 0&quot;,</p>
+  <p class="myCodeP">}]</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">}</p>
+  <p class="myNormal">返回 rjson 格式的操作结果表述如下：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;postResultType&quot;: &quot;CreateChild&quot;,</p>
+  <p class="myCodeP">&quot;newResourceID&quot;: &quot;1c2fe8d95c3345ea8a1c58993c26cf60_5bff7f6ccdf84c958fb35a4009b185c7&quot;,</p>
+  <p class="myCodeP">&quot;succeed&quot;: true,</p>
+  <p class="myCodeP">&quot;newResourceLocation&quot;: &quot;http://localhost:8099/iserver/services/map-Chart9FU/rest/maps/Chart9Fu/queryResults/1c2fe8d95c3345ea8a1c58993c26cf60_5bff7f6ccdf84c958fb35a4009b185c7.rjson&quot;</p>
+  <p class="myCodeP">}</p>
+  <h3 style="text-indent: 12px;">示例7：海图要素范围查物标要素属性</h3>
+  <p class="myNormal">对 queryResults 资源：http://localhost:8090/iserver/services/map-ChartW/rest/maps/海图/queryResults.rjson?returnContent=true，执行如下参数的 POST 请求，对海图进行范围查询物标要素属性，请求体中的参数示例如下：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;queryMode&quot;: &quot;ChartFeatureBoundsQuery&quot;,</p>
+  <p class="myCodeP">&quot;bounds&quot;: {</p>
+  <p class="myCodeP">&quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: -94.4657,</p>
+  <p class="myCodeP">&quot;y&quot;: 29.3078</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;rightTop&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: -94.4657,</p>
+  <p class="myCodeP">&quot;y&quot;: 29.3078</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">}</p>
+  <p class="myNormal">返回 rjson 格式的操作结果表述如下：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;recordsets&quot;: [</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;chartFeatureRecordsets&quot;: [</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;features&quot;: [</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">&quot;stringID&quot;: null,</p>
+  <p class="myCodeP">&quot;fieldNames&quot;: [</p>
+  <p class="myCodeP">&quot;SmID&quot;,</p>
+  <p class="myCodeP">&quot;SmUserID&quot;,</p>
+  <p class="myCodeP">&quot;SmArea&quot;,</p>
+  <p class="myCodeP">&quot;SmPerimeter&quot;,</p>
+  <p class="myCodeP">&quot;SmGeoParam&quot;,</p>
+  <p class="myCodeP">&quot;OBJL&quot;,</p>
+  <p class="myCodeP">&quot;Acronym&quot;,</p>
+  <p class="myCodeP">&quot;RCID&quot;,</p>
+  <p class="myCodeP">&quot;AGEN&quot;,</p>
+  <p class="myCodeP">&quot;FIDN&quot;,</p>
+  <p class="myCodeP">&quot;FIDS&quot;,</p>
+  <p class="myCodeP">&quot;RVER&quot;,</p>
+  <p class="myCodeP">&quot;LNAM&quot;,</p>
+  <p class="myCodeP">&quot;EditLockMark&quot;,</p>
+  <p class="myCodeP">&quot;CATCOV&quot;,</p>
+  <p class="myCodeP">&quot;INFORM&quot;,</p>
+  <p class="myCodeP">&quot;NINFOM&quot;,</p>
+  <p class="myCodeP">&quot;SORDAT&quot;,</p>
+  <p class="myCodeP">&quot;SORIND&quot;</p>
+  <p class="myCodeP">],</p>
+  <p class="myCodeP">&quot;geometry&quot;: {</p>
+  <p class="myCodeP">&quot;center&quot;: {</p>
+  <p class="myCodeP">&quot;x&quot;: -94.80250174809055,</p>
+  <p class="myCodeP">&quot;y&quot;: 29.5730139</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;parts&quot;: [</p>
+  <p class="myCodeP">9,</p>
+  <p class="myCodeP">190</p>
+  <p class="myCodeP">],</p>
+  <p class="myCodeP">&quot;style&quot;: null,</p>
+  <p class="myCodeP">&quot;prjCoordSys&quot;: null,</p>
+  <p class="myCodeP">&quot;id&quot;: 1,</p>
+  <p class="myCodeP">&quot;type&quot;: &quot;REGION&quot;,</p>
+  <p class="myCodeP">&quot;partTopo&quot;: [</p>
+  <p class="myCodeP">1,</p>
+  <p class="myCodeP">-1</p>
+  <p class="myCodeP">],</p>
+  <p class="myCodeP">&quot;points&quot;: []</p>
+  <p class="myCodeP">},</p>
+  <p class="myCodeP">&quot;fieldValues&quot;: [</p>
+  <p class="myCodeP">&quot;1&quot;,</p>
+  <p class="myCodeP">&quot;0&quot;,</p>
+  <p class="myCodeP">&quot;1.953887397850922E9&quot;,</p>
+  <p class="myCodeP">&quot;533230.5058583332&quot;,</p>
+  <p class="myCodeP">&quot;&quot;,</p>
+  <p class="myCodeP">&quot;302&quot;,</p>
+  <p class="myCodeP">&quot;M_COVR&quot;,</p>
+  <p class="myCodeP">&quot;7060&quot;,</p>
+  <p class="myCodeP">&quot;550&quot;,</p>
+  <p class="myCodeP">&quot;196166459&quot;,</p>
+  <p class="myCodeP">&quot;4696&quot;,</p>
+  <p class="myCodeP">&quot;1&quot;,</p>
+  <p class="myCodeP">&quot;US019616645904696&quot;,</p>
+  <p class="myCodeP">&quot;&quot;,</p>
+  <p class="myCodeP">&quot;2&quot;,</p>
+  <p class="myCodeP">&quot;&quot;,</p>
+  <p class="myCodeP">&quot;&quot;,</p>
+  <p class="myCodeP">&quot;20100614&quot;,</p>
+  <p class="myCodeP">&quot;US,US,grapg,Chart 11326&quot;</p>
+  <p class="myCodeP">],</p>
+  <p class="myCodeP">&quot;ID&quot;: 1</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">],</p>
+  <p class="myCodeP">&quot;acronym&quot;: &quot;M_COVR&quot;,</p>
+  <p class="myCodeP">&quot;datasetName&quot;: &quot;US4TX58M_80000_M_COVR_R@S57ChartReadOnly&quot;</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">],</p>
+  <p class="myCodeP">&quot;datasetGroupName&quot;: &quot;US4TX58M_80000&quot;</p>
+  <p class="myCodeP">}</p>
+  <p class="myCodeP">],</p>
+  <p class="myCodeP">&quot;totalCount&quot;: 14</p>
+  <p class="myCodeP">}</p>
+  <h3><a name="HEAD 请求"></a>HEAD 请求</h3>
+  <p class="myNormal">返回跟 GET 请求一样的 HTTP 响应头，但是没有响应实体。可以在不必传输整个响应内容的情况下，获取包含在响应消息头中的元数据信息。元数据信息包括媒体类型，字符编码，压缩编码，实体内容长度等。</p>
+  <p class="myNormal">HEAD 请求可以用来判断 queryResults 地图资源是否存在，或者客户端是否有权限访问 queryResults 地图资源。通过对加.&lt;format&gt;的 URI 执行 HEAD 请求，还可以快速判断 queryResults 地图资源是否支持&lt;format&gt;格式的表述。</p>
+  <h2>请参见</h2>
+  <ul>
+    <li class="referenceList">
+      <?rh-udv_start name="map_link" ?><a class="contentpagehyperlink" href="../map.htm">map</a>
+      <?rh-udv_end ?>，<a class="contentpagehyperlink" href="queryResult.htm">queryResult</a>
+    </li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../../clientBuildREST/ConstructRESTRequest.htm">客户端构建 REST 请求</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../../StatusCodeDescription.htm">状态码列表及说明</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../../SuperMap_iServer_REST_API_OutputFormat.htm">表述格式介绍</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../../resource_hierarchy.htm">GIS 服务资源层次结构</a></li>
+  </ul>
+  <p class="myNormal"> </p>
+
+</div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../../../../../../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../../../../../../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../../../../../../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../../../../../../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../../../../../../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../../../../../../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../../../../../../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../../../../../.."
+    gCommonRootRelPath = "../../../../../.."
+    gTopicId = "8.2.2.6.10.1.11"
+  
+//]]></script>
+
+  <script src="../../../../../../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../../../../../../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../../../../../../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../../../../../../whxdata/layoutconfig.js"></script>
+  <script src="../../../../../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

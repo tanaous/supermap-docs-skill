@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../../../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../../iserver-icon.png"/>
+    
+  <script data-relpath="../../.." src="../../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <meta name="template" content="../../../assets/layouts/RESTCommon.htt"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Language" content="zh-CN"/>
+  <meta name="topic-check-list" content="Ran Smart Index"/>
+  <meta name="topic-status" content="Complete"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>REST 中参数的构建</title>
+  <link rel="StyleSheet" href="../../../assets/css/SuperMapHelp.css" type="text/css"/>
+  <meta name="rh-index-keywords" content="REST 中参数的构建"/>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../../../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../assets/css/homeButtom.css"/>
+  <script src="../../../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../../../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../../../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../../../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../../../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../../../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../../../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../../../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../../../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <p class="myNormal">通过 <a class="contentpagehyperlink" href="REST_ParamsTransfer.htm">REST 中参数的传递方式</a>可以了解到不同种类参数的组织和传递方式，针对某个资源某种操作该传递什么样的参数，REST API 中有详细的描述，而且有一张参数表来说明，参数结构表包含如下几项：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 30%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td style="text-align: center">
+          <p>参数结构表项目</p>
+        </td>
+        <td style="text-align: center">
+          <p>作用</p>
+        </td>
+      </tr>
+      <tr class="t2Row">
+        <td style="vertical-align: top;">
+          <p>名称</p>
+        </td>
+        <td style="vertical-align: top;">
+          <p>参数的名称。</p>
+        </td>
+      </tr>
+      <tr class="t1Row">
+        <td style="vertical-align: top;">
+          <p>类型</p>
+        </td>
+        <td style="vertical-align: top;">
+          <p>参数对应的 Java 类。</p>
+          <p>表明了该参数的结构。参数的构建，即参数值的确定要以此项为参考。</p>
+        </td>
+      </tr>
+      <tr class="t2Row">
+        <td style="vertical-align: top;">
+          <p>含义</p>
+        </td>
+        <td style="vertical-align: top;">
+          <p>参数的含义和说明。</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="myNormal">示例参数表如下：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td style="text-align: center">
+          <p>名称</p>
+        </td>
+        <td style="text-align: center">
+          <p>类型</p>
+        </td>
+        <td style="text-align: center">
+          <p>含义</p>
+        </td>
+      </tr>
+      <tr class="t2Row">
+        <td>
+          <p>point2Ds</p>
+        </td>
+        <td>
+          <p>Point2D[]</p>
+        </td>
+        <td>
+          <p>用于量算的点集。</p>
+        </td>
+      </tr>
+      <tr class="t1Row">
+        <td>
+          <p>unit</p>
+        </td>
+        <td>
+          <p>Unit</p>
+        </td>
+        <td>
+          <p>期望返回结果的单位。</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="myNormal">参数 point2Ds 对应的 Java 类型为 Point2D[]，Point2D 是 SuperMap iServer 的基本 GIS 对象类型，表示二维地理坐标；参数 unit 对应的 Java 类型为 Unit，Unit 是 SuperMap iServer 中的枚举类，表示距离单位的枚举。它们都可以在 iServer Javadoc 的 com.supermap.services.components.commontypes 中查到。</p>
+  <p class="myNormal">SuperMap iServer REST 服务中涉及到的参数有 JSON 和 XML 两种格式，以下分别加以介绍：</p>
+  <ol class="ListInParagraph" style="list-style: decimal;">
+    <li class="ListInParagraph"><a class="contentpagehyperlink" href="#1_JSON_格式参数的构建">JSON 格式参数的构建</a></li>
+    <li class="ListInParagraph"><a class="contentpagehyperlink" href="#2_XML_格式参数的构建">XML 格式参数的构建</a></li>
+  </ol>
+  <h2><a id="1_JSON_格式参数的构建"></a>1 JSON 格式参数的构建</h2>
+  <h3>1.1 JSON 简介</h3>
+  <p class="myNormal">JSON 是一种轻量级的数据格式，JSON 的构建基于两种结构：</p>
+  <ul class="supportList" style="list-style: disc;">
+    <li class="supportList">“名称/值”对的集合。</li>
+    <li class="supportList">值的有序列表。</li>
+  </ul>
+  <p class="myNormal">JSON 具有如下形式：</p>
+  <ul class="supportList" style="list-style: disc;">
+    <li class="supportList">对象，无序的“名称/值”对集合。如 <a class="contentpagehyperlink" href="REST_ParamsTransfer.htm">REST 中参数的传递方式</a>中提到的 value_a 可能为{“A1”:value1, ”A2”:value2}。</li>
+    <li class="supportList">数组，值（value）的有序集合。如 <a class="contentpagehyperlink" href="REST_ParamsTransfer.htm">REST 中参数的传递方式</a>中提到的 value_b 可能为[value1, value2]。</li>
+  </ul>
+  <p class="myNormal">其中，值（如 value1、value2）可以是双引号括起来的字符串、数字、true、false、null，也可以是一个对象或数组，从而构成嵌套的关系。</p>
+  <h3>1.2 参数类型和 JSON 的对应关系</h3>
+  <p class="myNormal">SuperMap iServer REST API 中，针对每个参数，都有对应的类型（Java 类）说明。如前所述，参数的构建就是以对应的 Java 类作为参考的。Java 类的描述一般可以通过查询 SuperMap iServer 的 Java API 文档得到。</p>
+  <p class="myNormal">Java 对象中跟构建 JSON 格式参数相关的部分有：</p>
+  <ul class="supportList" style="list-style: disc;">
+    <li class="supportList">public 成员变量。</li>
+    <li class="supportList">属性。属性名为指一对 get/set 方法，去掉 get/set 后，把首字母变成小写后的字符串。</li>
+  </ul>
+  <p class="myNormal">它们跟 JSON 的对应关系如下：</p>
+  <ul class="supportList" style="list-style: disc;">
+    <li class="supportList">“public 成员变量名/取值”对应 JSON 中的“名称/值”对；</li>
+    <li class="supportList">“属性名/属性值”对应 JSON 中的“名称/值”对。</li>
+  </ul>
+  <p class="myNormal">其中 Java 中的取值，跟 JSON 中的值的对应关系如下：</p>
+  <table align="center" cellspacing="0" class="iServerTable" style="width: 893px;" width="70%">
+    <colgroup>
+      <col style="width: 50%;"/>
+      <col style="width: 50%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td style="text-align: center">Java</td>
+        <td style="text-align: center;">JSON</td>
+      </tr>
+      <tr class="t2Row">
+        <td style="vertical-align: top;">
+          <p>字符串</p>
+          <p>如：</p>
+          <p>String name=”World”;</p>
+        </td>
+        <td style="vertical-align: top;">
+          <p>字符串</p>
+          <p>如：</p>
+          <p>World</p>
+        </td>
+      </tr>
+      <tr class="t1Row">
+        <td style="vertical-align: top;">
+          <p>数字</p>
+          <p>如：</p>
+          <p>double num=100.1;</p>
+        </td>
+        <td style="vertical-align: top;">
+          <p>数字</p>
+          <p>如：</p>
+          <p>100.1</p>
+        </td>
+      </tr>
+      <tr class="t2Row">
+        <td style="vertical-align: top;">
+          <p>boolean</p>
+          <p>如：</p>
+          <p>boolean tag=false;</p>
+        </td>
+        <td style="vertical-align: top;">
+          <p>true/false</p>
+          <p>如：</p>
+          <p>false</p>
+        </td>
+      </tr>
+      <tr class="t1Row">
+        <td style="vertical-align: top;">
+          <p>null</p>
+          <p>如：</p>
+          <p>null</p>
+        </td>
+        <td style="vertical-align: top;">
+          <p>null</p>
+          <p>如：</p>
+          <p>null</p>
+        </td>
+      </tr>
+      <tr class="t2Row">
+        <td style="vertical-align: top;">
+          <p>枚举值</p>
+          <p>如：</p>
+          <p>Unit unit=Unit.METER;</p>
+        </td>
+        <td style="vertical-align: top;">
+          <p>以字符串表示的枚举名称</p>
+          <p>如：</p>
+          <p>METER</p>
+        </td>
+      </tr>
+      <tr class="t1Row">
+        <td style="vertical-align: top;">
+          <p>其他 Java 对象</p>
+          <p>如：</p>
+          <p>Point2D point=new Point2D(12.3, 15.6)</p>
+          <p>其中，Point2D 类有 public 成员变量 x、y。</p>
+        </td>
+        <td style="vertical-align: top;">
+          <p>JSON 对象</p>
+          <p>如：</p>
+          <p>{“x”:12.3,”y”:15.6}</p>
+        </td>
+      </tr>
+      <tr class="t2Row">
+        <td style="vertical-align: top;">
+          <p>简单数组</p>
+          <p>如：</p>
+          <p>double[] scales=new double[]{1128.50, 564.25};</p>
+        </td>
+        <td style="vertical-align: top;">
+          <p>JSON 数组</p>
+          <p>如：</p>
+          <p>[1128.50, 564.25]</p>
+        </td>
+      </tr>
+      <tr class="t1Row">
+        <td style="vertical-align: top;">
+          <p>Java 数组</p>
+          <p>如：</p>
+          <p>Point2D[] points=new Point2D[2];</p>
+          <p>points[0]=new Point2D(1.1, 2.2);</p>
+          <p>points[1]=new Point2D(2.2, 3.3);</p>
+        </td>
+        <td style="vertical-align: top;">
+          <p>JSON 数组</p>
+          <p>Point2D[]对应一个 JSON 数组，即[value1,value2,…]，数组中的元素为一个 Point2D 对象，因此 JSON 数组中的元素也应该为 Point2D 对象所对应的 JSON 对象。</p>
+          <p>如：</p>
+          <p>[</p>
+          <p>   {“x”:1.1,”y”:2.2},</p>
+          <p>   {“x”:2.2,”y”:3.3}</p>
+          <p>]</p>
+        </td>
+      </tr>
+      <tr class="t2Row">
+        <td style="vertical-align: top;">
+          <p>Java 列表（List）</p>
+          <p>如：</p>
+          <p>List&lt;Point2D&gt; lst = new ArrayList&lt;Point2D&gt;();</p>
+          <p>lst.add(new Point2D(1.1, 2.2));</p>
+          <p>lst.add(new Point2D(1.1, 2.2));</p>
+        </td>
+        <td style="vertical-align: top;">
+          <p>JSON 数组</p>
+          <p>List&lt;Point2D&gt;对应一个 JSON 数组，即[value1,value2,…]，数组中的元素为一个 Point2D 对象，因此 JSON 数组中的元素也应该为 Point2D 对象所对应的 JSON 对象。</p>
+          <p>如：</p>
+          <p>[</p>
+          <p>   {“x”:1.1,”y”:2.2},</p>
+          <p>   {“x”:2.2,”y”:3.3}</p>
+          <p>]</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="myNormal">Java 对象中值的嵌套关系跟 JSON 中的嵌套关系相对应。</p>
+  <h2><a id="2_XML_格式参数的构建"></a>2 XML 格式参数的构建</h2>
+  <p class="myNormal">XML（eXtensible Markup Language，可扩展的标记语言）是一种简单的数据存储语言，使用一系列简单的标记描述数据，是应用开发中非常通用的一种数据格式。</p>
+  <p class="myNormal">SuperMap iServer REST API 中，针对每个参数，都有对应的类型（Java 类）说明，参数的构建就是以对应的 Java 类作为参考的。Java 类的描述一般可以通过查询 SuperMap iServer 的 Java API 文档得到。</p>
+  <p class="myNormal">在 REST API 中，请求体参数可以以 XML 格式传输，其中参数的取值为对应的 Java 对象序列化为 XML 之后的值，整个请求体示意如下：</p>
+  <p class="myCodeP">&lt;Object&gt;</p>
+  <p class="myCodeP">        &lt;参数1名称&gt;参数1序列化结果&lt;/参数1名称&gt;</p>
+  <p class="myCodeP">        &lt;参数2名称&gt;参数1序列化结果&lt;/参数2名称&gt;</p>
+  <p class="myCodeP">        ……</p>
+  <p class="myCodeP">&lt;/Object&gt;</p>
+  <p class="myNormal">例如，一个名为 unit，类型为 Unit（枚举类型）的参数的 XML 格式表达为：</p>
+  <p class="myNormal">&lt;unit&gt;METER &lt;/unit&gt;</p>
+  <p class="myNormal">一个名为 point，类型为 Point2D 的参数的 XML 格式表达为：</p>
+  <p class="myCodeP">&lt;point&gt;</p>
+  <p class="myCodeP">        &lt;x&gt;12.3&lt;/x&gt;</p>
+  <p class="myCodeP">        &lt;y&gt;15.6&lt;/y&gt;</p>
+  <p class="myCodeP">&lt;/point&gt;</p>
+  <p class="myNormal">一个名为 points，类型为 List&lt;Point2D&gt;的参数的 XML 格式表达为：</p>
+  <p class="myCodeP">&lt;points&gt;</p>
+  <p class="myCodeP">        &lt;Point2D&gt;</p>
+  <p class="myCodeP">                &lt;x&gt;1.1&lt;/x&gt;</p>
+  <p class="myCodeP">                &lt;y&gt;2.2&lt;/y&gt;</p>
+  <p class="myCodeP">        &lt;/Point2D&gt;</p>
+  <p class="myCodeP">        &lt;Point2D&gt;</p>
+  <p class="myCodeP">                &lt;x&gt;2.2&lt;/x&gt;</p>
+  <p class="myCodeP">                &lt;y&gt;3.3&lt;/y&gt;</p>
+  <p class="myCodeP">        &lt;/Point2D&gt;</p>
+  <p class="myCodeP">&lt;/points&gt;</p>
+  <h2 class="myNormal">请参见</h2>
+  <ul class="referenceList">
+    <li class="referenceList"><a class="contentpagehyperlink" href="HTTP_structure.htm">HTTP 请求消息的结构</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="REST_ParamsTransfer.htm">REST 中参数的传递方式</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="REST_HTTP.htm">REST 中 HTTP 请求示例</a></li>
+  </ul>
+  <p class="myNormal"> </p>
+
+</div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../../../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../../../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../../../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../../../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../../../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../../../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../../../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../../.."
+    gCommonRootRelPath = "../../.."
+    gTopicId = "8.2.1.1_1"
+  
+//]]></script>
+
+  <script src="../../../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../../../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../../../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../../../whxdata/layoutconfig.js"></script>
+  <script src="../../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>

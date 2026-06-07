@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
+  <meta name="version" content="2022.1.0"/>
+  <link rel="StyleSheet" href="../../../../../template/styles/topic.min.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" type="text/css" href="../../../../../template/OnlineHelpFrameiServer/layout.css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../template/OnlineHelpFrameiServer/userstyles.css" type="text/css"/>
+  <link rel="StyleSheet" data-skin="true" href="../../../../../template/OnlineHelpFrameiServer/homeButtom.css" type="text/css"/>
+  <link rel="stylesheet" data-skin="true" href="../../../../../template/OnlineHelpFrameiServer/index_Home.css" type="text/css"/>
+  
+    <link rel="shortcut icon" type="image/png" href="../../../../../iserver-icon.png"/>
+    
+  <script data-relpath="../../../../.." src="../../../../../template/scripts/csh-redirect.js" type="text/javascript"></script>
+
+  <meta name="template" content="../../../../../assets/layouts/RESTAPI.htt"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Language" content="zh-CN"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>graphicObject</title>
+  <link rel="StyleSheet" href="../../../../../assets/css/SuperMapHelp.css" type="text/css"/>
+<meta name="rh-version" content="2022.1.188"/>
+  
+  <link rel="stylesheet" type="text/css" href="../../../../../assets/css/common_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../assets/css/index_Home.css"/>
+  <link rel="stylesheet" type="text/css" href="../../../../../assets/css/homeButtom.css"/>
+  <script src="../../../../../assets/js/jQuery.js"></script>
+  <script type="text/javascript" src="../../../../../assets/js/ResourceCenter_Hover.js"></script>
+<meta name="rh-version" content="2022.1.188"/></head>
+
+<body class="rh-BODY-wrapper">
+  <header class="RH-LAYOUT-HEADER-container" role="banner">
+   <div class="enterAllProductsHome only-online" style="display:none"> 
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;../../../../../assets/images/EnterAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;../../../../../assets/images/EnterAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp" style="display: none;">
+      <div class="DetailProducts1"><a class="MoreProductsLink" href="https://help.supermap.com/iEdge">SuperMap iEdge</a></div>
+	  <div class="DetailProducts2"><a class="MoreProductsLink" href="https://help.supermap.com/iPortal">SuperMap iPortal</a></div>
+	  <div class="DetailProducts3"><a class="MoreProductsLink" href="https://help.supermap.com/iManager/zh/">SuperMap iManager</a></div>
+	  <div class="DetailProducts4"><a class="MoreProductsLink" href="https://help.supermap.com/iManager_K8S/zh/">SuperMap iManager for Kubernetes</a></div>
+	  <div class="DetailProducts5"><a class="MoreProductsLink" href="https://iclient.supermap.io/">SuperMap iClient Javascript</a></div>
+	  <div class="DetailProducts6"><a class="MoreProductsLink" href="https://doc.supermapol.com/zh-hans/">SuperMap Online</a></div>
+      <div class="MoreProducts">
+        <div>
+		  <a class="MoreProductsLink" href="https://help.supermap.com">更多产品帮助</a>
+		</div>
+        <div style="margin-left: 13px;">
+		  <a class="MoreProductsLink" href="https://help.supermap.com">
+		    <img src="../../../../../assets/images/MoreProducts.svg"/>
+		  </a>
+		</div>
+      </div>
+    </div>
+   </div>
+   <div class="BannerVerticalLineLeft only-online" style="display:none">|</div>
+	<div class="RH-LAYOUT-HEADER-logo-box  ">
+      <div class="RH-LAYOUT-HEADER-logo" id="logo-holder"></div>
+    </div>
+    <div class="TopicTopNavigation">
+      <div class="TopNavigation1"><a class="TopNavigationLink" href="../../../../../Install_Uninstall\Install_Uninstall.htm">安装</a></div>
+      <div class="TopNavigation2"><a class="TopNavigationLink" href="../../../../../Service_introduce\Service_introduce.htm">使用</a></div>
+      <div class="TopNavigation3"><a class="TopNavigationLink" href="../../../../../Server_Service_Management\Server_Service_Management.htm">管理</a></div>
+	  <div class="TopNavigation4"><a class="TopNavigationLink" href="../../../../../DevelopGuide\DevelopGuide.htm">开发</a></div>
+    </div>
+    <div class="search-placeholder-class" id="search-with-help"></div>
+	<div class="home_bottom_bg_topic only-online" style="display:none" id="bottomContainer">
+      <div class="dropdown language">
+        <div class="flex-row showArea" id="language_switch" onclick="showLanguagePanel()" style="min-width: 85px;">
+          <div class="language_text">语言切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu" id="language_list" style="display: none; text-align: center;">
+        </div>
+      </div>
+      <div class="BannerVerticalLineRight">|</div>
+      <div class="dropdown version">
+        <div class="flex-row showArea_version" id="version_switch" onclick="showVersionPanel()" style="min-width: 85px; height: 40px;">
+          <div class="language_text">版本切换</div>
+          <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/Expand_Black.svg"/>
+        </div>
+        <div class="dropdownMenu1" id="version_list" style="display:none; text-align: center;">
+        </div>
+      </div>
+    </div>
+    <div class="RH-LAYOUT-HEADERMENU-container" id="header-menu"></div>
+  </header>
+  <main role="main" class="RH-LAYOUT-BODY-container">
+    <div class="RH-LAYOUT-SEARCHRESULTS" id="rh-searchresults"></div>
+    <div class="RH-LAYOUT-LEFTPANEL-container" id="rh-leftpanel"></div>
+    <div class="rh-layout-BODY-main" id="rh-layout-main">
+      <div class="RH-LAYOUT-TOOLBAR-toolbar-box" id="rh-toolbar" style="z-index: 1; top: 249px;"></div>
+      <div class="rh-layout-BODY-body">
+        <div class="RH-LAYOUT-CENTERPANEL-container">
+          <div class="rh-layout-selectdetails" id="rh-selectdetails"></div>
+          <div class="RH-LAYOUT-CENTERPANEL-topic-box" id="rh-topic">
+  <h2><a id="URI"></a>URI</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="../plot.htm#URI">&lt;plot_uri&gt;</a>/graphicObject[.&lt;format&gt;]</p>
+  <h2>支持的方法</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="#GET 请求">GET</a>、<a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a></p>
+  <h2>父资源</h2>
+  <p class="myNormal"><a class="contentpagehyperlink" href="../plot.htm">plot</a></p>
+  <h2>介绍</h2>
+  <p class="myNormal">graphicObject资源用于获取标号信息。</p>
+  <p class="myNormal" style="font-weight: bold;">支持的方法：</p>
+  <ul class="supportList" style="list-style: disc;">
+    <li class="supportList"><a class="contentpagehyperlink" href="#GET 请求">GET</a>：获取标号的信息。</li>
+    <li class="supportList"><a class="contentpagehyperlink" href="#HEAD 请求">HEAD</a>：检查 graphicObject 资源是否存在，或权限是否可以访问 graphicObject 资源。</li>
+  </ul>
+  <p class="myNormal"><span style="font-weight: bold;">支持的表述格式：</span>RJSON、JSON、HTML、XML。</p>
+  <h2>资源层次</h2>
+  <p class="myNormal"><img alt="" border="0" src="../../../../../assets/images/root/plot/graphicObject/graphicObject.png" style="border: none;" usemap="#MAP622964589"/><map id="MAP622964589" name="MAP622964589"><area alt="" coords="8, 4, 267, 46" href="../../root.htm" shape="rect"/> <area alt="" coords="79, 55, 228, 100" href="../plot.htm" shape="rect"/> <area alt="" coords="122, 110, 276, 161" href="graphicObject.htm" shape="rect"/></map></p>
+  <h2>HTTP 请求方法</h2>
+  <p class="myNormal">对如下 URI 执行 HTTP 请求，以 rjson 输出格式为例加以说明，其中，supermapiserver 是服务器名。</p>
+  <p class="uriStyle">http://supermapiserver:8090/iserver/services/plot-TY/rest/plot/graphicObject.rjson</p>
+  <h3><a id="GET 请求"></a>GET 请求</h3>
+  <p class="myNormal">获取标号的信息。</p>
+  <h4>请求参数</h4>
+  <table align="center" cellspacing="0" class="iServerTable" width="54.969%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 17.495%;"/>
+      <col style="width: 54.97%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>名称</td>
+        <td>类型</td>
+        <td>含义</td>
+      </tr>
+      <tr class="t2Row">
+        <td>libID</td>
+        <td>int</td>
+        <td>【必填参数】标号库ID</td>
+      </tr>
+      <tr class="t1Row">
+        <td>code</td>
+        <td>int</td>
+        <td>【必填参数】标号code</td>
+      </tr>
+      <tr class="t2Row">
+        <td>symbolType</td>
+        <td>int</td>
+        <td>标号类型</td>
+      </tr>
+      <tr class="t1Row">
+        <td>symbolName</td>
+        <td>String</td>
+        <td>标号名称</td>
+      </tr>
+      <tr class="t2Row">
+        <td>anchorPoint</td>
+        <td>Point2D</td>
+        <td>标号的锚点</td>
+      </tr>
+      <tr class="t1Row">
+        <td>negativeImage</td>
+        <td>boolean</td>
+        <td>点标号是否启动镜像</td>
+      </tr>
+      <tr class="t2Row">
+        <td>scaleByMap</td>
+        <td>boolean</td>
+        <td>控制标号的大小是否跟随地图缩放</td>
+      </tr>
+      <tr class="t1Row">
+        <td>symbolRank</td>
+        <td>int</td>
+        <td>标号级别</td>
+      </tr>
+      <tr class="t2Row">
+        <td>symbolRanks</td>
+        <td>int[]</td>
+        <td>标号库中定义的标号所支持的标号等级</td>
+      </tr>
+      <tr class="t1Row">
+        <td>limitWidthHeight</td>
+        <td>boolean</td>
+        <td>锁定标号的宽度、高度</td>
+      </tr>
+      <tr class="t2Row">
+        <td>symbolSize</td>
+        <td>Point2D</td>
+        <td>标号大小，控制标号在地图上显示的大小</td>
+      </tr>
+      <tr class="t1Row">
+        <td>rotate2D</td>
+        <td>Point3D</td>
+        <td>标号的旋转角度</td>
+      </tr>
+      <tr class="t2Row">
+        <td>scale2D</td>
+        <td>Point3D</td>
+        <td>标号的缩放比例</td>
+      </tr>
+      <tr class="t1Row">
+        <td>subSymbols</td>
+        <td>Int[]</td>
+        <td>线面标号的子标号集合</td>
+      </tr>
+      <tr class="t2Row">
+        <td>scaleValues</td>
+        <td>double[]</td>
+        <td>线面标号的比例值</td>
+      </tr>
+      <tr class="t1Row">
+        <td>style</td>
+        <td>Object</td>
+        <td>标号风格，包括线色、线型、填充等</td>
+      </tr>
+      <tr class="t2Row">
+        <td>surroundLineType</td>
+        <td>int</td>
+        <td>衬线类型</td>
+      </tr>
+      <tr class="t1Row">
+        <td>surroundLineColor</td>
+        <td>Color</td>
+        <td>衬线颜色</td>
+      </tr>
+      <tr class="t2Row">
+        <td>surroundLineWidth2D</td>
+        <td>int</td>
+        <td>衬线宽度</td>
+      </tr>
+      <tr class="t1Row">
+        <td>textContent</td>
+        <td>string</td>
+        <td>注记/文本内容</td>
+      </tr>
+      <tr class="t2Row">
+        <td>annotationPosition</td>
+        <td>int</td>
+        <td>注记位置</td>
+      </tr>
+      <tr class="t1Row">
+        <td>textStyle2D</td>
+        <td>Object</td>
+        <td>注记样式</td>
+      </tr>
+      <tr class="t2Row">
+        <td>innerCells</td>
+        <td>Object[]</td>
+        <td>内部图元，构成一个标号所用到的所有图元的信息</td>
+      </tr>
+      <tr class="t1Row">
+        <td>middleMarkExist</td>
+        <td>boolean</td>
+        <td>标号是否存在中间注记</td>
+      </tr>
+      <tr class="t2Row">
+        <td>algoMaxEditPts</td>
+        <td>int</td>
+        <td>线面标号最大编辑点个数</td>
+      </tr>
+      <tr class="t1Row">
+        <td>algoMinEditPts</td>
+        <td>int</td>
+        <td>线面标号最小编辑点个数</td>
+      </tr>
+      <tr class="t2Row">
+        <td>middleMarkBounds</td>
+        <td>Rectangle2D</td>
+        <td>点标号中间注记范围</td>
+      </tr>
+      <tr class="t1Row">
+        <td>symbolIsCanFill</td>
+        <td>boolean</td>
+        <td>标号是否可填充</td>
+      </tr>
+      <tr class="t2Row">
+        <td>scalePoints</td>
+        <td>Point2D[]</td>
+        <td>比例点数组</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4>响应结构</h4>
+  <p class="myNormal">对graphicObject资源执行 GET 请求，返回的标号信息表述的结构如下：</p>
+  <table align="center" cellspacing="0" class="iServerTable" width="70%">
+    <colgroup>
+      <col style="width: 15%;"/>
+      <col style="width: 15%;"/>
+      <col style="width: 70%;"/>
+    </colgroup>
+    <tbody>
+      <tr class="t1st">
+        <td>字段</td>
+        <td>类型</td>
+        <td>说明</td>
+      </tr>
+      <tr class="t2Row">
+        <td>libID</td>
+        <td>int</td>
+        <td>标号库ID</td>
+      </tr>
+      <tr class="t1Row">
+        <td>code</td>
+        <td>int</td>
+        <td>标号code</td>
+      </tr>
+      <tr class="t2Row">
+        <td>symbolType</td>
+        <td>int</td>
+        <td>标号类型</td>
+      </tr>
+      <tr class="t1Row">
+        <td>symbolName</td>
+        <td>int</td>
+        <td>标号名称</td>
+      </tr>
+      <tr class="t2Row">
+        <td>negativeImage</td>
+        <td>boolean</td>
+        <td>标号镜像。默认为false,当设置为ture时，则标号上下不变，左右互换</td>
+      </tr>
+      <tr class="t1Row">
+        <td>symbolRank</td>
+        <td>int</td>
+        <td>标号级别</td>
+      </tr>
+      <tr class="t2Row">
+        <td>symbolRanks</td>
+        <td>int[]</td>
+        <td>标号所支持的标号等级</td>
+      </tr>
+      <tr class="t1Row">
+        <td>scaleByMap</td>
+        <td>boolean</td>
+        <td>控制标号的大小是否跟随地图缩放，默认为false</td>
+      </tr>
+      <tr class="t2Row">
+        <td>limitWidthHeight</td>
+        <td>boolean</td>
+        <td>锁定标号宽度、高度</td>
+      </tr>
+      <tr class="t1Row">
+        <td>symboSize</td>
+        <td>Point2D</td>
+        <td>标号大小，控制标号在地图上显示的大小</td>
+      </tr>
+      <tr class="t2Row">
+        <td>scale2D</td>
+        <td>Point3D</td>
+        <td>标号的缩放比例</td>
+      </tr>
+      <tr class="t1Row">
+        <td>rotate2D</td>
+        <td>Point3D</td>
+        <td>标号的旋转角度</td>
+      </tr>
+      <tr class="t2Row">
+        <td>subSymbols</td>
+        <td>int[]</td>
+        <td>子标号集合。部分线面标号存在子标号，通过修改线面标号的code可以得到不同含义的新标号</td>
+      </tr>
+      <tr class="t1Row">
+        <td>scaleValues</td>
+        <td>double[]</td>
+        <td>标号的比例值</td>
+      </tr>
+      <tr class="t2Row">
+        <td>surroundLineType</td>
+        <td>int</td>
+        <td>衬线类型，包括无衬线、内衬、外衬、双衬。</td>
+      </tr>
+      <tr class="t1Row">
+        <td>surroundLineColor</td>
+        <td>Color</td>
+        <td>衬线颜色</td>
+      </tr>
+      <tr class="t2Row">
+        <td>surroundLineWidth2D</td>
+        <td>double</td>
+        <td>衬线宽度</td>
+      </tr>
+      <tr class="t1Row">
+        <td>textContent</td>
+        <td>String</td>
+        <td>注记/文本内容</td>
+      </tr>
+      <tr class="t2Row">
+        <td>annotationPosition</td>
+        <td>int</td>
+        <td>注记位置</td>
+      </tr>
+      <tr class="t1Row">
+        <td>textStyle2D</td>
+        <td>TextStyle</td>
+        <td>注记样式</td>
+      </tr>
+      <tr class="t2Row">
+        <td>innerCells</td>
+        <td>GraphicObjectCell[]</td>
+        <td>内部图元信息，构成一个点标号所用到的所有图元的信息</td>
+      </tr>
+      <tr class="t1Row">
+        <td>middleMarkExist</td>
+        <td>boolean</td>
+        <td>标号是否存在中间注记</td>
+      </tr>
+      <tr class="t2Row">
+        <td>algoMaxExitPts</td>
+        <td>int</td>
+        <td>线面标号最大点个数</td>
+      </tr>
+      <tr class="t1Row">
+        <td>algoMinEditPts</td>
+        <td>int</td>
+        <td>线面标号最小点个数</td>
+      </tr>
+      <tr class="t2Row">
+        <td>middleMarkBounds</td>
+        <td>Rectangle2D</td>
+        <td>点标号中间注记范围</td>
+      </tr>
+    </tbody>
+  </table>
+  <h4>响应示例</h4>
+  <p class="myNormal">对graphicObject资源：http://localhost:8090/iserver/services/plot-TY/rest/plot/graphicObject.rjson?libID=0&amp;code=24，执行GET请求，则返回的rjson格式表述如下：</p>
+  <p class="myCodeP">{</p>
+  <p class="myCodeP">    &quot;algoMaxEditPts&quot;: 9999999,</p>
+  <p class="myCodeP">    &quot;algoMinEditPts&quot;: 2,</p>
+  <p class="myCodeP">    &quot;anchorPoint&quot;: {</p>
+  <p class="myCodeP">        &quot;x&quot;: 0,</p>
+  <p class="myCodeP">        &quot;y&quot;: 0</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    &quot;annotationPosition&quot;: 4,</p>
+  <p class="myCodeP">    &quot;center&quot;: null,</p>
+  <p class="myCodeP">    &quot;code&quot;: 24,</p>
+  <p class="myCodeP">    &quot;id&quot;: 0,</p>
+  <p class="myCodeP">    &quot;innerCells&quot;: [{</p>
+  <p class="myCodeP">        &quot;fillColorLimit&quot;: true,</p>
+  <p class="myCodeP">        &quot;fillLimit&quot;: false,</p>
+  <p class="myCodeP">        &quot;fontColorLimit&quot;: true,</p>
+  <p class="myCodeP">        &quot;lineColorLimit&quot;: false,</p>
+  <p class="myCodeP">        &quot;lineTypeLimit&quot;: false,</p>
+  <p class="myCodeP">        &quot;lineWidthLimit&quot;: false,</p>
+  <p class="myCodeP">        &quot;positionPoints&quot;: [],</p>
+  <p class="myCodeP">        &quot;style&quot;: {</p>
+  <p class="myCodeP">            &quot;fillBackColor&quot;: {</p>
+  <p class="myCodeP">                &quot;alpha&quot;: 255,</p>
+  <p class="myCodeP">                &quot;blue&quot;: 0,</p>
+  <p class="myCodeP">                &quot;green&quot;: 0,</p>
+  <p class="myCodeP">                &quot;red&quot;: 255</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;fillBackOpaque&quot;: true,</p>
+  <p class="myCodeP">            &quot;fillForeColor&quot;: {</p>
+  <p class="myCodeP">                &quot;alpha&quot;: 80,</p>
+  <p class="myCodeP">                &quot;blue&quot;: 0,</p>
+  <p class="myCodeP">                &quot;green&quot;: 0,</p>
+  <p class="myCodeP">                &quot;red&quot;: 255</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;fillGradientAngle&quot;: 0,</p>
+  <p class="myCodeP">            &quot;fillGradientMode&quot;: &quot;NONE&quot;,</p>
+  <p class="myCodeP">            &quot;fillGradientOffsetRatioX&quot;: 0,</p>
+  <p class="myCodeP">            &quot;fillGradientOffsetRatioY&quot;: 0,</p>
+  <p class="myCodeP">            &quot;fillOpaqueRate&quot;: 100,</p>
+  <p class="myCodeP">            &quot;fillSymbolID&quot;: 1,</p>
+  <p class="myCodeP">            &quot;lineColor&quot;: {</p>
+  <p class="myCodeP">                &quot;alpha&quot;: 255,</p>
+  <p class="myCodeP">                &quot;blue&quot;: 0,</p>
+  <p class="myCodeP">                &quot;green&quot;: 0,</p>
+  <p class="myCodeP">                &quot;red&quot;: 255</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;lineSymbolID&quot;: 0,</p>
+  <p class="myCodeP">            &quot;lineWidth&quot;: 0.5,</p>
+  <p class="myCodeP">            &quot;markerAngle&quot;: 0,</p>
+  <p class="myCodeP">            &quot;markerHeight&quot;: 0,</p>
+  <p class="myCodeP">            &quot;markerSize&quot;: 2.4,</p>
+  <p class="myCodeP">            &quot;markerSymbolID&quot;: 0,</p>
+  <p class="myCodeP">            &quot;markerWidth&quot;: 0</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;surroundLineColor&quot;: {</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 0,</p>
+  <p class="myCodeP">            &quot;green&quot;: 255,</p>
+  <p class="myCodeP">            &quot;red&quot;: 255</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;surroundLineFlag&quot;: false,</p>
+  <p class="myCodeP">        &quot;surroundLineLimit&quot;: false,</p>
+  <p class="myCodeP">        &quot;surroundLineType&quot;: 0,</p>
+  <p class="myCodeP">        &quot;surroundLineWidth&quot;: 1,</p>
+  <p class="myCodeP">        &quot;textContent&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">        &quot;textStyle&quot;: {</p>
+  <p class="myCodeP">            &quot;align&quot;: &quot;TOPLEFT&quot;,</p>
+  <p class="myCodeP">            &quot;backColor&quot;: {</p>
+  <p class="myCodeP">                &quot;alpha&quot;: 255,</p>
+  <p class="myCodeP">                &quot;blue&quot;: 0,</p>
+  <p class="myCodeP">                &quot;green&quot;: 0,</p>
+  <p class="myCodeP">                &quot;red&quot;: 0</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;backOpaque&quot;: false,</p>
+  <p class="myCodeP">            &quot;bold&quot;: false,</p>
+  <p class="myCodeP">            &quot;fontHeight&quot;: 7,</p>
+  <p class="myCodeP">            &quot;fontName&quot;: &quot;Microsoft YaHei&quot;,</p>
+  <p class="myCodeP">            &quot;fontScale&quot;: 1,</p>
+  <p class="myCodeP">            &quot;fontWeight&quot;: 0,</p>
+  <p class="myCodeP">            &quot;fontWidth&quot;: 0,</p>
+  <p class="myCodeP">            &quot;foreColor&quot;: {</p>
+  <p class="myCodeP">                &quot;alpha&quot;: 255,</p>
+  <p class="myCodeP">                &quot;blue&quot;: 0,</p>
+  <p class="myCodeP">                &quot;green&quot;: 0,</p>
+  <p class="myCodeP">                &quot;red&quot;: 0</p>
+  <p class="myCodeP">            },</p>
+  <p class="myCodeP">            &quot;italic&quot;: false,</p>
+  <p class="myCodeP">            &quot;italicAngle&quot;: 0,</p>
+  <p class="myCodeP">            &quot;opaqueRate&quot;: 100,</p>
+  <p class="myCodeP">            &quot;outline&quot;: false,</p>
+  <p class="myCodeP">            &quot;rotation&quot;: 0,</p>
+  <p class="myCodeP">            &quot;shadow&quot;: false,</p>
+  <p class="myCodeP">            &quot;sizeFixed&quot;: false,</p>
+  <p class="myCodeP">            &quot;strikeout&quot;: false,</p>
+  <p class="myCodeP">            &quot;stringAlignment&quot;: &quot;LEFT&quot;,</p>
+  <p class="myCodeP">            &quot;underline&quot;: false</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;type&quot;: 24</p>
+  <p class="myCodeP">    }],</p>
+  <p class="myCodeP">    &quot;libID&quot;: 0,</p>
+  <p class="myCodeP">    &quot;limitWidthHeight&quot;: true,</p>
+  <p class="myCodeP">    &quot;middleMarkBounds&quot;: {</p>
+  <p class="myCodeP">        &quot;bottom&quot;: 0,</p>
+  <p class="myCodeP">        &quot;left&quot;: 0,</p>
+  <p class="myCodeP">        &quot;leftBottom&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: 0,</p>
+  <p class="myCodeP">            &quot;y&quot;: 0</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;right&quot;: 0,</p>
+  <p class="myCodeP">        &quot;rightTop&quot;: {</p>
+  <p class="myCodeP">            &quot;x&quot;: 0,</p>
+  <p class="myCodeP">            &quot;y&quot;: 0</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;top&quot;: 0</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    &quot;middleMarkExist&quot;: false,</p>
+  <p class="myCodeP">    &quot;negativeImage&quot;: false,</p>
+  <p class="myCodeP">    &quot;parts&quot;: null,</p>
+  <p class="myCodeP">    &quot;points&quot;: null,</p>
+  <p class="myCodeP">    &quot;position&quot;: null,</p>
+  <p class="myCodeP">    &quot;prjCoordSys&quot;: null,</p>
+  <p class="myCodeP">    &quot;rotate2D&quot;: {</p>
+  <p class="myCodeP">        &quot;x&quot;: 0,</p>
+  <p class="myCodeP">        &quot;y&quot;: 0,</p>
+  <p class="myCodeP">        &quot;z&quot;: 0</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    &quot;rotationX&quot;: 0,</p>
+  <p class="myCodeP">    &quot;rotationY&quot;: 0,</p>
+  <p class="myCodeP">    &quot;rotationZ&quot;: 0,</p>
+  <p class="myCodeP">    &quot;scale2D&quot;: {</p>
+  <p class="myCodeP">        &quot;x&quot;: 1,</p>
+  <p class="myCodeP">        &quot;y&quot;: 1,</p>
+  <p class="myCodeP">        &quot;z&quot;: 0</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    &quot;scaleByMap&quot;: false,</p>
+  <p class="myCodeP">    &quot;scalePoints&quot;: [],</p>
+  <p class="myCodeP">    &quot;scaleValues&quot;: [],</p>
+  <p class="myCodeP">    &quot;scaleX&quot;: 0,</p>
+  <p class="myCodeP">    &quot;scaleY&quot;: 0,</p>
+  <p class="myCodeP">    &quot;scaleZ&quot;: 0,</p>
+  <p class="myCodeP">    &quot;style&quot;: {</p>
+  <p class="myCodeP">        &quot;fillBackColor&quot;: {</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 0,</p>
+  <p class="myCodeP">            &quot;green&quot;: 0,</p>
+  <p class="myCodeP">            &quot;red&quot;: 255</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;fillBackOpaque&quot;: true,</p>
+  <p class="myCodeP">        &quot;fillForeColor&quot;: {</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 80,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 0,</p>
+  <p class="myCodeP">            &quot;green&quot;: 0,</p>
+  <p class="myCodeP">            &quot;red&quot;: 255</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;fillGradientAngle&quot;: 0,</p>
+  <p class="myCodeP">        &quot;fillGradientMode&quot;: &quot;NONE&quot;,</p>
+  <p class="myCodeP">        &quot;fillGradientOffsetRatioX&quot;: 0,</p>
+  <p class="myCodeP">        &quot;fillGradientOffsetRatioY&quot;: 0,</p>
+  <p class="myCodeP">        &quot;fillOpaqueRate&quot;: 100,</p>
+  <p class="myCodeP">        &quot;fillSymbolID&quot;: 1,</p>
+  <p class="myCodeP">        &quot;lineColor&quot;: {</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 0,</p>
+  <p class="myCodeP">            &quot;green&quot;: 0,</p>
+  <p class="myCodeP">            &quot;red&quot;: 255</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;lineSymbolID&quot;: 0,</p>
+  <p class="myCodeP">        &quot;lineWidth&quot;: 0.5,</p>
+  <p class="myCodeP">        &quot;markerAngle&quot;: 0,</p>
+  <p class="myCodeP">        &quot;markerHeight&quot;: 0,</p>
+  <p class="myCodeP">        &quot;markerSize&quot;: 2.4,</p>
+  <p class="myCodeP">        &quot;markerSymbolID&quot;: 0,</p>
+  <p class="myCodeP">        &quot;markerWidth&quot;: 0</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    &quot;subSymbols&quot;: [],</p>
+  <p class="myCodeP">    &quot;surroundLineColor&quot;: {</p>
+  <p class="myCodeP">        &quot;alpha&quot;: 255,</p>
+  <p class="myCodeP">        &quot;blue&quot;: 0,</p>
+  <p class="myCodeP">        &quot;green&quot;: 255,</p>
+  <p class="myCodeP">        &quot;red&quot;: 255</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    &quot;surroundLineType&quot;: 0,</p>
+  <p class="myCodeP">    &quot;surroundLineWidth2D&quot;: 1,</p>
+  <p class="myCodeP">    &quot;symbolIsCanFill&quot;: false,</p>
+  <p class="myCodeP">    &quot;symbolName&quot;: &quot;折线&quot;,</p>
+  <p class="myCodeP">    &quot;symbolRank&quot;: 0,</p>
+  <p class="myCodeP">    &quot;symbolRanks&quot;: [],</p>
+  <p class="myCodeP">    &quot;symbolSize&quot;: {</p>
+  <p class="myCodeP">        &quot;x&quot;: -1,</p>
+  <p class="myCodeP">        &quot;y&quot;: -1</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    &quot;symbolType&quot;: 24,</p>
+  <p class="myCodeP">    &quot;textContent&quot;: &quot;&quot;,</p>
+  <p class="myCodeP">    &quot;textStyle2D&quot;: {</p>
+  <p class="myCodeP">        &quot;align&quot;: &quot;TOPLEFT&quot;,</p>
+  <p class="myCodeP">        &quot;backColor&quot;: {</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 0,</p>
+  <p class="myCodeP">            &quot;green&quot;: 0,</p>
+  <p class="myCodeP">            &quot;red&quot;: 0</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;backOpaque&quot;: false,</p>
+  <p class="myCodeP">        &quot;bold&quot;: false,</p>
+  <p class="myCodeP">        &quot;fontHeight&quot;: 7,</p>
+  <p class="myCodeP">        &quot;fontName&quot;: &quot;Microsoft YaHei&quot;,</p>
+  <p class="myCodeP">        &quot;fontScale&quot;: 1,</p>
+  <p class="myCodeP">        &quot;fontWeight&quot;: 0,</p>
+  <p class="myCodeP">        &quot;fontWidth&quot;: 0,</p>
+  <p class="myCodeP">        &quot;foreColor&quot;: {</p>
+  <p class="myCodeP">            &quot;alpha&quot;: 255,</p>
+  <p class="myCodeP">            &quot;blue&quot;: 0,</p>
+  <p class="myCodeP">            &quot;green&quot;: 0,</p>
+  <p class="myCodeP">            &quot;red&quot;: 0</p>
+  <p class="myCodeP">        },</p>
+  <p class="myCodeP">        &quot;italic&quot;: false,</p>
+  <p class="myCodeP">        &quot;italicAngle&quot;: 0,</p>
+  <p class="myCodeP">        &quot;opaqueRate&quot;: 100,</p>
+  <p class="myCodeP">        &quot;outline&quot;: false,</p>
+  <p class="myCodeP">        &quot;rotation&quot;: 0,</p>
+  <p class="myCodeP">        &quot;shadow&quot;: false,</p>
+  <p class="myCodeP">        &quot;sizeFixed&quot;: false,</p>
+  <p class="myCodeP">        &quot;strikeout&quot;: false,</p>
+  <p class="myCodeP">        &quot;stringAlignment&quot;: &quot;LEFT&quot;,</p>
+  <p class="myCodeP">        &quot;underline&quot;: false</p>
+  <p class="myCodeP">    },</p>
+  <p class="myCodeP">    &quot;type&quot;: &quot;GRAPHICOBJECT&quot;</p>
+  <p class="myCodeP">}</p>
+  <h3><a id="HEAD 请求"></a>HEAD 请求</h3>
+  <p class="myNormal">返回跟 GET 请求一样的 HTTP 响应头，但是没有响应实体。可以在不必传输整个响应内容的情况下，获取包含在响应消息头中的元数据信息。元数据信息包括媒体类型，字符编码，压缩编码，实体内容长度等。</p>
+  <p class="myNormal">HEAD 请求可以用来判断 graphicObject 资源是否存在，或者客户端是否有权限访问 graphicObject 资源。通过对加.&lt;format&gt;的 URI 执行 HEAD 请求，还可以快速判断 graphicObject 资源是否支持&lt;format&gt;格式的表述。</p>
+  <h2>请参见</h2>
+  <ul class="referenceList">
+    <li class="referenceList"><a class="contentpagehyperlink" href="../plot.htm">plot</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../clientBuildREST/ConstructRESTRequest.htm">客户端构建 REST 请求</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../StatusCodeDescription.htm">状态码列表及说明</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../SuperMap_iServer_REST_API_OutputFormat.htm">SuperMap iServer REST API 表述格式介绍</a></li>
+    <li class="referenceList"><a class="contentpagehyperlink" href="../../../resource_hierarchy.htm">资源层次结构</a></li>
+  </ul>
+  <p> </p>
+
+</div>
+          <!--div class="RH-LAYOUT-BRS-container" id="rh-brs"></div-->
+        </div>
+        <div class="RH-LAYOUT-RIGHTPANEL-container" id="rh-rightpanel"></div>
+      </div>
+    </div>
+  </main>
+  <footer role="contentinfo" class="RH-LAYOUT-FOOTER-container" id="rh-footer">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <div class="home_bottom_bg" id="bottomContainer">
+    <div class="home_bottom_img"><a href="https://www.supermap.com" target="_blank"><img src="../../../../../assets/images/超图logo.png" style="height: 32px;"/> <span class="copyright_text">
+          <script>
+            //<![CDATA[
+            copyright();
+            //]]>
+          </script>
+        </span> </a></div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea" id="language_switch"><img src="../../../../../assets/images/在线服务.svg" style="width: 16px; margin-left: 6px;"/>
+      <div class="language_text" style="margin-left: 10px; min-width: 65px;">语言切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/展开.svg"/>
+    </div>
+    <div class="dropdownMenu" id="language_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default">简体中文</div>
+              <div class="text_switch_default">EN</div-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="flex-row showArea_version" id="version_switch">
+      <div class="language_text" style="margin-left: 25px; min-width: 65px; color: black;">版本切换</div>
+      <img class="home_bottom_dropdown_icon" src="../../../../../assets/images/Expand_Black.svg" style="margin-top: 10px"/> <img src="../../../../../assets/images/EnterAllProducts.svg"/>
+    </div>
+    <div class="dropdownMenu" id="version_list" style="display:none; text-align: center;">
+      <!--div class="text_switch_default" >11.1.0</div>-->
+    </div>
+  </div>
+  <div style="display: none">
+    <div class="enterAllProductsHelpButton" style="background-image: url(&#39;assets/images/ExpandAllProducts.svg&#39;)" id="enterAllProductsHelpButton" onclick="showAllProductsHelp()"> </div>
+    <div class="CollEnterAllProductsHelpButton" style="background-image: url(&#39;assets/images/hideAllProducts.svg&#39;)" id="CollEnterAllProductsHelpButton" onclick="hideAllProductsHelp()"> </div>
+    <div class="AllProductsHelp" id="AllProductsHelp">
+      <div class="DetailProducts1"><a href="http://help.supermap.com/ImageXPro"><img src="../../../../../assets/images/SuperMapImageXPro.svg"/></a></div>
+      <div class="DetailProducts2"><a href="http://help.supermap.com/iMaritimeEditor"><img src="../../../../../assets/images/SuperMapiMaritimeEditor.svg"/></a></div>
+      <div class="Products"><a href="http://help.supermap.com/Editor/">SuperMap Editor<img src="../../../../../assets/images/Expand_Black.svg"/></a></div>
+      <div class="MoreProducts">
+        <div><a href="http://help.supermap.com">更多产品帮助</a></div>
+        <div style="margin-left: 13px;"><img src="../../../../../assets/images/MoreProducts.svg"/></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    //<![CDATA[
+    initView();
+    showAllProductsHelp();
+    hideAllProductsHelp();
+    //]]>
+  </script>
+
+</footer>
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = "../../../../.."
+    gCommonRootRelPath = "../../../../.."
+    gTopicId = "8.2.2.6.14.1"
+  
+//]]></script>
+
+  <script src="../../../../../template/OnlineHelpFrameiServer/tocconfig.js"></script>
+  <script src="../../../../../template/OnlineHelpFrameiServer/topicpagefix.js"></script>
+  <script src="../../../../../template/OnlineHelpFrameiServer/env.js"></script>
+  <script src="../../../../../whxdata/layoutconfig.js"></script>
+  <script src="../../../../../whxdata/brsdata.js"></script>
+
+  
+    
+
+            
+
+<script>
+  //<![CDATA[
+  showOnlyOnlineDom();
+  //]]>
+</script>
+
+</body></html>
