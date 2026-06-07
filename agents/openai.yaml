@@ -1,0 +1,15 @@
+# Codex CLI integration metadata
+# See: https://developers.openai.com/codex/skills
+
+interface:
+  display_name: "SuperMap Docs"
+  short_description: "Complete SuperMap GIS platform documentation — iServer, iPortal, iClient3D, iClient JS"
+  brand_color: "#1890FF"
+
+policy:
+  allow_implicit_invocation: true
+
+dependencies:
+  tools:
+    - type: "bash"
+      description: "grep for searching bundled documentation files in docs/"
