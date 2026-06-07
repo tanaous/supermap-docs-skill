@@ -1,0 +1,13 @@
+{
+  "name": "supermap-docs",
+  "version": "1.0.0",
+  "description": "Complete SuperMap GIS platform documentation skill with fast indexed search — covers iServer REST API (22 service categories), iPortal (9 modules), iClient3D for WebGL/WebGPU (735 API classes, 211 examples), and iClient for JavaScript (5 libraries, 1,085 API pages, 673 examples). 4,325 bundled reference files for offline AI agent retrieval.",
+  "author": {
+    "name": "tanaous",
+    "url": "https://github.com/tanaous/supermap-docs-skill"
+  },
+  "homepage": "https://github.com/tanaous/supermap-docs-skill",
+  "repository": "https://github.com/tanaous/supermap-docs-skill",
+  "keywords": ["supermap", "gis", "iserver", "iportal", "iclient3d", "webgl", "webgpu", "spatial-analysis", "rest-api", "mapping", "3d-gis", "leaflet", "openlayers", "mapboxgl", "documentation"],
+  "categories": ["development", "reference", "gis"]
+}
